@@ -1247,7 +1247,7 @@ font-size: 2rem;
 .page__header__text {
   opacity: 0.85;
   line-height: 1.7;
-  text-align: left; }
+  text-align: center; }
 
 .page {
   padding: 24pt 0; }
