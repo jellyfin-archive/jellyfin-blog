@@ -750,7 +750,7 @@ select {
 
 .navbar__logo {
 font-size: 2rem;
-  /* font-size: 1.325rem; */
+  font-size: 1.325rem; 
   font-family: "Quicksand", sans-serif;
   transition: 0;
   color: #fff;
@@ -796,8 +796,8 @@ font-size: 2rem;
           transform: scaleX(1); } }
 
 .navbar__menu-mob {
-/*TODO - UNHIDE WHEN CONTENT AVAILABLE */
-  display: none; }
+
+  display: block; }
   .navbar__menu-mob--noMob {
     display: none; }
   @media (min-width: 992px) {
