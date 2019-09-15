@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Music | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Music | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../../images/favicon.png">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="server-media-music">
+<h2 id="music">Music</h2>
+
+<p>The most common organization scheme for music is separation by artist and then album.</p>
+<pre><code>/Music
+    /Artist
+        /Album
+            01 - Song.mp3
+            02 - Song.mp3
+</code></pre><p>You can also separate your music into artist folders or with no folder structure at all.</p>
+<pre><code>/Music
+    /Artist
+        01 - Song.flac
+        02 - Song.flac
+    08 - Song.ogg
+    09 - Song.ogg
+</code></pre><p>Individual songs have no required parameters for filenames since the information will be scraped from metadata.</p>
+<h3 id="discs">Discs</h3>
+<p>Albums with several discs will be fine with the metadata tags, but you can also use subfolders for the discs. The number can be appended after a space, hyphen, or directly after one of the following keywords.</p>
+<ul>
+<li>Disc</li>
+<li>Disk</li>
+<li>CD</li>
+<li>Vol</li>
+<li>Volume</li>
+</ul>
+<pre><code>/Music
+    /Artist
+        /Album
+            /Disc 1
+                01 - Song.mp3
+                02 - Song.mp3
+            /Disc 2
+                01 - Song.mp3
+                02 - Song.mp3
+</code></pre><h3 id="images">Images</h3>
+<p>Images will be scraped from album or artist folders, and they can also be embedded in the music files themselves. The supported filenames are listed below for each respective image.</p>
+<h4 id="primary">Primary</h4>
+<ul>
+<li>folder</li>
+<li>poster</li>
+<li>cover</li>
+<li>default</li>
+</ul>
+<h4 id="art">Art</h4>
+<ul>
+<li>clearart</li>
+</ul>
+<h4 id="backdrop">Backdrop</h4>
+<p>Multiple backdrop images can be used to cycle through several over time. Simply append a number to the end of the filename directly after or after a hyphen.</p>
+<ul>
+<li>backdrop</li>
+<li>fanart</li>
+<li>background</li>
+<li>art</li>
+<li>extrafanart</li>
+</ul>
+<h4 id="banner">Banner</h4>
+<ul>
+<li>banner</li>
+</ul>
+<h4 id="disc">Disc</h4>
+<ul>
+<li>disc</li>
+<li>cdart</li>
+</ul>
+<h4 id="logo">Logo</h4>
+<ul>
+<li>logo</li>
+</ul>
+<h4 id="thumb">Thumb</h4>
+<ul>
+<li>thumb</li>
+<li>landscape</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/blob/master/general/server/media/music.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

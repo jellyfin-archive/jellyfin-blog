@@ -1,0 +1,2381 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Video
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Video
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Controller.Entities.Video">
+  
+  
+  <h1 id="MediaBrowser_Controller_Entities_Video" data-uid="MediaBrowser.Controller.Entities.Video" class="text-break">Class Video
+  </h1>
+  <div class="markdown level0 summary"><p>Class Video</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></div>
+    <div class="level2"><span class="xref">Video</span></div>
+      <div class="level3"><a class="xref" href="MediaBrowser.Controller.Entities.Movies.Movie.html">Movie</a></div>
+      <div class="level3"><a class="xref" href="MediaBrowser.Controller.Entities.MusicVideo.html">MusicVideo</a></div>
+      <div class="level3"><a class="xref" href="MediaBrowser.Controller.Entities.Trailer.html">Trailer</a></div>
+      <div class="level3"><a class="xref" href="MediaBrowser.Controller.Entities.TV.Episode.html">Episode</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Model.Entities.IHasProviderIds.html">IHasProviderIds</a></div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IHasLookupInfo-1.html">IHasLookupInfo</a>&lt;<a class="xref" href="MediaBrowser.Controller.Providers.ItemLookupInfo.html">ItemLookupInfo</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Entities.IHasAspectRatio.html">IHasAspectRatio</a></div>
+    <div><a class="xref" href="MediaBrowser.Controller.Entities.ISupportsPlaceHolders.html">ISupportsPlaceHolders</a></div>
+    <div><a class="xref" href="MediaBrowser.Controller.Entities.IHasMediaSources.html">IHasMediaSources</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SupportedImageExtensions">BaseItem.SupportedImageExtensions</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SlugReplaceChars">BaseItem.SlugReplaceChars</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SlugChar">BaseItem.SlugChar</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_TrailerFolderName">BaseItem.TrailerFolderName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ThemeSongsFolderName">BaseItem.ThemeSongsFolderName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ThemeSongFilename">BaseItem.ThemeSongFilename</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ThemeVideosFolderName">BaseItem.ThemeVideosFolderName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ExtrasFolderName">BaseItem.ExtrasFolderName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_BehindTheScenesFolderName">BaseItem.BehindTheScenesFolderName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_DeletedScenesFolderName">BaseItem.DeletedScenesFolderName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_InterviewFolderName">BaseItem.InterviewFolderName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SceneFolderName">BaseItem.SceneFolderName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SampleFolderName">BaseItem.SampleFolderName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_AllExtrasTypesFolderNames">BaseItem.AllExtrasTypesFolderNames</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ThemeSongIds">BaseItem.ThemeSongIds</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ThemeVideoIds">BaseItem.ThemeVideoIds</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_PreferredMetadataCountryCode">BaseItem.PreferredMetadataCountryCode</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_PreferredMetadataLanguage">BaseItem.PreferredMetadataLanguage</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Size">BaseItem.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Container">BaseItem.Container</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Tagline">BaseItem.Tagline</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ImageInfos">BaseItem.ImageInfos</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsVirtualItem">BaseItem.IsVirtualItem</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Album">BaseItem.Album</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ChannelId">BaseItem.ChannelId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_AlwaysScanInternalMetadataPath">BaseItem.AlwaysScanInternalMetadataPath</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsInMixedFolder">BaseItem.IsInMixedFolder</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SupportsRemoteImageDownloading">BaseItem.SupportsRemoteImageDownloading</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Name">BaseItem.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsUnaired">BaseItem.IsUnaired</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_TotalBitrate">BaseItem.TotalBitrate</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ExtraType">BaseItem.ExtraType</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsThemeMedia">BaseItem.IsThemeMedia</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_OriginalTitle">BaseItem.OriginalTitle</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Id">BaseItem.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_OwnerId">BaseItem.OwnerId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Audio">BaseItem.Audio</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_DisplayPreferencesId">BaseItem.DisplayPreferencesId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Path">BaseItem.Path</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ServiceName">BaseItem.ServiceName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ExternalId">BaseItem.ExternalId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ExternalSeriesId">BaseItem.ExternalSeriesId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ExternalEtag">BaseItem.ExternalEtag</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsHidden">BaseItem.IsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetOwner">BaseItem.GetOwner()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_LocationType">BaseItem.LocationType</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_PathProtocol">BaseItem.PathProtocol</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsPathProtocol_MediaBrowser_Model_MediaInfo_MediaProtocol_">BaseItem.IsPathProtocol(MediaProtocol)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsFileProtocol">BaseItem.IsFileProtocol</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_HasPathProtocol">BaseItem.HasPathProtocol</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SupportsLocalMetadata">BaseItem.SupportsLocalMetadata</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_EnableAlphaNumericSorting">BaseItem.EnableAlphaNumericSorting</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_PrimaryImagePath">BaseItem.PrimaryImagePath</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsMetadataFetcherEnabled_MediaBrowser_Model_Configuration_LibraryOptions_System_String_">BaseItem.IsMetadataFetcherEnabled(LibraryOptions, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsImageFetcherEnabled_MediaBrowser_Model_Configuration_LibraryOptions_System_String_">BaseItem.IsImageFetcherEnabled(LibraryOptions, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsAuthorizedToDelete_MediaBrowser_Controller_Entities_User_List_MediaBrowser_Controller_Entities_Folder__">BaseItem.IsAuthorizedToDelete(User, List&lt;Folder&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_CanDelete_MediaBrowser_Controller_Entities_User_List_MediaBrowser_Controller_Entities_Folder__">BaseItem.CanDelete(User, List&lt;Folder&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_CanDelete_MediaBrowser_Controller_Entities_User_">BaseItem.CanDelete(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsAuthorizedToDownload_MediaBrowser_Controller_Entities_User_">BaseItem.IsAuthorizedToDownload(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_CanDownload_MediaBrowser_Controller_Entities_User_">BaseItem.CanDownload(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_DateCreated">BaseItem.DateCreated</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_DateModified">BaseItem.DateModified</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_DateLastSaved">BaseItem.DateLastSaved</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_DateLastRefreshed">BaseItem.DateLastRefreshed</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Logger">BaseItem.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_LibraryManager">BaseItem.LibraryManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ConfigurationManager">BaseItem.ConfigurationManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ProviderManager">BaseItem.ProviderManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_LocalizationManager">BaseItem.LocalizationManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ItemRepository">BaseItem.ItemRepository</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_FileSystem">BaseItem.FileSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_UserDataManager">BaseItem.UserDataManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ChannelManager">BaseItem.ChannelManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_MediaSourceManager">BaseItem.MediaSourceManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ToString">BaseItem.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsLocked">BaseItem.IsLocked</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_LockedFields">BaseItem.LockedFields</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_PhysicalLocations">BaseItem.PhysicalLocations</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ForcedSortName">BaseItem.ForcedSortName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SortName">BaseItem.SortName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetInternalMetadataPath">BaseItem.GetInternalMetadataPath()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetInternalMetadataPath_System_String_">BaseItem.GetInternalMetadataPath(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_CreateSortName">BaseItem.CreateSortName()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_EnableMediaSourceDisplay">BaseItem.EnableMediaSourceDisplay</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ParentId">BaseItem.ParentId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Parent">BaseItem.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SetParent_MediaBrowser_Controller_Entities_Folder_">BaseItem.SetParent(Folder)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetParent">BaseItem.GetParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetParents">BaseItem.GetParents()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_FindParent__1">BaseItem.FindParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_DisplayParentId">BaseItem.DisplayParentId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_DisplayParent">BaseItem.DisplayParent</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_PremiereDate">BaseItem.PremiereDate</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_EndDate">BaseItem.EndDate</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_OfficialRating">BaseItem.OfficialRating</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_InheritedParentalRatingValue">BaseItem.InheritedParentalRatingValue</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_CriticRating">BaseItem.CriticRating</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_CustomRating">BaseItem.CustomRating</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Overview">BaseItem.Overview</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Studios">BaseItem.Studios</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Genres">BaseItem.Genres</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Tags">BaseItem.Tags</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ProductionLocations">BaseItem.ProductionLocations</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_HomePageUrl">BaseItem.HomePageUrl</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_CommunityRating">BaseItem.CommunityRating</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_RunTimeTicks">BaseItem.RunTimeTicks</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ProductionYear">BaseItem.ProductionYear</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IndexNumber">BaseItem.IndexNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ParentIndexNumber">BaseItem.ParentIndexNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_OfficialRatingForComparison">BaseItem.OfficialRatingForComparison</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_CustomRatingForComparison">BaseItem.CustomRatingForComparison</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetPlayAccess_MediaBrowser_Controller_Entities_User_">BaseItem.GetPlayAccess(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetMediaStreams">BaseItem.GetMediaStreams()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetMediaSources_System_Boolean_">BaseItem.GetMediaSources(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_LoadExtras_List_MediaBrowser_Model_IO_FileSystemMetadata__MediaBrowser_Controller_Providers_IDirectoryService_">BaseItem.LoadExtras(List&lt;FileSystemMetadata&gt;, IDirectoryService)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_RefreshMetadata_CancellationToken_">BaseItem.RefreshMetadata(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_TriggerOnRefreshStart">BaseItem.TriggerOnRefreshStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_TriggerOnRefreshComplete">BaseItem.TriggerOnRefreshComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_RefreshMetadata_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_">BaseItem.RefreshMetadata(MetadataRefreshOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SupportsOwnedItems">BaseItem.SupportsOwnedItems</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetFileSystemChildren_MediaBrowser_Controller_Providers_IDirectoryService_">BaseItem.GetFileSystemChildren(IDirectoryService)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ProviderIds">BaseItem.ProviderIds</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_LatestItemsIndexContainer">BaseItem.LatestItemsIndexContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetDefaultPrimaryImageAspectRatio">BaseItem.GetDefaultPrimaryImageAspectRatio()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_PresentationUniqueKey">BaseItem.PresentationUniqueKey</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetPresentationUniqueKey">BaseItem.GetPresentationUniqueKey()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_RequiresRefresh">BaseItem.RequiresRefresh()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_AfterMetadataRefresh">BaseItem.AfterMetadataRefresh()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetPreferredMetadataLanguage">BaseItem.GetPreferredMetadataLanguage()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetPreferredMetadataCountryCode">BaseItem.GetPreferredMetadataCountryCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsSaveLocalMetadataEnabled">BaseItem.IsSaveLocalMetadataEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsParentalAllowed_MediaBrowser_Controller_Entities_User_">BaseItem.IsParentalAllowed(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetParentalRatingValue">BaseItem.GetParentalRatingValue()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetInheritedParentalRatingValue">BaseItem.GetInheritedParentalRatingValue()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetInheritedTags">BaseItem.GetInheritedTags()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsAllowTagFilterEnforced">BaseItem.IsAllowTagFilterEnforced()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetBlockUnratedType">BaseItem.GetBlockUnratedType()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetBlockUnratedValue_MediaBrowser_Model_Users_UserPolicy_">BaseItem.GetBlockUnratedValue(UserPolicy)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsVisible_MediaBrowser_Controller_Entities_User_">BaseItem.IsVisible(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsVisibleStandalone_MediaBrowser_Controller_Entities_User_">BaseItem.IsVisibleStandalone(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsVisibleStandaloneInternal_MediaBrowser_Controller_Entities_User_System_Boolean_">BaseItem.IsVisibleStandaloneInternal(User, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsFolder">BaseItem.IsFolder</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsDisplayedAsFolder">BaseItem.IsDisplayedAsFolder</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetClientTypeName">BaseItem.GetClientTypeName()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetLinkedChild_MediaBrowser_Controller_Entities_LinkedChild_">BaseItem.GetLinkedChild(LinkedChild)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_EnableRememberingTrackSelections">BaseItem.EnableRememberingTrackSelections</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_AddStudio_System_String_">BaseItem.AddStudio(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SetStudios_IEnumerable_System_String__">BaseItem.SetStudios(IEnumerable&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_AddGenre_System_String_">BaseItem.AddGenre(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_MarkPlayed_MediaBrowser_Controller_Entities_User_System_Nullable_DateTime__System_Boolean_">BaseItem.MarkPlayed(User, Nullable&lt;DateTime&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_MarkUnplayed_MediaBrowser_Controller_Entities_User_">BaseItem.MarkUnplayed(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ChangedExternally">BaseItem.ChangedExternally()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_HasImage_MediaBrowser_Model_Entities_ImageType_System_Int32_">BaseItem.HasImage(ImageType, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SetImage_MediaBrowser_Controller_Entities_ItemImageInfo_System_Int32_">BaseItem.SetImage(ItemImageInfo, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SetImagePath_MediaBrowser_Model_Entities_ImageType_System_Int32_MediaBrowser_Model_IO_FileSystemMetadata_">BaseItem.SetImagePath(ImageType, Int32, FileSystemMetadata)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_DeleteImage_MediaBrowser_Model_Entities_ImageType_System_Int32_">BaseItem.DeleteImage(ImageType, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_RemoveImage_MediaBrowser_Controller_Entities_ItemImageInfo_">BaseItem.RemoveImage(ItemImageInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_RemoveImages_List_MediaBrowser_Controller_Entities_ItemImageInfo__">BaseItem.RemoveImages(List&lt;ItemImageInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ValidateImages_MediaBrowser_Controller_Providers_IDirectoryService_">BaseItem.ValidateImages(IDirectoryService)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetImagePath_MediaBrowser_Model_Entities_ImageType_System_Int32_">BaseItem.GetImagePath(ImageType, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetImageInfo_MediaBrowser_Model_Entities_ImageType_System_Int32_">BaseItem.GetImageInfo(ImageType, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetImages_MediaBrowser_Model_Entities_ImageType_">BaseItem.GetImages(ImageType)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_AddImages_MediaBrowser_Model_Entities_ImageType_List_MediaBrowser_Model_IO_FileSystemMetadata__">BaseItem.AddImages(ImageType, List&lt;FileSystemMetadata&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetLocalMetadataFilesToDelete">BaseItem.GetLocalMetadataFilesToDelete()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_AllowsMultipleImages_MediaBrowser_Model_Entities_ImageType_">BaseItem.AllowsMultipleImages(ImageType)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SwapImages_MediaBrowser_Model_Entities_ImageType_System_Int32_System_Int32_">BaseItem.SwapImages(ImageType, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsPlayed_MediaBrowser_Controller_Entities_User_">BaseItem.IsPlayed(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsFavoriteOrLiked_MediaBrowser_Controller_Entities_User_">BaseItem.IsFavoriteOrLiked(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsUnplayed_MediaBrowser_Controller_Entities_User_">BaseItem.IsUnplayed(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Providers_IHasLookupInfo_MediaBrowser_Controller_Providers_ItemLookupInfo__GetLookupInfo">BaseItem.IHasLookupInfo&lt;ItemLookupInfo&gt;.GetLookupInfo()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetItemLookupInfo__1">BaseItem.GetItemLookupInfo&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetNameForMetadataLookup">BaseItem.GetNameForMetadataLookup()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_BeforeMetadataRefresh_System_Boolean_">BaseItem.BeforeMetadataRefresh(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetMappedPath_MediaBrowser_Controller_Entities_BaseItem_System_String_System_Nullable_MediaBrowser_Model_MediaInfo_MediaProtocol__">BaseItem.GetMappedPath(BaseItem, String, Nullable&lt;MediaProtocol&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_FillUserDataDtoValues_MediaBrowser_Model_Dto_UserItemDataDto_MediaBrowser_Controller_Entities_UserItemData_MediaBrowser_Model_Dto_BaseItemDto_MediaBrowser_Controller_Entities_User_MediaBrowser_Controller_Dto_DtoOptions_">BaseItem.FillUserDataDtoValues(UserItemDataDto, UserItemData, BaseItemDto, User, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_RefreshMetadataForOwnedItem_MediaBrowser_Controller_Entities_BaseItem_System_Boolean_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_">BaseItem.RefreshMetadataForOwnedItem(BaseItem, Boolean, MetadataRefreshOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_RefreshMetadataForOwnedVideo_MediaBrowser_Controller_Providers_MetadataRefreshOptions_System_Boolean_System_String_CancellationToken_">BaseItem.RefreshMetadataForOwnedVideo(MetadataRefreshOptions, Boolean, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetEtag_MediaBrowser_Controller_Entities_User_">BaseItem.GetEtag(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetEtagValues_MediaBrowser_Controller_Entities_User_">BaseItem.GetEtagValues(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetAncestorIds">BaseItem.GetAncestorIds()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetTopParent">BaseItem.GetTopParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsTopParent">BaseItem.IsTopParent</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SupportsAncestors">BaseItem.SupportsAncestors</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_StopRefreshIfLocalMetadataFound">BaseItem.StopRefreshIfLocalMetadataFound</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetIdsForAncestorQuery">BaseItem.GetIdsForAncestorQuery()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetRelatedUrls">BaseItem.GetRelatedUrls()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetRefreshProgress">BaseItem.GetRefreshProgress()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_OnMetadataChanged">BaseItem.OnMetadataChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_UpdateRatingToItems_IList_MediaBrowser_Controller_Entities_BaseItem__">BaseItem.UpdateRatingToItems(IList&lt;BaseItem&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetThemeSongs">BaseItem.GetThemeSongs()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetThemeVideos">BaseItem.GetThemeVideos()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_RemoteTrailers">BaseItem.RemoteTrailers</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetExtras">BaseItem.GetExtras()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetExtras_IReadOnlyCollection_MediaBrowser_Model_Entities_ExtraType__">BaseItem.GetExtras(IReadOnlyCollection&lt;ExtraType&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetTrailers">BaseItem.GetTrailers()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetDisplayExtras">BaseItem.GetDisplayExtras()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsHD">BaseItem.IsHD</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsShortcut">BaseItem.IsShortcut</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ShortcutPath">BaseItem.ShortcutPath</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Width">BaseItem.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_Height">BaseItem.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ExtraIds">BaseItem.ExtraIds</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetRunTimeTicksForPlayState">BaseItem.GetRunTimeTicksForPlayState()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_DisplayExtraTypes">BaseItem.DisplayExtraTypes</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SupportsExternalTransfer">BaseItem.SupportsExternalTransfer</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Controller.Entities.html">MediaBrowser.Controller.Entities</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Controller.dll</h6>
+  <h5 id="MediaBrowser_Controller_Entities_Video_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Video : BaseItem, IHasProviderIds, IHasLookupInfo&lt;ItemLookupInfo&gt;, IHasAspectRatio, ISupportsPlaceHolders, IHasMediaSources</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video__ctor.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L165">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video__ctor_" data-uid="MediaBrowser.Controller.Entities.Video.#ctor*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video__ctor" data-uid="MediaBrowser.Controller.Entities.Video.#ctor">Video()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Video()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_AdditionalParts.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.AdditionalParts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L31">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_AdditionalParts_" data-uid="MediaBrowser.Controller.Entities.Video.AdditionalParts*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_AdditionalParts" data-uid="MediaBrowser.Controller.Entities.Video.AdditionalParts">AdditionalParts</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] AdditionalParts { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_AspectRatio.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.AspectRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L163">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_AspectRatio_" data-uid="MediaBrowser.Controller.Entities.Video.AspectRatio*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_AspectRatio" data-uid="MediaBrowser.Controller.Entities.Video.AspectRatio">AspectRatio</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the aspect ratio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AspectRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The aspect ratio.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_ContainingFolderPath.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.ContainingFolderPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L341">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_ContainingFolderPath_" data-uid="MediaBrowser.Controller.Entities.Video.ContainingFolderPath*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_ContainingFolderPath" data-uid="MediaBrowser.Controller.Entities.Video.ContainingFolderPath">ContainingFolderPath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ContainingFolderPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_ContainingFolderPath">BaseItem.ContainingFolderPath</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_DefaultVideoStreamIndex.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.DefaultVideoStreamIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L120">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_DefaultVideoStreamIndex_" data-uid="MediaBrowser.Controller.Entities.Video.DefaultVideoStreamIndex*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_DefaultVideoStreamIndex" data-uid="MediaBrowser.Controller.Entities.Video.DefaultVideoStreamIndex">DefaultVideoStreamIndex</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the default index of the video stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? DefaultVideoStreamIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The default index of the video stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_EnableDefaultVideoUserDataKeys.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.EnableDefaultVideoUserDataKeys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L264">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_EnableDefaultVideoUserDataKeys_" data-uid="MediaBrowser.Controller.Entities.Video.EnableDefaultVideoUserDataKeys*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_EnableDefaultVideoUserDataKeys" data-uid="MediaBrowser.Controller.Entities.Video.EnableDefaultVideoUserDataKeys">EnableDefaultVideoUserDataKeys</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool EnableDefaultVideoUserDataKeys { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_FileNameWithoutExtension.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.FileNameWithoutExtension%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L363">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_FileNameWithoutExtension_" data-uid="MediaBrowser.Controller.Entities.Video.FileNameWithoutExtension*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_FileNameWithoutExtension" data-uid="MediaBrowser.Controller.Entities.Video.FileNameWithoutExtension">FileNameWithoutExtension</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string FileNameWithoutExtension { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_FileNameWithoutExtension">BaseItem.FileNameWithoutExtension</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_HasLocalAlternateVersions.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.HasLocalAlternateVersions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L206">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_HasLocalAlternateVersions_" data-uid="MediaBrowser.Controller.Entities.Video.HasLocalAlternateVersions*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_HasLocalAlternateVersions" data-uid="MediaBrowser.Controller.Entities.Video.HasLocalAlternateVersions">HasLocalAlternateVersions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasLocalAlternateVersions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_HasLocalAlternateVersions">BaseItem.HasLocalAlternateVersions</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_HasSubtitles.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.HasSubtitles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L112">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_HasSubtitles_" data-uid="MediaBrowser.Controller.Entities.Video.HasSubtitles*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_HasSubtitles" data-uid="MediaBrowser.Controller.Entities.Video.HasSubtitles">HasSubtitles</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance has subtitles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSubtitles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance has subtitles; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_Is3D.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.Is3D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L435">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_Is3D_" data-uid="MediaBrowser.Controller.Entities.Video.Is3D*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_Is3D" data-uid="MediaBrowser.Controller.Entities.Video.Is3D">Is3D</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether [is3 D].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Is3D { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [is3 D]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_IsCompleteMedia.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.IsCompleteMedia%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L250">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_IsCompleteMedia_" data-uid="MediaBrowser.Controller.Entities.Video.IsCompleteMedia*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_IsCompleteMedia" data-uid="MediaBrowser.Controller.Entities.Video.IsCompleteMedia">IsCompleteMedia</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCompleteMedia { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_IsoType.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.IsoType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L132">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_IsoType_" data-uid="MediaBrowser.Controller.Entities.Video.IsoType*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_IsoType" data-uid="MediaBrowser.Controller.Entities.Video.IsoType">IsoType</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the type of the iso.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IsoType? IsoType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.IsoType.html">IsoType</a>&gt;</td>
+        <td><p>The type of the iso.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_IsPlaceHolder.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.IsPlaceHolder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L114">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_IsPlaceHolder_" data-uid="MediaBrowser.Controller.Entities.Video.IsPlaceHolder*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_IsPlaceHolder" data-uid="MediaBrowser.Controller.Entities.Video.IsPlaceHolder">IsPlaceHolder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlaceHolder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_IsStacked.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.IsStacked%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L203">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_IsStacked_" data-uid="MediaBrowser.Controller.Entities.Video.IsStacked*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_IsStacked" data-uid="MediaBrowser.Controller.Entities.Video.IsStacked">IsStacked</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStacked { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_LinkedAlternateVersions.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.LinkedAlternateVersions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L33">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_LinkedAlternateVersions_" data-uid="MediaBrowser.Controller.Entities.Video.LinkedAlternateVersions*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_LinkedAlternateVersions" data-uid="MediaBrowser.Controller.Entities.Video.LinkedAlternateVersions">LinkedAlternateVersions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinkedChild[] LinkedAlternateVersions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.LinkedChild.html">LinkedChild</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_LiveTvManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.LiveTvManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L219">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_LiveTvManager_" data-uid="MediaBrowser.Controller.Entities.Video.LiveTvManager*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_LiveTvManager" data-uid="MediaBrowser.Controller.Entities.Video.LiveTvManager">LiveTvManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ILiveTvManager LiveTvManager { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.ILiveTvManager.html">ILiveTvManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_LocalAlternateVersions.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.LocalAlternateVersions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L32">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_LocalAlternateVersions_" data-uid="MediaBrowser.Controller.Entities.Video.LocalAlternateVersions*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_LocalAlternateVersions" data-uid="MediaBrowser.Controller.Entities.Video.LocalAlternateVersions">LocalAlternateVersions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] LocalAlternateVersions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_MediaSourceCount.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.MediaSourceCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L186">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_MediaSourceCount_" data-uid="MediaBrowser.Controller.Entities.Video.MediaSourceCount*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_MediaSourceCount" data-uid="MediaBrowser.Controller.Entities.Video.MediaSourceCount">MediaSourceCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MediaSourceCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_MediaType.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.MediaType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L442">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_MediaType_" data-uid="MediaBrowser.Controller.Entities.Video.MediaType*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_MediaType" data-uid="MediaBrowser.Controller.Entities.Video.MediaType">MediaType</h4>
+  <div class="markdown level1 summary"><p>Gets the type of the media.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string MediaType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The type of the media.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_MediaType">BaseItem.MediaType</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_PrimaryVersionId.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.PrimaryVersionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L28">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_PrimaryVersionId_" data-uid="MediaBrowser.Controller.Entities.Video.PrimaryVersionId*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_PrimaryVersionId" data-uid="MediaBrowser.Controller.Entities.Video.PrimaryVersionId">PrimaryVersionId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PrimaryVersionId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_SourceType.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.SourceType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L221">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_SourceType_" data-uid="MediaBrowser.Controller.Entities.Video.SourceType*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_SourceType" data-uid="MediaBrowser.Controller.Entities.Video.SourceType">SourceType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SourceType SourceType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.SourceType.html">SourceType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SourceType">BaseItem.SourceType</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_SubtitleFiles.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.SubtitleFiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L106">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_SubtitleFiles_" data-uid="MediaBrowser.Controller.Entities.Video.SubtitleFiles*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_SubtitleFiles" data-uid="MediaBrowser.Controller.Entities.Video.SubtitleFiles">SubtitleFiles</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the subtitle paths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] SubtitleFiles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>The subtitle paths.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_SupportsAddingToPlaylist.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.SupportsAddingToPlaylist%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L183">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_SupportsAddingToPlaylist_" data-uid="MediaBrowser.Controller.Entities.Video.SupportsAddingToPlaylist*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_SupportsAddingToPlaylist" data-uid="MediaBrowser.Controller.Entities.Video.SupportsAddingToPlaylist">SupportsAddingToPlaylist</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SupportsAddingToPlaylist { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SupportsAddingToPlaylist">BaseItem.SupportsAddingToPlaylist</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_SupportsInheritedParentImages.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.SupportsInheritedParentImages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L41">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_SupportsInheritedParentImages_" data-uid="MediaBrowser.Controller.Entities.Video.SupportsInheritedParentImages*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_SupportsInheritedParentImages" data-uid="MediaBrowser.Controller.Entities.Video.SupportsInheritedParentImages">SupportsInheritedParentImages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SupportsInheritedParentImages { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SupportsInheritedParentImages">BaseItem.SupportsInheritedParentImages</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_SupportsPeople.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.SupportsPeople%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L38">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_SupportsPeople_" data-uid="MediaBrowser.Controller.Entities.Video.SupportsPeople*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_SupportsPeople" data-uid="MediaBrowser.Controller.Entities.Video.SupportsPeople">SupportsPeople</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SupportsPeople { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SupportsPeople">BaseItem.SupportsPeople</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_SupportsPlayedStatus.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.SupportsPlayedStatus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L35">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_SupportsPlayedStatus_" data-uid="MediaBrowser.Controller.Entities.Video.SupportsPlayedStatus*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_SupportsPlayedStatus" data-uid="MediaBrowser.Controller.Entities.Video.SupportsPlayedStatus">SupportsPlayedStatus</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SupportsPlayedStatus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SupportsPlayedStatus">BaseItem.SupportsPlayedStatus</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_SupportsPositionTicksResume.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.SupportsPositionTicksResume%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L44">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_SupportsPositionTicksResume_" data-uid="MediaBrowser.Controller.Entities.Video.SupportsPositionTicksResume*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_SupportsPositionTicksResume" data-uid="MediaBrowser.Controller.Entities.Video.SupportsPositionTicksResume">SupportsPositionTicksResume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SupportsPositionTicksResume { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SupportsPositionTicksResume">BaseItem.SupportsPositionTicksResume</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_SupportsThemeMedia.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.SupportsThemeMedia%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L93">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_SupportsThemeMedia_" data-uid="MediaBrowser.Controller.Entities.Video.SupportsThemeMedia*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_SupportsThemeMedia" data-uid="MediaBrowser.Controller.Entities.Video.SupportsThemeMedia">SupportsThemeMedia</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SupportsThemeMedia { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_SupportsThemeMedia">BaseItem.SupportsThemeMedia</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_Timestamp.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.Timestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L100">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_Timestamp_" data-uid="MediaBrowser.Controller.Entities.Video.Timestamp*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_Timestamp" data-uid="MediaBrowser.Controller.Entities.Video.Timestamp">Timestamp</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the timestamp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransportStreamTimestamp? Timestamp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="MediaBrowser.Model.MediaInfo.TransportStreamTimestamp.html">TransportStreamTimestamp</a>&gt;</td>
+        <td><p>The timestamp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_Video3DFormat.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.Video3DFormat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L138">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_Video3DFormat_" data-uid="MediaBrowser.Controller.Entities.Video.Video3DFormat*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_Video3DFormat" data-uid="MediaBrowser.Controller.Entities.Video.Video3DFormat">Video3DFormat</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the video3 D format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Video3DFormat? Video3DFormat { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.Video3DFormat.html">Video3DFormat</a>&gt;</td>
+        <td><p>The video3 D format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_VideoType.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.VideoType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L126">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_VideoType_" data-uid="MediaBrowser.Controller.Entities.Video.VideoType*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_VideoType" data-uid="MediaBrowser.Controller.Entities.Video.VideoType">VideoType</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the type of the video.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VideoType VideoType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.VideoType.html">VideoType</a></td>
+        <td><p>The type of the video.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_CanDelete.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.CanDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L240">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_CanDelete_" data-uid="MediaBrowser.Controller.Entities.Video.CanDelete*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_CanDelete" data-uid="MediaBrowser.Controller.Entities.Video.CanDelete">CanDelete()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanDelete()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_CanDelete">BaseItem.CanDelete()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_CanDownload.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.CanDownload%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L173">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_CanDownload_" data-uid="MediaBrowser.Controller.Entities.Video.CanDownload*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_CanDownload" data-uid="MediaBrowser.Controller.Entities.Video.CanDownload">CanDownload()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanDownload()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_CanDownload">BaseItem.CanDownload()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_CreatePresentationUniqueKey.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.CreatePresentationUniqueKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L83">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_CreatePresentationUniqueKey_" data-uid="MediaBrowser.Controller.Entities.Video.CreatePresentationUniqueKey*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_CreatePresentationUniqueKey" data-uid="MediaBrowser.Controller.Entities.Video.CreatePresentationUniqueKey">CreatePresentationUniqueKey()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string CreatePresentationUniqueKey()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_CreatePresentationUniqueKey">BaseItem.CreatePresentationUniqueKey()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_GetAdditionalPartIds.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.GetAdditionalPartIds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L209">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_GetAdditionalPartIds_" data-uid="MediaBrowser.Controller.Entities.Video.GetAdditionalPartIds*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_GetAdditionalPartIds" data-uid="MediaBrowser.Controller.Entities.Video.GetAdditionalPartIds">GetAdditionalPartIds()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Guid&gt; GetAdditionalPartIds()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_GetAdditionalParts.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.GetAdditionalParts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L332">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_GetAdditionalParts_" data-uid="MediaBrowser.Controller.Entities.Video.GetAdditionalParts*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_GetAdditionalParts" data-uid="MediaBrowser.Controller.Entities.Video.GetAdditionalParts">GetAdditionalParts()</h4>
+  <div class="markdown level1 summary"><p>Gets the additional parts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IOrderedEnumerable&lt;Video&gt; GetAdditionalParts()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IOrderedEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.Video.html">Video</a>&gt;</td>
+        <td><p>IEnumerable{Video}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_GetAllItemsForMediaSources.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.GetAllItemsForMediaSources%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L542">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_GetAllItemsForMediaSources_" data-uid="MediaBrowser.Controller.Entities.Video.GetAllItemsForMediaSources*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_GetAllItemsForMediaSources" data-uid="MediaBrowser.Controller.Entities.Video.GetAllItemsForMediaSources">GetAllItemsForMediaSources()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override List&lt;Tuple&lt;BaseItem, MediaSourceType&gt;&gt; GetAllItemsForMediaSources()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Tuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.MediaSourceType.html">MediaSourceType</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetAllItemsForMediaSources">BaseItem.GetAllItemsForMediaSources()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_GetDefaultVideoStream.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.GetDefaultVideoStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L527">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_GetDefaultVideoStream_" data-uid="MediaBrowser.Controller.Entities.Video.GetDefaultVideoStream*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_GetDefaultVideoStream" data-uid="MediaBrowser.Controller.Entities.Video.GetDefaultVideoStream">GetDefaultVideoStream()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual MediaStream GetDefaultVideoStream()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.MediaStream.html">MediaStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_GetDeletePaths.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.GetDeletePaths%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L511">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_GetDeletePaths_" data-uid="MediaBrowser.Controller.Entities.Video.GetDeletePaths*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_GetDeletePaths" data-uid="MediaBrowser.Controller.Entities.Video.GetDeletePaths">GetDeletePaths()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;FileSystemMetadata&gt; GetDeletePaths()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetDeletePaths">BaseItem.GetDeletePaths()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_GetLinkedAlternateVersions.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.GetLinkedAlternateVersions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L319">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_GetLinkedAlternateVersions_" data-uid="MediaBrowser.Controller.Entities.Video.GetLinkedAlternateVersions*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_GetLinkedAlternateVersions" data-uid="MediaBrowser.Controller.Entities.Video.GetLinkedAlternateVersions">GetLinkedAlternateVersions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Video&gt; GetLinkedAlternateVersions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.Video.html">Video</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_GetLocalAlternateVersionIds.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.GetLocalAlternateVersionIds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L214">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_GetLocalAlternateVersionIds_" data-uid="MediaBrowser.Controller.Entities.Video.GetLocalAlternateVersionIds*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_GetLocalAlternateVersionIds" data-uid="MediaBrowser.Controller.Entities.Video.GetLocalAlternateVersionIds">GetLocalAlternateVersionIds()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Guid&gt; GetLocalAlternateVersionIds()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_GetPlayableStreamFileNames_MediaBrowser_Controller_MediaEncoding_IMediaEncoder_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.GetPlayableStreamFileNames(MediaBrowser.Controller.MediaEncoding.IMediaEncoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L140">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_GetPlayableStreamFileNames_" data-uid="MediaBrowser.Controller.Entities.Video.GetPlayableStreamFileNames*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_GetPlayableStreamFileNames_MediaBrowser_Controller_MediaEncoding_IMediaEncoder_" data-uid="MediaBrowser.Controller.Entities.Video.GetPlayableStreamFileNames(MediaBrowser.Controller.MediaEncoding.IMediaEncoder)">GetPlayableStreamFileNames(IMediaEncoder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] GetPlayableStreamFileNames(IMediaEncoder mediaEncoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.html">IMediaEncoder</a></td>
+        <td><span class="parametername">mediaEncoder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_GetUserDataKeys.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.GetUserDataKeys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L267">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_GetUserDataKeys_" data-uid="MediaBrowser.Controller.Entities.Video.GetUserDataKeys*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_GetUserDataKeys" data-uid="MediaBrowser.Controller.Entities.Video.GetUserDataKeys">GetUserDataKeys()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override List&lt;string&gt; GetUserDataKeys()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_GetUserDataKeys">BaseItem.GetUserDataKeys()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_IsActiveRecording.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.IsActiveRecording%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L235">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_IsActiveRecording_" data-uid="MediaBrowser.Controller.Entities.Video.IsActiveRecording*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_IsActiveRecording" data-uid="MediaBrowser.Controller.Entities.Video.IsActiveRecording">IsActiveRecording()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsActiveRecording()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_IsActiveRecording">BaseItem.IsActiveRecording()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_QueryPlayableStreamFiles_System_String_MediaBrowser_Model_Entities_VideoType_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.QueryPlayableStreamFiles(System.String%2CMediaBrowser.Model.Entities.VideoType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L408">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_QueryPlayableStreamFiles_" data-uid="MediaBrowser.Controller.Entities.Video.QueryPlayableStreamFiles*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_QueryPlayableStreamFiles_System_String_MediaBrowser_Model_Entities_VideoType_" data-uid="MediaBrowser.Controller.Entities.Video.QueryPlayableStreamFiles(System.String,MediaBrowser.Model.Entities.VideoType)">QueryPlayableStreamFiles(String, VideoType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] QueryPlayableStreamFiles(string rootPath, VideoType videoType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">rootPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.VideoType.html">VideoType</a></td>
+        <td><span class="parametername">videoType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_RefreshedOwnedItems_MediaBrowser_Controller_Providers_MetadataRefreshOptions_List_MediaBrowser_Model_IO_FileSystemMetadata__CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.RefreshedOwnedItems(MediaBrowser.Controller.Providers.MetadataRefreshOptions%2CList%7BMediaBrowser.Model.IO.FileSystemMetadata%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L445">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_RefreshedOwnedItems_" data-uid="MediaBrowser.Controller.Entities.Video.RefreshedOwnedItems*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_RefreshedOwnedItems_MediaBrowser_Controller_Providers_MetadataRefreshOptions_List_MediaBrowser_Model_IO_FileSystemMetadata__CancellationToken_" data-uid="MediaBrowser.Controller.Entities.Video.RefreshedOwnedItems(MediaBrowser.Controller.Providers.MetadataRefreshOptions,List{MediaBrowser.Model.IO.FileSystemMetadata},CancellationToken)">RefreshedOwnedItems(MetadataRefreshOptions, List&lt;FileSystemMetadata&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task&lt;bool&gt; RefreshedOwnedItems(MetadataRefreshOptions options, List&lt;FileSystemMetadata&gt; fileSystemChildren, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a>&gt;</td>
+        <td><span class="parametername">fileSystemChildren</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_RefreshedOwnedItems_MediaBrowser_Controller_Providers_MetadataRefreshOptions_List_MediaBrowser_Model_IO_FileSystemMetadata__CancellationToken_">BaseItem.RefreshedOwnedItems(MetadataRefreshOptions, List&lt;FileSystemMetadata&gt;, CancellationToken)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_SetPrimaryVersionId_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.SetPrimaryVersionId(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L69">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_SetPrimaryVersionId_" data-uid="MediaBrowser.Controller.Entities.Video.SetPrimaryVersionId*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_SetPrimaryVersionId_System_String_" data-uid="MediaBrowser.Controller.Entities.Video.SetPrimaryVersionId(System.String)">SetPrimaryVersionId(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPrimaryVersionId(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video_UpdateToRepository_MediaBrowser_Controller_Library_ItemUpdateType_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video.UpdateToRepository(MediaBrowser.Controller.Library.ItemUpdateType%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L488">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Entities_Video_UpdateToRepository_" data-uid="MediaBrowser.Controller.Entities.Video.UpdateToRepository*"></a>
+  <h4 id="MediaBrowser_Controller_Entities_Video_UpdateToRepository_MediaBrowser_Controller_Library_ItemUpdateType_CancellationToken_" data-uid="MediaBrowser.Controller.Entities.Video.UpdateToRepository(MediaBrowser.Controller.Library.ItemUpdateType,CancellationToken)">UpdateToRepository(ItemUpdateType, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateToRepository(ItemUpdateType updateReason, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a></td>
+        <td><span class="parametername">updateReason</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html#MediaBrowser_Controller_Entities_BaseItem_UpdateToRepository_MediaBrowser_Controller_Library_ItemUpdateType_CancellationToken_">BaseItem.UpdateToRepository(ItemUpdateType, CancellationToken)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Entities.IHasProviderIds.html">IHasProviderIds</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IHasLookupInfo-1.html">IHasLookupInfo&lt;TLookupInfoType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.IHasAspectRatio.html">IHasAspectRatio</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.ISupportsPlaceHolders.html">ISupportsPlaceHolders</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.IHasMediaSources.html">IHasMediaSources</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItemExtensions.html#MediaBrowser_Controller_Entities_BaseItemExtensions_GetImagePath_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Entities_ImageType_">BaseItemExtensions.GetImagePath(BaseItem, ImageType)</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItemExtensions.html#MediaBrowser_Controller_Entities_BaseItemExtensions_HasImage_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Entities_ImageType_">BaseItemExtensions.HasImage(BaseItem, ImageType)</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItemExtensions.html#MediaBrowser_Controller_Entities_BaseItemExtensions_SetImagePath_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Entities_ImageType_MediaBrowser_Model_IO_FileSystemMetadata_">BaseItemExtensions.SetImagePath(BaseItem, ImageType, FileSystemMetadata)</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItemExtensions.html#MediaBrowser_Controller_Entities_BaseItemExtensions_SetImagePath_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Entities_ImageType_System_String_">BaseItemExtensions.SetImagePath(BaseItem, ImageType, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItemExtensions.html#MediaBrowser_Controller_Entities_BaseItemExtensions_DeepCopy__2___0___1_">BaseItemExtensions.DeepCopy&lt;T, TU&gt;(T, TU)</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.BaseItemExtensions.html#MediaBrowser_Controller_Entities_BaseItemExtensions_DeepCopy__2___0_">BaseItemExtensions.DeepCopy&lt;T, TU&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.Extensions.html#MediaBrowser_Controller_Entities_Extensions_AddTrailerUrl_MediaBrowser_Controller_Entities_BaseItem_System_String_">Extensions.AddTrailerUrl(BaseItem, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Entities.TagExtensions.html#MediaBrowser_Controller_Entities_TagExtensions_AddTag_MediaBrowser_Controller_Entities_BaseItem_System_String_">TagExtensions.AddTag(BaseItem, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Entities_Video.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Entities.Video%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Entities/Video.cs/#L23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

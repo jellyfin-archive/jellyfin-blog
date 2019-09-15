@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ZipClient
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ZipClient
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.Archiving.ZipClient">
+  
+  
+  <h1 id="Emby_Server_Implementations_Archiving_ZipClient" data-uid="Emby.Server.Implementations.Archiving.ZipClient" class="text-break">Class ZipClient
+  </h1>
+  <div class="markdown level0 summary"><p>Class DotNetZipClient</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ZipClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Model.IO.IZipClient.html">IZipClient</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.Archiving.html">Emby.Server.Implementations.Archiving</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_Archiving_ZipClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ZipClient : object, IZipClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Archiving_ZipClient__ctor.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Archiving.ZipClient.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Archiving/ZipClient.cs/#L17">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Archiving_ZipClient__ctor_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_Archiving_ZipClient__ctor" data-uid="Emby.Server.Implementations.Archiving.ZipClient.#ctor">ZipClient()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZipClient()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Archiving_ZipClient_ExtractAll_Stream_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Archiving.ZipClient.ExtractAll(Stream%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Archiving/ZipClient.cs/#L42">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAll_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAll*"></a>
+  <h4 id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAll_Stream_System_String_System_Boolean_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAll(Stream,System.String,System.Boolean)">ExtractAll(Stream, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Extracts all.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExtractAll(Stream source, string targetPath, bool overwriteExistingFiles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetPath</span></td>
+        <td><p>The target path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwriteExistingFiles</span></td>
+        <td><p>if set to <code>true</code> [overwrite existing files].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Archiving_ZipClient_ExtractAll_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Archiving.ZipClient.ExtractAll(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Archiving/ZipClient.cs/#L28">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAll_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAll*"></a>
+  <h4 id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAll_System_String_System_String_System_Boolean_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAll(System.String,System.String,System.Boolean)">ExtractAll(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Extracts all.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExtractAll(string sourceFile, string targetPath, bool overwriteExistingFiles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFile</span></td>
+        <td><p>The source file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetPath</span></td>
+        <td><p>The target path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwriteExistingFiles</span></td>
+        <td><p>if set to <code>true</code> [overwrite existing files].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFrom7z_Stream_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFrom7z(Stream%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Archiving/ZipClient.cs/#L128">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFrom7z_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFrom7z*"></a>
+  <h4 id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFrom7z_Stream_System_String_System_Boolean_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFrom7z(Stream,System.String,System.Boolean)">ExtractAllFrom7z(Stream, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Extracts all from7z.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExtractAllFrom7z(Stream source, string targetPath, bool overwriteExistingFiles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetPath</span></td>
+        <td><p>The target path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwriteExistingFiles</span></td>
+        <td><p>if set to <code>true</code> [overwrite existing files].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFrom7z_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFrom7z(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Archiving/ZipClient.cs/#L114">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFrom7z_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFrom7z*"></a>
+  <h4 id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFrom7z_System_String_System_String_System_Boolean_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFrom7z(System.String,System.String,System.Boolean)">ExtractAllFrom7z(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Extracts all from7z.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExtractAllFrom7z(string sourceFile, string targetPath, bool overwriteExistingFiles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFile</span></td>
+        <td><p>The source file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetPath</span></td>
+        <td><p>The target path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwriteExistingFiles</span></td>
+        <td><p>if set to <code>true</code> [overwrite existing files].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFromGz_Stream_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFromGz(Stream%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Archiving/ZipClient.cs/#L74">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFromGz_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFromGz*"></a>
+  <h4 id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFromGz_Stream_System_String_System_Boolean_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFromGz(Stream,System.String,System.Boolean)">ExtractAllFromGz(Stream, String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExtractAllFromGz(Stream source, string targetPath, bool overwriteExistingFiles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwriteExistingFiles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFromTar_Stream_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFromTar(Stream%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Archiving/ZipClient.cs/#L168">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFromTar_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFromTar*"></a>
+  <h4 id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFromTar_Stream_System_String_System_Boolean_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFromTar(Stream,System.String,System.Boolean)">ExtractAllFromTar(Stream, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Extracts all from tar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExtractAllFromTar(Stream source, string targetPath, bool overwriteExistingFiles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetPath</span></td>
+        <td><p>The target path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwriteExistingFiles</span></td>
+        <td><p>if set to <code>true</code> [overwrite existing files].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFromTar_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFromTar(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Archiving/ZipClient.cs/#L154">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFromTar_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFromTar*"></a>
+  <h4 id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFromTar_System_String_System_String_System_Boolean_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFromTar(System.String,System.String,System.Boolean)">ExtractAllFromTar(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Extracts all from tar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExtractAllFromTar(string sourceFile, string targetPath, bool overwriteExistingFiles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFile</span></td>
+        <td><p>The source file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetPath</span></td>
+        <td><p>The target path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwriteExistingFiles</span></td>
+        <td><p>if set to <code>true</code> [overwrite existing files].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFromZip_Stream_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFromZip(Stream%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Archiving/ZipClient.cs/#L58">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFromZip_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFromZip*"></a>
+  <h4 id="Emby_Server_Implementations_Archiving_ZipClient_ExtractAllFromZip_Stream_System_String_System_Boolean_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractAllFromZip(Stream,System.String,System.Boolean)">ExtractAllFromZip(Stream, String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExtractAllFromZip(Stream source, string targetPath, bool overwriteExistingFiles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwriteExistingFiles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Archiving_ZipClient_ExtractFirstFileFromGz_Stream_System_String_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Archiving.ZipClient.ExtractFirstFileFromGz(Stream%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Archiving/ZipClient.cs/#L90">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Archiving_ZipClient_ExtractFirstFileFromGz_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractFirstFileFromGz*"></a>
+  <h4 id="Emby_Server_Implementations_Archiving_ZipClient_ExtractFirstFileFromGz_Stream_System_String_System_String_" data-uid="Emby.Server.Implementations.Archiving.ZipClient.ExtractFirstFileFromGz(Stream,System.String,System.String)">ExtractFirstFileFromGz(Stream, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExtractFirstFileFromGz(Stream source, string targetPath, string defaultFileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">defaultFileName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.IO.IZipClient.html">IZipClient</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Archiving_ZipClient.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Archiving.ZipClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Archiving/ZipClient.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,912 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SystemInfo
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SystemInfo
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Model.System.SystemInfo">
+  
+  
+  <h1 id="MediaBrowser_Model_System_SystemInfo" data-uid="MediaBrowser.Model.System.SystemInfo" class="text-break">Class SystemInfo
+  </h1>
+  <div class="markdown level0 summary"><p>Class SystemInfo</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MediaBrowser.Model.System.PublicSystemInfo.html">PublicSystemInfo</a></div>
+    <div class="level2"><span class="xref">SystemInfo</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.System.PublicSystemInfo.html#MediaBrowser_Model_System_PublicSystemInfo_LocalAddress">PublicSystemInfo.LocalAddress</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.System.PublicSystemInfo.html#MediaBrowser_Model_System_PublicSystemInfo_WanAddress">PublicSystemInfo.WanAddress</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.System.PublicSystemInfo.html#MediaBrowser_Model_System_PublicSystemInfo_ServerName">PublicSystemInfo.ServerName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.System.PublicSystemInfo.html#MediaBrowser_Model_System_PublicSystemInfo_Version">PublicSystemInfo.Version</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.System.PublicSystemInfo.html#MediaBrowser_Model_System_PublicSystemInfo_ProductName">PublicSystemInfo.ProductName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.System.PublicSystemInfo.html#MediaBrowser_Model_System_PublicSystemInfo_OperatingSystem">PublicSystemInfo.OperatingSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.System.PublicSystemInfo.html#MediaBrowser_Model_System_PublicSystemInfo_Id">PublicSystemInfo.Id</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Model.System.html">MediaBrowser.Model.System</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Model.dll</h6>
+  <h5 id="MediaBrowser_Model_System_SystemInfo_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SystemInfo : PublicSystemInfo</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo__ctor.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L149">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo__ctor_" data-uid="MediaBrowser.Model.System.SystemInfo.#ctor*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo__ctor" data-uid="MediaBrowser.Model.System.SystemInfo.#ctor">SystemInfo()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MediaBrowser.Model.System.SystemInfo.html">SystemInfo</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SystemInfo()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_CachePath.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.CachePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L98">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_CachePath_" data-uid="MediaBrowser.Model.System.SystemInfo.CachePath*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_CachePath" data-uid="MediaBrowser.Model.System.SystemInfo.CachePath">CachePath</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the cache path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CachePath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The cache path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_CanLaunchWebBrowser.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.CanLaunchWebBrowser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L74">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_CanLaunchWebBrowser_" data-uid="MediaBrowser.Model.System.SystemInfo.CanLaunchWebBrowser*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_CanLaunchWebBrowser" data-uid="MediaBrowser.Model.System.SystemInfo.CanLaunchWebBrowser">CanLaunchWebBrowser</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanLaunchWebBrowser { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_CanSelfRestart.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.CanSelfRestart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L72">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_CanSelfRestart_" data-uid="MediaBrowser.Model.System.SystemInfo.CanSelfRestart*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_CanSelfRestart" data-uid="MediaBrowser.Model.System.SystemInfo.CanSelfRestart">CanSelfRestart</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance can self restart.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSelfRestart { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance can self restart; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_CompletedInstallations.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.CompletedInstallations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L66">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_CompletedInstallations_" data-uid="MediaBrowser.Model.System.SystemInfo.CompletedInstallations*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_CompletedInstallations" data-uid="MediaBrowser.Model.System.SystemInfo.CompletedInstallations">CompletedInstallations</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the completed installations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InstallationInfo[] CompletedInstallations { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Updates.InstallationInfo.html">InstallationInfo</a>[]</td>
+        <td><p>The completed installations.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_EncoderLocation.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.EncoderLocation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L142">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_EncoderLocation_" data-uid="MediaBrowser.Model.System.SystemInfo.EncoderLocation*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_EncoderLocation" data-uid="MediaBrowser.Model.System.SystemInfo.EncoderLocation">EncoderLocation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FFmpegLocation EncoderLocation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.System.FFmpegLocation.html">FFmpegLocation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_HasPendingRestart.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.HasPendingRestart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L46">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_HasPendingRestart_" data-uid="MediaBrowser.Model.System.SystemInfo.HasPendingRestart*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_HasPendingRestart" data-uid="MediaBrowser.Model.System.SystemInfo.HasPendingRestart">HasPendingRestart</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance has pending restart.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPendingRestart { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance has pending restart; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_HasUpdateAvailable.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.HasUpdateAvailable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L140">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_HasUpdateAvailable_" data-uid="MediaBrowser.Model.System.SystemInfo.HasUpdateAvailable*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_HasUpdateAvailable" data-uid="MediaBrowser.Model.System.SystemInfo.HasUpdateAvailable">HasUpdateAvailable</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance has update available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasUpdateAvailable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance has update available; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_HttpServerPortNumber.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.HttpServerPortNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L122">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_HttpServerPortNumber_" data-uid="MediaBrowser.Model.System.SystemInfo.HttpServerPortNumber*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_HttpServerPortNumber" data-uid="MediaBrowser.Model.System.SystemInfo.HttpServerPortNumber">HttpServerPortNumber</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the HTTP server port number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HttpServerPortNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The HTTP server port number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_HttpsPortNumber.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.HttpsPortNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L134">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_HttpsPortNumber_" data-uid="MediaBrowser.Model.System.SystemInfo.HttpsPortNumber*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_HttpsPortNumber" data-uid="MediaBrowser.Model.System.SystemInfo.HttpsPortNumber">HttpsPortNumber</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the HTTPS server port number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HttpsPortNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The HTTPS server port number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_InternalMetadataPath.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.InternalMetadataPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L110">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_InternalMetadataPath_" data-uid="MediaBrowser.Model.System.SystemInfo.InternalMetadataPath*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_InternalMetadataPath" data-uid="MediaBrowser.Model.System.SystemInfo.InternalMetadataPath">InternalMetadataPath</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the internal metadata path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string InternalMetadataPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The internal metadata path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_IsShuttingDown.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.IsShuttingDown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L48">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_IsShuttingDown_" data-uid="MediaBrowser.Model.System.SystemInfo.IsShuttingDown*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_IsShuttingDown" data-uid="MediaBrowser.Model.System.SystemInfo.IsShuttingDown">IsShuttingDown</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsShuttingDown { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_ItemsByNamePath.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.ItemsByNamePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L92">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_ItemsByNamePath_" data-uid="MediaBrowser.Model.System.SystemInfo.ItemsByNamePath*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_ItemsByNamePath" data-uid="MediaBrowser.Model.System.SystemInfo.ItemsByNamePath">ItemsByNamePath</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the items by name path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ItemsByNamePath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The items by name path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_LogPath.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.LogPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L104">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_LogPath_" data-uid="MediaBrowser.Model.System.SystemInfo.LogPath*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_LogPath" data-uid="MediaBrowser.Model.System.SystemInfo.LogPath">LogPath</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the log path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LogPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The log path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_OperatingSystemDisplayName.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.OperatingSystemDisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L33">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_OperatingSystemDisplayName_" data-uid="MediaBrowser.Model.System.SystemInfo.OperatingSystemDisplayName*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_OperatingSystemDisplayName" data-uid="MediaBrowser.Model.System.SystemInfo.OperatingSystemDisplayName">OperatingSystemDisplayName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the display name of the operating system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OperatingSystemDisplayName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The display name of the operating system.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_PackageName.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.PackageName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L40">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_PackageName_" data-uid="MediaBrowser.Model.System.SystemInfo.PackageName*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_PackageName" data-uid="MediaBrowser.Model.System.SystemInfo.PackageName">PackageName</h4>
+  <div class="markdown level1 summary"><p>Get or sets the package name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PackageName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The value of the &apos;-package&apos; command line argument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_ProgramDataPath.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.ProgramDataPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L80">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_ProgramDataPath_" data-uid="MediaBrowser.Model.System.SystemInfo.ProgramDataPath*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_ProgramDataPath" data-uid="MediaBrowser.Model.System.SystemInfo.ProgramDataPath">ProgramDataPath</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the program data path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ProgramDataPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The program data path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_SupportsHttps.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.SupportsHttps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L128">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_SupportsHttps_" data-uid="MediaBrowser.Model.System.SystemInfo.SupportsHttps*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_SupportsHttps" data-uid="MediaBrowser.Model.System.SystemInfo.SupportsHttps">SupportsHttps</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether [enable HTTPS].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportsHttps { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [enable HTTPS]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_SupportsLibraryMonitor.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.SupportsLibraryMonitor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L54">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_SupportsLibraryMonitor_" data-uid="MediaBrowser.Model.System.SystemInfo.SupportsLibraryMonitor*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_SupportsLibraryMonitor" data-uid="MediaBrowser.Model.System.SystemInfo.SupportsLibraryMonitor">SupportsLibraryMonitor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether [supports library monitor].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportsLibraryMonitor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [supports library monitor]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_SystemArchitecture.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.SystemArchitecture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L144">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_SystemArchitecture_" data-uid="MediaBrowser.Model.System.SystemInfo.SystemArchitecture*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_SystemArchitecture" data-uid="MediaBrowser.Model.System.SystemInfo.SystemArchitecture">SystemArchitecture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Architecture SystemArchitecture { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Architecture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_SystemUpdateLevel.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.SystemUpdateLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L27">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_SystemUpdateLevel_" data-uid="MediaBrowser.Model.System.SystemInfo.SystemUpdateLevel*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_SystemUpdateLevel" data-uid="MediaBrowser.Model.System.SystemInfo.SystemUpdateLevel">SystemUpdateLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PackageVersionClass SystemUpdateLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Updates.PackageVersionClass.html">PackageVersionClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_TranscodingTempPath.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.TranscodingTempPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L116">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_TranscodingTempPath_" data-uid="MediaBrowser.Model.System.SystemInfo.TranscodingTempPath*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_TranscodingTempPath" data-uid="MediaBrowser.Model.System.SystemInfo.TranscodingTempPath">TranscodingTempPath</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the transcoding temporary path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TranscodingTempPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The transcoding temporary path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_WebPath.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.WebPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L86">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_WebPath_" data-uid="MediaBrowser.Model.System.SystemInfo.WebPath*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_WebPath" data-uid="MediaBrowser.Model.System.SystemInfo.WebPath">WebPath</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the web UI resources path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WebPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The web UI resources path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo_WebSocketPortNumber.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo.WebSocketPortNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L60">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_System_SystemInfo_WebSocketPortNumber_" data-uid="MediaBrowser.Model.System.SystemInfo.WebSocketPortNumber*"></a>
+  <h4 id="MediaBrowser_Model_System_SystemInfo_WebSocketPortNumber" data-uid="MediaBrowser.Model.System.SystemInfo.WebSocketPortNumber">WebSocketPortNumber</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the web socket port number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WebSocketPortNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The web socket port number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_System_SystemInfo.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.System.SystemInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/System/SystemInfo.cs/#L25" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

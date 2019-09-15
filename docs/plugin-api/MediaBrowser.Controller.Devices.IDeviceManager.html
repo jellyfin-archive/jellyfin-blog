@@ -1,0 +1,637 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDeviceManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDeviceManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Controller.Devices.IDeviceManager">
+  
+  
+  <h1 id="MediaBrowser_Controller_Devices_IDeviceManager" data-uid="MediaBrowser.Controller.Devices.IDeviceManager" class="text-break">Interface IDeviceManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Controller.Devices.html">MediaBrowser.Controller.Devices</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Controller.dll</h6>
+  <h5 id="MediaBrowser_Controller_Devices_IDeviceManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDeviceManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Devices_IDeviceManager_AcceptCameraUpload_System_String_Stream_MediaBrowser_Model_Devices_LocalFileInfo_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Devices.IDeviceManager.AcceptCameraUpload(System.String%2CStream%2CMediaBrowser.Model.Devices.LocalFileInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Devices/IDeviceManager.cs/#L62">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Devices_IDeviceManager_AcceptCameraUpload_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.AcceptCameraUpload*"></a>
+  <h4 id="MediaBrowser_Controller_Devices_IDeviceManager_AcceptCameraUpload_System_String_Stream_MediaBrowser_Model_Devices_LocalFileInfo_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.AcceptCameraUpload(System.String,Stream,MediaBrowser.Model.Devices.LocalFileInfo)">AcceptCameraUpload(String, Stream, LocalFileInfo)</h4>
+  <div class="markdown level1 summary"><p>Accepts the upload.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AcceptCameraUpload(string deviceId, Stream stream, LocalFileInfo file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td><p>The device identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>The stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Devices.LocalFileInfo.html">LocalFileInfo</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Devices_IDeviceManager_CanAccessDevice_MediaBrowser_Controller_Entities_User_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Devices.IDeviceManager.CanAccessDevice(MediaBrowser.Controller.Entities.User%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Devices/IDeviceManager.cs/#L67">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Devices_IDeviceManager_CanAccessDevice_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.CanAccessDevice*"></a>
+  <h4 id="MediaBrowser_Controller_Devices_IDeviceManager_CanAccessDevice_MediaBrowser_Controller_Entities_User_System_String_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.CanAccessDevice(MediaBrowser.Controller.Entities.User,System.String)">CanAccessDevice(User, String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether this instance [can access device] the specified user identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanAccessDevice(User user, string deviceId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Devices_IDeviceManager_GetCameraUploadHistory_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Devices.IDeviceManager.GetCameraUploadHistory(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Devices/IDeviceManager.cs/#L53">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Devices_IDeviceManager_GetCameraUploadHistory_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.GetCameraUploadHistory*"></a>
+  <h4 id="MediaBrowser_Controller_Devices_IDeviceManager_GetCameraUploadHistory_System_String_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.GetCameraUploadHistory(System.String)">GetCameraUploadHistory(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the upload history.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ContentUploadHistory GetCameraUploadHistory(string deviceId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td><p>The device identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Devices.ContentUploadHistory.html">ContentUploadHistory</a></td>
+        <td><p>ContentUploadHistory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Devices_IDeviceManager_GetCapabilities_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Devices.IDeviceManager.GetCapabilities(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Devices/IDeviceManager.cs/#L32">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Devices_IDeviceManager_GetCapabilities_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.GetCapabilities*"></a>
+  <h4 id="MediaBrowser_Controller_Devices_IDeviceManager_GetCapabilities_System_String_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.GetCapabilities(System.String)">GetCapabilities(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the capabilities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ClientCapabilities GetCapabilities(string reportedId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reportedId</span></td>
+        <td><p>The reported identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.ClientCapabilities.html">ClientCapabilities</a></td>
+        <td><p>ClientCapabilities.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Devices_IDeviceManager_GetDevice_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Devices.IDeviceManager.GetDevice(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Devices/IDeviceManager.cs/#L39">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Devices_IDeviceManager_GetDevice_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.GetDevice*"></a>
+  <h4 id="MediaBrowser_Controller_Devices_IDeviceManager_GetDevice_System_String_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.GetDevice(System.String)">GetDevice(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the device information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DeviceInfo GetDevice(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Devices.DeviceInfo.html">DeviceInfo</a></td>
+        <td><p>DeviceInfo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Devices_IDeviceManager_GetDeviceOptions_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Devices.IDeviceManager.GetDeviceOptions(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Devices/IDeviceManager.cs/#L70">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Devices_IDeviceManager_GetDeviceOptions_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.GetDeviceOptions*"></a>
+  <h4 id="MediaBrowser_Controller_Devices_IDeviceManager_GetDeviceOptions_System_String_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.GetDeviceOptions(System.String)">GetDeviceOptions(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DeviceOptions GetDeviceOptions(string deviceId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Devices.DeviceOptions.html">DeviceOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Devices_IDeviceManager_GetDevices_MediaBrowser_Model_Devices_DeviceQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Devices.IDeviceManager.GetDevices(MediaBrowser.Model.Devices.DeviceQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Devices/IDeviceManager.cs/#L46">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Devices_IDeviceManager_GetDevices_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.GetDevices*"></a>
+  <h4 id="MediaBrowser_Controller_Devices_IDeviceManager_GetDevices_MediaBrowser_Model_Devices_DeviceQuery_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.GetDevices(MediaBrowser.Model.Devices.DeviceQuery)">GetDevices(DeviceQuery)</h4>
+  <div class="markdown level1 summary"><p>Gets the devices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryResult&lt;DeviceInfo&gt; GetDevices(DeviceQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Devices.DeviceQuery.html">DeviceQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Model.Devices.DeviceInfo.html">DeviceInfo</a>&gt;</td>
+        <td><p>IEnumerable&lt;DeviceInfo&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Devices_IDeviceManager_SaveCapabilities_System_String_MediaBrowser_Model_Session_ClientCapabilities_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Devices.IDeviceManager.SaveCapabilities(System.String%2CMediaBrowser.Model.Session.ClientCapabilities)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Devices/IDeviceManager.cs/#L25">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Devices_IDeviceManager_SaveCapabilities_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.SaveCapabilities*"></a>
+  <h4 id="MediaBrowser_Controller_Devices_IDeviceManager_SaveCapabilities_System_String_MediaBrowser_Model_Session_ClientCapabilities_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.SaveCapabilities(System.String,MediaBrowser.Model.Session.ClientCapabilities)">SaveCapabilities(String, ClientCapabilities)</h4>
+  <div class="markdown level1 summary"><p>Saves the capabilities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SaveCapabilities(string reportedId, ClientCapabilities capabilities)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reportedId</span></td>
+        <td><p>The reported identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.ClientCapabilities.html">ClientCapabilities</a></td>
+        <td><span class="parametername">capabilities</span></td>
+        <td><p>The capabilities.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Devices_IDeviceManager_UpdateDeviceOptions_System_String_MediaBrowser_Model_Devices_DeviceOptions_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Devices.IDeviceManager.UpdateDeviceOptions(System.String%2CMediaBrowser.Model.Devices.DeviceOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Devices/IDeviceManager.cs/#L69">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Devices_IDeviceManager_UpdateDeviceOptions_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.UpdateDeviceOptions*"></a>
+  <h4 id="MediaBrowser_Controller_Devices_IDeviceManager_UpdateDeviceOptions_System_String_MediaBrowser_Model_Devices_DeviceOptions_" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.UpdateDeviceOptions(System.String,MediaBrowser.Model.Devices.DeviceOptions)">UpdateDeviceOptions(String, DeviceOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateDeviceOptions(string deviceId, DeviceOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Devices.DeviceOptions.html">DeviceOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Devices_IDeviceManager_CameraImageUploaded.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Devices.IDeviceManager.CameraImageUploaded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Devices/IDeviceManager.cs/#L17">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Devices_IDeviceManager_CameraImageUploaded" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.CameraImageUploaded">CameraImageUploaded</h4>
+  <div class="markdown level1 summary"><p>Occurs when [camera image uploaded].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;CameraImageUploadInfo&gt;&gt; CameraImageUploaded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Devices.CameraImageUploadInfo.html">CameraImageUploadInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Devices_IDeviceManager_DeviceOptionsUpdated.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Devices.IDeviceManager.DeviceOptionsUpdated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Devices/IDeviceManager.cs/#L71">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Devices_IDeviceManager_DeviceOptionsUpdated" data-uid="MediaBrowser.Controller.Devices.IDeviceManager.DeviceOptionsUpdated">DeviceOptionsUpdated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;Tuple&lt;string, DeviceOptions&gt;&gt;&gt; DeviceOptionsUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<span class="xref">Tuple</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="MediaBrowser.Model.Devices.DeviceOptions.html">DeviceOptions</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Devices_IDeviceManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Devices.IDeviceManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Devices/IDeviceManager.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

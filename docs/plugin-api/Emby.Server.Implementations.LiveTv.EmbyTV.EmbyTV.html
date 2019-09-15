@@ -1,0 +1,2019 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EmbyTV
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EmbyTV
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV">
+  
+  
+  <h1 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV" class="text-break">Class EmbyTV
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">EmbyTV</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.LiveTv.ILiveTvService.html">ILiveTvService</a></div>
+    <div><a class="xref" href="MediaBrowser.Controller.LiveTv.ISupportsDirectStreamProvider.html">ISupportsDirectStreamProvider</a></div>
+    <div><a class="xref" href="MediaBrowser.Controller.LiveTv.ISupportsNewTimerIds.html">ISupportsNewTimerIds</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.LiveTv.EmbyTV.html">Emby.Server.Implementations.LiveTv.EmbyTV</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EmbyTV : object, ILiveTvService, ISupportsDirectStreamProvider, ISupportsNewTimerIds, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV__ctor_MediaBrowser_Controller_IServerApplicationHost_MediaBrowser_Model_IO_IStreamHelper_MediaBrowser_Controller_Library_IMediaSourceManager_ILogger_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Common_Net_IHttpClient_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_LiveTv_ILiveTvManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Library_ILibraryMonitor_MediaBrowser_Controller_Providers_IProviderManager_MediaBrowser_Controller_MediaEncoding_IMediaEncoder_MediaBrowser_Model_Diagnostics_IProcessFactory_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.%23ctor(MediaBrowser.Controller.IServerApplicationHost%2CMediaBrowser.Model.IO.IStreamHelper%2CMediaBrowser.Controller.Library.IMediaSourceManager%2CILogger%2CMediaBrowser.Model.Serialization.IJsonSerializer%2CMediaBrowser.Common.Net.IHttpClient%2CMediaBrowser.Controller.Configuration.IServerConfigurationManager%2CMediaBrowser.Controller.LiveTv.ILiveTvManager%2CMediaBrowser.Model.IO.IFileSystem%2CMediaBrowser.Controller.Library.ILibraryManager%2CMediaBrowser.Controller.Library.ILibraryMonitor%2CMediaBrowser.Controller.Providers.IProviderManager%2CMediaBrowser.Controller.MediaEncoding.IMediaEncoder%2CMediaBrowser.Model.Diagnostics.IProcessFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L72">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV__ctor_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV__ctor_MediaBrowser_Controller_IServerApplicationHost_MediaBrowser_Model_IO_IStreamHelper_MediaBrowser_Controller_Library_IMediaSourceManager_ILogger_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Common_Net_IHttpClient_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_LiveTv_ILiveTvManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Library_ILibraryMonitor_MediaBrowser_Controller_Providers_IProviderManager_MediaBrowser_Controller_MediaEncoding_IMediaEncoder_MediaBrowser_Model_Diagnostics_IProcessFactory_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.#ctor(MediaBrowser.Controller.IServerApplicationHost,MediaBrowser.Model.IO.IStreamHelper,MediaBrowser.Controller.Library.IMediaSourceManager,ILogger,MediaBrowser.Model.Serialization.IJsonSerializer,MediaBrowser.Common.Net.IHttpClient,MediaBrowser.Controller.Configuration.IServerConfigurationManager,MediaBrowser.Controller.LiveTv.ILiveTvManager,MediaBrowser.Model.IO.IFileSystem,MediaBrowser.Controller.Library.ILibraryManager,MediaBrowser.Controller.Library.ILibraryMonitor,MediaBrowser.Controller.Providers.IProviderManager,MediaBrowser.Controller.MediaEncoding.IMediaEncoder,MediaBrowser.Model.Diagnostics.IProcessFactory)">EmbyTV(IServerApplicationHost, IStreamHelper, IMediaSourceManager, ILogger, IJsonSerializer, IHttpClient, IServerConfigurationManager, ILiveTvManager, IFileSystem, ILibraryManager, ILibraryMonitor, IProviderManager, IMediaEncoder, IProcessFactory)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmbyTV(IServerApplicationHost appHost, IStreamHelper streamHelper, IMediaSourceManager mediaSourceManager, ILogger logger, IJsonSerializer jsonSerializer, IHttpClient httpClient, IServerConfigurationManager config, ILiveTvManager liveTvManager, IFileSystem fileSystem, ILibraryManager libraryManager, ILibraryMonitor libraryMonitor, IProviderManager providerManager, IMediaEncoder mediaEncoder, IProcessFactory processFactory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.IServerApplicationHost.html">IServerApplicationHost</a></td>
+        <td><span class="parametername">appHost</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IStreamHelper.html">IStreamHelper</a></td>
+        <td><span class="parametername">streamHelper</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IMediaSourceManager.html">IMediaSourceManager</a></td>
+        <td><span class="parametername">mediaSourceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td><span class="parametername">jsonSerializer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Net.IHttpClient.html">IHttpClient</a></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.ILiveTvManager.html">ILiveTvManager</a></td>
+        <td><span class="parametername">liveTvManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a></td>
+        <td><span class="parametername">libraryManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryMonitor.html">ILibraryMonitor</a></td>
+        <td><span class="parametername">libraryMonitor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.IProviderManager.html">IProviderManager</a></td>
+        <td><span class="parametername">providerManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.html">IMediaEncoder</a></td>
+        <td><span class="parametername">mediaEncoder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Diagnostics.IProcessFactory.html">IProcessFactory</a></td>
+        <td><span class="parametername">processFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_Current.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.Current%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L62">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_Current" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.Current">Current</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EmbyTV Current</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.html">EmbyTV</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_DateAddedFormat.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.DateAddedFormat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L2015">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_DateAddedFormat" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.DateAddedFormat">DateAddedFormat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DateAddedFormat = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_DataPath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.DataPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L246">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_DataPath_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.DataPath*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_DataPath" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.DataPath">DataPath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DataPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_HomePageUrl.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.HomePageUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L262">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_HomePageUrl_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.HomePageUrl*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_HomePageUrl" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.HomePageUrl">HomePageUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HomePageUrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_Name.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L244">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_Name_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.Name*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_Name" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CancelSeriesTimerAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CancelSeriesTimerAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L586">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CancelSeriesTimerAsync_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CancelSeriesTimerAsync*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CancelSeriesTimerAsync_System_String_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CancelSeriesTimerAsync(System.String,CancellationToken)">CancelSeriesTimerAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CancelSeriesTimerAsync(string timerId, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">timerId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CancelTimerAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CancelTimerAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L641">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CancelTimerAsync_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CancelTimerAsync*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CancelTimerAsync_System_String_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CancelTimerAsync(System.String,CancellationToken)">CancelTimerAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CancelTimerAsync(string timerId, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">timerId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CloseLiveStream_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CloseLiveStream(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L1130">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CloseLiveStream_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CloseLiveStream*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CloseLiveStream_System_String_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CloseLiveStream(System.String,CancellationToken)">CloseLiveStream(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CloseLiveStream(string id, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CreateSeriesTimer_MediaBrowser_Controller_LiveTv_SeriesTimerInfo_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CreateSeriesTimer(MediaBrowser.Controller.LiveTv.SeriesTimerInfo%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L714">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CreateSeriesTimer_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CreateSeriesTimer*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CreateSeriesTimer_MediaBrowser_Controller_LiveTv_SeriesTimerInfo_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CreateSeriesTimer(MediaBrowser.Controller.LiveTv.SeriesTimerInfo,CancellationToken)">CreateSeriesTimer(SeriesTimerInfo, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; CreateSeriesTimer(SeriesTimerInfo info, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.SeriesTimerInfo.html">SeriesTimerInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CreateSeriesTimerAsync_MediaBrowser_Controller_LiveTv_SeriesTimerInfo_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CreateSeriesTimerAsync(MediaBrowser.Controller.LiveTv.SeriesTimerInfo%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L652">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CreateSeriesTimerAsync_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CreateSeriesTimerAsync*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CreateSeriesTimerAsync_MediaBrowser_Controller_LiveTv_SeriesTimerInfo_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CreateSeriesTimerAsync(MediaBrowser.Controller.LiveTv.SeriesTimerInfo,CancellationToken)">CreateSeriesTimerAsync(SeriesTimerInfo, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CreateSeriesTimerAsync(SeriesTimerInfo info, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.SeriesTimerInfo.html">SeriesTimerInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CreateTimer_MediaBrowser_Controller_LiveTv_TimerInfo_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CreateTimer(MediaBrowser.Controller.LiveTv.TimerInfo%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L662">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CreateTimer_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CreateTimer*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CreateTimer_MediaBrowser_Controller_LiveTv_TimerInfo_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CreateTimer(MediaBrowser.Controller.LiveTv.TimerInfo,CancellationToken)">CreateTimer(TimerInfo, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; CreateTimer(TimerInfo timer, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.TimerInfo.html">TimerInfo</a></td>
+        <td><span class="parametername">timer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CreateTimerAsync_MediaBrowser_Controller_LiveTv_TimerInfo_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CreateTimerAsync(MediaBrowser.Controller.LiveTv.TimerInfo%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L657">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CreateTimerAsync_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CreateTimerAsync*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_CreateTimerAsync_MediaBrowser_Controller_LiveTv_TimerInfo_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.CreateTimerAsync(MediaBrowser.Controller.LiveTv.TimerInfo,CancellationToken)">CreateTimerAsync(TimerInfo, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CreateTimerAsync(TimerInfo info, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.TimerInfo.html">TimerInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_DeleteRecordingAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.DeleteRecordingAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L647">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_DeleteRecordingAsync_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.DeleteRecordingAsync*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_DeleteRecordingAsync_System_String_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.DeleteRecordingAsync(System.String,CancellationToken)">DeleteRecordingAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteRecordingAsync(string recordingId, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">recordingId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_DiscoverTuners_System_Boolean_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.DiscoverTuners(System.Boolean%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L2720">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_DiscoverTuners_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.DiscoverTuners*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_DiscoverTuners_System_Boolean_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.DiscoverTuners(System.Boolean,CancellationToken)">DiscoverTuners(Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;TunerHostInfo&gt;&gt; DiscoverTuners(bool newDevicesOnly, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">newDevicesOnly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.LiveTv.TunerHostInfo.html">TunerHostInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_Dispose.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L2668">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_Dispose_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.Dispose*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_Dispose" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetActiveRecordingInfo_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetActiveRecordingInfo(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L857">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetActiveRecordingInfo_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetActiveRecordingInfo*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetActiveRecordingInfo_System_String_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetActiveRecordingInfo(System.String)">GetActiveRecordingInfo(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActiveRecordingInfo GetActiveRecordingInfo(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.ActiveRecordingInfo.html">ActiveRecordingInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetActiveRecordingPath_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetActiveRecordingPath(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L843">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetActiveRecordingPath_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetActiveRecordingPath*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetActiveRecordingPath_System_String_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetActiveRecordingPath(System.String)">GetActiveRecordingPath(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetActiveRecordingPath(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetAllActiveRecordings.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetAllActiveRecordings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L852">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetAllActiveRecordings_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetAllActiveRecordings*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetAllActiveRecordings" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetAllActiveRecordings">GetAllActiveRecordings()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ActiveRecordingInfo&gt; GetAllActiveRecordings()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.ActiveRecordingInfo.html">ActiveRecordingInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelsAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelsAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L581">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelsAsync_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelsAsync*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelsAsync_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelsAsync(CancellationToken)">GetChannelsAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;ChannelInfo&gt;&gt; GetChannelsAsync(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.ChannelInfo.html">ChannelInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelsForListingsProvider_MediaBrowser_Model_LiveTv_ListingsProviderInfo_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelsForListingsProvider(MediaBrowser.Model.LiveTv.ListingsProviderInfo%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L558">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelsForListingsProvider_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelsForListingsProvider*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelsForListingsProvider_MediaBrowser_Model_LiveTv_ListingsProviderInfo_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelsForListingsProvider(MediaBrowser.Model.LiveTv.ListingsProviderInfo,CancellationToken)">GetChannelsForListingsProvider(ListingsProviderInfo, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;ChannelInfo&gt;&gt; GetChannelsForListingsProvider(ListingsProviderInfo listingsProvider, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.LiveTv.ListingsProviderInfo.html">ListingsProviderInfo</a></td>
+        <td><span class="parametername">listingsProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.ChannelInfo.html">ChannelInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelStream_System_String_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelStream(System.String%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L1010">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelStream_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelStream*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelStream_System_String_System_String_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelStream(System.String,System.String,CancellationToken)">GetChannelStream(String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MediaSourceInfo&gt; GetChannelStream(string channelId, string streamId, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">channelId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">streamId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelStreamMediaSources_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelStreamMediaSources(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L1074">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelStreamMediaSources_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelStreamMediaSources*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelStreamMediaSources_System_String_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelStreamMediaSources(System.String,CancellationToken)">GetChannelStreamMediaSources(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;MediaSourceInfo&gt;&gt; GetChannelStreamMediaSources(string channelId, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">channelId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelStreamWithDirectStreamProvider_System_String_System_String_List_MediaBrowser_Controller_Library_ILiveStream__CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelStreamWithDirectStreamProvider(System.String%2CSystem.String%2CList%7BMediaBrowser.Controller.Library.ILiveStream%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L1015">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelStreamWithDirectStreamProvider_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelStreamWithDirectStreamProvider*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetChannelStreamWithDirectStreamProvider_System_String_System_String_List_MediaBrowser_Controller_Library_ILiveStream__CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetChannelStreamWithDirectStreamProvider(System.String,System.String,List{MediaBrowser.Controller.Library.ILiveStream},CancellationToken)">GetChannelStreamWithDirectStreamProvider(String, String, List&lt;ILiveStream&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ILiveStream&gt; GetChannelStreamWithDirectStreamProvider(string channelId, string streamId, List&lt;ILiveStream&gt; currentLiveStreams, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">channelId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">streamId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ILiveStream.html">ILiveStream</a>&gt;</td>
+        <td><span class="parametername">currentLiveStreams</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ILiveStream.html">ILiveStream</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetNewTimerDefaultsAsync_CancellationToken_MediaBrowser_Controller_LiveTv_ProgramInfo_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetNewTimerDefaultsAsync(CancellationToken%2CMediaBrowser.Controller.LiveTv.ProgramInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L892">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetNewTimerDefaultsAsync_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetNewTimerDefaultsAsync*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetNewTimerDefaultsAsync_CancellationToken_MediaBrowser_Controller_LiveTv_ProgramInfo_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetNewTimerDefaultsAsync(CancellationToken,MediaBrowser.Controller.LiveTv.ProgramInfo)">GetNewTimerDefaultsAsync(CancellationToken, ProgramInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SeriesTimerInfo&gt; GetNewTimerDefaultsAsync(CancellationToken cancellationToken, ProgramInfo program = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.ProgramInfo.html">ProgramInfo</a></td>
+        <td><span class="parametername">program</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.SeriesTimerInfo.html">SeriesTimerInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetProgramsAsync_System_String_DateTime_DateTime_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetProgramsAsync(System.String%2CDateTime%2CDateTime%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L950">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetProgramsAsync_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetProgramsAsync*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetProgramsAsync_System_String_DateTime_DateTime_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetProgramsAsync(System.String,DateTime,DateTime,CancellationToken)">GetProgramsAsync(String, DateTime, DateTime, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;ProgramInfo&gt;&gt; GetProgramsAsync(string channelId, DateTime startDateUtc, DateTime endDateUtc, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">channelId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">startDateUtc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">endDateUtc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.ProgramInfo.html">ProgramInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetRecordingFolders.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetRecordingFolders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L2677">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetRecordingFolders_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetRecordingFolders*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetRecordingFolders" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetRecordingFolders">GetRecordingFolders()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;VirtualFolderInfo&gt; GetRecordingFolders()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.VirtualFolderInfo.html">VirtualFolderInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetRecordingStreamMediaSources_MediaBrowser_Controller_LiveTv_ActiveRecordingInfo_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetRecordingStreamMediaSources(MediaBrowser.Controller.LiveTv.ActiveRecordingInfo%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L1101">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetRecordingStreamMediaSources_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetRecordingStreamMediaSources*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetRecordingStreamMediaSources_MediaBrowser_Controller_LiveTv_ActiveRecordingInfo_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetRecordingStreamMediaSources(MediaBrowser.Controller.LiveTv.ActiveRecordingInfo,CancellationToken)">GetRecordingStreamMediaSources(ActiveRecordingInfo, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;MediaSourceInfo&gt;&gt; GetRecordingStreamMediaSources(ActiveRecordingInfo info, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.ActiveRecordingInfo.html">ActiveRecordingInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetSeriesTimersAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetSeriesTimersAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L930">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetSeriesTimersAsync_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetSeriesTimersAsync*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetSeriesTimersAsync_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetSeriesTimersAsync(CancellationToken)">GetSeriesTimersAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;SeriesTimerInfo&gt;&gt; GetSeriesTimersAsync(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.SeriesTimerInfo.html">SeriesTimerInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetTimersAsync_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetTimersAsync(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L879">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetTimersAsync_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetTimersAsync*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_GetTimersAsync_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.GetTimersAsync(CancellationToken)">GetTimersAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;TimerInfo&gt;&gt; GetTimersAsync(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.TimerInfo.html">TimerInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_RecordLiveStream_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.RecordLiveStream(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L1135">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_RecordLiveStream_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.RecordLiveStream*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_RecordLiveStream_System_String_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.RecordLiveStream(System.String,CancellationToken)">RecordLiveStream(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RecordLiveStream(string id, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_RefreshSeriesTimers_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.RefreshSeriesTimers(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L264">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_RefreshSeriesTimers_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.RefreshSeriesTimers*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_RefreshSeriesTimers_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.RefreshSeriesTimers(CancellationToken)">RefreshSeriesTimers(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RefreshSeriesTimers(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_RefreshTimers_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.RefreshTimers(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L274">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_RefreshTimers_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.RefreshTimers*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_RefreshTimers_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.RefreshTimers(CancellationToken)">RefreshTimers(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RefreshTimers(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_ResetTuner_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.ResetTuner(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L1140">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_ResetTuner_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.ResetTuner*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_ResetTuner_System_String_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.ResetTuner(System.String,CancellationToken)">ResetTuner(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ResetTuner(string id, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_ScanForTunerDeviceChanges_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.ScanForTunerDeviceChanges(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L2744">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_ScanForTunerDeviceChanges_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.ScanForTunerDeviceChanges*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_ScanForTunerDeviceChanges_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.ScanForTunerDeviceChanges(CancellationToken)">ScanForTunerDeviceChanges(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ScanForTunerDeviceChanges(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_Start.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L119">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_Start_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.Start*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_Start" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Start()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_UpdateSeriesTimerAsync_MediaBrowser_Controller_LiveTv_SeriesTimerInfo_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.UpdateSeriesTimerAsync(MediaBrowser.Controller.LiveTv.SeriesTimerInfo%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L763">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_UpdateSeriesTimerAsync_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.UpdateSeriesTimerAsync*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_UpdateSeriesTimerAsync_MediaBrowser_Controller_LiveTv_SeriesTimerInfo_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.UpdateSeriesTimerAsync(MediaBrowser.Controller.LiveTv.SeriesTimerInfo,CancellationToken)">UpdateSeriesTimerAsync(SeriesTimerInfo, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UpdateSeriesTimerAsync(SeriesTimerInfo info, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.SeriesTimerInfo.html">SeriesTimerInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_UpdateTimerAsync_MediaBrowser_Controller_LiveTv_TimerInfo_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.UpdateTimerAsync(MediaBrowser.Controller.LiveTv.TimerInfo%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L793">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_UpdateTimerAsync_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.UpdateTimerAsync*"></a>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_UpdateTimerAsync_MediaBrowser_Controller_LiveTv_TimerInfo_CancellationToken_" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.UpdateTimerAsync(MediaBrowser.Controller.LiveTv.TimerInfo,CancellationToken)">UpdateTimerAsync(TimerInfo, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UpdateTimerAsync(TimerInfo updatedTimer, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.TimerInfo.html">TimerInfo</a></td>
+        <td><span class="parametername">updatedTimer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_TimerCancelled.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.TimerCancelled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L65">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_TimerCancelled" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.TimerCancelled">TimerCancelled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GenericEventArgs&lt;string&gt;&gt; TimerCancelled</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_TimerCreated.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.TimerCreated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L64">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV_TimerCreated" data-uid="Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV.TimerCreated">TimerCreated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GenericEventArgs&lt;TimerInfo&gt;&gt; TimerCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.TimerInfo.html">TimerInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.LiveTv.ILiveTvService.html">ILiveTvService</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.LiveTv.ISupportsDirectStreamProvider.html">ISupportsDirectStreamProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.LiveTv.ISupportsNewTimerIds.html">ISupportsNewTimerIds</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_LiveTv_EmbyTV_EmbyTV.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.LiveTv.EmbyTV.EmbyTV%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/LiveTv/EmbyTV/EmbyTV.cs/#L41" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

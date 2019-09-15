@@ -1,0 +1,1098 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IMediaSourceManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IMediaSourceManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager">
+  
+  
+  <h1 id="MediaBrowser_Controller_Library_IMediaSourceManager" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager" class="text-break">Interface IMediaSourceManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Controller.Library.html">MediaBrowser.Controller.Library</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Controller.dll</h6>
+  <h5 id="MediaBrowser_Controller_Library_IMediaSourceManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IMediaSourceManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_AddMediaInfoWithProbe_MediaBrowser_Model_Dto_MediaSourceInfo_System_Boolean_System_String_System_Boolean_System_Boolean_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.AddMediaInfoWithProbe(MediaBrowser.Model.Dto.MediaSourceInfo%2CSystem.Boolean%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L91">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_AddMediaInfoWithProbe_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.AddMediaInfoWithProbe*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_AddMediaInfoWithProbe_MediaBrowser_Model_Dto_MediaSourceInfo_System_Boolean_System_String_System_Boolean_System_Boolean_CancellationToken_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.AddMediaInfoWithProbe(MediaBrowser.Model.Dto.MediaSourceInfo,System.Boolean,System.String,System.Boolean,System.Boolean,CancellationToken)">AddMediaInfoWithProbe(MediaSourceInfo, Boolean, String, Boolean, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddMediaInfoWithProbe(MediaSourceInfo mediaSource, bool isAudio, string cacheKey, bool addProbeDelay, bool isLiveStream, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a></td>
+        <td><span class="parametername">mediaSource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isAudio</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">cacheKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">addProbeDelay</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isLiveStream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_AddParts_IEnumerable_MediaBrowser_Controller_Library_IMediaSourceProvider__.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.AddParts(IEnumerable%7BMediaBrowser.Controller.Library.IMediaSourceProvider%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L20">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_AddParts_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.AddParts*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_AddParts_IEnumerable_MediaBrowser_Controller_Library_IMediaSourceProvider__" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.AddParts(IEnumerable{MediaBrowser.Controller.Library.IMediaSourceProvider})">AddParts(IEnumerable&lt;IMediaSourceProvider&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the parts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddParts(IEnumerable&lt;IMediaSourceProvider&gt; providers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.IMediaSourceProvider.html">IMediaSourceProvider</a>&gt;</td>
+        <td><span class="parametername">providers</span></td>
+        <td><p>The providers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_CloseLiveStream_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.CloseLiveStream(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L81">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_CloseLiveStream_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.CloseLiveStream*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_CloseLiveStream_System_String_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.CloseLiveStream(System.String)">CloseLiveStream(String)</h4>
+  <div class="markdown level1 summary"><p>Closes the media source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task CloseLiveStream(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The live stream identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_GetDirectStreamProviderByUniqueId_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.GetDirectStreamProviderByUniqueId(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L93">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_GetDirectStreamProviderByUniqueId_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetDirectStreamProviderByUniqueId*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_GetDirectStreamProviderByUniqueId_System_String_CancellationToken_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetDirectStreamProviderByUniqueId(System.String,CancellationToken)">GetDirectStreamProviderByUniqueId(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IDirectStreamProvider&gt; GetDirectStreamProviderByUniqueId(string uniqueId, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">uniqueId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.IDirectStreamProvider.html">IDirectStreamProvider</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_GetLiveStream_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.GetLiveStream(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L72">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_GetLiveStream_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetLiveStream*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_GetLiveStream_System_String_CancellationToken_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetLiveStream(System.String,CancellationToken)">GetLiveStream(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the live stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MediaSourceInfo&gt; GetLiveStream(string id, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a>&gt;</td>
+        <td><p>Task&lt;MediaSourceInfo&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_GetLiveStreamMediaInfo_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.GetLiveStreamMediaInfo(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L83">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_GetLiveStreamMediaInfo_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetLiveStreamMediaInfo*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_GetLiveStreamMediaInfo_System_String_CancellationToken_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetLiveStreamMediaInfo(System.String,CancellationToken)">GetLiveStreamMediaInfo(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MediaSourceInfo&gt; GetLiveStreamMediaInfo(string id, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_GetLiveStreamWithDirectStreamProvider_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.GetLiveStreamWithDirectStreamProvider(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L74">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_GetLiveStreamWithDirectStreamProvider_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetLiveStreamWithDirectStreamProvider*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_GetLiveStreamWithDirectStreamProvider_System_String_CancellationToken_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetLiveStreamWithDirectStreamProvider(System.String,CancellationToken)">GetLiveStreamWithDirectStreamProvider(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Tuple&lt;MediaSourceInfo, IDirectStreamProvider&gt;&gt; GetLiveStreamWithDirectStreamProvider(string id, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Tuple</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a>, <a class="xref" href="MediaBrowser.Controller.Library.IDirectStreamProvider.html">IDirectStreamProvider</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_GetMediaSource_MediaBrowser_Controller_Entities_BaseItem_System_String_System_String_System_Boolean_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.GetMediaSource(MediaBrowser.Controller.Entities.BaseItem%2CSystem.String%2CSystem.String%2CSystem.Boolean%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L54">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_GetMediaSource_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetMediaSource*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_GetMediaSource_MediaBrowser_Controller_Entities_BaseItem_System_String_System_String_System_Boolean_CancellationToken_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetMediaSource(MediaBrowser.Controller.Entities.BaseItem,System.String,System.String,System.Boolean,CancellationToken)">GetMediaSource(BaseItem, String, String, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the static media source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MediaSourceInfo&gt; GetMediaSource(BaseItem item, string mediaSourceId, string liveStreamId, bool enablePathSubstitution, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mediaSourceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">liveStreamId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enablePathSubstitution</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_GetMediaStreams_Guid_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.GetMediaStreams(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L27">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_GetMediaStreams_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetMediaStreams*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_GetMediaStreams_Guid_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetMediaStreams(Guid)">GetMediaStreams(Guid)</h4>
+  <div class="markdown level1 summary"><p>Gets the media streams.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;MediaStream&gt; GetMediaStreams(Guid itemId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The item identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.MediaStream.html">MediaStream</a>&gt;</td>
+        <td><p>IEnumerable&lt;MediaStream&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_GetMediaStreams_MediaBrowser_Controller_Persistence_MediaStreamQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.GetMediaStreams(MediaBrowser.Controller.Persistence.MediaStreamQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L39">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_GetMediaStreams_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetMediaStreams*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_GetMediaStreams_MediaBrowser_Controller_Persistence_MediaStreamQuery_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetMediaStreams(MediaBrowser.Controller.Persistence.MediaStreamQuery)">GetMediaStreams(MediaStreamQuery)</h4>
+  <div class="markdown level1 summary"><p>Gets the media streams.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;MediaStream&gt; GetMediaStreams(MediaStreamQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Persistence.MediaStreamQuery.html">MediaStreamQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.MediaStream.html">MediaStream</a>&gt;</td>
+        <td><p>IEnumerable&lt;MediaStream&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_GetMediaStreams_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.GetMediaStreams(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L33">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_GetMediaStreams_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetMediaStreams*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_GetMediaStreams_System_String_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetMediaStreams(System.String)">GetMediaStreams(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the media streams.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;MediaStream&gt; GetMediaStreams(string mediaSourceId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mediaSourceId</span></td>
+        <td><p>The media source identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.MediaStream.html">MediaStream</a>&gt;</td>
+        <td><p>IEnumerable&lt;MediaStream&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_GetPathProtocol_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.GetPathProtocol(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L87">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_GetPathProtocol_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetPathProtocol*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_GetPathProtocol_System_String_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetPathProtocol(System.String)">GetPathProtocol(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MediaProtocol GetPathProtocol(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.MediaInfo.MediaProtocol.html">MediaProtocol</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_GetPlayackMediaSources_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Entities_User_System_Boolean_System_Boolean_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.GetPlayackMediaSources(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Controller.Entities.User%2CSystem.Boolean%2CSystem.Boolean%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L44">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_GetPlayackMediaSources_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetPlayackMediaSources*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_GetPlayackMediaSources_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Entities_User_System_Boolean_System_Boolean_CancellationToken_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetPlayackMediaSources(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Controller.Entities.User,System.Boolean,System.Boolean,CancellationToken)">GetPlayackMediaSources(BaseItem, User, Boolean, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the playack media sources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;MediaSourceInfo&gt;&gt; GetPlayackMediaSources(BaseItem item, User user, bool allowMediaProbe, bool enablePathSubstitution, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowMediaProbe</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enablePathSubstitution</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_GetStaticMediaSources_MediaBrowser_Controller_Entities_BaseItem_System_Boolean_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.GetStaticMediaSources(MediaBrowser.Controller.Entities.BaseItem%2CSystem.Boolean%2CMediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L49">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_GetStaticMediaSources_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetStaticMediaSources*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_GetStaticMediaSources_MediaBrowser_Controller_Entities_BaseItem_System_Boolean_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.GetStaticMediaSources(MediaBrowser.Controller.Entities.BaseItem,System.Boolean,MediaBrowser.Controller.Entities.User)">GetStaticMediaSources(BaseItem, Boolean, User)</h4>
+  <div class="markdown level1 summary"><p>Gets the static media sources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;MediaSourceInfo&gt; GetStaticMediaSources(BaseItem item, bool enablePathSubstitution, User user = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enablePathSubstitution</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_OpenLiveStream_MediaBrowser_Model_MediaInfo_LiveStreamRequest_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.OpenLiveStream(MediaBrowser.Model.MediaInfo.LiveStreamRequest%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L62">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_OpenLiveStream_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.OpenLiveStream*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_OpenLiveStream_MediaBrowser_Model_MediaInfo_LiveStreamRequest_CancellationToken_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.OpenLiveStream(MediaBrowser.Model.MediaInfo.LiveStreamRequest,CancellationToken)">OpenLiveStream(LiveStreamRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Opens the media source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;LiveStreamResponse&gt; OpenLiveStream(LiveStreamRequest request, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.MediaInfo.LiveStreamRequest.html">LiveStreamRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.MediaInfo.LiveStreamResponse.html">LiveStreamResponse</a>&gt;</td>
+        <td><p>Task&lt;MediaSourceInfo&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_OpenLiveStreamInternal_MediaBrowser_Model_MediaInfo_LiveStreamRequest_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.OpenLiveStreamInternal(MediaBrowser.Model.MediaInfo.LiveStreamRequest%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L64">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_OpenLiveStreamInternal_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.OpenLiveStreamInternal*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_OpenLiveStreamInternal_MediaBrowser_Model_MediaInfo_LiveStreamRequest_CancellationToken_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.OpenLiveStreamInternal(MediaBrowser.Model.MediaInfo.LiveStreamRequest,CancellationToken)">OpenLiveStreamInternal(LiveStreamRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Tuple&lt;LiveStreamResponse, IDirectStreamProvider&gt;&gt; OpenLiveStreamInternal(LiveStreamRequest request, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.MediaInfo.LiveStreamRequest.html">LiveStreamRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Tuple</span>&lt;<a class="xref" href="MediaBrowser.Model.MediaInfo.LiveStreamResponse.html">LiveStreamResponse</a>, <a class="xref" href="MediaBrowser.Controller.Library.IDirectStreamProvider.html">IDirectStreamProvider</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_SetDefaultAudioAndSubtitleStreamIndexes_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Dto_MediaSourceInfo_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.SetDefaultAudioAndSubtitleStreamIndexes(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Model.Dto.MediaSourceInfo%2CMediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L89">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_SetDefaultAudioAndSubtitleStreamIndexes_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.SetDefaultAudioAndSubtitleStreamIndexes*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_SetDefaultAudioAndSubtitleStreamIndexes_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Dto_MediaSourceInfo_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.SetDefaultAudioAndSubtitleStreamIndexes(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Model.Dto.MediaSourceInfo,MediaBrowser.Controller.Entities.User)">SetDefaultAudioAndSubtitleStreamIndexes(BaseItem, MediaSourceInfo, User)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetDefaultAudioAndSubtitleStreamIndexes(BaseItem item, MediaSourceInfo source, User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager_SupportsDirectStream_System_String_MediaBrowser_Model_MediaInfo_MediaProtocol_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager.SupportsDirectStream(System.String%2CMediaBrowser.Model.MediaInfo.MediaProtocol)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L85">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IMediaSourceManager_SupportsDirectStream_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.SupportsDirectStream*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IMediaSourceManager_SupportsDirectStream_System_String_MediaBrowser_Model_MediaInfo_MediaProtocol_" data-uid="MediaBrowser.Controller.Library.IMediaSourceManager.SupportsDirectStream(System.String,MediaBrowser.Model.MediaInfo.MediaProtocol)">SupportsDirectStream(String, MediaProtocol)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SupportsDirectStream(string path, MediaProtocol protocol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.MediaInfo.MediaProtocol.html">MediaProtocol</a></td>
+        <td><span class="parametername">protocol</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IMediaSourceManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IMediaSourceManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IMediaSourceManager.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

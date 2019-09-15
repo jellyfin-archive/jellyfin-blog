@@ -1,0 +1,1609 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IUserManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IUserManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Controller.Library.IUserManager">
+  
+  
+  <h1 id="MediaBrowser_Controller_Library_IUserManager" data-uid="MediaBrowser.Controller.Library.IUserManager" class="text-break">Interface IUserManager
+  </h1>
+  <div class="markdown level0 summary"><p>Interface IUserManager</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Controller.Library.html">MediaBrowser.Controller.Library</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Controller.dll</h6>
+  <h5 id="MediaBrowser_Controller_Library_IUserManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IUserManager</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_Users.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.Users%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L23">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_Users_" data-uid="MediaBrowser.Controller.Library.IUserManager.Users*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_Users" data-uid="MediaBrowser.Controller.Library.IUserManager.Users">Users</h4>
+  <div class="markdown level1 summary"><p>Gets the users.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;User&gt; Users { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a>&gt;</td>
+        <td><p>The users.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_UsersIds.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.UsersIds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L29">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_UsersIds_" data-uid="MediaBrowser.Controller.Library.IUserManager.UsersIds*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_UsersIds" data-uid="MediaBrowser.Controller.Library.IUserManager.UsersIds">UsersIds</h4>
+  <div class="markdown level1 summary"><p>Gets the user ids.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;Guid&gt; UsersIds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td><p>The users ids.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_AddParts_IEnumerable_MediaBrowser_Controller_Authentication_IAuthenticationProvider__IEnumerable_MediaBrowser_Controller_Authentication_IPasswordResetProvider__.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.AddParts(IEnumerable%7BMediaBrowser.Controller.Authentication.IAuthenticationProvider%7D%2CIEnumerable%7BMediaBrowser.Controller.Authentication.IPasswordResetProvider%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L209">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_AddParts_" data-uid="MediaBrowser.Controller.Library.IUserManager.AddParts*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_AddParts_IEnumerable_MediaBrowser_Controller_Authentication_IAuthenticationProvider__IEnumerable_MediaBrowser_Controller_Authentication_IPasswordResetProvider__" data-uid="MediaBrowser.Controller.Library.IUserManager.AddParts(IEnumerable{MediaBrowser.Controller.Authentication.IAuthenticationProvider},IEnumerable{MediaBrowser.Controller.Authentication.IPasswordResetProvider})">AddParts(IEnumerable&lt;IAuthenticationProvider&gt;, IEnumerable&lt;IPasswordResetProvider&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddParts(IEnumerable&lt;IAuthenticationProvider&gt; authenticationProviders, IEnumerable&lt;IPasswordResetProvider&gt; passwordResetProviders)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Authentication.IAuthenticationProvider.html">IAuthenticationProvider</a>&gt;</td>
+        <td><span class="parametername">authenticationProviders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Authentication.IPasswordResetProvider.html">IPasswordResetProvider</a>&gt;</td>
+        <td><span class="parametername">passwordResetProviders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_AuthenticateUser_System_String_System_String_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.AuthenticateUser(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L154">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_AuthenticateUser_" data-uid="MediaBrowser.Controller.Library.IUserManager.AuthenticateUser*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_AuthenticateUser_System_String_System_String_System_String_System_String_System_Boolean_" data-uid="MediaBrowser.Controller.Library.IUserManager.AuthenticateUser(System.String,System.String,System.String,System.String,System.Boolean)">AuthenticateUser(String, String, String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Authenticates the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;User&gt; AuthenticateUser(string username, string password, string passwordSha1, string remoteEndPoint, bool isUserSession)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">passwordSha1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">remoteEndPoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isUserSession</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_ChangeEasyPassword_MediaBrowser_Controller_Entities_User_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.ChangeEasyPassword(MediaBrowser.Controller.Entities.User%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L141">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_ChangeEasyPassword_" data-uid="MediaBrowser.Controller.Library.IUserManager.ChangeEasyPassword*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_ChangeEasyPassword_MediaBrowser_Controller_Entities_User_System_String_System_String_" data-uid="MediaBrowser.Controller.Library.IUserManager.ChangeEasyPassword(MediaBrowser.Controller.Entities.User,System.String,System.String)">ChangeEasyPassword(User, String, String)</h4>
+  <div class="markdown level1 summary"><p>Changes the easy password.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ChangeEasyPassword(User user, string newPassword, string newPasswordSha1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newPassword</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newPasswordSha1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_ChangePassword_MediaBrowser_Controller_Entities_User_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.ChangePassword(MediaBrowser.Controller.Entities.User%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L136">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_ChangePassword_" data-uid="MediaBrowser.Controller.Library.IUserManager.ChangePassword*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_ChangePassword_MediaBrowser_Controller_Entities_User_System_String_" data-uid="MediaBrowser.Controller.Library.IUserManager.ChangePassword(MediaBrowser.Controller.Entities.User,System.String)">ChangePassword(User, String)</h4>
+  <div class="markdown level1 summary"><p>Changes the password.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ChangePassword(User user, string newPassword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newPassword</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_CreateUser_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.CreateUser(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L101">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_CreateUser_" data-uid="MediaBrowser.Controller.Library.IUserManager.CreateUser*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_CreateUser_System_String_" data-uid="MediaBrowser.Controller.Library.IUserManager.CreateUser(System.String)">CreateUser(String)</h4>
+  <div class="markdown level1 summary"><p>Creates the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">User CreateUser(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><p>User.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_DeleteUser_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.DeleteUser(MediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L110">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_DeleteUser_" data-uid="MediaBrowser.Controller.Library.IUserManager.DeleteUser*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_DeleteUser_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.Library.IUserManager.DeleteUser(MediaBrowser.Controller.Entities.User)">DeleteUser(User)</h4>
+  <div class="markdown level1 summary"><p>Deletes the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteUser(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_GetAuthenticationProviders.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.GetAuthenticationProviders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L211">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_GetAuthenticationProviders_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetAuthenticationProviders*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_GetAuthenticationProviders" data-uid="MediaBrowser.Controller.Library.IUserManager.GetAuthenticationProviders">GetAuthenticationProviders()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NameIdPair[] GetAuthenticationProviders()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dto.NameIdPair.html">NameIdPair</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_GetOfflineUserDto_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.GetOfflineUserDto(MediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L124">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_GetOfflineUserDto_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetOfflineUserDto*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_GetOfflineUserDto_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetOfflineUserDto(MediaBrowser.Controller.Entities.User)">GetOfflineUserDto(User)</h4>
+  <div class="markdown level1 summary"><p>Gets the offline user dto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UserDto GetOfflineUserDto(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dto.UserDto.html">UserDto</a></td>
+        <td><p>UserDto.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_GetPasswordResetProviders.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.GetPasswordResetProviders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L212">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_GetPasswordResetProviders_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetPasswordResetProviders*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_GetPasswordResetProviders" data-uid="MediaBrowser.Controller.Library.IUserManager.GetPasswordResetProviders">GetPasswordResetProviders()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NameIdPair[] GetPasswordResetProviders()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dto.NameIdPair.html">NameIdPair</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_GetUserById_Guid_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.GetUserById(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L53">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_GetUserById_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetUserById*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_GetUserById_Guid_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetUserById(Guid)">GetUserById(Guid)</h4>
+  <div class="markdown level1 summary"><p>Gets a User by Id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">User GetUserById(Guid id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><p>User.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_GetUserById_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.GetUserById(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L60">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_GetUserById_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetUserById*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_GetUserById_System_String_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetUserById(System.String)">GetUserById(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the user by identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">User GetUserById(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><p>User.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_GetUserByName_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.GetUserByName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L67">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_GetUserByName_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetUserByName*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_GetUserByName_System_String_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetUserByName(System.String)">GetUserByName(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the user by.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">User GetUserByName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><p>User.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_GetUserConfiguration_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.GetUserConfiguration(MediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L183">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_GetUserConfiguration_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetUserConfiguration*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_GetUserConfiguration_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetUserConfiguration(MediaBrowser.Controller.Entities.User)">GetUserConfiguration(User)</h4>
+  <div class="markdown level1 summary"><p>Gets the user configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UserConfiguration GetUserConfiguration(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Configuration.UserConfiguration.html">UserConfiguration</a></td>
+        <td><p>UserConfiguration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_GetUserDto_MediaBrowser_Controller_Entities_User_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.GetUserDto(MediaBrowser.Controller.Entities.User%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L149">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_GetUserDto_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetUserDto*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_GetUserDto_MediaBrowser_Controller_Entities_User_System_String_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetUserDto(MediaBrowser.Controller.Entities.User,System.String)">GetUserDto(User, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the user dto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UserDto GetUserDto(User user, string remoteEndPoint = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">remoteEndPoint</span></td>
+        <td><p>The remote end point.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dto.UserDto.html">UserDto</a></td>
+        <td><p>UserDto.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_GetUserPolicy_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.GetUserPolicy(MediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L176">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_GetUserPolicy_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetUserPolicy*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_GetUserPolicy_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.Library.IUserManager.GetUserPolicy(MediaBrowser.Controller.Entities.User)">GetUserPolicy(User)</h4>
+  <div class="markdown level1 summary"><p>Gets the user policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UserPolicy GetUserPolicy(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Users.UserPolicy.html">UserPolicy</a></td>
+        <td><p>UserPolicy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_MakeValidUsername_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.MakeValidUsername(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L207">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_MakeValidUsername_" data-uid="MediaBrowser.Controller.Library.IUserManager.MakeValidUsername*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_MakeValidUsername_System_String_" data-uid="MediaBrowser.Controller.Library.IUserManager.MakeValidUsername(System.String)">MakeValidUsername(String)</h4>
+  <div class="markdown level1 summary"><p>Makes the valid username.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string MakeValidUsername(string username)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td><p>The username.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>System.String.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_RedeemPasswordResetPin_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.RedeemPasswordResetPin(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L169">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_RedeemPasswordResetPin_" data-uid="MediaBrowser.Controller.Library.IUserManager.RedeemPasswordResetPin*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_RedeemPasswordResetPin_System_String_" data-uid="MediaBrowser.Controller.Library.IUserManager.RedeemPasswordResetPin(System.String)">RedeemPasswordResetPin(String)</h4>
+  <div class="markdown level1 summary"><p>Redeems the password reset pin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PinRedeemResult&gt; RedeemPasswordResetPin(string pin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pin</span></td>
+        <td><p>The pin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Users.PinRedeemResult.html">PinRedeemResult</a>&gt;</td>
+        <td><p><code>true</code> if XXXX, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_RefreshUsersMetadata_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.RefreshUsersMetadata(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L74">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_RefreshUsersMetadata_" data-uid="MediaBrowser.Controller.Library.IUserManager.RefreshUsersMetadata*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_RefreshUsersMetadata_CancellationToken_" data-uid="MediaBrowser.Controller.Library.IUserManager.RefreshUsersMetadata(CancellationToken)">RefreshUsersMetadata(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Refreshes metadata for each user</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task RefreshUsersMetadata(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_RenameUser_MediaBrowser_Controller_Entities_User_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.RenameUser(MediaBrowser.Controller.Entities.User%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L84">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_RenameUser_" data-uid="MediaBrowser.Controller.Library.IUserManager.RenameUser*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_RenameUser_MediaBrowser_Controller_Entities_User_System_String_" data-uid="MediaBrowser.Controller.Library.IUserManager.RenameUser(MediaBrowser.Controller.Entities.User,System.String)">RenameUser(User, String)</h4>
+  <div class="markdown level1 summary"><p>Renames the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task RenameUser(User user, string newName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newName</span></td>
+        <td><p>The new name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_ResetEasyPassword_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.ResetEasyPassword(MediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L131">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_ResetEasyPassword_" data-uid="MediaBrowser.Controller.Library.IUserManager.ResetEasyPassword*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_ResetEasyPassword_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.Library.IUserManager.ResetEasyPassword(MediaBrowser.Controller.Entities.User)">ResetEasyPassword(User)</h4>
+  <div class="markdown level1 summary"><p>Resets the easy password.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ResetEasyPassword(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_ResetPassword_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.ResetPassword(MediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L117">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_ResetPassword_" data-uid="MediaBrowser.Controller.Library.IUserManager.ResetPassword*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_ResetPassword_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.Library.IUserManager.ResetPassword(MediaBrowser.Controller.Entities.User)">ResetPassword(User)</h4>
+  <div class="markdown level1 summary"><p>Resets the password.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ResetPassword(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_StartForgotPasswordProcess_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.StartForgotPasswordProcess(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L162">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_StartForgotPasswordProcess_" data-uid="MediaBrowser.Controller.Library.IUserManager.StartForgotPasswordProcess*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_StartForgotPasswordProcess_System_String_System_Boolean_" data-uid="MediaBrowser.Controller.Library.IUserManager.StartForgotPasswordProcess(System.String,System.Boolean)">StartForgotPasswordProcess(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Starts the forgot password process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ForgotPasswordResult&gt; StartForgotPasswordProcess(string enteredUsername, bool isInNetwork)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">enteredUsername</span></td>
+        <td><p>The entered username.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isInNetwork</span></td>
+        <td><p>if set to <code>true</code> [is in network].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Users.ForgotPasswordResult.html">ForgotPasswordResult</a>&gt;</td>
+        <td><p>ForgotPasswordResult.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_UpdateConfiguration_Guid_MediaBrowser_Model_Configuration_UserConfiguration_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.UpdateConfiguration(Guid%2CMediaBrowser.Model.Configuration.UserConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L191">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_UpdateConfiguration_" data-uid="MediaBrowser.Controller.Library.IUserManager.UpdateConfiguration*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_UpdateConfiguration_Guid_MediaBrowser_Model_Configuration_UserConfiguration_" data-uid="MediaBrowser.Controller.Library.IUserManager.UpdateConfiguration(Guid,MediaBrowser.Model.Configuration.UserConfiguration)">UpdateConfiguration(Guid, UserConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Updates the configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateConfiguration(Guid userId, UserConfiguration newConfiguration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>The user identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Configuration.UserConfiguration.html">UserConfiguration</a></td>
+        <td><span class="parametername">newConfiguration</span></td>
+        <td><p>The new configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_UpdateConfiguration_MediaBrowser_Controller_Entities_User_MediaBrowser_Model_Configuration_UserConfiguration_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.UpdateConfiguration(MediaBrowser.Controller.Entities.User%2CMediaBrowser.Model.Configuration.UserConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L193">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_UpdateConfiguration_" data-uid="MediaBrowser.Controller.Library.IUserManager.UpdateConfiguration*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_UpdateConfiguration_MediaBrowser_Controller_Entities_User_MediaBrowser_Model_Configuration_UserConfiguration_" data-uid="MediaBrowser.Controller.Library.IUserManager.UpdateConfiguration(MediaBrowser.Controller.Entities.User,MediaBrowser.Model.Configuration.UserConfiguration)">UpdateConfiguration(User, UserConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateConfiguration(User user, UserConfiguration newConfiguration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Configuration.UserConfiguration.html">UserConfiguration</a></td>
+        <td><span class="parametername">newConfiguration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_UpdateUser_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.UpdateUser(MediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L92">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_UpdateUser_" data-uid="MediaBrowser.Controller.Library.IUserManager.UpdateUser*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_UpdateUser_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.Library.IUserManager.UpdateUser(MediaBrowser.Controller.Entities.User)">UpdateUser(User)</h4>
+  <div class="markdown level1 summary"><p>Updates the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateUser(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_UpdateUserPolicy_Guid_MediaBrowser_Model_Users_UserPolicy_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.UpdateUserPolicy(Guid%2CMediaBrowser.Model.Users.UserPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L200">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Library_IUserManager_UpdateUserPolicy_" data-uid="MediaBrowser.Controller.Library.IUserManager.UpdateUserPolicy*"></a>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_UpdateUserPolicy_Guid_MediaBrowser_Model_Users_UserPolicy_" data-uid="MediaBrowser.Controller.Library.IUserManager.UpdateUserPolicy(Guid,MediaBrowser.Model.Users.UserPolicy)">UpdateUserPolicy(Guid, UserPolicy)</h4>
+  <div class="markdown level1 summary"><p>Updates the user policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateUserPolicy(Guid userId, UserPolicy userPolicy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>The user identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Users.UserPolicy.html">UserPolicy</a></td>
+        <td><span class="parametername">userPolicy</span></td>
+        <td><p>The user policy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_UserConfigurationUpdated.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.UserConfigurationUpdated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L43">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_UserConfigurationUpdated" data-uid="MediaBrowser.Controller.Library.IUserManager.UserConfigurationUpdated">UserConfigurationUpdated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;User&gt;&gt; UserConfigurationUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_UserCreated.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.UserCreated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L41">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_UserCreated" data-uid="MediaBrowser.Controller.Library.IUserManager.UserCreated">UserCreated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;User&gt;&gt; UserCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_UserDeleted.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.UserDeleted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L39">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_UserDeleted" data-uid="MediaBrowser.Controller.Library.IUserManager.UserDeleted">UserDeleted</h4>
+  <div class="markdown level1 summary"><p>Occurs when [user deleted].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;User&gt;&gt; UserDeleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_UserLockedOut.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.UserLockedOut%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L45">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_UserLockedOut" data-uid="MediaBrowser.Controller.Library.IUserManager.UserLockedOut">UserLockedOut</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;User&gt;&gt; UserLockedOut</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_UserPasswordChanged.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.UserPasswordChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L44">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_UserPasswordChanged" data-uid="MediaBrowser.Controller.Library.IUserManager.UserPasswordChanged">UserPasswordChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;User&gt;&gt; UserPasswordChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_UserPolicyUpdated.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.UserPolicyUpdated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L42">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_UserPolicyUpdated" data-uid="MediaBrowser.Controller.Library.IUserManager.UserPolicyUpdated">UserPolicyUpdated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;User&gt;&gt; UserPolicyUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager_UserUpdated.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager.UserUpdated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L34">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Library_IUserManager_UserUpdated" data-uid="MediaBrowser.Controller.Library.IUserManager.UserUpdated">UserUpdated</h4>
+  <div class="markdown level1 summary"><p>Occurs when [user updated].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;User&gt;&gt; UserUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Library_IUserManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Library.IUserManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Library/IUserManager.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

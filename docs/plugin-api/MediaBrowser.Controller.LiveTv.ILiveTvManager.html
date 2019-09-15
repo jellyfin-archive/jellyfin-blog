@@ -1,0 +1,2526 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ILiveTvManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ILiveTvManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager">
+  
+  
+  <h1 id="MediaBrowser_Controller_LiveTv_ILiveTvManager" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager" class="text-break">Interface ILiveTvManager
+  </h1>
+  <div class="markdown level0 summary"><p>Manages all live tv services installed on the server</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Controller.LiveTv.html">MediaBrowser.Controller.LiveTv</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Controller.dll</h6>
+  <h5 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ILiveTvManager</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_ListingProviders.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.ListingProviders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L266">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_ListingProviders_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.ListingProviders*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_ListingProviders" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.ListingProviders">ListingProviders</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IListingsProvider[] ListingProviders { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.IListingsProvider.html">IListingsProvider</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_Services.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.Services%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L24">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_Services_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.Services*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_Services" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.Services">Services</h4>
+  <div class="markdown level1 summary"><p>Gets the services.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;ILiveTvService&gt; Services { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.ILiveTvService.html">ILiveTvService</a>&gt;</td>
+        <td><p>The services.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_AddChannelInfo_IReadOnlyCollection_System_ValueTuple_MediaBrowser_Model_Dto_BaseItemDto_MediaBrowser_Controller_LiveTv_LiveTvChannel___MediaBrowser_Controller_Dto_DtoOptions_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.AddChannelInfo(IReadOnlyCollection%7BSystem.ValueTuple%7BMediaBrowser.Model.Dto.BaseItemDto%2CMediaBrowser.Controller.LiveTv.LiveTvChannel%7D%7D%2CMediaBrowser.Controller.Dto.DtoOptions%2CMediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L261">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_AddChannelInfo_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.AddChannelInfo*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_AddChannelInfo_IReadOnlyCollection_System_ValueTuple_MediaBrowser_Model_Dto_BaseItemDto_MediaBrowser_Controller_LiveTv_LiveTvChannel___MediaBrowser_Controller_Dto_DtoOptions_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.AddChannelInfo(IReadOnlyCollection{System.ValueTuple{MediaBrowser.Model.Dto.BaseItemDto,MediaBrowser.Controller.LiveTv.LiveTvChannel}},MediaBrowser.Controller.Dto.DtoOptions,MediaBrowser.Controller.Entities.User)">AddChannelInfo(IReadOnlyCollection&lt;(BaseItemDto, LiveTvChannel)&gt;, DtoOptions, User)</h4>
+  <div class="markdown level1 summary"><p>Adds the channel information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddChannelInfo(IReadOnlyCollection&lt;(BaseItemDto, LiveTvChannel)&gt; items, DtoOptions options, User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a>, <a class="xref" href="MediaBrowser.Controller.LiveTv.LiveTvChannel.html">LiveTvChannel</a>&gt;&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dto.DtoOptions.html">DtoOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_AddInfoToProgramDto_IReadOnlyCollection_System_ValueTuple_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Dto_BaseItemDto___MediaBrowser_Model_Querying_ItemFields___MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.AddInfoToProgramDto(IReadOnlyCollection%7BSystem.ValueTuple%7BMediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Model.Dto.BaseItemDto%7D%7D%2CMediaBrowser.Model.Querying.ItemFields%5B%5D%2CMediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L224">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_AddInfoToProgramDto_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.AddInfoToProgramDto*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_AddInfoToProgramDto_IReadOnlyCollection_System_ValueTuple_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Dto_BaseItemDto___MediaBrowser_Model_Querying_ItemFields___MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.AddInfoToProgramDto(IReadOnlyCollection{System.ValueTuple{MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Model.Dto.BaseItemDto}},MediaBrowser.Model.Querying.ItemFields[],MediaBrowser.Controller.Entities.User)">AddInfoToProgramDto(IReadOnlyCollection&lt;(BaseItem, BaseItemDto)&gt;, ItemFields[], User)</h4>
+  <div class="markdown level1 summary"><p>Adds the information to program dto.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddInfoToProgramDto(IReadOnlyCollection&lt;(BaseItem, BaseItemDto)&gt; programs, ItemFields[] fields, User user = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a>&gt;&gt;</td>
+        <td><span class="parametername">programs</span></td>
+        <td><p>The programs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.ItemFields.html">ItemFields</a>[]</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>The fields.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_AddInfoToRecordingDto_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Dto_BaseItemDto_MediaBrowser_Controller_LiveTv_ActiveRecordingInfo_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.AddInfoToRecordingDto(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Model.Dto.BaseItemDto%2CMediaBrowser.Controller.LiveTv.ActiveRecordingInfo%2CMediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L280">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_AddInfoToRecordingDto_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.AddInfoToRecordingDto*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_AddInfoToRecordingDto_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Dto_BaseItemDto_MediaBrowser_Controller_LiveTv_ActiveRecordingInfo_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.AddInfoToRecordingDto(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Model.Dto.BaseItemDto,MediaBrowser.Controller.LiveTv.ActiveRecordingInfo,MediaBrowser.Controller.Entities.User)">AddInfoToRecordingDto(BaseItem, BaseItemDto, ActiveRecordingInfo, User)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddInfoToRecordingDto(BaseItem item, BaseItemDto dto, ActiveRecordingInfo activeRecordingInfo, User user = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a></td>
+        <td><span class="parametername">dto</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.ActiveRecordingInfo.html">ActiveRecordingInfo</a></td>
+        <td><span class="parametername">activeRecordingInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_AddParts_IEnumerable_MediaBrowser_Controller_LiveTv_ILiveTvService__IEnumerable_MediaBrowser_Controller_LiveTv_ITunerHost__IEnumerable_MediaBrowser_Controller_LiveTv_IListingsProvider__.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.AddParts(IEnumerable%7BMediaBrowser.Controller.LiveTv.ILiveTvService%7D%2CIEnumerable%7BMediaBrowser.Controller.LiveTv.ITunerHost%7D%2CIEnumerable%7BMediaBrowser.Controller.LiveTv.IListingsProvider%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L61">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_AddParts_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.AddParts*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_AddParts_IEnumerable_MediaBrowser_Controller_LiveTv_ILiveTvService__IEnumerable_MediaBrowser_Controller_LiveTv_ITunerHost__IEnumerable_MediaBrowser_Controller_LiveTv_IListingsProvider__" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.AddParts(IEnumerable{MediaBrowser.Controller.LiveTv.ILiveTvService},IEnumerable{MediaBrowser.Controller.LiveTv.ITunerHost},IEnumerable{MediaBrowser.Controller.LiveTv.IListingsProvider})">AddParts(IEnumerable&lt;ILiveTvService&gt;, IEnumerable&lt;ITunerHost&gt;, IEnumerable&lt;IListingsProvider&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the parts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddParts(IEnumerable&lt;ILiveTvService&gt; services, IEnumerable&lt;ITunerHost&gt; tunerHosts, IEnumerable&lt;IListingsProvider&gt; listingProviders)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.ILiveTvService.html">ILiveTvService</a>&gt;</td>
+        <td><span class="parametername">services</span></td>
+        <td><p>The services.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.ITunerHost.html">ITunerHost</a>&gt;</td>
+        <td><span class="parametername">tunerHosts</span></td>
+        <td><p>The tuner hosts.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.IListingsProvider.html">IListingsProvider</a>&gt;</td>
+        <td><span class="parametername">listingProviders</span></td>
+        <td><p>The listing providers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_CancelSeriesTimer_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.CancelSeriesTimer(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L53">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_CancelSeriesTimer_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.CancelSeriesTimer*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_CancelSeriesTimer_System_String_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.CancelSeriesTimer(System.String)">CancelSeriesTimer(String)</h4>
+  <div class="markdown level1 summary"><p>Cancels the series timer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task CancelSeriesTimer(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_CancelTimer_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.CancelTimer(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L46">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_CancelTimer_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.CancelTimer*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_CancelTimer_System_String_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.CancelTimer(System.String)">CancelTimer(String)</h4>
+  <div class="markdown level1 summary"><p>Cancels the timer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task CancelTimer(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_CreateSeriesTimer_MediaBrowser_Model_LiveTv_SeriesTimerInfoDto_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.CreateSeriesTimer(MediaBrowser.Model.LiveTv.SeriesTimerInfoDto%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L159">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_CreateSeriesTimer_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.CreateSeriesTimer*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_CreateSeriesTimer_MediaBrowser_Model_LiveTv_SeriesTimerInfoDto_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.CreateSeriesTimer(MediaBrowser.Model.LiveTv.SeriesTimerInfoDto,CancellationToken)">CreateSeriesTimer(SeriesTimerInfoDto, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates the series timer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task CreateSeriesTimer(SeriesTimerInfoDto timer, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.LiveTv.SeriesTimerInfoDto.html">SeriesTimerInfoDto</a></td>
+        <td><span class="parametername">timer</span></td>
+        <td><p>The timer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_CreateTimer_MediaBrowser_Model_LiveTv_TimerInfoDto_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.CreateTimer(MediaBrowser.Model.LiveTv.TimerInfoDto%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L151">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_CreateTimer_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.CreateTimer*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_CreateTimer_MediaBrowser_Model_LiveTv_TimerInfoDto_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.CreateTimer(MediaBrowser.Model.LiveTv.TimerInfoDto,CancellationToken)">CreateTimer(TimerInfoDto, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates the timer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task CreateTimer(TimerInfoDto timer, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.LiveTv.TimerInfoDto.html">TimerInfoDto</a></td>
+        <td><span class="parametername">timer</span></td>
+        <td><p>The timer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_DeleteListingsProvider_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.DeleteListingsProvider(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L239">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_DeleteListingsProvider_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.DeleteListingsProvider*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_DeleteListingsProvider_System_String_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.DeleteListingsProvider(System.String)">DeleteListingsProvider(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteListingsProvider(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_DiscoverTuners_System_Boolean_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.DiscoverTuners(System.Boolean%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L269">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_DiscoverTuners_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.DiscoverTuners*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_DiscoverTuners_System_Boolean_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.DiscoverTuners(System.Boolean,CancellationToken)">DiscoverTuners(Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;TunerHostInfo&gt;&gt; DiscoverTuners(bool newDevicesOnly, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">newDevicesOnly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.LiveTv.TunerHostInfo.html">TunerHostInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetActiveRecordingInfo_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetActiveRecordingInfo(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L278">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetActiveRecordingInfo_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetActiveRecordingInfo*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetActiveRecordingInfo_System_String_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetActiveRecordingInfo(System.String)">GetActiveRecordingInfo(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ActiveRecordingInfo GetActiveRecordingInfo(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.ActiveRecordingInfo.html">ActiveRecordingInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetChannelMediaSources_MediaBrowser_Controller_Entities_BaseItem_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetChannelMediaSources(MediaBrowser.Controller.Entities.BaseItem%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L215">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetChannelMediaSources_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetChannelMediaSources*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetChannelMediaSources_MediaBrowser_Controller_Entities_BaseItem_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetChannelMediaSources(MediaBrowser.Controller.Entities.BaseItem,CancellationToken)">GetChannelMediaSources(BaseItem, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the channel media sources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;MediaSourceInfo&gt;&gt; GetChannelMediaSources(BaseItem item, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetChannelsForListingsProvider_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetChannelsForListingsProvider(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L263">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetChannelsForListingsProvider_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetChannelsForListingsProvider*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetChannelsForListingsProvider_System_String_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetChannelsForListingsProvider(System.String,CancellationToken)">GetChannelsForListingsProvider(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;ChannelInfo&gt;&gt; GetChannelsForListingsProvider(string id, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.ChannelInfo.html">ChannelInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetChannelsFromListingsProviderData_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetChannelsFromListingsProviderData(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L264">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetChannelsFromListingsProviderData_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetChannelsFromListingsProviderData*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetChannelsFromListingsProviderData_System_String_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetChannelsFromListingsProviderData(System.String,CancellationToken)">GetChannelsFromListingsProviderData(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;ChannelInfo&gt;&gt; GetChannelsFromListingsProviderData(string id, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.ChannelInfo.html">ChannelInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetChannelStream_System_String_System_String_List_MediaBrowser_Controller_Library_ILiveStream__CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetChannelStream(System.String%2CSystem.String%2CList%7BMediaBrowser.Controller.Library.ILiveStream%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L109">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetChannelStream_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetChannelStream*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetChannelStream_System_String_System_String_List_MediaBrowser_Controller_Library_ILiveStream__CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetChannelStream(System.String,System.String,List{MediaBrowser.Controller.Library.ILiveStream},CancellationToken)">GetChannelStream(String, String, List&lt;ILiveStream&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the channel stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Tuple&lt;MediaSourceInfo, ILiveStream&gt;&gt; GetChannelStream(string id, string mediaSourceId, List&lt;ILiveStream&gt; currentLiveStreams, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mediaSourceId</span></td>
+        <td><p>The media source identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ILiveStream.html">ILiveStream</a>&gt;</td>
+        <td><span class="parametername">currentLiveStreams</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Tuple</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a>, <a class="xref" href="MediaBrowser.Controller.Library.ILiveStream.html">ILiveStream</a>&gt;&gt;</td>
+        <td><p>Task{StreamResponseInfo}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetEmbyTvActiveRecordingPath_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetEmbyTvActiveRecordingPath(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L276">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetEmbyTvActiveRecordingPath_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetEmbyTvActiveRecordingPath*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetEmbyTvActiveRecordingPath_System_String_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetEmbyTvActiveRecordingPath(System.String)">GetEmbyTvActiveRecordingPath(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetEmbyTvActiveRecordingPath(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetEnabledUsers.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetEnabledUsers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L205">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetEnabledUsers_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetEnabledUsers*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetEnabledUsers" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetEnabledUsers">GetEnabledUsers()</h4>
+  <div class="markdown level1 summary"><p>Gets the enabled users.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;User&gt; GetEnabledUsers()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a>&gt;</td>
+        <td><p>IEnumerable{User}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetGuideInfo.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetGuideInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L165">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetGuideInfo_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetGuideInfo*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetGuideInfo" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetGuideInfo">GetGuideInfo()</h4>
+  <div class="markdown level1 summary"><p>Gets the guide information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GuideInfo GetGuideInfo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.LiveTv.GuideInfo.html">GuideInfo</a></td>
+        <td><p>GuideInfo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetInternalChannels_MediaBrowser_Model_LiveTv_LiveTvChannelQuery_MediaBrowser_Controller_Dto_DtoOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetInternalChannels(MediaBrowser.Model.LiveTv.LiveTvChannelQuery%2CMediaBrowser.Controller.Dto.DtoOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L210">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetInternalChannels_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetInternalChannels*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetInternalChannels_MediaBrowser_Model_LiveTv_LiveTvChannelQuery_MediaBrowser_Controller_Dto_DtoOptions_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetInternalChannels(MediaBrowser.Model.LiveTv.LiveTvChannelQuery,MediaBrowser.Controller.Dto.DtoOptions,CancellationToken)">GetInternalChannels(LiveTvChannelQuery, DtoOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the internal channels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryResult&lt;BaseItem&gt; GetInternalChannels(LiveTvChannelQuery query, DtoOptions dtoOptions, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.LiveTv.LiveTvChannelQuery.html">LiveTvChannelQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dto.DtoOptions.html">DtoOptions</a></td>
+        <td><span class="parametername">dtoOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetInternalLiveTvFolder_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetInternalLiveTvFolder(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L199">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetInternalLiveTvFolder_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetInternalLiveTvFolder*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetInternalLiveTvFolder_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetInternalLiveTvFolder(CancellationToken)">GetInternalLiveTvFolder(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the live tv folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Folder GetInternalLiveTvFolder(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.Folder.html">Folder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetLineups_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetLineups(System.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L253">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetLineups_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetLineups*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetLineups_System_String_System_String_System_String_System_String_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetLineups(System.String,System.String,System.String,System.String)">GetLineups(String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the lineups.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;NameIdPair&gt;&gt; GetLineups(string providerType, string providerId, string country, string location)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">providerType</span></td>
+        <td><p>Type of the provider.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">providerId</span></td>
+        <td><p>The provider identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">country</span></td>
+        <td><p>The country.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.NameIdPair.html">NameIdPair</a>&gt;&gt;</td>
+        <td><p>Task&lt;List&lt;NameIdPair&gt;&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetLiveTvInfo_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetLiveTvInfo(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L185">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetLiveTvInfo_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetLiveTvInfo*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetLiveTvInfo_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetLiveTvInfo(CancellationToken)">GetLiveTvInfo(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the live tv information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LiveTvInfo GetLiveTvInfo(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.LiveTv.LiveTvInfo.html">LiveTvInfo</a></td>
+        <td><p>Task{LiveTvInfo}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetNewTimerDefaults_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetNewTimerDefaults(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L31">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetNewTimerDefaults_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetNewTimerDefaults*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetNewTimerDefaults_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetNewTimerDefaults(CancellationToken)">GetNewTimerDefaults(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the new timer defaults asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;SeriesTimerInfoDto&gt; GetNewTimerDefaults(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.LiveTv.SeriesTimerInfoDto.html">SeriesTimerInfoDto</a>&gt;</td>
+        <td><p>Task{TimerInfo}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetNewTimerDefaults_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetNewTimerDefaults(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L39">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetNewTimerDefaults_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetNewTimerDefaults*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetNewTimerDefaults_System_String_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetNewTimerDefaults(System.String,CancellationToken)">GetNewTimerDefaults(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the new timer defaults.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;SeriesTimerInfoDto&gt; GetNewTimerDefaults(string programId, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">programId</span></td>
+        <td><p>The program identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.LiveTv.SeriesTimerInfoDto.html">SeriesTimerInfoDto</a>&gt;</td>
+        <td><p>Task{SeriesTimerInfoDto}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetProgram_System_String_CancellationToken_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetProgram(System.String%2CCancellationToken%2CMediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L118">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetProgram_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetProgram*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetProgram_System_String_CancellationToken_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetProgram(System.String,CancellationToken,MediaBrowser.Controller.Entities.User)">GetProgram(String, CancellationToken, User)</h4>
+  <div class="markdown level1 summary"><p>Gets the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;BaseItemDto&gt; GetProgram(string id, CancellationToken cancellationToken, User user = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a>&gt;</td>
+        <td><p>Task{ProgramInfoDto}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetPrograms_MediaBrowser_Controller_Entities_InternalItemsQuery_MediaBrowser_Controller_Dto_DtoOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetPrograms(MediaBrowser.Controller.Entities.InternalItemsQuery%2CMediaBrowser.Controller.Dto.DtoOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L127">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetPrograms_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetPrograms*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetPrograms_MediaBrowser_Controller_Entities_InternalItemsQuery_MediaBrowser_Controller_Dto_DtoOptions_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetPrograms(MediaBrowser.Controller.Entities.InternalItemsQuery,MediaBrowser.Controller.Dto.DtoOptions,CancellationToken)">GetPrograms(InternalItemsQuery, DtoOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the programs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;QueryResult&lt;BaseItemDto&gt;&gt; GetPrograms(InternalItemsQuery query, DtoOptions options, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dto.DtoOptions.html">DtoOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a>&gt;&gt;</td>
+        <td><p>IEnumerable{ProgramInfo}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetRecommendedPrograms_MediaBrowser_Controller_Entities_InternalItemsQuery_MediaBrowser_Controller_Dto_DtoOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetRecommendedPrograms(MediaBrowser.Controller.Entities.InternalItemsQuery%2CMediaBrowser.Controller.Dto.DtoOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L173">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetRecommendedPrograms_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetRecommendedPrograms*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetRecommendedPrograms_MediaBrowser_Controller_Entities_InternalItemsQuery_MediaBrowser_Controller_Dto_DtoOptions_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetRecommendedPrograms(MediaBrowser.Controller.Entities.InternalItemsQuery,MediaBrowser.Controller.Dto.DtoOptions,CancellationToken)">GetRecommendedPrograms(InternalItemsQuery, DtoOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the recommended programs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryResult&lt;BaseItemDto&gt; GetRecommendedPrograms(InternalItemsQuery query, DtoOptions options, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dto.DtoOptions.html">DtoOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetRecommendedProgramsInternal_MediaBrowser_Controller_Entities_InternalItemsQuery_MediaBrowser_Controller_Dto_DtoOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetRecommendedProgramsInternal(MediaBrowser.Controller.Entities.InternalItemsQuery%2CMediaBrowser.Controller.Dto.DtoOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L178">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetRecommendedProgramsInternal_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetRecommendedProgramsInternal*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetRecommendedProgramsInternal_MediaBrowser_Controller_Entities_InternalItemsQuery_MediaBrowser_Controller_Dto_DtoOptions_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetRecommendedProgramsInternal(MediaBrowser.Controller.Entities.InternalItemsQuery,MediaBrowser.Controller.Dto.DtoOptions,CancellationToken)">GetRecommendedProgramsInternal(InternalItemsQuery, DtoOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the recommended programs internal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryResult&lt;BaseItem&gt; GetRecommendedProgramsInternal(InternalItemsQuery query, DtoOptions options, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dto.DtoOptions.html">DtoOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetRecordingFolders_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetRecordingFolders(MediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L282">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetRecordingFolders_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetRecordingFolders*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetRecordingFolders_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetRecordingFolders(MediaBrowser.Controller.Entities.User)">GetRecordingFolders(User)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;BaseItem&gt; GetRecordingFolders(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetRecordings_MediaBrowser_Model_LiveTv_RecordingQuery_MediaBrowser_Controller_Dto_DtoOptions_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetRecordings(MediaBrowser.Model.LiveTv.RecordingQuery%2CMediaBrowser.Controller.Dto.DtoOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L84">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetRecordings_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetRecordings*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetRecordings_MediaBrowser_Model_LiveTv_RecordingQuery_MediaBrowser_Controller_Dto_DtoOptions_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetRecordings(MediaBrowser.Model.LiveTv.RecordingQuery,MediaBrowser.Controller.Dto.DtoOptions)">GetRecordings(RecordingQuery, DtoOptions)</h4>
+  <div class="markdown level1 summary"><p>Gets the recordings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryResult&lt;BaseItemDto&gt; GetRecordings(RecordingQuery query, DtoOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.LiveTv.RecordingQuery.html">RecordingQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dto.DtoOptions.html">DtoOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetSeriesTimer_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetSeriesTimer(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L77">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetSeriesTimer_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetSeriesTimer*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetSeriesTimer_System_String_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetSeriesTimer(System.String,CancellationToken)">GetSeriesTimer(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the series timer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;SeriesTimerInfoDto&gt; GetSeriesTimer(string id, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.LiveTv.SeriesTimerInfoDto.html">SeriesTimerInfoDto</a>&gt;</td>
+        <td><p>Task{TimerInfoDto}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetSeriesTimers_MediaBrowser_Model_LiveTv_SeriesTimerQuery_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetSeriesTimers(MediaBrowser.Model.LiveTv.SeriesTimerQuery%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L100">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetSeriesTimers_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetSeriesTimers*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetSeriesTimers_MediaBrowser_Model_LiveTv_SeriesTimerQuery_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetSeriesTimers(MediaBrowser.Model.LiveTv.SeriesTimerQuery,CancellationToken)">GetSeriesTimers(SeriesTimerQuery, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the series timers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;QueryResult&lt;SeriesTimerInfoDto&gt;&gt; GetSeriesTimers(SeriesTimerQuery query, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.LiveTv.SeriesTimerQuery.html">SeriesTimerQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Model.LiveTv.SeriesTimerInfoDto.html">SeriesTimerInfoDto</a>&gt;&gt;</td>
+        <td><p>Task{QueryResult{SeriesTimerInfoDto}}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetTimer_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetTimer(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L69">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetTimer_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetTimer*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetTimer_System_String_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetTimer(System.String,CancellationToken)">GetTimer(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the timer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TimerInfoDto&gt; GetTimer(string id, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.LiveTv.TimerInfoDto.html">TimerInfoDto</a>&gt;</td>
+        <td><p>Task{TimerInfoDto}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetTimers_MediaBrowser_Model_LiveTv_TimerQuery_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetTimers(MediaBrowser.Model.LiveTv.TimerQuery%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L92">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetTimers_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetTimers*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetTimers_MediaBrowser_Model_LiveTv_TimerQuery_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetTimers(MediaBrowser.Model.LiveTv.TimerQuery,CancellationToken)">GetTimers(TimerQuery, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the timers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;QueryResult&lt;TimerInfoDto&gt;&gt; GetTimers(TimerQuery query, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.LiveTv.TimerQuery.html">TimerQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Model.LiveTv.TimerInfoDto.html">TimerInfoDto</a>&gt;&gt;</td>
+        <td><p>Task{QueryResult{TimerInfoDto}}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetTunerChannelMapping_MediaBrowser_Controller_LiveTv_ChannelInfo_MediaBrowser_Model_Dto_NameValuePair___List_MediaBrowser_Controller_LiveTv_ChannelInfo__.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetTunerChannelMapping(MediaBrowser.Controller.LiveTv.ChannelInfo%2CMediaBrowser.Model.Dto.NameValuePair%5B%5D%2CList%7BMediaBrowser.Controller.LiveTv.ChannelInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L243">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetTunerChannelMapping_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetTunerChannelMapping*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetTunerChannelMapping_MediaBrowser_Controller_LiveTv_ChannelInfo_MediaBrowser_Model_Dto_NameValuePair___List_MediaBrowser_Controller_LiveTv_ChannelInfo__" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetTunerChannelMapping(MediaBrowser.Controller.LiveTv.ChannelInfo,MediaBrowser.Model.Dto.NameValuePair[],List{MediaBrowser.Controller.LiveTv.ChannelInfo})">GetTunerChannelMapping(ChannelInfo, NameValuePair[], List&lt;ChannelInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TunerChannelMapping GetTunerChannelMapping(ChannelInfo channel, NameValuePair[] mappings, List&lt;ChannelInfo&gt; providerChannels)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.ChannelInfo.html">ChannelInfo</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dto.NameValuePair.html">NameValuePair</a>[]</td>
+        <td><span class="parametername">mappings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.ChannelInfo.html">ChannelInfo</a>&gt;</td>
+        <td><span class="parametername">providerChannels</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.TunerChannelMapping.html">TunerChannelMapping</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_GetTunerHostTypes.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.GetTunerHostTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L268">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetTunerHostTypes_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetTunerHostTypes*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_GetTunerHostTypes" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.GetTunerHostTypes">GetTunerHostTypes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;NameIdPair&gt; GetTunerHostTypes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.NameIdPair.html">NameIdPair</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_ResetTuner_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.ResetTuner(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L193">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_ResetTuner_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.ResetTuner*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_ResetTuner_System_String_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.ResetTuner(System.String,CancellationToken)">ResetTuner(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resets the tuner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ResetTuner(string id, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_SaveListingProvider_MediaBrowser_Model_LiveTv_ListingsProviderInfo_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.SaveListingProvider(MediaBrowser.Model.LiveTv.ListingsProviderInfo%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L237">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_SaveListingProvider_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.SaveListingProvider*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_SaveListingProvider_MediaBrowser_Model_LiveTv_ListingsProviderInfo_System_Boolean_System_Boolean_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.SaveListingProvider(MediaBrowser.Model.LiveTv.ListingsProviderInfo,System.Boolean,System.Boolean)">SaveListingProvider(ListingsProviderInfo, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Saves the listing provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ListingsProviderInfo&gt; SaveListingProvider(ListingsProviderInfo info, bool validateLogin, bool validateListings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.LiveTv.ListingsProviderInfo.html">ListingsProviderInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>The information.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">validateLogin</span></td>
+        <td><p>if set to <code>true</code> [validate login].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">validateListings</span></td>
+        <td><p>if set to <code>true</code> [validate listings].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.LiveTv.ListingsProviderInfo.html">ListingsProviderInfo</a>&gt;</td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_SaveTunerHost_MediaBrowser_Model_LiveTv_TunerHostInfo_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.SaveTunerHost(MediaBrowser.Model.LiveTv.TunerHostInfo%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L229">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_SaveTunerHost_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.SaveTunerHost*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_SaveTunerHost_MediaBrowser_Model_LiveTv_TunerHostInfo_System_Boolean_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.SaveTunerHost(MediaBrowser.Model.LiveTv.TunerHostInfo,System.Boolean)">SaveTunerHost(TunerHostInfo, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Saves the tuner host.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TunerHostInfo&gt; SaveTunerHost(TunerHostInfo info, bool dataSourceChanged = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.LiveTv.TunerHostInfo.html">TunerHostInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">dataSourceChanged</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.LiveTv.TunerHostInfo.html">TunerHostInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_SetChannelMapping_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.SetChannelMapping(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L241">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_SetChannelMapping_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.SetChannelMapping*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_SetChannelMapping_System_String_System_String_System_String_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.SetChannelMapping(System.String,System.String,System.String)">SetChannelMapping(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TunerChannelMapping&gt; SetChannelMapping(string providerId, string tunerChannelNumber, string providerChannelNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">providerId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tunerChannelNumber</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">providerChannelNumber</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.TunerChannelMapping.html">TunerChannelMapping</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_UpdateSeriesTimer_MediaBrowser_Model_LiveTv_SeriesTimerInfoDto_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.UpdateSeriesTimer(MediaBrowser.Model.LiveTv.SeriesTimerInfoDto%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L143">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_UpdateSeriesTimer_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.UpdateSeriesTimer*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_UpdateSeriesTimer_MediaBrowser_Model_LiveTv_SeriesTimerInfoDto_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.UpdateSeriesTimer(MediaBrowser.Model.LiveTv.SeriesTimerInfoDto,CancellationToken)">UpdateSeriesTimer(SeriesTimerInfoDto, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates the timer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task UpdateSeriesTimer(SeriesTimerInfoDto timer, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.LiveTv.SeriesTimerInfoDto.html">SeriesTimerInfoDto</a></td>
+        <td><span class="parametername">timer</span></td>
+        <td><p>The timer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_UpdateTimer_MediaBrowser_Model_LiveTv_TimerInfoDto_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.UpdateTimer(MediaBrowser.Model.LiveTv.TimerInfoDto%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L135">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_LiveTv_ILiveTvManager_UpdateTimer_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.UpdateTimer*"></a>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_UpdateTimer_MediaBrowser_Model_LiveTv_TimerInfoDto_CancellationToken_" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.UpdateTimer(MediaBrowser.Model.LiveTv.TimerInfoDto,CancellationToken)">UpdateTimer(TimerInfoDto, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates the timer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task UpdateTimer(TimerInfoDto timer, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.LiveTv.TimerInfoDto.html">TimerInfoDto</a></td>
+        <td><span class="parametername">timer</span></td>
+        <td><p>The timer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_SeriesTimerCancelled.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.SeriesTimerCancelled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L271">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_SeriesTimerCancelled" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.SeriesTimerCancelled">SeriesTimerCancelled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;TimerEventInfo&gt;&gt; SeriesTimerCancelled</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.TimerEventInfo.html">TimerEventInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_SeriesTimerCreated.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.SeriesTimerCreated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L274">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_SeriesTimerCreated" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.SeriesTimerCreated">SeriesTimerCreated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;TimerEventInfo&gt;&gt; SeriesTimerCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.TimerEventInfo.html">TimerEventInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_TimerCancelled.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.TimerCancelled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L272">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_TimerCancelled" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.TimerCancelled">TimerCancelled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;TimerEventInfo&gt;&gt; TimerCancelled</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.TimerEventInfo.html">TimerEventInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager_TimerCreated.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager.TimerCreated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L273">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_LiveTv_ILiveTvManager_TimerCreated" data-uid="MediaBrowser.Controller.LiveTv.ILiveTvManager.TimerCreated">TimerCreated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;TimerEventInfo&gt;&gt; TimerCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.LiveTv.TimerEventInfo.html">TimerEventInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_LiveTv_ILiveTvManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.LiveTv.ILiveTvManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/LiveTv/ILiveTvManager.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

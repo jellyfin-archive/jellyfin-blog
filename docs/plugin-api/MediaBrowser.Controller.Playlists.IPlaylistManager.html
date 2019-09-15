@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IPlaylistManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IPlaylistManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager">
+  
+  
+  <h1 id="MediaBrowser_Controller_Playlists_IPlaylistManager" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager" class="text-break">Interface IPlaylistManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Controller.Playlists.html">MediaBrowser.Controller.Playlists</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Controller.dll</h6>
+  <h5 id="MediaBrowser_Controller_Playlists_IPlaylistManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IPlaylistManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Playlists_IPlaylistManager_AddToPlaylist_System_String_IEnumerable_Guid__Guid_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Playlists.IPlaylistManager.AddToPlaylist(System.String%2CIEnumerable%7BGuid%7D%2CGuid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Playlists/IPlaylistManager.cs/#L32">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Playlists_IPlaylistManager_AddToPlaylist_" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager.AddToPlaylist*"></a>
+  <h4 id="MediaBrowser_Controller_Playlists_IPlaylistManager_AddToPlaylist_System_String_IEnumerable_Guid__Guid_" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager.AddToPlaylist(System.String,IEnumerable{Guid},Guid)">AddToPlaylist(String, IEnumerable&lt;Guid&gt;, Guid)</h4>
+  <div class="markdown level1 summary"><p>Adds to playlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddToPlaylist(string playlistId, IEnumerable&lt;Guid&gt; itemIds, Guid userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">playlistId</span></td>
+        <td><p>The playlist identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td><span class="parametername">itemIds</span></td>
+        <td><p>The item ids.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>The user identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Playlists_IPlaylistManager_CreatePlaylist_MediaBrowser_Model_Playlists_PlaylistCreationRequest_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Playlists.IPlaylistManager.CreatePlaylist(MediaBrowser.Model.Playlists.PlaylistCreationRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Playlists/IPlaylistManager.cs/#L23">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Playlists_IPlaylistManager_CreatePlaylist_" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager.CreatePlaylist*"></a>
+  <h4 id="MediaBrowser_Controller_Playlists_IPlaylistManager_CreatePlaylist_MediaBrowser_Model_Playlists_PlaylistCreationRequest_" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager.CreatePlaylist(MediaBrowser.Model.Playlists.PlaylistCreationRequest)">CreatePlaylist(PlaylistCreationRequest)</h4>
+  <div class="markdown level1 summary"><p>Creates the playlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PlaylistCreationResult&gt; CreatePlaylist(PlaylistCreationRequest options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Playlists.PlaylistCreationRequest.html">PlaylistCreationRequest</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Playlists.PlaylistCreationResult.html">PlaylistCreationResult</a>&gt;</td>
+        <td><p>Task&lt;Playlist&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Playlists_IPlaylistManager_GetPlaylists_Guid_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Playlists.IPlaylistManager.GetPlaylists(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Playlists/IPlaylistManager.cs/#L16">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Playlists_IPlaylistManager_GetPlaylists_" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager.GetPlaylists*"></a>
+  <h4 id="MediaBrowser_Controller_Playlists_IPlaylistManager_GetPlaylists_Guid_" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager.GetPlaylists(Guid)">GetPlaylists(Guid)</h4>
+  <div class="markdown level1 summary"><p>Gets the playlists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;Playlist&gt; GetPlaylists(Guid userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>The user identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Playlists.Playlist.html">Playlist</a>&gt;</td>
+        <td><p>IEnumerable&lt;Playlist&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Playlists_IPlaylistManager_GetPlaylistsFolder_Guid_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Playlists.IPlaylistManager.GetPlaylistsFolder(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Playlists/IPlaylistManager.cs/#L47">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Playlists_IPlaylistManager_GetPlaylistsFolder_" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager.GetPlaylistsFolder*"></a>
+  <h4 id="MediaBrowser_Controller_Playlists_IPlaylistManager_GetPlaylistsFolder_Guid_" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager.GetPlaylistsFolder(Guid)">GetPlaylistsFolder(Guid)</h4>
+  <div class="markdown level1 summary"><p>Gets the playlists folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Folder GetPlaylistsFolder(Guid userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>The user identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.Folder.html">Folder</a></td>
+        <td><p>Folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Playlists_IPlaylistManager_MoveItem_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Playlists.IPlaylistManager.MoveItem(System.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Playlists/IPlaylistManager.cs/#L56">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Playlists_IPlaylistManager_MoveItem_" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager.MoveItem*"></a>
+  <h4 id="MediaBrowser_Controller_Playlists_IPlaylistManager_MoveItem_System_String_System_String_System_Int32_" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager.MoveItem(System.String,System.String,System.Int32)">MoveItem(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Moves the item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void MoveItem(string playlistId, string entryId, int newIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">playlistId</span></td>
+        <td><p>The playlist identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">entryId</span></td>
+        <td><p>The entry identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">newIndex</span></td>
+        <td><p>The new index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Playlists_IPlaylistManager_RemoveFromPlaylist_System_String_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Playlists.IPlaylistManager.RemoveFromPlaylist(System.String%2CIEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Playlists/IPlaylistManager.cs/#L40">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Playlists_IPlaylistManager_RemoveFromPlaylist_" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager.RemoveFromPlaylist*"></a>
+  <h4 id="MediaBrowser_Controller_Playlists_IPlaylistManager_RemoveFromPlaylist_System_String_IEnumerable_System_String__" data-uid="MediaBrowser.Controller.Playlists.IPlaylistManager.RemoveFromPlaylist(System.String,IEnumerable{System.String})">RemoveFromPlaylist(String, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes from playlist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveFromPlaylist(string playlistId, IEnumerable&lt;string&gt; entryIds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">playlistId</span></td>
+        <td><p>The playlist identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">entryIds</span></td>
+        <td><p>The entry ids.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Playlists_IPlaylistManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Playlists.IPlaylistManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Playlists/IPlaylistManager.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

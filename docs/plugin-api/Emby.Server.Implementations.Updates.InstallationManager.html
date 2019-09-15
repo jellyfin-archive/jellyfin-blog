@@ -1,0 +1,1135 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class InstallationManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class InstallationManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.Updates.InstallationManager">
+  
+  
+  <h1 id="Emby_Server_Implementations_Updates_InstallationManager" data-uid="Emby.Server.Implementations.Updates.InstallationManager" class="text-break">Class InstallationManager
+  </h1>
+  <div class="markdown level0 summary"><p>Manages all install, uninstall and update operations (both plugins and system)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">InstallationManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Common.Updates.IInstallationManager.html">IInstallationManager</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.Updates.html">Emby.Server.Implementations.Updates</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_Updates_InstallationManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InstallationManager : object, IInstallationManager, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager__ctor_ILogger_Emby_Server_Implementations_Updates_InstallationManager__MediaBrowser_Common_IApplicationHost_MediaBrowser_Common_Configuration_IApplicationPaths_MediaBrowser_Common_Net_IHttpClient_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Model_IO_IZipClient_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.%23ctor(ILogger%7BEmby.Server.Implementations.Updates.InstallationManager%7D%2CMediaBrowser.Common.IApplicationHost%2CMediaBrowser.Common.Configuration.IApplicationPaths%2CMediaBrowser.Common.Net.IHttpClient%2CMediaBrowser.Model.Serialization.IJsonSerializer%2CMediaBrowser.Controller.Configuration.IServerConfigurationManager%2CMediaBrowser.Model.IO.IFileSystem%2CMediaBrowser.Model.IO.IZipClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L81">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager__ctor_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager__ctor_ILogger_Emby_Server_Implementations_Updates_InstallationManager__MediaBrowser_Common_IApplicationHost_MediaBrowser_Common_Configuration_IApplicationPaths_MediaBrowser_Common_Net_IHttpClient_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Model_IO_IZipClient_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.#ctor(ILogger{Emby.Server.Implementations.Updates.InstallationManager},MediaBrowser.Common.IApplicationHost,MediaBrowser.Common.Configuration.IApplicationPaths,MediaBrowser.Common.Net.IHttpClient,MediaBrowser.Model.Serialization.IJsonSerializer,MediaBrowser.Controller.Configuration.IServerConfigurationManager,MediaBrowser.Model.IO.IFileSystem,MediaBrowser.Model.IO.IZipClient)">InstallationManager(ILogger&lt;InstallationManager&gt;, IApplicationHost, IApplicationPaths, IHttpClient, IJsonSerializer, IServerConfigurationManager, IFileSystem, IZipClient)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InstallationManager(ILogger&lt;InstallationManager&gt; logger, IApplicationHost appHost, IApplicationPaths appPaths, IHttpClient httpClient, IJsonSerializer jsonSerializer, IServerConfigurationManager config, IFileSystem fileSystem, IZipClient zipClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="Emby.Server.Implementations.Updates.InstallationManager.html">InstallationManager</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.IApplicationHost.html">IApplicationHost</a></td>
+        <td><span class="parametername">appHost</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Configuration.IApplicationPaths.html">IApplicationPaths</a></td>
+        <td><span class="parametername">appPaths</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Net.IHttpClient.html">IHttpClient</a></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td><span class="parametername">jsonSerializer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IZipClient.html">IZipClient</a></td>
+        <td><span class="parametername">zipClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_CompletedInstallations.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.CompletedInstallations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L45">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_CompletedInstallations_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.CompletedInstallations*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_CompletedInstallations" data-uid="Emby.Server.Implementations.Updates.InstallationManager.CompletedInstallations">CompletedInstallations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;InstallationInfo&gt; CompletedInstallations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Updates.InstallationInfo.html">InstallationInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_CancelInstallation_Guid_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.CancelInstallation(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L531">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_CancelInstallation_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.CancelInstallation*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_CancelInstallation_Guid_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.CancelInstallation(Guid)">CancelInstallation(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CancelInstallation(Guid id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_Dispose.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L547">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_Dispose_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.Dispose*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_Dispose" data-uid="Emby.Server.Implementations.Updates.InstallationManager.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L557">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_Dispose_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.Dispose*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_Dispose_System_Boolean_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged and - optionally - managed resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool dispose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">dispose</span></td>
+        <td><p><code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_FilterPackages_IEnumerable_MediaBrowser_Model_Updates_PackageInfo__.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.FilterPackages(IEnumerable%7BMediaBrowser.Model.Updates.PackageInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L150">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_FilterPackages_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.FilterPackages*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_FilterPackages_IEnumerable_MediaBrowser_Model_Updates_PackageInfo__" data-uid="Emby.Server.Implementations.Updates.InstallationManager.FilterPackages(IEnumerable{MediaBrowser.Model.Updates.PackageInfo})">FilterPackages(IEnumerable&lt;PackageInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;PackageInfo&gt; FilterPackages(IEnumerable&lt;PackageInfo&gt; packages)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Updates.PackageInfo.html">PackageInfo</a>&gt;</td>
+        <td><span class="parametername">packages</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Updates.PackageInfo.html">PackageInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_FilterPackages_IEnumerable_MediaBrowser_Model_Updates_PackageInfo__System_String_Version_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.FilterPackages(IEnumerable%7BMediaBrowser.Model.Updates.PackageInfo%7D%2CSystem.String%2CVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L183">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_FilterPackages_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.FilterPackages*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_FilterPackages_IEnumerable_MediaBrowser_Model_Updates_PackageInfo__System_String_Version_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.FilterPackages(IEnumerable{MediaBrowser.Model.Updates.PackageInfo},System.String,Version)">FilterPackages(IEnumerable&lt;PackageInfo&gt;, String, Version)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;PackageInfo&gt; FilterPackages(IEnumerable&lt;PackageInfo&gt; packages, string packageType, Version applicationVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Updates.PackageInfo.html">PackageInfo</a>&gt;</td>
+        <td><span class="parametername">packages</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packageType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Version</span></td>
+        <td><span class="parametername">applicationVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Updates.PackageInfo.html">PackageInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_GetAvailablePackages_CancellationToken_System_Boolean_System_String_Version_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.GetAvailablePackages(CancellationToken%2CSystem.Boolean%2CSystem.String%2CVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L113">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_GetAvailablePackages_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.GetAvailablePackages*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_GetAvailablePackages_CancellationToken_System_Boolean_System_String_Version_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.GetAvailablePackages(CancellationToken,System.Boolean,System.String,Version)">GetAvailablePackages(CancellationToken, Boolean, String, Version)</h4>
+  <div class="markdown level1 summary"><p>Gets all available packages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;PackageInfo&gt;&gt; GetAvailablePackages(CancellationToken cancellationToken, bool withRegistration = true, string packageType = null, Version applicationVersion = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withRegistration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packageType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Version</span></td>
+        <td><span class="parametername">applicationVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Updates.PackageInfo.html">PackageInfo</a>&gt;&gt;</td>
+        <td><p>Task{List{PackageInfo}}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_GetAvailablePackagesWithoutRegistrationInfo_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.GetAvailablePackagesWithoutRegistrationInfo(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L128">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_GetAvailablePackagesWithoutRegistrationInfo_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.GetAvailablePackagesWithoutRegistrationInfo*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_GetAvailablePackagesWithoutRegistrationInfo_CancellationToken_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.GetAvailablePackagesWithoutRegistrationInfo(CancellationToken)">GetAvailablePackagesWithoutRegistrationInfo(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets all available packages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;PackageInfo&gt;&gt; GetAvailablePackagesWithoutRegistrationInfo(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Updates.PackageInfo.html">PackageInfo</a>&gt;&gt;</td>
+        <td><p>Task{List{PackageInfo}}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_GetAvailablePluginUpdates_Version_System_Boolean_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.GetAvailablePluginUpdates(Version%2CSystem.Boolean%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L294">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_GetAvailablePluginUpdates_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.GetAvailablePluginUpdates*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_GetAvailablePluginUpdates_Version_System_Boolean_CancellationToken_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.GetAvailablePluginUpdates(Version,System.Boolean,CancellationToken)">GetAvailablePluginUpdates(Version, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the available plugin updates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;PackageVersionInfo&gt;&gt; GetAvailablePluginUpdates(Version applicationVersion, bool withAutoUpdateEnabled, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Version</span></td>
+        <td><span class="parametername">applicationVersion</span></td>
+        <td><p>The current server version.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withAutoUpdateEnabled</span></td>
+        <td><p>if set to <code>true</code> [with auto update enabled].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Updates.PackageVersionInfo.html">PackageVersionInfo</a>&gt;&gt;</td>
+        <td><p>Task{IEnumerable{PackageVersionInfo}}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_GetLatestCompatibleVersion_IEnumerable_MediaBrowser_Model_Updates_PackageInfo__System_String_System_String_Version_MediaBrowser_Model_Updates_PackageVersionClass_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.GetLatestCompatibleVersion(IEnumerable%7BMediaBrowser.Model.Updates.PackageInfo%7D%2CSystem.String%2CSystem.String%2CVersion%2CMediaBrowser.Model.Updates.PackageVersionClass)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L277">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_GetLatestCompatibleVersion_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.GetLatestCompatibleVersion*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_GetLatestCompatibleVersion_IEnumerable_MediaBrowser_Model_Updates_PackageInfo__System_String_System_String_Version_MediaBrowser_Model_Updates_PackageVersionClass_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.GetLatestCompatibleVersion(IEnumerable{MediaBrowser.Model.Updates.PackageInfo},System.String,System.String,Version,MediaBrowser.Model.Updates.PackageVersionClass)">GetLatestCompatibleVersion(IEnumerable&lt;PackageInfo&gt;, String, String, Version, PackageVersionClass)</h4>
+  <div class="markdown level1 summary"><p>Gets the latest compatible version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PackageVersionInfo GetLatestCompatibleVersion(IEnumerable&lt;PackageInfo&gt; availablePackages, string name, string guid, Version currentServerVersion, PackageVersionClass classification = default(PackageVersionClass))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Updates.PackageInfo.html">PackageInfo</a>&gt;</td>
+        <td><span class="parametername">availablePackages</span></td>
+        <td><p>The available packages.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Version</span></td>
+        <td><span class="parametername">currentServerVersion</span></td>
+        <td><p>The current server version.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Updates.PackageVersionClass.html">PackageVersionClass</a></td>
+        <td><span class="parametername">classification</span></td>
+        <td><p>The classification.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Updates.PackageVersionInfo.html">PackageVersionInfo</a></td>
+        <td><p>PackageVersionInfo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_GetLatestCompatibleVersion_System_String_System_String_Version_MediaBrowser_Model_Updates_PackageVersionClass_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.GetLatestCompatibleVersion(System.String%2CSystem.String%2CVersion%2CMediaBrowser.Model.Updates.PackageVersionClass)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L262">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_GetLatestCompatibleVersion_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.GetLatestCompatibleVersion*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_GetLatestCompatibleVersion_System_String_System_String_Version_MediaBrowser_Model_Updates_PackageVersionClass_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.GetLatestCompatibleVersion(System.String,System.String,Version,MediaBrowser.Model.Updates.PackageVersionClass)">GetLatestCompatibleVersion(String, String, Version, PackageVersionClass)</h4>
+  <div class="markdown level1 summary"><p>Gets the latest compatible version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PackageVersionInfo&gt; GetLatestCompatibleVersion(string name, string guid, Version currentServerVersion, PackageVersionClass classification = default(PackageVersionClass))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td><p>The assembly guid if this is a plug-in</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Version</span></td>
+        <td><span class="parametername">currentServerVersion</span></td>
+        <td><p>The current server version.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Updates.PackageVersionClass.html">PackageVersionClass</a></td>
+        <td><span class="parametername">classification</span></td>
+        <td><p>The classification.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Updates.PackageVersionInfo.html">PackageVersionInfo</a>&gt;</td>
+        <td><p>Task{PackageVersionInfo}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_GetPackage_System_String_System_String_MediaBrowser_Model_Updates_PackageVersionClass_Version_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.GetPackage(System.String%2CSystem.String%2CMediaBrowser.Model.Updates.PackageVersionClass%2CVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L239">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_GetPackage_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.GetPackage*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_GetPackage_System_String_System_String_MediaBrowser_Model_Updates_PackageVersionClass_Version_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.GetPackage(System.String,System.String,MediaBrowser.Model.Updates.PackageVersionClass,Version)">GetPackage(String, String, PackageVersionClass, Version)</h4>
+  <div class="markdown level1 summary"><p>Gets the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PackageVersionInfo&gt; GetPackage(string name, string guid, PackageVersionClass classification, Version version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td><p>The assembly guid</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Updates.PackageVersionClass.html">PackageVersionClass</a></td>
+        <td><span class="parametername">classification</span></td>
+        <td><p>The classification.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Version</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Updates.PackageVersionInfo.html">PackageVersionInfo</a>&gt;</td>
+        <td><p>Task{PackageVersionInfo}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_InstallPackage_MediaBrowser_Model_Updates_PackageVersionInfo_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.InstallPackage(MediaBrowser.Model.Updates.PackageVersionInfo%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L311">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_InstallPackage_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.InstallPackage*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_InstallPackage_MediaBrowser_Model_Updates_PackageVersionInfo_CancellationToken_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.InstallPackage(MediaBrowser.Model.Updates.PackageVersionInfo,CancellationToken)">InstallPackage(PackageVersionInfo, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task InstallPackage(PackageVersionInfo package, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Updates.PackageVersionInfo.html">PackageVersionInfo</a></td>
+        <td><span class="parametername">package</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_UninstallPlugin_MediaBrowser_Common_Plugins_IPlugin_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.UninstallPlugin(MediaBrowser.Common.Plugins.IPlugin)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L480">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Updates_InstallationManager_UninstallPlugin_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.UninstallPlugin*"></a>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_UninstallPlugin_MediaBrowser_Common_Plugins_IPlugin_" data-uid="Emby.Server.Implementations.Updates.InstallationManager.UninstallPlugin(MediaBrowser.Common.Plugins.IPlugin)">UninstallPlugin(IPlugin)</h4>
+  <div class="markdown level1 summary"><p>Uninstalls a plugin</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UninstallPlugin(IPlugin plugin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Plugins.IPlugin.html">IPlugin</a></td>
+        <td><span class="parametername">plugin</span></td>
+        <td><p>The plugin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_PackageInstallationCancelled.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.PackageInstallationCancelled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L33">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_PackageInstallationCancelled" data-uid="Emby.Server.Implementations.Updates.InstallationManager.PackageInstallationCancelled">PackageInstallationCancelled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;InstallationEventArgs&gt; PackageInstallationCancelled</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Common.Updates.InstallationEventArgs.html">InstallationEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_PackageInstallationCompleted.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.PackageInstallationCompleted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L31">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_PackageInstallationCompleted" data-uid="Emby.Server.Implementations.Updates.InstallationManager.PackageInstallationCompleted">PackageInstallationCompleted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;InstallationEventArgs&gt; PackageInstallationCompleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Common.Updates.InstallationEventArgs.html">InstallationEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_PackageInstallationFailed.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.PackageInstallationFailed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L32">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_PackageInstallationFailed" data-uid="Emby.Server.Implementations.Updates.InstallationManager.PackageInstallationFailed">PackageInstallationFailed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;InstallationFailedEventArgs&gt; PackageInstallationFailed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Common.Updates.InstallationFailedEventArgs.html">InstallationFailedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_PackageInstalling.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.PackageInstalling%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L30">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_PackageInstalling" data-uid="Emby.Server.Implementations.Updates.InstallationManager.PackageInstalling">PackageInstalling</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;InstallationEventArgs&gt; PackageInstalling</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Common.Updates.InstallationEventArgs.html">InstallationEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_PluginInstalled.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.PluginInstalled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L60">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_PluginInstalled" data-uid="Emby.Server.Implementations.Updates.InstallationManager.PluginInstalled">PluginInstalled</h4>
+  <div class="markdown level1 summary"><p>Occurs when [plugin updated].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GenericEventArgs&lt;PackageVersionInfo&gt;&gt; PluginInstalled</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Model.Updates.PackageVersionInfo.html">PackageVersionInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_PluginUninstalled.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.PluginUninstalled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L50">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_PluginUninstalled" data-uid="Emby.Server.Implementations.Updates.InstallationManager.PluginUninstalled">PluginUninstalled</h4>
+  <div class="markdown level1 summary"><p>Occurs when [plugin uninstalled].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GenericEventArgs&lt;IPlugin&gt;&gt; PluginUninstalled</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Common.Plugins.IPlugin.html">IPlugin</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager_PluginUpdated.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager.PluginUpdated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L55">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Updates_InstallationManager_PluginUpdated" data-uid="Emby.Server.Implementations.Updates.InstallationManager.PluginUpdated">PluginUpdated</h4>
+  <div class="markdown level1 summary"><p>Occurs when [plugin updated].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GenericEventArgs&lt;(IPlugin, PackageVersionInfo)&gt;&gt; PluginUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Common.Plugins.IPlugin.html">IPlugin</a>, <a class="xref" href="MediaBrowser.Model.Updates.PackageVersionInfo.html">PackageVersionInfo</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Common.Updates.IInstallationManager.html">IInstallationManager</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Updates_InstallationManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Updates.InstallationManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Updates/InstallationManager.cs/#L28" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

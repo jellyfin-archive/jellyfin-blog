@@ -1,0 +1,2128 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LiveTvService
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LiveTvService
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Api.LiveTv.LiveTvService">
+  
+  
+  <h1 id="MediaBrowser_Api_LiveTv_LiveTvService" data-uid="MediaBrowser.Api.LiveTv.LiveTvService" class="text-break">Class LiveTvService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MediaBrowser.Api.BaseApiService.html">BaseApiService</a></div>
+    <div class="level2"><span class="xref">LiveTvService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IService.html">IService</a></div>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IRequiresRequest.html">IRequiresRequest</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_Logger">BaseApiService.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_ResultFactory">BaseApiService.ResultFactory</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_Request">BaseApiService.Request</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetHeader_System_String_">BaseApiService.GetHeader(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_SplitValue_System_String_System_Char_">BaseApiService.SplitValue(String, Char)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetGuids_System_String_">BaseApiService.GetGuids(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_ToOptimizedResult__1___0_">BaseApiService.ToOptimizedResult&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_AssertCanUpdateUser_MediaBrowser_Controller_Net_IAuthorizationContext_MediaBrowser_Controller_Library_IUserManager_Guid_System_Boolean_">BaseApiService.AssertCanUpdateUser(IAuthorizationContext, IUserManager, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetSession_MediaBrowser_Controller_Net_ISessionContext_">BaseApiService.GetSession(ISessionContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetDtoOptions_MediaBrowser_Controller_Net_IAuthorizationContext_System_Object_">BaseApiService.GetDtoOptions(IAuthorizationContext, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetArtist_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetArtist(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetStudio_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetStudio(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetGenre_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetGenre(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetMusicGenre_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetMusicGenre(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetPerson_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetPerson(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetPathValue_System_Int32_">BaseApiService.GetPathValue(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetItemByName_System_String_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetItemByName(String, String, ILibraryManager, DtoOptions)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Api.LiveTv.html">MediaBrowser.Api.LiveTv</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Api.dll</h6>
+  <h5 id="MediaBrowser_Api_LiveTv_LiveTvService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LiveTvService : BaseApiService, IService, IRequiresRequest</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService__ctor_MediaBrowser_Model_Cryptography_ICryptoProvider_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Model_IO_IStreamHelper_MediaBrowser_Controller_LiveTv_ILiveTvManager_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Configuration_IServerConfigurationManager_IHttpClient_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_IDtoService_MediaBrowser_Controller_Net_IAuthorizationContext_MediaBrowser_Controller_Net_ISessionContext_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.%23ctor(MediaBrowser.Model.Cryptography.ICryptoProvider%2CMediaBrowser.Controller.Library.IMediaSourceManager%2CMediaBrowser.Model.IO.IStreamHelper%2CMediaBrowser.Controller.LiveTv.ILiveTvManager%2CMediaBrowser.Controller.Library.IUserManager%2CMediaBrowser.Controller.Configuration.IServerConfigurationManager%2CIHttpClient%2CMediaBrowser.Controller.Library.ILibraryManager%2CMediaBrowser.Controller.Dto.IDtoService%2CMediaBrowser.Controller.Net.IAuthorizationContext%2CMediaBrowser.Controller.Net.ISessionContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L702">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService__ctor_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.#ctor*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService__ctor_MediaBrowser_Model_Cryptography_ICryptoProvider_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Model_IO_IStreamHelper_MediaBrowser_Controller_LiveTv_ILiveTvManager_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Configuration_IServerConfigurationManager_IHttpClient_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_IDtoService_MediaBrowser_Controller_Net_IAuthorizationContext_MediaBrowser_Controller_Net_ISessionContext_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.#ctor(MediaBrowser.Model.Cryptography.ICryptoProvider,MediaBrowser.Controller.Library.IMediaSourceManager,MediaBrowser.Model.IO.IStreamHelper,MediaBrowser.Controller.LiveTv.ILiveTvManager,MediaBrowser.Controller.Library.IUserManager,MediaBrowser.Controller.Configuration.IServerConfigurationManager,IHttpClient,MediaBrowser.Controller.Library.ILibraryManager,MediaBrowser.Controller.Dto.IDtoService,MediaBrowser.Controller.Net.IAuthorizationContext,MediaBrowser.Controller.Net.ISessionContext)">LiveTvService(ICryptoProvider, IMediaSourceManager, IStreamHelper, ILiveTvManager, IUserManager, IServerConfigurationManager, IHttpClient, ILibraryManager, IDtoService, IAuthorizationContext, ISessionContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LiveTvService(ICryptoProvider crypto, IMediaSourceManager mediaSourceManager, IStreamHelper streamHelper, ILiveTvManager liveTvManager, IUserManager userManager, IServerConfigurationManager config, IHttpClient httpClient, ILibraryManager libraryManager, IDtoService dtoService, IAuthorizationContext authContext, ISessionContext sessionContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Cryptography.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">crypto</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IMediaSourceManager.html">IMediaSourceManager</a></td>
+        <td><span class="parametername">mediaSourceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IStreamHelper.html">IStreamHelper</a></td>
+        <td><span class="parametername">streamHelper</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.LiveTv.ILiveTvManager.html">ILiveTvManager</a></td>
+        <td><span class="parametername">liveTvManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserManager.html">IUserManager</a></td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IHttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a></td>
+        <td><span class="parametername">libraryManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dto.IDtoService.html">IDtoService</a></td>
+        <td><span class="parametername">dtoService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Net.IAuthorizationContext.html">IAuthorizationContext</a></td>
+        <td><span class="parametername">authContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Net.ISessionContext.html">ISessionContext</a></td>
+        <td><span class="parametername">sessionContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Delete_MediaBrowser_Api_LiveTv_CancelSeriesTimer_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Delete(MediaBrowser.Api.LiveTv.CancelSeriesTimer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1183">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Delete_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Delete*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Delete_MediaBrowser_Api_LiveTv_CancelSeriesTimer_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Delete(MediaBrowser.Api.LiveTv.CancelSeriesTimer)">Delete(CancelSeriesTimer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Delete(CancelSeriesTimer request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.CancelSeriesTimer.html">CancelSeriesTimer</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Delete_MediaBrowser_Api_LiveTv_CancelTimer_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Delete(MediaBrowser.Api.LiveTv.CancelTimer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1150">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Delete_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Delete*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Delete_MediaBrowser_Api_LiveTv_CancelTimer_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Delete(MediaBrowser.Api.LiveTv.CancelTimer)">Delete(CancelTimer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Delete(CancelTimer request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.CancelTimer.html">CancelTimer</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Delete_MediaBrowser_Api_LiveTv_DeleteListingProvider_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Delete(MediaBrowser.Api.LiveTv.DeleteListingProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L873">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Delete_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Delete*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Delete_MediaBrowser_Api_LiveTv_DeleteListingProvider_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Delete(MediaBrowser.Api.LiveTv.DeleteListingProvider)">Delete(DeleteListingProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(DeleteListingProvider request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.DeleteListingProvider.html">DeleteListingProvider</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Delete_MediaBrowser_Api_LiveTv_DeleteRecording_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Delete(MediaBrowser.Api.LiveTv.DeleteRecording)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1140">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Delete_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Delete*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Delete_MediaBrowser_Api_LiveTv_DeleteRecording_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Delete(MediaBrowser.Api.LiveTv.DeleteRecording)">Delete(DeleteRecording)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(DeleteRecording request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.DeleteRecording.html">DeleteRecording</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Delete_MediaBrowser_Api_LiveTv_DeleteTunerHost_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Delete(MediaBrowser.Api.LiveTv.DeleteTunerHost)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L884">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Delete_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Delete*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Delete_MediaBrowser_Api_LiveTv_DeleteTunerHost_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Delete(MediaBrowser.Api.LiveTv.DeleteTunerHost)">Delete(DeleteTunerHost)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(DeleteTunerHost request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.DeleteTunerHost.html">DeleteTunerHost</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_DiscoverTuners_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.DiscoverTuners)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L770">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_DiscoverTuners_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.DiscoverTuners)">Get(DiscoverTuners)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(DiscoverTuners request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.DiscoverTuners.html">DiscoverTuners</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetChannel_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetChannel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L970">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetChannel_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetChannel)">Get(GetChannel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetChannel request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetChannel.html">GetChannel</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetChannelMappingOptions_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetChannelMappingOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L803">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetChannelMappingOptions_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetChannelMappingOptions)">Get(GetChannelMappingOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetChannelMappingOptions request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetChannelMappingOptions.html">GetChannelMappingOptions</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetChannels_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetChannels)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L917">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetChannels_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetChannels)">Get(GetChannels)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetChannels request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetChannels.html">GetChannels</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetDefaultListingProvider_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetDefaultListingProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L793">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetDefaultListingProvider_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetDefaultListingProvider)">Get(GetDefaultListingProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetDefaultListingProvider request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetDefaultListingProvider.html">GetDefaultListingProvider</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetDefaultTimer_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetDefaultTimer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1197">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetDefaultTimer_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetDefaultTimer)">Get(GetDefaultTimer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetDefaultTimer request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetDefaultTimer.html">GetDefaultTimer</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetGuideInfo_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetGuideInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1246">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetGuideInfo_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetGuideInfo)">Get(GetGuideInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetGuideInfo request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetGuideInfo.html">GetGuideInfo</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetLineups_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetLineups)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L903">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetLineups_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetLineups)">Get(GetLineups)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetLineups request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetLineups.html">GetLineups</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetLiveRecordingFile_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetLiveRecordingFile)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L750">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetLiveRecordingFile_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetLiveRecordingFile)">Get(GetLiveRecordingFile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetLiveRecordingFile request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetLiveRecordingFile.html">GetLiveRecordingFile</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetLiveStreamFile_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetLiveStreamFile)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L776">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetLiveStreamFile_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetLiveStreamFile)">Get(GetLiveStreamFile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetLiveStreamFile request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetLiveStreamFile.html">GetLiveStreamFile</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetLiveTvInfo_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetLiveTvInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L910">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetLiveTvInfo_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetLiveTvInfo)">Get(GetLiveTvInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetLiveTvInfo request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetLiveTvInfo.html">GetLiveTvInfo</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetProgram_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetProgram)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1213">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetProgram_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetProgram)">Get(GetProgram)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetProgram request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetProgram.html">GetProgram</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetPrograms_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetPrograms)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L983">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetPrograms_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetPrograms)">Get(GetPrograms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetPrograms request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetPrograms.html">GetPrograms</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecommendedPrograms_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecommendedPrograms)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1043">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecommendedPrograms_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecommendedPrograms)">Get(GetRecommendedPrograms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetRecommendedPrograms request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetRecommendedPrograms.html">GetRecommendedPrograms</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecording_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecording)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1106">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecording_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecording)">Get(GetRecording)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetRecording request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetRecording.html">GetRecording</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecordingFolders_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecordingFolders)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L734">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecordingFolders_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecordingFolders)">Get(GetRecordingFolders)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetRecordingFolders request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetRecordingFolders.html">GetRecordingFolders</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecordingGroup_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecordingGroup)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1241">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecordingGroup_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecordingGroup)">Get(GetRecordingGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetRecordingGroup request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetRecordingGroup.html">GetRecordingGroup</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecordingGroups_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecordingGroups)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1236">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecordingGroups_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecordingGroups)">Get(GetRecordingGroups)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetRecordingGroups request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetRecordingGroups.html">GetRecordingGroups</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecordings_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecordings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1072">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecordings_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecordings)">Get(GetRecordings)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetRecordings request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetRecordings.html">GetRecordings</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecordingSeries_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecordingSeries)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1101">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetRecordingSeries_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetRecordingSeries)">Get(GetRecordingSeries)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetRecordingSeries request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetRecordingSeries.html">GetRecordingSeries</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetSchedulesDirectCountries_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetSchedulesDirectCountries)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L838">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetSchedulesDirectCountries_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetSchedulesDirectCountries)">Get(GetSchedulesDirectCountries)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetSchedulesDirectCountries request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetSchedulesDirectCountries.html">GetSchedulesDirectCountries</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetSeriesTimer_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetSeriesTimer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1176">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetSeriesTimer_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetSeriesTimer)">Get(GetSeriesTimer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetSeriesTimer request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetSeriesTimer.html">GetSeriesTimer</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetSeriesTimers_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetSeriesTimers)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1164">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetSeriesTimers_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetSeriesTimers)">Get(GetSeriesTimers)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetSeriesTimers request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetSeriesTimers.html">GetSeriesTimers</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetTimer_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetTimer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1119">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetTimer_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetTimer)">Get(GetTimer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetTimer request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetTimer.html">GetTimer</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetTimers_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetTimers)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1126">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetTimers_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetTimers)">Get(GetTimers)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetTimers request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetTimers.html">GetTimers</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetTunerHostTypes_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetTunerHostTypes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L728">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Get_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Get_MediaBrowser_Api_LiveTv_GetTunerHostTypes_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Get(MediaBrowser.Api.LiveTv.GetTunerHostTypes)">Get(GetTunerHostTypes)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetTunerHostTypes request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetTunerHostTypes.html">GetTunerHostTypes</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_AddListingProvider_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.AddListingProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L867">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Post_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_AddListingProvider_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.AddListingProvider)">Post(AddListingProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Post(AddListingProvider request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.AddListingProvider.html">AddListingProvider</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_AddTunerHost_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.AddTunerHost)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L878">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Post_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_AddTunerHost_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.AddTunerHost)">Post(AddTunerHost)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Post(AddTunerHost request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.AddTunerHost.html">AddTunerHost</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_CreateSeriesTimer_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.CreateSeriesTimer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1222">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Post_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_CreateSeriesTimer_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.CreateSeriesTimer)">Post(CreateSeriesTimer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Post(CreateSeriesTimer request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.CreateSeriesTimer.html">CreateSeriesTimer</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_CreateTimer_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.CreateTimer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1229">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Post_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_CreateTimer_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.CreateTimer)">Post(CreateTimer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Post(CreateTimer request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.CreateTimer.html">CreateTimer</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_GetPrograms_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.GetPrograms)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1067">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Post_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_GetPrograms_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.GetPrograms)">Post(GetPrograms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Post(GetPrograms request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.GetPrograms.html">GetPrograms</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_ResetTuner_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.ResetTuner)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1251">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Post_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_ResetTuner_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.ResetTuner)">Post(ResetTuner)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Post(ResetTuner request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.ResetTuner.html">ResetTuner</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_SetChannelMapping_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.SetChannelMapping)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L798">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Post_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_SetChannelMapping_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.SetChannelMapping)">Post(SetChannelMapping)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Post(SetChannelMapping request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.SetChannelMapping.html">SetChannelMapping</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_UpdateSeriesTimer_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.UpdateSeriesTimer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1190">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Post_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_UpdateSeriesTimer_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.UpdateSeriesTimer)">Post(UpdateSeriesTimer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Post(UpdateSeriesTimer request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.UpdateSeriesTimer.html">UpdateSeriesTimer</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_UpdateTimer_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.UpdateTimer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L1157">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_LiveTv_LiveTvService_Post_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post*"></a>
+  <h4 id="MediaBrowser_Api_LiveTv_LiveTvService_Post_MediaBrowser_Api_LiveTv_UpdateTimer_" data-uid="MediaBrowser.Api.LiveTv.LiveTvService.Post(MediaBrowser.Api.LiveTv.UpdateTimer)">Post(UpdateTimer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Post(UpdateTimer request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.LiveTv.UpdateTimer.html">UpdateTimer</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IService.html">IService</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IRequiresRequest.html">IRequiresRequest</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_LiveTv_LiveTvService.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.LiveTv.LiveTvService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/LiveTv/LiveTvService.cs/#L688" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

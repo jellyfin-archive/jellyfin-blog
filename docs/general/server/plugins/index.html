@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Plugins | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Plugins | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../../images/favicon.png">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="server-plugins-index">
+<h1 id="plugins">Plugins</h1>
+
+<p>Jellyfin has a collection of optional plugins that can be installed to provide additional features.</p>
+<h2 id="installing">Installing</h2>
+<h3 id="catalog">Catalog</h3>
+<p>Many plugins are available in a repository hosted on our servers, which can be easily installed using the plugin catalog in the settings. At the moment many of these are still being updated frequently so the version number may not be accurate. There are several different categories that can indicate what kind of functionality the plugins may provide.</p>
+<p><strong>Authentication:</strong> Add new authentication providers, such as LDAP.</p>
+<p><strong>Channels:</strong> Allow streaming remote audio or video content.</p>
+<p><strong>General:</strong> Plugins that serve general purposes, such as sync with Trakt.tv, or Kodi.</p>
+<p><strong>Live TV:</strong> Plugins that help with connecting to tuners, such as NextPVR, or TVHeadend.</p>
+<p><strong>Metadata:</strong> Scrape metadata from a new source or modify existing metadata.</p>
+<p><strong>Notifications:</strong> Allow notifications to connect to many different services, including Gotify and Slack.</p>
+<h3 id="manual">Manual</h3>
+<p>All plugins hosted on the repository can be built from source and manually added to your server as well. They just need to be placed in the plugin directory, which is something like <code>var/lib/jellyfin/plugins</code> on most Linux distributions. Once the server is restarted any additions should automatically show up in your list of installed plugins. If you can&#39;t see the new plugin there may be a file permission issue.</p>
+<h2 id="list">List</h2>
+<h3 id="official-plugins">Official Plugins</h3>
+<h4 id="anime">anime</h4>
+<p><a href="https://github.com/jellyfin/jellyfin-plugin-anime"><img src="https://img.shields.io/github/languages/top/jellyfin/jellyfin-plugin-anime.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-anime"><img src="https://img.shields.io/github/contributors/jellyfin/jellyfin-plugin-anime.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-anime"><img src="https://img.shields.io/github/license/jellyfin/jellyfin-plugin-anime.svg" alt=""></a></p>
+<h4 id="autoorganize">autoorganize</h4>
+<p><a href="https://github.com/jellyfin/jellyfin-plugin-autoorganize"><img src="https://img.shields.io/github/languages/top/jellyfin/jellyfin-plugin-autoorganize.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-autoorganize"><img src="https://img.shields.io/github/contributors/jellyfin/jellyfin-plugin-autoorganize.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-autoorganize"><img src="https://img.shields.io/github/license/jellyfin/jellyfin-plugin-autoorganize.svg" alt=""></a></p>
+<h4 id="emailnotifications">emailnotifications</h4>
+<p><a href="https://github.com/jellyfin/jellyfin-plugin-emailnotifications"><img src="https://img.shields.io/github/languages/top/jellyfin/jellyfin-plugin-emailnotifications.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-emailnotifications"><img src="https://img.shields.io/github/contributors/jellyfin/jellyfin-plugin-emailnotifications.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-emailnotifications"><img src="https://img.shields.io/github/license/jellyfin/jellyfin-plugin-emailnotifications.svg" alt=""></a></p>
+<h4 id="iptv">iptv</h4>
+<p><a href="https://github.com/jellyfin/jellyfin-plugin-iptv"><img src="https://img.shields.io/github/languages/top/jellyfin/jellyfin-plugin-iptv.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-iptv"><img src="https://img.shields.io/github/contributors/jellyfin/jellyfin-plugin-iptv.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-iptv"><img src="https://img.shields.io/github/license/jellyfin/jellyfin-plugin-iptv.svg" alt=""></a></p>
+<h4 id="ldapauth">ldapauth</h4>
+<p><a href="https://github.com/jellyfin/jellyfin-plugin-ldapauth"><img src="https://img.shields.io/github/languages/top/jellyfin/jellyfin-plugin-ldapauth.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-ldapauth"><img src="https://img.shields.io/github/contributors/jellyfin/jellyfin-plugin-ldapauth.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-ldapauth"><img src="https://img.shields.io/github/license/jellyfin/jellyfin-plugin-ldapauth.svg" alt=""></a></p>
+<h4 id="reports">reports</h4>
+<p><a href="https://github.com/jellyfin/jellyfin-plugin-reports"><img src="https://img.shields.io/github/languages/top/jellyfin/jellyfin-plugin-reports.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-reports"><img src="https://img.shields.io/github/contributors/jellyfin/jellyfin-plugin-reports.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-reports"><img src="https://img.shields.io/github/license/jellyfin/jellyfin-plugin-reports.svg" alt=""></a></p>
+<h4 id="serverwmc">serverwmc</h4>
+<p><a href="https://github.com/jellyfin/jellyfin-plugin-serverwmc"><img src="https://img.shields.io/github/languages/top/jellyfin/jellyfin-plugin-serverwmc.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-serverwmc"><img src="https://img.shields.io/github/contributors/jellyfin/jellyfin-plugin-serverwmc.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-serverwmc"><img src="https://img.shields.io/github/license/jellyfin/jellyfin-plugin-serverwmc.svg" alt=""></a></p>
+<p>Jellyfin LiveTV plugin for Windows MediaCenter with <a href="https://github.com/jellyfin/jellyfin-plugin-serverwmc">ServerWMC</a>.</p>
+<h4 id="trakt">trakt</h4>
+<p><a href="https://github.com/jellyfin/jellyfin-plugin-trakt"><img src="https://img.shields.io/github/languages/top/jellyfin/jellyfin-plugin-trakt.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-trakt"><img src="https://img.shields.io/github/contributors/jellyfin/jellyfin-plugin-trakt.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-trakt"><img src="https://img.shields.io/github/license/jellyfin/jellyfin-plugin-trakt.svg" alt=""></a></p>
+<h4 id="tvheadend">tvheadend</h4>
+<p><a href="https://github.com/jellyfin/jellyfin-plugin-tvheadend"><img src="https://img.shields.io/github/languages/top/jellyfin/jellyfin-plugin-tvheadend.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-tvheadend"><img src="https://img.shields.io/github/contributors/jellyfin/jellyfin-plugin-tvheadend.svg" alt=""></a>
+<a href="https://github.com/jellyfin/jellyfin-plugin-tvheadend"><img src="https://img.shields.io/github/license/jellyfin/jellyfin-plugin-tvheadend.svg" alt=""></a></p>
+<h3 id="3rd-party-plugins">3rd Party Plugins</h3>
+<h4 id="antennashttpsgithubcomthejfantennas"><a href="https://github.com/TheJF/antennas">antennas</a></h4>
+<p>Takes your tuners in TVHeadend and emulates a HDHomeRun, in order to connect to Jellyfin&#39;s Live TV and DVR features. It requires additional setup and configuration, but is a useful alternative to the TVHeadend plug-in.</p>
+<h4 id="gotifyhttpsgithubcomjellyfinjellyfin-plugin-gotify"><a href="https://github.com/jellyfin/jellyfin-plugin-gotify">gotify</a></h4>
+<p>Sends notifications to your self-hosted <a href="https://gotify.net/">Gotify</a> server.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/blob/master/general/server/plugins/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GitHub Issues | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="GitHub Issues | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="contrib-issues">
+<h1 id="issue-guidelines">Issue Guidelines</h1>
+
+<p>This page discusses how to open issues, including the policies and procedures of the Jellyfin project around handling issues.</p>
+<p>Issues should detail software bug reports <strong>only</strong>.</p>
+<p>Feature and enhancement requests should be directed towards <a href="https://features.jellyfin.org">our Fider intance</a> for tracking, voting, and reporting. Please keep all feature requests to this page and not the GitHub issues.</p>
+<p>All other discussions, including initial troubleshooting, should be directed towards <a class="xref" href="../getting-help.html">our help channels</a>.</p>
+<h2 id="searching-for-issues-and-upvoting">Searching for issues and upvoting</h2>
+<p>Before opening an issue, please <a href="https://github.com/jellyfin/jellyfin/issues?utf8=✓&amp;q=is%3Aissue">search the existing issues</a> to see if a similar problem or feature request has been reported. Duplicate issues clutter the repository and should be avoided.</p>
+<p>If you do find an issue that matches, or closely matches, your issue, please make use of the <span class="emoji" shortcode="+1">👍</span> reaction to confirm the issue also affects you or that you support the feature request. If you wish, add a comment as well describing your version of the issue or feature usecase.</p>
+<p>If the existing issue is closed, please read through it to see if the accepted workaround(s) apply to your case. If not, leave a comment and the issue will be reopened. Note that, since PRs go into <code>dev</code> first but releases are built from <code>master</code>, an issue&#39;s fix won&#39;t be immediately available in the official sources, but will be included in the next release.</p>
+<h2 id="opening-an-issue">Opening an issue</h2>
+<p>Once you&#39;re ready to open an issue, please <a href="https://github.com/jellyfin/jellyfin/issues/new">see this page</a>!</p>
+<h3 id="reporting-bugs">Reporting bugs</h3>
+<p>When writing an bug issue, please ensure you capture as much relevant detail as possible - this is very important to assist in troubleshooting and triaging/investigating the issue. Some useful elements include:</p>
+<ul>
+<li><p>How you installed Jellyfin (upgrade/fresh install)</p>
+</li>
+<li><p>What platform and operating system you&#39;re using (Debian, Arch, Docker, etc.)</p>
+</li>
+<li><p>What you were doing that caused the error or issue to appear</p>
+</li>
+<li><p>Any relevant log output</p>
+</li>
+<li><p>Any non-standard configurations you use</p>
+</li>
+</ul>
+<p>Bugs should be tagged with <code>[bug]</code> at the beginning of their title. This will later be removed by the Jellyfin team when assigning labels. To assist in triaging, if you know which other <a class="xref" href="issues.html#issue-labels">label(s)</a> should be applied to your issue, please add them after the <code>[bug]</code> label.</p>
+<p>Bugs should be reproduceable. That is, you should be able to have determined through troubleshooting how to replicate the issue. While one-time bugs shouldn&#39;t be ignored, if they&#39;re difficult or impossible to reproduce, it&#39;s likely very hard to fix them. Please attempt to reproduce the bug before filing the issue, and include the smallest test case you can to demonstrate it.</p>
+<p>If you ever need assistance for troubleshooting or opening an issue, please <a class="xref" href="../getting-help.html">contact the community</a> and we&#39;ll try to help you out!</p>
+<h2 id="issue-labels">Issue Labels</h2>
+<p>Jellyfin features a number of issue labels to assist in triaging and managing issues. Users cannot assign these themselves due to GitHub&#39;s permissions; they will be added by an administrative team member during triaging.</p>
+<h3 id="category-labels">Category Labels</h3>
+<p>These first three labels are broad categories for which part of Jellyfin the issue affects:</p>
+<ul>
+<li><code>UI</code>: An issue that mainly relates to the UI frontend code.</li>
+<li><code>Backend</code>: An issue that mainly relates to the server backend code.</li>
+<li><code>build/platform</code>: An issue that mainly relates to building or packaging the project.</li>
+</ul>
+<h3 id="criticality-labels">Criticality Labels</h3>
+<p>These labels help determine how critical an issue is:</p>
+<ul>
+<li><code>regression</code>: An issue in need of immediate attention due to a regression from the last build.</li>
+<li><code>bug</code>: A bug in the code that affects normal usage.</li>
+</ul>
+<h3 id="management-labels">Management Labels</h3>
+<p>These labels help assist in managing the project and direction:</p>
+<ul>
+<li><code>Good first issue</code>: Something that should be very straightforward to do, and is a great place to get started.</li>
+<li><code>help wanted</code>: An issue that currently has no clear expert within the project and could use outside assistance.</li>
+<li><code>roadmap</code>: A meta-issue related to the future roadmap of the project.</li>
+<li><code>documentation</code>: An issue related to the documentation of the project.</li>
+<li><code>fork</code>: An issue related to the forking from Emby.</li>
+<li><code>investigation</code>: An investigation-type issue into the codebase.</li>
+</ul>
+<h3 id="pr-labels">PR Labels</h3>
+<p>These labels apply only to Pull Requests for administrative purposes:</p>
+<ul>
+<li><code>WIP</code>: A Work-in-progress PR that is not yet ready to be merged, usually blocked by further work from the contributor or a testing requirement.</li>
+<li><code>requires testing</code>: A PR that has not been tested in a live environment yet. Any major backend-affecting PRs should be tested before being merged to avoid regressions.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/blob/master/general/contributing/issues.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,501 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseNfoParser&lt;T&gt;
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseNfoParser&lt;T&gt;
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1">
+  
+  
+  <h1 id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1" class="text-break">Class BaseNfoParser&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BaseNfoParser&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="MediaBrowser.XbmcMetadata.Parsers.EpisodeNfoParser.html">EpisodeNfoParser</a></div>
+      <div class="level2"><a class="xref" href="MediaBrowser.XbmcMetadata.Parsers.MovieNfoParser.html">MovieNfoParser</a></div>
+      <div class="level2"><a class="xref" href="MediaBrowser.XbmcMetadata.Parsers.SeasonNfoParser.html">SeasonNfoParser</a></div>
+      <div class="level2"><a class="xref" href="MediaBrowser.XbmcMetadata.Parsers.SeriesNfoParser.html">SeriesNfoParser</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.XbmcMetadata.Parsers.html">MediaBrowser.XbmcMetadata.Parsers</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.XbmcMetadata.dll</h6>
+  <h5 id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BaseNfoParser&lt;T&gt; : object where T : BaseItem</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1__ctor_ILogger_IConfigurationManager_MediaBrowser_Controller_Providers_IProviderManager_.md&amp;value=---%0Auid%3A%20MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser%601.%23ctor(ILogger%2CIConfigurationManager%2CMediaBrowser.Controller.Providers.IProviderManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.XbmcMetadata/Parsers/BaseNfoParser.cs/#L38">View Source</a>
+  </span>
+  <a id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1__ctor_" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.#ctor*"></a>
+  <h4 id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1__ctor_ILogger_IConfigurationManager_MediaBrowser_Controller_Providers_IProviderManager_" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.#ctor(ILogger,IConfigurationManager,MediaBrowser.Controller.Providers.IProviderManager)">BaseNfoParser(ILogger, IConfigurationManager, IProviderManager)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser-1.html">BaseNfoParser&lt;T&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseNfoParser(ILogger logger, IConfigurationManager config, IProviderManager providerManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IConfigurationManager</span></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.IProviderManager.html">IProviderManager</a></td>
+        <td><span class="parametername">providerManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_Logger.md&amp;value=---%0Auid%3A%20MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser%601.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.XbmcMetadata/Parsers/BaseNfoParser.cs/#L28">View Source</a>
+  </span>
+  <a id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_Logger_" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.Logger*"></a>
+  <h4 id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_Logger" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>The logger</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILogger Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_MovieDbParserSearchString.md&amp;value=---%0Auid%3A%20MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser%601.MovieDbParserSearchString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.XbmcMetadata/Parsers/BaseNfoParser.cs/#L201">View Source</a>
+  </span>
+  <a id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_MovieDbParserSearchString_" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.MovieDbParserSearchString*"></a>
+  <h4 id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_MovieDbParserSearchString" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.MovieDbParserSearchString">MovieDbParserSearchString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string MovieDbParserSearchString { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_ProviderManager.md&amp;value=---%0Auid%3A%20MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser%601.ProviderManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.XbmcMetadata/Parsers/BaseNfoParser.cs/#L29">View Source</a>
+  </span>
+  <a id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_ProviderManager_" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.ProviderManager*"></a>
+  <h4 id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_ProviderManager" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.ProviderManager">ProviderManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IProviderManager ProviderManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.IProviderManager.html">IProviderManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_SupportsUrlAfterClosingXmlTag.md&amp;value=---%0Auid%3A%20MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser%601.SupportsUrlAfterClosingXmlTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.XbmcMetadata/Parsers/BaseNfoParser.cs/#L86">View Source</a>
+  </span>
+  <a id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_SupportsUrlAfterClosingXmlTag_" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.SupportsUrlAfterClosingXmlTag*"></a>
+  <h4 id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_SupportsUrlAfterClosingXmlTag" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.SupportsUrlAfterClosingXmlTag">SupportsUrlAfterClosingXmlTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool SupportsUrlAfterClosingXmlTag { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_Fetch_MediaBrowser_Controller_Providers_MetadataResult__0__System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser%601.Fetch(MediaBrowser.Controller.Providers.MetadataResult%7B%600%7D%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.XbmcMetadata/Parsers/BaseNfoParser.cs/#L53">View Source</a>
+  </span>
+  <a id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_Fetch_" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.Fetch*"></a>
+  <h4 id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_Fetch_MediaBrowser_Controller_Providers_MetadataResult__0__System_String_CancellationToken_" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.Fetch(MediaBrowser.Controller.Providers.MetadataResult{`0},System.String,CancellationToken)">Fetch(MetadataResult&lt;T&gt;, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fetches metadata for an item from one xml file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Fetch(MetadataResult&lt;T&gt; item, string metadataFile, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataResult-1.html">MetadataResult</a>&lt;T&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadataFile</span></td>
+        <td><p>The metadata file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_Fetch_MediaBrowser_Controller_Providers_MetadataResult__0__System_String_XmlReaderSettings_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser%601.Fetch(MediaBrowser.Controller.Providers.MetadataResult%7B%600%7D%2CSystem.String%2CXmlReaderSettings%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.XbmcMetadata/Parsers/BaseNfoParser.cs/#L95">View Source</a>
+  </span>
+  <a id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_Fetch_" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.Fetch*"></a>
+  <h4 id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_Fetch_MediaBrowser_Controller_Providers_MetadataResult__0__System_String_XmlReaderSettings_CancellationToken_" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.Fetch(MediaBrowser.Controller.Providers.MetadataResult{`0},System.String,XmlReaderSettings,CancellationToken)">Fetch(MetadataResult&lt;T&gt;, String, XmlReaderSettings, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Fetches the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Fetch(MetadataResult&lt;T&gt; item, string metadataFile, XmlReaderSettings settings, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataResult-1.html">MetadataResult</a>&lt;T&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadataFile</span></td>
+        <td><p>The metadata file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">XmlReaderSettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>The settings.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_FetchDataFromXmlNode_XmlReader_MediaBrowser_Controller_Providers_MetadataResult__0__.md&amp;value=---%0Auid%3A%20MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser%601.FetchDataFromXmlNode(XmlReader%2CMediaBrowser.Controller.Providers.MetadataResult%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.XbmcMetadata/Parsers/BaseNfoParser.cs/#L243">View Source</a>
+  </span>
+  <a id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_FetchDataFromXmlNode_" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.FetchDataFromXmlNode*"></a>
+  <h4 id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_FetchDataFromXmlNode_XmlReader_MediaBrowser_Controller_Providers_MetadataResult__0__" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.FetchDataFromXmlNode(XmlReader,MediaBrowser.Controller.Providers.MetadataResult{`0})">FetchDataFromXmlNode(XmlReader, MetadataResult&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void FetchDataFromXmlNode(XmlReader reader, MetadataResult&lt;T&gt; itemResult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">XmlReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataResult-1.html">MetadataResult</a>&lt;T&gt;</td>
+        <td><span class="parametername">itemResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_ParseProviderLinks__0_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser%601.ParseProviderLinks(%600%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.XbmcMetadata/Parsers/BaseNfoParser.cs/#L203">View Source</a>
+  </span>
+  <a id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_ParseProviderLinks_" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.ParseProviderLinks*"></a>
+  <h4 id="MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1_ParseProviderLinks__0_System_String_" data-uid="MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser`1.ParseProviderLinks(`0,System.String)">ParseProviderLinks(T, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ParseProviderLinks(T item, string xml)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">xml</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_XbmcMetadata_Parsers_BaseNfoParser_1.md&amp;value=---%0Auid%3A%20MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.XbmcMetadata/Parsers/BaseNfoParser.cs/#L22" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

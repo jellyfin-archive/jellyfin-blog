@@ -1,0 +1,1932 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IFileSystem
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IFileSystem
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Model.IO.IFileSystem">
+  
+  
+  <h1 id="MediaBrowser_Model_IO_IFileSystem" data-uid="MediaBrowser.Model.IO.IFileSystem" class="text-break">Interface IFileSystem
+  </h1>
+  <div class="markdown level0 summary"><p>Interface IFileSystem</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Model.IO.html">MediaBrowser.Model.IO</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Model.dll</h6>
+  <h5 id="MediaBrowser_Model_IO_IFileSystem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IFileSystem</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_AddShortcutHandler_MediaBrowser_Model_IO_IShortcutHandler_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.AddShortcutHandler(MediaBrowser.Model.IO.IShortcutHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L12">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_AddShortcutHandler_" data-uid="MediaBrowser.Model.IO.IFileSystem.AddShortcutHandler*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_AddShortcutHandler_MediaBrowser_Model_IO_IShortcutHandler_" data-uid="MediaBrowser.Model.IO.IFileSystem.AddShortcutHandler(MediaBrowser.Model.IO.IShortcutHandler)">AddShortcutHandler(IShortcutHandler)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddShortcutHandler(IShortcutHandler handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IShortcutHandler.html">IShortcutHandler</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_AreEqual_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.AreEqual(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L122">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_AreEqual_" data-uid="MediaBrowser.Model.IO.IFileSystem.AreEqual*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_AreEqual_System_String_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.AreEqual(System.String,System.String)">AreEqual(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AreEqual(string path1, string path2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_ContainsSubPath_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.ContainsSubPath(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L130">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_ContainsSubPath_" data-uid="MediaBrowser.Model.IO.IFileSystem.ContainsSubPath*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_ContainsSubPath_System_String_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.ContainsSubPath(System.String,System.String)">ContainsSubPath(String, String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether [contains sub path] [the specified parent path].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ContainsSubPath(string parentPath, string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">parentPath</span></td>
+        <td><p>The parent path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [contains sub path] [the specified parent path]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_CreateShortcut_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.CreateShortcut(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L33">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_CreateShortcut_" data-uid="MediaBrowser.Model.IO.IFileSystem.CreateShortcut*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_CreateShortcut_System_String_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.CreateShortcut(System.String,System.String)">CreateShortcut(String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates the shortcut.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateShortcut(string shortcutPath, string target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">shortcutPath</span></td>
+        <td><p>The shortcut path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The target.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_DeleteFile_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.DeleteFile(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L164">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_DeleteFile_" data-uid="MediaBrowser.Model.IO.IFileSystem.DeleteFile*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_DeleteFile_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.DeleteFile(System.String)">DeleteFile(String)</h4>
+  <div class="markdown level1 summary"><p>Deletes the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteFile(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetCreationTimeUtc_MediaBrowser_Model_IO_FileSystemMetadata_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetCreationTimeUtc(MediaBrowser.Model.IO.FileSystemMetadata)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L78">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetCreationTimeUtc_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetCreationTimeUtc*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetCreationTimeUtc_MediaBrowser_Model_IO_FileSystemMetadata_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetCreationTimeUtc(MediaBrowser.Model.IO.FileSystemMetadata)">GetCreationTimeUtc(FileSystemMetadata)</h4>
+  <div class="markdown level1 summary"><p>Gets the creation time UTC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime GetCreationTimeUtc(FileSystemMetadata info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>The information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><p>DateTime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetCreationTimeUtc_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetCreationTimeUtc(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L85">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetCreationTimeUtc_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetCreationTimeUtc*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetCreationTimeUtc_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetCreationTimeUtc(System.String)">GetCreationTimeUtc(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the creation time UTC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime GetCreationTimeUtc(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><p>DateTime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetDirectories_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetDirectories(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L172">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetDirectories_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetDirectories*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetDirectories_System_String_System_Boolean_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetDirectories(System.String,System.Boolean)">GetDirectories(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the directories.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;FileSystemMetadata&gt; GetDirectories(string path, bool recursive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">recursive</span></td>
+        <td><p>if set to <code>true</code> [recursive].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a>&gt;</td>
+        <td><p>IEnumerable&lt;DirectoryInfo&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetDirectoryInfo_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetDirectoryInfo(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L64">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetDirectoryInfo_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetDirectoryInfo*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetDirectoryInfo_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetDirectoryInfo(System.String)">GetDirectoryInfo(String)</h4>
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a> object for the specified directory path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileSystemMetadata GetDirectoryInfo(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>A path to a directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a></td>
+        <td><p>A <a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MediaBrowser_Model_IO_IFileSystem_GetDirectoryInfo_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the specified path points to a file, the returned <a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a> object&apos;s
+<a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html#MediaBrowser_Model_IO_FileSystemMetadata_IsDirectory">IsDirectory</a> property will be set to true and the <a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html#MediaBrowser_Model_IO_FileSystemMetadata_Exists">Exists</a> property will be set to false.</p>
+<p>For automatic handling of files <strong>and</strong> directories, use <span class="xref">IFileSystem.GetFileSystemInfo(System.String)</span>.</p></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetDirectoryPaths_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetDirectoryPaths(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L195">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetDirectoryPaths_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetDirectoryPaths*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetDirectoryPaths_System_String_System_Boolean_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetDirectoryPaths(System.String,System.Boolean)">GetDirectoryPaths(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the directory paths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; GetDirectoryPaths(string path, bool recursive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">recursive</span></td>
+        <td><p>if set to <code>true</code> [recursive].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>IEnumerable&lt;System.String&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetDrives.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetDrives%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L218">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetDrives_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetDrives*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetDrives" data-uid="MediaBrowser.Model.IO.IFileSystem.GetDrives">GetDrives()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;FileSystemMetadata&gt; GetDrives()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetFileInfo_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetFileInfo(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L54">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetFileInfo_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileInfo*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetFileInfo_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileInfo(System.String)">GetFileInfo(String)</h4>
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a> object for the specified file path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileSystemMetadata GetFileInfo(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>A path to a file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a></td>
+        <td><p>A <a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MediaBrowser_Model_IO_IFileSystem_GetFileInfo_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the specified path points to a directory, the returned <a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a> object&apos;s
+<a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html#MediaBrowser_Model_IO_FileSystemMetadata_IsDirectory">IsDirectory</a> property and the <a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html#MediaBrowser_Model_IO_FileSystemMetadata_Exists">Exists</a> property will both be set to false.</p>
+<p>For automatic handling of files <strong>and</strong> directories, use <span class="xref">IFileSystem.GetFileSystemInfo(System.String)</span>.</p></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetFileNameWithoutExtension_MediaBrowser_Model_IO_FileSystemMetadata_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetFileNameWithoutExtension(MediaBrowser.Model.IO.FileSystemMetadata)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L151">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetFileNameWithoutExtension_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileNameWithoutExtension*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetFileNameWithoutExtension_MediaBrowser_Model_IO_FileSystemMetadata_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileNameWithoutExtension(MediaBrowser.Model.IO.FileSystemMetadata)">GetFileNameWithoutExtension(FileSystemMetadata)</h4>
+  <div class="markdown level1 summary"><p>Gets the file name without extension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetFileNameWithoutExtension(FileSystemMetadata info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>The information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>System.String.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetFilePaths_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetFilePaths(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L203">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetFilePaths_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFilePaths*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetFilePaths_System_String_System_Boolean_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFilePaths(System.String,System.Boolean)">GetFilePaths(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the file paths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; GetFilePaths(string path, bool recursive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">recursive</span></td>
+        <td><p>if set to <code>true</code> [recursive].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>IEnumerable&lt;System.String&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetFilePaths_System_String_System_String___System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetFilePaths(System.String%2CSystem.String%5B%5D%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L205">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetFilePaths_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFilePaths*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetFilePaths_System_String_System_String___System_Boolean_System_Boolean_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFilePaths(System.String,System.String[],System.Boolean,System.Boolean)">GetFilePaths(String, String[], Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; GetFilePaths(string path, string[] extensions, bool enableCaseSensitiveExtensions, bool recursive)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enableCaseSensitiveExtensions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">recursive</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetFiles_System_String_IReadOnlyList_System_String__System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetFiles(System.String%2CIReadOnlyList%7BSystem.String%7D%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L179">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetFiles_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFiles*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetFiles_System_String_IReadOnlyList_System_String__System_Boolean_System_Boolean_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFiles(System.String,IReadOnlyList{System.String},System.Boolean,System.Boolean)">GetFiles(String, IReadOnlyList&lt;String&gt;, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;FileSystemMetadata&gt; GetFiles(string path, IReadOnlyList&lt;string&gt; extensions, bool enableCaseSensitiveExtensions, bool recursive)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">extensions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enableCaseSensitiveExtensions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">recursive</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetFiles_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetFiles(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L177">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetFiles_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFiles*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetFiles_System_String_System_Boolean_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFiles(System.String,System.Boolean)">GetFiles(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;FileSystemMetadata&gt; GetFiles(string path, bool recursive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">recursive</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetFileStream_System_String_MediaBrowser_Model_IO_FileOpenMode_MediaBrowser_Model_IO_FileAccessMode_MediaBrowser_Model_IO_FileShareMode_MediaBrowser_Model_IO_FileOpenOptions_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetFileStream(System.String%2CMediaBrowser.Model.IO.FileOpenMode%2CMediaBrowser.Model.IO.FileAccessMode%2CMediaBrowser.Model.IO.FileShareMode%2CMediaBrowser.Model.IO.FileOpenOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L112">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetFileStream_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileStream*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetFileStream_System_String_MediaBrowser_Model_IO_FileOpenMode_MediaBrowser_Model_IO_FileAccessMode_MediaBrowser_Model_IO_FileShareMode_MediaBrowser_Model_IO_FileOpenOptions_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileStream(System.String,MediaBrowser.Model.IO.FileOpenMode,MediaBrowser.Model.IO.FileAccessMode,MediaBrowser.Model.IO.FileShareMode,MediaBrowser.Model.IO.FileOpenOptions)">GetFileStream(String, FileOpenMode, FileAccessMode, FileShareMode, FileOpenOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Stream GetFileStream(string path, FileOpenMode mode, FileAccessMode access, FileShareMode share, FileOpenOptions fileOpenOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.FileOpenMode.html">FileOpenMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.FileAccessMode.html">FileAccessMode</a></td>
+        <td><span class="parametername">access</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.FileShareMode.html">FileShareMode</a></td>
+        <td><span class="parametername">share</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.FileOpenOptions.html">FileOpenOptions</a></td>
+        <td><span class="parametername">fileOpenOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetFileStream_System_String_MediaBrowser_Model_IO_FileOpenMode_MediaBrowser_Model_IO_FileAccessMode_MediaBrowser_Model_IO_FileShareMode_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetFileStream(System.String%2CMediaBrowser.Model.IO.FileOpenMode%2CMediaBrowser.Model.IO.FileAccessMode%2CMediaBrowser.Model.IO.FileShareMode%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L110">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetFileStream_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileStream*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetFileStream_System_String_MediaBrowser_Model_IO_FileOpenMode_MediaBrowser_Model_IO_FileAccessMode_MediaBrowser_Model_IO_FileShareMode_System_Boolean_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileStream(System.String,MediaBrowser.Model.IO.FileOpenMode,MediaBrowser.Model.IO.FileAccessMode,MediaBrowser.Model.IO.FileShareMode,System.Boolean)">GetFileStream(String, FileOpenMode, FileAccessMode, FileShareMode, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the file stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Stream GetFileStream(string path, FileOpenMode mode, FileAccessMode access, FileShareMode share, bool isAsync = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.FileOpenMode.html">FileOpenMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.FileAccessMode.html">FileAccessMode</a></td>
+        <td><span class="parametername">access</span></td>
+        <td><p>The access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.FileShareMode.html">FileShareMode</a></td>
+        <td><span class="parametername">share</span></td>
+        <td><p>The share.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isAsync</span></td>
+        <td><p>if set to <code>true</code> [is asynchronous].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><p>FileStream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetFileSystemEntries_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetFileSystemEntries(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L187">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetFileSystemEntries_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileSystemEntries*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetFileSystemEntries_System_String_System_Boolean_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileSystemEntries(System.String,System.Boolean)">GetFileSystemEntries(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the file system entries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;FileSystemMetadata&gt; GetFileSystemEntries(string path, bool recursive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">recursive</span></td>
+        <td><p>if set to <code>true</code> [recursive].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a>&gt;</td>
+        <td><p>IEnumerable&lt;FileSystemMetadata&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetFileSystemEntryPaths_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetFileSystemEntryPaths(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L213">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetFileSystemEntryPaths_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileSystemEntryPaths*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetFileSystemEntryPaths_System_String_System_Boolean_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileSystemEntryPaths(System.String,System.Boolean)">GetFileSystemEntryPaths(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the file system entry paths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; GetFileSystemEntryPaths(string path, bool recursive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">recursive</span></td>
+        <td><p>if set to <code>true</code> [recursive].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>IEnumerable&lt;System.String&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetFileSystemInfo_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetFileSystemInfo(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L44">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetFileSystemInfo_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileSystemInfo*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetFileSystemInfo_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetFileSystemInfo(System.String)">GetFileSystemInfo(String)</h4>
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a> object for the specified file or directory path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileSystemMetadata GetFileSystemInfo(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>A path to a file or directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a></td>
+        <td><p>A <a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MediaBrowser_Model_IO_IFileSystem_GetFileSystemInfo_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the specified path points to a directory, the returned <a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a> object&apos;s
+<a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html#MediaBrowser_Model_IO_FileSystemMetadata_IsDirectory">IsDirectory</a> property will be set to true and all other properties will reflect the properties of the directory.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetLastWriteTimeUtc_MediaBrowser_Model_IO_FileSystemMetadata_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetLastWriteTimeUtc(MediaBrowser.Model.IO.FileSystemMetadata)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L92">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetLastWriteTimeUtc_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetLastWriteTimeUtc*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetLastWriteTimeUtc_MediaBrowser_Model_IO_FileSystemMetadata_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetLastWriteTimeUtc(MediaBrowser.Model.IO.FileSystemMetadata)">GetLastWriteTimeUtc(FileSystemMetadata)</h4>
+  <div class="markdown level1 summary"><p>Gets the last write time UTC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime GetLastWriteTimeUtc(FileSystemMetadata info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.FileSystemMetadata.html">FileSystemMetadata</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>The information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><p>DateTime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetLastWriteTimeUtc_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetLastWriteTimeUtc(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L99">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetLastWriteTimeUtc_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetLastWriteTimeUtc*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetLastWriteTimeUtc_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetLastWriteTimeUtc(System.String)">GetLastWriteTimeUtc(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the last write time UTC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime GetLastWriteTimeUtc(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><p>DateTime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_GetValidFilename_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.GetValidFilename(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L71">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_GetValidFilename_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetValidFilename*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_GetValidFilename_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.GetValidFilename(System.String)">GetValidFilename(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the valid filename.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetValidFilename(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>The filename.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>System.String.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_IsPathFile_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.IsPathFile(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L158">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_IsPathFile_" data-uid="MediaBrowser.Model.IO.IFileSystem.IsPathFile*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_IsPathFile_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.IsPathFile(System.String)">IsPathFile(String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether [is path file] [the specified path].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsPathFile(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [is path file] [the specified path]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_IsRootPath_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.IsRootPath(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L137">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_IsRootPath_" data-uid="MediaBrowser.Model.IO.IFileSystem.IsRootPath*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_IsRootPath_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.IsRootPath(System.String)">IsRootPath(String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether [is root path] [the specified path].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsRootPath(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [is root path] [the specified path]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_IsShortcut_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.IsShortcut(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L19">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_IsShortcut_" data-uid="MediaBrowser.Model.IO.IFileSystem.IsShortcut*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_IsShortcut_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.IsShortcut(System.String)">IsShortcut(String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified filename is shortcut.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsShortcut(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>The filename.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the specified filename is shortcut; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_MakeAbsolutePath_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.MakeAbsolutePath(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L35">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_MakeAbsolutePath_" data-uid="MediaBrowser.Model.IO.IFileSystem.MakeAbsolutePath*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_MakeAbsolutePath_System_String_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.MakeAbsolutePath(System.String,System.String)">MakeAbsolutePath(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string MakeAbsolutePath(string folderPath, string filePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">folderPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_NormalizePath_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.NormalizePath(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L144">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_NormalizePath_" data-uid="MediaBrowser.Model.IO.IFileSystem.NormalizePath*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_NormalizePath_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.NormalizePath(System.String)">NormalizePath(String)</h4>
+  <div class="markdown level1 summary"><p>Normalizes the path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string NormalizePath(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>System.String.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_ResolveShortcut_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.ResolveShortcut(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L26">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_ResolveShortcut_" data-uid="MediaBrowser.Model.IO.IFileSystem.ResolveShortcut*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_ResolveShortcut_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.ResolveShortcut(System.String)">ResolveShortcut(String)</h4>
+  <div class="markdown level1 summary"><p>Resolves the shortcut.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ResolveShortcut(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>The filename.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>System.String.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_SetAttributes_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.SetAttributes(System.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L217">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_SetAttributes_" data-uid="MediaBrowser.Model.IO.IFileSystem.SetAttributes*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_SetAttributes_System_String_System_Boolean_System_Boolean_" data-uid="MediaBrowser.Model.IO.IFileSystem.SetAttributes(System.String,System.Boolean,System.Boolean)">SetAttributes(String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetAttributes(string path, bool isHidden, bool readOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isHidden</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">readOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_SetExecutable_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.SetExecutable(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L219">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_SetExecutable_" data-uid="MediaBrowser.Model.IO.IFileSystem.SetExecutable*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_SetExecutable_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.SetExecutable(System.String)">SetExecutable(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetExecutable(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_SetHidden_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.SetHidden(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L215">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_SetHidden_" data-uid="MediaBrowser.Model.IO.IFileSystem.SetHidden*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_SetHidden_System_String_System_Boolean_" data-uid="MediaBrowser.Model.IO.IFileSystem.SetHidden(System.String,System.Boolean)">SetHidden(String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetHidden(string path, bool isHidden)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isHidden</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_SetReadOnly_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.SetReadOnly(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L216">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_SetReadOnly_" data-uid="MediaBrowser.Model.IO.IFileSystem.SetReadOnly*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_SetReadOnly_System_String_System_Boolean_" data-uid="MediaBrowser.Model.IO.IFileSystem.SetReadOnly(System.String,System.Boolean)">SetReadOnly(String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetReadOnly(string path, bool readOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">readOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem_SwapFiles_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem.SwapFiles(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L120">View Source</a>
+  </span>
+  <a id="MediaBrowser_Model_IO_IFileSystem_SwapFiles_" data-uid="MediaBrowser.Model.IO.IFileSystem.SwapFiles*"></a>
+  <h4 id="MediaBrowser_Model_IO_IFileSystem_SwapFiles_System_String_System_String_" data-uid="MediaBrowser.Model.IO.IFileSystem.SwapFiles(System.String,System.String)">SwapFiles(String, String)</h4>
+  <div class="markdown level1 summary"><p>Swaps the files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SwapFiles(string file1, string file2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">file1</span></td>
+        <td><p>The file1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">file2</span></td>
+        <td><p>The file2.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Model_IO_IFileSystem.md&amp;value=---%0Auid%3A%20MediaBrowser.Model.IO.IFileSystem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Model/IO/IFileSystem.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,899 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UniversalAudioService
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UniversalAudioService
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Api.Playback.UniversalAudioService">
+  
+  
+  <h1 id="MediaBrowser_Api_Playback_UniversalAudioService" data-uid="MediaBrowser.Api.Playback.UniversalAudioService" class="text-break">Class UniversalAudioService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MediaBrowser.Api.BaseApiService.html">BaseApiService</a></div>
+    <div class="level2"><span class="xref">UniversalAudioService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IService.html">IService</a></div>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IRequiresRequest.html">IRequiresRequest</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_Logger">BaseApiService.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_ResultFactory">BaseApiService.ResultFactory</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_Request">BaseApiService.Request</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetHeader_System_String_">BaseApiService.GetHeader(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_SplitValue_System_String_System_Char_">BaseApiService.SplitValue(String, Char)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetGuids_System_String_">BaseApiService.GetGuids(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_ToOptimizedResult__1___0_">BaseApiService.ToOptimizedResult&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_AssertCanUpdateUser_MediaBrowser_Controller_Net_IAuthorizationContext_MediaBrowser_Controller_Library_IUserManager_Guid_System_Boolean_">BaseApiService.AssertCanUpdateUser(IAuthorizationContext, IUserManager, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetSession_MediaBrowser_Controller_Net_ISessionContext_">BaseApiService.GetSession(ISessionContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetDtoOptions_MediaBrowser_Controller_Net_IAuthorizationContext_System_Object_">BaseApiService.GetDtoOptions(IAuthorizationContext, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetArtist_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetArtist(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetStudio_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetStudio(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetGenre_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetGenre(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetMusicGenre_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetMusicGenre(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetPerson_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetPerson(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetPathValue_System_Int32_">BaseApiService.GetPathValue(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetItemByName_System_String_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetItemByName(String, String, ILibraryManager, DtoOptions)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Api.Playback.html">MediaBrowser.Api.Playback</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Api.dll</h6>
+  <h5 id="MediaBrowser_Api_Playback_UniversalAudioService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UniversalAudioService : BaseApiService, IService, IRequiresRequest</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService__ctor_IHttpClient_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Model_IO_IIsoManager_MediaBrowser_Controller_MediaEncoding_IMediaEncoder_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Dlna_IDlnaManager_MediaBrowser_Controller_Devices_IDeviceManager_MediaBrowser_Controller_MediaEncoding_ISubtitleEncoder_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Model_IO_IZipClient_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Controller_Net_IAuthorizationContext_MediaBrowser_Controller_Drawing_IImageProcessor_INetworkManager_ILoggerFactory_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.%23ctor(IHttpClient%2CMediaBrowser.Controller.Configuration.IServerConfigurationManager%2CMediaBrowser.Controller.Library.IUserManager%2CMediaBrowser.Controller.Library.ILibraryManager%2CMediaBrowser.Model.IO.IIsoManager%2CMediaBrowser.Controller.MediaEncoding.IMediaEncoder%2CMediaBrowser.Model.IO.IFileSystem%2CMediaBrowser.Controller.Dlna.IDlnaManager%2CMediaBrowser.Controller.Devices.IDeviceManager%2CMediaBrowser.Controller.MediaEncoding.ISubtitleEncoder%2CMediaBrowser.Controller.Library.IMediaSourceManager%2CMediaBrowser.Model.IO.IZipClient%2CMediaBrowser.Model.Serialization.IJsonSerializer%2CMediaBrowser.Controller.Net.IAuthorizationContext%2CMediaBrowser.Controller.Drawing.IImageProcessor%2CINetworkManager%2CILoggerFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L78">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService__ctor_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.#ctor*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService__ctor_IHttpClient_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Model_IO_IIsoManager_MediaBrowser_Controller_MediaEncoding_IMediaEncoder_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Dlna_IDlnaManager_MediaBrowser_Controller_Devices_IDeviceManager_MediaBrowser_Controller_MediaEncoding_ISubtitleEncoder_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Model_IO_IZipClient_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Controller_Net_IAuthorizationContext_MediaBrowser_Controller_Drawing_IImageProcessor_INetworkManager_ILoggerFactory_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.#ctor(IHttpClient,MediaBrowser.Controller.Configuration.IServerConfigurationManager,MediaBrowser.Controller.Library.IUserManager,MediaBrowser.Controller.Library.ILibraryManager,MediaBrowser.Model.IO.IIsoManager,MediaBrowser.Controller.MediaEncoding.IMediaEncoder,MediaBrowser.Model.IO.IFileSystem,MediaBrowser.Controller.Dlna.IDlnaManager,MediaBrowser.Controller.Devices.IDeviceManager,MediaBrowser.Controller.MediaEncoding.ISubtitleEncoder,MediaBrowser.Controller.Library.IMediaSourceManager,MediaBrowser.Model.IO.IZipClient,MediaBrowser.Model.Serialization.IJsonSerializer,MediaBrowser.Controller.Net.IAuthorizationContext,MediaBrowser.Controller.Drawing.IImageProcessor,INetworkManager,ILoggerFactory)">UniversalAudioService(IHttpClient, IServerConfigurationManager, IUserManager, ILibraryManager, IIsoManager, IMediaEncoder, IFileSystem, IDlnaManager, IDeviceManager, ISubtitleEncoder, IMediaSourceManager, IZipClient, IJsonSerializer, IAuthorizationContext, IImageProcessor, INetworkManager, ILoggerFactory)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniversalAudioService(IHttpClient httpClient, IServerConfigurationManager serverConfigurationManager, IUserManager userManager, ILibraryManager libraryManager, IIsoManager isoManager, IMediaEncoder mediaEncoder, IFileSystem fileSystem, IDlnaManager dlnaManager, IDeviceManager deviceManager, ISubtitleEncoder subtitleEncoder, IMediaSourceManager mediaSourceManager, IZipClient zipClient, IJsonSerializer jsonSerializer, IAuthorizationContext authorizationContext, IImageProcessor imageProcessor, INetworkManager networkManager, ILoggerFactory loggerFactory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IHttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">serverConfigurationManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserManager.html">IUserManager</a></td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a></td>
+        <td><span class="parametername">libraryManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IIsoManager.html">IIsoManager</a></td>
+        <td><span class="parametername">isoManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.html">IMediaEncoder</a></td>
+        <td><span class="parametername">mediaEncoder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dlna.IDlnaManager.html">IDlnaManager</a></td>
+        <td><span class="parametername">dlnaManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Devices.IDeviceManager.html">IDeviceManager</a></td>
+        <td><span class="parametername">deviceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.ISubtitleEncoder.html">ISubtitleEncoder</a></td>
+        <td><span class="parametername">subtitleEncoder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IMediaSourceManager.html">IMediaSourceManager</a></td>
+        <td><span class="parametername">mediaSourceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IZipClient.html">IZipClient</a></td>
+        <td><span class="parametername">zipClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td><span class="parametername">jsonSerializer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Net.IAuthorizationContext.html">IAuthorizationContext</a></td>
+        <td><span class="parametername">authorizationContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Drawing.IImageProcessor.html">IImageProcessor</a></td>
+        <td><span class="parametername">imageProcessor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">INetworkManager</span></td>
+        <td><span class="parametername">networkManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_AuthorizationContext.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.AuthorizationContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L130">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_AuthorizationContext_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.AuthorizationContext*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_AuthorizationContext" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.AuthorizationContext">AuthorizationContext</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IAuthorizationContext AuthorizationContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Net.IAuthorizationContext.html">IAuthorizationContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_DeviceManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.DeviceManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L125">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_DeviceManager_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.DeviceManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_DeviceManager" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.DeviceManager">DeviceManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IDeviceManager DeviceManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Devices.IDeviceManager.html">IDeviceManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_DlnaManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.DlnaManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L124">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_DlnaManager_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.DlnaManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_DlnaManager" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.DlnaManager">DlnaManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IDlnaManager DlnaManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dlna.IDlnaManager.html">IDlnaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_FileSystem.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.FileSystem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L123">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_FileSystem_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.FileSystem*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_FileSystem" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.FileSystem">FileSystem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IFileSystem FileSystem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_HttpClient.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.HttpClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L117">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_HttpClient_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.HttpClient*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_HttpClient" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.HttpClient">HttpClient</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IHttpClient HttpClient { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IHttpClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_ImageProcessor.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.ImageProcessor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L131">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_ImageProcessor_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.ImageProcessor*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_ImageProcessor" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.ImageProcessor">ImageProcessor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IImageProcessor ImageProcessor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Drawing.IImageProcessor.html">IImageProcessor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_IsoManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.IsoManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L121">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_IsoManager_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.IsoManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_IsoManager" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.IsoManager">IsoManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IIsoManager IsoManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IIsoManager.html">IIsoManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_JsonSerializer.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.JsonSerializer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L129">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_JsonSerializer_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.JsonSerializer*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_JsonSerializer" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.JsonSerializer">JsonSerializer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IJsonSerializer JsonSerializer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_LibraryManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.LibraryManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L120">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_LibraryManager_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.LibraryManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_LibraryManager" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.LibraryManager">LibraryManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILibraryManager LibraryManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_MediaEncoder.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.MediaEncoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L122">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_MediaEncoder_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.MediaEncoder*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_MediaEncoder" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.MediaEncoder">MediaEncoder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IMediaEncoder MediaEncoder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.html">IMediaEncoder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_MediaSourceManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.MediaSourceManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L127">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_MediaSourceManager_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.MediaSourceManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_MediaSourceManager" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.MediaSourceManager">MediaSourceManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IMediaSourceManager MediaSourceManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IMediaSourceManager.html">IMediaSourceManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_NetworkManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.NetworkManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L132">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_NetworkManager_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.NetworkManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_NetworkManager" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.NetworkManager">NetworkManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected INetworkManager NetworkManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">INetworkManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_ServerConfigurationManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.ServerConfigurationManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L118">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_ServerConfigurationManager_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.ServerConfigurationManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_ServerConfigurationManager" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.ServerConfigurationManager">ServerConfigurationManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IServerConfigurationManager ServerConfigurationManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_SubtitleEncoder.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.SubtitleEncoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L126">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_SubtitleEncoder_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.SubtitleEncoder*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_SubtitleEncoder" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.SubtitleEncoder">SubtitleEncoder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ISubtitleEncoder SubtitleEncoder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.ISubtitleEncoder.html">ISubtitleEncoder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_UserManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.UserManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L119">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_UserManager_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.UserManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_UserManager" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.UserManager">UserManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IUserManager UserManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserManager.html">IUserManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_ZipClient.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.ZipClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L128">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_ZipClient_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.ZipClient*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_ZipClient" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.ZipClient">ZipClient</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IZipClient ZipClient { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IZipClient.html">IZipClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_Get_MediaBrowser_Api_Playback_GetUniversalAudioStream_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.Get(MediaBrowser.Api.Playback.GetUniversalAudioStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L136">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_Get_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_Get_MediaBrowser_Api_Playback_GetUniversalAudioStream_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.Get(MediaBrowser.Api.Playback.GetUniversalAudioStream)">Get(GetUniversalAudioStream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetUniversalAudioStream request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.GetUniversalAudioStream.html">GetUniversalAudioStream</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService_Head_MediaBrowser_Api_Playback_GetUniversalAudioStream_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService.Head(MediaBrowser.Api.Playback.GetUniversalAudioStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L141">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_UniversalAudioService_Head_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.Head*"></a>
+  <h4 id="MediaBrowser_Api_Playback_UniversalAudioService_Head_MediaBrowser_Api_Playback_GetUniversalAudioStream_" data-uid="MediaBrowser.Api.Playback.UniversalAudioService.Head(MediaBrowser.Api.Playback.GetUniversalAudioStream)">Head(GetUniversalAudioStream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Head(GetUniversalAudioStream request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.GetUniversalAudioStream.html">GetUniversalAudioStream</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IService.html">IService</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IRequiresRequest.html">IRequiresRequest</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_UniversalAudioService.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.UniversalAudioService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/UniversalAudioService.cs/#L75" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

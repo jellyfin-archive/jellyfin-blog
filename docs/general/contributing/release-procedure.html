@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Release Procedure | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Release Procedure | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="contrib-release-procedure">
+<h1 id="release-procedure">Release Procedure</h1>
+
+<p>This document is a Core team guide, provided publicly to ensure transparancy in the release process.</p>
+<h2 id="versioning">Versioning</h2>
+<p>Jellyfin uses <a href="https://semver.org">semantic versioning</a>. All releases will have versions in the <code>X.Y.Z</code> format, starting from <code>10.0.0</code>. Note however that the <code>10.Y.Z</code> release chain represents the &quot;cleanup&quot; of the codebase, so it should be accepted that <code>10.Y.Z</code> breaks all compatibility, at some point, with previous Emby-compatible interfaces, and may also break compatibility with previous <code>10.Y</code> releases if required for later cleanup work. Our versioning will typically follow the patterns below:</p>
+<h4 id="x---major-breaking-versions"><code>X</code> - Major breaking versions</h4>
+<ul>
+<li>Breaks compatibility with the HTTP and/or plugin APIs.</li>
+</ul>
+<h4 id="y---minor-versions"><code>Y</code> - Minor versions</h4>
+<ul>
+<li>Introduces new features.</li>
+<li>Makes minor backwards-compatible API changes.</li>
+</ul>
+<h4 id="z---hotfix-versions"><code>Z</code> - Hotfix versions</h4>
+<ul>
+<li>Introduces critical bugfixes or otherwise changes <code>master</code> branch code since the last release.</li>
+</ul>
+<h2 id="general-release-philosophy">General Release Philosophy</h2>
+<h2 id="release-procedure-majorminor-version-releases">Release procedure (major/minor version releases)</h2>
+<ol>
+<li><p>Announce release in the <a href="https://matrix.to/#/#jellyfin-dev:matrix.org">jellyfin-dev</a> Matrix/Riot channel at least a few hours before releasing, to put a temporary freeze on merges.</p>
+</li>
+<li><p>Ensure any required PRs are merged into both the <a href="https://github.com/jellyfin/jellyfin">jellyfin</a> and <a href="https://github.com/jellyfin/jellyfin-web">jellyfin-web</a> repositories.</p>
+</li>
+<li><p>Create a release branch for the <a href="https://github.com/jellyfin/jellyfin">jellyfin</a> and <a href="https://github.com/jellyfin/jellyfin-web">jellyfin-web</a> repositories with the format <code>release-X.Y.Z</code>, where <code>X.Y</code> is the new minor + major version number and <code>Z</code> is a literal <code>Z</code> character, for example <code>release-10.3.Z</code>, based off the current <code>master</code> branches. These will be somewhat long-lived branches to track particular releases and deal with hotfixes to those branches should they be required.</p>
+</li>
+<li><p>Execute the <code>bump_version</code> script inside the release branch in the <a href="https://github.com/jellyfin/jellyfin">jellyfin</a> local repository. Commit the resulting differences as <code>Bump version to X.Y.Z</code>, where <code>X.Y.Z</code> is the full version number.</p>
+</li>
+<li><p>Perform initial testing builds and test the resulting binaries.</p>
+<p> Basic testing checklist:</p>
+<ol>
+<li>Run through setup wizard and import small library.  </li>
+<li>Test playback, navigation, and subtitles in the Web UI.  </li>
+<li>Test playback, navigation, and subtitles in the various client apps.  </li>
+</ol>
+</li>
+<li><p>Call to <a href="https://matrix.to/#/#jellyfin-dev:matrix.org">jellyfin-dev</a> for any release-critical bug found; perform bugfix pull requests against the <code>release-X.Y.Z</code> branch.</p>
+</li>
+<li><p>Repeat the above two steps until no more RC bugs are found.</p>
+</li>
+<li><p>Perform the release.</p>
+<ol>
+<li>Create pull requests from release branch into <code>master</code> in both repositories.  </li>
+<li>Obtain approval from the Core team.  </li>
+<li>Merge release branch PR into <code>master</code> in <code>jellyfin-web</code>.</li>
+<li>Update submodule for <code>jellyfin-web</code> directly in release branch. Commit the resulting differences as <code>Update jellyfin-web submodule to X.Y.Z</code>, where <code>X.Y.Z</code> is the full version number:<br> <code>cd MediaBrowser.WebDashboard/jellyfin-web</code><br> <code>git fetch --all</code><br> <code>git checkout master</code><br> <code>cd ../..</code><br> <code>git add MediaBrowser.WebDashboard/jellyfin-web</code><br> <code>git commit</code>  </li>
+<li>Merge release branch PR into <code>master</code> in <code>jellyfin</code>.</li>
+<li>Create the GitHub release and tag from release branch to facilitate future point releases.  </li>
+<li>Build new releases packages off of release branch and upload to repositories.  </li>
+<li>Announce new release in the <a href="https://matrix.to/#/#jellyfin-announce:matrix.org">jellyfin-announce</a> Matrix/Riot channel and anywhere else required (e.g. Reddit, etc.).</li>
+</ol>
+</li>
+<li><p>Delete any previous minor release branches, as all future hotfix work should go against the new release branch, or master directly for inclusion in the next major release.</p>
+</li>
+</ol>
+<h2 id="release-procedure-hotfix-version-releases">Release procedure (Hotfix version releases)</h2>
+<ol>
+<li><p>Discover a major, breaking bug in the current release which must be immediately fixed and cannot wait for the next full feature release; discuss and challenge any hotfixes (are they <em>really</em> needed and can&#39;t wait?) in the <a href="https://matrix.to/#/#jellyfin-dev:matrix.org">jellyfin-dev</a> Matrix/Riot channel to coordinate hotfixes.</p>
+</li>
+<li><p>Create all hotfix PRs against the <em>current minor release branch</em> in either the <a href="https://github.com/jellyfin/jellyfin">jellyfin</a> and <a href="https://github.com/jellyfin/jellyfin-web">jellyfin-web</a> repositories; merge when completed.</p>
+</li>
+<li><p>Execute the <code>bump_version</code> script inside the release branch in the <a href="https://github.com/jellyfin/jellyfin">jellyfin</a> local repository. Commit the resulting differences as <code>Bump version to X.Y.Z</code>, where <code>X.Y.Z</code> is the full version number.</p>
+</li>
+<li><p>Perform the release.</p>
+<ol>
+<li>Create pull requests from release branch into <code>master</code> in any required repositories.  </li>
+<li>Obtain approval from the Core team.  </li>
+<li>IF the hotfix applies to the <a href="https://github.com/jellyfin/jellyfin-web">jellyfin-web</a> repository, merge release branch PR into <code>master</code> in <code>jellyfin-web</code>.</li>
+<li>IF the hotfix applies to the <a href="https://github.com/jellyfin/jellyfin-web">jellyfin-web</a> repository, update submodule for <code>jellyfin-web</code> directly in the <a href="https://github.com/jellyfin/jellyfin">jellyfin</a> release branch. Commit the resulting differences as <code>Update jellyfin-web submodule to X.Y.Z</code>, where <code>X.Y.Z</code> is the full version number.<br> <code>cd MediaBrowser.WebDashboard/jellyfin-web</code><br> <code>git fetch --all</code><br> <code>git checkout master</code><br> <code>cd ../..</code><br> <code>git add MediaBrowser.WebDashboard/jellyfin-web</code><br> <code>git commit</code>  </li>
+<li>Merge release branch PR into <code>master</code> in <code>jellyfin</code>.</li>
+<li>Create the GitHub release and tag from release branch to facilitate future point releases. IF the hotfix did not affect the <a href="https://github.com/jellyfin/jellyfin-web">jellyfin-web</a> repository, still create a new release and tag targeting the same point on the release branch to facilitate consistent versioning between the repositories; the changelog may be empty with a &quot;new release to match main repository&quot;-type message.</li>
+<li>Build new releases packages off of release branch and upload to repositories.  </li>
+<li>Announce new release in the <a href="https://matrix.to/#/#jellyfin-announce:matrix.org">jellyfin-announce</a> Matrix/Riot channel and anywhere else required (e.g. Reddit, etc.).</li>
+</ol>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/blob/master/general/contributing/release-procedure.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1454 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IItemRepository
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IItemRepository
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Controller.Persistence.IItemRepository">
+  
+  
+  <h1 id="MediaBrowser_Controller_Persistence_IItemRepository" data-uid="MediaBrowser.Controller.Persistence.IItemRepository" class="text-break">Interface IItemRepository
+  </h1>
+  <div class="markdown level0 summary"><p>Provides an interface to implement an Item repository</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MediaBrowser.Controller.Persistence.IRepository.html#MediaBrowser_Controller_Persistence_IRepository_Name">IRepository.Name</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Controller.Persistence.html">MediaBrowser.Controller.Persistence</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Controller.dll</h6>
+  <h5 id="MediaBrowser_Controller_Persistence_IItemRepository_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IItemRepository : IRepository, IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_DeleteItem_Guid_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.DeleteItem(Guid%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L28">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_DeleteItem_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.DeleteItem*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_DeleteItem_Guid_CancellationToken_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.DeleteItem(Guid,CancellationToken)">DeleteItem(Guid, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes the item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteItem(Guid id, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetAlbumArtists_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetAlbumArtists(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L148">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetAlbumArtists_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetAlbumArtists*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetAlbumArtists_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetAlbumArtists(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetAlbumArtists(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryResult&lt;(BaseItem, ItemCounts)&gt; GetAlbumArtists(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.ItemCounts.html">ItemCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetAllArtistNames.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetAllArtistNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L154">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetAllArtistNames_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetAllArtistNames*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetAllArtistNames" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetAllArtistNames">GetAllArtistNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;string&gt; GetAllArtistNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetAllArtists_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetAllArtists(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L149">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetAllArtists_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetAllArtists*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetAllArtists_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetAllArtists(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetAllArtists(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryResult&lt;(BaseItem, ItemCounts)&gt; GetAllArtists(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.ItemCounts.html">ItemCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetArtists_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetArtists(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L147">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetArtists_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetArtists*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetArtists_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetArtists(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetArtists(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryResult&lt;(BaseItem, ItemCounts)&gt; GetArtists(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.ItemCounts.html">ItemCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetChapter_MediaBrowser_Controller_Entities_BaseItem_System_Int32_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetChapter(MediaBrowser.Controller.Entities.BaseItem%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L59">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetChapter_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetChapter*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetChapter_MediaBrowser_Controller_Entities_BaseItem_System_Int32_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetChapter(MediaBrowser.Controller.Entities.BaseItem,System.Int32)">GetChapter(BaseItem, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a single chapter for an item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ChapterInfo GetChapter(BaseItem id, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.ChapterInfo.html">ChapterInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetChapters_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetChapters(MediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L51">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetChapters_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetChapters*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetChapters_MediaBrowser_Controller_Entities_BaseItem_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetChapters(MediaBrowser.Controller.Entities.BaseItem)">GetChapters(BaseItem)</h4>
+  <div class="markdown level1 summary"><p>Gets chapters for an item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;ChapterInfo&gt; GetChapters(BaseItem id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.ChapterInfo.html">ChapterInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetCount_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetCount(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L142">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetCount_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetCount*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetCount_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetCount(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetCount(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetCount(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetGenreNames.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetGenreNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L153">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetGenreNames_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetGenreNames*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetGenreNames" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetGenreNames">GetGenreNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;string&gt; GetGenreNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetGenres_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetGenres(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L144">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetGenres_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetGenres*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetGenres_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetGenres(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetGenres(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryResult&lt;(BaseItem, ItemCounts)&gt; GetGenres(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.ItemCounts.html">ItemCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetItemIds_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetItemIds(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L86">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetItemIds_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetItemIds*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetItemIds_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetItemIds(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetItemIds(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"><p>Gets the item ids.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryResult&lt;Guid&gt; GetItemIds(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td><p>IEnumerable&lt;Guid&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetItemIdsList_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetItemIdsList(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L99">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetItemIdsList_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetItemIdsList*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetItemIdsList_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetItemIdsList(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetItemIdsList(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"><p>Gets the item ids list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;Guid&gt; GetItemIdsList(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td><p>List&lt;Guid&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetItemIdsWithPath_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetItemIdsWithPath(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L127">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetItemIdsWithPath_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetItemIdsWithPath*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetItemIdsWithPath_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetItemIdsWithPath(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetItemIdsWithPath(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"><p>Gets the item ids with path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;Tuple&lt;Guid, string&gt;&gt; GetItemIdsWithPath(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Tuple</span>&lt;<span class="xref">Guid</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>QueryResult&lt;Tuple&lt;Guid, System.String&gt;&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetItemList_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetItemList(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L134">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetItemList_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetItemList*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetItemList_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetItemList(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetItemList(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"><p>Gets the item list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;BaseItem&gt; GetItemList(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;</td>
+        <td><p>List&lt;BaseItem&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetItems_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetItems(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L92">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetItems_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetItems*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetItems_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetItems(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetItems(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"><p>Gets the items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryResult&lt;BaseItem&gt; GetItems(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;</td>
+        <td><p>QueryResult&lt;BaseItem&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetMediaStreams_MediaBrowser_Controller_Persistence_MediaStreamQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetMediaStreams(MediaBrowser.Controller.Persistence.MediaStreamQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L71">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetMediaStreams_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetMediaStreams*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetMediaStreams_MediaBrowser_Controller_Persistence_MediaStreamQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetMediaStreams(MediaBrowser.Controller.Persistence.MediaStreamQuery)">GetMediaStreams(MediaStreamQuery)</h4>
+  <div class="markdown level1 summary"><p>Gets the media streams.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;MediaStream&gt; GetMediaStreams(MediaStreamQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Persistence.MediaStreamQuery.html">MediaStreamQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.MediaStream.html">MediaStream</a>&gt;</td>
+        <td><p>IEnumerable{MediaStream}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetMusicGenreNames.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetMusicGenreNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L151">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetMusicGenreNames_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetMusicGenreNames*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetMusicGenreNames" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetMusicGenreNames">GetMusicGenreNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;string&gt; GetMusicGenreNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetMusicGenres_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetMusicGenres(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L145">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetMusicGenres_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetMusicGenres*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetMusicGenres_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetMusicGenres(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetMusicGenres(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryResult&lt;(BaseItem, ItemCounts)&gt; GetMusicGenres(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.ItemCounts.html">ItemCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetPeople_MediaBrowser_Controller_Entities_InternalPeopleQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetPeople(MediaBrowser.Controller.Entities.InternalPeopleQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L106">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetPeople_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetPeople*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetPeople_MediaBrowser_Controller_Entities_InternalPeopleQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetPeople(MediaBrowser.Controller.Entities.InternalPeopleQuery)">GetPeople(InternalPeopleQuery)</h4>
+  <div class="markdown level1 summary"><p>Gets the people.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;PersonInfo&gt; GetPeople(InternalPeopleQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalPeopleQuery.html">InternalPeopleQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.PersonInfo.html">PersonInfo</a>&gt;</td>
+        <td><p>List&lt;PersonInfo&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetPeopleNames_MediaBrowser_Controller_Entities_InternalPeopleQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetPeopleNames(MediaBrowser.Controller.Entities.InternalPeopleQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L120">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetPeopleNames_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetPeopleNames*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetPeopleNames_MediaBrowser_Controller_Entities_InternalPeopleQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetPeopleNames(MediaBrowser.Controller.Entities.InternalPeopleQuery)">GetPeopleNames(InternalPeopleQuery)</h4>
+  <div class="markdown level1 summary"><p>Gets the people names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;string&gt; GetPeopleNames(InternalPeopleQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalPeopleQuery.html">InternalPeopleQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>List&lt;System.String&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetStudioNames.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetStudioNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L152">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetStudioNames_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetStudioNames*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetStudioNames" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetStudioNames">GetStudioNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;string&gt; GetStudioNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_GetStudios_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.GetStudios(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L146">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_GetStudios_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetStudios*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_GetStudios_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.GetStudios(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetStudios(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryResult&lt;(BaseItem, ItemCounts)&gt; GetStudios(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.ItemCounts.html">ItemCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_RetrieveItem_Guid_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.RetrieveItem(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L44">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_RetrieveItem_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.RetrieveItem*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_RetrieveItem_Guid_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.RetrieveItem(Guid)">RetrieveItem(Guid)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BaseItem RetrieveItem(Guid id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><p>BaseItem.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_SaveChapters_Guid_List_MediaBrowser_Model_Entities_ChapterInfo__.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.SaveChapters(Guid%2CList%7BMediaBrowser.Model.Entities.ChapterInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L64">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_SaveChapters_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.SaveChapters*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_SaveChapters_Guid_List_MediaBrowser_Model_Entities_ChapterInfo__" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.SaveChapters(Guid,List{MediaBrowser.Model.Entities.ChapterInfo})">SaveChapters(Guid, List&lt;ChapterInfo&gt;)</h4>
+  <div class="markdown level1 summary"><p>Saves the chapters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SaveChapters(Guid id, List&lt;ChapterInfo&gt; chapters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.ChapterInfo.html">ChapterInfo</a>&gt;</td>
+        <td><span class="parametername">chapters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_SaveImages_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.SaveImages(MediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L37">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_SaveImages_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.SaveImages*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_SaveImages_MediaBrowser_Controller_Entities_BaseItem_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.SaveImages(MediaBrowser.Controller.Entities.BaseItem)">SaveImages(BaseItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SaveImages(BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_SaveItem_MediaBrowser_Controller_Entities_BaseItem_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.SaveItem(MediaBrowser.Controller.Entities.BaseItem%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L21">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_SaveItem_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.SaveItem*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_SaveItem_MediaBrowser_Controller_Entities_BaseItem_CancellationToken_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.SaveItem(MediaBrowser.Controller.Entities.BaseItem,CancellationToken)">SaveItem(BaseItem, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Saves an item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SaveItem(BaseItem item, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_SaveItems_IEnumerable_MediaBrowser_Controller_Entities_BaseItem__CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.SaveItems(IEnumerable%7BMediaBrowser.Controller.Entities.BaseItem%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L35">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_SaveItems_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.SaveItems*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_SaveItems_IEnumerable_MediaBrowser_Controller_Entities_BaseItem__CancellationToken_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.SaveItems(IEnumerable{MediaBrowser.Controller.Entities.BaseItem},CancellationToken)">SaveItems(IEnumerable&lt;BaseItem&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Saves the items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SaveItems(IEnumerable&lt;BaseItem&gt; items, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_SaveMediaStreams_Guid_List_MediaBrowser_Model_Entities_MediaStream__CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.SaveMediaStreams(Guid%2CList%7BMediaBrowser.Model.Entities.MediaStream%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L79">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_SaveMediaStreams_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.SaveMediaStreams*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_SaveMediaStreams_Guid_List_MediaBrowser_Model_Entities_MediaStream__CancellationToken_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.SaveMediaStreams(Guid,List{MediaBrowser.Model.Entities.MediaStream},CancellationToken)">SaveMediaStreams(Guid, List&lt;MediaStream&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Saves the media streams.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SaveMediaStreams(Guid id, List&lt;MediaStream&gt; streams, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.MediaStream.html">MediaStream</a>&gt;</td>
+        <td><span class="parametername">streams</span></td>
+        <td><p>The streams.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_UpdateInheritedValues_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.UpdateInheritedValues(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L140">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_UpdateInheritedValues_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.UpdateInheritedValues*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_UpdateInheritedValues_CancellationToken_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.UpdateInheritedValues(CancellationToken)">UpdateInheritedValues(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates the inherited values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateInheritedValues(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository_UpdatePeople_Guid_List_MediaBrowser_Controller_Entities_PersonInfo__.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository.UpdatePeople(Guid%2CList%7BMediaBrowser.Controller.Entities.PersonInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L113">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Persistence_IItemRepository_UpdatePeople_" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.UpdatePeople*"></a>
+  <h4 id="MediaBrowser_Controller_Persistence_IItemRepository_UpdatePeople_Guid_List_MediaBrowser_Controller_Entities_PersonInfo__" data-uid="MediaBrowser.Controller.Persistence.IItemRepository.UpdatePeople(Guid,List{MediaBrowser.Controller.Entities.PersonInfo})">UpdatePeople(Guid, List&lt;PersonInfo&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates the people.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdatePeople(Guid itemId, List&lt;PersonInfo&gt; people)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The item identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.PersonInfo.html">PersonInfo</a>&gt;</td>
+        <td><span class="parametername">people</span></td>
+        <td><p>The people.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Persistence_IItemRepository.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Persistence.IItemRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Persistence/IItemRepository.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

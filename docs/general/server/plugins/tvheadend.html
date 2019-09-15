@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TVHeadend | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="TVHeadend | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../../images/favicon.png">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="server-plugins-tvheadend">
+<h1 id="tvheadend">TVHeadend</h1>
+
+<p>The objective of the guide is to configure the Jellyfin Tvheadend plugin to backend a Tvheadend server.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Tvheadend server</li>
+<li>Jellyfin server</li>
+<li>TVHeadend plugin installed in Jellyfin</li>
+</ul>
+<h2 id="configuration">Configuration</h2>
+<ol>
+<li><p>Create a user for Jellyfin in Tvheadend: it is convenient to create a specific user for Jellyfin. Steps:</p>
+<ul>
+<li>Go to Configuration&gt; Users&gt; Access Entries&gt; Add</li>
+<li>Give the user parameters<ul>
+<li>Enabled: ✔</li>
+<li>Username: <em>Username</em> (for example: Jellyfin)</li>
+<li>Change parameters: Rights,Channel number range,Channel tags,DVR configurations,Streaming profiles,Connection limits *</li>
+<li>Web interface: ✔</li>
+<li>Streaming: Basic,Advanced,HTSP *</li>
+<li>Video recoder: Basic,HTSP,View all *</li>
+<li>(optional) Comment: Comment for the user (for example: User used by Jellyfin)</li>
+<li>(optional) Allowed networks: <em>Network address with network mask to allow</em> (for example 127.0.0.1/32)</li>
+<li>Press Save</li>
+</ul>
+</li>
+<li>Go to Configuration&gt; Users&gt; Passwords&gt; Add</li>
+<li><p>Give the user parameters</p>
+<ul>
+<li>Enabled: ✔</li>
+<li>Username <em>The user created previously</em> (for example: Jellyfin)</li>
+<li>Password: <em>The password for the user created previously</em> (for example: Jellyfin_password)</li>
+<li>Press Save</li>
+</ul>
+<p><strong>Notes:</strong> The parameters Change parameters, Streaming and Video recoder must be marked as shown, because although Jellyfin can connect to Tvheadend, it can cause problems when reproducing the content.</p>
+</li>
+</ul>
+</li>
+<li><p>Adjust the Jellyfin Tvheadend plugin to establish the connection</p>
+<ul>
+<li>Go to Dashboard&gt; Plugins&gt; TVHeadend&gt; Settings</li>
+<li><p>Provide creator access data previously:</p>
+<ul>
+<li>TVHeadend Hostname or IP Address: <em>IP address of the Tvheadend server</em> (For example: 127.0.0.1) *</li>
+<li>Username: <em>The user created previously</em> (for example: Jellyfin)</li>
+<li>Password: <em>The password created previously</em> (for example: Jellyfin_password)</li>
+</ul>
+<p><strong>Notes:</strong> By default the the <em>TVHeadend Hostname or IP Address</em> section is configured by default with the hostname <em>localhost</em>, it is preferable to use the IP address <em>127.0.0.1</em> instead of <em>localhost</em>. <a href="https://emby.media/community/index.php?/topic/55768-tv-headend-plugin-where-does-it-store-data/">Reference</a></p>
+</li>
+</ul>
+</li>
+<li><p>Configure the channels for viewing in Jellyfin: even if Jellyfin manages to connect to Tvheadend, the guide will not be synchronized because there has to be a number assigned to the channels in Tvheadend <a href="https://emby.media/community/index.php?/topic/64583-no-channels-with-tvheadend-plugin/#ipboard_body">Reference</a></p>
+<ul>
+<li>Go to Configuration&gt; Channel/EPG&gt; Channels</li>
+<li>Select the channel to be changed and press Edit</li>
+<li>In the option Number we enter the number that we are going to assign to the channel (for example: 1)</li>
+<li>Press save</li>
+</ul>
+</li>
+<li><p>Update the data from the TVheadend guide to Jellyfin</p>
+<ul>
+<li>Go to Dashboard&gt; Live TV</li>
+<li>Refresh Guide data</li>
+</ul>
+</li>
+</ol>
+<p>Once the update of the guide is finished, the Live TV will already be able to see the guide related to the synchronized channels and will be able to visualize the content.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/blob/master/general/server/plugins/tvheadend.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

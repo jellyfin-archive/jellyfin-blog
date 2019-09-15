@@ -1,0 +1,471 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BasePlugin
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BasePlugin
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Common.Plugins.BasePlugin">
+  
+  
+  <h1 id="MediaBrowser_Common_Plugins_BasePlugin" data-uid="MediaBrowser.Common.Plugins.BasePlugin" class="text-break">Class BasePlugin
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BasePlugin</span></div>
+      <div class="level2"><a class="xref" href="MediaBrowser.Common.Plugins.BasePlugin-1.html">BasePlugin&lt;TConfigurationType&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Common.Plugins.IPlugin.html">IPlugin</a></div>
+    <div><a class="xref" href="MediaBrowser.Common.Plugins.IPluginAssembly.html">IPluginAssembly</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Common.Plugins.html">MediaBrowser.Common.Plugins</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Common.dll</h6>
+  <h5 id="MediaBrowser_Common_Plugins_BasePlugin_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BasePlugin : object, IPlugin, IPluginAssembly</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Plugins_BasePlugin_AssemblyFilePath.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Plugins.BasePlugin.AssemblyFilePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Plugins/BasePlugin.cs/#L39">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Plugins_BasePlugin_AssemblyFilePath_" data-uid="MediaBrowser.Common.Plugins.BasePlugin.AssemblyFilePath*"></a>
+  <h4 id="MediaBrowser_Common_Plugins_BasePlugin_AssemblyFilePath" data-uid="MediaBrowser.Common.Plugins.BasePlugin.AssemblyFilePath">AssemblyFilePath</h4>
+  <div class="markdown level1 summary"><p>Gets the path to the assembly file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AssemblyFilePath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The assembly file path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Plugins_BasePlugin_DataFolderPath.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Plugins.BasePlugin.DataFolderPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Plugins/BasePlugin.cs/#L82">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Plugins_BasePlugin_DataFolderPath_" data-uid="MediaBrowser.Common.Plugins.BasePlugin.DataFolderPath*"></a>
+  <h4 id="MediaBrowser_Common_Plugins_BasePlugin_DataFolderPath" data-uid="MediaBrowser.Common.Plugins.BasePlugin.DataFolderPath">DataFolderPath</h4>
+  <div class="markdown level1 summary"><p>Gets the full path to the data folder, where the plugin can store any miscellaneous files needed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DataFolderPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The data folder path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Plugins_BasePlugin_Description.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Plugins.BasePlugin.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Plugins/BasePlugin.cs/#L21">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Plugins_BasePlugin_Description_" data-uid="MediaBrowser.Common.Plugins.BasePlugin.Description*"></a>
+  <h4 id="MediaBrowser_Common_Plugins_BasePlugin_Description" data-uid="MediaBrowser.Common.Plugins.BasePlugin.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets the description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Description { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Plugins_BasePlugin_Id.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Plugins.BasePlugin.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Plugins/BasePlugin.cs/#L27">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Plugins_BasePlugin_Id_" data-uid="MediaBrowser.Common.Plugins.BasePlugin.Id*"></a>
+  <h4 id="MediaBrowser_Common_Plugins_BasePlugin_Id" data-uid="MediaBrowser.Common.Plugins.BasePlugin.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Gets the unique id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Guid Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><p>The unique id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Plugins_BasePlugin_Name.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Plugins.BasePlugin.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Plugins/BasePlugin.cs/#L15">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Plugins_BasePlugin_Name_" data-uid="MediaBrowser.Common.Plugins.BasePlugin.Name*"></a>
+  <h4 id="MediaBrowser_Common_Plugins_BasePlugin_Name" data-uid="MediaBrowser.Common.Plugins.BasePlugin.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the plugin</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Plugins_BasePlugin_Version.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Plugins.BasePlugin.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Plugins/BasePlugin.cs/#L33">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Plugins_BasePlugin_Version_" data-uid="MediaBrowser.Common.Plugins.BasePlugin.Version*"></a>
+  <h4 id="MediaBrowser_Common_Plugins_BasePlugin_Version" data-uid="MediaBrowser.Common.Plugins.BasePlugin.Version">Version</h4>
+  <div class="markdown level1 summary"><p>Gets the plugin version</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Version Version { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Version</span></td>
+        <td><p>The version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Plugins_BasePlugin_GetPluginInfo.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Plugins.BasePlugin.GetPluginInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Plugins/BasePlugin.cs/#L45">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Plugins_BasePlugin_GetPluginInfo_" data-uid="MediaBrowser.Common.Plugins.BasePlugin.GetPluginInfo*"></a>
+  <h4 id="MediaBrowser_Common_Plugins_BasePlugin_GetPluginInfo" data-uid="MediaBrowser.Common.Plugins.BasePlugin.GetPluginInfo">GetPluginInfo()</h4>
+  <div class="markdown level1 summary"><p>Gets the plugin info.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual PluginInfo GetPluginInfo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Plugins.PluginInfo.html">PluginInfo</a></td>
+        <td><p>PluginInfo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Plugins_BasePlugin_OnUninstalling.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Plugins.BasePlugin.OnUninstalling%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Plugins/BasePlugin.cs/#L61">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Plugins_BasePlugin_OnUninstalling_" data-uid="MediaBrowser.Common.Plugins.BasePlugin.OnUninstalling*"></a>
+  <h4 id="MediaBrowser_Common_Plugins_BasePlugin_OnUninstalling" data-uid="MediaBrowser.Common.Plugins.BasePlugin.OnUninstalling">OnUninstalling()</h4>
+  <div class="markdown level1 summary"><p>Called when just before the plugin is uninstalled from the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnUninstalling()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Plugins_BasePlugin_SetAttributes_System_String_System_String_Version_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Plugins.BasePlugin.SetAttributes(System.String%2CSystem.String%2CVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Plugins/BasePlugin.cs/#L66">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Plugins_BasePlugin_SetAttributes_" data-uid="MediaBrowser.Common.Plugins.BasePlugin.SetAttributes*"></a>
+  <h4 id="MediaBrowser_Common_Plugins_BasePlugin_SetAttributes_System_String_System_String_Version_" data-uid="MediaBrowser.Common.Plugins.BasePlugin.SetAttributes(System.String,System.String,Version)">SetAttributes(String, String, Version)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAttributes(string assemblyFilePath, string dataFolderPath, Version assemblyVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">assemblyFilePath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dataFolderPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Version</span></td>
+        <td><span class="parametername">assemblyVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Plugins_BasePlugin_SetId_Guid_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Plugins.BasePlugin.SetId(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Plugins/BasePlugin.cs/#L73">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Plugins_BasePlugin_SetId_" data-uid="MediaBrowser.Common.Plugins.BasePlugin.SetId*"></a>
+  <h4 id="MediaBrowser_Common_Plugins_BasePlugin_SetId_Guid_" data-uid="MediaBrowser.Common.Plugins.BasePlugin.SetId(Guid)">SetId(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetId(Guid assemblyId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">assemblyId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Common.Plugins.IPlugin.html">IPlugin</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Common.Plugins.IPluginAssembly.html">IPluginAssembly</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Plugins_BasePlugin.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Plugins.BasePlugin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Plugins/BasePlugin.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

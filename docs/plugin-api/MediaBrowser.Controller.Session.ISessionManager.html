@@ -1,0 +1,2337 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ISessionManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ISessionManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Controller.Session.ISessionManager">
+  
+  
+  <h1 id="MediaBrowser_Controller_Session_ISessionManager" data-uid="MediaBrowser.Controller.Session.ISessionManager" class="text-break">Interface ISessionManager
+  </h1>
+  <div class="markdown level0 summary"><p>Interface ISessionManager</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Controller.Session.html">MediaBrowser.Controller.Session</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Controller.dll</h6>
+  <h5 id="MediaBrowser_Controller_Session_ISessionManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISessionManager</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_Sessions.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.Sessions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L66">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_Sessions_" data-uid="MediaBrowser.Controller.Session.ISessionManager.Sessions*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_Sessions" data-uid="MediaBrowser.Controller.Session.ISessionManager.Sessions">Sessions</h4>
+  <div class="markdown level1 summary"><p>Gets the sessions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;SessionInfo&gt; Sessions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Session.SessionInfo.html">SessionInfo</a>&gt;</td>
+        <td><p>The sessions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_AddAdditionalUser_System_String_Guid_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.AddAdditionalUser(System.String%2CGuid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L219">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_AddAdditionalUser_" data-uid="MediaBrowser.Controller.Session.ISessionManager.AddAdditionalUser*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_AddAdditionalUser_System_String_Guid_" data-uid="MediaBrowser.Controller.Session.ISessionManager.AddAdditionalUser(System.String,Guid)">AddAdditionalUser(String, Guid)</h4>
+  <div class="markdown level1 summary"><p>Adds the additional user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddAdditionalUser(string sessionId, Guid userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>The user identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_AuthenticateNewSession_MediaBrowser_Controller_Session_AuthenticationRequest_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.AuthenticateNewSession(MediaBrowser.Controller.Session.AuthenticationRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L247">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_AuthenticateNewSession_" data-uid="MediaBrowser.Controller.Session.ISessionManager.AuthenticateNewSession*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_AuthenticateNewSession_MediaBrowser_Controller_Session_AuthenticationRequest_" data-uid="MediaBrowser.Controller.Session.ISessionManager.AuthenticateNewSession(MediaBrowser.Controller.Session.AuthenticationRequest)">AuthenticateNewSession(AuthenticationRequest)</h4>
+  <div class="markdown level1 summary"><p>Authenticates the new session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AuthenticationResult&gt; AuthenticateNewSession(AuthenticationRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.AuthenticationRequest.html">AuthenticationRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Authentication.AuthenticationResult.html">AuthenticationResult</a>&gt;</td>
+        <td><p>Task{SessionInfo}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_ClearTranscodingInfo_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.ClearTranscodingInfo(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L274">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_ClearTranscodingInfo_" data-uid="MediaBrowser.Controller.Session.ISessionManager.ClearTranscodingInfo*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_ClearTranscodingInfo_System_String_" data-uid="MediaBrowser.Controller.Session.ISessionManager.ClearTranscodingInfo(System.String)">ClearTranscodingInfo(String)</h4>
+  <div class="markdown level1 summary"><p>Clears the transcoding information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ClearTranscodingInfo(string deviceId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td><p>The device identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_CloseIfNeeded_MediaBrowser_Controller_Session_SessionInfo_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.CloseIfNeeded(MediaBrowser.Controller.Session.SessionInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L325">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_CloseIfNeeded_" data-uid="MediaBrowser.Controller.Session.ISessionManager.CloseIfNeeded*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_CloseIfNeeded_MediaBrowser_Controller_Session_SessionInfo_" data-uid="MediaBrowser.Controller.Session.ISessionManager.CloseIfNeeded(MediaBrowser.Controller.Session.SessionInfo)">CloseIfNeeded(SessionInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CloseIfNeeded(SessionInfo session)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.SessionInfo.html">SessionInfo</a></td>
+        <td><span class="parametername">session</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_CreateNewSession_MediaBrowser_Controller_Session_AuthenticationRequest_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.CreateNewSession(MediaBrowser.Controller.Session.AuthenticationRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L254">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_CreateNewSession_" data-uid="MediaBrowser.Controller.Session.ISessionManager.CreateNewSession*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_CreateNewSession_MediaBrowser_Controller_Session_AuthenticationRequest_" data-uid="MediaBrowser.Controller.Session.ISessionManager.CreateNewSession(MediaBrowser.Controller.Session.AuthenticationRequest)">CreateNewSession(AuthenticationRequest)</h4>
+  <div class="markdown level1 summary"><p>Creates the new session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AuthenticationResult&gt; CreateNewSession(AuthenticationRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.AuthenticationRequest.html">AuthenticationRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Authentication.AuthenticationResult.html">AuthenticationResult</a>&gt;</td>
+        <td><p>Task&lt;AuthenticationResult&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_GetSession_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.GetSession(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L283">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_GetSession_" data-uid="MediaBrowser.Controller.Session.ISessionManager.GetSession*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_GetSession_System_String_System_String_System_String_" data-uid="MediaBrowser.Controller.Session.ISessionManager.GetSession(System.String,System.String,System.String)">GetSession(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SessionInfo GetSession(string deviceId, string client, string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td><p>The device identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The client.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.SessionInfo.html">SessionInfo</a></td>
+        <td><p>SessionInfo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_GetSessionByAuthenticationToken_MediaBrowser_Controller_Security_AuthenticationInfo_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.GetSessionByAuthenticationToken(MediaBrowser.Controller.Security.AuthenticationInfo%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L302">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_GetSessionByAuthenticationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.GetSessionByAuthenticationToken*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_GetSessionByAuthenticationToken_MediaBrowser_Controller_Security_AuthenticationInfo_System_String_System_String_System_String_" data-uid="MediaBrowser.Controller.Session.ISessionManager.GetSessionByAuthenticationToken(MediaBrowser.Controller.Security.AuthenticationInfo,System.String,System.String,System.String)">GetSessionByAuthenticationToken(AuthenticationInfo, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the session by authentication token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SessionInfo GetSessionByAuthenticationToken(AuthenticationInfo info, string deviceId, string remoteEndpoint, string appVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Security.AuthenticationInfo.html">AuthenticationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>The information.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td><p>The device identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">remoteEndpoint</span></td>
+        <td><p>The remote endpoint.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appVersion</span></td>
+        <td><p>The application version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.SessionInfo.html">SessionInfo</a></td>
+        <td><p>Task&lt;SessionInfo&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_GetSessionByAuthenticationToken_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.GetSessionByAuthenticationToken(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L292">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_GetSessionByAuthenticationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.GetSessionByAuthenticationToken*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_GetSessionByAuthenticationToken_System_String_System_String_System_String_" data-uid="MediaBrowser.Controller.Session.ISessionManager.GetSessionByAuthenticationToken(System.String,System.String,System.String)">GetSessionByAuthenticationToken(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the session by authentication token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SessionInfo GetSessionByAuthenticationToken(string token, string deviceId, string remoteEndpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The token.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td><p>The device identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">remoteEndpoint</span></td>
+        <td><p>The remote endpoint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.SessionInfo.html">SessionInfo</a></td>
+        <td><p>SessionInfo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_Logout_MediaBrowser_Controller_Security_AuthenticationInfo_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.Logout(MediaBrowser.Controller.Security.AuthenticationInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L310">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_Logout_" data-uid="MediaBrowser.Controller.Session.ISessionManager.Logout*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_Logout_MediaBrowser_Controller_Security_AuthenticationInfo_" data-uid="MediaBrowser.Controller.Session.ISessionManager.Logout(MediaBrowser.Controller.Security.AuthenticationInfo)">Logout(AuthenticationInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Logout(AuthenticationInfo accessToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Security.AuthenticationInfo.html">AuthenticationInfo</a></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_Logout_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.Logout(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L309">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_Logout_" data-uid="MediaBrowser.Controller.Session.ISessionManager.Logout*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_Logout_System_String_" data-uid="MediaBrowser.Controller.Session.ISessionManager.Logout(System.String)">Logout(String)</h4>
+  <div class="markdown level1 summary"><p>Logouts the specified access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Logout(string accessToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td><p>The access token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_LogSessionActivity_System_String_System_String_System_String_System_String_System_String_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.LogSessionActivity(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CMediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L77">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_LogSessionActivity_" data-uid="MediaBrowser.Controller.Session.ISessionManager.LogSessionActivity*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_LogSessionActivity_System_String_System_String_System_String_System_String_System_String_MediaBrowser_Controller_Entities_User_" data-uid="MediaBrowser.Controller.Session.ISessionManager.LogSessionActivity(System.String,System.String,System.String,System.String,System.String,MediaBrowser.Controller.Entities.User)">LogSessionActivity(String, String, String, String, String, User)</h4>
+  <div class="markdown level1 summary"><p>Logs the user activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SessionInfo LogSessionActivity(string appName, string appVersion, string deviceId, string deviceName, string remoteEndPoint, User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appName</span></td>
+        <td><p>Type of the client.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appVersion</span></td>
+        <td><p>The app version.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td><p>The device id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceName</span></td>
+        <td><p>Name of the device.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">remoteEndPoint</span></td>
+        <td><p>The remote end point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.SessionInfo.html">SessionInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_OnPlaybackProgress_MediaBrowser_Model_Session_PlaybackProgressInfo_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.OnPlaybackProgress(MediaBrowser.Model.Session.PlaybackProgressInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L94">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_OnPlaybackProgress_" data-uid="MediaBrowser.Controller.Session.ISessionManager.OnPlaybackProgress*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_OnPlaybackProgress_MediaBrowser_Model_Session_PlaybackProgressInfo_" data-uid="MediaBrowser.Controller.Session.ISessionManager.OnPlaybackProgress(MediaBrowser.Model.Session.PlaybackProgressInfo)">OnPlaybackProgress(PlaybackProgressInfo)</h4>
+  <div class="markdown level1 summary"><p>Used to report playback progress for an item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnPlaybackProgress(PlaybackProgressInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.PlaybackProgressInfo.html">PlaybackProgressInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>The info.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_OnPlaybackProgress_MediaBrowser_Model_Session_PlaybackProgressInfo_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.OnPlaybackProgress(MediaBrowser.Model.Session.PlaybackProgressInfo%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L96">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_OnPlaybackProgress_" data-uid="MediaBrowser.Controller.Session.ISessionManager.OnPlaybackProgress*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_OnPlaybackProgress_MediaBrowser_Model_Session_PlaybackProgressInfo_System_Boolean_" data-uid="MediaBrowser.Controller.Session.ISessionManager.OnPlaybackProgress(MediaBrowser.Model.Session.PlaybackProgressInfo,System.Boolean)">OnPlaybackProgress(PlaybackProgressInfo, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnPlaybackProgress(PlaybackProgressInfo info, bool isAutomated)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.PlaybackProgressInfo.html">PlaybackProgressInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isAutomated</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_OnPlaybackStart_MediaBrowser_Model_Session_PlaybackStartInfo_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.OnPlaybackStart(MediaBrowser.Model.Session.PlaybackStartInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L86">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_OnPlaybackStart_" data-uid="MediaBrowser.Controller.Session.ISessionManager.OnPlaybackStart*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_OnPlaybackStart_MediaBrowser_Model_Session_PlaybackStartInfo_" data-uid="MediaBrowser.Controller.Session.ISessionManager.OnPlaybackStart(MediaBrowser.Model.Session.PlaybackStartInfo)">OnPlaybackStart(PlaybackStartInfo)</h4>
+  <div class="markdown level1 summary"><p>Used to report that playback has started for an item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnPlaybackStart(PlaybackStartInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.PlaybackStartInfo.html">PlaybackStartInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>The info.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_OnPlaybackStopped_MediaBrowser_Model_Session_PlaybackStopInfo_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.OnPlaybackStopped(MediaBrowser.Model.Session.PlaybackStopInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L104">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_OnPlaybackStopped_" data-uid="MediaBrowser.Controller.Session.ISessionManager.OnPlaybackStopped*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_OnPlaybackStopped_MediaBrowser_Model_Session_PlaybackStopInfo_" data-uid="MediaBrowser.Controller.Session.ISessionManager.OnPlaybackStopped(MediaBrowser.Model.Session.PlaybackStopInfo)">OnPlaybackStopped(PlaybackStopInfo)</h4>
+  <div class="markdown level1 summary"><p>Used to report that playback has ended for an item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OnPlaybackStopped(PlaybackStopInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.PlaybackStopInfo.html">PlaybackStopInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>The info.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_RemoveAdditionalUser_System_String_Guid_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.RemoveAdditionalUser(System.String%2CGuid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L226">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_RemoveAdditionalUser_" data-uid="MediaBrowser.Controller.Session.ISessionManager.RemoveAdditionalUser*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_RemoveAdditionalUser_System_String_Guid_" data-uid="MediaBrowser.Controller.Session.ISessionManager.RemoveAdditionalUser(System.String,Guid)">RemoveAdditionalUser(String, Guid)</h4>
+  <div class="markdown level1 summary"><p>Removes the additional user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveAdditionalUser(string sessionId, Guid userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>The user identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_ReportCapabilities_System_String_MediaBrowser_Model_Session_ClientCapabilities_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.ReportCapabilities(System.String%2CMediaBrowser.Model.Session.ClientCapabilities)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L261">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_ReportCapabilities_" data-uid="MediaBrowser.Controller.Session.ISessionManager.ReportCapabilities*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_ReportCapabilities_System_String_MediaBrowser_Model_Session_ClientCapabilities_" data-uid="MediaBrowser.Controller.Session.ISessionManager.ReportCapabilities(System.String,MediaBrowser.Model.Session.ClientCapabilities)">ReportCapabilities(String, ClientCapabilities)</h4>
+  <div class="markdown level1 summary"><p>Reports the capabilities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReportCapabilities(string sessionId, ClientCapabilities capabilities)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.ClientCapabilities.html">ClientCapabilities</a></td>
+        <td><span class="parametername">capabilities</span></td>
+        <td><p>The capabilities.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_ReportNowViewingItem_System_String_MediaBrowser_Model_Dto_BaseItemDto_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.ReportNowViewingItem(System.String%2CMediaBrowser.Model.Dto.BaseItemDto)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L240">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_ReportNowViewingItem_" data-uid="MediaBrowser.Controller.Session.ISessionManager.ReportNowViewingItem*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_ReportNowViewingItem_System_String_MediaBrowser_Model_Dto_BaseItemDto_" data-uid="MediaBrowser.Controller.Session.ISessionManager.ReportNowViewingItem(System.String,MediaBrowser.Model.Dto.BaseItemDto)">ReportNowViewingItem(String, BaseItemDto)</h4>
+  <div class="markdown level1 summary"><p>Reports the now viewing item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReportNowViewingItem(string sessionId, BaseItemDto item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_ReportNowViewingItem_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.ReportNowViewingItem(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L233">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_ReportNowViewingItem_" data-uid="MediaBrowser.Controller.Session.ISessionManager.ReportNowViewingItem*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_ReportNowViewingItem_System_String_System_String_" data-uid="MediaBrowser.Controller.Session.ISessionManager.ReportNowViewingItem(System.String,System.String)">ReportNowViewingItem(String, String)</h4>
+  <div class="markdown level1 summary"><p>Reports the now viewing item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReportNowViewingItem(string sessionId, string itemId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td><p>The item identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_ReportSessionEnded_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.ReportSessionEnded(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L111">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_ReportSessionEnded_" data-uid="MediaBrowser.Controller.Session.ISessionManager.ReportSessionEnded*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_ReportSessionEnded_System_String_" data-uid="MediaBrowser.Controller.Session.ISessionManager.ReportSessionEnded(System.String)">ReportSessionEnded(String)</h4>
+  <div class="markdown level1 summary"><p>Reports the session ended.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReportSessionEnded(string sessionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_ReportTranscodingInfo_System_String_MediaBrowser_Model_Session_TranscodingInfo_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.ReportTranscodingInfo(System.String%2CMediaBrowser.Model.Session.TranscodingInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L268">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_ReportTranscodingInfo_" data-uid="MediaBrowser.Controller.Session.ISessionManager.ReportTranscodingInfo*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_ReportTranscodingInfo_System_String_MediaBrowser_Model_Session_TranscodingInfo_" data-uid="MediaBrowser.Controller.Session.ISessionManager.ReportTranscodingInfo(System.String,MediaBrowser.Model.Session.TranscodingInfo)">ReportTranscodingInfo(String, TranscodingInfo)</h4>
+  <div class="markdown level1 summary"><p>Reports the transcoding information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReportTranscodingInfo(string deviceId, TranscodingInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td><p>The device identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.TranscodingInfo.html">TranscodingInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>The information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_RevokeToken_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.RevokeToken(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L323">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_RevokeToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.RevokeToken*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_RevokeToken_System_String_" data-uid="MediaBrowser.Controller.Session.ISessionManager.RevokeToken(System.String)">RevokeToken(String)</h4>
+  <div class="markdown level1 summary"><p>Revokes the token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RevokeToken(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_RevokeUserTokens_Guid_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.RevokeUserTokens(Guid%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L316">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_RevokeUserTokens_" data-uid="MediaBrowser.Controller.Session.ISessionManager.RevokeUserTokens*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_RevokeUserTokens_Guid_System_String_" data-uid="MediaBrowser.Controller.Session.ISessionManager.RevokeUserTokens(Guid,System.String)">RevokeUserTokens(Guid, String)</h4>
+  <div class="markdown level1 summary"><p>Revokes the user tokens.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RevokeUserTokens(Guid userId, string currentAccessToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">currentAccessToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SendBrowseCommand_System_String_System_String_MediaBrowser_Model_Session_BrowseRequest_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SendBrowseCommand(System.String%2CSystem.String%2CMediaBrowser.Model.Session.BrowseRequest%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L151">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_SendBrowseCommand_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendBrowseCommand*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SendBrowseCommand_System_String_System_String_MediaBrowser_Model_Session_BrowseRequest_CancellationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendBrowseCommand(System.String,System.String,MediaBrowser.Model.Session.BrowseRequest,CancellationToken)">SendBrowseCommand(String, String, BrowseRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the browse command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendBrowseCommand(string controllingSessionId, string sessionId, BrowseRequest command, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">controllingSessionId</span></td>
+        <td><p>The controlling session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.BrowseRequest.html">BrowseRequest</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SendGeneralCommand_System_String_System_String_MediaBrowser_Model_Session_GeneralCommand_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SendGeneralCommand(System.String%2CSystem.String%2CMediaBrowser.Model.Session.GeneralCommand%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L121">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_SendGeneralCommand_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendGeneralCommand*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SendGeneralCommand_System_String_System_String_MediaBrowser_Model_Session_GeneralCommand_CancellationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendGeneralCommand(System.String,System.String,MediaBrowser.Model.Session.GeneralCommand,CancellationToken)">SendGeneralCommand(String, String, GeneralCommand, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the general command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendGeneralCommand(string controllingSessionId, string sessionId, GeneralCommand command, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">controllingSessionId</span></td>
+        <td><p>The controlling session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.GeneralCommand.html">GeneralCommand</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SendMessageCommand_System_String_System_String_MediaBrowser_Model_Session_MessageCommand_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SendMessageCommand(System.String%2CSystem.String%2CMediaBrowser.Model.Session.MessageCommand%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L131">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_SendMessageCommand_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendMessageCommand*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SendMessageCommand_System_String_System_String_MediaBrowser_Model_Session_MessageCommand_CancellationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendMessageCommand(System.String,System.String,MediaBrowser.Model.Session.MessageCommand,CancellationToken)">SendMessageCommand(String, String, MessageCommand, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the message command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendMessageCommand(string controllingSessionId, string sessionId, MessageCommand command, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">controllingSessionId</span></td>
+        <td><p>The controlling session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.MessageCommand.html">MessageCommand</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SendMessageToAdminSessions__1_System_String___0_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SendMessageToAdminSessions%60%601(System.String%2C%60%600%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L171">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_SendMessageToAdminSessions_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendMessageToAdminSessions*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SendMessageToAdminSessions__1_System_String___0_CancellationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendMessageToAdminSessions``1(System.String,``0,CancellationToken)">SendMessageToAdminSessions&lt;T&gt;(String, T, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the message to admin sessions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendMessageToAdminSessions&lt;T&gt;(string name, T data, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SendMessageToUserDeviceSessions__1_System_String_System_String___0_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SendMessageToUserDeviceSessions%60%601(System.String%2CSystem.String%2C%60%600%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L191">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_SendMessageToUserDeviceSessions_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendMessageToUserDeviceSessions*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SendMessageToUserDeviceSessions__1_System_String_System_String___0_CancellationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendMessageToUserDeviceSessions``1(System.String,System.String,``0,CancellationToken)">SendMessageToUserDeviceSessions&lt;T&gt;(String, String, T, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the message to user device sessions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendMessageToUserDeviceSessions&lt;T&gt;(string deviceId, string name, T data, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td><p>The device identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SendMessageToUserSessions__1_List_Guid__System_String___0_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SendMessageToUserSessions%60%601(List%7BGuid%7D%2CSystem.String%2C%60%600%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L178">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_SendMessageToUserSessions_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendMessageToUserSessions*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SendMessageToUserSessions__1_List_Guid__System_String___0_CancellationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendMessageToUserSessions``1(List{Guid},System.String,``0,CancellationToken)">SendMessageToUserSessions&lt;T&gt;(List&lt;Guid&gt;, String, T, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the message to user sessions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendMessageToUserSessions&lt;T&gt;(List&lt;Guid&gt; userIds, string name, T data, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td><span class="parametername">userIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SendMessageToUserSessions__1_List_Guid__System_String_Func___0__CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SendMessageToUserSessions%60%601(List%7BGuid%7D%2CSystem.String%2CFunc%7B%60%600%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L180">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_SendMessageToUserSessions_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendMessageToUserSessions*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SendMessageToUserSessions__1_List_Guid__System_String_Func___0__CancellationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendMessageToUserSessions``1(List{Guid},System.String,Func{``0},CancellationToken)">SendMessageToUserSessions&lt;T&gt;(List&lt;Guid&gt;, String, Func&lt;T&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendMessageToUserSessions&lt;T&gt;(List&lt;Guid&gt; userIds, string name, Func&lt;T&gt; dataFn, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td><span class="parametername">userIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T&gt;</td>
+        <td><span class="parametername">dataFn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SendPlayCommand_System_String_System_String_MediaBrowser_Model_Session_PlayRequest_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SendPlayCommand(System.String%2CSystem.String%2CMediaBrowser.Model.Session.PlayRequest%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L141">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_SendPlayCommand_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendPlayCommand*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SendPlayCommand_System_String_System_String_MediaBrowser_Model_Session_PlayRequest_CancellationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendPlayCommand(System.String,System.String,MediaBrowser.Model.Session.PlayRequest,CancellationToken)">SendPlayCommand(String, String, PlayRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the play command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendPlayCommand(string controllingSessionId, string sessionId, PlayRequest command, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">controllingSessionId</span></td>
+        <td><p>The controlling session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.PlayRequest.html">PlayRequest</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SendPlaystateCommand_System_String_System_String_MediaBrowser_Model_Session_PlaystateRequest_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SendPlaystateCommand(System.String%2CSystem.String%2CMediaBrowser.Model.Session.PlaystateRequest%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L161">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_SendPlaystateCommand_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendPlaystateCommand*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SendPlaystateCommand_System_String_System_String_MediaBrowser_Model_Session_PlaystateRequest_CancellationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendPlaystateCommand(System.String,System.String,MediaBrowser.Model.Session.PlaystateRequest,CancellationToken)">SendPlaystateCommand(String, String, PlaystateRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the playstate command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendPlaystateCommand(string controllingSessionId, string sessionId, PlaystateRequest command, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">controllingSessionId</span></td>
+        <td><p>The controlling session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.PlaystateRequest.html">PlaystateRequest</a></td>
+        <td><span class="parametername">command</span></td>
+        <td><p>The command.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SendRestartRequiredNotification_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SendRestartRequiredNotification(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L198">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_SendRestartRequiredNotification_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendRestartRequiredNotification*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SendRestartRequiredNotification_CancellationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendRestartRequiredNotification(CancellationToken)">SendRestartRequiredNotification(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the restart required message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendRestartRequiredNotification(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SendServerRestartNotification_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SendServerRestartNotification(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L212">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_SendServerRestartNotification_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendServerRestartNotification*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SendServerRestartNotification_CancellationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendServerRestartNotification(CancellationToken)">SendServerRestartNotification(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the server restart notification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendServerRestartNotification(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SendServerShutdownNotification_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SendServerShutdownNotification(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L205">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_SendServerShutdownNotification_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendServerShutdownNotification*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SendServerShutdownNotification_CancellationToken_" data-uid="MediaBrowser.Controller.Session.ISessionManager.SendServerShutdownNotification(CancellationToken)">SendServerShutdownNotification(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the server shutdown notification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SendServerShutdownNotification(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_UpdateDeviceName_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.UpdateDeviceName(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L79">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Session_ISessionManager_UpdateDeviceName_" data-uid="MediaBrowser.Controller.Session.ISessionManager.UpdateDeviceName*"></a>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_UpdateDeviceName_System_String_System_String_" data-uid="MediaBrowser.Controller.Session.ISessionManager.UpdateDeviceName(System.String,System.String)">UpdateDeviceName(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateDeviceName(string sessionId, string reportedDeviceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reportedDeviceName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_AuthenticationFailed.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.AuthenticationFailed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L55">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_AuthenticationFailed" data-uid="MediaBrowser.Controller.Session.ISessionManager.AuthenticationFailed">AuthenticationFailed</h4>
+  <div class="markdown level1 summary"><p>Occurs when [authentication failed].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;AuthenticationRequest&gt;&gt; AuthenticationFailed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Session.AuthenticationRequest.html">AuthenticationRequest</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_AuthenticationSucceeded.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.AuthenticationSucceeded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L60">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_AuthenticationSucceeded" data-uid="MediaBrowser.Controller.Session.ISessionManager.AuthenticationSucceeded">AuthenticationSucceeded</h4>
+  <div class="markdown level1 summary"><p>Occurs when [authentication succeeded].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;GenericEventArgs&lt;AuthenticationResult&gt;&gt; AuthenticationSucceeded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Authentication.AuthenticationResult.html">AuthenticationResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_CapabilitiesChanged.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.CapabilitiesChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L50">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_CapabilitiesChanged" data-uid="MediaBrowser.Controller.Session.ISessionManager.CapabilitiesChanged">CapabilitiesChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs when [capabilities changed].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;SessionEventArgs&gt; CapabilitiesChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Session.SessionEventArgs.html">SessionEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_PlaybackProgress.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.PlaybackProgress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L28">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_PlaybackProgress" data-uid="MediaBrowser.Controller.Session.ISessionManager.PlaybackProgress">PlaybackProgress</h4>
+  <div class="markdown level1 summary"><p>Occurs when [playback progress].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;PlaybackProgressEventArgs&gt; PlaybackProgress</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.PlaybackProgressEventArgs.html">PlaybackProgressEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_PlaybackStart.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.PlaybackStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L23">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_PlaybackStart" data-uid="MediaBrowser.Controller.Session.ISessionManager.PlaybackStart">PlaybackStart</h4>
+  <div class="markdown level1 summary"><p>Occurs when [playback start].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;PlaybackProgressEventArgs&gt; PlaybackStart</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.PlaybackProgressEventArgs.html">PlaybackProgressEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_PlaybackStopped.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.PlaybackStopped%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L33">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_PlaybackStopped" data-uid="MediaBrowser.Controller.Session.ISessionManager.PlaybackStopped">PlaybackStopped</h4>
+  <div class="markdown level1 summary"><p>Occurs when [playback stopped].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;PlaybackStopEventArgs&gt; PlaybackStopped</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.PlaybackStopEventArgs.html">PlaybackStopEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SessionActivity.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SessionActivity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L45">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SessionActivity" data-uid="MediaBrowser.Controller.Session.ISessionManager.SessionActivity">SessionActivity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;SessionEventArgs&gt; SessionActivity</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Session.SessionEventArgs.html">SessionEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SessionEnded.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SessionEnded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L43">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SessionEnded" data-uid="MediaBrowser.Controller.Session.ISessionManager.SessionEnded">SessionEnded</h4>
+  <div class="markdown level1 summary"><p>Occurs when [session ended].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;SessionEventArgs&gt; SessionEnded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Session.SessionEventArgs.html">SessionEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager_SessionStarted.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager.SessionStarted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L38">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Session_ISessionManager_SessionStarted" data-uid="MediaBrowser.Controller.Session.ISessionManager.SessionStarted">SessionStarted</h4>
+  <div class="markdown level1 summary"><p>Occurs when [session started].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;SessionEventArgs&gt; SessionStarted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Session.SessionEventArgs.html">SessionEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Session_ISessionManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Session.ISessionManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Session/ISessionManager.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

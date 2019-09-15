@@ -1,0 +1,652 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DefaultAuthenticationProvider
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DefaultAuthenticationProvider
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider">
+  
+  
+  <h1 id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider" class="text-break">Class DefaultAuthenticationProvider
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DefaultAuthenticationProvider</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.Authentication.IAuthenticationProvider.html">IAuthenticationProvider</a></div>
+    <div><a class="xref" href="MediaBrowser.Controller.Authentication.IRequiresResolvedUser.html">IRequiresResolvedUser</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.Library.html">Emby.Server.Implementations.Library</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DefaultAuthenticationProvider : object, IAuthenticationProvider, IRequiresResolvedUser</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_DefaultAuthenticationProvider__ctor_MediaBrowser_Model_Cryptography_ICryptoProvider_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.DefaultAuthenticationProvider.%23ctor(MediaBrowser.Model.Cryptography.ICryptoProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/DefaultAuthenticationProvider.cs/#L14">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider__ctor_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider__ctor_MediaBrowser_Model_Cryptography_ICryptoProvider_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.#ctor(MediaBrowser.Model.Cryptography.ICryptoProvider)">DefaultAuthenticationProvider(ICryptoProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefaultAuthenticationProvider(ICryptoProvider cryptographyProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Cryptography.ICryptoProvider.html">ICryptoProvider</a></td>
+        <td><span class="parametername">cryptographyProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_DefaultAuthenticationProvider_IsEnabled.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.DefaultAuthenticationProvider.IsEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/DefaultAuthenticationProvider.cs/#L21">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_IsEnabled_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.IsEnabled*"></a>
+  <h4 id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_IsEnabled" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.IsEnabled">IsEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_DefaultAuthenticationProvider_Name.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.DefaultAuthenticationProvider.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/DefaultAuthenticationProvider.cs/#L19">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_Name_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.Name*"></a>
+  <h4 id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_Name" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_DefaultAuthenticationProvider_Authenticate_System_String_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.DefaultAuthenticationProvider.Authenticate(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/DefaultAuthenticationProvider.cs/#L26">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_Authenticate_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.Authenticate*"></a>
+  <h4 id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_Authenticate_System_String_System_String_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.Authenticate(System.String,System.String)">Authenticate(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ProviderAuthenticationResult&gt; Authenticate(string username, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Authentication.ProviderAuthenticationResult.html">ProviderAuthenticationResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_DefaultAuthenticationProvider_Authenticate_System_String_System_String_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.DefaultAuthenticationProvider.Authenticate(System.String%2CSystem.String%2CMediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/DefaultAuthenticationProvider.cs/#L32">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_Authenticate_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.Authenticate*"></a>
+  <h4 id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_Authenticate_System_String_System_String_MediaBrowser_Controller_Entities_User_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.Authenticate(System.String,System.String,MediaBrowser.Controller.Entities.User)">Authenticate(String, String, User)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ProviderAuthenticationResult&gt; Authenticate(string username, string password, User resolvedUser)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">username</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">resolvedUser</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Authentication.ProviderAuthenticationResult.html">ProviderAuthenticationResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_DefaultAuthenticationProvider_ChangeEasyPassword_MediaBrowser_Controller_Entities_User_System_String_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.DefaultAuthenticationProvider.ChangeEasyPassword(MediaBrowser.Controller.Entities.User%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/DefaultAuthenticationProvider.cs/#L138">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_ChangeEasyPassword_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.ChangeEasyPassword*"></a>
+  <h4 id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_ChangeEasyPassword_MediaBrowser_Controller_Entities_User_System_String_System_String_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.ChangeEasyPassword(MediaBrowser.Controller.Entities.User,System.String,System.String)">ChangeEasyPassword(User, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeEasyPassword(User user, string newPassword, string newPasswordHash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newPassword</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newPasswordHash</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_DefaultAuthenticationProvider_ChangePassword_MediaBrowser_Controller_Entities_User_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.DefaultAuthenticationProvider.ChangePassword(MediaBrowser.Controller.Entities.User%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/DefaultAuthenticationProvider.cs/#L105">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_ChangePassword_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.ChangePassword*"></a>
+  <h4 id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_ChangePassword_MediaBrowser_Controller_Entities_User_System_String_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.ChangePassword(MediaBrowser.Controller.Entities.User,System.String)">ChangePassword(User, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ChangePassword(User user, string newPassword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newPassword</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_DefaultAuthenticationProvider_GetEasyPasswordHash_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.DefaultAuthenticationProvider.GetEasyPasswordHash(MediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/DefaultAuthenticationProvider.cs/#L155">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_GetEasyPasswordHash_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.GetEasyPasswordHash*"></a>
+  <h4 id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_GetEasyPasswordHash_MediaBrowser_Controller_Entities_User_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.GetEasyPasswordHash(MediaBrowser.Controller.Entities.User)">GetEasyPasswordHash(User)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetEasyPasswordHash(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_DefaultAuthenticationProvider_GetHashed_MediaBrowser_Controller_Entities_User_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.DefaultAuthenticationProvider.GetHashed(MediaBrowser.Controller.Entities.User%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/DefaultAuthenticationProvider.cs/#L201">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_GetHashed_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.GetHashed*"></a>
+  <h4 id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_GetHashed_MediaBrowser_Controller_Entities_User_System_String_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.GetHashed(MediaBrowser.Controller.Entities.User,System.String)">GetHashed(User, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetHashed(User user, string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_DefaultAuthenticationProvider_GetHashedString_MediaBrowser_Controller_Entities_User_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.DefaultAuthenticationProvider.GetHashedString(MediaBrowser.Controller.Entities.User%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/DefaultAuthenticationProvider.cs/#L175">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_GetHashedString_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.GetHashedString*"></a>
+  <h4 id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_GetHashedString_MediaBrowser_Controller_Entities_User_System_String_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.GetHashedString(MediaBrowser.Controller.Entities.User,System.String)">GetHashedString(User, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the hashed string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetHashedString(User user, string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_DefaultAuthenticationProvider_HasPassword_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.DefaultAuthenticationProvider.HasPassword(MediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/DefaultAuthenticationProvider.cs/#L102">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_HasPassword_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.HasPassword*"></a>
+  <h4 id="Emby_Server_Implementations_Library_DefaultAuthenticationProvider_HasPassword_MediaBrowser_Controller_Entities_User_" data-uid="Emby.Server.Implementations.Library.DefaultAuthenticationProvider.HasPassword(MediaBrowser.Controller.Entities.User)">HasPassword(User)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPassword(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Authentication.IAuthenticationProvider.html">IAuthenticationProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Authentication.IRequiresResolvedUser.html">IRequiresResolvedUser</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_DefaultAuthenticationProvider.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.DefaultAuthenticationProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/DefaultAuthenticationProvider.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

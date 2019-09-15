@@ -1,0 +1,1671 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ProviderManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ProviderManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Providers.Manager.ProviderManager">
+  
+  
+  <h1 id="MediaBrowser_Providers_Manager_ProviderManager" data-uid="MediaBrowser.Providers.Manager.ProviderManager" class="text-break">Class ProviderManager
+  </h1>
+  <div class="markdown level0 summary"><p>Class ProviderManager</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ProviderManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IProviderManager.html">IProviderManager</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Providers.Manager.html">MediaBrowser.Providers.Manager</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Providers.dll</h6>
+  <h5 id="MediaBrowser_Providers_Manager_ProviderManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ProviderManager : object, IProviderManager, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager__ctor_IHttpClient_MediaBrowser_Controller_Subtitles_ISubtitleManager_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_Library_ILibraryMonitor_ILoggerFactory_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_IServerApplicationPaths_Func_MediaBrowser_Controller_Library_ILibraryManager__MediaBrowser_Model_Serialization_IJsonSerializer_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.%23ctor(IHttpClient%2CMediaBrowser.Controller.Subtitles.ISubtitleManager%2CMediaBrowser.Controller.Configuration.IServerConfigurationManager%2CMediaBrowser.Controller.Library.ILibraryMonitor%2CILoggerFactory%2CMediaBrowser.Model.IO.IFileSystem%2CMediaBrowser.Controller.IServerApplicationPaths%2CFunc%7BMediaBrowser.Controller.Library.ILibraryManager%7D%2CMediaBrowser.Model.Serialization.IJsonSerializer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L80">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager__ctor_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.#ctor*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager__ctor_IHttpClient_MediaBrowser_Controller_Subtitles_ISubtitleManager_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_Library_ILibraryMonitor_ILoggerFactory_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_IServerApplicationPaths_Func_MediaBrowser_Controller_Library_ILibraryManager__MediaBrowser_Model_Serialization_IJsonSerializer_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.#ctor(IHttpClient,MediaBrowser.Controller.Subtitles.ISubtitleManager,MediaBrowser.Controller.Configuration.IServerConfigurationManager,MediaBrowser.Controller.Library.ILibraryMonitor,ILoggerFactory,MediaBrowser.Model.IO.IFileSystem,MediaBrowser.Controller.IServerApplicationPaths,Func{MediaBrowser.Controller.Library.ILibraryManager},MediaBrowser.Model.Serialization.IJsonSerializer)">ProviderManager(IHttpClient, ISubtitleManager, IServerConfigurationManager, ILibraryMonitor, ILoggerFactory, IFileSystem, IServerApplicationPaths, Func&lt;ILibraryManager&gt;, IJsonSerializer)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MediaBrowser.Providers.Manager.ProviderManager.html">ProviderManager</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProviderManager(IHttpClient httpClient, ISubtitleManager subtitleManager, IServerConfigurationManager configurationManager, ILibraryMonitor libraryMonitor, ILoggerFactory loggerFactory, IFileSystem fileSystem, IServerApplicationPaths appPaths, Func&lt;ILibraryManager&gt; libraryManagerFactory, IJsonSerializer json)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IHttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Subtitles.ISubtitleManager.html">ISubtitleManager</a></td>
+        <td><span class="parametername">subtitleManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">configurationManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryMonitor.html">ILibraryMonitor</a></td>
+        <td><span class="parametername">libraryMonitor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.IServerApplicationPaths.html">IServerApplicationPaths</a></td>
+        <td><span class="parametername">appPaths</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a>&gt;</td>
+        <td><span class="parametername">libraryManagerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td><span class="parametername">json</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_AddParts_IEnumerable_MediaBrowser_Controller_Providers_IImageProvider__IEnumerable_MediaBrowser_Controller_Providers_IMetadataService__IEnumerable_MediaBrowser_Controller_Providers_IMetadataProvider__IEnumerable_MediaBrowser_Controller_Library_IMetadataSaver__IEnumerable_MediaBrowser_Controller_Providers_IExternalId__.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.AddParts(IEnumerable%7BMediaBrowser.Controller.Providers.IImageProvider%7D%2CIEnumerable%7BMediaBrowser.Controller.Providers.IMetadataService%7D%2CIEnumerable%7BMediaBrowser.Controller.Providers.IMetadataProvider%7D%2CIEnumerable%7BMediaBrowser.Controller.Library.IMetadataSaver%7D%2CIEnumerable%7BMediaBrowser.Controller.Providers.IExternalId%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L96">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_AddParts_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.AddParts*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_AddParts_IEnumerable_MediaBrowser_Controller_Providers_IImageProvider__IEnumerable_MediaBrowser_Controller_Providers_IMetadataService__IEnumerable_MediaBrowser_Controller_Providers_IMetadataProvider__IEnumerable_MediaBrowser_Controller_Library_IMetadataSaver__IEnumerable_MediaBrowser_Controller_Providers_IExternalId__" data-uid="MediaBrowser.Providers.Manager.ProviderManager.AddParts(IEnumerable{MediaBrowser.Controller.Providers.IImageProvider},IEnumerable{MediaBrowser.Controller.Providers.IMetadataService},IEnumerable{MediaBrowser.Controller.Providers.IMetadataProvider},IEnumerable{MediaBrowser.Controller.Library.IMetadataSaver},IEnumerable{MediaBrowser.Controller.Providers.IExternalId})">AddParts(IEnumerable&lt;IImageProvider&gt;, IEnumerable&lt;IMetadataService&gt;, IEnumerable&lt;IMetadataProvider&gt;, IEnumerable&lt;IMetadataSaver&gt;, IEnumerable&lt;IExternalId&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the metadata providers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddParts(IEnumerable&lt;IImageProvider&gt; imageProviders, IEnumerable&lt;IMetadataService&gt; metadataServices, IEnumerable&lt;IMetadataProvider&gt; metadataProviders, IEnumerable&lt;IMetadataSaver&gt; metadataSavers, IEnumerable&lt;IExternalId&gt; externalIds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Providers.IImageProvider.html">IImageProvider</a>&gt;</td>
+        <td><span class="parametername">imageProviders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Providers.IMetadataService.html">IMetadataService</a>&gt;</td>
+        <td><span class="parametername">metadataServices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider.html">IMetadataProvider</a>&gt;</td>
+        <td><span class="parametername">metadataProviders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.IMetadataSaver.html">IMetadataSaver</a>&gt;</td>
+        <td><span class="parametername">metadataSavers</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Providers.IExternalId.html">IExternalId</a>&gt;</td>
+        <td><span class="parametername">externalIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_Dispose.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L1135">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_Dispose_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.Dispose*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_Dispose" data-uid="MediaBrowser.Providers.Manager.ProviderManager.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetAllMetadataPlugins.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetAllMetadataPlugins%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L469">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetAllMetadataPlugins_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetAllMetadataPlugins*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetAllMetadataPlugins" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetAllMetadataPlugins">GetAllMetadataPlugins()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetadataPluginSummary[] GetAllMetadataPlugins()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Configuration.MetadataPluginSummary.html">MetadataPluginSummary</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetAvailableRemoteImages_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Providers_RemoteImageQuery_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetAvailableRemoteImages(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Model.Providers.RemoteImageQuery%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L190">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetAvailableRemoteImages_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetAvailableRemoteImages*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetAvailableRemoteImages_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Providers_RemoteImageQuery_CancellationToken_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetAvailableRemoteImages(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Model.Providers.RemoteImageQuery,CancellationToken)">GetAvailableRemoteImages(BaseItem, RemoteImageQuery, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;RemoteImageInfo&gt;&gt; GetAvailableRemoteImages(BaseItem item, RemoteImageQuery query, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Providers.RemoteImageQuery.html">RemoteImageQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Providers.RemoteImageInfo.html">RemoteImageInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetExternalIdInfos_MediaBrowser_Model_Entities_IHasProviderIds_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetExternalIdInfos(MediaBrowser.Model.Entities.IHasProviderIds)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L906">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetExternalIdInfos_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetExternalIdInfos*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetExternalIdInfos_MediaBrowser_Model_Entities_IHasProviderIds_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetExternalIdInfos(MediaBrowser.Model.Entities.IHasProviderIds)">GetExternalIdInfos(IHasProviderIds)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ExternalIdInfo&gt; GetExternalIdInfos(IHasProviderIds item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.IHasProviderIds.html">IHasProviderIds</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Providers.ExternalIdInfo.html">ExternalIdInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetExternalIds_MediaBrowser_Model_Entities_IHasProviderIds_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetExternalIds(MediaBrowser.Model.Entities.IHasProviderIds)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L864">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetExternalIds_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetExternalIds*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetExternalIds_MediaBrowser_Model_Entities_IHasProviderIds_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetExternalIds(MediaBrowser.Model.Entities.IHasProviderIds)">GetExternalIds(IHasProviderIds)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IExternalId&gt; GetExternalIds(IHasProviderIds item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.IHasProviderIds.html">IHasProviderIds</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Providers.IExternalId.html">IExternalId</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetExternalUrls_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetExternalUrls(MediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L880">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetExternalUrls_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetExternalUrls*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetExternalUrls_MediaBrowser_Controller_Entities_BaseItem_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetExternalUrls(MediaBrowser.Controller.Entities.BaseItem)">GetExternalUrls(BaseItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ExternalUrl&gt; GetExternalUrls(BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Providers.ExternalUrl.html">ExternalUrl</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetImageProviders_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Providers_ImageRefreshOptions_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetImageProviders(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Controller.Providers.ImageRefreshOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L270">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetImageProviders_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetImageProviders*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetImageProviders_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Providers_ImageRefreshOptions_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetImageProviders(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Controller.Providers.ImageRefreshOptions)">GetImageProviders(BaseItem, ImageRefreshOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IImageProvider&gt; GetImageProviders(BaseItem item, ImageRefreshOptions refreshOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.ImageRefreshOptions.html">ImageRefreshOptions</a></td>
+        <td><span class="parametername">refreshOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Providers.IImageProvider.html">IImageProvider</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetMetadataOptions_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetMetadataOptions(MediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L588">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetMetadataOptions_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetMetadataOptions*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetMetadataOptions_MediaBrowser_Controller_Entities_BaseItem_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetMetadataOptions(MediaBrowser.Controller.Entities.BaseItem)">GetMetadataOptions(BaseItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetadataOptions GetMetadataOptions(BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Configuration.MetadataOptions.html">MetadataOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetMetadataProviders__1_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Configuration_LibraryOptions_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetMetadataProviders%60%601(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Model.Configuration.LibraryOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L304">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetMetadataProviders_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetMetadataProviders*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetMetadataProviders__1_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Configuration_LibraryOptions_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetMetadataProviders``1(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Model.Configuration.LibraryOptions)">GetMetadataProviders&lt;T&gt;(BaseItem, LibraryOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IMetadataProvider&lt;T&gt;&gt; GetMetadataProviders&lt;T&gt;(BaseItem item, LibraryOptions libraryOptions)
+    where T : BaseItem</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Configuration.LibraryOptions.html">LibraryOptions</a></td>
+        <td><span class="parametername">libraryOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider</a>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetRefreshProgress_Guid_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetRefreshProgress(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L958">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetRefreshProgress_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetRefreshProgress*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetRefreshProgress_Guid_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetRefreshProgress(Guid)">GetRefreshProgress(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? GetRefreshProgress(Guid id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetRefreshQueue.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetRefreshQueue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L920">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetRefreshQueue_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetRefreshQueue*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetRefreshQueue" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetRefreshQueue">GetRefreshQueue()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;Guid, Guid&gt; GetRefreshQueue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">Guid</span>, <span class="xref">Guid</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetRemoteImageProviderInfo_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetRemoteImageProviderInfo(MediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L261">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetRemoteImageProviderInfo_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetRemoteImageProviderInfo*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetRemoteImageProviderInfo_MediaBrowser_Controller_Entities_BaseItem_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetRemoteImageProviderInfo(MediaBrowser.Controller.Entities.BaseItem)">GetRemoteImageProviderInfo(BaseItem)</h4>
+  <div class="markdown level1 summary"><p>Gets the supported image providers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ImageProviderInfo&gt; GetRemoteImageProviderInfo(BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Providers.ImageProviderInfo.html">ImageProviderInfo</a>&gt;</td>
+        <td><p>IEnumerable{IImageProvider}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetRemoteSearchResults__2_MediaBrowser_Controller_Providers_RemoteSearchQuery___1__CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetRemoteSearchResults%60%602(MediaBrowser.Controller.Providers.RemoteSearchQuery%7B%60%601%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L734">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetRemoteSearchResults_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetRemoteSearchResults*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetRemoteSearchResults__2_MediaBrowser_Controller_Providers_RemoteSearchQuery___1__CancellationToken_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetRemoteSearchResults``2(MediaBrowser.Controller.Providers.RemoteSearchQuery{``1},CancellationToken)">GetRemoteSearchResults&lt;TItemType, TLookupType&gt;(RemoteSearchQuery&lt;TLookupType&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;RemoteSearchResult&gt;&gt; GetRemoteSearchResults&lt;TItemType, TLookupType&gt;(RemoteSearchQuery&lt;TLookupType&gt; searchInfo, CancellationToken cancellationToken)
+    where TItemType : BaseItem, new()
+    where TLookupType : ItemLookupInfo</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.RemoteSearchQuery-1.html">RemoteSearchQuery</a>&lt;TLookupType&gt;</td>
+        <td><span class="parametername">searchInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Providers.RemoteSearchResult.html">RemoteSearchResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TItemType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TLookupType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetRemoteSearchResults__2_MediaBrowser_Controller_Providers_RemoteSearchQuery___1__MediaBrowser_Controller_Entities_BaseItem_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetRemoteSearchResults%60%602(MediaBrowser.Controller.Providers.RemoteSearchQuery%7B%60%601%7D%2CMediaBrowser.Controller.Entities.BaseItem%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L748">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetRemoteSearchResults_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetRemoteSearchResults*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetRemoteSearchResults__2_MediaBrowser_Controller_Providers_RemoteSearchQuery___1__MediaBrowser_Controller_Entities_BaseItem_CancellationToken_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetRemoteSearchResults``2(MediaBrowser.Controller.Providers.RemoteSearchQuery{``1},MediaBrowser.Controller.Entities.BaseItem,CancellationToken)">GetRemoteSearchResults&lt;TItemType, TLookupType&gt;(RemoteSearchQuery&lt;TLookupType&gt;, BaseItem, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;RemoteSearchResult&gt;&gt; GetRemoteSearchResults&lt;TItemType, TLookupType&gt;(RemoteSearchQuery&lt;TLookupType&gt; searchInfo, BaseItem referenceItem, CancellationToken cancellationToken)
+    where TItemType : BaseItem, new()
+    where TLookupType : ItemLookupInfo</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.RemoteSearchQuery-1.html">RemoteSearchQuery</a>&lt;TLookupType&gt;</td>
+        <td><span class="parametername">searchInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">referenceItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Providers.RemoteSearchResult.html">RemoteSearchResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TItemType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TLookupType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_GetSearchImage_System_String_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.GetSearchImage(System.String%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L852">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_GetSearchImage_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetSearchImage*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_GetSearchImage_System_String_System_String_CancellationToken_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.GetSearchImage(System.String,System.String,CancellationToken)">GetSearchImage(String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseInfo&gt; GetSearchImage(string providerName, string url, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">providerName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">HttpResponseInfo</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_OnRefreshComplete_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.OnRefreshComplete(MediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L947">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_OnRefreshComplete_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.OnRefreshComplete*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_OnRefreshComplete_MediaBrowser_Controller_Entities_BaseItem_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.OnRefreshComplete(MediaBrowser.Controller.Entities.BaseItem)">OnRefreshComplete(BaseItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRefreshComplete(BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_OnRefreshProgress_MediaBrowser_Controller_Entities_BaseItem_System_Double_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.OnRefreshProgress(MediaBrowser.Controller.Entities.BaseItem%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L971">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_OnRefreshProgress_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.OnRefreshProgress*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_OnRefreshProgress_MediaBrowser_Controller_Entities_BaseItem_System_Double_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.OnRefreshProgress(MediaBrowser.Controller.Entities.BaseItem,System.Double)">OnRefreshProgress(BaseItem, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRefreshProgress(BaseItem item, double progress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">progress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_OnRefreshStart_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.OnRefreshStart(MediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L934">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_OnRefreshStart_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.OnRefreshStart*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_OnRefreshStart_MediaBrowser_Controller_Entities_BaseItem_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.OnRefreshStart(MediaBrowser.Controller.Entities.BaseItem)">OnRefreshStart(BaseItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRefreshStart(BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_QueueRefresh_Guid_MediaBrowser_Controller_Providers_MetadataRefreshOptions_MediaBrowser_Controller_Providers_RefreshPriority_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.QueueRefresh(Guid%2CMediaBrowser.Controller.Providers.MetadataRefreshOptions%2CMediaBrowser.Controller.Providers.RefreshPriority)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L998">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_QueueRefresh_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.QueueRefresh*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_QueueRefresh_Guid_MediaBrowser_Controller_Providers_MetadataRefreshOptions_MediaBrowser_Controller_Providers_RefreshPriority_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.QueueRefresh(Guid,MediaBrowser.Controller.Providers.MetadataRefreshOptions,MediaBrowser.Controller.Providers.RefreshPriority)">QueueRefresh(Guid, MetadataRefreshOptions, RefreshPriority)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void QueueRefresh(Guid id, MetadataRefreshOptions options, RefreshPriority priority)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.RefreshPriority.html">RefreshPriority</a></td>
+        <td><span class="parametername">priority</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_RefreshFullItem_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.RefreshFullItem(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Controller.Providers.MetadataRefreshOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L1128">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_RefreshFullItem_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.RefreshFullItem*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_RefreshFullItem_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.RefreshFullItem(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Controller.Providers.MetadataRefreshOptions,CancellationToken)">RefreshFullItem(BaseItem, MetadataRefreshOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RefreshFullItem(BaseItem item, MetadataRefreshOptions options, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_RefreshSingleItem_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.RefreshSingleItem(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Controller.Providers.MetadataRefreshOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L114">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_RefreshSingleItem_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.RefreshSingleItem*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_RefreshSingleItem_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.RefreshSingleItem(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Controller.Providers.MetadataRefreshOptions,CancellationToken)">RefreshSingleItem(BaseItem, MetadataRefreshOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ItemUpdateType&gt; RefreshSingleItem(BaseItem item, MetadataRefreshOptions options, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_SaveImage_MediaBrowser_Controller_Entities_BaseItem_Stream_System_String_MediaBrowser_Model_Entities_ImageType_System_Nullable_System_Int32__CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.SaveImage(MediaBrowser.Controller.Entities.BaseItem%2CStream%2CSystem.String%2CMediaBrowser.Model.Entities.ImageType%2CSystem.Nullable%7BSystem.Int32%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L173">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_SaveImage_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.SaveImage*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_SaveImage_MediaBrowser_Controller_Entities_BaseItem_Stream_System_String_MediaBrowser_Model_Entities_ImageType_System_Nullable_System_Int32__CancellationToken_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.SaveImage(MediaBrowser.Controller.Entities.BaseItem,Stream,System.String,MediaBrowser.Model.Entities.ImageType,System.Nullable{System.Int32},CancellationToken)">SaveImage(BaseItem, Stream, String, ImageType, Nullable&lt;Int32&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SaveImage(BaseItem item, Stream source, string mimeType, ImageType type, int? imageIndex, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mimeType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.ImageType.html">ImageType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">imageIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_SaveImage_MediaBrowser_Controller_Entities_BaseItem_System_String_MediaBrowser_Model_Entities_ImageType_System_Nullable_System_Int32__CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.SaveImage(MediaBrowser.Controller.Entities.BaseItem%2CSystem.String%2CMediaBrowser.Model.Entities.ImageType%2CSystem.Nullable%7BSystem.Int32%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L149">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_SaveImage_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.SaveImage*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_SaveImage_MediaBrowser_Controller_Entities_BaseItem_System_String_MediaBrowser_Model_Entities_ImageType_System_Nullable_System_Int32__CancellationToken_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.SaveImage(MediaBrowser.Controller.Entities.BaseItem,System.String,MediaBrowser.Model.Entities.ImageType,System.Nullable{System.Int32},CancellationToken)">SaveImage(BaseItem, String, ImageType, Nullable&lt;Int32&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SaveImage(BaseItem item, string url, ImageType type, int? imageIndex, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.ImageType.html">ImageType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">imageIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_SaveImage_MediaBrowser_Controller_Entities_BaseItem_System_String_System_String_MediaBrowser_Model_Entities_ImageType_System_Nullable_System_Int32__System_Nullable_System_Boolean__CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.SaveImage(MediaBrowser.Controller.Entities.BaseItem%2CSystem.String%2CSystem.String%2CMediaBrowser.Model.Entities.ImageType%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L178">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_SaveImage_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.SaveImage*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_SaveImage_MediaBrowser_Controller_Entities_BaseItem_System_String_System_String_MediaBrowser_Model_Entities_ImageType_System_Nullable_System_Int32__System_Nullable_System_Boolean__CancellationToken_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.SaveImage(MediaBrowser.Controller.Entities.BaseItem,System.String,System.String,MediaBrowser.Model.Entities.ImageType,System.Nullable{System.Int32},System.Nullable{System.Boolean},CancellationToken)">SaveImage(BaseItem, String, String, ImageType, Nullable&lt;Int32&gt;, Nullable&lt;Boolean&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SaveImage(BaseItem item, string source, string mimeType, ImageType type, int? imageIndex, bool? saveLocallyWithMedia, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mimeType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.ImageType.html">ImageType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">imageIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">saveLocallyWithMedia</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_SaveMetadata_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Library_ItemUpdateType_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.SaveMetadata(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Controller.Library.ItemUpdateType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L600">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_SaveMetadata_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.SaveMetadata*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_SaveMetadata_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Library_ItemUpdateType_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.SaveMetadata(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Controller.Library.ItemUpdateType)">SaveMetadata(BaseItem, ItemUpdateType)</h4>
+  <div class="markdown level1 summary"><p>Saves the metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveMetadata(BaseItem item, ItemUpdateType updateType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a></td>
+        <td><span class="parametername">updateType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_SaveMetadata_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Library_ItemUpdateType_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.SaveMetadata(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Controller.Library.ItemUpdateType%2CIEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L608">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Manager_ProviderManager_SaveMetadata_" data-uid="MediaBrowser.Providers.Manager.ProviderManager.SaveMetadata*"></a>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_SaveMetadata_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Library_ItemUpdateType_IEnumerable_System_String__" data-uid="MediaBrowser.Providers.Manager.ProviderManager.SaveMetadata(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Controller.Library.ItemUpdateType,IEnumerable{System.String})">SaveMetadata(BaseItem, ItemUpdateType, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Saves the metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveMetadata(BaseItem item, ItemUpdateType updateType, IEnumerable&lt;string&gt; savers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a></td>
+        <td><span class="parametername">updateType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">savers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_RefreshCompleted.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.RefreshCompleted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L72">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_RefreshCompleted" data-uid="MediaBrowser.Providers.Manager.ProviderManager.RefreshCompleted">RefreshCompleted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GenericEventArgs&lt;BaseItem&gt;&gt; RefreshCompleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_RefreshProgress.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.RefreshProgress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L73">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_RefreshProgress" data-uid="MediaBrowser.Providers.Manager.ProviderManager.RefreshProgress">RefreshProgress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GenericEventArgs&lt;Tuple&lt;BaseItem, double&gt;&gt;&gt; RefreshProgress</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<span class="xref">Tuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <span class="xref">System.Double</span>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager_RefreshStarted.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager.RefreshStarted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L71">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Providers_Manager_ProviderManager_RefreshStarted" data-uid="MediaBrowser.Providers.Manager.ProviderManager.RefreshStarted">RefreshStarted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GenericEventArgs&lt;BaseItem&gt;&gt; RefreshStarted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IProviderManager.html">IProviderManager</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Manager_ProviderManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Manager.ProviderManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Manager/ProviderManager.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

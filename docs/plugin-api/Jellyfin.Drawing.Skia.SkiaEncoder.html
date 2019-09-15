@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SkiaEncoder
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SkiaEncoder
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder">
+  
+  
+  <h1 id="Jellyfin_Drawing_Skia_SkiaEncoder" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder" class="text-break">Class SkiaEncoder
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SkiaEncoder</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.Drawing.IImageEncoder.html">IImageEncoder</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Jellyfin.Drawing.Skia.html">Jellyfin.Drawing.Skia</a></h6>
+  <h6><strong>Assembly</strong>: Jellyfin.Drawing.Skia.dll</h6>
+  <h5 id="Jellyfin_Drawing_Skia_SkiaEncoder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SkiaEncoder : object, IImageEncoder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Jellyfin_Drawing_Skia_SkiaEncoder__ctor_ILogger_Jellyfin_Drawing_Skia_SkiaEncoder__MediaBrowser_Common_Configuration_IApplicationPaths_MediaBrowser_Model_Globalization_ILocalizationManager_.md&amp;value=---%0Auid%3A%20Jellyfin.Drawing.Skia.SkiaEncoder.%23ctor(ILogger%7BJellyfin.Drawing.Skia.SkiaEncoder%7D%2CMediaBrowser.Common.Configuration.IApplicationPaths%2CMediaBrowser.Model.Globalization.ILocalizationManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Drawing.Skia/SkiaEncoder.cs/#L24">View Source</a>
+  </span>
+  <a id="Jellyfin_Drawing_Skia_SkiaEncoder__ctor_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.#ctor*"></a>
+  <h4 id="Jellyfin_Drawing_Skia_SkiaEncoder__ctor_ILogger_Jellyfin_Drawing_Skia_SkiaEncoder__MediaBrowser_Common_Configuration_IApplicationPaths_MediaBrowser_Model_Globalization_ILocalizationManager_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.#ctor(ILogger{Jellyfin.Drawing.Skia.SkiaEncoder},MediaBrowser.Common.Configuration.IApplicationPaths,MediaBrowser.Model.Globalization.ILocalizationManager)">SkiaEncoder(ILogger&lt;SkiaEncoder&gt;, IApplicationPaths, ILocalizationManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkiaEncoder(ILogger&lt;SkiaEncoder&gt; logger, IApplicationPaths appPaths, ILocalizationManager localizationManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span>&lt;<a class="xref" href="Jellyfin.Drawing.Skia.SkiaEncoder.html">SkiaEncoder</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Configuration.IApplicationPaths.html">IApplicationPaths</a></td>
+        <td><span class="parametername">appPaths</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Globalization.ILocalizationManager.html">ILocalizationManager</a></td>
+        <td><span class="parametername">localizationManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Jellyfin_Drawing_Skia_SkiaEncoder_Name.md&amp;value=---%0Auid%3A%20Jellyfin.Drawing.Skia.SkiaEncoder.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Drawing.Skia/SkiaEncoder.cs/#L34">View Source</a>
+  </span>
+  <a id="Jellyfin_Drawing_Skia_SkiaEncoder_Name_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.Name*"></a>
+  <h4 id="Jellyfin_Drawing_Skia_SkiaEncoder_Name" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Jellyfin_Drawing_Skia_SkiaEncoder_SupportedInputFormats.md&amp;value=---%0Auid%3A%20Jellyfin.Drawing.Skia.SkiaEncoder.SupportedInputFormats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Drawing.Skia/SkiaEncoder.cs/#L40">View Source</a>
+  </span>
+  <a id="Jellyfin_Drawing_Skia_SkiaEncoder_SupportedInputFormats_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.SupportedInputFormats*"></a>
+  <h4 id="Jellyfin_Drawing_Skia_SkiaEncoder_SupportedInputFormats" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.SupportedInputFormats">SupportedInputFormats</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;string&gt; SupportedInputFormats { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Jellyfin_Drawing_Skia_SkiaEncoder_SupportedOutputFormats.md&amp;value=---%0Auid%3A%20Jellyfin.Drawing.Skia.SkiaEncoder.SupportedOutputFormats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Drawing.Skia/SkiaEncoder.cs/#L67">View Source</a>
+  </span>
+  <a id="Jellyfin_Drawing_Skia_SkiaEncoder_SupportedOutputFormats_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.SupportedOutputFormats*"></a>
+  <h4 id="Jellyfin_Drawing_Skia_SkiaEncoder_SupportedOutputFormats" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.SupportedOutputFormats">SupportedOutputFormats</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;ImageFormat&gt; SupportedOutputFormats { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;<a class="xref" href="MediaBrowser.Model.Drawing.ImageFormat.html">ImageFormat</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Jellyfin_Drawing_Skia_SkiaEncoder_SupportsImageCollageCreation.md&amp;value=---%0Auid%3A%20Jellyfin.Drawing.Skia.SkiaEncoder.SupportsImageCollageCreation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Drawing.Skia/SkiaEncoder.cs/#L36">View Source</a>
+  </span>
+  <a id="Jellyfin_Drawing_Skia_SkiaEncoder_SupportsImageCollageCreation_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.SupportsImageCollageCreation*"></a>
+  <h4 id="Jellyfin_Drawing_Skia_SkiaEncoder_SupportsImageCollageCreation" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.SupportsImageCollageCreation">SupportsImageCollageCreation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportsImageCollageCreation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Jellyfin_Drawing_Skia_SkiaEncoder_SupportsImageEncoding.md&amp;value=---%0Auid%3A%20Jellyfin.Drawing.Skia.SkiaEncoder.SupportsImageEncoding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Drawing.Skia/SkiaEncoder.cs/#L38">View Source</a>
+  </span>
+  <a id="Jellyfin_Drawing_Skia_SkiaEncoder_SupportsImageEncoding_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.SupportsImageEncoding*"></a>
+  <h4 id="Jellyfin_Drawing_Skia_SkiaEncoder_SupportsImageEncoding" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.SupportsImageEncoding">SupportsImageEncoding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportsImageEncoding { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Jellyfin_Drawing_Skia_SkiaEncoder_CreateImageCollage_MediaBrowser_Controller_Drawing_ImageCollageOptions_.md&amp;value=---%0Auid%3A%20Jellyfin.Drawing.Skia.SkiaEncoder.CreateImageCollage(MediaBrowser.Controller.Drawing.ImageCollageOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Drawing.Skia/SkiaEncoder.cs/#L607">View Source</a>
+  </span>
+  <a id="Jellyfin_Drawing_Skia_SkiaEncoder_CreateImageCollage_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.CreateImageCollage*"></a>
+  <h4 id="Jellyfin_Drawing_Skia_SkiaEncoder_CreateImageCollage_MediaBrowser_Controller_Drawing_ImageCollageOptions_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.CreateImageCollage(MediaBrowser.Controller.Drawing.ImageCollageOptions)">CreateImageCollage(ImageCollageOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateImageCollage(ImageCollageOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Drawing.ImageCollageOptions.html">ImageCollageOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Jellyfin_Drawing_Skia_SkiaEncoder_EncodeImage_System_String_DateTime_System_String_System_Boolean_System_Nullable_MediaBrowser_Model_Drawing_ImageOrientation__System_Int32_MediaBrowser_Controller_Drawing_ImageProcessingOptions_MediaBrowser_Model_Drawing_ImageFormat_.md&amp;value=---%0Auid%3A%20Jellyfin.Drawing.Skia.SkiaEncoder.EncodeImage(System.String%2CDateTime%2CSystem.String%2CSystem.Boolean%2CSystem.Nullable%7BMediaBrowser.Model.Drawing.ImageOrientation%7D%2CSystem.Int32%2CMediaBrowser.Controller.Drawing.ImageProcessingOptions%2CMediaBrowser.Model.Drawing.ImageFormat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Drawing.Skia/SkiaEncoder.cs/#L492">View Source</a>
+  </span>
+  <a id="Jellyfin_Drawing_Skia_SkiaEncoder_EncodeImage_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.EncodeImage*"></a>
+  <h4 id="Jellyfin_Drawing_Skia_SkiaEncoder_EncodeImage_System_String_DateTime_System_String_System_Boolean_System_Nullable_MediaBrowser_Model_Drawing_ImageOrientation__System_Int32_MediaBrowser_Controller_Drawing_ImageProcessingOptions_MediaBrowser_Model_Drawing_ImageFormat_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.EncodeImage(System.String,DateTime,System.String,System.Boolean,System.Nullable{MediaBrowser.Model.Drawing.ImageOrientation},System.Int32,MediaBrowser.Controller.Drawing.ImageProcessingOptions,MediaBrowser.Model.Drawing.ImageFormat)">EncodeImage(String, DateTime, String, Boolean, Nullable&lt;ImageOrientation&gt;, Int32, ImageProcessingOptions, ImageFormat)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EncodeImage(string inputPath, DateTime dateModified, string outputPath, bool autoOrient, ImageOrientation? orientation, int quality, ImageProcessingOptions options, ImageFormat selectedOutputFormat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">inputPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">dateModified</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">outputPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">autoOrient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="MediaBrowser.Model.Drawing.ImageOrientation.html">ImageOrientation</a>&gt;</td>
+        <td><span class="parametername">orientation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">quality</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Drawing.ImageProcessingOptions.html">ImageProcessingOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Drawing.ImageFormat.html">ImageFormat</a></td>
+        <td><span class="parametername">selectedOutputFormat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Jellyfin_Drawing_Skia_SkiaEncoder_GetImageFormat_MediaBrowser_Model_Drawing_ImageFormat_.md&amp;value=---%0Auid%3A%20Jellyfin.Drawing.Skia.SkiaEncoder.GetImageFormat(MediaBrowser.Model.Drawing.ImageFormat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Drawing.Skia/SkiaEncoder.cs/#L82">View Source</a>
+  </span>
+  <a id="Jellyfin_Drawing_Skia_SkiaEncoder_GetImageFormat_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.GetImageFormat*"></a>
+  <h4 id="Jellyfin_Drawing_Skia_SkiaEncoder_GetImageFormat_MediaBrowser_Model_Drawing_ImageFormat_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.GetImageFormat(MediaBrowser.Model.Drawing.ImageFormat)">GetImageFormat(ImageFormat)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SKEncodedImageFormat GetImageFormat(ImageFormat selectedFormat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Drawing.ImageFormat.html">ImageFormat</a></td>
+        <td><span class="parametername">selectedFormat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SKEncodedImageFormat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Jellyfin_Drawing_Skia_SkiaEncoder_GetImageSize_System_String_.md&amp;value=---%0Auid%3A%20Jellyfin.Drawing.Skia.SkiaEncoder.GetImageSize(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Drawing.Skia/SkiaEncoder.cs/#L187">View Source</a>
+  </span>
+  <a id="Jellyfin_Drawing_Skia_SkiaEncoder_GetImageSize_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.GetImageSize*"></a>
+  <h4 id="Jellyfin_Drawing_Skia_SkiaEncoder_GetImageSize_System_String_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.GetImageSize(System.String)">GetImageSize(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageDimensions GetImageSize(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Drawing.ImageDimensions.html">ImageDimensions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Jellyfin_Drawing_Skia_SkiaEncoder_TestSkia.md&amp;value=---%0Auid%3A%20Jellyfin.Drawing.Skia.SkiaEncoder.TestSkia%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Drawing.Skia/SkiaEncoder.cs/#L73">View Source</a>
+  </span>
+  <a id="Jellyfin_Drawing_Skia_SkiaEncoder_TestSkia_" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.TestSkia*"></a>
+  <h4 id="Jellyfin_Drawing_Skia_SkiaEncoder_TestSkia" data-uid="Jellyfin.Drawing.Skia.SkiaEncoder.TestSkia">TestSkia()</h4>
+  <div class="markdown level1 summary"><p>Test to determine if the native lib is available</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TestSkia()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Drawing.IImageEncoder.html">IImageEncoder</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Jellyfin_Drawing_Skia_SkiaEncoder.md&amp;value=---%0Auid%3A%20Jellyfin.Drawing.Skia.SkiaEncoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Drawing.Skia/SkiaEncoder.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

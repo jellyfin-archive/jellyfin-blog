@@ -1,0 +1,624 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseApplicationPaths
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseApplicationPaths
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths">
+  
+  
+  <h1 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths" class="text-break">Class BaseApplicationPaths
+  </h1>
+  <div class="markdown level0 summary"><p>Provides a base class to hold common application paths used by both the Ui and Server.
+This can be subclassed to add application-specific paths.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BaseApplicationPaths</span></div>
+      <div class="level2"><a class="xref" href="Emby.Server.Implementations.ServerApplicationPaths.html">ServerApplicationPaths</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Common.Configuration.IApplicationPaths.html">IApplicationPaths</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.AppBase.html">Emby.Server.Implementations.AppBase</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseApplicationPaths : object, IApplicationPaths</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths__ctor_System_String_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.%23ctor(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L18">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths__ctor_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths__ctor_System_String_System_String_System_String_System_String_System_String_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.#ctor(System.String,System.String,System.String,System.String,System.String)">BaseApplicationPaths(String, String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Emby.Server.Implementations.AppBase.BaseApplicationPaths.html">BaseApplicationPaths</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BaseApplicationPaths(string programDataPath, string logDirectoryPath, string configurationDirectoryPath, string cacheDirectoryPath, string webDirectoryPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">programDataPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">logDirectoryPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">configurationDirectoryPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">cacheDirectoryPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">webDirectoryPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths_CachePath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.CachePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L108">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_CachePath_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.CachePath*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_CachePath" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.CachePath">CachePath</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the folder path to the cache directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CachePath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The cache directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths_ConfigurationDirectoryPath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.ConfigurationDirectoryPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L96">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_ConfigurationDirectoryPath_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.ConfigurationDirectoryPath*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_ConfigurationDirectoryPath" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.ConfigurationDirectoryPath">ConfigurationDirectoryPath</h4>
+  <div class="markdown level1 summary"><p>Gets the path to the application configuration root directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConfigurationDirectoryPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The configuration directory path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths_DataPath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.DataPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L56">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_DataPath_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.DataPath*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_DataPath" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.DataPath">DataPath</h4>
+  <div class="markdown level1 summary"><p>Gets the folder path to the data directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DataPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The data directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths_ImageCachePath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.ImageCachePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L72">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_ImageCachePath_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.ImageCachePath*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_ImageCachePath" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.ImageCachePath">ImageCachePath</h4>
+  <div class="markdown level1 summary"><p>Gets the image cache path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ImageCachePath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The image cache path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths_LogDirectoryPath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.LogDirectoryPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L90">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_LogDirectoryPath_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.LogDirectoryPath*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_LogDirectoryPath" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.LogDirectoryPath">LogDirectoryPath</h4>
+  <div class="markdown level1 summary"><p>Gets the path to the log directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LogDirectoryPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The log directory path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths_PluginConfigurationsPath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.PluginConfigurationsPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L84">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_PluginConfigurationsPath_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.PluginConfigurationsPath*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_PluginConfigurationsPath" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.PluginConfigurationsPath">PluginConfigurationsPath</h4>
+  <div class="markdown level1 summary"><p>Gets the path to the plugin configurations directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PluginConfigurationsPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The plugin configurations path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths_PluginsPath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.PluginsPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L78">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_PluginsPath_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.PluginsPath*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_PluginsPath" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.PluginsPath">PluginsPath</h4>
+  <div class="markdown level1 summary"><p>Gets the path to the plugin directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PluginsPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The plugins path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths_ProgramDataPath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.ProgramDataPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L38">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_ProgramDataPath_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.ProgramDataPath*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_ProgramDataPath" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.ProgramDataPath">ProgramDataPath</h4>
+  <div class="markdown level1 summary"><p>Gets the path to the program data folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ProgramDataPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The program data path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths_ProgramSystemPath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.ProgramSystemPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L50">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_ProgramSystemPath_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.ProgramSystemPath*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_ProgramSystemPath" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.ProgramSystemPath">ProgramSystemPath</h4>
+  <div class="markdown level1 summary"><p>Gets the path to the system folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ProgramSystemPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The path to the system folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths_SystemConfigurationFilePath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.SystemConfigurationFilePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L102">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_SystemConfigurationFilePath_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.SystemConfigurationFilePath*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_SystemConfigurationFilePath" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.SystemConfigurationFilePath">SystemConfigurationFilePath</h4>
+  <div class="markdown level1 summary"><p>Gets the path to the system configuration file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SystemConfigurationFilePath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The system configuration file path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths_TempDirectory.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.TempDirectory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L114">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_TempDirectory_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.TempDirectory*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_TempDirectory" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.TempDirectory">TempDirectory</h4>
+  <div class="markdown level1 summary"><p>Gets the folder path to the temp directory within the cache folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TempDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The temp directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths_VirtualDataPath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.VirtualDataPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L66">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_VirtualDataPath_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.VirtualDataPath*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_VirtualDataPath" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.VirtualDataPath">VirtualDataPath</h4>
+  <div class="markdown level1 summary"><p>Gets the magic string used for virtual path manipulation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string VirtualDataPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The magic string used for virtual path manipulation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths_WebPath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths.WebPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L44">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_WebPath_" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.WebPath*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseApplicationPaths_WebPath" data-uid="Emby.Server.Implementations.AppBase.BaseApplicationPaths.WebPath">WebPath</h4>
+  <div class="markdown level1 summary"><p>Gets the path to the web UI resources folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WebPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The web UI resources path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Common.Configuration.IApplicationPaths.html">IApplicationPaths</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseApplicationPaths.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseApplicationPaths%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseApplicationPaths.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,694 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WebSocketConnection
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WebSocketConnection
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection">
+  
+  
+  <h1 id="Emby_Server_Implementations_HttpServer_WebSocketConnection" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection" class="text-break">Class WebSocketConnection
+  </h1>
+  <div class="markdown level0 summary"><p>Class WebSocketConnection</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">WebSocketConnection</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.Net.IWebSocketConnection.html">IWebSocketConnection</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.HttpServer.html">Emby.Server.Implementations.HttpServer</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WebSocketConnection : object, IWebSocketConnection, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection__ctor_Emby_Server_Implementations_Net_IWebSocket_System_String_MediaBrowser_Model_Serialization_IJsonSerializer_ILogger_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.%23ctor(Emby.Server.Implementations.Net.IWebSocket%2CSystem.String%2CMediaBrowser.Model.Serialization.IJsonSerializer%2CILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L81">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_HttpServer_WebSocketConnection__ctor_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection__ctor_Emby_Server_Implementations_Net_IWebSocket_System_String_MediaBrowser_Model_Serialization_IJsonSerializer_ILogger_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.#ctor(Emby.Server.Implementations.Net.IWebSocket,System.String,MediaBrowser.Model.Serialization.IJsonSerializer,ILogger)">WebSocketConnection(IWebSocket, String, IJsonSerializer, ILogger)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Emby.Server.Implementations.HttpServer.WebSocketConnection.html">WebSocketConnection</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebSocketConnection(IWebSocket socket, string remoteEndPoint, IJsonSerializer jsonSerializer, ILogger logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.Net.IWebSocket.html">IWebSocket</a></td>
+        <td><span class="parametername">socket</span></td>
+        <td><p>The socket.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">remoteEndPoint</span></td>
+        <td><p>The remote end point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td><span class="parametername">jsonSerializer</span></td>
+        <td><p>The json serializer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The logger.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection_Id.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L60">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_HttpServer_WebSocketConnection_Id_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.Id*"></a>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_Id" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Gets the id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><p>The id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection_LastActivityDate.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.LastActivityDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L54">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_HttpServer_WebSocketConnection_LastActivityDate_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.LastActivityDate*"></a>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_LastActivityDate" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.LastActivityDate">LastActivityDate</h4>
+  <div class="markdown level1 summary"><p>Gets the last activity date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime LastActivityDate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><p>The last activity date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection_OnReceive.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.OnReceive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L48">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_HttpServer_WebSocketConnection_OnReceive_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.OnReceive*"></a>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_OnReceive" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.OnReceive">OnReceive</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the receive action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;WebSocketMessageInfo, Task&gt; OnReceive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="MediaBrowser.Controller.Net.WebSocketMessageInfo.html">WebSocketMessageInfo</a>, <span class="xref">Task</span>&gt;</td>
+        <td><p>The receive action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection_QueryString.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.QueryString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L71">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_HttpServer_WebSocketConnection_QueryString_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.QueryString*"></a>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_QueryString" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.QueryString">QueryString</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the query string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryCollection QueryString { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IQueryCollection</span></td>
+        <td><p>The query string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection_RemoteEndPoint.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.RemoteEndPoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L32">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_HttpServer_WebSocketConnection_RemoteEndPoint_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.RemoteEndPoint*"></a>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_RemoteEndPoint" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.RemoteEndPoint">RemoteEndPoint</h4>
+  <div class="markdown level1 summary"><p>The _remote end point</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RemoteEndPoint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection_State.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.State%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L229">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_HttpServer_WebSocketConnection_State_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.State*"></a>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_State" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.State">State</h4>
+  <div class="markdown level1 summary"><p>Gets the state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebSocketState State { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WebSocketState</span></td>
+        <td><p>The state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection_Url.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.Url%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L66">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_HttpServer_WebSocketConnection_Url_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.Url*"></a>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_Url" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.Url">Url</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Url { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection_Dispose.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L234">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_HttpServer_WebSocketConnection_Dispose_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.Dispose*"></a>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_Dispose" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L243">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_HttpServer_WebSocketConnection_Dispose_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.Dispose*"></a>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_Dispose_System_Boolean_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged and - optionally - managed resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool dispose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">dispose</span></td>
+        <td><p><code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection_SendAsync_System_Byte___CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.SendAsync(System.Byte%5B%5D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L201">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_HttpServer_WebSocketConnection_SendAsync_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.SendAsync*"></a>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_SendAsync_System_Byte___CancellationToken_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.SendAsync(System.Byte[],CancellationToken)">SendAsync(Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendAsync(byte[] buffer, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>The buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection_SendAsync_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.SendAsync(System.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L213">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_HttpServer_WebSocketConnection_SendAsync_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.SendAsync*"></a>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_SendAsync_System_String_CancellationToken_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.SendAsync(System.String,CancellationToken)">SendAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendAsync(string text, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection_SendAsync__1_MediaBrowser_Model_Net_WebSocketMessage___0__CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.SendAsync%60%601(MediaBrowser.Model.Net.WebSocketMessage%7B%60%600%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L183">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_HttpServer_WebSocketConnection_SendAsync_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.SendAsync*"></a>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_SendAsync__1_MediaBrowser_Model_Net_WebSocketMessage___0__CancellationToken_" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.SendAsync``1(MediaBrowser.Model.Net.WebSocketMessage{``0},CancellationToken)">SendAsync&lt;T&gt;(WebSocketMessage&lt;T&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a message asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendAsync&lt;T&gt;(WebSocketMessage&lt;T&gt; message, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Net.WebSocketMessage-1.html">WebSocketMessage</a>&lt;T&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection_Closed.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection.Closed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L22">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_HttpServer_WebSocketConnection_Closed" data-uid="Emby.Server.Implementations.HttpServer.WebSocketConnection.Closed">Closed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EventArgs&gt; Closed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<span class="xref">EventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Net.IWebSocketConnection.html">IWebSocketConnection</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_HttpServer_WebSocketConnection.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.HttpServer.WebSocketConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/HttpServer/WebSocketConnection.cs/#L20" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

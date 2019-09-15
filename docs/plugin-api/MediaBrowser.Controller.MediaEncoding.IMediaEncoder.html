@@ -1,0 +1,1041 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IMediaEncoder
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IMediaEncoder
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder">
+  
+  
+  <h1 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder" class="text-break">Interface IMediaEncoder
+  </h1>
+  <div class="markdown level0 summary"><p>Interface IMediaEncoder</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dlna.ITranscoderSupport.html#MediaBrowser_Model_Dlna_ITranscoderSupport_CanEncodeToAudioCodec_System_String_">ITranscoderSupport.CanEncodeToAudioCodec(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dlna.ITranscoderSupport.html#MediaBrowser_Model_Dlna_ITranscoderSupport_CanEncodeToSubtitleCodec_System_String_">ITranscoderSupport.CanEncodeToSubtitleCodec(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dlna.ITranscoderSupport.html#MediaBrowser_Model_Dlna_ITranscoderSupport_CanExtractSubtitles_System_String_">ITranscoderSupport.CanExtractSubtitles(String)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Controller.MediaEncoding.html">MediaBrowser.Controller.MediaEncoding</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Controller.dll</h6>
+  <h5 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IMediaEncoder : ITranscoderSupport</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_EncoderLocation.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.EncoderLocation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L18">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_EncoderLocation_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.EncoderLocation*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_EncoderLocation" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.EncoderLocation">EncoderLocation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FFmpegLocation EncoderLocation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.System.FFmpegLocation.html">FFmpegLocation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_EncoderPath.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.EncoderPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L24">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_EncoderPath_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.EncoderPath*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_EncoderPath" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.EncoderPath">EncoderPath</h4>
+  <div class="markdown level1 summary"><p>Gets the encoder path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EncoderPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The encoder path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ConvertImage_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ConvertImage(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L86">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ConvertImage_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ConvertImage*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ConvertImage_System_String_System_String_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ConvertImage(System.String,System.String)">ConvertImage(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ConvertImage(string inputPath, string outputPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">inputPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">outputPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_EscapeSubtitleFilterPath_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.EscapeSubtitleFilterPath(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L93">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_EscapeSubtitleFilterPath_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.EscapeSubtitleFilterPath*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_EscapeSubtitleFilterPath_System_String_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.EscapeSubtitleFilterPath(System.String)">EscapeSubtitleFilterPath(String)</h4>
+  <div class="markdown level1 summary"><p>Escapes the subtitle filter path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EscapeSubtitleFilterPath(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>System.String.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ExtractAudioImage_System_String_System_Nullable_System_Int32__CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ExtractAudioImage(System.String%2CSystem.Nullable%7BSystem.Int32%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L40">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ExtractAudioImage_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ExtractAudioImage*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ExtractAudioImage_System_String_System_Nullable_System_Int32__CancellationToken_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ExtractAudioImage(System.String,System.Nullable{System.Int32},CancellationToken)">ExtractAudioImage(String, Nullable&lt;Int32&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Extracts the audio image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; ExtractAudioImage(string path, int? imageStreamIndex, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">imageStreamIndex</span></td>
+        <td><p>Index of the image stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>Task{Stream}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ExtractVideoImage_System_String___System_String_MediaBrowser_Model_MediaInfo_MediaProtocol_MediaBrowser_Model_Entities_MediaStream_System_Nullable_MediaBrowser_Model_Entities_Video3DFormat__System_Nullable_TimeSpan__CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ExtractVideoImage(System.String%5B%5D%2CSystem.String%2CMediaBrowser.Model.MediaInfo.MediaProtocol%2CMediaBrowser.Model.Entities.MediaStream%2CSystem.Nullable%7BMediaBrowser.Model.Entities.Video3DFormat%7D%2CSystem.Nullable%7BTimeSpan%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L45">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ExtractVideoImage_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ExtractVideoImage*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ExtractVideoImage_System_String___System_String_MediaBrowser_Model_MediaInfo_MediaProtocol_MediaBrowser_Model_Entities_MediaStream_System_Nullable_MediaBrowser_Model_Entities_Video3DFormat__System_Nullable_TimeSpan__CancellationToken_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ExtractVideoImage(System.String[],System.String,MediaBrowser.Model.MediaInfo.MediaProtocol,MediaBrowser.Model.Entities.MediaStream,System.Nullable{MediaBrowser.Model.Entities.Video3DFormat},System.Nullable{TimeSpan},CancellationToken)">ExtractVideoImage(String[], String, MediaProtocol, MediaStream, Nullable&lt;Video3DFormat&gt;, Nullable&lt;TimeSpan&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Extracts the video image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; ExtractVideoImage(string[] inputFiles, string container, MediaProtocol protocol, MediaStream videoStream, Video3DFormat? threedFormat, TimeSpan? offset, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">inputFiles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.MediaInfo.MediaProtocol.html">MediaProtocol</a></td>
+        <td><span class="parametername">protocol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.MediaStream.html">MediaStream</a></td>
+        <td><span class="parametername">videoStream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.Video3DFormat.html">Video3DFormat</a>&gt;</td>
+        <td><span class="parametername">threedFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ExtractVideoImage_System_String___System_String_MediaBrowser_Model_MediaInfo_MediaProtocol_MediaBrowser_Model_Entities_MediaStream_System_Nullable_System_Int32__CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ExtractVideoImage(System.String%5B%5D%2CSystem.String%2CMediaBrowser.Model.MediaInfo.MediaProtocol%2CMediaBrowser.Model.Entities.MediaStream%2CSystem.Nullable%7BSystem.Int32%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L47">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ExtractVideoImage_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ExtractVideoImage*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ExtractVideoImage_System_String___System_String_MediaBrowser_Model_MediaInfo_MediaProtocol_MediaBrowser_Model_Entities_MediaStream_System_Nullable_System_Int32__CancellationToken_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ExtractVideoImage(System.String[],System.String,MediaBrowser.Model.MediaInfo.MediaProtocol,MediaBrowser.Model.Entities.MediaStream,System.Nullable{System.Int32},CancellationToken)">ExtractVideoImage(String[], String, MediaProtocol, MediaStream, Nullable&lt;Int32&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; ExtractVideoImage(string[] inputFiles, string container, MediaProtocol protocol, MediaStream imageStream, int? imageStreamIndex, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">inputFiles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.MediaInfo.MediaProtocol.html">MediaProtocol</a></td>
+        <td><span class="parametername">protocol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.MediaStream.html">MediaStream</a></td>
+        <td><span class="parametername">imageStream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">imageStreamIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ExtractVideoImagesOnInterval_System_String___System_String_MediaBrowser_Model_Entities_MediaStream_MediaBrowser_Model_MediaInfo_MediaProtocol_System_Nullable_MediaBrowser_Model_Entities_Video3DFormat__TimeSpan_System_String_System_String_System_Nullable_System_Int32__CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ExtractVideoImagesOnInterval(System.String%5B%5D%2CSystem.String%2CMediaBrowser.Model.Entities.MediaStream%2CMediaBrowser.Model.MediaInfo.MediaProtocol%2CSystem.Nullable%7BMediaBrowser.Model.Entities.Video3DFormat%7D%2CTimeSpan%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Int32%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L52">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ExtractVideoImagesOnInterval_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ExtractVideoImagesOnInterval*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_ExtractVideoImagesOnInterval_System_String___System_String_MediaBrowser_Model_Entities_MediaStream_MediaBrowser_Model_MediaInfo_MediaProtocol_System_Nullable_MediaBrowser_Model_Entities_Video3DFormat__TimeSpan_System_String_System_String_System_Nullable_System_Int32__CancellationToken_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.ExtractVideoImagesOnInterval(System.String[],System.String,MediaBrowser.Model.Entities.MediaStream,MediaBrowser.Model.MediaInfo.MediaProtocol,System.Nullable{MediaBrowser.Model.Entities.Video3DFormat},TimeSpan,System.String,System.String,System.Nullable{System.Int32},CancellationToken)">ExtractVideoImagesOnInterval(String[], String, MediaStream, MediaProtocol, Nullable&lt;Video3DFormat&gt;, TimeSpan, String, String, Nullable&lt;Int32&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Extracts the video images on interval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ExtractVideoImagesOnInterval(string[] inputFiles, string container, MediaStream videoStream, MediaProtocol protocol, Video3DFormat? threedFormat, TimeSpan interval, string targetDirectory, string filenamePrefix, int? maxWidth, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">inputFiles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.MediaStream.html">MediaStream</a></td>
+        <td><span class="parametername">videoStream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.MediaInfo.MediaProtocol.html">MediaProtocol</a></td>
+        <td><span class="parametername">protocol</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.Video3DFormat.html">Video3DFormat</a>&gt;</td>
+        <td><span class="parametername">threedFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">interval</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetDirectory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filenamePrefix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">maxWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetInputArgument_IReadOnlyList_System_String__MediaBrowser_Model_MediaInfo_MediaProtocol_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetInputArgument(IReadOnlyList%7BSystem.String%7D%2CMediaBrowser.Model.MediaInfo.MediaProtocol)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L77">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetInputArgument_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetInputArgument*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetInputArgument_IReadOnlyList_System_String__MediaBrowser_Model_MediaInfo_MediaProtocol_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetInputArgument(IReadOnlyList{System.String},MediaBrowser.Model.MediaInfo.MediaProtocol)">GetInputArgument(IReadOnlyList&lt;String&gt;, MediaProtocol)</h4>
+  <div class="markdown level1 summary"><p>Gets the input argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetInputArgument(IReadOnlyList&lt;string&gt; inputFiles, MediaProtocol protocol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">inputFiles</span></td>
+        <td><p>The input files.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.MediaInfo.MediaProtocol.html">MediaProtocol</a></td>
+        <td><span class="parametername">protocol</span></td>
+        <td><p>The protocol.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>System.String.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetMediaInfo_MediaBrowser_Controller_MediaEncoding_MediaInfoRequest_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetMediaInfo(MediaBrowser.Controller.MediaEncoding.MediaInfoRequest%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L69">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetMediaInfo_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetMediaInfo*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetMediaInfo_MediaBrowser_Controller_MediaEncoding_MediaInfoRequest_CancellationToken_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetMediaInfo(MediaBrowser.Controller.MediaEncoding.MediaInfoRequest,CancellationToken)">GetMediaInfo(MediaInfoRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the media info.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MediaInfo&gt; GetMediaInfo(MediaInfoRequest request, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.MediaInfoRequest.html">MediaInfoRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.MediaInfo.MediaInfo.html">MediaInfo</a>&gt;</td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetPlayableStreamFileNames_System_String_MediaBrowser_Model_Entities_VideoType_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetPlayableStreamFileNames(System.String%2CMediaBrowser.Model.Entities.VideoType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L100">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetPlayableStreamFileNames_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetPlayableStreamFileNames*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetPlayableStreamFileNames_System_String_MediaBrowser_Model_Entities_VideoType_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetPlayableStreamFileNames(System.String,MediaBrowser.Model.Entities.VideoType)">GetPlayableStreamFileNames(String, VideoType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string[] GetPlayableStreamFileNames(string path, VideoType videoType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.VideoType.html">VideoType</a></td>
+        <td><span class="parametername">videoType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetPrimaryPlaylistVobFiles_System_String_MediaBrowser_Model_IO_IIsoMount_System_Nullable_System_UInt32__.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetPrimaryPlaylistVobFiles(System.String%2CMediaBrowser.Model.IO.IIsoMount%2CSystem.Nullable%7BSystem.UInt32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L101">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetPrimaryPlaylistVobFiles_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetPrimaryPlaylistVobFiles*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetPrimaryPlaylistVobFiles_System_String_MediaBrowser_Model_IO_IIsoMount_System_Nullable_System_UInt32__" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetPrimaryPlaylistVobFiles(System.String,MediaBrowser.Model.IO.IIsoMount,System.Nullable{System.UInt32})">GetPrimaryPlaylistVobFiles(String, IIsoMount, Nullable&lt;UInt32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; GetPrimaryPlaylistVobFiles(string path, IIsoMount isoMount, uint? titleNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IIsoMount.html">IIsoMount</a></td>
+        <td><span class="parametername">isoMount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt32</span>&gt;</td>
+        <td><span class="parametername">titleNumber</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetTimeParameter_System_Int64_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetTimeParameter(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L84">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetTimeParameter_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetTimeParameter*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_GetTimeParameter_System_Int64_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.GetTimeParameter(System.Int64)">GetTimeParameter(Int64)</h4>
+  <div class="markdown level1 summary"><p>Gets the time parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTimeParameter(long ticks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">ticks</span></td>
+        <td><p>The ticks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>System.String.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_SetFFmpegPath.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.SetFFmpegPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L95">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_SetFFmpegPath_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.SetFFmpegPath*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_SetFFmpegPath" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.SetFFmpegPath">SetFFmpegPath()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetFFmpegPath()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_SupportsDecoder_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.SupportsDecoder(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L31">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_SupportsDecoder_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.SupportsDecoder*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_SupportsDecoder_System_String_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.SupportsDecoder(System.String)">SupportsDecoder(String)</h4>
+  <div class="markdown level1 summary"><p>Supportses the decoder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SupportsDecoder(string decoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">decoder</span></td>
+        <td><p>The decoder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if XXXX, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_SupportsEncoder_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.SupportsEncoder(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L98">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_SupportsEncoder_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.SupportsEncoder*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_SupportsEncoder_System_String_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.SupportsEncoder(System.String)">SupportsEncoder(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SupportsEncoder(string encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">encoder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder_UpdateEncoderPath_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder.UpdateEncoderPath(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L97">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_UpdateEncoderPath_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.UpdateEncoderPath*"></a>
+  <h4 id="MediaBrowser_Controller_MediaEncoding_IMediaEncoder_UpdateEncoderPath_System_String_System_String_" data-uid="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.UpdateEncoderPath(System.String,System.String)">UpdateEncoderPath(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateEncoderPath(string path, string pathType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pathType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_MediaEncoding_IMediaEncoder.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.MediaEncoding.IMediaEncoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/MediaEncoding/IMediaEncoder.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

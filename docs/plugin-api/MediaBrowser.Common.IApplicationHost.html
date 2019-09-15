@@ -1,0 +1,796 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IApplicationHost
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IApplicationHost
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Common.IApplicationHost">
+  
+  
+  <h1 id="MediaBrowser_Common_IApplicationHost" data-uid="MediaBrowser.Common.IApplicationHost" class="text-break">Interface IApplicationHost
+  </h1>
+  <div class="markdown level0 summary"><p>An interface to be implemented by the applications hosting a kernel</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Common.html">MediaBrowser.Common</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Common.dll</h6>
+  <h5 id="MediaBrowser_Common_IApplicationHost_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IApplicationHost</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_ApplicationUserAgent.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.ApplicationUserAgent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L67">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_ApplicationUserAgent_" data-uid="MediaBrowser.Common.IApplicationHost.ApplicationUserAgent*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_ApplicationUserAgent" data-uid="MediaBrowser.Common.IApplicationHost.ApplicationUserAgent">ApplicationUserAgent</h4>
+  <div class="markdown level1 summary"><p>Gets the application user agent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ApplicationUserAgent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The application user agent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_ApplicationUserAgentAddress.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.ApplicationUserAgentAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L73">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_ApplicationUserAgentAddress_" data-uid="MediaBrowser.Common.IApplicationHost.ApplicationUserAgentAddress*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_ApplicationUserAgentAddress" data-uid="MediaBrowser.Common.IApplicationHost.ApplicationUserAgentAddress">ApplicationUserAgentAddress</h4>
+  <div class="markdown level1 summary"><p>Gets the email address for use within a comment section of a user agent field.
+Presently used to provide contact information to MusicBrainz service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ApplicationUserAgentAddress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_ApplicationVersion.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.ApplicationVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L61">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_ApplicationVersion_" data-uid="MediaBrowser.Common.IApplicationHost.ApplicationVersion*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_ApplicationVersion" data-uid="MediaBrowser.Common.IApplicationHost.ApplicationVersion">ApplicationVersion</h4>
+  <div class="markdown level1 summary"><p>Gets the application version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ApplicationVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The application version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_CanSelfRestart.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.CanSelfRestart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L40">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_CanSelfRestart_" data-uid="MediaBrowser.Common.IApplicationHost.CanSelfRestart*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_CanSelfRestart" data-uid="MediaBrowser.Common.IApplicationHost.CanSelfRestart">CanSelfRestart</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance can self restart.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanSelfRestart { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance can self restart; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_HasPendingRestart.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.HasPendingRestart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L32">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_HasPendingRestart_" data-uid="MediaBrowser.Common.IApplicationHost.HasPendingRestart*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_HasPendingRestart" data-uid="MediaBrowser.Common.IApplicationHost.HasPendingRestart">HasPendingRestart</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance has pending kernel reload.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasPendingRestart { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance has pending kernel reload; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_IsShuttingDown.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.IsShuttingDown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L34">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_IsShuttingDown_" data-uid="MediaBrowser.Common.IApplicationHost.IsShuttingDown*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_IsShuttingDown" data-uid="MediaBrowser.Common.IApplicationHost.IsShuttingDown">IsShuttingDown</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsShuttingDown { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_Name.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L20">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_Name_" data-uid="MediaBrowser.Common.IApplicationHost.Name*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_Name" data-uid="MediaBrowser.Common.IApplicationHost.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_Plugins.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.Plugins%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L99">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_Plugins_" data-uid="MediaBrowser.Common.IApplicationHost.Plugins*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_Plugins" data-uid="MediaBrowser.Common.IApplicationHost.Plugins">Plugins</h4>
+  <div class="markdown level1 summary"><p>Gets the plugins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPlugin[] Plugins { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Plugins.IPlugin.html">IPlugin</a>[]</td>
+        <td><p>The plugins.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_SystemId.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.SystemId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L26">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_SystemId_" data-uid="MediaBrowser.Common.IApplicationHost.SystemId*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_SystemId" data-uid="MediaBrowser.Common.IApplicationHost.SystemId">SystemId</h4>
+  <div class="markdown level1 summary"><p>Gets the device identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string SystemId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The device identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_SystemUpdateLevel.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.SystemUpdateLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L119">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_SystemUpdateLevel_" data-uid="MediaBrowser.Common.IApplicationHost.SystemUpdateLevel*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_SystemUpdateLevel" data-uid="MediaBrowser.Common.IApplicationHost.SystemUpdateLevel">SystemUpdateLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PackageVersionClass SystemUpdateLevel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Updates.PackageVersionClass.html">PackageVersionClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_CreateInstance_Type_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.CreateInstance(Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L117">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_CreateInstance_" data-uid="MediaBrowser.Common.IApplicationHost.CreateInstance*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_CreateInstance_Type_" data-uid="MediaBrowser.Common.IApplicationHost.CreateInstance(Type)">CreateInstance(Type)</h4>
+  <div class="markdown level1 summary"><p>Creates the instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object CreateInstance(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>System.Object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_GetExports__1_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.GetExports%60%601(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L81">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_GetExports_" data-uid="MediaBrowser.Common.IApplicationHost.GetExports*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_GetExports__1_System_Boolean_" data-uid="MediaBrowser.Common.IApplicationHost.GetExports``1(System.Boolean)">GetExports&lt;T&gt;(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the exports.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyCollection&lt;T&gt; GetExports&lt;T&gt;(bool manageLifetime = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">manageLifetime</span></td>
+        <td><p>If set to <code>true</code> [manage lifetime].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;T&gt;</td>
+        <td><p><see cref="!:IReadOnlyCollection&lt;T>"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_InitAsync_IServiceCollection_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.InitAsync(IServiceCollection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L110">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_InitAsync_" data-uid="MediaBrowser.Common.IApplicationHost.InitAsync*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_InitAsync_IServiceCollection_" data-uid="MediaBrowser.Common.IApplicationHost.InitAsync(IServiceCollection)">InitAsync(IServiceCollection)</h4>
+  <div class="markdown level1 summary"><p>Inits this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task InitAsync(IServiceCollection serviceCollection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="parametername">serviceCollection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_NotifyPendingRestart.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.NotifyPendingRestart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L50">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_NotifyPendingRestart_" data-uid="MediaBrowser.Common.IApplicationHost.NotifyPendingRestart*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_NotifyPendingRestart" data-uid="MediaBrowser.Common.IApplicationHost.NotifyPendingRestart">NotifyPendingRestart()</h4>
+  <div class="markdown level1 summary"><p>Notifies the pending restart.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NotifyPendingRestart()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_RemovePlugin_MediaBrowser_Common_Plugins_IPlugin_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.RemovePlugin(MediaBrowser.Common.Plugins.IPlugin)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L105">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_RemovePlugin_" data-uid="MediaBrowser.Common.IApplicationHost.RemovePlugin*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_RemovePlugin_MediaBrowser_Common_Plugins_IPlugin_" data-uid="MediaBrowser.Common.IApplicationHost.RemovePlugin(MediaBrowser.Common.Plugins.IPlugin)">RemovePlugin(IPlugin)</h4>
+  <div class="markdown level1 summary"><p>Removes the plugin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemovePlugin(IPlugin plugin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Plugins.IPlugin.html">IPlugin</a></td>
+        <td><span class="parametername">plugin</span></td>
+        <td><p>The plugin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_Resolve__1.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.Resolve%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L88">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_Resolve_" data-uid="MediaBrowser.Common.IApplicationHost.Resolve*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_Resolve__1" data-uid="MediaBrowser.Common.IApplicationHost.Resolve``1">Resolve&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Resolves this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">T Resolve&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>``0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_Restart.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.Restart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L55">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_Restart_" data-uid="MediaBrowser.Common.IApplicationHost.Restart*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_Restart" data-uid="MediaBrowser.Common.IApplicationHost.Restart">Restart()</h4>
+  <div class="markdown level1 summary"><p>Restarts this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Restart()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_Shutdown.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.Shutdown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L93">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_IApplicationHost_Shutdown_" data-uid="MediaBrowser.Common.IApplicationHost.Shutdown*"></a>
+  <h4 id="MediaBrowser_Common_IApplicationHost_Shutdown" data-uid="MediaBrowser.Common.IApplicationHost.Shutdown">Shutdown()</h4>
+  <div class="markdown level1 summary"><p>Shuts down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task Shutdown()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost_HasPendingRestartChanged.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost.HasPendingRestartChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L45">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Common_IApplicationHost_HasPendingRestartChanged" data-uid="MediaBrowser.Common.IApplicationHost.HasPendingRestartChanged">HasPendingRestartChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs when [has pending restart changed].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler HasPendingRestartChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_IApplicationHost.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.IApplicationHost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/IApplicationHost.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

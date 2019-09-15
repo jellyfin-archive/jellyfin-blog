@@ -1,0 +1,556 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AlbumMetadataService
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AlbumMetadataService
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService">
+  
+  
+  <h1 id="MediaBrowser_Providers_Music_AlbumMetadataService" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService" class="text-break">Class AlbumMetadataService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html">MetadataService</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.Audio.MusicAlbum.html">MusicAlbum</a>, <a class="xref" href="MediaBrowser.Controller.Providers.AlbumInfo.html">AlbumInfo</a>&gt;</div>
+    <div class="level2"><span class="xref">AlbumMetadataService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IMetadataService.html">IMetadataService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_ServerConfigurationManager">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.ServerConfigurationManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_Logger">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_ProviderManager">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.ProviderManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_FileSystem">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.FileSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_UserDataManager">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.UserDataManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_LibraryManager">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.LibraryManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_RefreshMetadata_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.RefreshMetadata(BaseItem, MetadataRefreshOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_SaveItem_MediaBrowser_Controller_Providers_MetadataResult__0__MediaBrowser_Model_Configuration_LibraryOptions_MediaBrowser_Controller_Library_ItemUpdateType_CancellationToken_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.SaveItem(MetadataResult&lt;MusicAlbum&gt;, LibraryOptions, ItemUpdateType, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_AfterMetadataRefresh__0_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.AfterMetadataRefresh(MusicAlbum, MetadataRefreshOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_BeforeSaveInternal__0_System_Boolean_MediaBrowser_Controller_Library_ItemUpdateType_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.BeforeSaveInternal(MusicAlbum, Boolean, ItemUpdateType)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_EnableUpdateMetadataFromChildren__0_System_Boolean_MediaBrowser_Controller_Library_ItemUpdateType_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.EnableUpdateMetadataFromChildren(MusicAlbum, Boolean, ItemUpdateType)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_GetChildrenForMetadataUpdates__0_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.GetChildrenForMetadataUpdates(MusicAlbum)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_UpdateMetadataFromChildren__0_IList_MediaBrowser_Controller_Entities_BaseItem__System_Boolean_MediaBrowser_Controller_Library_ItemUpdateType_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.UpdateMetadataFromChildren(MusicAlbum, IList&lt;BaseItem&gt;, Boolean, ItemUpdateType)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_EnableUpdatingPremiereDateFromChildren">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.EnableUpdatingPremiereDateFromChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_EnableUpdatingGenresFromChildren">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.EnableUpdatingGenresFromChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_EnableUpdatingStudiosFromChildren">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.EnableUpdatingStudiosFromChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_EnableUpdatingOfficialRatingFromChildren">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.EnableUpdatingOfficialRatingFromChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_GetProviders_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Configuration_LibraryOptions_MediaBrowser_Controller_Providers_MetadataRefreshOptions_System_Boolean_System_Boolean_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.GetProviders(BaseItem, LibraryOptions, MetadataRefreshOptions, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_GetNonLocalImageProviders_MediaBrowser_Controller_Entities_BaseItem_IEnumerable_MediaBrowser_Controller_Providers_IImageProvider__MediaBrowser_Controller_Providers_ImageRefreshOptions_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.GetNonLocalImageProviders(BaseItem, IEnumerable&lt;IImageProvider&gt;, ImageRefreshOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_CanRefresh_MediaBrowser_Controller_Entities_BaseItem_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.CanRefresh(BaseItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_CanRefreshPrimary_Type_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.CanRefreshPrimary(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_RefreshWithProviders_MediaBrowser_Controller_Providers_MetadataResult__0___1_MediaBrowser_Controller_Providers_MetadataRefreshOptions_List_MediaBrowser_Controller_Providers_IMetadataProvider__MediaBrowser_Providers_Manager_ItemImageProvider_CancellationToken_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.RefreshWithProviders(MetadataResult&lt;MusicAlbum&gt;, AlbumInfo, MetadataRefreshOptions, List&lt;IMetadataProvider&gt;, ItemImageProvider, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_IsFullLocalMetadata__0_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.IsFullLocalMetadata(MusicAlbum)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_CreateNew">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.CreateNew()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_MergeData_MediaBrowser_Controller_Providers_MetadataResult__0__MediaBrowser_Controller_Providers_MetadataResult__0__MediaBrowser_Model_Entities_MetadataFields___System_Boolean_System_Boolean_">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.MergeData(MetadataResult&lt;MusicAlbum&gt;, MetadataResult&lt;MusicAlbum&gt;, MetadataFields[], Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_Order">MetadataService&lt;MusicAlbum, AlbumInfo&gt;.Order</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Providers.Music.html">MediaBrowser.Providers.Music</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Providers.dll</h6>
+  <h5 id="MediaBrowser_Providers_Music_AlbumMetadataService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AlbumMetadataService : MetadataService&lt;MusicAlbum, AlbumInfo&gt;, IMetadataService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Music_AlbumMetadataService__ctor_MediaBrowser_Controller_Configuration_IServerConfigurationManager_ILogger_MediaBrowser_Controller_Providers_IProviderManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Library_IUserDataManager_MediaBrowser_Controller_Library_ILibraryManager_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Music.AlbumMetadataService.%23ctor(MediaBrowser.Controller.Configuration.IServerConfigurationManager%2CILogger%2CMediaBrowser.Controller.Providers.IProviderManager%2CMediaBrowser.Model.IO.IFileSystem%2CMediaBrowser.Controller.Library.IUserDataManager%2CMediaBrowser.Controller.Library.ILibraryManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Music/AlbumMetadataService.cs/#L18">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Music_AlbumMetadataService__ctor_" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.#ctor*"></a>
+  <h4 id="MediaBrowser_Providers_Music_AlbumMetadataService__ctor_MediaBrowser_Controller_Configuration_IServerConfigurationManager_ILogger_MediaBrowser_Controller_Providers_IProviderManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Library_IUserDataManager_MediaBrowser_Controller_Library_ILibraryManager_" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.#ctor(MediaBrowser.Controller.Configuration.IServerConfigurationManager,ILogger,MediaBrowser.Controller.Providers.IProviderManager,MediaBrowser.Model.IO.IFileSystem,MediaBrowser.Controller.Library.IUserDataManager,MediaBrowser.Controller.Library.ILibraryManager)">AlbumMetadataService(IServerConfigurationManager, ILogger, IProviderManager, IFileSystem, IUserDataManager, ILibraryManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AlbumMetadataService(IServerConfigurationManager serverConfigurationManager, ILogger logger, IProviderManager providerManager, IFileSystem fileSystem, IUserDataManager userDataManager, ILibraryManager libraryManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">serverConfigurationManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.IProviderManager.html">IProviderManager</a></td>
+        <td><span class="parametername">providerManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserDataManager.html">IUserDataManager</a></td>
+        <td><span class="parametername">userDataManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a></td>
+        <td><span class="parametername">libraryManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Music_AlbumMetadataService_EnableUpdatingGenresFromChildren.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Music.AlbumMetadataService.EnableUpdatingGenresFromChildren%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Music/AlbumMetadataService.cs/#L33">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Music_AlbumMetadataService_EnableUpdatingGenresFromChildren_" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.EnableUpdatingGenresFromChildren*"></a>
+  <h4 id="MediaBrowser_Providers_Music_AlbumMetadataService_EnableUpdatingGenresFromChildren" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.EnableUpdatingGenresFromChildren">EnableUpdatingGenresFromChildren</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool EnableUpdatingGenresFromChildren { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MediaBrowser.Providers.Manager.MetadataService&lt;MediaBrowser.Controller.Entities.Audio.MusicAlbum, MediaBrowser.Controller.Providers.AlbumInfo&gt;.EnableUpdatingGenresFromChildren</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Music_AlbumMetadataService_EnableUpdatingPremiereDateFromChildren.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Music.AlbumMetadataService.EnableUpdatingPremiereDateFromChildren%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Music/AlbumMetadataService.cs/#L30">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Music_AlbumMetadataService_EnableUpdatingPremiereDateFromChildren_" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.EnableUpdatingPremiereDateFromChildren*"></a>
+  <h4 id="MediaBrowser_Providers_Music_AlbumMetadataService_EnableUpdatingPremiereDateFromChildren" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.EnableUpdatingPremiereDateFromChildren">EnableUpdatingPremiereDateFromChildren</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool EnableUpdatingPremiereDateFromChildren { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MediaBrowser.Providers.Manager.MetadataService&lt;MediaBrowser.Controller.Entities.Audio.MusicAlbum, MediaBrowser.Controller.Providers.AlbumInfo&gt;.EnableUpdatingPremiereDateFromChildren</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Music_AlbumMetadataService_EnableUpdatingStudiosFromChildren.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Music.AlbumMetadataService.EnableUpdatingStudiosFromChildren%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Music/AlbumMetadataService.cs/#L36">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Music_AlbumMetadataService_EnableUpdatingStudiosFromChildren_" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.EnableUpdatingStudiosFromChildren*"></a>
+  <h4 id="MediaBrowser_Providers_Music_AlbumMetadataService_EnableUpdatingStudiosFromChildren" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.EnableUpdatingStudiosFromChildren">EnableUpdatingStudiosFromChildren</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool EnableUpdatingStudiosFromChildren { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MediaBrowser.Providers.Manager.MetadataService&lt;MediaBrowser.Controller.Entities.Audio.MusicAlbum, MediaBrowser.Controller.Providers.AlbumInfo&gt;.EnableUpdatingStudiosFromChildren</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Music_AlbumMetadataService_GetChildrenForMetadataUpdates_MediaBrowser_Controller_Entities_Audio_MusicAlbum_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Music.AlbumMetadataService.GetChildrenForMetadataUpdates(MediaBrowser.Controller.Entities.Audio.MusicAlbum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Music/AlbumMetadataService.cs/#L39">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Music_AlbumMetadataService_GetChildrenForMetadataUpdates_" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.GetChildrenForMetadataUpdates*"></a>
+  <h4 id="MediaBrowser_Providers_Music_AlbumMetadataService_GetChildrenForMetadataUpdates_MediaBrowser_Controller_Entities_Audio_MusicAlbum_" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.GetChildrenForMetadataUpdates(MediaBrowser.Controller.Entities.Audio.MusicAlbum)">GetChildrenForMetadataUpdates(MusicAlbum)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IList&lt;BaseItem&gt; GetChildrenForMetadataUpdates(MusicAlbum item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.Audio.MusicAlbum.html">MusicAlbum</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MediaBrowser.Providers.Manager.MetadataService&lt;MediaBrowser.Controller.Entities.Audio.MusicAlbum, MediaBrowser.Controller.Providers.AlbumInfo&gt;.GetChildrenForMetadataUpdates(MediaBrowser.Controller.Entities.Audio.MusicAlbum)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Music_AlbumMetadataService_MergeData_MediaBrowser_Controller_Providers_MetadataResult_MediaBrowser_Controller_Entities_Audio_MusicAlbum__MediaBrowser_Controller_Providers_MetadataResult_MediaBrowser_Controller_Entities_Audio_MusicAlbum__MediaBrowser_Model_Entities_MetadataFields___System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Music.AlbumMetadataService.MergeData(MediaBrowser.Controller.Providers.MetadataResult%7BMediaBrowser.Controller.Entities.Audio.MusicAlbum%7D%2CMediaBrowser.Controller.Providers.MetadataResult%7BMediaBrowser.Controller.Entities.Audio.MusicAlbum%7D%2CMediaBrowser.Model.Entities.MetadataFields%5B%5D%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Music/AlbumMetadataService.cs/#L114">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Music_AlbumMetadataService_MergeData_" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.MergeData*"></a>
+  <h4 id="MediaBrowser_Providers_Music_AlbumMetadataService_MergeData_MediaBrowser_Controller_Providers_MetadataResult_MediaBrowser_Controller_Entities_Audio_MusicAlbum__MediaBrowser_Controller_Providers_MetadataResult_MediaBrowser_Controller_Entities_Audio_MusicAlbum__MediaBrowser_Model_Entities_MetadataFields___System_Boolean_System_Boolean_" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.MergeData(MediaBrowser.Controller.Providers.MetadataResult{MediaBrowser.Controller.Entities.Audio.MusicAlbum},MediaBrowser.Controller.Providers.MetadataResult{MediaBrowser.Controller.Entities.Audio.MusicAlbum},MediaBrowser.Model.Entities.MetadataFields[],System.Boolean,System.Boolean)">MergeData(MetadataResult&lt;MusicAlbum&gt;, MetadataResult&lt;MusicAlbum&gt;, MetadataFields[], Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void MergeData(MetadataResult&lt;MusicAlbum&gt; source, MetadataResult&lt;MusicAlbum&gt; target, MetadataFields[] lockedFields, bool replaceData, bool mergeMetadataSettings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataResult-1.html">MetadataResult</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.Audio.MusicAlbum.html">MusicAlbum</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataResult-1.html">MetadataResult</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.Audio.MusicAlbum.html">MusicAlbum</a>&gt;</td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.MetadataFields.html">MetadataFields</a>[]</td>
+        <td><span class="parametername">lockedFields</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">replaceData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">mergeMetadataSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MediaBrowser.Providers.Manager.MetadataService&lt;MediaBrowser.Controller.Entities.Audio.MusicAlbum, MediaBrowser.Controller.Providers.AlbumInfo&gt;.MergeData(MediaBrowser.Controller.Providers.MetadataResult&lt;MediaBrowser.Controller.Entities.Audio.MusicAlbum&gt;, MediaBrowser.Controller.Providers.MetadataResult&lt;MediaBrowser.Controller.Entities.Audio.MusicAlbum&gt;, MediaBrowser.Model.Entities.MetadataFields[], System.Boolean, System.Boolean)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Music_AlbumMetadataService_UpdateMetadataFromChildren_MediaBrowser_Controller_Entities_Audio_MusicAlbum_IList_MediaBrowser_Controller_Entities_BaseItem__System_Boolean_MediaBrowser_Controller_Library_ItemUpdateType_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Music.AlbumMetadataService.UpdateMetadataFromChildren(MediaBrowser.Controller.Entities.Audio.MusicAlbum%2CIList%7BMediaBrowser.Controller.Entities.BaseItem%7D%2CSystem.Boolean%2CMediaBrowser.Controller.Library.ItemUpdateType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Music/AlbumMetadataService.cs/#L46">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_Music_AlbumMetadataService_UpdateMetadataFromChildren_" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.UpdateMetadataFromChildren*"></a>
+  <h4 id="MediaBrowser_Providers_Music_AlbumMetadataService_UpdateMetadataFromChildren_MediaBrowser_Controller_Entities_Audio_MusicAlbum_IList_MediaBrowser_Controller_Entities_BaseItem__System_Boolean_MediaBrowser_Controller_Library_ItemUpdateType_" data-uid="MediaBrowser.Providers.Music.AlbumMetadataService.UpdateMetadataFromChildren(MediaBrowser.Controller.Entities.Audio.MusicAlbum,IList{MediaBrowser.Controller.Entities.BaseItem},System.Boolean,MediaBrowser.Controller.Library.ItemUpdateType)">UpdateMetadataFromChildren(MusicAlbum, IList&lt;BaseItem&gt;, Boolean, ItemUpdateType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ItemUpdateType UpdateMetadataFromChildren(MusicAlbum item, IList&lt;BaseItem&gt; children, bool isFullRefresh, ItemUpdateType currentUpdateType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.Audio.MusicAlbum.html">MusicAlbum</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;</td>
+        <td><span class="parametername">children</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isFullRefresh</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a></td>
+        <td><span class="parametername">currentUpdateType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MediaBrowser.Providers.Manager.MetadataService&lt;MediaBrowser.Controller.Entities.Audio.MusicAlbum, MediaBrowser.Controller.Providers.AlbumInfo&gt;.UpdateMetadataFromChildren(MediaBrowser.Controller.Entities.Audio.MusicAlbum, IList&lt;MediaBrowser.Controller.Entities.BaseItem&gt;, System.Boolean, MediaBrowser.Controller.Library.ItemUpdateType)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IMetadataService.html">IMetadataService</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_Music_AlbumMetadataService.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.Music.AlbumMetadataService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/Music/AlbumMetadataService.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

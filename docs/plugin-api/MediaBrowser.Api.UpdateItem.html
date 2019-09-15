@@ -1,0 +1,650 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UpdateItem
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UpdateItem
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Api.UpdateItem">
+  
+  
+  <h1 id="MediaBrowser_Api_UpdateItem" data-uid="MediaBrowser.Api.UpdateItem" class="text-break">Class UpdateItem
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a></div>
+    <div class="level2"><span class="xref">UpdateItem</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Model.Entities.IHasProviderIds.html">IHasProviderIds</a></div>
+    <div><a class="xref" href="MediaBrowser.Model.Dto.IItemDto.html">IItemDto</a></div>
+    <div><a class="xref" href="MediaBrowser.Model.Dto.IHasServerId.html">IHasServerId</a></div>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IReturnVoid.html">IReturnVoid</a></div>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IReturn.html">IReturn</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Name">BaseItemDto.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_OriginalTitle">BaseItemDto.OriginalTitle</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ServerId">BaseItemDto.ServerId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Id">BaseItemDto.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Etag">BaseItemDto.Etag</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SourceType">BaseItemDto.SourceType</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_PlaylistItemId">BaseItemDto.PlaylistItemId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_DateCreated">BaseItemDto.DateCreated</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_DateLastMediaAdded">BaseItemDto.DateLastMediaAdded</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ExtraType">BaseItemDto.ExtraType</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_AirsBeforeSeasonNumber">BaseItemDto.AirsBeforeSeasonNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_AirsAfterSeasonNumber">BaseItemDto.AirsAfterSeasonNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_AirsBeforeEpisodeNumber">BaseItemDto.AirsBeforeEpisodeNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_CanDelete">BaseItemDto.CanDelete</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_CanDownload">BaseItemDto.CanDownload</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_HasSubtitles">BaseItemDto.HasSubtitles</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_PreferredMetadataLanguage">BaseItemDto.PreferredMetadataLanguage</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_PreferredMetadataCountryCode">BaseItemDto.PreferredMetadataCountryCode</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SupportsSync">BaseItemDto.SupportsSync</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Container">BaseItemDto.Container</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SortName">BaseItemDto.SortName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ForcedSortName">BaseItemDto.ForcedSortName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Video3DFormat">BaseItemDto.Video3DFormat</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_PremiereDate">BaseItemDto.PremiereDate</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ExternalUrls">BaseItemDto.ExternalUrls</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_MediaSources">BaseItemDto.MediaSources</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_CriticRating">BaseItemDto.CriticRating</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ProductionLocations">BaseItemDto.ProductionLocations</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Path">BaseItemDto.Path</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_EnableMediaSourceDisplay">BaseItemDto.EnableMediaSourceDisplay</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_OfficialRating">BaseItemDto.OfficialRating</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_CustomRating">BaseItemDto.CustomRating</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ChannelId">BaseItemDto.ChannelId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ChannelName">BaseItemDto.ChannelName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Overview">BaseItemDto.Overview</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Taglines">BaseItemDto.Taglines</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Genres">BaseItemDto.Genres</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_CommunityRating">BaseItemDto.CommunityRating</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_CumulativeRunTimeTicks">BaseItemDto.CumulativeRunTimeTicks</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_RunTimeTicks">BaseItemDto.RunTimeTicks</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_PlayAccess">BaseItemDto.PlayAccess</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_AspectRatio">BaseItemDto.AspectRatio</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ProductionYear">BaseItemDto.ProductionYear</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IsPlaceHolder">BaseItemDto.IsPlaceHolder</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Number">BaseItemDto.Number</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ChannelNumber">BaseItemDto.ChannelNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IndexNumber">BaseItemDto.IndexNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IndexNumberEnd">BaseItemDto.IndexNumberEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ParentIndexNumber">BaseItemDto.ParentIndexNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_RemoteTrailers">BaseItemDto.RemoteTrailers</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ProviderIds">BaseItemDto.ProviderIds</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IsHD">BaseItemDto.IsHD</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IsFolder">BaseItemDto.IsFolder</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ParentId">BaseItemDto.ParentId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Type">BaseItemDto.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_People">BaseItemDto.People</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Studios">BaseItemDto.Studios</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_GenreItems">BaseItemDto.GenreItems</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ParentLogoItemId">BaseItemDto.ParentLogoItemId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ParentBackdropItemId">BaseItemDto.ParentBackdropItemId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ParentBackdropImageTags">BaseItemDto.ParentBackdropImageTags</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_LocalTrailerCount">BaseItemDto.LocalTrailerCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_UserData">BaseItemDto.UserData</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_RecursiveItemCount">BaseItemDto.RecursiveItemCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ChildCount">BaseItemDto.ChildCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SeriesName">BaseItemDto.SeriesName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SeriesId">BaseItemDto.SeriesId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SeasonId">BaseItemDto.SeasonId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SpecialFeatureCount">BaseItemDto.SpecialFeatureCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_DisplayPreferencesId">BaseItemDto.DisplayPreferencesId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Status">BaseItemDto.Status</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_AirTime">BaseItemDto.AirTime</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_AirDays">BaseItemDto.AirDays</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Tags">BaseItemDto.Tags</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_PrimaryImageAspectRatio">BaseItemDto.PrimaryImageAspectRatio</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Artists">BaseItemDto.Artists</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ArtistItems">BaseItemDto.ArtistItems</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Album">BaseItemDto.Album</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_CollectionType">BaseItemDto.CollectionType</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_DisplayOrder">BaseItemDto.DisplayOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_AlbumId">BaseItemDto.AlbumId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_AlbumPrimaryImageTag">BaseItemDto.AlbumPrimaryImageTag</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SeriesPrimaryImageTag">BaseItemDto.SeriesPrimaryImageTag</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_AlbumArtist">BaseItemDto.AlbumArtist</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_AlbumArtists">BaseItemDto.AlbumArtists</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SeasonName">BaseItemDto.SeasonName</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_MediaStreams">BaseItemDto.MediaStreams</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_VideoType">BaseItemDto.VideoType</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_PartCount">BaseItemDto.PartCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_MediaSourceCount">BaseItemDto.MediaSourceCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ImageTags">BaseItemDto.ImageTags</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_BackdropImageTags">BaseItemDto.BackdropImageTags</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ScreenshotImageTags">BaseItemDto.ScreenshotImageTags</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ParentLogoImageTag">BaseItemDto.ParentLogoImageTag</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ParentArtItemId">BaseItemDto.ParentArtItemId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ParentArtImageTag">BaseItemDto.ParentArtImageTag</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SeriesThumbImageTag">BaseItemDto.SeriesThumbImageTag</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SeriesStudio">BaseItemDto.SeriesStudio</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ParentThumbItemId">BaseItemDto.ParentThumbItemId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ParentThumbImageTag">BaseItemDto.ParentThumbImageTag</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ParentPrimaryImageItemId">BaseItemDto.ParentPrimaryImageItemId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ParentPrimaryImageTag">BaseItemDto.ParentPrimaryImageTag</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Chapters">BaseItemDto.Chapters</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_LocationType">BaseItemDto.LocationType</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IsoType">BaseItemDto.IsoType</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_MediaType">BaseItemDto.MediaType</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_EndDate">BaseItemDto.EndDate</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_LockedFields">BaseItemDto.LockedFields</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_TrailerCount">BaseItemDto.TrailerCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_MovieCount">BaseItemDto.MovieCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SeriesCount">BaseItemDto.SeriesCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ProgramCount">BaseItemDto.ProgramCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_EpisodeCount">BaseItemDto.EpisodeCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SongCount">BaseItemDto.SongCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_AlbumCount">BaseItemDto.AlbumCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ArtistCount">BaseItemDto.ArtistCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_MusicVideoCount">BaseItemDto.MusicVideoCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_LockData">BaseItemDto.LockData</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Width">BaseItemDto.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Height">BaseItemDto.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_CameraMake">BaseItemDto.CameraMake</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_CameraModel">BaseItemDto.CameraModel</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Software">BaseItemDto.Software</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ExposureTime">BaseItemDto.ExposureTime</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_FocalLength">BaseItemDto.FocalLength</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ImageOrientation">BaseItemDto.ImageOrientation</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Aperture">BaseItemDto.Aperture</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ShutterSpeed">BaseItemDto.ShutterSpeed</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Latitude">BaseItemDto.Latitude</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Longitude">BaseItemDto.Longitude</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Altitude">BaseItemDto.Altitude</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IsoSpeedRating">BaseItemDto.IsoSpeedRating</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_SeriesTimerId">BaseItemDto.SeriesTimerId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ProgramId">BaseItemDto.ProgramId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ChannelPrimaryImageTag">BaseItemDto.ChannelPrimaryImageTag</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_StartDate">BaseItemDto.StartDate</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_CompletionPercentage">BaseItemDto.CompletionPercentage</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IsRepeat">BaseItemDto.IsRepeat</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_EpisodeTitle">BaseItemDto.EpisodeTitle</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_ChannelType">BaseItemDto.ChannelType</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_Audio">BaseItemDto.Audio</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IsMovie">BaseItemDto.IsMovie</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IsSports">BaseItemDto.IsSports</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IsSeries">BaseItemDto.IsSeries</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IsLive">BaseItemDto.IsLive</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IsNews">BaseItemDto.IsNews</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IsKids">BaseItemDto.IsKids</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_IsPremiere">BaseItemDto.IsPremiere</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_TimerId">BaseItemDto.TimerId</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html#MediaBrowser_Model_Dto_BaseItemDto_CurrentProgram">BaseItemDto.CurrentProgram</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Api.html">MediaBrowser.Api</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Api.dll</h6>
+  <h5 id="MediaBrowser_Api_UpdateItem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UpdateItem : BaseItemDto, IHasProviderIds, IItemDto, IHasServerId, IReturnVoid, IReturn</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_UpdateItem_ItemId.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.UpdateItem.ItemId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ItemUpdateService.cs/#L25">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_UpdateItem_ItemId_" data-uid="MediaBrowser.Api.UpdateItem.ItemId*"></a>
+  <h4 id="MediaBrowser_Api_UpdateItem_ItemId" data-uid="MediaBrowser.Api.UpdateItem.ItemId">ItemId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ItemId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Entities.IHasProviderIds.html">IHasProviderIds</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.IItemDto.html">IItemDto</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Dto.IHasServerId.html">IHasServerId</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IReturnVoid.html">IReturnVoid</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IReturn.html">IReturn</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_UpdateItem.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.UpdateItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ItemUpdateService.cs/#L22" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

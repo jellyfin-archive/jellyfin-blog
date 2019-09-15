@@ -1,0 +1,540 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SubtitleService
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SubtitleService
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Api.Subtitles.SubtitleService">
+  
+  
+  <h1 id="MediaBrowser_Api_Subtitles_SubtitleService" data-uid="MediaBrowser.Api.Subtitles.SubtitleService" class="text-break">Class SubtitleService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MediaBrowser.Api.BaseApiService.html">BaseApiService</a></div>
+    <div class="level2"><span class="xref">SubtitleService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IService.html">IService</a></div>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IRequiresRequest.html">IRequiresRequest</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_Logger">BaseApiService.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_ResultFactory">BaseApiService.ResultFactory</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_Request">BaseApiService.Request</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetHeader_System_String_">BaseApiService.GetHeader(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_SplitValue_System_String_System_Char_">BaseApiService.SplitValue(String, Char)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetGuids_System_String_">BaseApiService.GetGuids(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_ToOptimizedResult__1___0_">BaseApiService.ToOptimizedResult&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_AssertCanUpdateUser_MediaBrowser_Controller_Net_IAuthorizationContext_MediaBrowser_Controller_Library_IUserManager_Guid_System_Boolean_">BaseApiService.AssertCanUpdateUser(IAuthorizationContext, IUserManager, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetSession_MediaBrowser_Controller_Net_ISessionContext_">BaseApiService.GetSession(ISessionContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetDtoOptions_MediaBrowser_Controller_Net_IAuthorizationContext_System_Object_">BaseApiService.GetDtoOptions(IAuthorizationContext, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetArtist_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetArtist(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetStudio_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetStudio(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetGenre_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetGenre(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetMusicGenre_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetMusicGenre(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetPerson_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetPerson(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetPathValue_System_Int32_">BaseApiService.GetPathValue(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetItemByName_System_String_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetItemByName(String, String, ILibraryManager, DtoOptions)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Api.Subtitles.html">MediaBrowser.Api.Subtitles</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Api.dll</h6>
+  <h5 id="MediaBrowser_Api_Subtitles_SubtitleService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SubtitleService : BaseApiService, IService, IRequiresRequest</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Subtitles_SubtitleService__ctor_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Subtitles_ISubtitleManager_MediaBrowser_Controller_MediaEncoding_ISubtitleEncoder_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Controller_Providers_IProviderManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Net_IAuthorizationContext_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Subtitles.SubtitleService.%23ctor(MediaBrowser.Controller.Library.ILibraryManager%2CMediaBrowser.Controller.Subtitles.ISubtitleManager%2CMediaBrowser.Controller.MediaEncoding.ISubtitleEncoder%2CMediaBrowser.Controller.Library.IMediaSourceManager%2CMediaBrowser.Controller.Providers.IProviderManager%2CMediaBrowser.Model.IO.IFileSystem%2CMediaBrowser.Controller.Net.IAuthorizationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Subtitles/SubtitleService.cs/#L133">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Subtitles_SubtitleService__ctor_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.#ctor*"></a>
+  <h4 id="MediaBrowser_Api_Subtitles_SubtitleService__ctor_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Subtitles_ISubtitleManager_MediaBrowser_Controller_MediaEncoding_ISubtitleEncoder_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Controller_Providers_IProviderManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Net_IAuthorizationContext_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.#ctor(MediaBrowser.Controller.Library.ILibraryManager,MediaBrowser.Controller.Subtitles.ISubtitleManager,MediaBrowser.Controller.MediaEncoding.ISubtitleEncoder,MediaBrowser.Controller.Library.IMediaSourceManager,MediaBrowser.Controller.Providers.IProviderManager,MediaBrowser.Model.IO.IFileSystem,MediaBrowser.Controller.Net.IAuthorizationContext)">SubtitleService(ILibraryManager, ISubtitleManager, ISubtitleEncoder, IMediaSourceManager, IProviderManager, IFileSystem, IAuthorizationContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubtitleService(ILibraryManager libraryManager, ISubtitleManager subtitleManager, ISubtitleEncoder subtitleEncoder, IMediaSourceManager mediaSourceManager, IProviderManager providerManager, IFileSystem fileSystem, IAuthorizationContext authContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a></td>
+        <td><span class="parametername">libraryManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Subtitles.ISubtitleManager.html">ISubtitleManager</a></td>
+        <td><span class="parametername">subtitleManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.ISubtitleEncoder.html">ISubtitleEncoder</a></td>
+        <td><span class="parametername">subtitleEncoder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IMediaSourceManager.html">IMediaSourceManager</a></td>
+        <td><span class="parametername">mediaSourceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.IProviderManager.html">IProviderManager</a></td>
+        <td><span class="parametername">providerManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Net.IAuthorizationContext.html">IAuthorizationContext</a></td>
+        <td><span class="parametername">authContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Subtitles_SubtitleService_Delete_MediaBrowser_Api_Subtitles_DeleteSubtitle_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Subtitles.SubtitleService.Delete(MediaBrowser.Api.Subtitles.DeleteSubtitle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Subtitles/SubtitleService.cs/#L258">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Subtitles_SubtitleService_Delete_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.Delete*"></a>
+  <h4 id="MediaBrowser_Api_Subtitles_SubtitleService_Delete_MediaBrowser_Api_Subtitles_DeleteSubtitle_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.Delete(MediaBrowser.Api.Subtitles.DeleteSubtitle)">Delete(DeleteSubtitle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Delete(DeleteSubtitle request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Subtitles.DeleteSubtitle.html">DeleteSubtitle</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Subtitles_SubtitleService_Get_MediaBrowser_Api_Subtitles_GetRemoteSubtitles_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Subtitles.SubtitleService.Get(MediaBrowser.Api.Subtitles.GetRemoteSubtitles)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Subtitles/SubtitleService.cs/#L264">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Subtitles_SubtitleService_Get_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Subtitles_SubtitleService_Get_MediaBrowser_Api_Subtitles_GetRemoteSubtitles_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.Get(MediaBrowser.Api.Subtitles.GetRemoteSubtitles)">Get(GetRemoteSubtitles)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetRemoteSubtitles request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Subtitles.GetRemoteSubtitles.html">GetRemoteSubtitles</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Subtitles_SubtitleService_Get_MediaBrowser_Api_Subtitles_GetSubtitle_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Subtitles.SubtitleService.Get(MediaBrowser.Api.Subtitles.GetSubtitle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Subtitles/SubtitleService.cs/#L199">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Subtitles_SubtitleService_Get_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Subtitles_SubtitleService_Get_MediaBrowser_Api_Subtitles_GetSubtitle_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.Get(MediaBrowser.Api.Subtitles.GetSubtitle)">Get(GetSubtitle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetSubtitle request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Subtitles.GetSubtitle.html">GetSubtitle</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Subtitles_SubtitleService_Get_MediaBrowser_Api_Subtitles_GetSubtitlePlaylist_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Subtitles.SubtitleService.Get(MediaBrowser.Api.Subtitles.GetSubtitlePlaylist)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Subtitles/SubtitleService.cs/#L144">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Subtitles_SubtitleService_Get_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Subtitles_SubtitleService_Get_MediaBrowser_Api_Subtitles_GetSubtitlePlaylist_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.Get(MediaBrowser.Api.Subtitles.GetSubtitlePlaylist)">Get(GetSubtitlePlaylist)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetSubtitlePlaylist request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Subtitles.GetSubtitlePlaylist.html">GetSubtitlePlaylist</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Subtitles_SubtitleService_Get_MediaBrowser_Api_Subtitles_SearchRemoteSubtitles_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Subtitles.SubtitleService.Get(MediaBrowser.Api.Subtitles.SearchRemoteSubtitles)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Subtitles/SubtitleService.cs/#L251">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Subtitles_SubtitleService_Get_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Subtitles_SubtitleService_Get_MediaBrowser_Api_Subtitles_SearchRemoteSubtitles_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.Get(MediaBrowser.Api.Subtitles.SearchRemoteSubtitles)">Get(SearchRemoteSubtitles)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(SearchRemoteSubtitles request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Subtitles.SearchRemoteSubtitles.html">SearchRemoteSubtitles</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Subtitles_SubtitleService_Post_MediaBrowser_Api_Subtitles_DownloadRemoteSubtitles_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Subtitles.SubtitleService.Post(MediaBrowser.Api.Subtitles.DownloadRemoteSubtitles)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Subtitles/SubtitleService.cs/#L271">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Subtitles_SubtitleService_Post_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.Post*"></a>
+  <h4 id="MediaBrowser_Api_Subtitles_SubtitleService_Post_MediaBrowser_Api_Subtitles_DownloadRemoteSubtitles_" data-uid="MediaBrowser.Api.Subtitles.SubtitleService.Post(MediaBrowser.Api.Subtitles.DownloadRemoteSubtitles)">Post(DownloadRemoteSubtitles)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Post(DownloadRemoteSubtitles request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Subtitles.DownloadRemoteSubtitles.html">DownloadRemoteSubtitles</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IService.html">IService</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IRequiresRequest.html">IRequiresRequest</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Subtitles_SubtitleService.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Subtitles.SubtitleService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Subtitles/SubtitleService.cs/#L123" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

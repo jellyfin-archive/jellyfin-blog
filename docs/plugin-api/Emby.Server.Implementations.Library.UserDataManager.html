@@ -1,0 +1,896 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UserDataManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UserDataManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.Library.UserDataManager">
+  
+  
+  <h1 id="Emby_Server_Implementations_Library_UserDataManager" data-uid="Emby.Server.Implementations.Library.UserDataManager" class="text-break">Class UserDataManager
+  </h1>
+  <div class="markdown level0 summary"><p>Class UserDataManager</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UserDataManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.Library.IUserDataManager.html">IUserDataManager</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.Library.html">Emby.Server.Implementations.Library</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_Library_UserDataManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UserDataManager : object, IUserDataManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager__ctor_ILoggerFactory_MediaBrowser_Controller_Configuration_IServerConfigurationManager_Func_MediaBrowser_Controller_Library_IUserManager__.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.%23ctor(ILoggerFactory%2CMediaBrowser.Controller.Configuration.IServerConfigurationManager%2CFunc%7BMediaBrowser.Controller.Library.IUserManager%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L32">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager__ctor_" data-uid="Emby.Server.Implementations.Library.UserDataManager.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager__ctor_ILoggerFactory_MediaBrowser_Controller_Configuration_IServerConfigurationManager_Func_MediaBrowser_Controller_Library_IUserManager__" data-uid="Emby.Server.Implementations.Library.UserDataManager.#ctor(ILoggerFactory,MediaBrowser.Controller.Configuration.IServerConfigurationManager,Func{MediaBrowser.Controller.Library.IUserManager})">UserDataManager(ILoggerFactory, IServerConfigurationManager, Func&lt;IUserManager&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserDataManager(ILoggerFactory loggerFactory, IServerConfigurationManager config, Func&lt;IUserManager&gt; userManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.IUserManager.html">IUserManager</a>&gt;</td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_Repository.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.Repository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L43">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager_Repository_" data-uid="Emby.Server.Implementations.Library.UserDataManager.Repository*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_Repository" data-uid="Emby.Server.Implementations.Library.UserDataManager.Repository">Repository</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUserDataRepository Repository { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Persistence.IUserDataRepository.html">IUserDataRepository</a></td>
+        <td><p>The repository.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_GetAllUserData_Guid_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.GetAllUserData(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L106">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager_GetAllUserData_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetAllUserData*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_GetAllUserData_Guid_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetAllUserData(Guid)">GetAllUserData(Guid)</h4>
+  <div class="markdown level1 summary"><p>Retrieve all user data for the given user</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;UserItemData&gt; GetAllUserData(Guid userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.UserItemData.html">UserItemData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_GetUserData_Guid_Guid_List_System_String__.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.GetUserData(Guid%2CGuid%2CList%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L113">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager_GetUserData_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserData*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_GetUserData_Guid_Guid_List_System_String__" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserData(Guid,Guid,List{System.String})">GetUserData(Guid, Guid, List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserItemData GetUserData(Guid userId, Guid itemId, List&lt;string&gt; keys)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">keys</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.UserItemData.html">UserItemData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_GetUserData_Guid_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.GetUserData(Guid%2CMediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L168">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager_GetUserData_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserData*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_GetUserData_Guid_MediaBrowser_Controller_Entities_BaseItem_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserData(Guid,MediaBrowser.Controller.Entities.BaseItem)">GetUserData(Guid, BaseItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserItemData GetUserData(Guid userId, BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.UserItemData.html">UserItemData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_GetUserData_MediaBrowser_Controller_Entities_User_Guid_List_System_String__.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.GetUserData(MediaBrowser.Controller.Entities.User%2CGuid%2CList%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L120">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager_GetUserData_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserData*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_GetUserData_MediaBrowser_Controller_Entities_User_Guid_List_System_String__" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserData(MediaBrowser.Controller.Entities.User,Guid,List{System.String})">GetUserData(User, Guid, List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserItemData GetUserData(User user, Guid itemId, List&lt;string&gt; keys)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">keys</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.UserItemData.html">UserItemData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_GetUserData_MediaBrowser_Controller_Entities_User_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.GetUserData(MediaBrowser.Controller.Entities.User%2CMediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L158">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager_GetUserData_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserData*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_GetUserData_MediaBrowser_Controller_Entities_User_MediaBrowser_Controller_Entities_BaseItem_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserData(MediaBrowser.Controller.Entities.User,MediaBrowser.Controller.Entities.BaseItem)">GetUserData(User, BaseItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserItemData GetUserData(User user, BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.UserItemData.html">UserItemData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_GetUserData_System_String_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.GetUserData(System.String%2CMediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L163">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager_GetUserData_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserData*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_GetUserData_System_String_MediaBrowser_Controller_Entities_BaseItem_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserData(System.String,MediaBrowser.Controller.Entities.BaseItem)">GetUserData(String, BaseItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserItemData GetUserData(string userId, BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.UserItemData.html">UserItemData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_GetUserDataDto_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.GetUserDataDto(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L173">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager_GetUserDataDto_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserDataDto*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_GetUserDataDto_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Entities_User_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserDataDto(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Controller.Entities.User)">GetUserDataDto(BaseItem, User)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserItemDataDto GetUserDataDto(BaseItem item, User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dto.UserItemDataDto.html">UserItemDataDto</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_GetUserDataDto_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Dto_BaseItemDto_MediaBrowser_Controller_Entities_User_MediaBrowser_Controller_Dto_DtoOptions_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.GetUserDataDto(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Model.Dto.BaseItemDto%2CMediaBrowser.Controller.Entities.User%2CMediaBrowser.Controller.Dto.DtoOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L182">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager_GetUserDataDto_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserDataDto*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_GetUserDataDto_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Dto_BaseItemDto_MediaBrowser_Controller_Entities_User_MediaBrowser_Controller_Dto_DtoOptions_" data-uid="Emby.Server.Implementations.Library.UserDataManager.GetUserDataDto(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Model.Dto.BaseItemDto,MediaBrowser.Controller.Entities.User,MediaBrowser.Controller.Dto.DtoOptions)">GetUserDataDto(BaseItem, BaseItemDto, User, DtoOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserItemDataDto GetUserDataDto(BaseItem item, BaseItemDto itemDto, User user, DtoOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a></td>
+        <td><span class="parametername">itemDto</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dto.DtoOptions.html">DtoOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dto.UserItemDataDto.html">UserItemDataDto</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_SaveAllUserData_Guid_MediaBrowser_Controller_Entities_UserItemData___CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.SaveAllUserData(Guid%2CMediaBrowser.Controller.Entities.UserItemData%5B%5D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L94">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager_SaveAllUserData_" data-uid="Emby.Server.Implementations.Library.UserDataManager.SaveAllUserData*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_SaveAllUserData_Guid_MediaBrowser_Controller_Entities_UserItemData___CancellationToken_" data-uid="Emby.Server.Implementations.Library.UserDataManager.SaveAllUserData(Guid,MediaBrowser.Controller.Entities.UserItemData[],CancellationToken)">SaveAllUserData(Guid, UserItemData[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Save the provided user data for the given user.  Batch operation. Does not fire any events or update the cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveAllUserData(Guid userId, UserItemData[] userData, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.UserItemData.html">UserItemData</a>[]</td>
+        <td><span class="parametername">userData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_SaveUserData_Guid_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Entities_UserItemData_MediaBrowser_Model_Entities_UserDataSaveReason_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.SaveUserData(Guid%2CMediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Controller.Entities.UserItemData%2CMediaBrowser.Model.Entities.UserDataSaveReason%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L45">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager_SaveUserData_" data-uid="Emby.Server.Implementations.Library.UserDataManager.SaveUserData*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_SaveUserData_Guid_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Entities_UserItemData_MediaBrowser_Model_Entities_UserDataSaveReason_CancellationToken_" data-uid="Emby.Server.Implementations.Library.UserDataManager.SaveUserData(Guid,MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Controller.Entities.UserItemData,MediaBrowser.Model.Entities.UserDataSaveReason,CancellationToken)">SaveUserData(Guid, BaseItem, UserItemData, UserDataSaveReason, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveUserData(Guid userId, BaseItem item, UserItemData userData, UserDataSaveReason reason, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.UserItemData.html">UserItemData</a></td>
+        <td><span class="parametername">userData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.UserDataSaveReason.html">UserDataSaveReason</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_SaveUserData_MediaBrowser_Controller_Entities_User_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Entities_UserItemData_MediaBrowser_Model_Entities_UserDataSaveReason_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.SaveUserData(MediaBrowser.Controller.Entities.User%2CMediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Controller.Entities.UserItemData%2CMediaBrowser.Model.Entities.UserDataSaveReason%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L52">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager_SaveUserData_" data-uid="Emby.Server.Implementations.Library.UserDataManager.SaveUserData*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_SaveUserData_MediaBrowser_Controller_Entities_User_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Entities_UserItemData_MediaBrowser_Model_Entities_UserDataSaveReason_CancellationToken_" data-uid="Emby.Server.Implementations.Library.UserDataManager.SaveUserData(MediaBrowser.Controller.Entities.User,MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Controller.Entities.UserItemData,MediaBrowser.Model.Entities.UserDataSaveReason,CancellationToken)">SaveUserData(User, BaseItem, UserItemData, UserDataSaveReason, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveUserData(User user, BaseItem item, UserItemData userData, UserDataSaveReason reason, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.UserItemData.html">UserItemData</a></td>
+        <td><span class="parametername">userData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.UserDataSaveReason.html">UserDataSaveReason</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_UpdatePlayState_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Entities_UserItemData_System_Nullable_System_Int64__.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.UpdatePlayState(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Controller.Entities.UserItemData%2CSystem.Nullable%7BSystem.Int64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L217">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Library_UserDataManager_UpdatePlayState_" data-uid="Emby.Server.Implementations.Library.UserDataManager.UpdatePlayState*"></a>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_UpdatePlayState_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Entities_UserItemData_System_Nullable_System_Int64__" data-uid="Emby.Server.Implementations.Library.UserDataManager.UpdatePlayState(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Controller.Entities.UserItemData,System.Nullable{System.Int64})">UpdatePlayState(BaseItem, UserItemData, Nullable&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdatePlayState(BaseItem item, UserItemData data, long? reportedPositionTicks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.UserItemData.html">UserItemData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">reportedPositionTicks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager_UserDataSaved.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager.UserDataSaved%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L22">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Library_UserDataManager_UserDataSaved" data-uid="Emby.Server.Implementations.Library.UserDataManager.UserDataSaved">UserDataSaved</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;UserDataSaveEventArgs&gt; UserDataSaved</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.UserDataSaveEventArgs.html">UserDataSaveEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Library.IUserDataManager.html">IUserDataManager</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Library_UserDataManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Library.UserDataManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Library/UserDataManager.cs/#L20" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Reverse Proxy | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Reverse Proxy | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="admin-reverse-proxy">
+<h1 id="running-jellyfin-behind-a-reverse-proxy">Running Jellyfin Behind a Reverse Proxy</h1>
+
+<p>It&#39;s possible to run Jellyfin behind another server acting as a reverse proxy.  With a reverse proxy setup, this server handles all network traffic and proxies it back to Jellyfin. This provides the benefits of using DNS names and not having to remember port numbers, as well as easier integration and management of SSL certificates.</p>
+<p>Three popular options for reverse proxy systems are <a href="https://httpd.apache.org/">Apache</a>, <a href="https://www.haproxy.com/">Haproxy</a>, and <a href="https://www.nginx.com/">Nginx</a>.</p>
+<p><strong>Important:</strong> In order for a reverse proxy to have the maximum benefit, you should have a publically routable IP address and a domain with DNS set up correctly.  These examples assume you want to run Jellyfin under a sub-domain (ie: jellyfin.example.com), but are easily adapted for the root domain if desired.</p>
+<p>When following this guide, be sure to replace the following variables with your information:</p>
+<ul>
+<li><code>DOMAIN_NAME</code> - Your public domain name to access Jellyfin on (e.g. jellyfin.example.com)</li>
+<li><code>SERVER_IP_ADDRESS</code> - The IP address of your Jellyfin server (if the reverse proxy is on the same server use 127.0.0.1)</li>
+</ul>
+<p>In addition, the examples are configured for use with LetsEncrypt certificates.  If you have a certificate from another source, change the ssl configuration from <code>/etc/letsencrypt/DOMAIN_NAME/</code> to the location of your certificate and key.
+Ports 80 and 443 (pointing to the proxy server) need to be opened on your Firewall/Router.</p>
+<h2 id="apache">Apache</h2>
+<pre><code>&lt;VirtualHost *:80&gt;
+    ServerName DOMAIN_NAME
+
+    # Uncomment for HTTP to HTTPS redirect
+    # Redirect permanent / https://DOMAIN_NAME
+
+    ErrorLog /var/log/apache2/DOMAIN_NAME-error.log
+    CustomLog /var/log/apache2/DOMAIN_NAME-access.log combined
+&lt;/VirtualHost&gt;
+
+# Uncomment this section after you have acquired a SSL Certificate
+# If you are not using a SSL certificate, replace the &#39;redirect&#39;
+# line above with all lines below starting with &#39;Proxy&#39;
+#&lt;IfModule mod_ssl.c&gt;
+#&lt;VirtualHost *:443&gt;
+#    ServerName DOMAIN_NAME
+#
+#    ProxyPreserveHost On
+#
+#    ProxyPass &quot;/embywebsocket&quot; &quot;ws://SERVER_IP_ADDRESS:8096/embywebsocket&quot;
+#    ProxyPassReverse &quot;/embywebsocket&quot; &quot;ws://SERVER_IP_ADDRESS:8096/embywebsocket&quot;
+#
+#    ProxyPass &quot;/&quot; &quot;http://SERVER_IP_ADDRESS:8096/&quot;
+#    ProxyPassReverse &quot;/&quot; &quot;http://SERVER_IP_ADDRESS:8096/&quot;
+#
+#    SSLEngine on
+#    SSLCertificateFile /etc/letsencrypt/DOMAIN_NAME/fullchain.pem
+#    SSLCertificateKeyFile /etc/letsencrypt/DOMAIN_NAME/privkey.pem
+#    Protocols h2 http/1.1
+#
+#    ErrorLog /var/log/apache2/DOMAIN_NAME-error.log
+#    CustomLog /var/log/apache2/DOMAIN_NAME-access.log combined
+#&lt;/VirtualHost&gt;
+#&lt;/IfModule&gt;
+</code></pre><p>If you encouter errors, you may have to enable <code>mod_proxy</code> or <code>mod_ssl</code> support manually.</p>
+<pre><code>$ sudo a2enmod proxy proxy_http ssl
+</code></pre><h2 id="haproxy">HAProxy</h2>
+<pre><code>frontend jellyfin_proxy
+    bind *:80
+
+# Note that haproxy requires you to concatenate the certificate and key into a single file
+# Uncomment the appropriate lines after you have acquired a SSL Certificate
+## HAProxy &lt;1.7
+#    bind *:443 ssl crt /etc/ssl/DOMAIN_NAME.pem
+## HAProxy &gt;1.8
+#    bind *:443 ssl crt /etc/ssl/DOMAIN_NAME.pem alpn h2,http/1.1
+#    redirect scheme https if !{ ssl_fc }
+
+# Uncomment these lines to allow LetsEncrypt authentication
+#    acl letsencrypt_auth path_beg /.well-known/acme-challenge/
+#    use_backend letsencrypt if letsencrypt_auth
+
+    acl jellyfin_server hdr(host) -i DOMAIN_NAME
+    use_backend jellyfin if jellyfin_server
+
+backend jellyfin
+    http-request set-header X-Forwarded-Port %[dst_port]
+    http-request add-header X-Forwarded-Proto https if { ssl_fc }
+    server jellyfin SERVER_IP_ADDRESS:8096
+
+# Uncomment these lines to allow LetsEncrypt authentication
+#backend letsencrypt
+#    server letsencrypt 127.0.0.1:8888
+</code></pre><h2 id="nginx">Nginx</h2>
+<p>Create the following file <code>/etc/nginx/conf.d/jellyfin.conf</code></p>
+<pre><code>server {
+    listen 80;
+    server_name DOMAIN_NAME;
+
+    # Uncomment to redirect HTTP to HTTPS
+    # return 301 https://$host$request_uri;
+}
+
+# Uncomment this section after you have acquired a SSL Certificate
+#server {
+#    listen 443 ssl http2;
+#    server_name DOMAIN_NAME;
+#    ssl_certificate /etc/letsencrypt/live/DOMAIN_NAME/fullchain.pem;
+#    ssl_certificate_key /etc/letsencrypt/live/DOMAIN_NAME/privkey.pem;
+#    include /etc/letsencrypt/options-ssl-nginx.conf;
+#    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+#    add_header Strict-Transport-Security &quot;max-age=31536000&quot; always;
+#    ssl_trusted_certificate /etc/letsencrypt/live/DOMAIN_NAME/chain.pem;
+#    ssl_stapling on;
+#    ssl_stapling_verify on;
+#
+#    location / {
+#        # Proxy main Jellyfin traffic
+#        proxy_pass http://SERVER_IP_ADDRESS:8096;
+#        proxy_set_header Host $host;
+#        proxy_set_header X-Real-IP $remote_addr;
+#        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#        proxy_set_header X-Forwarded-Proto $scheme;
+#        proxy_set_header X-Forwarded-Protocol $scheme;
+#        proxy_set_header X-Forwarded-Host $http_host;
+#
+#        # Disable buffering when the nginx proxy gets very resource heavy upon streaming
+#        proxy_buffering off;
+#    }
+#    location /embywebsocket {
+#        # Proxy Jellyfin Websockets traffic
+#        proxy_pass http://SERVER_IP_ADDRESS:8096;
+#        proxy_http_version 1.1;
+#        proxy_set_header Upgrade $http_upgrade;
+#        proxy_set_header Connection &quot;upgrade&quot;;
+#        proxy_set_header Host $host;
+#        proxy_set_header X-Real-IP $remote_addr;
+#        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#        proxy_set_header X-Forwarded-Proto $scheme;
+#        proxy_set_header X-Forwarded-Protocol $scheme;
+#        proxy_set_header X-Forwarded-Host $http_host;
+#    }
+#}
+</code></pre><h2 id="nginx-with-subpath">Nginx with subpath</h2>
+<p>When connecting to server from a client application, enter <code>http(s)://DOMAIN_NAME/jellyfin</code> in the address field, and <strong>clear the port field</strong>.
+Not all clients may handle this properly, but this is currently working for the web and Android clients.</p>
+<pre><code># Jellyfin hosted on http(s)://DOMAIN_NAME/jellyfin
+
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name DOMAIN_NAME;
+    # You can specify multiple domain names if you want
+    #server_name jellyfin.local;
+
+    # Uncomment and create directory to also host static content
+    #root /srv/http/media;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    # Jellyfin
+    location /jellyfin {
+        return 302 $scheme://$host/jellyfin/;
+    }
+
+    location /jellyfin/ {
+        # Proxy main Jellyfin traffic
+        # The / at the end is significant.
+        proxy_pass http://SERVER_IP_ADDRESS:8096/;
+
+        proxy_pass_request_headers on;
+
+        proxy_set_header Host $host;
+
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Host $http_host;
+
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection $http_connection;
+    }
+}
+</code></pre><h2 id="letsencrypt-with-certbot">LetsEncrypt with Certbot</h2>
+<p>LetsEncrypt is a service that provides free SSL/TLS certificates to users.  Certbot is a client that makes this easy to accomplish and automate.  In addition, it has plugins for Apache and Nginx that make automating certificate generation even easier.</p>
+<p>Installation instructions for most Linux distributions can be found on the <a href="https://certbot.eff.org/docs/install.html#operating-system-packages">Certbot website</a>.</p>
+<p>Once the packages are installed, you&#39;re ready to generate a new certificate.</p>
+<h3 id="apache-1">Apache</h3>
+<p>After installing certbot and the Apache plugin, certificate generation is accomplished by:</p>
+<p><code>certbot certonly --apache --noninteractive --agree-tos --email YOUR_EMAIL -d DOMAIN_NAME</code></p>
+<p>Update the &#39;SSLCertificateFile&#39; and &#39;SSLCertificateKeyFile&#39; sections, then restart the service.</p>
+<p>Add a job to cron so the certificate will be renwed automatically:</p>
+<p><code>echo &quot;0 0 * * *  root  certbot renew --quiet --no-self-upgrade --post-hook &#39;systemctl reload apache2&#39;&quot; | sudo tee -a /etc/cron.d/renew_certbot</code></p>
+<h3 id="haproxy-1">HAProxy</h3>
+<p>HAProxy doesn&#39;t currently have a certbot plugin.  To get around this, run certbot in standalone mode and proxy traffic back to it.  </p>
+<p>Enable the frontend and backend in the config above, and then run:</p>
+<p><code>certbot certonly --standalone --preferred-challenges http-01 --http-01-port 8888 --noninteractive --agree-tos --email YOUR_EMAIL -d DOMAIN_NAME</code></p>
+<p>The port can be changed to anything you like, but be sure that the HAProxy config and your certbot command match.</p>
+<p>Haproxy needs to have the certificate and key files concatenated into the same file to read it correctly.  This can be accomplished with the following command.</p>
+<p><code>cat /etc/letsencrypt/live/DOMAIN_NAME/fullchain.pem /etc/letsencrypt/live/DOMAIN_NAME/privkey.pem &gt; /etc/ssl/DOMAIN_NAME.pem</code></p>
+<p>Uncomment <code>bind *:443</code> and the redirect section in the configuration, then reload the service.</p>
+<h4 id="automatic-certificate-renewal">Automatic Certificate Renewal</h4>
+<p>Place the following script in <code>/usr/local/bin/</code> to automatically update your SSL certificate:</p>
+<pre><code>SITE=DOMAIN_NAME
+
+# move to the correct let&#39;s encrypt directory
+cd /etc/letsencrypt/live/$SITE
+
+# cat files to make combined .pem for haproxy
+cat fullchain.pem privkey.pem &gt; /etc/ssl/$SITE.pem
+
+# reload haproxy
+service haproxy reload
+</code></pre><p>Make sure the script is executable</p>
+<p> <code>chmod u+x /usr/local/bin/letsencrypt-renew.sh</code></p>
+<p>Add a job to cron so the certificate will be renewed automatically:</p>
+<p> <code>@monthly /usr/bin/certbot renew --renew-hook &quot;/usr/local/bin/letsencrypt-renew.sh&quot; &gt;&gt; /var/log/letsencrypt-renewal.log</code></p>
+<h3 id="nginx-1">Nginx</h3>
+<p>After installing certbot and the Nginx plugin with <code>sudo apt install certbot python3-certbot-nginx</code>, certificate generation is accomplished by:</p>
+<p><code>sudo certbot --nginx --agree-tos --redirect --hsts --staple-ocsp --email YOUR_EMAIL -d YOUR_DOMAIN</code>
+(Add the <code>--rsa-key-size 4096</code> parameter if you want a 4096 bit key instead)</p>
+<p>Copy and paste the whole Nginx sample configuration file from above, changing the parameters according to your setup and uncommenting the lines.</p>
+<p>Add a job to cron so the certificate will be renewed automatically:</p>
+<p><code>echo &quot;0 0 * * *  root  certbot renew --quiet --no-self-upgrade --post-hook &#39;systemctl reload nginx&#39;&quot; | sudo tee -a /etc/cron.d/renew_certbot</code></p>
+<h2 id="traefik-with-docker-compose">Traefik (with docker-compose)</h2>
+<p>Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. Traefik integrates with your existing infrastructure components (Docker, Swarm mode, Kubernetes, Marathon, Consul, Etcd, Rancher, Amazon ECS, ...) and configures itself automatically and dynamically. Pointing Traefik at your orchestrator should be the only configuration step you need. (<a href="https://traefik.io/">https://traefik.io/</a>)</p>
+<p>Traefik needs 3 files in the SAME directory (or you must change pathes in the volume section) : docker-compose.yml, traefik.toml and acme.json.</p>
+<p>This configuration is A+ (SSLlabs)</p>
+<p>docker-compose.yml :</p>
+<pre><code>version: &#39;3&#39;
+
+services:
+  proxy:
+    container_name: Traefik
+    image: traefik:alpine
+    command: --web --docker --docker.domain=${DOMAIN} --logLevel=&quot;INFO&quot;
+    networks:
+      - traefik
+    ports:
+      - 80:80
+      - 443:443
+    expose:
+      - 8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik.toml:/traefik.toml
+      - ./acme.json:/acme.json
+    restart: unless-stopped
+    labels:
+      - &quot;traefik.frontend.rule=Host:${DOMAIN_OF_THE_WEB_ADMIN_INTERFACE}&quot;
+      - &quot;traefik.port=8080&quot;
+      - &quot;traefik.backend=Traefik-Admin&quot;
+      - &quot;traefik.frontend.entryPoints=https&quot;
+      - &quot;traefik.frontend.headers.forceSTSHeader=true&quot;
+      - &quot;traefik.frontend.headers.STSSeconds=315360000&quot;
+      - &quot;traefik.frontend.headers.STSIncludeSubdomains=true&quot;
+      - &quot;traefik.frontend.headers.STSPreload=true&quot;
+networks:
+  traefik:
+    external: true
+</code></pre><p> For security, add a password to the traefik interface (DOMAIN_OF_THE_WEB_ADMIN_INTERFACE, traefik.mysite.com for exemple) :</p>
+<p> <code>echo $(htpasswd -nbB &lt;USER&gt; &quot;&lt;PASS&gt;&quot;) | sed -e s/\\$/\\$\\$/g</code></p>
+<p> The output will be for example (it will be a different result for each time you run the command above):</p>
+<p> <code>&lt;USER&gt;:$$apr1$$ryHGa8yK$$5lRELezhgkUtJxiJ.XTfZ.</code></p>
+<p>This output needs to be placed in our docker-compose.yml now as a (traefik) label and add this label :</p>
+<p><code>- &quot;traefik.frontend.auth.basic=&lt;USER-PASSWORD-OUTPUT&gt;&quot;</code></p>
+<p> traefik.toml : </p>
+<pre><code>
+
+logLevel = &quot;DEBUG&quot;
+defaultEntryPoints = [&quot;http&quot;, &quot;https&quot;]
+
+[docker]
+domain = &quot;${DOMAIN}&quot;
+watch = true
+
+[entryPoints]
+  [entryPoints.http]
+  address = &quot;:80&quot;
+    [entryPoints.http.redirect]
+    entryPoint = &quot;https&quot;
+  [entryPoints.https]
+  address = &quot;:443&quot;
+    [entryPoints.https.tls]
+    minVersion = &quot;VersionTLS12&quot;
+    cipherSuites = [
+      &quot;TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&quot;,
+      &quot;TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;,
+      &quot;TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305&quot;,
+      &quot;TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305&quot;,
+      &quot;TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,
+      &quot;TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256&quot;,
+      &quot;TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256&quot;,
+      &quot;TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&quot;
+    ]
+
+[acme]
+  email=&quot;yourmail@mail.com&quot;
+  storage=&quot;acme.json&quot;
+  entryPoint=&quot;https&quot;
+  acmeLogging=true
+  onDemand=false
+  OnHostRule=true
+[acme.httpChallenge]
+  entryPoint = &quot;http&quot;
+
+</code></pre><p>Finally, create an empty acme.json : <code>touch acme.json</code> <code>chmod 600 acme.json</code> </p>
+<p>IMPORTANT ! Change ${DOMAIN} by your domain / subdomain name, and change the mail of the acme (yourmail@mail.com in traefik.toml)</p>
+<p>Launch Traefik : <code>docker-compose up -d</code></p>
+<p>Congratulation, your RP is UP !</p>
+<p>For Jellyfin, just launch your Jellyfin server with this docker-compose <code>docker-compose up -d</code>.</p>
+<p>Note you must change the ${JELLYFIN_DOMAIN} for your domain, like jellyfin.mydomain.xyz for exemple.</p>
+<pre><code>
+version: &#39;2&#39;
+
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: Jellyfin
+    restart: always
+    labels:
+      - &quot;traefik.frontend.rule=Host:${JELLYFIN_DOMAIN}&quot;
+      - &quot;traefik.port=8096&quot;
+      - &quot;traefik.backend=JellyFin&quot;
+      - &quot;traefik.frontend.entryPoints=https&quot;
+      - &quot;traefik.frontend.headers.forceSTSHeader=true&quot;
+      - &quot;traefik.frontend.headers.STSSeconds=315360000&quot;
+      - &quot;traefik.frontend.headers.STSIncludeSubdomains=true&quot;
+      - &quot;traefik.frontend.headers.STSPreload=true&quot;
+    expose:
+      - 8096
+    volumes:
+      - /path/to/data:/share:rw
+      - ./conf:/config:rw
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - APP_UID=1000
+      - APP_GID=100
+      - GIDLIST=100 #A comma-separated list of additional GIDs to run emby as (default 2)#
+      - TZ=Europe/Paris
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true
+
+</code></pre><p>Go to jellyfin.mysite.xyz (in this case), and your Jellyfin is UP and HTTPS (AES 256).</p>
+<h1 id="final-steps">Final steps</h1>
+<p>It&#39;s strongly recommend that you check your SSL strength and server security at <a href="https://www.ssllabs.com/ssltest/analyze.html">SSLLabs</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/blob/master/general/administration/reverse-proxy.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

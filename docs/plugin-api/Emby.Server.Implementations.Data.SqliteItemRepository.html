@@ -1,0 +1,1821 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SqliteItemRepository
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SqliteItemRepository
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository">
+  
+  
+  <h1 id="Emby_Server_Implementations_Data_SqliteItemRepository" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository" class="text-break">Class SqliteItemRepository
+  </h1>
+  <div class="markdown level0 summary"><p>Class SQLiteItemRepository</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html">BaseSqliteRepository</a></div>
+    <div class="level2"><span class="xref">SqliteItemRepository</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.Persistence.IItemRepository.html">IItemRepository</a></div>
+    <div><a class="xref" href="MediaBrowser.Controller.Persistence.IRepository.html">IRepository</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_DbFilePath">BaseSqliteRepository.DbFilePath</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_Logger">BaseSqliteRepository.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_DefaultConnectionFlags">BaseSqliteRepository.DefaultConnectionFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_TransactionMode">BaseSqliteRepository.TransactionMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_ReadTransactionMode">BaseSqliteRepository.ReadTransactionMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_JournalMode">BaseSqliteRepository.JournalMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_PageSize">BaseSqliteRepository.PageSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_Synchronous">BaseSqliteRepository.Synchronous</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_WriteLock">BaseSqliteRepository.WriteLock</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_WriteConnection">BaseSqliteRepository.WriteConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_GetConnection_System_Boolean_">BaseSqliteRepository.GetConnection(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_PrepareStatement_Emby_Server_Implementations_Data_ManagedConnection_System_String_">BaseSqliteRepository.PrepareStatement(ManagedConnection, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_PrepareStatement_IDatabaseConnection_System_String_">BaseSqliteRepository.PrepareStatement(IDatabaseConnection, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_PrepareAll_IDatabaseConnection_IEnumerable_System_String__">BaseSqliteRepository.PrepareAll(IDatabaseConnection, IEnumerable&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_TableExists_Emby_Server_Implementations_Data_ManagedConnection_System_String_">BaseSqliteRepository.TableExists(ManagedConnection, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_GetColumnNames_IDatabaseConnection_System_String_">BaseSqliteRepository.GetColumnNames(IDatabaseConnection, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_AddColumn_IDatabaseConnection_System_String_System_String_System_String_List_System_String__">BaseSqliteRepository.AddColumn(IDatabaseConnection, String, String, String, List&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_CheckDisposed">BaseSqliteRepository.CheckDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_Dispose">BaseSqliteRepository.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_Dispose_System_Boolean_">BaseSqliteRepository.Dispose(Boolean)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.Data.html">Emby.Server.Implementations.Data</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_Data_SqliteItemRepository_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SqliteItemRepository : BaseSqliteRepository, IItemRepository, IRepository, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository__ctor_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_IServerApplicationHost_MediaBrowser_Model_Serialization_IJsonSerializer_ILoggerFactory_MediaBrowser_Model_Globalization_ILocalizationManager_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.%23ctor(MediaBrowser.Controller.Configuration.IServerConfigurationManager%2CMediaBrowser.Controller.IServerApplicationHost%2CMediaBrowser.Model.Serialization.IJsonSerializer%2CILoggerFactory%2CMediaBrowser.Model.Globalization.ILocalizationManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L59">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository__ctor_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository__ctor_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_IServerApplicationHost_MediaBrowser_Model_Serialization_IJsonSerializer_ILoggerFactory_MediaBrowser_Model_Globalization_ILocalizationManager_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.#ctor(MediaBrowser.Controller.Configuration.IServerConfigurationManager,MediaBrowser.Controller.IServerApplicationHost,MediaBrowser.Model.Serialization.IJsonSerializer,ILoggerFactory,MediaBrowser.Model.Globalization.ILocalizationManager)">SqliteItemRepository(IServerConfigurationManager, IServerApplicationHost, IJsonSerializer, ILoggerFactory, ILocalizationManager)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Emby.Server.Implementations.Data.SqliteItemRepository.html">SqliteItemRepository</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SqliteItemRepository(IServerConfigurationManager config, IServerApplicationHost appHost, IJsonSerializer jsonSerializer, ILoggerFactory loggerFactory, ILocalizationManager localization)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.IServerApplicationHost.html">IServerApplicationHost</a></td>
+        <td><span class="parametername">appHost</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td><span class="parametername">jsonSerializer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Globalization.ILocalizationManager.html">ILocalizationManager</a></td>
+        <td><span class="parametername">localization</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_CacheSize.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.CacheSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L90">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_CacheSize_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.CacheSize*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_CacheSize" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.CacheSize">CacheSize</h4>
+  <div class="markdown level1 summary"><p>Gets the cache size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int? CacheSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The cache size or null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_CacheSize">BaseSqliteRepository.CacheSize</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_ImageProcessor.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.ImageProcessor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L95">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_ImageProcessor_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.ImageProcessor*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_ImageProcessor" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.ImageProcessor">ImageProcessor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IImageProcessor ImageProcessor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Drawing.IImageProcessor.html">IImageProcessor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_Name.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L87">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_Name_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.Name*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_Name" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the repository</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_TempStore.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.TempStore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L93">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_TempStore_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.TempStore*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_TempStore" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.TempStore">TempStore</h4>
+  <div class="markdown level1 summary"><p>Gets the temp store mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override TempStoreMode TempStore { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.Data.TempStoreMode.html">TempStoreMode</a></td>
+        <td><p>The temp store mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Emby.Server.Implementations.Data.BaseSqliteRepository.html#Emby_Server_Implementations_Data_BaseSqliteRepository_TempStore">BaseSqliteRepository.TempStore</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_DeleteItem_Guid_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.DeleteItem(Guid%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L4918">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_DeleteItem_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.DeleteItem*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_DeleteItem_Guid_CancellationToken_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.DeleteItem(Guid,CancellationToken)">DeleteItem(Guid, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteItem(Guid id, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetAlbumArtists_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetAlbumArtists(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5180">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetAlbumArtists_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetAlbumArtists*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetAlbumArtists_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetAlbumArtists(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetAlbumArtists(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryResult&lt;(BaseItem, ItemCounts)&gt; GetAlbumArtists(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.ItemCounts.html">ItemCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetAllArtistNames.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetAllArtistNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5205">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetAllArtistNames_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetAllArtistNames*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetAllArtistNames" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetAllArtistNames">GetAllArtistNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetAllArtistNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetAllArtists_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetAllArtists(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5170">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetAllArtists_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetAllArtists*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetAllArtists_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetAllArtists(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetAllArtists(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryResult&lt;(BaseItem, ItemCounts)&gt; GetAllArtists(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.ItemCounts.html">ItemCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetArtists_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetArtists(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5175">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetArtists_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetArtists*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetArtists_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetArtists(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetArtists(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryResult&lt;(BaseItem, ItemCounts)&gt; GetArtists(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.ItemCounts.html">ItemCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetChapter_MediaBrowser_Controller_Entities_BaseItem_System_Int32_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetChapter(MediaBrowser.Controller.Entities.BaseItem%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L1926">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetChapter_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetChapter*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetChapter_MediaBrowser_Controller_Entities_BaseItem_System_Int32_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetChapter(MediaBrowser.Controller.Entities.BaseItem,System.Int32)">GetChapter(BaseItem, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a single chapter for an item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChapterInfo GetChapter(BaseItem item, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.ChapterInfo.html">ChapterInfo</a></td>
+        <td><p>ChapterInfo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetChapters_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetChapters(MediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L1897">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetChapters_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetChapters*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetChapters_MediaBrowser_Controller_Entities_BaseItem_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetChapters(MediaBrowser.Controller.Entities.BaseItem)">GetChapters(BaseItem)</h4>
+  <div class="markdown level1 summary"><p>Gets chapters for an item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ChapterInfo&gt; GetChapters(BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.ChapterInfo.html">ChapterInfo</a>&gt;</td>
+        <td><p>IEnumerable{ChapterInfo}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetCount_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetCount(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L2507">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetCount_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetCount*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetCount_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetCount(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetCount(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCount(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetGenreNames.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetGenreNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5215">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetGenreNames_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetGenreNames*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetGenreNames" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetGenreNames">GetGenreNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetGenreNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetGenres_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetGenres(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5190">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetGenres_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetGenres*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetGenres_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetGenres(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetGenres(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryResult&lt;(BaseItem, ItemCounts)&gt; GetGenres(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.ItemCounts.html">ItemCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetItemIds_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetItemIds(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L3150">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetItemIds_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetItemIds*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetItemIds_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetItemIds(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetItemIds(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryResult&lt;Guid&gt; GetItemIds(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetItemIdsList_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetItemIdsList(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L3013">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetItemIdsList_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetItemIdsList*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetItemIdsList_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetItemIdsList(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetItemIdsList(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Guid&gt; GetItemIdsList(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetItemIdsWithPath_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetItemIdsWithPath(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L3080">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetItemIdsWithPath_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetItemIdsWithPath*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetItemIdsWithPath_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetItemIdsWithPath(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetItemIdsWithPath(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Tuple&lt;Guid, string&gt;&gt; GetItemIdsWithPath(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Tuple</span>&lt;<span class="xref">Guid</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetItemList_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetItemList(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L2559">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetItemList_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetItemList*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetItemList_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetItemList(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetItemList(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;BaseItem&gt; GetItemList(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetItems_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetItems(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L2735">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetItems_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetItems*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetItems_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetItems(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetItems(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryResult&lt;BaseItem&gt; GetItems(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetMediaStreams_MediaBrowser_Controller_Persistence_MediaStreamQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetMediaStreams(MediaBrowser.Controller.Persistence.MediaStreamQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5793">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetMediaStreams_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetMediaStreams*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetMediaStreams_MediaBrowser_Controller_Persistence_MediaStreamQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetMediaStreams(MediaBrowser.Controller.Persistence.MediaStreamQuery)">GetMediaStreams(MediaStreamQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MediaStream&gt; GetMediaStreams(MediaStreamQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Persistence.MediaStreamQuery.html">MediaStreamQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.MediaStream.html">MediaStream</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetMusicGenreNames.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetMusicGenreNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5210">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetMusicGenreNames_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetMusicGenreNames*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetMusicGenreNames" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetMusicGenreNames">GetMusicGenreNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetMusicGenreNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetMusicGenres_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetMusicGenres(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5195">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetMusicGenres_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetMusicGenres*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetMusicGenres_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetMusicGenres(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetMusicGenres(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryResult&lt;(BaseItem, ItemCounts)&gt; GetMusicGenres(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.ItemCounts.html">ItemCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetPeople_MediaBrowser_Controller_Entities_InternalPeopleQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetPeople(MediaBrowser.Controller.Entities.InternalPeopleQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5002">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetPeople_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetPeople*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetPeople_MediaBrowser_Controller_Entities_InternalPeopleQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetPeople(MediaBrowser.Controller.Entities.InternalPeopleQuery)">GetPeople(InternalPeopleQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PersonInfo&gt; GetPeople(InternalPeopleQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalPeopleQuery.html">InternalPeopleQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.PersonInfo.html">PersonInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetPeopleNames_MediaBrowser_Controller_Entities_InternalPeopleQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetPeopleNames(MediaBrowser.Controller.Entities.InternalPeopleQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L4964">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetPeopleNames_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetPeopleNames*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetPeopleNames_MediaBrowser_Controller_Entities_InternalPeopleQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetPeopleNames(MediaBrowser.Controller.Entities.InternalPeopleQuery)">GetPeopleNames(InternalPeopleQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetPeopleNames(InternalPeopleQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalPeopleQuery.html">InternalPeopleQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetStudioNames.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetStudioNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5200">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetStudioNames_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetStudioNames*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetStudioNames" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetStudioNames">GetStudioNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetStudioNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_GetStudios_MediaBrowser_Controller_Entities_InternalItemsQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.GetStudios(MediaBrowser.Controller.Entities.InternalItemsQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5185">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_GetStudios_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetStudios*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_GetStudios_MediaBrowser_Controller_Entities_InternalItemsQuery_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.GetStudios(MediaBrowser.Controller.Entities.InternalItemsQuery)">GetStudios(InternalItemsQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryResult&lt;(BaseItem, ItemCounts)&gt; GetStudios(InternalItemsQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>, <a class="xref" href="MediaBrowser.Model.Dto.ItemCounts.html">ItemCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_Initialize_Emby_Server_Implementations_Data_SqliteUserDataRepository_MediaBrowser_Controller_Library_IUserManager_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(Emby.Server.Implementations.Data.SqliteUserDataRepository%2CMediaBrowser.Controller.Library.IUserManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L100">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_Initialize_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.Initialize*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_Initialize_Emby_Server_Implementations_Data_SqliteUserDataRepository_MediaBrowser_Controller_Library_IUserManager_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(Emby.Server.Implementations.Data.SqliteUserDataRepository,MediaBrowser.Controller.Library.IUserManager)">Initialize(SqliteUserDataRepository, IUserManager)</h4>
+  <div class="markdown level1 summary"><p>Opens the connection to the database</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.Data.SqliteUserDataRepository.html">SqliteUserDataRepository</a></td>
+        <td><span class="parametername">userDataRepo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserManager.html">IUserManager</a></td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_ItemImageInfoFromValueString_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.ItemImageInfoFromValueString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L1141">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_ItemImageInfoFromValueString_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.ItemImageInfoFromValueString*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_ItemImageInfoFromValueString_System_String_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.ItemImageInfoFromValueString(System.String)">ItemImageInfoFromValueString(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemImageInfo ItemImageInfoFromValueString(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.ItemImageInfo.html">ItemImageInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_RetrieveItem_Guid_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.RetrieveItem(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L1184">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_RetrieveItem_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.RetrieveItem*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_RetrieveItem_Guid_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.RetrieveItem(Guid)">RetrieveItem(Guid)</h4>
+  <div class="markdown level1 summary"><p>Internal retrieve from items or users table</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseItem RetrieveItem(Guid id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><p>BaseItem.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_SaveChapters_Guid_List_MediaBrowser_Model_Entities_ChapterInfo__.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.SaveChapters(Guid%2CList%7BMediaBrowser.Model.Entities.ChapterInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L1985">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_SaveChapters_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.SaveChapters*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_SaveChapters_Guid_List_MediaBrowser_Model_Entities_ChapterInfo__" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.SaveChapters(Guid,List{MediaBrowser.Model.Entities.ChapterInfo})">SaveChapters(Guid, List&lt;ChapterInfo&gt;)</h4>
+  <div class="markdown level1 summary"><p>Saves the chapters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveChapters(Guid id, List&lt;ChapterInfo&gt; chapters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.ChapterInfo.html">ChapterInfo</a>&gt;</td>
+        <td><span class="parametername">chapters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_SaveImages_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.SaveImages(MediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L544">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_SaveImages_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.SaveImages*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_SaveImages_MediaBrowser_Controller_Entities_BaseItem_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.SaveImages(MediaBrowser.Controller.Entities.BaseItem)">SaveImages(BaseItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveImages(BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_SaveItem_MediaBrowser_Controller_Entities_BaseItem_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.SaveItem(MediaBrowser.Controller.Entities.BaseItem%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L534">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_SaveItem_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.SaveItem*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_SaveItem_MediaBrowser_Controller_Entities_BaseItem_CancellationToken_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.SaveItem(MediaBrowser.Controller.Entities.BaseItem,CancellationToken)">SaveItem(BaseItem, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Save a standard item in the repo</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveItem(BaseItem item, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_SaveItems_IEnumerable_MediaBrowser_Controller_Entities_BaseItem__CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.SaveItems(IEnumerable%7BMediaBrowser.Controller.Entities.BaseItem%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L578">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_SaveItems_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.SaveItems*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_SaveItems_IEnumerable_MediaBrowser_Controller_Entities_BaseItem__CancellationToken_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.SaveItems(IEnumerable{MediaBrowser.Controller.Entities.BaseItem},CancellationToken)">SaveItems(IEnumerable&lt;BaseItem&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Saves the items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveItems(IEnumerable&lt;BaseItem&gt; items, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_SaveMediaStreams_Guid_List_MediaBrowser_Model_Entities_MediaStream__CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.SaveMediaStreams(Guid%2CList%7BMediaBrowser.Model.Entities.MediaStream%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5847">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_SaveMediaStreams_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.SaveMediaStreams*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_SaveMediaStreams_Guid_List_MediaBrowser_Model_Entities_MediaStream__CancellationToken_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.SaveMediaStreams(Guid,List{MediaBrowser.Model.Entities.MediaStream},CancellationToken)">SaveMediaStreams(Guid, List&lt;MediaStream&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveMediaStreams(Guid id, List&lt;MediaStream&gt; streams, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Model.Entities.MediaStream.html">MediaStream</a>&gt;</td>
+        <td><span class="parametername">streams</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_ToValueString_MediaBrowser_Controller_Entities_ItemImageInfo_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.ToValueString(MediaBrowser.Controller.Entities.ItemImageInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L1119">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_ToValueString_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.ToValueString*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_ToValueString_MediaBrowser_Controller_Entities_ItemImageInfo_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.ToValueString(MediaBrowser.Controller.Entities.ItemImageInfo)">ToValueString(ItemImageInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToValueString(ItemImageInfo image)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.ItemImageInfo.html">ItemImageInfo</a></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_UpdateInheritedValues_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.UpdateInheritedValues(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L4854">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_UpdateInheritedValues_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.UpdateInheritedValues*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_UpdateInheritedValues_CancellationToken_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.UpdateInheritedValues(CancellationToken)">UpdateInheritedValues(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateInheritedValues(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository_UpdatePeople_Guid_List_MediaBrowser_Controller_Entities_PersonInfo__.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository.UpdatePeople(Guid%2CList%7BMediaBrowser.Controller.Entities.PersonInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L5688">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_SqliteItemRepository_UpdatePeople_" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.UpdatePeople*"></a>
+  <h4 id="Emby_Server_Implementations_Data_SqliteItemRepository_UpdatePeople_Guid_List_MediaBrowser_Controller_Entities_PersonInfo__" data-uid="Emby.Server.Implementations.Data.SqliteItemRepository.UpdatePeople(Guid,List{MediaBrowser.Controller.Entities.PersonInfo})">UpdatePeople(Guid, List&lt;PersonInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePeople(Guid itemId, List&lt;PersonInfo&gt; people)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.PersonInfo.html">PersonInfo</a>&gt;</td>
+        <td><span class="parametername">people</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Persistence.IItemRepository.html">IItemRepository</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Persistence.IRepository.html">IRepository</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_SqliteItemRepository.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.SqliteItemRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/SqliteItemRepository.cs/#L37" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

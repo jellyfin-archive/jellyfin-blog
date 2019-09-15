@@ -1,0 +1,984 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ApiEntryPoint
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ApiEntryPoint
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Api.ApiEntryPoint">
+  
+  
+  <h1 id="MediaBrowser_Api_ApiEntryPoint" data-uid="MediaBrowser.Api.ApiEntryPoint" class="text-break">Class ApiEntryPoint
+  </h1>
+  <div class="markdown level0 summary"><p>Class ServerEntryPoint</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ApiEntryPoint</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.Plugins.IServerEntryPoint.html">IServerEntryPoint</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Api.html">MediaBrowser.Api</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Api.dll</h6>
+  <h5 id="MediaBrowser_Api_ApiEntryPoint_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ApiEntryPoint : object, IServerEntryPoint, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint__ctor_ILogger_MediaBrowser_Controller_Session_ISessionManager_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Model_Diagnostics_IProcessFactory_MediaBrowser_Controller_Net_IHttpResultFactory_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.%23ctor(ILogger%2CMediaBrowser.Controller.Session.ISessionManager%2CMediaBrowser.Controller.Configuration.IServerConfigurationManager%2CMediaBrowser.Model.IO.IFileSystem%2CMediaBrowser.Controller.Library.IMediaSourceManager%2CMediaBrowser.Model.Diagnostics.IProcessFactory%2CMediaBrowser.Controller.Net.IHttpResultFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L70">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint__ctor_" data-uid="MediaBrowser.Api.ApiEntryPoint.#ctor*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint__ctor_ILogger_MediaBrowser_Controller_Session_ISessionManager_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Model_Diagnostics_IProcessFactory_MediaBrowser_Controller_Net_IHttpResultFactory_" data-uid="MediaBrowser.Api.ApiEntryPoint.#ctor(ILogger,MediaBrowser.Controller.Session.ISessionManager,MediaBrowser.Controller.Configuration.IServerConfigurationManager,MediaBrowser.Model.IO.IFileSystem,MediaBrowser.Controller.Library.IMediaSourceManager,MediaBrowser.Model.Diagnostics.IProcessFactory,MediaBrowser.Controller.Net.IHttpResultFactory)">ApiEntryPoint(ILogger, ISessionManager, IServerConfigurationManager, IFileSystem, IMediaSourceManager, IProcessFactory, IHttpResultFactory)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MediaBrowser.Api.ApiEntryPoint.html">ApiEntryPoint</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiEntryPoint(ILogger logger, ISessionManager sessionManager, IServerConfigurationManager config, IFileSystem fileSystem, IMediaSourceManager mediaSourceManager, IProcessFactory processFactory, IHttpResultFactory resultFactory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The logger.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.ISessionManager.html">ISessionManager</a></td>
+        <td><span class="parametername">sessionManager</span></td>
+        <td><p>The session manager.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The configuration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td><p>The file system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IMediaSourceManager.html">IMediaSourceManager</a></td>
+        <td><span class="parametername">mediaSourceManager</span></td>
+        <td><p>The media source manager.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Diagnostics.IProcessFactory.html">IProcessFactory</a></td>
+        <td><span class="parametername">processFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Net.IHttpResultFactory.html">IHttpResultFactory</a></td>
+        <td><span class="parametername">resultFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_Instance.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.Instance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L33">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_Instance" data-uid="MediaBrowser.Api.ApiEntryPoint.Instance">Instance</h4>
+  <div class="markdown level1 summary"><p>The instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ApiEntryPoint Instance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.ApiEntryPoint.html">ApiEntryPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_ProcessFactory.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.ProcessFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L50">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_ProcessFactory" data-uid="MediaBrowser.Api.ApiEntryPoint.ProcessFactory">ProcessFactory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly IProcessFactory ProcessFactory</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Diagnostics.IProcessFactory.html">IProcessFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_Dispose.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L189">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_Dispose_" data-uid="MediaBrowser.Api.ApiEntryPoint.Dispose*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_Dispose" data-uid="MediaBrowser.Api.ApiEntryPoint.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L199">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_Dispose_" data-uid="MediaBrowser.Api.ApiEntryPoint.Dispose*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_Dispose_System_Boolean_" data-uid="MediaBrowser.Api.ApiEntryPoint.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged and - optionally - managed resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool dispose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">dispose</span></td>
+        <td><p><code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_GetEncodingOptions.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.GetEncodingOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L163">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_GetEncodingOptions_" data-uid="MediaBrowser.Api.ApiEntryPoint.GetEncodingOptions*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_GetEncodingOptions" data-uid="MediaBrowser.Api.ApiEntryPoint.GetEncodingOptions">GetEncodingOptions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EncodingOptions GetEncodingOptions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Configuration.EncodingOptions.html">EncodingOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_GetTranscodingJob_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.GetTranscodingJob(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L375">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_GetTranscodingJob_" data-uid="MediaBrowser.Api.ApiEntryPoint.GetTranscodingJob*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_GetTranscodingJob_System_String_" data-uid="MediaBrowser.Api.ApiEntryPoint.GetTranscodingJob(System.String)">GetTranscodingJob(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TranscodingJob GetTranscodingJob(string playSessionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">playSessionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.TranscodingJob.html">TranscodingJob</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_GetTranscodingJob_System_String_MediaBrowser_Controller_MediaEncoding_TranscodingJobType_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.GetTranscodingJob(System.String%2CMediaBrowser.Controller.MediaEncoding.TranscodingJobType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L367">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_GetTranscodingJob_" data-uid="MediaBrowser.Api.ApiEntryPoint.GetTranscodingJob*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_GetTranscodingJob_System_String_MediaBrowser_Controller_MediaEncoding_TranscodingJobType_" data-uid="MediaBrowser.Api.ApiEntryPoint.GetTranscodingJob(System.String,MediaBrowser.Controller.MediaEncoding.TranscodingJobType)">GetTranscodingJob(String, TranscodingJobType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TranscodingJob GetTranscodingJob(string path, TranscodingJobType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.TranscodingJobType.html">TranscodingJobType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.TranscodingJob.html">TranscodingJob</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_GetTranscodingLock_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.GetTranscodingLock(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L108">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_GetTranscodingLock_" data-uid="MediaBrowser.Api.ApiEntryPoint.GetTranscodingLock*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_GetTranscodingLock_System_String_" data-uid="MediaBrowser.Api.ApiEntryPoint.GetTranscodingLock(System.String)">GetTranscodingLock(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemaphoreSlim GetTranscodingLock(string outputPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">outputPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SemaphoreSlim</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_HasActiveTranscodingJob_System_String_MediaBrowser_Controller_MediaEncoding_TranscodingJobType_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.HasActiveTranscodingJob(System.String%2CMediaBrowser.Controller.MediaEncoding.TranscodingJobType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L362">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_HasActiveTranscodingJob_" data-uid="MediaBrowser.Api.ApiEntryPoint.HasActiveTranscodingJob*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_HasActiveTranscodingJob_System_String_MediaBrowser_Controller_MediaEncoding_TranscodingJobType_" data-uid="MediaBrowser.Api.ApiEntryPoint.HasActiveTranscodingJob(System.String,MediaBrowser.Controller.MediaEncoding.TranscodingJobType)">HasActiveTranscodingJob(String, TranscodingJobType)</h4>
+  <div class="markdown level1 summary"><p>Determines whether [has active transcoding job] [the specified path].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasActiveTranscodingJob(string path, TranscodingJobType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.TranscodingJobType.html">TranscodingJobType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [has active transcoding job] [the specified path]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_OnTranscodeBeginning_System_String_System_String_System_String_System_String_MediaBrowser_Controller_MediaEncoding_TranscodingJobType_Process_System_String_MediaBrowser_Api_Playback_StreamState_CancellationTokenSource_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.OnTranscodeBeginning(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CMediaBrowser.Controller.MediaEncoding.TranscodingJobType%2CProcess%2CSystem.String%2CMediaBrowser.Api.Playback.StreamState%2CCancellationTokenSource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L251">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_OnTranscodeBeginning_" data-uid="MediaBrowser.Api.ApiEntryPoint.OnTranscodeBeginning*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_OnTranscodeBeginning_System_String_System_String_System_String_System_String_MediaBrowser_Controller_MediaEncoding_TranscodingJobType_Process_System_String_MediaBrowser_Api_Playback_StreamState_CancellationTokenSource_" data-uid="MediaBrowser.Api.ApiEntryPoint.OnTranscodeBeginning(System.String,System.String,System.String,System.String,MediaBrowser.Controller.MediaEncoding.TranscodingJobType,Process,System.String,MediaBrowser.Api.Playback.StreamState,CancellationTokenSource)">OnTranscodeBeginning(String, String, String, String, TranscodingJobType, Process, String, StreamState, CancellationTokenSource)</h4>
+  <div class="markdown level1 summary"><p>Called when [transcode beginning].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TranscodingJob OnTranscodeBeginning(string path, string playSessionId, string liveStreamId, string transcodingJobId, TranscodingJobType type, Process process, string deviceId, StreamState state, CancellationTokenSource cancellationTokenSource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">playSessionId</span></td>
+        <td><p>The play session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">liveStreamId</span></td>
+        <td><p>The live stream identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">transcodingJobId</span></td>
+        <td><p>The transcoding job identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.TranscodingJobType.html">TranscodingJobType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Process</span></td>
+        <td><span class="parametername">process</span></td>
+        <td><p>The process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td><p>The device id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.StreamState.html">StreamState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationTokenSource</span></td>
+        <td><span class="parametername">cancellationTokenSource</span></td>
+        <td><p>The cancellation token source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.TranscodingJob.html">TranscodingJob</a></td>
+        <td><p>TranscodingJob.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_OnTranscodeBeginRequest_MediaBrowser_Api_TranscodingJob_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.OnTranscodeBeginRequest(MediaBrowser.Api.TranscodingJob)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L405">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_OnTranscodeBeginRequest_" data-uid="MediaBrowser.Api.ApiEntryPoint.OnTranscodeBeginRequest*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_OnTranscodeBeginRequest_MediaBrowser_Api_TranscodingJob_" data-uid="MediaBrowser.Api.ApiEntryPoint.OnTranscodeBeginRequest(MediaBrowser.Api.TranscodingJob)">OnTranscodeBeginRequest(TranscodingJob)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTranscodeBeginRequest(TranscodingJob job)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.TranscodingJob.html">TranscodingJob</a></td>
+        <td><span class="parametername">job</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_OnTranscodeBeginRequest_System_String_MediaBrowser_Controller_MediaEncoding_TranscodingJobType_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.OnTranscodeBeginRequest(System.String%2CMediaBrowser.Controller.MediaEncoding.TranscodingJobType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L388">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_OnTranscodeBeginRequest_" data-uid="MediaBrowser.Api.ApiEntryPoint.OnTranscodeBeginRequest*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_OnTranscodeBeginRequest_System_String_MediaBrowser_Controller_MediaEncoding_TranscodingJobType_" data-uid="MediaBrowser.Api.ApiEntryPoint.OnTranscodeBeginRequest(System.String,MediaBrowser.Controller.MediaEncoding.TranscodingJobType)">OnTranscodeBeginRequest(String, TranscodingJobType)</h4>
+  <div class="markdown level1 summary"><p>Called when [transcode begin request].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TranscodingJob OnTranscodeBeginRequest(string path, TranscodingJobType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.TranscodingJobType.html">TranscodingJobType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.TranscodingJob.html">TranscodingJob</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_OnTranscodeEndRequest_MediaBrowser_Api_TranscodingJob_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.OnTranscodeEndRequest(MediaBrowser.Api.TranscodingJob)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L415">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_OnTranscodeEndRequest_" data-uid="MediaBrowser.Api.ApiEntryPoint.OnTranscodeEndRequest*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_OnTranscodeEndRequest_MediaBrowser_Api_TranscodingJob_" data-uid="MediaBrowser.Api.ApiEntryPoint.OnTranscodeEndRequest(MediaBrowser.Api.TranscodingJob)">OnTranscodeEndRequest(TranscodingJob)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTranscodeEndRequest(TranscodingJob job)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.TranscodingJob.html">TranscodingJob</a></td>
+        <td><span class="parametername">job</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_OnTranscodeFailedToStart_System_String_MediaBrowser_Controller_MediaEncoding_TranscodingJobType_MediaBrowser_Api_Playback_StreamState_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.OnTranscodeFailedToStart(System.String%2CMediaBrowser.Controller.MediaEncoding.TranscodingJobType%2CMediaBrowser.Api.Playback.StreamState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L333">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_OnTranscodeFailedToStart_" data-uid="MediaBrowser.Api.ApiEntryPoint.OnTranscodeFailedToStart*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_OnTranscodeFailedToStart_System_String_MediaBrowser_Controller_MediaEncoding_TranscodingJobType_MediaBrowser_Api_Playback_StreamState_" data-uid="MediaBrowser.Api.ApiEntryPoint.OnTranscodeFailedToStart(System.String,MediaBrowser.Controller.MediaEncoding.TranscodingJobType,MediaBrowser.Api.Playback.StreamState)">OnTranscodeFailedToStart(String, TranscodingJobType, StreamState)</h4>
+  <div class="markdown level1 summary"><p><summary>
+The progressive
+</summary>
+Called when [transcode failed to start].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTranscodeFailedToStart(string path, TranscodingJobType type, StreamState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.TranscodingJobType.html">TranscodingJobType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.StreamState.html">StreamState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_ReportTranscodingProgress_MediaBrowser_Api_TranscodingJob_MediaBrowser_Api_Playback_StreamState_System_Nullable_TimeSpan__System_Nullable_System_Single__System_Nullable_System_Double__System_Nullable_System_Int64__System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.ReportTranscodingProgress(MediaBrowser.Api.TranscodingJob%2CMediaBrowser.Api.Playback.StreamState%2CSystem.Nullable%7BTimeSpan%7D%2CSystem.Nullable%7BSystem.Single%7D%2CSystem.Nullable%7BSystem.Double%7D%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L286">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_ReportTranscodingProgress_" data-uid="MediaBrowser.Api.ApiEntryPoint.ReportTranscodingProgress*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_ReportTranscodingProgress_MediaBrowser_Api_TranscodingJob_MediaBrowser_Api_Playback_StreamState_System_Nullable_TimeSpan__System_Nullable_System_Single__System_Nullable_System_Double__System_Nullable_System_Int64__System_Nullable_System_Int32__" data-uid="MediaBrowser.Api.ApiEntryPoint.ReportTranscodingProgress(MediaBrowser.Api.TranscodingJob,MediaBrowser.Api.Playback.StreamState,System.Nullable{TimeSpan},System.Nullable{System.Single},System.Nullable{System.Double},System.Nullable{System.Int64},System.Nullable{System.Int32})">ReportTranscodingProgress(TranscodingJob, StreamState, Nullable&lt;TimeSpan&gt;, Nullable&lt;Single&gt;, Nullable&lt;Double&gt;, Nullable&lt;Int64&gt;, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReportTranscodingProgress(TranscodingJob job, StreamState state, TimeSpan? transcodingPosition, float? framerate, double? percentComplete, long? bytesTranscoded, int? bitRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.TranscodingJob.html">TranscodingJob</a></td>
+        <td><span class="parametername">job</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.StreamState.html">StreamState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td><span class="parametername">transcodingPosition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">framerate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">percentComplete</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">bytesTranscoded</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">bitRate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_RunAsync.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.RunAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L141">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_RunAsync_" data-uid="MediaBrowser.Api.ApiEntryPoint.RunAsync*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_RunAsync" data-uid="MediaBrowser.Api.ApiEntryPoint.RunAsync">RunAsync()</h4>
+  <div class="markdown level1 summary"><p>Runs this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RunAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint_Split_System_String_System_Char_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint.Split(System.String%2CSystem.Char%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L93">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_ApiEntryPoint_Split_" data-uid="MediaBrowser.Api.ApiEntryPoint.Split*"></a>
+  <h4 id="MediaBrowser_Api_ApiEntryPoint_Split_System_String_System_Char_System_Boolean_" data-uid="MediaBrowser.Api.ApiEntryPoint.Split(System.String,System.Char,System.Boolean)">Split(String, Char, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] Split(string value, char separator, bool removeEmpty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">separator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">removeEmpty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Plugins.IServerEntryPoint.html">IServerEntryPoint</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_ApiEntryPoint.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.ApiEntryPoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/ApiEntryPoint.cs/#L28" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

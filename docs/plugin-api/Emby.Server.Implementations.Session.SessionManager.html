@@ -1,0 +1,2492 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SessionManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SessionManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.Session.SessionManager">
+  
+  
+  <h1 id="Emby_Server_Implementations_Session_SessionManager" data-uid="Emby.Server.Implementations.Session.SessionManager" class="text-break">Class SessionManager
+  </h1>
+  <div class="markdown level0 summary"><p>Class SessionManager</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SessionManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.Session.ISessionManager.html">ISessionManager</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.Session.html">Emby.Server.Implementations.Session</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_Session_SessionManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SessionManager : object, ISessionManager, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager__ctor_MediaBrowser_Controller_Library_IUserDataManager_ILoggerFactory_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Library_IMusicManager_MediaBrowser_Controller_Dto_IDtoService_MediaBrowser_Controller_Drawing_IImageProcessor_MediaBrowser_Controller_IServerApplicationHost_MediaBrowser_Controller_Security_IAuthenticationRepository_MediaBrowser_Controller_Devices_IDeviceManager_MediaBrowser_Controller_Library_IMediaSourceManager_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.%23ctor(MediaBrowser.Controller.Library.IUserDataManager%2CILoggerFactory%2CMediaBrowser.Controller.Library.ILibraryManager%2CMediaBrowser.Controller.Library.IUserManager%2CMediaBrowser.Controller.Library.IMusicManager%2CMediaBrowser.Controller.Dto.IDtoService%2CMediaBrowser.Controller.Drawing.IImageProcessor%2CMediaBrowser.Controller.IServerApplicationHost%2CMediaBrowser.Controller.Security.IAuthenticationRepository%2CMediaBrowser.Controller.Devices.IDeviceManager%2CMediaBrowser.Controller.Library.IMediaSourceManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L87">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager__ctor_" data-uid="Emby.Server.Implementations.Session.SessionManager.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager__ctor_MediaBrowser_Controller_Library_IUserDataManager_ILoggerFactory_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Library_IMusicManager_MediaBrowser_Controller_Dto_IDtoService_MediaBrowser_Controller_Drawing_IImageProcessor_MediaBrowser_Controller_IServerApplicationHost_MediaBrowser_Controller_Security_IAuthenticationRepository_MediaBrowser_Controller_Devices_IDeviceManager_MediaBrowser_Controller_Library_IMediaSourceManager_" data-uid="Emby.Server.Implementations.Session.SessionManager.#ctor(MediaBrowser.Controller.Library.IUserDataManager,ILoggerFactory,MediaBrowser.Controller.Library.ILibraryManager,MediaBrowser.Controller.Library.IUserManager,MediaBrowser.Controller.Library.IMusicManager,MediaBrowser.Controller.Dto.IDtoService,MediaBrowser.Controller.Drawing.IImageProcessor,MediaBrowser.Controller.IServerApplicationHost,MediaBrowser.Controller.Security.IAuthenticationRepository,MediaBrowser.Controller.Devices.IDeviceManager,MediaBrowser.Controller.Library.IMediaSourceManager)">SessionManager(IUserDataManager, ILoggerFactory, ILibraryManager, IUserManager, IMusicManager, IDtoService, IImageProcessor, IServerApplicationHost, IAuthenticationRepository, IDeviceManager, IMediaSourceManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionManager(IUserDataManager userDataManager, ILoggerFactory loggerFactory, ILibraryManager libraryManager, IUserManager userManager, IMusicManager musicManager, IDtoService dtoService, IImageProcessor imageProcessor, IServerApplicationHost appHost, IAuthenticationRepository authRepo, IDeviceManager deviceManager, IMediaSourceManager mediaSourceManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserDataManager.html">IUserDataManager</a></td>
+        <td><span class="parametername">userDataManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a></td>
+        <td><span class="parametername">libraryManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserManager.html">IUserManager</a></td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IMusicManager.html">IMusicManager</a></td>
+        <td><span class="parametername">musicManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dto.IDtoService.html">IDtoService</a></td>
+        <td><span class="parametername">dtoService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Drawing.IImageProcessor.html">IImageProcessor</a></td>
+        <td><span class="parametername">imageProcessor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.IServerApplicationHost.html">IServerApplicationHost</a></td>
+        <td><span class="parametername">appHost</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Security.IAuthenticationRepository.html">IAuthenticationRepository</a></td>
+        <td><span class="parametername">authRepo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Devices.IDeviceManager.html">IDeviceManager</a></td>
+        <td><span class="parametername">deviceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IMediaSourceManager.html">IMediaSourceManager</a></td>
+        <td><span class="parametername">mediaSourceManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_Sessions.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.Sessions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L170">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_Sessions_" data-uid="Emby.Server.Implementations.Session.SessionManager.Sessions*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_Sessions" data-uid="Emby.Server.Implementations.Session.SessionManager.Sessions">Sessions</h4>
+  <div class="markdown level1 summary"><p>Gets all connections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;SessionInfo&gt; Sessions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Session.SessionInfo.html">SessionInfo</a>&gt;</td>
+        <td><p>All connections.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_AddAdditionalUser_System_String_Guid_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.AddAdditionalUser(System.String%2CGuid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1302">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_AddAdditionalUser_" data-uid="Emby.Server.Implementations.Session.SessionManager.AddAdditionalUser*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_AddAdditionalUser_System_String_Guid_" data-uid="Emby.Server.Implementations.Session.SessionManager.AddAdditionalUser(System.String,Guid)">AddAdditionalUser(String, Guid)</h4>
+  <div class="markdown level1 summary"><p>Adds the additional user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAdditionalUser(string sessionId, Guid userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>The user identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_AuthenticateNewSession_MediaBrowser_Controller_Session_AuthenticationRequest_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.AuthenticateNewSession(MediaBrowser.Controller.Session.AuthenticationRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1363">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_AuthenticateNewSession_" data-uid="Emby.Server.Implementations.Session.SessionManager.AuthenticateNewSession*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_AuthenticateNewSession_MediaBrowser_Controller_Session_AuthenticationRequest_" data-uid="Emby.Server.Implementations.Session.SessionManager.AuthenticateNewSession(MediaBrowser.Controller.Session.AuthenticationRequest)">AuthenticateNewSession(AuthenticationRequest)</h4>
+  <div class="markdown level1 summary"><p>Authenticates the new session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AuthenticationResult&gt; AuthenticateNewSession(AuthenticationRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.AuthenticationRequest.html">AuthenticationRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Authentication.AuthenticationResult.html">AuthenticationResult</a>&gt;</td>
+        <td><p>Task{SessionInfo}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_CheckDisposed.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.CheckDisposed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L158">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_CheckDisposed_" data-uid="Emby.Server.Implementations.Session.SessionManager.CheckDisposed*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_CheckDisposed" data-uid="Emby.Server.Implementations.Session.SessionManager.CheckDisposed">CheckDisposed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckDisposed()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_ClearTranscodingInfo_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.ClearTranscodingInfo(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1725">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_ClearTranscodingInfo_" data-uid="Emby.Server.Implementations.Session.SessionManager.ClearTranscodingInfo*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_ClearTranscodingInfo_System_String_" data-uid="Emby.Server.Implementations.Session.SessionManager.ClearTranscodingInfo(System.String)">ClearTranscodingInfo(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearTranscodingInfo(string deviceId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_CloseIfNeeded_MediaBrowser_Controller_Session_SessionInfo_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.CloseIfNeeded(MediaBrowser.Controller.Session.SessionInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L290">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_CloseIfNeeded_" data-uid="Emby.Server.Implementations.Session.SessionManager.CloseIfNeeded*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_CloseIfNeeded_MediaBrowser_Controller_Session_SessionInfo_" data-uid="Emby.Server.Implementations.Session.SessionManager.CloseIfNeeded(MediaBrowser.Controller.Session.SessionInfo)">CloseIfNeeded(SessionInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloseIfNeeded(SessionInfo session)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.SessionInfo.html">SessionInfo</a></td>
+        <td><span class="parametername">session</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_CreateNewSession_MediaBrowser_Controller_Session_AuthenticationRequest_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.CreateNewSession(MediaBrowser.Controller.Session.AuthenticationRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1368">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_CreateNewSession_" data-uid="Emby.Server.Implementations.Session.SessionManager.CreateNewSession*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_CreateNewSession_MediaBrowser_Controller_Session_AuthenticationRequest_" data-uid="Emby.Server.Implementations.Session.SessionManager.CreateNewSession(MediaBrowser.Controller.Session.AuthenticationRequest)">CreateNewSession(AuthenticationRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AuthenticationResult&gt; CreateNewSession(AuthenticationRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.AuthenticationRequest.html">AuthenticationRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Authentication.AuthenticationResult.html">AuthenticationResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_Dispose.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L135">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_Dispose_" data-uid="Emby.Server.Implementations.Session.SessionManager.Dispose*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_Dispose" data-uid="Emby.Server.Implementations.Session.SessionManager.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L141">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_Dispose_" data-uid="Emby.Server.Implementations.Session.SessionManager.Dispose*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_Dispose_System_Boolean_" data-uid="Emby.Server.Implementations.Session.SessionManager.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_GetSession_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.GetSession(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1730">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_GetSession_" data-uid="Emby.Server.Implementations.Session.SessionManager.GetSession*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_GetSession_System_String_System_String_System_String_" data-uid="Emby.Server.Implementations.Session.SessionManager.GetSession(System.String,System.String,System.String)">GetSession(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionInfo GetSession(string deviceId, string client, string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.SessionInfo.html">SessionInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_GetSessionByAuthenticationToken_MediaBrowser_Controller_Security_AuthenticationInfo_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.GetSessionByAuthenticationToken(MediaBrowser.Controller.Security.AuthenticationInfo%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1736">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_GetSessionByAuthenticationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.GetSessionByAuthenticationToken*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_GetSessionByAuthenticationToken_MediaBrowser_Controller_Security_AuthenticationInfo_System_String_System_String_System_String_" data-uid="Emby.Server.Implementations.Session.SessionManager.GetSessionByAuthenticationToken(MediaBrowser.Controller.Security.AuthenticationInfo,System.String,System.String,System.String)">GetSessionByAuthenticationToken(AuthenticationInfo, String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionInfo GetSessionByAuthenticationToken(AuthenticationInfo info, string deviceId, string remoteEndpoint, string appVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Security.AuthenticationInfo.html">AuthenticationInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">remoteEndpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.SessionInfo.html">SessionInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_GetSessionByAuthenticationToken_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.GetSessionByAuthenticationToken(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1768">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_GetSessionByAuthenticationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.GetSessionByAuthenticationToken*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_GetSessionByAuthenticationToken_System_String_System_String_System_String_" data-uid="Emby.Server.Implementations.Session.SessionManager.GetSessionByAuthenticationToken(System.String,System.String,System.String)">GetSessionByAuthenticationToken(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionInfo GetSessionByAuthenticationToken(string token, string deviceId, string remoteEndpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">remoteEndpoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.SessionInfo.html">SessionInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_Logout_MediaBrowser_Controller_Security_AuthenticationInfo_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.Logout(MediaBrowser.Controller.Security.AuthenticationInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1517">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_Logout_" data-uid="Emby.Server.Implementations.Session.SessionManager.Logout*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_Logout_MediaBrowser_Controller_Security_AuthenticationInfo_" data-uid="Emby.Server.Implementations.Session.SessionManager.Logout(MediaBrowser.Controller.Security.AuthenticationInfo)">Logout(AuthenticationInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Logout(AuthenticationInfo existing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Security.AuthenticationInfo.html">AuthenticationInfo</a></td>
+        <td><span class="parametername">existing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_Logout_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.Logout(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1495">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_Logout_" data-uid="Emby.Server.Implementations.Session.SessionManager.Logout*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_Logout_System_String_" data-uid="Emby.Server.Implementations.Session.SessionManager.Logout(System.String)">Logout(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Logout(string accessToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_LogSessionActivity_System_String_System_String_System_String_System_String_System_String_MediaBrowser_Controller_Entities_User_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.LogSessionActivity(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CMediaBrowser.Controller.Entities.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L229">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_LogSessionActivity_" data-uid="Emby.Server.Implementations.Session.SessionManager.LogSessionActivity*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_LogSessionActivity_System_String_System_String_System_String_System_String_System_String_MediaBrowser_Controller_Entities_User_" data-uid="Emby.Server.Implementations.Session.SessionManager.LogSessionActivity(System.String,System.String,System.String,System.String,System.String,MediaBrowser.Controller.Entities.User)">LogSessionActivity(String, String, String, String, String, User)</h4>
+  <div class="markdown level1 summary"><p>Logs the user activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionInfo LogSessionActivity(string appName, string appVersion, string deviceId, string deviceName, string remoteEndPoint, User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appName</span></td>
+        <td><p>Type of the client.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appVersion</span></td>
+        <td><p>The app version.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td><p>The device id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceName</span></td>
+        <td><p>Name of the device.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">remoteEndPoint</span></td>
+        <td><p>The remote end point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>The user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.SessionInfo.html">SessionInfo</a></td>
+        <td><p>SessionInfo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_OnPlaybackProgress_MediaBrowser_Model_Session_PlaybackProgressInfo_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.OnPlaybackProgress(MediaBrowser.Model.Session.PlaybackProgressInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L685">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_OnPlaybackProgress_" data-uid="Emby.Server.Implementations.Session.SessionManager.OnPlaybackProgress*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_OnPlaybackProgress_MediaBrowser_Model_Session_PlaybackProgressInfo_" data-uid="Emby.Server.Implementations.Session.SessionManager.OnPlaybackProgress(MediaBrowser.Model.Session.PlaybackProgressInfo)">OnPlaybackProgress(PlaybackProgressInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task OnPlaybackProgress(PlaybackProgressInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.PlaybackProgressInfo.html">PlaybackProgressInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_OnPlaybackProgress_MediaBrowser_Model_Session_PlaybackProgressInfo_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.OnPlaybackProgress(MediaBrowser.Model.Session.PlaybackProgressInfo%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L694">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_OnPlaybackProgress_" data-uid="Emby.Server.Implementations.Session.SessionManager.OnPlaybackProgress*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_OnPlaybackProgress_MediaBrowser_Model_Session_PlaybackProgressInfo_System_Boolean_" data-uid="Emby.Server.Implementations.Session.SessionManager.OnPlaybackProgress(MediaBrowser.Model.Session.PlaybackProgressInfo,System.Boolean)">OnPlaybackProgress(PlaybackProgressInfo, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Used to report playback progress for an item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task OnPlaybackProgress(PlaybackProgressInfo info, bool isAutomated)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.PlaybackProgressInfo.html">PlaybackProgressInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isAutomated</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_OnPlaybackStart_MediaBrowser_Model_Session_PlaybackStartInfo_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.OnPlaybackStart(MediaBrowser.Model.Session.PlaybackStartInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L602">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_OnPlaybackStart_" data-uid="Emby.Server.Implementations.Session.SessionManager.OnPlaybackStart*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_OnPlaybackStart_MediaBrowser_Model_Session_PlaybackStartInfo_" data-uid="Emby.Server.Implementations.Session.SessionManager.OnPlaybackStart(MediaBrowser.Model.Session.PlaybackStartInfo)">OnPlaybackStart(PlaybackStartInfo)</h4>
+  <div class="markdown level1 summary"><p>Used to report that playback has started for an item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task OnPlaybackStart(PlaybackStartInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.PlaybackStartInfo.html">PlaybackStartInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>The info.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_OnPlaybackStopped_MediaBrowser_Model_Session_PlaybackStopInfo_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.OnPlaybackStopped(MediaBrowser.Model.Session.PlaybackStopInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L823">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_OnPlaybackStopped_" data-uid="Emby.Server.Implementations.Session.SessionManager.OnPlaybackStopped*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_OnPlaybackStopped_MediaBrowser_Model_Session_PlaybackStopInfo_" data-uid="Emby.Server.Implementations.Session.SessionManager.OnPlaybackStopped(MediaBrowser.Model.Session.PlaybackStopInfo)">OnPlaybackStopped(PlaybackStopInfo)</h4>
+  <div class="markdown level1 summary"><p>Used to report that playback has ended for an item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task OnPlaybackStopped(PlaybackStopInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.PlaybackStopInfo.html">PlaybackStopInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>The info.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_RemoveAdditionalUser_System_String_Guid_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.RemoveAdditionalUser(System.String%2CGuid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1336">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_RemoveAdditionalUser_" data-uid="Emby.Server.Implementations.Session.SessionManager.RemoveAdditionalUser*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_RemoveAdditionalUser_System_String_Guid_" data-uid="Emby.Server.Implementations.Session.SessionManager.RemoveAdditionalUser(System.String,Guid)">RemoveAdditionalUser(String, Guid)</h4>
+  <div class="markdown level1 summary"><p>Removes the additional user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAdditionalUser(string sessionId, Guid userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>The user identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_ReportCapabilities_System_String_MediaBrowser_Model_Session_ClientCapabilities_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.ReportCapabilities(System.String%2CMediaBrowser.Model.Session.ClientCapabilities)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1570">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_ReportCapabilities_" data-uid="Emby.Server.Implementations.Session.SessionManager.ReportCapabilities*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_ReportCapabilities_System_String_MediaBrowser_Model_Session_ClientCapabilities_" data-uid="Emby.Server.Implementations.Session.SessionManager.ReportCapabilities(System.String,MediaBrowser.Model.Session.ClientCapabilities)">ReportCapabilities(String, ClientCapabilities)</h4>
+  <div class="markdown level1 summary"><p>Reports the capabilities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReportCapabilities(string sessionId, ClientCapabilities capabilities)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>The session identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.ClientCapabilities.html">ClientCapabilities</a></td>
+        <td><span class="parametername">capabilities</span></td>
+        <td><p>The capabilities.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_ReportNowViewingItem_System_String_MediaBrowser_Model_Dto_BaseItemDto_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.ReportNowViewingItem(System.String%2CMediaBrowser.Model.Dto.BaseItemDto)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1708">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_ReportNowViewingItem_" data-uid="Emby.Server.Implementations.Session.SessionManager.ReportNowViewingItem*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_ReportNowViewingItem_System_String_MediaBrowser_Model_Dto_BaseItemDto_" data-uid="Emby.Server.Implementations.Session.SessionManager.ReportNowViewingItem(System.String,MediaBrowser.Model.Dto.BaseItemDto)">ReportNowViewingItem(String, BaseItemDto)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReportNowViewingItem(string sessionId, BaseItemDto item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_ReportNowViewingItem_System_String_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.ReportNowViewingItem(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1694">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_ReportNowViewingItem_" data-uid="Emby.Server.Implementations.Session.SessionManager.ReportNowViewingItem*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_ReportNowViewingItem_System_String_System_String_" data-uid="Emby.Server.Implementations.Session.SessionManager.ReportNowViewingItem(System.String,System.String)">ReportNowViewingItem(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReportNowViewingItem(string sessionId, string itemId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">itemId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_ReportSessionEnded_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.ReportSessionEnded(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L302">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_ReportSessionEnded_" data-uid="Emby.Server.Implementations.Session.SessionManager.ReportSessionEnded*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_ReportSessionEnded_System_String_" data-uid="Emby.Server.Implementations.Session.SessionManager.ReportSessionEnded(System.String)">ReportSessionEnded(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReportSessionEnded(string sessionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_ReportTranscodingInfo_System_String_MediaBrowser_Model_Session_TranscodingInfo_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.ReportTranscodingInfo(System.String%2CMediaBrowser.Model.Session.TranscodingInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1715">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_ReportTranscodingInfo_" data-uid="Emby.Server.Implementations.Session.SessionManager.ReportTranscodingInfo*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_ReportTranscodingInfo_System_String_MediaBrowser_Model_Session_TranscodingInfo_" data-uid="Emby.Server.Implementations.Session.SessionManager.ReportTranscodingInfo(System.String,MediaBrowser.Model.Session.TranscodingInfo)">ReportTranscodingInfo(String, TranscodingInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReportTranscodingInfo(string deviceId, TranscodingInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.TranscodingInfo.html">TranscodingInfo</a></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_RevokeToken_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.RevokeToken(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1560">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_RevokeToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.RevokeToken*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_RevokeToken_System_String_" data-uid="Emby.Server.Implementations.Session.SessionManager.RevokeToken(System.String)">RevokeToken(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RevokeToken(string token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">token</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_RevokeUserTokens_Guid_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.RevokeUserTokens(Guid%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1542">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_RevokeUserTokens_" data-uid="Emby.Server.Implementations.Session.SessionManager.RevokeUserTokens*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_RevokeUserTokens_Guid_System_String_" data-uid="Emby.Server.Implementations.Session.SessionManager.RevokeUserTokens(Guid,System.String)">RevokeUserTokens(Guid, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RevokeUserTokens(Guid userId, string currentAccessToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">currentAccessToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SendBrowseCommand_System_String_System_String_MediaBrowser_Model_Session_BrowseRequest_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SendBrowseCommand(System.String%2CSystem.String%2CMediaBrowser.Model.Session.BrowseRequest%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1209">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_SendBrowseCommand_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendBrowseCommand*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SendBrowseCommand_System_String_System_String_MediaBrowser_Model_Session_BrowseRequest_CancellationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendBrowseCommand(System.String,System.String,MediaBrowser.Model.Session.BrowseRequest,CancellationToken)">SendBrowseCommand(String, String, BrowseRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendBrowseCommand(string controllingSessionId, string sessionId, BrowseRequest command, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">controllingSessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.BrowseRequest.html">BrowseRequest</a></td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SendGeneralCommand_System_String_System_String_MediaBrowser_Model_Session_GeneralCommand_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SendGeneralCommand(System.String%2CSystem.String%2CMediaBrowser.Model.Session.GeneralCommand%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1014">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_SendGeneralCommand_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendGeneralCommand*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SendGeneralCommand_System_String_System_String_MediaBrowser_Model_Session_GeneralCommand_CancellationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendGeneralCommand(System.String,System.String,MediaBrowser.Model.Session.GeneralCommand,CancellationToken)">SendGeneralCommand(String, String, GeneralCommand, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendGeneralCommand(string controllingSessionId, string sessionId, GeneralCommand command, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">controllingSessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.GeneralCommand.html">GeneralCommand</a></td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SendMessageCommand_System_String_System_String_MediaBrowser_Model_Session_MessageCommand_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SendMessageCommand(System.String%2CSystem.String%2CMediaBrowser.Model.Session.MessageCommand%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L994">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_SendMessageCommand_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendMessageCommand*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SendMessageCommand_System_String_System_String_MediaBrowser_Model_Session_MessageCommand_CancellationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendMessageCommand(System.String,System.String,MediaBrowser.Model.Session.MessageCommand,CancellationToken)">SendMessageCommand(String, String, MessageCommand, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendMessageCommand(string controllingSessionId, string sessionId, MessageCommand command, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">controllingSessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.MessageCommand.html">MessageCommand</a></td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SendMessageToAdminSessions__1_System_String___0_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SendMessageToAdminSessions%60%601(System.String%2C%60%600%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1785">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_SendMessageToAdminSessions_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendMessageToAdminSessions*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SendMessageToAdminSessions__1_System_String___0_CancellationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendMessageToAdminSessions``1(System.String,``0,CancellationToken)">SendMessageToAdminSessions&lt;T&gt;(String, T, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendMessageToAdminSessions&lt;T&gt;(string name, T data, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SendMessageToUserDeviceAndAdminSessions__1_System_String_System_String___0_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SendMessageToUserDeviceAndAdminSessions%60%601(System.String%2CSystem.String%2C%60%600%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1827">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_SendMessageToUserDeviceAndAdminSessions_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendMessageToUserDeviceAndAdminSessions*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SendMessageToUserDeviceAndAdminSessions__1_System_String_System_String___0_CancellationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendMessageToUserDeviceAndAdminSessions``1(System.String,System.String,``0,CancellationToken)">SendMessageToUserDeviceAndAdminSessions&lt;T&gt;(String, String, T, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendMessageToUserDeviceAndAdminSessions&lt;T&gt;(string deviceId, string name, T data, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SendMessageToUserDeviceSessions__1_System_String_System_String___0_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SendMessageToUserDeviceSessions%60%601(System.String%2CSystem.String%2C%60%600%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1818">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_SendMessageToUserDeviceSessions_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendMessageToUserDeviceSessions*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SendMessageToUserDeviceSessions__1_System_String_System_String___0_CancellationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendMessageToUserDeviceSessions``1(System.String,System.String,``0,CancellationToken)">SendMessageToUserDeviceSessions&lt;T&gt;(String, String, T, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendMessageToUserDeviceSessions&lt;T&gt;(string deviceId, string name, T data, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SendMessageToUserSessions__1_List_Guid__System_String___0_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SendMessageToUserSessions%60%601(List%7BGuid%7D%2CSystem.String%2C%60%600%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1810">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_SendMessageToUserSessions_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendMessageToUserSessions*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SendMessageToUserSessions__1_List_Guid__System_String___0_CancellationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendMessageToUserSessions``1(List{Guid},System.String,``0,CancellationToken)">SendMessageToUserSessions&lt;T&gt;(List&lt;Guid&gt;, String, T, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendMessageToUserSessions&lt;T&gt;(List&lt;Guid&gt; userIds, string name, T data, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td><span class="parametername">userIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SendMessageToUserSessions__1_List_Guid__System_String_Func___0__CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SendMessageToUserSessions%60%601(List%7BGuid%7D%2CSystem.String%2CFunc%7B%60%600%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1794">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_SendMessageToUserSessions_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendMessageToUserSessions*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SendMessageToUserSessions__1_List_Guid__System_String_Func___0__CancellationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendMessageToUserSessions``1(List{Guid},System.String,Func{``0},CancellationToken)">SendMessageToUserSessions&lt;T&gt;(List&lt;Guid&gt;, String, Func&lt;T&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendMessageToUserSessions&lt;T&gt;(List&lt;Guid&gt; userIds, string name, Func&lt;T&gt; dataFn, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td><span class="parametername">userIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T&gt;</td>
+        <td><span class="parametername">dataFn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SendPlayCommand_System_String_System_String_MediaBrowser_Model_Session_PlayRequest_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SendPlayCommand(System.String%2CSystem.String%2CMediaBrowser.Model.Session.PlayRequest%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1058">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_SendPlayCommand_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendPlayCommand*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SendPlayCommand_System_String_System_String_MediaBrowser_Model_Session_PlayRequest_CancellationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendPlayCommand(System.String,System.String,MediaBrowser.Model.Session.PlayRequest,CancellationToken)">SendPlayCommand(String, String, PlayRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendPlayCommand(string controllingSessionId, string sessionId, PlayRequest command, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">controllingSessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.PlayRequest.html">PlayRequest</a></td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SendPlaystateCommand_System_String_System_String_MediaBrowser_Model_Session_PlaystateRequest_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SendPlaystateCommand(System.String%2CSystem.String%2CMediaBrowser.Model.Session.PlaystateRequest%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1225">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_SendPlaystateCommand_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendPlaystateCommand*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SendPlaystateCommand_System_String_System_String_MediaBrowser_Model_Session_PlaystateRequest_CancellationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendPlaystateCommand(System.String,System.String,MediaBrowser.Model.Session.PlaystateRequest,CancellationToken)">SendPlaystateCommand(String, String, PlaystateRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendPlaystateCommand(string controllingSessionId, string sessionId, PlaystateRequest command, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">controllingSessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Session.PlaystateRequest.html">PlaystateRequest</a></td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SendRestartRequiredNotification_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SendRestartRequiredNotification(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1262">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_SendRestartRequiredNotification_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendRestartRequiredNotification*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SendRestartRequiredNotification_CancellationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendRestartRequiredNotification(CancellationToken)">SendRestartRequiredNotification(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the restart required message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendRestartRequiredNotification(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SendServerRestartNotification_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SendServerRestartNotification(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1286">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_SendServerRestartNotification_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendServerRestartNotification*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SendServerRestartNotification_CancellationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendServerRestartNotification(CancellationToken)">SendServerRestartNotification(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the server restart notification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendServerRestartNotification(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SendServerShutdownNotification_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SendServerShutdownNotification(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L1274">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_SendServerShutdownNotification_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendServerShutdownNotification*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SendServerShutdownNotification_CancellationToken_" data-uid="Emby.Server.Implementations.Session.SessionManager.SendServerShutdownNotification(CancellationToken)">SendServerShutdownNotification(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends the server shutdown notification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SendServerShutdownNotification(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_UpdateDeviceName_System_String_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.UpdateDeviceName(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L209">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Session_SessionManager_UpdateDeviceName_" data-uid="Emby.Server.Implementations.Session.SessionManager.UpdateDeviceName*"></a>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_UpdateDeviceName_System_String_System_String_" data-uid="Emby.Server.Implementations.Session.SessionManager.UpdateDeviceName(System.String,System.String)">UpdateDeviceName(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateDeviceName(string sessionId, string deviceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_AuthenticationFailed.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.AuthenticationFailed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L65">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_AuthenticationFailed" data-uid="Emby.Server.Implementations.Session.SessionManager.AuthenticationFailed">AuthenticationFailed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GenericEventArgs&lt;AuthenticationRequest&gt;&gt; AuthenticationFailed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Session.AuthenticationRequest.html">AuthenticationRequest</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_AuthenticationSucceeded.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.AuthenticationSucceeded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L67">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_AuthenticationSucceeded" data-uid="Emby.Server.Implementations.Session.SessionManager.AuthenticationSucceeded">AuthenticationSucceeded</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GenericEventArgs&lt;AuthenticationResult&gt;&gt; AuthenticationSucceeded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<a class="xref" href="MediaBrowser.Controller.Authentication.AuthenticationResult.html">AuthenticationResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_CapabilitiesChanged.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.CapabilitiesChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L83">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_CapabilitiesChanged" data-uid="Emby.Server.Implementations.Session.SessionManager.CapabilitiesChanged">CapabilitiesChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SessionEventArgs&gt; CapabilitiesChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Session.SessionEventArgs.html">SessionEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_PlaybackProgress.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.PlaybackProgress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L76">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_PlaybackProgress" data-uid="Emby.Server.Implementations.Session.SessionManager.PlaybackProgress">PlaybackProgress</h4>
+  <div class="markdown level1 summary"><p>Occurs when [playback progress].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlaybackProgressEventArgs&gt; PlaybackProgress</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.PlaybackProgressEventArgs.html">PlaybackProgressEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_PlaybackStart.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.PlaybackStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L72">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_PlaybackStart" data-uid="Emby.Server.Implementations.Session.SessionManager.PlaybackStart">PlaybackStart</h4>
+  <div class="markdown level1 summary"><p>Occurs when [playback start].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlaybackProgressEventArgs&gt; PlaybackStart</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.PlaybackProgressEventArgs.html">PlaybackProgressEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_PlaybackStopped.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.PlaybackStopped%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L80">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_PlaybackStopped" data-uid="Emby.Server.Implementations.Session.SessionManager.PlaybackStopped">PlaybackStopped</h4>
+  <div class="markdown level1 summary"><p>Occurs when [playback stopped].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PlaybackStopEventArgs&gt; PlaybackStopped</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.PlaybackStopEventArgs.html">PlaybackStopEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SessionActivity.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SessionActivity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L85">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SessionActivity" data-uid="Emby.Server.Implementations.Session.SessionManager.SessionActivity">SessionActivity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SessionEventArgs&gt; SessionActivity</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Session.SessionEventArgs.html">SessionEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SessionEnded.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SessionEnded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L84">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SessionEnded" data-uid="Emby.Server.Implementations.Session.SessionManager.SessionEnded">SessionEnded</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SessionEventArgs&gt; SessionEnded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Session.SessionEventArgs.html">SessionEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager_SessionStarted.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager.SessionStarted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L82">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_Session_SessionManager_SessionStarted" data-uid="Emby.Server.Implementations.Session.SessionManager.SessionStarted">SessionStarted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SessionEventArgs&gt; SessionStarted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Controller.Session.SessionEventArgs.html">SessionEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Session.ISessionManager.html">ISessionManager</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Session_SessionManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Session.SessionManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Session/SessionManager.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,991 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseSqliteRepository
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseSqliteRepository
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository">
+  
+  
+  <h1 id="Emby_Server_Implementations_Data_BaseSqliteRepository" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository" class="text-break">Class BaseSqliteRepository
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BaseSqliteRepository</span></div>
+      <div class="level2"><a class="xref" href="Emby.Server.Implementations.Activity.ActivityRepository.html">ActivityRepository</a></div>
+      <div class="level2"><a class="xref" href="Emby.Server.Implementations.Data.SqliteDisplayPreferencesRepository.html">SqliteDisplayPreferencesRepository</a></div>
+      <div class="level2"><a class="xref" href="Emby.Server.Implementations.Data.SqliteItemRepository.html">SqliteItemRepository</a></div>
+      <div class="level2"><a class="xref" href="Emby.Server.Implementations.Data.SqliteUserDataRepository.html">SqliteUserDataRepository</a></div>
+      <div class="level2"><a class="xref" href="Emby.Server.Implementations.Data.SqliteUserRepository.html">SqliteUserRepository</a></div>
+      <div class="level2"><a class="xref" href="Emby.Server.Implementations.Security.AuthenticationRepository.html">AuthenticationRepository</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.Data.html">Emby.Server.Implementations.Data</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_Data_BaseSqliteRepository_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseSqliteRepository : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository__ctor_ILogger_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.%23ctor(ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L14">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository__ctor_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository__ctor_ILogger_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.#ctor(ILogger)">BaseSqliteRepository(ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BaseSqliteRepository(ILogger logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_CacheSize.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.CacheSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L53">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_CacheSize_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.CacheSize*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_CacheSize" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.CacheSize">CacheSize</h4>
+  <div class="markdown level1 summary"><p>Gets the cache size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int? CacheSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The cache size or null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_DbFilePath.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.DbFilePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L23">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_DbFilePath_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.DbFilePath*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_DbFilePath" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.DbFilePath">DbFilePath</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the path to the DB file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string DbFilePath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Path to the DB file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_DefaultConnectionFlags.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.DefaultConnectionFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L35">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_DefaultConnectionFlags_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.DefaultConnectionFlags*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_DefaultConnectionFlags" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.DefaultConnectionFlags">DefaultConnectionFlags</h4>
+  <div class="markdown level1 summary"><p>Gets the default connection flags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ConnectionFlags DefaultConnectionFlags { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ConnectionFlags</span></td>
+        <td><p>The default connection flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_JournalMode.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.JournalMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L59">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_JournalMode_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.JournalMode*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_JournalMode" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.JournalMode">JournalMode</h4>
+  <div class="markdown level1 summary"><p>Gets the journal mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string JournalMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The journal mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_Logger.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L29">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_Logger_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.Logger*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_Logger" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>Gets the logger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILogger Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><p>The logger.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_PageSize.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.PageSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L65">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_PageSize_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.PageSize*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_PageSize" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.PageSize">PageSize</h4>
+  <div class="markdown level1 summary"><p>Gets the page size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int? PageSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The page size or null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_ReadTransactionMode.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.ReadTransactionMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L47">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_ReadTransactionMode_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.ReadTransactionMode*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_ReadTransactionMode" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.ReadTransactionMode">ReadTransactionMode</h4>
+  <div class="markdown level1 summary"><p>Gets the transaction mode for read-only operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TransactionMode ReadTransactionMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TransactionMode</span></td>
+        <td><p>The transaction mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_Synchronous.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.Synchronous%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L79">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_Synchronous_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.Synchronous*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_Synchronous" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.Synchronous">Synchronous</h4>
+  <div class="markdown level1 summary"><p>Gets the synchronous mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual SynchronousMode? Synchronous { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Emby.Server.Implementations.Data.SynchronousMode.html">SynchronousMode</a>&gt;</td>
+        <td><p>The synchronous mode or null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_TempStore.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.TempStore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L72">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_TempStore_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.TempStore*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_TempStore" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.TempStore">TempStore</h4>
+  <div class="markdown level1 summary"><p>Gets the temp store mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TempStoreMode TempStore { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.Data.TempStoreMode.html">TempStoreMode</a></td>
+        <td><p>The temp store mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_TransactionMode.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.TransactionMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L41">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_TransactionMode_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.TransactionMode*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_TransactionMode" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.TransactionMode">TransactionMode</h4>
+  <div class="markdown level1 summary"><p>Gets the transaction mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TransactionMode TransactionMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TransactionMode</span></td>
+        <td><p>The transaction mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_WriteConnection.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.WriteConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L91">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_WriteConnection_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.WriteConnection*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_WriteConnection" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.WriteConnection">WriteConnection</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the write connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SQLiteDatabaseConnection WriteConnection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SQLiteDatabaseConnection</span></td>
+        <td><p>The write connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_WriteLock.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.WriteLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L85">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_WriteLock_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.WriteLock*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_WriteLock" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.WriteLock">WriteLock</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the write lock.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SemaphoreSlim WriteLock { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SemaphoreSlim</span></td>
+        <td><p>The write lock.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_AddColumn_IDatabaseConnection_System_String_System_String_System_String_List_System_String__.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.AddColumn(IDatabaseConnection%2CSystem.String%2CSystem.String%2CSystem.String%2CList%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L180">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_AddColumn_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.AddColumn*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_AddColumn_IDatabaseConnection_System_String_System_String_System_String_List_System_String__" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.AddColumn(IDatabaseConnection,System.String,System.String,System.String,List{System.String})">AddColumn(IDatabaseConnection, String, String, String, List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddColumn(IDatabaseConnection connection, string table, string columnName, string type, List&lt;string&gt; existingColumnNames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDatabaseConnection</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">columnName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">existingColumnNames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_CheckDisposed.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.CheckDisposed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L190">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_CheckDisposed_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.CheckDisposed*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_CheckDisposed" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.CheckDisposed">CheckDisposed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CheckDisposed()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_Dispose.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L199">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_Dispose_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.Dispose*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_Dispose" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L209">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_Dispose_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.Dispose*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_Dispose_System_Boolean_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged and - optionally - managed resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool dispose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">dispose</span></td>
+        <td><p><code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_GetColumnNames_IDatabaseConnection_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.GetColumnNames(IDatabaseConnection%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L163">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_GetColumnNames_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.GetColumnNames*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_GetColumnNames_IDatabaseConnection_System_String_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.GetColumnNames(IDatabaseConnection,System.String)">GetColumnNames(IDatabaseConnection, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;string&gt; GetColumnNames(IDatabaseConnection connection, string table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDatabaseConnection</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_GetConnection_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L93">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_GetConnection_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_GetConnection_System_Boolean_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(System.Boolean)">GetConnection(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ManagedConnection GetConnection(bool _ = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">_</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.Data.ManagedConnection.html">ManagedConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_PrepareAll_IDatabaseConnection_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.PrepareAll(IDatabaseConnection%2CIEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L140">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_PrepareAll_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.PrepareAll*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_PrepareAll_IDatabaseConnection_IEnumerable_System_String__" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.PrepareAll(IDatabaseConnection,IEnumerable{System.String})">PrepareAll(IDatabaseConnection, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IStatement&gt; PrepareAll(IDatabaseConnection connection, IEnumerable&lt;string&gt; sql)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDatabaseConnection</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">sql</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IStatement</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_PrepareStatement_Emby_Server_Implementations_Data_ManagedConnection_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.PrepareStatement(Emby.Server.Implementations.Data.ManagedConnection%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L134">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_PrepareStatement_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.PrepareStatement*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_PrepareStatement_Emby_Server_Implementations_Data_ManagedConnection_System_String_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.PrepareStatement(Emby.Server.Implementations.Data.ManagedConnection,System.String)">PrepareStatement(ManagedConnection, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStatement PrepareStatement(ManagedConnection connection, string sql)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.Data.ManagedConnection.html">ManagedConnection</a></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sql</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IStatement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_PrepareStatement_IDatabaseConnection_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.PrepareStatement(IDatabaseConnection%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L137">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_PrepareStatement_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.PrepareStatement*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_PrepareStatement_IDatabaseConnection_System_String_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.PrepareStatement(IDatabaseConnection,System.String)">PrepareStatement(IDatabaseConnection, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStatement PrepareStatement(IDatabaseConnection connection, string sql)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDatabaseConnection</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sql</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IStatement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository_TableExists_Emby_Server_Implementations_Data_ManagedConnection_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository.TableExists(Emby.Server.Implementations.Data.ManagedConnection%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L143">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Data_BaseSqliteRepository_TableExists_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.TableExists*"></a>
+  <h4 id="Emby_Server_Implementations_Data_BaseSqliteRepository_TableExists_Emby_Server_Implementations_Data_ManagedConnection_System_String_" data-uid="Emby.Server.Implementations.Data.BaseSqliteRepository.TableExists(Emby.Server.Implementations.Data.ManagedConnection,System.String)">TableExists(ManagedConnection, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TableExists(ManagedConnection connection, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.Data.ManagedConnection.html">ManagedConnection</a></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Data_BaseSqliteRepository.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Data.BaseSqliteRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Data/BaseSqliteRepository.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

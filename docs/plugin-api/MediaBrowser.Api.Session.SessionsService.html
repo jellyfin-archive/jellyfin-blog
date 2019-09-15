@@ -1,0 +1,1026 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SessionsService
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SessionsService
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Api.Session.SessionsService">
+  
+  
+  <h1 id="MediaBrowser_Api_Session_SessionsService" data-uid="MediaBrowser.Api.Session.SessionsService" class="text-break">Class SessionsService
+  </h1>
+  <div class="markdown level0 summary"><p>Class SessionsService</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MediaBrowser.Api.BaseApiService.html">BaseApiService</a></div>
+    <div class="level2"><span class="xref">SessionsService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IService.html">IService</a></div>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IRequiresRequest.html">IRequiresRequest</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_Logger">BaseApiService.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_ResultFactory">BaseApiService.ResultFactory</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_Request">BaseApiService.Request</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetHeader_System_String_">BaseApiService.GetHeader(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_SplitValue_System_String_System_Char_">BaseApiService.SplitValue(String, Char)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetGuids_System_String_">BaseApiService.GetGuids(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_ToOptimizedResult__1___0_">BaseApiService.ToOptimizedResult&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_AssertCanUpdateUser_MediaBrowser_Controller_Net_IAuthorizationContext_MediaBrowser_Controller_Library_IUserManager_Guid_System_Boolean_">BaseApiService.AssertCanUpdateUser(IAuthorizationContext, IUserManager, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetSession_MediaBrowser_Controller_Net_ISessionContext_">BaseApiService.GetSession(ISessionContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetDtoOptions_MediaBrowser_Controller_Net_IAuthorizationContext_System_Object_">BaseApiService.GetDtoOptions(IAuthorizationContext, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetArtist_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetArtist(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetStudio_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetStudio(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetGenre_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetGenre(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetMusicGenre_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetMusicGenre(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetPerson_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetPerson(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetPathValue_System_Int32_">BaseApiService.GetPathValue(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetItemByName_System_String_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetItemByName(String, String, ILibraryManager, DtoOptions)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Api.Session.html">MediaBrowser.Api.Session</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Api.dll</h6>
+  <h5 id="MediaBrowser_Api_Session_SessionsService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SessionsService : BaseApiService, IService, IRequiresRequest</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService__ctor_MediaBrowser_Controller_Session_ISessionManager_MediaBrowser_Controller_IServerApplicationHost_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Net_IAuthorizationContext_MediaBrowser_Controller_Security_IAuthenticationRepository_MediaBrowser_Controller_Devices_IDeviceManager_MediaBrowser_Controller_Net_ISessionContext_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.%23ctor(MediaBrowser.Controller.Session.ISessionManager%2CMediaBrowser.Controller.IServerApplicationHost%2CMediaBrowser.Controller.Library.IUserManager%2CMediaBrowser.Controller.Net.IAuthorizationContext%2CMediaBrowser.Controller.Security.IAuthenticationRepository%2CMediaBrowser.Controller.Devices.IDeviceManager%2CMediaBrowser.Controller.Net.ISessionContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L288">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService__ctor_" data-uid="MediaBrowser.Api.Session.SessionsService.#ctor*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService__ctor_MediaBrowser_Controller_Session_ISessionManager_MediaBrowser_Controller_IServerApplicationHost_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Net_IAuthorizationContext_MediaBrowser_Controller_Security_IAuthenticationRepository_MediaBrowser_Controller_Devices_IDeviceManager_MediaBrowser_Controller_Net_ISessionContext_" data-uid="MediaBrowser.Api.Session.SessionsService.#ctor(MediaBrowser.Controller.Session.ISessionManager,MediaBrowser.Controller.IServerApplicationHost,MediaBrowser.Controller.Library.IUserManager,MediaBrowser.Controller.Net.IAuthorizationContext,MediaBrowser.Controller.Security.IAuthenticationRepository,MediaBrowser.Controller.Devices.IDeviceManager,MediaBrowser.Controller.Net.ISessionContext)">SessionsService(ISessionManager, IServerApplicationHost, IUserManager, IAuthorizationContext, IAuthenticationRepository, IDeviceManager, ISessionContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionsService(ISessionManager sessionManager, IServerApplicationHost appHost, IUserManager userManager, IAuthorizationContext authContext, IAuthenticationRepository authRepo, IDeviceManager deviceManager, ISessionContext sessionContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Session.ISessionManager.html">ISessionManager</a></td>
+        <td><span class="parametername">sessionManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.IServerApplicationHost.html">IServerApplicationHost</a></td>
+        <td><span class="parametername">appHost</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserManager.html">IUserManager</a></td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Net.IAuthorizationContext.html">IAuthorizationContext</a></td>
+        <td><span class="parametername">authContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Security.IAuthenticationRepository.html">IAuthenticationRepository</a></td>
+        <td><span class="parametername">authRepo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Devices.IDeviceManager.html">IDeviceManager</a></td>
+        <td><span class="parametername">deviceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Net.ISessionContext.html">ISessionContext</a></td>
+        <td><span class="parametername">sessionContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Delete_MediaBrowser_Api_Session_RemoveUserFromSession_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Delete(MediaBrowser.Api.Session.RemoveUserFromSession)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L497">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Delete_" data-uid="MediaBrowser.Api.Session.SessionsService.Delete*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Delete_MediaBrowser_Api_Session_RemoveUserFromSession_" data-uid="MediaBrowser.Api.Session.SessionsService.Delete(MediaBrowser.Api.Session.RemoveUserFromSession)">Delete(RemoveUserFromSession)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(RemoveUserFromSession request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.RemoveUserFromSession.html">RemoveUserFromSession</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Delete_MediaBrowser_Api_Session_RevokeKey_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Delete(MediaBrowser.Api.Session.RevokeKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L309">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Delete_" data-uid="MediaBrowser.Api.Session.SessionsService.Delete*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Delete_MediaBrowser_Api_Session_RevokeKey_" data-uid="MediaBrowser.Api.Session.SessionsService.Delete(MediaBrowser.Api.Session.RevokeKey)">Delete(RevokeKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(RevokeKey request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.RevokeKey.html">RevokeKey</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Get_MediaBrowser_Api_Session_GetApiKeys_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Get(MediaBrowser.Api.Session.GetApiKeys)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L335">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Get_" data-uid="MediaBrowser.Api.Session.SessionsService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Get_MediaBrowser_Api_Session_GetApiKeys_" data-uid="MediaBrowser.Api.Session.SessionsService.Get(MediaBrowser.Api.Session.GetApiKeys)">Get(GetApiKeys)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetApiKeys request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.GetApiKeys.html">GetApiKeys</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Get_MediaBrowser_Api_Session_GetAuthProviders_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Get(MediaBrowser.Api.Session.GetAuthProviders)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L299">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Get_" data-uid="MediaBrowser.Api.Session.SessionsService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Get_MediaBrowser_Api_Session_GetAuthProviders_" data-uid="MediaBrowser.Api.Session.SessionsService.Get(MediaBrowser.Api.Session.GetAuthProviders)">Get(GetAuthProviders)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetAuthProviders request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.GetAuthProviders.html">GetAuthProviders</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Get_MediaBrowser_Api_Session_GetPasswordResetProviders_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Get(MediaBrowser.Api.Session.GetPasswordResetProviders)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L304">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Get_" data-uid="MediaBrowser.Api.Session.SessionsService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Get_MediaBrowser_Api_Session_GetPasswordResetProviders_" data-uid="MediaBrowser.Api.Session.SessionsService.Get(MediaBrowser.Api.Session.GetPasswordResetProviders)">Get(GetPasswordResetProviders)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetPasswordResetProviders request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.GetPasswordResetProviders.html">GetPasswordResetProviders</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Get_MediaBrowser_Api_Session_GetSessions_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Get(MediaBrowser.Api.Session.GetSessions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L350">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Get_" data-uid="MediaBrowser.Api.Session.SessionsService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Get_MediaBrowser_Api_Session_GetSessions_" data-uid="MediaBrowser.Api.Session.SessionsService.Get(MediaBrowser.Api.Session.GetSessions)">Get(GetSessions)</h4>
+  <div class="markdown level1 summary"><p>Gets the specified request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(GetSessions request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.GetSessions.html">GetSessions</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>System.Object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_AddUserToSession_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.AddUserToSession)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L492">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Post_" data-uid="MediaBrowser.Api.Session.SessionsService.Post*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_AddUserToSession_" data-uid="MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.AddUserToSession)">Post(AddUserToSession)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Post(AddUserToSession request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.AddUserToSession.html">AddUserToSession</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_CreateKey_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.CreateKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L315">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Post_" data-uid="MediaBrowser.Api.Session.SessionsService.Post*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_CreateKey_" data-uid="MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.CreateKey)">Post(CreateKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Post(CreateKey request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.CreateKey.html">CreateKey</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_DisplayContent_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.DisplayContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L409">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Post_" data-uid="MediaBrowser.Api.Session.SessionsService.Post*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_DisplayContent_" data-uid="MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.DisplayContent)">Post(DisplayContent)</h4>
+  <div class="markdown level1 summary"><p>Posts the specified request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Post(DisplayContent request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.DisplayContent.html">DisplayContent</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_Play_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.Play)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L465">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Post_" data-uid="MediaBrowser.Api.Session.SessionsService.Post*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_Play_" data-uid="MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.Play)">Post(Play)</h4>
+  <div class="markdown level1 summary"><p>Posts the specified request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Post(Play request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.Play.html">Play</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_PostCapabilities_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.PostCapabilities)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L502">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Post_" data-uid="MediaBrowser.Api.Session.SessionsService.Post*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_PostCapabilities_" data-uid="MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.PostCapabilities)">Post(PostCapabilities)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Post(PostCapabilities request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.PostCapabilities.html">PostCapabilities</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_PostFullCapabilities_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.PostFullCapabilities)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L522">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Post_" data-uid="MediaBrowser.Api.Session.SessionsService.Post*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_PostFullCapabilities_" data-uid="MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.PostFullCapabilities)">Post(PostFullCapabilities)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Post(PostFullCapabilities request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.PostFullCapabilities.html">PostFullCapabilities</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_ReportSessionEnded_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.ReportSessionEnded)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L328">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Post_" data-uid="MediaBrowser.Api.Session.SessionsService.Post*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_ReportSessionEnded_" data-uid="MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.ReportSessionEnded)">Post(ReportSessionEnded)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Post(ReportSessionEnded request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.ReportSessionEnded.html">ReportSessionEnded</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_SendFullGeneralCommand_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.SendFullGeneralCommand)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L483">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Post_" data-uid="MediaBrowser.Api.Session.SessionsService.Post*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_SendFullGeneralCommand_" data-uid="MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.SendFullGeneralCommand)">Post(SendFullGeneralCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Post(SendFullGeneralCommand request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.SendFullGeneralCommand.html">SendFullGeneralCommand</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_SendGeneralCommand_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.SendGeneralCommand)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L470">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Post_" data-uid="MediaBrowser.Api.Session.SessionsService.Post*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_SendGeneralCommand_" data-uid="MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.SendGeneralCommand)">Post(SendGeneralCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Post(SendGeneralCommand request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.SendGeneralCommand.html">SendGeneralCommand</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_SendMessageCommand_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.SendMessageCommand)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L449">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Post_" data-uid="MediaBrowser.Api.Session.SessionsService.Post*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_SendMessageCommand_" data-uid="MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.SendMessageCommand)">Post(SendMessageCommand)</h4>
+  <div class="markdown level1 summary"><p>Posts the specified request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Post(SendMessageCommand request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.SendMessageCommand.html">SendMessageCommand</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_SendPlaystateCommand_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.SendPlaystateCommand)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L400">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Post_" data-uid="MediaBrowser.Api.Session.SessionsService.Post*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_SendPlaystateCommand_" data-uid="MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.SendPlaystateCommand)">Post(SendPlaystateCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Post(SendPlaystateCommand request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.SendPlaystateCommand.html">SendPlaystateCommand</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_SendSystemCommand_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.SendSystemCommand)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L425">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Session_SessionsService_Post_" data-uid="MediaBrowser.Api.Session.SessionsService.Post*"></a>
+  <h4 id="MediaBrowser_Api_Session_SessionsService_Post_MediaBrowser_Api_Session_SendSystemCommand_" data-uid="MediaBrowser.Api.Session.SessionsService.Post(MediaBrowser.Api.Session.SendSystemCommand)">Post(SendSystemCommand)</h4>
+  <div class="markdown level1 summary"><p>Posts the specified request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Post(SendSystemCommand request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Session.SendSystemCommand.html">SendSystemCommand</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IService.html">IService</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IRequiresRequest.html">IRequiresRequest</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Session_SessionsService.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Session.SessionsService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Session/SessionsService.cs/#L274" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

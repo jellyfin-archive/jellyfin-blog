@@ -1,0 +1,1110 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseStreamingService
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseStreamingService
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Api.Playback.BaseStreamingService">
+  
+  
+  <h1 id="MediaBrowser_Api_Playback_BaseStreamingService" data-uid="MediaBrowser.Api.Playback.BaseStreamingService" class="text-break">Class BaseStreamingService
+  </h1>
+  <div class="markdown level0 summary"><p>Class BaseStreamingService</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MediaBrowser.Api.BaseApiService.html">BaseApiService</a></div>
+    <div class="level2"><span class="xref">BaseStreamingService</span></div>
+      <div class="level3"><a class="xref" href="MediaBrowser.Api.Playback.Hls.BaseHlsService.html">BaseHlsService</a></div>
+      <div class="level3"><a class="xref" href="MediaBrowser.Api.Playback.Progressive.BaseProgressiveStreamingService.html">BaseProgressiveStreamingService</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IService.html">IService</a></div>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IRequiresRequest.html">IRequiresRequest</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_Logger">BaseApiService.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_ResultFactory">BaseApiService.ResultFactory</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_Request">BaseApiService.Request</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetHeader_System_String_">BaseApiService.GetHeader(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_SplitValue_System_String_System_Char_">BaseApiService.SplitValue(String, Char)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetGuids_System_String_">BaseApiService.GetGuids(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_ToOptimizedResult__1___0_">BaseApiService.ToOptimizedResult&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_AssertCanUpdateUser_MediaBrowser_Controller_Net_IAuthorizationContext_MediaBrowser_Controller_Library_IUserManager_Guid_System_Boolean_">BaseApiService.AssertCanUpdateUser(IAuthorizationContext, IUserManager, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetSession_MediaBrowser_Controller_Net_ISessionContext_">BaseApiService.GetSession(ISessionContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetDtoOptions_MediaBrowser_Controller_Net_IAuthorizationContext_System_Object_">BaseApiService.GetDtoOptions(IAuthorizationContext, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetArtist_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetArtist(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetStudio_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetStudio(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetGenre_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetGenre(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetMusicGenre_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetMusicGenre(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetPerson_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetPerson(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetPathValue_System_Int32_">BaseApiService.GetPathValue(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetItemByName_System_String_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetItemByName(String, String, ILibraryManager, DtoOptions)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Api.Playback.html">MediaBrowser.Api.Playback</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Api.dll</h6>
+  <h5 id="MediaBrowser_Api_Playback_BaseStreamingService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseStreamingService : BaseApiService, IService, IRequiresRequest</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService__ctor_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Model_IO_IIsoManager_MediaBrowser_Controller_MediaEncoding_IMediaEncoder_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Dlna_IDlnaManager_MediaBrowser_Controller_MediaEncoding_ISubtitleEncoder_MediaBrowser_Controller_Devices_IDeviceManager_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Controller_Net_IAuthorizationContext_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.%23ctor(MediaBrowser.Controller.Configuration.IServerConfigurationManager%2CMediaBrowser.Controller.Library.IUserManager%2CMediaBrowser.Controller.Library.ILibraryManager%2CMediaBrowser.Model.IO.IIsoManager%2CMediaBrowser.Controller.MediaEncoding.IMediaEncoder%2CMediaBrowser.Model.IO.IFileSystem%2CMediaBrowser.Controller.Dlna.IDlnaManager%2CMediaBrowser.Controller.MediaEncoding.ISubtitleEncoder%2CMediaBrowser.Controller.Devices.IDeviceManager%2CMediaBrowser.Controller.Library.IMediaSourceManager%2CMediaBrowser.Model.Serialization.IJsonSerializer%2CMediaBrowser.Controller.Net.IAuthorizationContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L90">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService__ctor_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.#ctor*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService__ctor_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Model_IO_IIsoManager_MediaBrowser_Controller_MediaEncoding_IMediaEncoder_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Dlna_IDlnaManager_MediaBrowser_Controller_MediaEncoding_ISubtitleEncoder_MediaBrowser_Controller_Devices_IDeviceManager_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Controller_Net_IAuthorizationContext_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.#ctor(MediaBrowser.Controller.Configuration.IServerConfigurationManager,MediaBrowser.Controller.Library.IUserManager,MediaBrowser.Controller.Library.ILibraryManager,MediaBrowser.Model.IO.IIsoManager,MediaBrowser.Controller.MediaEncoding.IMediaEncoder,MediaBrowser.Model.IO.IFileSystem,MediaBrowser.Controller.Dlna.IDlnaManager,MediaBrowser.Controller.MediaEncoding.ISubtitleEncoder,MediaBrowser.Controller.Devices.IDeviceManager,MediaBrowser.Controller.Library.IMediaSourceManager,MediaBrowser.Model.Serialization.IJsonSerializer,MediaBrowser.Controller.Net.IAuthorizationContext)">BaseStreamingService(IServerConfigurationManager, IUserManager, ILibraryManager, IIsoManager, IMediaEncoder, IFileSystem, IDlnaManager, ISubtitleEncoder, IDeviceManager, IMediaSourceManager, IJsonSerializer, IAuthorizationContext)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html">BaseStreamingService</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BaseStreamingService(IServerConfigurationManager serverConfig, IUserManager userManager, ILibraryManager libraryManager, IIsoManager isoManager, IMediaEncoder mediaEncoder, IFileSystem fileSystem, IDlnaManager dlnaManager, ISubtitleEncoder subtitleEncoder, IDeviceManager deviceManager, IMediaSourceManager mediaSourceManager, IJsonSerializer jsonSerializer, IAuthorizationContext authorizationContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">serverConfig</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserManager.html">IUserManager</a></td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a></td>
+        <td><span class="parametername">libraryManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IIsoManager.html">IIsoManager</a></td>
+        <td><span class="parametername">isoManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.html">IMediaEncoder</a></td>
+        <td><span class="parametername">mediaEncoder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dlna.IDlnaManager.html">IDlnaManager</a></td>
+        <td><span class="parametername">dlnaManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.ISubtitleEncoder.html">ISubtitleEncoder</a></td>
+        <td><span class="parametername">subtitleEncoder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Devices.IDeviceManager.html">IDeviceManager</a></td>
+        <td><span class="parametername">deviceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IMediaSourceManager.html">IMediaSourceManager</a></td>
+        <td><span class="parametername">mediaSourceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td><span class="parametername">jsonSerializer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Net.IAuthorizationContext.html">IAuthorizationContext</a></td>
+        <td><span class="parametername">authorizationContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_UsCulture.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.UsCulture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L154">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_UsCulture" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.UsCulture">UsCulture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly CultureInfo UsCulture</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_AuthorizationContext.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.AuthorizationContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L77">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_AuthorizationContext_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.AuthorizationContext*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_AuthorizationContext" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.AuthorizationContext">AuthorizationContext</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IAuthorizationContext AuthorizationContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Net.IAuthorizationContext.html">IAuthorizationContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_DeviceManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.DeviceManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L69">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_DeviceManager_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.DeviceManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_DeviceManager" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.DeviceManager">DeviceManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IDeviceManager DeviceManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Devices.IDeviceManager.html">IDeviceManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_DlnaManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.DlnaManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L67">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_DlnaManager_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.DlnaManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_DlnaManager" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.DlnaManager">DlnaManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IDlnaManager DlnaManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dlna.IDlnaManager.html">IDlnaManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_EnableOutputInSubFolder.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.EnableOutputInSubFolder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L33">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_EnableOutputInSubFolder_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.EnableOutputInSubFolder*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_EnableOutputInSubFolder" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.EnableOutputInSubFolder">EnableOutputInSubFolder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool EnableOutputInSubFolder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_EncodingHelper.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.EncodingHelper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L79">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_EncodingHelper_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.EncodingHelper*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_EncodingHelper" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.EncodingHelper">EncodingHelper</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EncodingHelper EncodingHelper { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.EncodingHelper.html">EncodingHelper</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_FileSystem.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.FileSystem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L65">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_FileSystem_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.FileSystem*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_FileSystem" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.FileSystem">FileSystem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IFileSystem FileSystem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_IsoManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.IsoManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L57">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_IsoManager_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.IsoManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_IsoManager" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.IsoManager">IsoManager</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the iso manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IIsoManager IsoManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IIsoManager.html">IIsoManager</a></td>
+        <td><p>The iso manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_JsonSerializer.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.JsonSerializer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L75">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_JsonSerializer_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.JsonSerializer*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_JsonSerializer" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.JsonSerializer">JsonSerializer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IJsonSerializer JsonSerializer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_LibraryManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.LibraryManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L51">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_LibraryManager_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.LibraryManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_LibraryManager" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.LibraryManager">LibraryManager</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the library manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILibraryManager LibraryManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a></td>
+        <td><p>The library manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_MediaEncoder.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.MediaEncoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L63">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_MediaEncoder_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.MediaEncoder*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_MediaEncoder" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.MediaEncoder">MediaEncoder</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the media encoder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IMediaEncoder MediaEncoder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.html">IMediaEncoder</a></td>
+        <td><p>The media encoder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_MediaSourceManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.MediaSourceManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L73">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_MediaSourceManager_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.MediaSourceManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_MediaSourceManager" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.MediaSourceManager">MediaSourceManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IMediaSourceManager MediaSourceManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IMediaSourceManager.html">IMediaSourceManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_ServerConfigurationManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.ServerConfigurationManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L39">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_ServerConfigurationManager_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.ServerConfigurationManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_ServerConfigurationManager" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.ServerConfigurationManager">ServerConfigurationManager</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the application paths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IServerConfigurationManager ServerConfigurationManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><p>The application paths.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_SubtitleEncoder.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.SubtitleEncoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L71">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_SubtitleEncoder_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.SubtitleEncoder*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_SubtitleEncoder" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.SubtitleEncoder">SubtitleEncoder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ISubtitleEncoder SubtitleEncoder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.ISubtitleEncoder.html">ISubtitleEncoder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_TranscodingJobType.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.TranscodingJobType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L85">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_TranscodingJobType_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.TranscodingJobType*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_TranscodingJobType" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.TranscodingJobType">TranscodingJobType</h4>
+  <div class="markdown level1 summary"><p>Gets the type of the transcoding job.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TranscodingJobType TranscodingJobType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.TranscodingJobType.html">TranscodingJobType</a></td>
+        <td><p>The type of the transcoding job.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_UserManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.UserManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L45">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_UserManager_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.UserManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_UserManager" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.UserManager">UserManager</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the user manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IUserManager UserManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserManager.html">IUserManager</a></td>
+        <td><p>The user manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_AddDlnaHeaders_MediaBrowser_Api_Playback_StreamState_IDictionary_System_String_System_String__System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.AddDlnaHeaders(MediaBrowser.Api.Playback.StreamState%2CIDictionary%7BSystem.String%2CSystem.String%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L941">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_AddDlnaHeaders_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.AddDlnaHeaders*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_AddDlnaHeaders_MediaBrowser_Api_Playback_StreamState_IDictionary_System_String_System_String__System_Boolean_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.AddDlnaHeaders(MediaBrowser.Api.Playback.StreamState,IDictionary{System.String,System.String},System.Boolean)">AddDlnaHeaders(StreamState, IDictionary&lt;String, String&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds the dlna headers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddDlnaHeaders(StreamState state, IDictionary&lt;string, string&gt; responseHeaders, bool isStaticallyStreamed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.StreamState.html">StreamState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">responseHeaders</span></td>
+        <td><p>The response headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isStaticallyStreamed</span></td>
+        <td><p>if set to <code>true</code> [is statically streamed].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_GetCommandLineArguments_System_String_MediaBrowser_Model_Configuration_EncodingOptions_MediaBrowser_Api_Playback_StreamState_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.GetCommandLineArguments(System.String%2CMediaBrowser.Model.Configuration.EncodingOptions%2CMediaBrowser.Api.Playback.StreamState%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L123">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_GetCommandLineArguments_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.GetCommandLineArguments*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_GetCommandLineArguments_System_String_MediaBrowser_Model_Configuration_EncodingOptions_MediaBrowser_Api_Playback_StreamState_System_Boolean_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.GetCommandLineArguments(System.String,MediaBrowser.Model.Configuration.EncodingOptions,MediaBrowser.Api.Playback.StreamState,System.Boolean)">GetCommandLineArguments(String, EncodingOptions, StreamState, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the command line arguments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string GetCommandLineArguments(string outputPath, EncodingOptions encodingOptions, StreamState state, bool isEncoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">outputPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Configuration.EncodingOptions.html">EncodingOptions</a></td>
+        <td><span class="parametername">encodingOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.StreamState.html">StreamState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isEncoding</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_GetDefaultEncoderPreset.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.GetDefaultEncoderPreset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L156">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_GetDefaultEncoderPreset_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.GetDefaultEncoderPreset*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_GetDefaultEncoderPreset" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.GetDefaultEncoderPreset">GetDefaultEncoderPreset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetDefaultEncoderPreset()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_GetOutputFileExtension_MediaBrowser_Api_Playback_StreamState_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.GetOutputFileExtension(MediaBrowser.Api.Playback.StreamState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L130">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_GetOutputFileExtension_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.GetOutputFileExtension*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_GetOutputFileExtension_MediaBrowser_Api_Playback_StreamState_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.GetOutputFileExtension(MediaBrowser.Api.Playback.StreamState)">GetOutputFileExtension(StreamState)</h4>
+  <div class="markdown level1 summary"><p>Gets the output file extension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetOutputFileExtension(StreamState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.StreamState.html">StreamState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>System.String.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_GetState_MediaBrowser_Api_Playback_StreamRequest_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.GetState(MediaBrowser.Api.Playback.StreamRequest%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L677">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_GetState_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.GetState*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_GetState_MediaBrowser_Api_Playback_StreamRequest_CancellationToken_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.GetState(MediaBrowser.Api.Playback.StreamRequest,CancellationToken)">GetState(StreamRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;StreamState&gt; GetState(StreamRequest request, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.StreamRequest.html">StreamRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Api.Playback.StreamState.html">StreamState</a>&gt;</td>
+        <td><p>StreamState.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService_StartFfMpeg_MediaBrowser_Api_Playback_StreamState_System_String_CancellationTokenSource_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService.StartFfMpeg(MediaBrowser.Api.Playback.StreamState%2CSystem.String%2CCancellationTokenSource%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L197">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_BaseStreamingService_StartFfMpeg_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.StartFfMpeg*"></a>
+  <h4 id="MediaBrowser_Api_Playback_BaseStreamingService_StartFfMpeg_MediaBrowser_Api_Playback_StreamState_System_String_CancellationTokenSource_System_String_" data-uid="MediaBrowser.Api.Playback.BaseStreamingService.StartFfMpeg(MediaBrowser.Api.Playback.StreamState,System.String,CancellationTokenSource,System.String)">StartFfMpeg(StreamState, String, CancellationTokenSource, String)</h4>
+  <div class="markdown level1 summary"><p>Starts the FFMPEG.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;TranscodingJob&gt; StartFfMpeg(StreamState state, string outputPath, CancellationTokenSource cancellationTokenSource, string workingDirectory = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.StreamState.html">StreamState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">outputPath</span></td>
+        <td><p>The output path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationTokenSource</span></td>
+        <td><span class="parametername">cancellationTokenSource</span></td>
+        <td><p>The cancellation token source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">workingDirectory</span></td>
+        <td><p>The working directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Api.TranscodingJob.html">TranscodingJob</a>&gt;</td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IService.html">IService</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IRequiresRequest.html">IRequiresRequest</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_BaseStreamingService.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.BaseStreamingService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/BaseStreamingService.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

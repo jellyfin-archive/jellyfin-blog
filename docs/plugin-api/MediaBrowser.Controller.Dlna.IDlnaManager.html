@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDlnaManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDlnaManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager">
+  
+  
+  <h1 id="MediaBrowser_Controller_Dlna_IDlnaManager" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager" class="text-break">Interface IDlnaManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Controller.Dlna.html">MediaBrowser.Controller.Dlna</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Controller.dll</h6>
+  <h5 id="MediaBrowser_Controller_Dlna_IDlnaManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDlnaManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Dlna_IDlnaManager_CreateProfile_MediaBrowser_Model_Dlna_DeviceProfile_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Dlna.IDlnaManager.CreateProfile(MediaBrowser.Model.Dlna.DeviceProfile)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Dlna/IDlnaManager.cs/#L33">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Dlna_IDlnaManager_CreateProfile_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.CreateProfile*"></a>
+  <h4 id="MediaBrowser_Controller_Dlna_IDlnaManager_CreateProfile_MediaBrowser_Model_Dlna_DeviceProfile_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.CreateProfile(MediaBrowser.Model.Dlna.DeviceProfile)">CreateProfile(DeviceProfile)</h4>
+  <div class="markdown level1 summary"><p>Creates the profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateProfile(DeviceProfile profile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dlna.DeviceProfile.html">DeviceProfile</a></td>
+        <td><span class="parametername">profile</span></td>
+        <td><p>The profile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Dlna_IDlnaManager_DeleteProfile_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Dlna.IDlnaManager.DeleteProfile(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Dlna/IDlnaManager.cs/#L45">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Dlna_IDlnaManager_DeleteProfile_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.DeleteProfile*"></a>
+  <h4 id="MediaBrowser_Controller_Dlna_IDlnaManager_DeleteProfile_System_String_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.DeleteProfile(System.String)">DeleteProfile(String)</h4>
+  <div class="markdown level1 summary"><p>Deletes the profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteProfile(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Dlna_IDlnaManager_GetDefaultProfile.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Dlna.IDlnaManager.GetDefaultProfile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Dlna/IDlnaManager.cs/#L27">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Dlna_IDlnaManager_GetDefaultProfile_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetDefaultProfile*"></a>
+  <h4 id="MediaBrowser_Controller_Dlna_IDlnaManager_GetDefaultProfile" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetDefaultProfile">GetDefaultProfile()</h4>
+  <div class="markdown level1 summary"><p>Gets the default profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DeviceProfile GetDefaultProfile()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dlna.DeviceProfile.html">DeviceProfile</a></td>
+        <td><p>DeviceProfile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Dlna_IDlnaManager_GetIcon_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Dlna.IDlnaManager.GetIcon(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Dlna/IDlnaManager.cs/#L75">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Dlna_IDlnaManager_GetIcon_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetIcon*"></a>
+  <h4 id="MediaBrowser_Controller_Dlna_IDlnaManager_GetIcon_System_String_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetIcon(System.String)">GetIcon(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the icon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ImageStream GetIcon(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>The filename.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Drawing.ImageStream.html">ImageStream</a></td>
+        <td><p>DlnaIconResponse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Dlna_IDlnaManager_GetProfile_IHeaderDictionary_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Dlna.IDlnaManager.GetProfile(IHeaderDictionary)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Dlna/IDlnaManager.cs/#L21">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Dlna_IDlnaManager_GetProfile_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetProfile*"></a>
+  <h4 id="MediaBrowser_Controller_Dlna_IDlnaManager_GetProfile_IHeaderDictionary_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetProfile(IHeaderDictionary)">GetProfile(IHeaderDictionary)</h4>
+  <div class="markdown level1 summary"><p>Gets the profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DeviceProfile GetProfile(IHeaderDictionary headers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IHeaderDictionary</span></td>
+        <td><span class="parametername">headers</span></td>
+        <td><p>The headers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dlna.DeviceProfile.html">DeviceProfile</a></td>
+        <td><p>DeviceProfile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Dlna_IDlnaManager_GetProfile_MediaBrowser_Model_Dlna_DeviceIdentification_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Dlna.IDlnaManager.GetProfile(MediaBrowser.Model.Dlna.DeviceIdentification)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Dlna/IDlnaManager.cs/#L59">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Dlna_IDlnaManager_GetProfile_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetProfile*"></a>
+  <h4 id="MediaBrowser_Controller_Dlna_IDlnaManager_GetProfile_MediaBrowser_Model_Dlna_DeviceIdentification_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetProfile(MediaBrowser.Model.Dlna.DeviceIdentification)">GetProfile(DeviceIdentification)</h4>
+  <div class="markdown level1 summary"><p>Gets the profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DeviceProfile GetProfile(DeviceIdentification deviceInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dlna.DeviceIdentification.html">DeviceIdentification</a></td>
+        <td><span class="parametername">deviceInfo</span></td>
+        <td><p>The device information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dlna.DeviceProfile.html">DeviceProfile</a></td>
+        <td><p>DeviceProfile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Dlna_IDlnaManager_GetProfile_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Dlna.IDlnaManager.GetProfile(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Dlna/IDlnaManager.cs/#L52">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Dlna_IDlnaManager_GetProfile_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetProfile*"></a>
+  <h4 id="MediaBrowser_Controller_Dlna_IDlnaManager_GetProfile_System_String_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetProfile(System.String)">GetProfile(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DeviceProfile GetProfile(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dlna.DeviceProfile.html">DeviceProfile</a></td>
+        <td><p>DeviceProfile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Dlna_IDlnaManager_GetProfileInfos.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Dlna.IDlnaManager.GetProfileInfos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Dlna/IDlnaManager.cs/#L14">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Dlna_IDlnaManager_GetProfileInfos_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetProfileInfos*"></a>
+  <h4 id="MediaBrowser_Controller_Dlna_IDlnaManager_GetProfileInfos" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetProfileInfos">GetProfileInfos()</h4>
+  <div class="markdown level1 summary"><p>Gets the profile infos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;DeviceProfileInfo&gt; GetProfileInfos()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Dlna.DeviceProfileInfo.html">DeviceProfileInfo</a>&gt;</td>
+        <td><p>IEnumerable{DeviceProfileInfo}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Dlna_IDlnaManager_GetServerDescriptionXml_IHeaderDictionary_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Dlna.IDlnaManager.GetServerDescriptionXml(IHeaderDictionary%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Dlna/IDlnaManager.cs/#L68">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Dlna_IDlnaManager_GetServerDescriptionXml_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetServerDescriptionXml*"></a>
+  <h4 id="MediaBrowser_Controller_Dlna_IDlnaManager_GetServerDescriptionXml_IHeaderDictionary_System_String_System_String_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.GetServerDescriptionXml(IHeaderDictionary,System.String,System.String)">GetServerDescriptionXml(IHeaderDictionary, String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the server description XML.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetServerDescriptionXml(IHeaderDictionary headers, string serverUuId, string serverAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IHeaderDictionary</span></td>
+        <td><span class="parametername">headers</span></td>
+        <td><p>The headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serverUuId</span></td>
+        <td><p>The server uu identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serverAddress</span></td>
+        <td><p>The server address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>System.String.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Dlna_IDlnaManager_UpdateProfile_MediaBrowser_Model_Dlna_DeviceProfile_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Dlna.IDlnaManager.UpdateProfile(MediaBrowser.Model.Dlna.DeviceProfile)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Dlna/IDlnaManager.cs/#L39">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Dlna_IDlnaManager_UpdateProfile_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.UpdateProfile*"></a>
+  <h4 id="MediaBrowser_Controller_Dlna_IDlnaManager_UpdateProfile_MediaBrowser_Model_Dlna_DeviceProfile_" data-uid="MediaBrowser.Controller.Dlna.IDlnaManager.UpdateProfile(MediaBrowser.Model.Dlna.DeviceProfile)">UpdateProfile(DeviceProfile)</h4>
+  <div class="markdown level1 summary"><p>Updates the profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateProfile(DeviceProfile profile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Dlna.DeviceProfile.html">DeviceProfile</a></td>
+        <td><span class="parametername">profile</span></td>
+        <td><p>The profile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Dlna_IDlnaManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Dlna.IDlnaManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Dlna/IDlnaManager.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

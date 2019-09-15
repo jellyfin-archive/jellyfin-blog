@@ -1,0 +1,994 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FFProbeProvider
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FFProbeProvider
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider">
+  
+  
+  <h1 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider" class="text-break">Class FFProbeProvider
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FFProbeProvider</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.TV.Episode.html">Episode</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.TV.Episode.html">Episode</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.MusicVideo.html">MusicVideo</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.MusicVideo.html">MusicVideo</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.Movies.Movie.html">Movie</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.Movies.Movie.html">Movie</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.Trailer.html">Trailer</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.Trailer.html">Trailer</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.Video.html">Video</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.Video.html">Video</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.Audio.Audio.html">Audio</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.Audio.Audio.html">Audio</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.AudioBook.html">AudioBook</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.AudioBook.html">AudioBook</a>&gt;</div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IHasOrder.html">IHasOrder</a></div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IForcedProvider.html">IForcedProvider</a></div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IPreRefreshProvider.html">IPreRefreshProvider</a></div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider.html">ICustomMetadataProvider</a></div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider.html">IMetadataProvider</a></div>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IHasItemChangeMonitor.html">IHasItemChangeMonitor</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Providers.MediaInfo.html">MediaBrowser.Providers.MediaInfo</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Providers.dll</h6>
+  <h5 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FFProbeProvider : object, ICustomMetadataProvider&lt;Episode&gt;, IMetadataProvider&lt;Episode&gt;, ICustomMetadataProvider&lt;MusicVideo&gt;, IMetadataProvider&lt;MusicVideo&gt;, ICustomMetadataProvider&lt;Movie&gt;, IMetadataProvider&lt;Movie&gt;, ICustomMetadataProvider&lt;Trailer&gt;, IMetadataProvider&lt;Trailer&gt;, ICustomMetadataProvider&lt;Video&gt;, IMetadataProvider&lt;Video&gt;, ICustomMetadataProvider&lt;Audio&gt;, IMetadataProvider&lt;Audio&gt;, ICustomMetadataProvider&lt;AudioBook&gt;, IMetadataProvider&lt;AudioBook&gt;, IHasOrder, IForcedProvider, IPreRefreshProvider, ICustomMetadataProvider, IMetadataProvider, IHasItemChangeMonitor</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider__ctor_ILogger_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Controller_Channels_IChannelManager_MediaBrowser_Model_IO_IIsoManager_MediaBrowser_Controller_MediaEncoding_IMediaEncoder_MediaBrowser_Controller_Persistence_IItemRepository_MediaBrowser_Model_MediaInfo_IBlurayExaminer_MediaBrowser_Model_Globalization_ILocalizationManager_IApplicationPaths_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Controller_MediaEncoding_IEncodingManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_Subtitles_ISubtitleManager_MediaBrowser_Controller_Chapters_IChapterManager_MediaBrowser_Controller_Library_ILibraryManager_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider.%23ctor(ILogger%2CMediaBrowser.Controller.Library.IMediaSourceManager%2CMediaBrowser.Controller.Channels.IChannelManager%2CMediaBrowser.Model.IO.IIsoManager%2CMediaBrowser.Controller.MediaEncoding.IMediaEncoder%2CMediaBrowser.Controller.Persistence.IItemRepository%2CMediaBrowser.Model.MediaInfo.IBlurayExaminer%2CMediaBrowser.Model.Globalization.ILocalizationManager%2CIApplicationPaths%2CMediaBrowser.Model.Serialization.IJsonSerializer%2CMediaBrowser.Controller.MediaEncoding.IEncodingManager%2CMediaBrowser.Model.IO.IFileSystem%2CMediaBrowser.Controller.Configuration.IServerConfigurationManager%2CMediaBrowser.Controller.Subtitles.ISubtitleManager%2CMediaBrowser.Controller.Chapters.IChapterManager%2CMediaBrowser.Controller.Library.ILibraryManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L124">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_MediaInfo_FFProbeProvider__ctor_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.#ctor*"></a>
+  <h4 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider__ctor_ILogger_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Controller_Channels_IChannelManager_MediaBrowser_Model_IO_IIsoManager_MediaBrowser_Controller_MediaEncoding_IMediaEncoder_MediaBrowser_Controller_Persistence_IItemRepository_MediaBrowser_Model_MediaInfo_IBlurayExaminer_MediaBrowser_Model_Globalization_ILocalizationManager_IApplicationPaths_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Controller_MediaEncoding_IEncodingManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_Subtitles_ISubtitleManager_MediaBrowser_Controller_Chapters_IChapterManager_MediaBrowser_Controller_Library_ILibraryManager_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.#ctor(ILogger,MediaBrowser.Controller.Library.IMediaSourceManager,MediaBrowser.Controller.Channels.IChannelManager,MediaBrowser.Model.IO.IIsoManager,MediaBrowser.Controller.MediaEncoding.IMediaEncoder,MediaBrowser.Controller.Persistence.IItemRepository,MediaBrowser.Model.MediaInfo.IBlurayExaminer,MediaBrowser.Model.Globalization.ILocalizationManager,IApplicationPaths,MediaBrowser.Model.Serialization.IJsonSerializer,MediaBrowser.Controller.MediaEncoding.IEncodingManager,MediaBrowser.Model.IO.IFileSystem,MediaBrowser.Controller.Configuration.IServerConfigurationManager,MediaBrowser.Controller.Subtitles.ISubtitleManager,MediaBrowser.Controller.Chapters.IChapterManager,MediaBrowser.Controller.Library.ILibraryManager)">FFProbeProvider(ILogger, IMediaSourceManager, IChannelManager, IIsoManager, IMediaEncoder, IItemRepository, IBlurayExaminer, ILocalizationManager, IApplicationPaths, IJsonSerializer, IEncodingManager, IFileSystem, IServerConfigurationManager, ISubtitleManager, IChapterManager, ILibraryManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FFProbeProvider(ILogger logger, IMediaSourceManager mediaSourceManager, IChannelManager channelManager, IIsoManager isoManager, IMediaEncoder mediaEncoder, IItemRepository itemRepo, IBlurayExaminer blurayExaminer, ILocalizationManager localization, IApplicationPaths appPaths, IJsonSerializer json, IEncodingManager encodingManager, IFileSystem fileSystem, IServerConfigurationManager config, ISubtitleManager subtitleManager, IChapterManager chapterManager, ILibraryManager libraryManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IMediaSourceManager.html">IMediaSourceManager</a></td>
+        <td><span class="parametername">mediaSourceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Channels.IChannelManager.html">IChannelManager</a></td>
+        <td><span class="parametername">channelManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IIsoManager.html">IIsoManager</a></td>
+        <td><span class="parametername">isoManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.html">IMediaEncoder</a></td>
+        <td><span class="parametername">mediaEncoder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Persistence.IItemRepository.html">IItemRepository</a></td>
+        <td><span class="parametername">itemRepo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.MediaInfo.IBlurayExaminer.html">IBlurayExaminer</a></td>
+        <td><span class="parametername">blurayExaminer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Globalization.ILocalizationManager.html">ILocalizationManager</a></td>
+        <td><span class="parametername">localization</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IApplicationPaths</span></td>
+        <td><span class="parametername">appPaths</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td><span class="parametername">json</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.IEncodingManager.html">IEncodingManager</a></td>
+        <td><span class="parametername">encodingManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Subtitles.ISubtitleManager.html">ISubtitleManager</a></td>
+        <td><span class="parametername">subtitleManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Chapters.IChapterManager.html">IChapterManager</a></td>
+        <td><span class="parametername">chapterManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a></td>
+        <td><span class="parametername">libraryManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider_Name.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L57">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_Name_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.Name*"></a>
+  <h4 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_Name" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider_Order.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider.Order%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L223">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_Order_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.Order*"></a>
+  <h4 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_Order" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.Order">Order</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Order { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_Audio_Audio_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.Audio.Audio%2CMediaBrowser.Controller.Providers.MetadataRefreshOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L113">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync*"></a>
+  <h4 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_Audio_Audio_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.Audio.Audio,MediaBrowser.Controller.Providers.MetadataRefreshOptions,CancellationToken)">FetchAsync(Audio, MetadataRefreshOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ItemUpdateType&gt; FetchAsync(Audio item, MetadataRefreshOptions options, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.Audio.Audio.html">Audio</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_AudioBook_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.AudioBook%2CMediaBrowser.Controller.Providers.MetadataRefreshOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L118">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync*"></a>
+  <h4 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_AudioBook_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.AudioBook,MediaBrowser.Controller.Providers.MetadataRefreshOptions,CancellationToken)">FetchAsync(AudioBook, MetadataRefreshOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ItemUpdateType&gt; FetchAsync(AudioBook item, MetadataRefreshOptions options, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.AudioBook.html">AudioBook</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_Movies_Movie_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.Movies.Movie%2CMediaBrowser.Controller.Providers.MetadataRefreshOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L98">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync*"></a>
+  <h4 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_Movies_Movie_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.Movies.Movie,MediaBrowser.Controller.Providers.MetadataRefreshOptions,CancellationToken)">FetchAsync(Movie, MetadataRefreshOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ItemUpdateType&gt; FetchAsync(Movie item, MetadataRefreshOptions options, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.Movies.Movie.html">Movie</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_MusicVideo_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.MusicVideo%2CMediaBrowser.Controller.Providers.MetadataRefreshOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L93">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync*"></a>
+  <h4 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_MusicVideo_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.MusicVideo,MediaBrowser.Controller.Providers.MetadataRefreshOptions,CancellationToken)">FetchAsync(MusicVideo, MetadataRefreshOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ItemUpdateType&gt; FetchAsync(MusicVideo item, MetadataRefreshOptions options, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.MusicVideo.html">MusicVideo</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_Trailer_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.Trailer%2CMediaBrowser.Controller.Providers.MetadataRefreshOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L103">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync*"></a>
+  <h4 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_Trailer_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.Trailer,MediaBrowser.Controller.Providers.MetadataRefreshOptions,CancellationToken)">FetchAsync(Trailer, MetadataRefreshOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ItemUpdateType&gt; FetchAsync(Trailer item, MetadataRefreshOptions options, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.Trailer.html">Trailer</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_TV_Episode_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.TV.Episode%2CMediaBrowser.Controller.Providers.MetadataRefreshOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L88">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync*"></a>
+  <h4 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_TV_Episode_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.TV.Episode,MediaBrowser.Controller.Providers.MetadataRefreshOptions,CancellationToken)">FetchAsync(Episode, MetadataRefreshOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ItemUpdateType&gt; FetchAsync(Episode item, MetadataRefreshOptions options, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.TV.Episode.html">Episode</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_Video_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.Video%2CMediaBrowser.Controller.Providers.MetadataRefreshOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L108">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync*"></a>
+  <h4 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAsync_MediaBrowser_Controller_Entities_Video_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAsync(MediaBrowser.Controller.Entities.Video,MediaBrowser.Controller.Providers.MetadataRefreshOptions,CancellationToken)">FetchAsync(Video, MetadataRefreshOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ItemUpdateType&gt; FetchAsync(Video item, MetadataRefreshOptions options, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.Video.html">Video</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAudioInfo__1___0_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAudioInfo%60%601(%60%600%2CMediaBrowser.Controller.Providers.MetadataRefreshOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L200">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAudioInfo_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAudioInfo*"></a>
+  <h4 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchAudioInfo__1___0_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchAudioInfo``1(``0,MediaBrowser.Controller.Providers.MetadataRefreshOptions,CancellationToken)">FetchAudioInfo&lt;T&gt;(T, MetadataRefreshOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ItemUpdateType&gt; FetchAudioInfo&lt;T&gt;(T item, MetadataRefreshOptions options, CancellationToken cancellationToken)
+    where T : Audio</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchVideoInfo__1___0_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchVideoInfo%60%601(%60%600%2CMediaBrowser.Controller.Providers.MetadataRefreshOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L147">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchVideoInfo_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchVideoInfo*"></a>
+  <h4 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_FetchVideoInfo__1___0_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.FetchVideoInfo``1(``0,MediaBrowser.Controller.Providers.MetadataRefreshOptions,CancellationToken)">FetchVideoInfo&lt;T&gt;(T, MetadataRefreshOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ItemUpdateType&gt; FetchVideoInfo&lt;T&gt;(T item, MetadataRefreshOptions options, CancellationToken cancellationToken)
+    where T : Video</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Controller.Library.ItemUpdateType.html">ItemUpdateType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider_HasChanged_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Providers_IDirectoryService_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider.HasChanged(MediaBrowser.Controller.Entities.BaseItem%2CMediaBrowser.Controller.Providers.IDirectoryService)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L59">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_HasChanged_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.HasChanged*"></a>
+  <h4 id="MediaBrowser_Providers_MediaInfo_FFProbeProvider_HasChanged_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Providers_IDirectoryService_" data-uid="MediaBrowser.Providers.MediaInfo.FFProbeProvider.HasChanged(MediaBrowser.Controller.Entities.BaseItem,MediaBrowser.Controller.Providers.IDirectoryService)">HasChanged(BaseItem, IDirectoryService)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasChanged(BaseItem item, IDirectoryService directoryService)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.IDirectoryService.html">IDirectoryService</a></td>
+        <td><span class="parametername">directoryService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider-1.html">ICustomMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider-1.html">IMetadataProvider&lt;TItemType&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IHasOrder.html">IHasOrder</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IForcedProvider.html">IForcedProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IPreRefreshProvider.html">IPreRefreshProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.ICustomMetadataProvider.html">ICustomMetadataProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IMetadataProvider.html">IMetadataProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IHasItemChangeMonitor.html">IHasItemChangeMonitor</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_MediaInfo_FFProbeProvider.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.MediaInfo.FFProbeProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/MediaInfo/FFProbeProvider.cs/#L28" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

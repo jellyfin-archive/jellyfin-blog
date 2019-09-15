@@ -1,0 +1,1212 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ChannelManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ChannelManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.Channels.ChannelManager">
+  
+  
+  <h1 id="Emby_Server_Implementations_Channels_ChannelManager" data-uid="Emby.Server.Implementations.Channels.ChannelManager" class="text-break">Class ChannelManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ChannelManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.Channels.IChannelManager.html">IChannelManager</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.Channels.html">Emby.Server.Implementations.Channels</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_Channels_ChannelManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ChannelManager : object, IChannelManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager__ctor_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Dto_IDtoService_MediaBrowser_Controller_Library_ILibraryManager_ILoggerFactory_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Library_IUserDataManager_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Controller_Providers_IProviderManager_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.%23ctor(MediaBrowser.Controller.Library.IUserManager%2CMediaBrowser.Controller.Dto.IDtoService%2CMediaBrowser.Controller.Library.ILibraryManager%2CILoggerFactory%2CMediaBrowser.Controller.Configuration.IServerConfigurationManager%2CMediaBrowser.Model.IO.IFileSystem%2CMediaBrowser.Controller.Library.IUserDataManager%2CMediaBrowser.Model.Serialization.IJsonSerializer%2CMediaBrowser.Controller.Providers.IProviderManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L44">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager__ctor_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager__ctor_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Dto_IDtoService_MediaBrowser_Controller_Library_ILibraryManager_ILoggerFactory_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Library_IUserDataManager_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Controller_Providers_IProviderManager_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.#ctor(MediaBrowser.Controller.Library.IUserManager,MediaBrowser.Controller.Dto.IDtoService,MediaBrowser.Controller.Library.ILibraryManager,ILoggerFactory,MediaBrowser.Controller.Configuration.IServerConfigurationManager,MediaBrowser.Model.IO.IFileSystem,MediaBrowser.Controller.Library.IUserDataManager,MediaBrowser.Model.Serialization.IJsonSerializer,MediaBrowser.Controller.Providers.IProviderManager)">ChannelManager(IUserManager, IDtoService, ILibraryManager, ILoggerFactory, IServerConfigurationManager, IFileSystem, IUserDataManager, IJsonSerializer, IProviderManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChannelManager(IUserManager userManager, IDtoService dtoService, ILibraryManager libraryManager, ILoggerFactory loggerFactory, IServerConfigurationManager config, IFileSystem fileSystem, IUserDataManager userDataManager, IJsonSerializer jsonSerializer, IProviderManager providerManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserManager.html">IUserManager</a></td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dto.IDtoService.html">IDtoService</a></td>
+        <td><span class="parametername">dtoService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a></td>
+        <td><span class="parametername">libraryManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserDataManager.html">IUserDataManager</a></td>
+        <td><span class="parametername">userDataManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td><span class="parametername">jsonSerializer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.IProviderManager.html">IProviderManager</a></td>
+        <td><span class="parametername">providerManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_AddParts_IEnumerable_MediaBrowser_Controller_Channels_IChannel__.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.AddParts(IEnumerable%7BMediaBrowser.Controller.Channels.IChannel%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L68">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_AddParts_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.AddParts*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_AddParts_IEnumerable_MediaBrowser_Controller_Channels_IChannel__" data-uid="Emby.Server.Implementations.Channels.ChannelManager.AddParts(IEnumerable{MediaBrowser.Controller.Channels.IChannel})">AddParts(IEnumerable&lt;IChannel&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddParts(IEnumerable&lt;IChannel&gt; channels)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Controller.Channels.IChannel.html">IChannel</a>&gt;</td>
+        <td><span class="parametername">channels</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_CanDelete_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.CanDelete(MediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L81">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_CanDelete_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.CanDelete*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_CanDelete_MediaBrowser_Controller_Entities_BaseItem_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.CanDelete(MediaBrowser.Controller.Entities.BaseItem)">CanDelete(BaseItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanDelete(BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_DeleteItem_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.DeleteItem(MediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L98">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_DeleteItem_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.DeleteItem*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_DeleteItem_MediaBrowser_Controller_Entities_BaseItem_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.DeleteItem(MediaBrowser.Controller.Entities.BaseItem)">DeleteItem(BaseItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteItem(BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_EnableMediaProbe_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.EnableMediaProbe(MediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L90">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_EnableMediaProbe_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.EnableMediaProbe*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_EnableMediaProbe_MediaBrowser_Controller_Entities_BaseItem_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.EnableMediaProbe(MediaBrowser.Controller.Entities.BaseItem)">EnableMediaProbe(BaseItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableMediaProbe(BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_EnableMediaSourceDisplay_MediaBrowser_Controller_Entities_BaseItem_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.EnableMediaSourceDisplay(MediaBrowser.Controller.Entities.BaseItem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L73">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_EnableMediaSourceDisplay_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.EnableMediaSourceDisplay*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_EnableMediaSourceDisplay_MediaBrowser_Controller_Entities_BaseItem_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.EnableMediaSourceDisplay(MediaBrowser.Controller.Entities.BaseItem)">EnableMediaSourceDisplay(BaseItem)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableMediaSourceDisplay(BaseItem item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetAllChannelFeatures.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetAllChannelFeatures%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L508">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetAllChannelFeatures_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetAllChannelFeatures*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetAllChannelFeatures" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetAllChannelFeatures">GetAllChannelFeatures()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChannelFeatures[] GetAllChannelFeatures()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Channels.ChannelFeatures.html">ChannelFeatures</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetChannel_Guid_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetChannel(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L498">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetChannel_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannel*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetChannel_Guid_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannel(Guid)">GetChannel(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Channel GetChannel(Guid id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Channels.Channel.html">Channel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetChannel_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetChannel(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L503">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetChannel_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannel*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetChannel_System_String_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannel(System.String)">GetChannel(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Channel GetChannel(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Channels.Channel.html">Channel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetChannelFeatures_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetChannelFeatures(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L518">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetChannelFeatures_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannelFeatures*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetChannelFeatures_System_String_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannelFeatures(System.String)">GetChannelFeatures(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChannelFeatures GetChannelFeatures(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Channels.ChannelFeatures.html">ChannelFeatures</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetChannelFeaturesDto_MediaBrowser_Controller_Channels_Channel_MediaBrowser_Controller_Channels_IChannel_MediaBrowser_Controller_Channels_InternalChannelFeatures_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetChannelFeaturesDto(MediaBrowser.Controller.Channels.Channel%2CMediaBrowser.Controller.Channels.IChannel%2CMediaBrowser.Controller.Channels.InternalChannelFeatures)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L539">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetChannelFeaturesDto_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannelFeaturesDto*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetChannelFeaturesDto_MediaBrowser_Controller_Channels_Channel_MediaBrowser_Controller_Channels_IChannel_MediaBrowser_Controller_Channels_InternalChannelFeatures_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannelFeaturesDto(MediaBrowser.Controller.Channels.Channel,MediaBrowser.Controller.Channels.IChannel,MediaBrowser.Controller.Channels.InternalChannelFeatures)">GetChannelFeaturesDto(Channel, IChannel, InternalChannelFeatures)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChannelFeatures GetChannelFeaturesDto(Channel channel, IChannel provider, InternalChannelFeatures features)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Channels.Channel.html">Channel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Channels.IChannel.html">IChannel</a></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Channels.InternalChannelFeatures.html">InternalChannelFeatures</a></td>
+        <td><span class="parametername">features</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Channels.ChannelFeatures.html">ChannelFeatures</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetChannelItems_MediaBrowser_Controller_Entities_InternalItemsQuery_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetChannelItems(MediaBrowser.Controller.Entities.InternalItemsQuery%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L721">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetChannelItems_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannelItems*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetChannelItems_MediaBrowser_Controller_Entities_InternalItemsQuery_CancellationToken_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannelItems(MediaBrowser.Controller.Entities.InternalItemsQuery,CancellationToken)">GetChannelItems(InternalItemsQuery, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;QueryResult&lt;BaseItemDto&gt;&gt; GetChannelItems(InternalItemsQuery query, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetChannelItemsInternal_MediaBrowser_Controller_Entities_InternalItemsQuery_IProgress_System_Double__CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetChannelItemsInternal(MediaBrowser.Controller.Entities.InternalItemsQuery%2CIProgress%7BSystem.Double%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L663">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetChannelItemsInternal_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannelItemsInternal*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetChannelItemsInternal_MediaBrowser_Controller_Entities_InternalItemsQuery_IProgress_System_Double__CancellationToken_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannelItemsInternal(MediaBrowser.Controller.Entities.InternalItemsQuery,IProgress{System.Double},CancellationToken)">GetChannelItemsInternal(InternalItemsQuery, IProgress&lt;Double&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;QueryResult&lt;BaseItem&gt;&gt; GetChannelItemsInternal(InternalItemsQuery query, IProgress&lt;double&gt; progress, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IProgress</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">progress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetChannels_MediaBrowser_Model_Channels_ChannelQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetChannels(MediaBrowser.Model.Channels.ChannelQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L249">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetChannels_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannels*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetChannels_MediaBrowser_Model_Channels_ChannelQuery_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannels(MediaBrowser.Model.Channels.ChannelQuery)">GetChannels(ChannelQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryResult&lt;BaseItemDto&gt; GetChannels(ChannelQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Channels.ChannelQuery.html">ChannelQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetChannelsInternal_MediaBrowser_Model_Channels_ChannelQuery_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetChannelsInternal(MediaBrowser.Model.Channels.ChannelQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L129">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetChannelsInternal_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannelsInternal*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetChannelsInternal_MediaBrowser_Model_Channels_ChannelQuery_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetChannelsInternal(MediaBrowser.Model.Channels.ChannelQuery)">GetChannelsInternal(ChannelQuery)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryResult&lt;Channel&gt; GetChannelsInternal(ChannelQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Channels.ChannelQuery.html">ChannelQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Controller.Channels.Channel.html">Channel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetDynamicMediaSources_MediaBrowser_Controller_Entities_BaseItem_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetDynamicMediaSources(MediaBrowser.Controller.Entities.BaseItem%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L361">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetDynamicMediaSources_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetDynamicMediaSources*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetDynamicMediaSources_MediaBrowser_Controller_Entities_BaseItem_CancellationToken_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetDynamicMediaSources(MediaBrowser.Controller.Entities.BaseItem,CancellationToken)">GetDynamicMediaSources(BaseItem, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;MediaSourceInfo&gt;&gt; GetDynamicMediaSources(BaseItem item, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetInstalledChannelIds.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetInstalledChannelIds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L124">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetInstalledChannelIds_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetInstalledChannelIds*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetInstalledChannelIds" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetInstalledChannelIds">GetInstalledChannelIds()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Guid&gt; GetInstalledChannelIds()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Guid</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetLatestChannelItems_MediaBrowser_Controller_Entities_InternalItemsQuery_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetLatestChannelItems(MediaBrowser.Controller.Entities.InternalItemsQuery%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L571">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetLatestChannelItems_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetLatestChannelItems*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetLatestChannelItems_MediaBrowser_Controller_Entities_InternalItemsQuery_CancellationToken_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetLatestChannelItems(MediaBrowser.Controller.Entities.InternalItemsQuery,CancellationToken)">GetLatestChannelItems(InternalItemsQuery, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;QueryResult&lt;BaseItemDto&gt;&gt; GetLatestChannelItems(InternalItemsQuery query, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Model.Dto.BaseItemDto.html">BaseItemDto</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetLatestChannelItemsInternal_MediaBrowser_Controller_Entities_InternalItemsQuery_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetLatestChannelItemsInternal(MediaBrowser.Controller.Entities.InternalItemsQuery%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L589">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetLatestChannelItemsInternal_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetLatestChannelItemsInternal*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetLatestChannelItemsInternal_MediaBrowser_Controller_Entities_InternalItemsQuery_CancellationToken_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetLatestChannelItemsInternal(MediaBrowser.Controller.Entities.InternalItemsQuery,CancellationToken)">GetLatestChannelItemsInternal(InternalItemsQuery, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;QueryResult&lt;BaseItem&gt;&gt; GetLatestChannelItemsInternal(InternalItemsQuery query, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.InternalItemsQuery.html">InternalItemsQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.Querying.QueryResult-1.html">QueryResult</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_GetStaticMediaSources_MediaBrowser_Controller_Entities_BaseItem_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.GetStaticMediaSources(MediaBrowser.Controller.Entities.BaseItem%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L352">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_GetStaticMediaSources_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetStaticMediaSources*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_GetStaticMediaSources_MediaBrowser_Controller_Entities_BaseItem_CancellationToken_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.GetStaticMediaSources(MediaBrowser.Controller.Entities.BaseItem,CancellationToken)">GetStaticMediaSources(BaseItem, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;MediaSourceInfo&gt; GetStaticMediaSources(BaseItem item, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.BaseItem.html">BaseItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Dto.MediaSourceInfo.html">MediaSourceInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_RefreshChannels_IProgress_System_Double__CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.RefreshChannels(IProgress%7BSystem.Double%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L273">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_RefreshChannels_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.RefreshChannels*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_RefreshChannels_IProgress_System_Double__CancellationToken_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.RefreshChannels(IProgress{System.Double},CancellationToken)">RefreshChannels(IProgress&lt;Double&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RefreshChannels(IProgress&lt;double&gt; progress, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IProgress</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">progress</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager_SupportsExternalTransfer_Guid_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager.SupportsExternalTransfer(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L531">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_Channels_ChannelManager_SupportsExternalTransfer_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.SupportsExternalTransfer*"></a>
+  <h4 id="Emby_Server_Implementations_Channels_ChannelManager_SupportsExternalTransfer_Guid_" data-uid="Emby.Server.Implementations.Channels.ChannelManager.SupportsExternalTransfer(Guid)">SupportsExternalTransfer(Guid)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportsExternalTransfer(Guid channelId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">channelId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Channels.IChannelManager.html">IChannelManager</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_Channels_ChannelManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.Channels.ChannelManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/Channels/ChannelManager.cs/#L30" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1061 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DynamicHlsService
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DynamicHlsService
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService">
+  
+  
+  <h1 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService" class="text-break">Class DynamicHlsService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MediaBrowser.Api.BaseApiService.html">BaseApiService</a></div>
+    <div class="level2"><a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html">BaseStreamingService</a></div>
+    <div class="level3"><a class="xref" href="MediaBrowser.Api.Playback.Hls.BaseHlsService.html">BaseHlsService</a></div>
+    <div class="level4"><span class="xref">DynamicHlsService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IService.html">IService</a></div>
+    <div><a class="xref" href="MediaBrowser.Model.Services.IRequiresRequest.html">IRequiresRequest</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.Hls.BaseHlsService.html#MediaBrowser_Api_Playback_Hls_BaseHlsService_GetSegmentFileExtension_MediaBrowser_Api_Playback_StreamRequest_">BaseHlsService.GetSegmentFileExtension(StreamRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.Hls.BaseHlsService.html#MediaBrowser_Api_Playback_Hls_BaseHlsService_TranscodingJobType">BaseHlsService.TranscodingJobType</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.Hls.BaseHlsService.html#MediaBrowser_Api_Playback_Hls_BaseHlsService_ProcessRequestAsync_MediaBrowser_Api_Playback_StreamRequest_System_Boolean_">BaseHlsService.ProcessRequestAsync(StreamRequest, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.Hls.BaseHlsService.html#MediaBrowser_Api_Playback_Hls_BaseHlsService_WaitForMinimumSegmentCount_System_String_System_Int32_CancellationToken_">BaseHlsService.WaitForMinimumSegmentCount(String, Int32, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.Hls.BaseHlsService.html#MediaBrowser_Api_Playback_Hls_BaseHlsService_GetPlaylistFileStream_System_String_">BaseHlsService.GetPlaylistFileStream(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.Hls.BaseHlsService.html#MediaBrowser_Api_Playback_Hls_BaseHlsService_GetDefaultEncoderPreset">BaseHlsService.GetDefaultEncoderPreset()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_EnableOutputInSubFolder">BaseStreamingService.EnableOutputInSubFolder</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_ServerConfigurationManager">BaseStreamingService.ServerConfigurationManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_UserManager">BaseStreamingService.UserManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_LibraryManager">BaseStreamingService.LibraryManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_IsoManager">BaseStreamingService.IsoManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_MediaEncoder">BaseStreamingService.MediaEncoder</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_FileSystem">BaseStreamingService.FileSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_DlnaManager">BaseStreamingService.DlnaManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_DeviceManager">BaseStreamingService.DeviceManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_SubtitleEncoder">BaseStreamingService.SubtitleEncoder</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_MediaSourceManager">BaseStreamingService.MediaSourceManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_JsonSerializer">BaseStreamingService.JsonSerializer</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_AuthorizationContext">BaseStreamingService.AuthorizationContext</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_EncodingHelper">BaseStreamingService.EncodingHelper</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_GetOutputFileExtension_MediaBrowser_Api_Playback_StreamState_">BaseStreamingService.GetOutputFileExtension(StreamState)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_UsCulture">BaseStreamingService.UsCulture</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_StartFfMpeg_MediaBrowser_Api_Playback_StreamState_System_String_CancellationTokenSource_System_String_">BaseStreamingService.StartFfMpeg(StreamState, String, CancellationTokenSource, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_GetState_MediaBrowser_Api_Playback_StreamRequest_CancellationToken_">BaseStreamingService.GetState(StreamRequest, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.Playback.BaseStreamingService.html#MediaBrowser_Api_Playback_BaseStreamingService_AddDlnaHeaders_MediaBrowser_Api_Playback_StreamState_IDictionary_System_String_System_String__System_Boolean_">BaseStreamingService.AddDlnaHeaders(StreamState, IDictionary&lt;String, String&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_Logger">BaseApiService.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_ResultFactory">BaseApiService.ResultFactory</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_Request">BaseApiService.Request</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetHeader_System_String_">BaseApiService.GetHeader(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_SplitValue_System_String_System_Char_">BaseApiService.SplitValue(String, Char)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetGuids_System_String_">BaseApiService.GetGuids(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_ToOptimizedResult__1___0_">BaseApiService.ToOptimizedResult&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_AssertCanUpdateUser_MediaBrowser_Controller_Net_IAuthorizationContext_MediaBrowser_Controller_Library_IUserManager_Guid_System_Boolean_">BaseApiService.AssertCanUpdateUser(IAuthorizationContext, IUserManager, Guid, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetSession_MediaBrowser_Controller_Net_ISessionContext_">BaseApiService.GetSession(ISessionContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetDtoOptions_MediaBrowser_Controller_Net_IAuthorizationContext_System_Object_">BaseApiService.GetDtoOptions(IAuthorizationContext, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetArtist_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetArtist(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetStudio_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetStudio(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetGenre_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetGenre(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetMusicGenre_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetMusicGenre(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetPerson_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetPerson(String, ILibraryManager, DtoOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetPathValue_System_Int32_">BaseApiService.GetPathValue(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Api.BaseApiService.html#MediaBrowser_Api_BaseApiService_GetItemByName_System_String_System_String_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Controller_Dto_DtoOptions_">BaseApiService.GetItemByName(String, String, ILibraryManager, DtoOptions)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Api.Playback.Hls.html">MediaBrowser.Api.Playback.Hls</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Api.dll</h6>
+  <h5 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DynamicHlsService : BaseHlsService, IService, IRequiresRequest</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService__ctor_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Model_IO_IIsoManager_MediaBrowser_Controller_MediaEncoding_IMediaEncoder_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Dlna_IDlnaManager_MediaBrowser_Controller_MediaEncoding_ISubtitleEncoder_MediaBrowser_Controller_Devices_IDeviceManager_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Controller_Net_IAuthorizationContext_INetworkManager_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.%23ctor(MediaBrowser.Controller.Configuration.IServerConfigurationManager%2CMediaBrowser.Controller.Library.IUserManager%2CMediaBrowser.Controller.Library.ILibraryManager%2CMediaBrowser.Model.IO.IIsoManager%2CMediaBrowser.Controller.MediaEncoding.IMediaEncoder%2CMediaBrowser.Model.IO.IFileSystem%2CMediaBrowser.Controller.Dlna.IDlnaManager%2CMediaBrowser.Controller.MediaEncoding.ISubtitleEncoder%2CMediaBrowser.Controller.Devices.IDeviceManager%2CMediaBrowser.Controller.Library.IMediaSourceManager%2CMediaBrowser.Model.Serialization.IJsonSerializer%2CMediaBrowser.Controller.Net.IAuthorizationContext%2CINetworkManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L98">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService__ctor_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.#ctor*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService__ctor_MediaBrowser_Controller_Configuration_IServerConfigurationManager_MediaBrowser_Controller_Library_IUserManager_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Model_IO_IIsoManager_MediaBrowser_Controller_MediaEncoding_IMediaEncoder_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Dlna_IDlnaManager_MediaBrowser_Controller_MediaEncoding_ISubtitleEncoder_MediaBrowser_Controller_Devices_IDeviceManager_MediaBrowser_Controller_Library_IMediaSourceManager_MediaBrowser_Model_Serialization_IJsonSerializer_MediaBrowser_Controller_Net_IAuthorizationContext_INetworkManager_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.#ctor(MediaBrowser.Controller.Configuration.IServerConfigurationManager,MediaBrowser.Controller.Library.IUserManager,MediaBrowser.Controller.Library.ILibraryManager,MediaBrowser.Model.IO.IIsoManager,MediaBrowser.Controller.MediaEncoding.IMediaEncoder,MediaBrowser.Model.IO.IFileSystem,MediaBrowser.Controller.Dlna.IDlnaManager,MediaBrowser.Controller.MediaEncoding.ISubtitleEncoder,MediaBrowser.Controller.Devices.IDeviceManager,MediaBrowser.Controller.Library.IMediaSourceManager,MediaBrowser.Model.Serialization.IJsonSerializer,MediaBrowser.Controller.Net.IAuthorizationContext,INetworkManager)">DynamicHlsService(IServerConfigurationManager, IUserManager, ILibraryManager, IIsoManager, IMediaEncoder, IFileSystem, IDlnaManager, ISubtitleEncoder, IDeviceManager, IMediaSourceManager, IJsonSerializer, IAuthorizationContext, INetworkManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicHlsService(IServerConfigurationManager serverConfig, IUserManager userManager, ILibraryManager libraryManager, IIsoManager isoManager, IMediaEncoder mediaEncoder, IFileSystem fileSystem, IDlnaManager dlnaManager, ISubtitleEncoder subtitleEncoder, IDeviceManager deviceManager, IMediaSourceManager mediaSourceManager, IJsonSerializer jsonSerializer, IAuthorizationContext authorizationContext, INetworkManager networkManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">serverConfig</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserManager.html">IUserManager</a></td>
+        <td><span class="parametername">userManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a></td>
+        <td><span class="parametername">libraryManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IIsoManager.html">IIsoManager</a></td>
+        <td><span class="parametername">isoManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.IMediaEncoder.html">IMediaEncoder</a></td>
+        <td><span class="parametername">mediaEncoder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Dlna.IDlnaManager.html">IDlnaManager</a></td>
+        <td><span class="parametername">dlnaManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.MediaEncoding.ISubtitleEncoder.html">ISubtitleEncoder</a></td>
+        <td><span class="parametername">subtitleEncoder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Devices.IDeviceManager.html">IDeviceManager</a></td>
+        <td><span class="parametername">deviceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IMediaSourceManager.html">IMediaSourceManager</a></td>
+        <td><span class="parametername">mediaSourceManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td><span class="parametername">jsonSerializer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Net.IAuthorizationContext.html">IAuthorizationContext</a></td>
+        <td><span class="parametername">authorizationContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">INetworkManager</span></td>
+        <td><span class="parametername">networkManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_NetworkManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.NetworkManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L128">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_NetworkManager_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.NetworkManager*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_NetworkManager" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.NetworkManager">NetworkManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected INetworkManager NetworkManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">INetworkManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_MediaBrowser_Api_Playback_Hls_GetHlsAudioSegment_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get(MediaBrowser.Api.Playback.Hls.GetHlsAudioSegment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L165">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_MediaBrowser_Api_Playback_Hls_GetHlsAudioSegment_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get(MediaBrowser.Api.Playback.Hls.GetHlsAudioSegment)">Get(GetHlsAudioSegment)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetHlsAudioSegment request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.Hls.GetHlsAudioSegment.html">GetHlsAudioSegment</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_MediaBrowser_Api_Playback_Hls_GetHlsVideoSegment_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get(MediaBrowser.Api.Playback.Hls.GetHlsVideoSegment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L160">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_MediaBrowser_Api_Playback_Hls_GetHlsVideoSegment_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get(MediaBrowser.Api.Playback.Hls.GetHlsVideoSegment)">Get(GetHlsVideoSegment)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetHlsVideoSegment request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.Hls.GetHlsVideoSegment.html">GetHlsVideoSegment</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_MediaBrowser_Api_Playback_Hls_GetMasterHlsAudioPlaylist_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get(MediaBrowser.Api.Playback.Hls.GetMasterHlsAudioPlaylist)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L140">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_MediaBrowser_Api_Playback_Hls_GetMasterHlsAudioPlaylist_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get(MediaBrowser.Api.Playback.Hls.GetMasterHlsAudioPlaylist)">Get(GetMasterHlsAudioPlaylist)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetMasterHlsAudioPlaylist request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.Hls.GetMasterHlsAudioPlaylist.html">GetMasterHlsAudioPlaylist</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_MediaBrowser_Api_Playback_Hls_GetMasterHlsVideoPlaylist_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get(MediaBrowser.Api.Playback.Hls.GetMasterHlsVideoPlaylist)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L130">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_MediaBrowser_Api_Playback_Hls_GetMasterHlsVideoPlaylist_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get(MediaBrowser.Api.Playback.Hls.GetMasterHlsVideoPlaylist)">Get(GetMasterHlsVideoPlaylist)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetMasterHlsVideoPlaylist request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.Hls.GetMasterHlsVideoPlaylist.html">GetMasterHlsVideoPlaylist</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_MediaBrowser_Api_Playback_Hls_GetVariantHlsAudioPlaylist_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get(MediaBrowser.Api.Playback.Hls.GetVariantHlsAudioPlaylist)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L155">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_MediaBrowser_Api_Playback_Hls_GetVariantHlsAudioPlaylist_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get(MediaBrowser.Api.Playback.Hls.GetVariantHlsAudioPlaylist)">Get(GetVariantHlsAudioPlaylist)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetVariantHlsAudioPlaylist request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.Hls.GetVariantHlsAudioPlaylist.html">GetVariantHlsAudioPlaylist</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_MediaBrowser_Api_Playback_Hls_GetVariantHlsVideoPlaylist_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get(MediaBrowser.Api.Playback.Hls.GetVariantHlsVideoPlaylist)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L150">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Get_MediaBrowser_Api_Playback_Hls_GetVariantHlsVideoPlaylist_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Get(MediaBrowser.Api.Playback.Hls.GetVariantHlsVideoPlaylist)">Get(GetVariantHlsVideoPlaylist)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Get(GetVariantHlsVideoPlaylist request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.Hls.GetVariantHlsVideoPlaylist.html">GetVariantHlsVideoPlaylist</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetAudioArguments_MediaBrowser_Api_Playback_StreamState_MediaBrowser_Model_Configuration_EncodingOptions_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetAudioArguments(MediaBrowser.Api.Playback.StreamState%2CMediaBrowser.Model.Configuration.EncodingOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L807">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetAudioArguments_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetAudioArguments*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetAudioArguments_MediaBrowser_Api_Playback_StreamState_MediaBrowser_Model_Configuration_EncodingOptions_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetAudioArguments(MediaBrowser.Api.Playback.StreamState,MediaBrowser.Model.Configuration.EncodingOptions)">GetAudioArguments(StreamState, EncodingOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string GetAudioArguments(StreamState state, EncodingOptions encodingOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.StreamState.html">StreamState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Configuration.EncodingOptions.html">EncodingOptions</a></td>
+        <td><span class="parametername">encodingOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Api.Playback.Hls.BaseHlsService.html#MediaBrowser_Api_Playback_Hls_BaseHlsService_GetAudioArguments_MediaBrowser_Api_Playback_StreamState_MediaBrowser_Model_Configuration_EncodingOptions_">BaseHlsService.GetAudioArguments(StreamState, EncodingOptions)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetCommandLineArguments_System_String_MediaBrowser_Model_Configuration_EncodingOptions_MediaBrowser_Api_Playback_StreamState_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetCommandLineArguments(System.String%2CMediaBrowser.Model.Configuration.EncodingOptions%2CMediaBrowser.Api.Playback.StreamState%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L952">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetCommandLineArguments_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetCommandLineArguments*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetCommandLineArguments_System_String_MediaBrowser_Model_Configuration_EncodingOptions_MediaBrowser_Api_Playback_StreamState_System_Boolean_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetCommandLineArguments(System.String,MediaBrowser.Model.Configuration.EncodingOptions,MediaBrowser.Api.Playback.StreamState,System.Boolean)">GetCommandLineArguments(String, EncodingOptions, StreamState, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string GetCommandLineArguments(string outputPath, EncodingOptions encodingOptions, StreamState state, bool isEncoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">outputPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Configuration.EncodingOptions.html">EncodingOptions</a></td>
+        <td><span class="parametername">encodingOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.StreamState.html">StreamState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isEncoding</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Api.Playback.Hls.BaseHlsService.html#MediaBrowser_Api_Playback_Hls_BaseHlsService_GetCommandLineArguments_System_String_MediaBrowser_Model_Configuration_EncodingOptions_MediaBrowser_Api_Playback_StreamState_System_Boolean_">BaseHlsService.GetCommandLineArguments(String, EncodingOptions, StreamState, Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetCurrentTranscodingIndex_System_String_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetCurrentTranscodingIndex(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L347">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetCurrentTranscodingIndex_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetCurrentTranscodingIndex*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetCurrentTranscodingIndex_System_String_System_String_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetCurrentTranscodingIndex(System.String,System.String)">GetCurrentTranscodingIndex(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? GetCurrentTranscodingIndex(string playlist, string segmentExtension)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">playlist</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">segmentExtension</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetStartNumber_MediaBrowser_Api_Playback_StreamState_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetStartNumber(MediaBrowser.Api.Playback.StreamState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L426">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetStartNumber_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetStartNumber*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetStartNumber_MediaBrowser_Api_Playback_StreamState_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetStartNumber(MediaBrowser.Api.Playback.StreamState)">GetStartNumber(StreamState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int GetStartNumber(StreamState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.StreamState.html">StreamState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Api.Playback.Hls.BaseHlsService.html#MediaBrowser_Api_Playback_Hls_BaseHlsService_GetStartNumber_MediaBrowser_Api_Playback_StreamState_">BaseHlsService.GetStartNumber(StreamState)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetVideoArguments_MediaBrowser_Api_Playback_StreamState_MediaBrowser_Model_Configuration_EncodingOptions_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetVideoArguments(MediaBrowser.Api.Playback.StreamState%2CMediaBrowser.Model.Configuration.EncodingOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L879">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetVideoArguments_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetVideoArguments*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_GetVideoArguments_MediaBrowser_Api_Playback_StreamState_MediaBrowser_Model_Configuration_EncodingOptions_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.GetVideoArguments(MediaBrowser.Api.Playback.StreamState,MediaBrowser.Model.Configuration.EncodingOptions)">GetVideoArguments(StreamState, EncodingOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string GetVideoArguments(StreamState state, EncodingOptions encodingOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.StreamState.html">StreamState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Configuration.EncodingOptions.html">EncodingOptions</a></td>
+        <td><span class="parametername">encodingOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MediaBrowser.Api.Playback.Hls.BaseHlsService.html#MediaBrowser_Api_Playback_Hls_BaseHlsService_GetVideoArguments_MediaBrowser_Api_Playback_StreamState_MediaBrowser_Model_Configuration_EncodingOptions_">BaseHlsService.GetVideoArguments(StreamState, EncodingOptions)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_Head_MediaBrowser_Api_Playback_Hls_GetMasterHlsAudioPlaylist_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.Head(MediaBrowser.Api.Playback.Hls.GetMasterHlsAudioPlaylist)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L145">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Head_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Head*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Head_MediaBrowser_Api_Playback_Hls_GetMasterHlsAudioPlaylist_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Head(MediaBrowser.Api.Playback.Hls.GetMasterHlsAudioPlaylist)">Head(GetMasterHlsAudioPlaylist)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Head(GetMasterHlsAudioPlaylist request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.Hls.GetMasterHlsAudioPlaylist.html">GetMasterHlsAudioPlaylist</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService_Head_MediaBrowser_Api_Playback_Hls_GetMasterHlsVideoPlaylist_.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService.Head(MediaBrowser.Api.Playback.Hls.GetMasterHlsVideoPlaylist)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L135">View Source</a>
+  </span>
+  <a id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Head_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Head*"></a>
+  <h4 id="MediaBrowser_Api_Playback_Hls_DynamicHlsService_Head_MediaBrowser_Api_Playback_Hls_GetMasterHlsVideoPlaylist_" data-uid="MediaBrowser.Api.Playback.Hls.DynamicHlsService.Head(MediaBrowser.Api.Playback.Hls.GetMasterHlsVideoPlaylist)">Head(GetMasterHlsVideoPlaylist)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; Head(GetMasterHlsVideoPlaylist request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Api.Playback.Hls.GetMasterHlsVideoPlaylist.html">GetMasterHlsVideoPlaylist</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IService.html">IService</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Services.IRequiresRequest.html">IRequiresRequest</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Api_Playback_Hls_DynamicHlsService.md&amp;value=---%0Auid%3A%20MediaBrowser.Api.Playback.Hls.DynamicHlsService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Api/Playback/Hls/DynamicHlsService.cs/#L94" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

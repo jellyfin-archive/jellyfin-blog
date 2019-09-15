@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BasePeriodicWebSocketListener&lt;TReturnDataType, TStateType&gt;
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BasePeriodicWebSocketListener&lt;TReturnDataType, TStateType&gt;
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2">
+  
+  
+  <h1 id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2" class="text-break">Class BasePeriodicWebSocketListener&lt;TReturnDataType, TStateType&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Starts sending data over a web socket periodically when a message is received, and then stops when a corresponding stop message is received</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BasePeriodicWebSocketListener&lt;TReturnDataType, TStateType&gt;</span></div>
+      <div class="level2"><a class="xref" href="MediaBrowser.Api.ScheduledTasks.ScheduledTasksWebSocketListener.html">ScheduledTasksWebSocketListener</a></div>
+      <div class="level2"><a class="xref" href="MediaBrowser.Api.Session.SessionInfoWebSocketListener.html">SessionInfoWebSocketListener</a></div>
+      <div class="level2"><a class="xref" href="MediaBrowser.Api.System.ActivityLogWebSocketListener.html">ActivityLogWebSocketListener</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.Net.IWebSocketListener.html">IWebSocketListener</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Controller.Net.html">MediaBrowser.Controller.Net</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Controller.dll</h6>
+  <h5 id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BasePeriodicWebSocketListener&lt;TReturnDataType, TStateType&gt; : object, IWebSocketListener, IDisposable where TReturnDataType : class where TStateType : WebSocketListenerState, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TReturnDataType</span></td>
+        <td><p>The type of the T return data type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TStateType</span></td>
+        <td><p>The type of the T state type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2__ctor_ILogger_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Net.BasePeriodicWebSocketListener%602.%23ctor(ILogger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Net/BasePeriodicWebSocketListener.cs/#L45">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2__ctor_" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.#ctor*"></a>
+  <h4 id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2__ctor_ILogger_" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.#ctor(ILogger)">BasePeriodicWebSocketListener(ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BasePeriodicWebSocketListener(ILogger logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_ActiveConnections.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Net.BasePeriodicWebSocketListener%602.ActiveConnections%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Net/BasePeriodicWebSocketListener.cs/#L25">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_ActiveConnections" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.ActiveConnections">ActiveConnections</h4>
+  <div class="markdown level1 summary"><p>The _active connections</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;Tuple&lt;IWebSocketConnection, CancellationTokenSource, TStateType&gt;&gt; ActiveConnections</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">Tuple</span>&lt;<a class="xref" href="MediaBrowser.Controller.Net.IWebSocketConnection.html">IWebSocketConnection</a>, <span class="xref">CancellationTokenSource</span>, TStateType&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_Logger.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Net.BasePeriodicWebSocketListener%602.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Net/BasePeriodicWebSocketListener.cs/#L43">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_Logger" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>The logger</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILogger Logger</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_UsCulture.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Net.BasePeriodicWebSocketListener%602.UsCulture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Net/BasePeriodicWebSocketListener.cs/#L80">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_UsCulture" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.UsCulture">UsCulture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly CultureInfo UsCulture</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CultureInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_Name.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Net.BasePeriodicWebSocketListener%602.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Net/BasePeriodicWebSocketListener.cs/#L32">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_Name_" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.Name*"></a>
+  <h4 id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_Name" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_Dispose.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Net.BasePeriodicWebSocketListener%602.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Net/BasePeriodicWebSocketListener.cs/#L242">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_Dispose_" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.Dispose*"></a>
+  <h4 id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_Dispose" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Net.BasePeriodicWebSocketListener%602.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Net/BasePeriodicWebSocketListener.cs/#L225">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_Dispose_" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.Dispose*"></a>
+  <h4 id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_Dispose_System_Boolean_" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged and - optionally - managed resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool dispose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">dispose</span></td>
+        <td><p><code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_GetDataToSend.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Net.BasePeriodicWebSocketListener%602.GetDataToSend%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Net/BasePeriodicWebSocketListener.cs/#L38">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_GetDataToSend_" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.GetDataToSend*"></a>
+  <h4 id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_GetDataToSend" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.GetDataToSend">GetDataToSend()</h4>
+  <div class="markdown level1 summary"><p>Gets the data to send.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract Task&lt;TReturnDataType&gt; GetDataToSend()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;TReturnDataType&gt;</td>
+        <td><p>Task{`1}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_ProcessMessageAsync_MediaBrowser_Controller_Net_WebSocketMessageInfo_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Net.BasePeriodicWebSocketListener%602.ProcessMessageAsync(MediaBrowser.Controller.Net.WebSocketMessageInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Net/BasePeriodicWebSocketListener.cs/#L60">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_ProcessMessageAsync_" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.ProcessMessageAsync*"></a>
+  <h4 id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_ProcessMessageAsync_MediaBrowser_Controller_Net_WebSocketMessageInfo_" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.ProcessMessageAsync(MediaBrowser.Controller.Net.WebSocketMessageInfo)">ProcessMessageAsync(WebSocketMessageInfo)</h4>
+  <div class="markdown level1 summary"><p>Processes the message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ProcessMessageAsync(WebSocketMessageInfo message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Net.WebSocketMessageInfo.html">WebSocketMessageInfo</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_SendData_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Net.BasePeriodicWebSocketListener%602.SendData(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Net/BasePeriodicWebSocketListener.cs/#L109">View Source</a>
+  </span>
+  <a id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_SendData_" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.SendData*"></a>
+  <h4 id="MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2_SendData_System_Boolean_" data-uid="MediaBrowser.Controller.Net.BasePeriodicWebSocketListener`2.SendData(System.Boolean)">SendData(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SendData(bool force)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">force</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Net.IWebSocketListener.html">IWebSocketListener</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Controller_Net_BasePeriodicWebSocketListener_2.md&amp;value=---%0Auid%3A%20MediaBrowser.Controller.Net.BasePeriodicWebSocketListener%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Controller/Net/BasePeriodicWebSocketListener.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

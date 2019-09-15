@@ -1,0 +1,2941 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ApplicationHost
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ApplicationHost
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.ApplicationHost">
+  
+  
+  <h1 id="Emby_Server_Implementations_ApplicationHost" data-uid="Emby.Server.Implementations.ApplicationHost" class="text-break">Class ApplicationHost
+  </h1>
+  <div class="markdown level0 summary"><p>Class CompositionRoot</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ApplicationHost</span></div>
+      <div class="level2"><a class="xref" href="Jellyfin.Server.CoreAppHost.html">CoreAppHost</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.IServerApplicationHost.html">IServerApplicationHost</a></div>
+    <div><a class="xref" href="MediaBrowser.Common.IApplicationHost.html">IApplicationHost</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.html">Emby.Server.Implementations</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_ApplicationHost_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ApplicationHost : object, IServerApplicationHost, IApplicationHost, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost__ctor_Emby_Server_Implementations_ServerApplicationPaths_ILoggerFactory_Emby_Server_Implementations_IStartupOptions_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Drawing_IImageEncoder_MediaBrowser_Common_Net_INetworkManager_IConfiguration_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.%23ctor(Emby.Server.Implementations.ServerApplicationPaths%2CILoggerFactory%2CEmby.Server.Implementations.IStartupOptions%2CMediaBrowser.Model.IO.IFileSystem%2CMediaBrowser.Controller.Drawing.IImageEncoder%2CMediaBrowser.Common.Net.INetworkManager%2CIConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L351">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost__ctor_" data-uid="Emby.Server.Implementations.ApplicationHost.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost__ctor_Emby_Server_Implementations_ServerApplicationPaths_ILoggerFactory_Emby_Server_Implementations_IStartupOptions_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Drawing_IImageEncoder_MediaBrowser_Common_Net_INetworkManager_IConfiguration_" data-uid="Emby.Server.Implementations.ApplicationHost.#ctor(Emby.Server.Implementations.ServerApplicationPaths,ILoggerFactory,Emby.Server.Implementations.IStartupOptions,MediaBrowser.Model.IO.IFileSystem,MediaBrowser.Controller.Drawing.IImageEncoder,MediaBrowser.Common.Net.INetworkManager,IConfiguration)">ApplicationHost(ServerApplicationPaths, ILoggerFactory, IStartupOptions, IFileSystem, IImageEncoder, INetworkManager, IConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Emby.Server.Implementations.ApplicationHost.html">ApplicationHost</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApplicationHost(ServerApplicationPaths applicationPaths, ILoggerFactory loggerFactory, IStartupOptions options, IFileSystem fileSystem, IImageEncoder imageEncoder, INetworkManager networkManager, IConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.ServerApplicationPaths.html">ServerApplicationPaths</a></td>
+        <td><span class="parametername">applicationPaths</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.IStartupOptions.html">IStartupOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Drawing.IImageEncoder.html">IImageEncoder</a></td>
+        <td><span class="parametername">imageEncoder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Net.INetworkManager.html">INetworkManager</a></td>
+        <td><span class="parametername">networkManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost__serviceProvider.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost._serviceProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L232">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_ApplicationHost__serviceProvider" data-uid="Emby.Server.Implementations.ApplicationHost._serviceProvider">_serviceProvider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IServiceProvider _serviceProvider</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IServiceProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_XmlSerializer.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.XmlSerializer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L334">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_XmlSerializer" data-uid="Emby.Server.Implementations.ApplicationHost.XmlSerializer">XmlSerializer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly IXmlSerializer XmlSerializer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IXmlSerializer.html">IXmlSerializer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_ApplicationPaths.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.ApplicationPaths%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L199">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_ApplicationPaths_" data-uid="Emby.Server.Implementations.ApplicationHost.ApplicationPaths*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_ApplicationPaths" data-uid="Emby.Server.Implementations.ApplicationHost.ApplicationPaths">ApplicationPaths</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the application paths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ServerApplicationPaths ApplicationPaths { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.ServerApplicationPaths.html">ServerApplicationPaths</a></td>
+        <td><p>The application paths.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_ApplicationProductName.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.ApplicationProductName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L428">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_ApplicationProductName_" data-uid="Emby.Server.Implementations.ApplicationHost.ApplicationProductName*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_ApplicationProductName" data-uid="Emby.Server.Implementations.ApplicationHost.ApplicationProductName">ApplicationProductName</h4>
+  <div class="markdown level1 summary"><p>Gets the current application name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApplicationProductName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The application name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_ApplicationUserAgent.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.ApplicationUserAgent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L416">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_ApplicationUserAgent_" data-uid="Emby.Server.Implementations.ApplicationHost.ApplicationUserAgent*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_ApplicationUserAgent" data-uid="Emby.Server.Implementations.ApplicationHost.ApplicationUserAgent">ApplicationUserAgent</h4>
+  <div class="markdown level1 summary"><p>Gets the current application user agent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApplicationUserAgent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The application user agent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_ApplicationUserAgentAddress.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.ApplicationUserAgentAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L422">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_ApplicationUserAgentAddress_" data-uid="Emby.Server.Implementations.ApplicationHost.ApplicationUserAgentAddress*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_ApplicationUserAgentAddress" data-uid="Emby.Server.Implementations.ApplicationHost.ApplicationUserAgentAddress">ApplicationUserAgentAddress</h4>
+  <div class="markdown level1 summary"><p>Gets the email address for use within a comment section of a user agent field.
+Presently used to provide contact information to MusicBrainz service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApplicationUserAgentAddress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_ApplicationVersion.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.ApplicationVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L410">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_ApplicationVersion_" data-uid="Emby.Server.Implementations.ApplicationHost.ApplicationVersion*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_ApplicationVersion" data-uid="Emby.Server.Implementations.ApplicationHost.ApplicationVersion">ApplicationVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApplicationVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_AuthService.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.AuthService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L326">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_AuthService_" data-uid="Emby.Server.Implementations.ApplicationHost.AuthService*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_AuthService" data-uid="Emby.Server.Implementations.ApplicationHost.AuthService">AuthService</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IAuthService AuthService { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Net.IAuthService.html">IAuthService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_CanLaunchWebBrowser.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.CanLaunchWebBrowser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L134">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_CanLaunchWebBrowser_" data-uid="Emby.Server.Implementations.ApplicationHost.CanLaunchWebBrowser*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_CanLaunchWebBrowser" data-uid="Emby.Server.Implementations.ApplicationHost.CanLaunchWebBrowser">CanLaunchWebBrowser</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanLaunchWebBrowser { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_CanSelfRestart.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.CanSelfRestart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L132">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_CanSelfRestart_" data-uid="Emby.Server.Implementations.ApplicationHost.CanSelfRestart*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_CanSelfRestart" data-uid="Emby.Server.Implementations.ApplicationHost.CanSelfRestart">CanSelfRestart</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance can self restart.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool CanSelfRestart { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance can self restart; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_Certificate.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.Certificate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1175">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_Certificate_" data-uid="Emby.Server.Implementations.ApplicationHost.Certificate*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_Certificate" data-uid="Emby.Server.Implementations.ApplicationHost.Certificate">Certificate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected X509Certificate2 Certificate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">X509Certificate2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_ConfigurationManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.ConfigurationManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L216">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_ConfigurationManager_" data-uid="Emby.Server.Implementations.ApplicationHost.ConfigurationManager*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_ConfigurationManager" data-uid="Emby.Server.Implementations.ApplicationHost.ConfigurationManager">ConfigurationManager</h4>
+  <div class="markdown level1 summary"><p>Gets the configuration manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IConfigurationManager ConfigurationManager { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Configuration.IConfigurationManager.html">IConfigurationManager</a></td>
+        <td><p>The configuration manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_EnableHttps.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.EnableHttps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1483">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_EnableHttps_" data-uid="Emby.Server.Implementations.ApplicationHost.EnableHttps*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_EnableHttps" data-uid="Emby.Server.Implementations.ApplicationHost.EnableHttps">EnableHttps</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableHttps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_FileSystemManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.FileSystemManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L218">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_FileSystemManager_" data-uid="Emby.Server.Implementations.ApplicationHost.FileSystemManager*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_FileSystemManager" data-uid="Emby.Server.Implementations.ApplicationHost.FileSystemManager">FileSystemManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFileSystem FileSystemManager { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_FriendlyName.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.FriendlyName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1719">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_FriendlyName_" data-uid="Emby.Server.Implementations.ApplicationHost.FriendlyName*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_FriendlyName" data-uid="Emby.Server.Implementations.ApplicationHost.FriendlyName">FriendlyName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FriendlyName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_HasPendingRestart.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.HasPendingRestart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L167">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_HasPendingRestart_" data-uid="Emby.Server.Implementations.ApplicationHost.HasPendingRestart*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_HasPendingRestart" data-uid="Emby.Server.Implementations.ApplicationHost.HasPendingRestart">HasPendingRestart</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance has changes that require the entire application to restart.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPendingRestart { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance has pending application restart; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_HasUpdateAvailable.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.HasUpdateAvailable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1758">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_HasUpdateAvailable_" data-uid="Emby.Server.Implementations.ApplicationHost.HasUpdateAvailable*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_HasUpdateAvailable" data-uid="Emby.Server.Implementations.ApplicationHost.HasUpdateAvailable">HasUpdateAvailable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasUpdateAvailable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_HttpClient.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.HttpClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L340">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_HttpClient_" data-uid="Emby.Server.Implementations.ApplicationHost.HttpClient*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_HttpClient" data-uid="Emby.Server.Implementations.ApplicationHost.HttpClient">HttpClient</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IHttpClient HttpClient { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Net.IHttpClient.html">IHttpClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_HttpPort.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.HttpPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1724">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_HttpPort_" data-uid="Emby.Server.Implementations.ApplicationHost.HttpPort*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_HttpPort" data-uid="Emby.Server.Implementations.ApplicationHost.HttpPort">HttpPort</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HttpPort { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_HttpsPort.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.HttpsPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1726">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_HttpsPort_" data-uid="Emby.Server.Implementations.ApplicationHost.HttpsPort*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_HttpsPort" data-uid="Emby.Server.Implementations.ApplicationHost.HttpsPort">HttpsPort</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HttpsPort { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_ImageProcessor.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.ImageProcessor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L272">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_ImageProcessor_" data-uid="Emby.Server.Implementations.ApplicationHost.ImageProcessor*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_ImageProcessor" data-uid="Emby.Server.Implementations.ApplicationHost.ImageProcessor">ImageProcessor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IImageProcessor ImageProcessor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Drawing.IImageProcessor.html">IImageProcessor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_InstallationManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.InstallationManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L324">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_InstallationManager_" data-uid="Emby.Server.Implementations.ApplicationHost.InstallationManager*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_InstallationManager" data-uid="Emby.Server.Implementations.ApplicationHost.InstallationManager">InstallationManager</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the installation manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IInstallationManager InstallationManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Updates.IInstallationManager.html">IInstallationManager</a></td>
+        <td><p>The installation manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_IsoManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.IsoManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L346">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_IsoManager_" data-uid="Emby.Server.Implementations.ApplicationHost.IsoManager*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_IsoManager" data-uid="Emby.Server.Implementations.ApplicationHost.IsoManager">IsoManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IIsoManager IsoManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IIsoManager.html">IIsoManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_IsShuttingDown.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.IsShuttingDown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L169">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_IsShuttingDown_" data-uid="Emby.Server.Implementations.ApplicationHost.IsShuttingDown*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_IsShuttingDown" data-uid="Emby.Server.Implementations.ApplicationHost.IsShuttingDown">IsShuttingDown</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsShuttingDown { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_JsonSerializer.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.JsonSerializer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L344">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_JsonSerializer_" data-uid="Emby.Server.Implementations.ApplicationHost.JsonSerializer*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_JsonSerializer" data-uid="Emby.Server.Implementations.ApplicationHost.JsonSerializer">JsonSerializer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IJsonSerializer JsonSerializer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_LocalizationManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.LocalizationManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L286">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_LocalizationManager_" data-uid="Emby.Server.Implementations.ApplicationHost.LocalizationManager*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_LocalizationManager" data-uid="Emby.Server.Implementations.ApplicationHost.LocalizationManager">LocalizationManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalizationManager LocalizationManager { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.Localization.LocalizationManager.html">LocalizationManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_Logger.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L175">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_Logger_" data-uid="Emby.Server.Implementations.ApplicationHost.Logger*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_Logger" data-uid="Emby.Server.Implementations.ApplicationHost.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the logger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILogger Logger { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><p>The logger.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_LoggerFactory.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.LoggerFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L193">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_LoggerFactory_" data-uid="Emby.Server.Implementations.ApplicationHost.LoggerFactory*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_LoggerFactory" data-uid="Emby.Server.Implementations.ApplicationHost.LoggerFactory">LoggerFactory</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the logger factory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILoggerFactory LoggerFactory { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><p>The logger factory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_Name.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L449">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_Name_" data-uid="Emby.Server.Implementations.ApplicationHost.Name*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_Name" data-uid="Emby.Server.Implementations.ApplicationHost.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_NetworkManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.NetworkManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L342">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_NetworkManager_" data-uid="Emby.Server.Implementations.ApplicationHost.NetworkManager*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_NetworkManager" data-uid="Emby.Server.Implementations.ApplicationHost.NetworkManager">NetworkManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected INetworkManager NetworkManager { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Net.INetworkManager.html">INetworkManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_Plugins.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.Plugins%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L183">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_Plugins_" data-uid="Emby.Server.Implementations.ApplicationHost.Plugins*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_Plugins" data-uid="Emby.Server.Implementations.ApplicationHost.Plugins">Plugins</h4>
+  <div class="markdown level1 summary"><p>Gets the plugins.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPlugin[] Plugins { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Plugins.IPlugin.html">IPlugin</a>[]</td>
+        <td><p>The plugins.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_ProcessFactory.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.ProcessFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L332">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_ProcessFactory_" data-uid="Emby.Server.Implementations.ApplicationHost.ProcessFactory*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_ProcessFactory" data-uid="Emby.Server.Implementations.ApplicationHost.ProcessFactory">ProcessFactory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IProcessFactory ProcessFactory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Diagnostics.IProcessFactory.html">IProcessFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_ServerConfigurationManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.ServerConfigurationManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L238">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_ServerConfigurationManager_" data-uid="Emby.Server.Implementations.ApplicationHost.ServerConfigurationManager*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_ServerConfigurationManager" data-uid="Emby.Server.Implementations.ApplicationHost.ServerConfigurationManager">ServerConfigurationManager</h4>
+  <div class="markdown level1 summary"><p>Gets the server configuration manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IServerConfigurationManager ServerConfigurationManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><p>The server configuration manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_SocketFactory.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.SocketFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L336">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_SocketFactory_" data-uid="Emby.Server.Implementations.ApplicationHost.SocketFactory*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_SocketFactory" data-uid="Emby.Server.Implementations.ApplicationHost.SocketFactory">SocketFactory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ISocketFactory SocketFactory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Net.ISocketFactory.html">ISocketFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_StartupOptions.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.StartupOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L328">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_StartupOptions_" data-uid="Emby.Server.Implementations.ApplicationHost.StartupOptions*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_StartupOptions" data-uid="Emby.Server.Implementations.ApplicationHost.StartupOptions">StartupOptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStartupOptions StartupOptions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.IStartupOptions.html">IStartupOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_SupportsHttps.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.SupportsHttps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1485">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_SupportsHttps_" data-uid="Emby.Server.Implementations.ApplicationHost.SupportsHttps*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_SupportsHttps" data-uid="Emby.Server.Implementations.ApplicationHost.SupportsHttps">SupportsHttps</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportsHttps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_SystemId.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.SystemId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L432">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_SystemId_" data-uid="Emby.Server.Implementations.ApplicationHost.SystemId*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_SystemId" data-uid="Emby.Server.Implementations.ApplicationHost.SystemId">SystemId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SystemId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_SystemUpdateLevel.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.SystemUpdateLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L220">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_SystemUpdateLevel_" data-uid="Emby.Server.Implementations.ApplicationHost.SystemUpdateLevel*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_SystemUpdateLevel" data-uid="Emby.Server.Implementations.ApplicationHost.SystemUpdateLevel">SystemUpdateLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PackageVersionClass SystemUpdateLevel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Updates.PackageVersionClass.html">PackageVersionClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_TaskManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.TaskManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L338">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_TaskManager_" data-uid="Emby.Server.Implementations.ApplicationHost.TaskManager*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_TaskManager" data-uid="Emby.Server.Implementations.ApplicationHost.TaskManager">TaskManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ITaskManager TaskManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Tasks.ITaskManager.html">ITaskManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_UserManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.UserManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L244">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_UserManager_" data-uid="Emby.Server.Implementations.ApplicationHost.UserManager*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_UserManager" data-uid="Emby.Server.Implementations.ApplicationHost.UserManager">UserManager</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the user manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUserManager UserManager { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserManager.html">IUserManager</a></td>
+        <td><p>The user manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_CreateHttpListener.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.CreateHttpListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1197">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_CreateHttpListener_" data-uid="Emby.Server.Implementations.ApplicationHost.CreateHttpListener*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_CreateHttpListener" data-uid="Emby.Server.Implementations.ApplicationHost.CreateHttpListener">CreateHttpListener()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IHttpListener CreateHttpListener()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Emby.Server.Implementations.HttpServer.IHttpListener.html">IHttpListener</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_CreateInstance_Type_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.CreateInstance(Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L456">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_CreateInstance_" data-uid="Emby.Server.Implementations.ApplicationHost.CreateInstance*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_CreateInstance_Type_" data-uid="Emby.Server.Implementations.ApplicationHost.CreateInstance(Type)">CreateInstance(Type)</h4>
+  <div class="markdown level1 summary"><p>Creates an instance of type and resolves all constructor dependencies</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object CreateInstance(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>System.Object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_CreateInstance__1.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.CreateInstance%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L464">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_CreateInstance_" data-uid="Emby.Server.Implementations.ApplicationHost.CreateInstance*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_CreateInstance__1" data-uid="Emby.Server.Implementations.ApplicationHost.CreateInstance``1">CreateInstance&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Creates an instance of type and resolves all constructor dependencies</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T CreateInstance&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>T.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_CreateInstanceSafe_Type_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.CreateInstanceSafe(Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L472">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_CreateInstanceSafe_" data-uid="Emby.Server.Implementations.ApplicationHost.CreateInstanceSafe*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_CreateInstanceSafe_Type_" data-uid="Emby.Server.Implementations.ApplicationHost.CreateInstanceSafe(Type)">CreateInstanceSafe(Type)</h4>
+  <div class="markdown level1 summary"><p>Creates the instance safe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected object CreateInstanceSafe(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>System.Object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_DiscoverTypes.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.DiscoverTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1141">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_DiscoverTypes_" data-uid="Emby.Server.Implementations.ApplicationHost.DiscoverTypes*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_DiscoverTypes" data-uid="Emby.Server.Implementations.ApplicationHost.DiscoverTypes">DiscoverTypes()</h4>
+  <div class="markdown level1 summary"><p>Discovers the types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DiscoverTypes()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_Dispose.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1850">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_Dispose_" data-uid="Emby.Server.Implementations.ApplicationHost.Dispose*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_Dispose" data-uid="Emby.Server.Implementations.ApplicationHost.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1860">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_Dispose_" data-uid="Emby.Server.Implementations.ApplicationHost.Dispose*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_Dispose_System_Boolean_" data-uid="Emby.Server.Implementations.ApplicationHost.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged and - optionally - managed resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool dispose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">dispose</span></td>
+        <td><p><code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_EnableLoopback_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.EnableLoopback(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1841">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_EnableLoopback_" data-uid="Emby.Server.Implementations.ApplicationHost.EnableLoopback*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_EnableLoopback_System_String_" data-uid="Emby.Server.Implementations.ApplicationHost.EnableLoopback(System.String)">EnableLoopback(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void EnableLoopback(string appName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_ExpandVirtualPath_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.ExpandVirtualPath(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L384">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_ExpandVirtualPath_" data-uid="Emby.Server.Implementations.ApplicationHost.ExpandVirtualPath*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_ExpandVirtualPath_System_String_" data-uid="Emby.Server.Implementations.ApplicationHost.ExpandVirtualPath(System.String)">ExpandVirtualPath(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ExpandVirtualPath(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_FindParts.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.FindParts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1044">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_FindParts_" data-uid="Emby.Server.Implementations.ApplicationHost.FindParts*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_FindParts" data-uid="Emby.Server.Implementations.ApplicationHost.FindParts">FindParts()</h4>
+  <div class="markdown level1 summary"><p>Finds the parts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void FindParts()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetAssembliesWithPartsInternal.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetAssembliesWithPartsInternal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1395">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetAssembliesWithPartsInternal_" data-uid="Emby.Server.Implementations.ApplicationHost.GetAssembliesWithPartsInternal*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetAssembliesWithPartsInternal" data-uid="Emby.Server.Implementations.ApplicationHost.GetAssembliesWithPartsInternal">GetAssembliesWithPartsInternal()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract IEnumerable&lt;Assembly&gt; GetAssembliesWithPartsInternal()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Assembly</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetComposablePartAssemblies.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetComposablePartAssemblies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1328">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetComposablePartAssemblies_" data-uid="Emby.Server.Implementations.ApplicationHost.GetComposablePartAssemblies*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetComposablePartAssemblies" data-uid="Emby.Server.Implementations.ApplicationHost.GetComposablePartAssemblies">GetComposablePartAssemblies()</h4>
+  <div class="markdown level1 summary"><p>Gets the composable part assemblies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IEnumerable&lt;Assembly&gt; GetComposablePartAssemblies()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Assembly</span>&gt;</td>
+        <td><p>IEnumerable{Assembly}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetExports__1_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetExports%60%601(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L506">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetExports_" data-uid="Emby.Server.Implementations.ApplicationHost.GetExports*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetExports__1_System_Boolean_" data-uid="Emby.Server.Implementations.ApplicationHost.GetExports``1(System.Boolean)">GetExports&lt;T&gt;(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;T&gt; GetExports&lt;T&gt;(bool manageLifetime = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">manageLifetime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyCollection</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetExportTypes__1.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetExportTypes%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L498">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetExportTypes_" data-uid="Emby.Server.Implementations.ApplicationHost.GetExportTypes*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetExportTypes__1" data-uid="Emby.Server.Implementations.ApplicationHost.GetExportTypes``1">GetExportTypes&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Gets the export types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Type&gt; GetExportTypes&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Type</span>&gt;</td>
+        <td><p>IEnumerable{Type}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetLocalApiUrl_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetLocalApiUrl(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1487">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetLocalApiUrl_" data-uid="Emby.Server.Implementations.ApplicationHost.GetLocalApiUrl*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetLocalApiUrl_CancellationToken_" data-uid="Emby.Server.Implementations.ApplicationHost.GetLocalApiUrl(CancellationToken)">GetLocalApiUrl(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetLocalApiUrl(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetLocalApiUrl_IPAddress_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetLocalApiUrl(IPAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1550">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetLocalApiUrl_" data-uid="Emby.Server.Implementations.ApplicationHost.GetLocalApiUrl*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetLocalApiUrl_IPAddress_" data-uid="Emby.Server.Implementations.ApplicationHost.GetLocalApiUrl(IPAddress)">GetLocalApiUrl(IPAddress)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetLocalApiUrl(IPAddress ipAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPAddress</span></td>
+        <td><span class="parametername">ipAddress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetLocalApiUrl_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetLocalApiUrl(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1562">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetLocalApiUrl_" data-uid="Emby.Server.Implementations.ApplicationHost.GetLocalApiUrl*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetLocalApiUrl_System_String_" data-uid="Emby.Server.Implementations.ApplicationHost.GetLocalApiUrl(System.String)">GetLocalApiUrl(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetLocalApiUrl(string host)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">host</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetLocalIpAddresses_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetLocalIpAddresses(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1602">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetLocalIpAddresses_" data-uid="Emby.Server.Implementations.ApplicationHost.GetLocalIpAddresses*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetLocalIpAddresses_CancellationToken_" data-uid="Emby.Server.Implementations.ApplicationHost.GetLocalIpAddresses(CancellationToken)">GetLocalIpAddresses(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;IPAddress&gt;&gt; GetLocalIpAddresses(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<span class="xref">IPAddress</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetPublicSystemInfo_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetPublicSystemInfo(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1456">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetPublicSystemInfo_" data-uid="Emby.Server.Implementations.ApplicationHost.GetPublicSystemInfo*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetPublicSystemInfo_CancellationToken_" data-uid="Emby.Server.Implementations.ApplicationHost.GetPublicSystemInfo(CancellationToken)">GetPublicSystemInfo(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;PublicSystemInfo&gt; GetPublicSystemInfo(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.System.PublicSystemInfo.html">PublicSystemInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetSystemInfo_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetSystemInfo(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1402">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetSystemInfo_" data-uid="Emby.Server.Implementations.ApplicationHost.GetSystemInfo*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetSystemInfo_CancellationToken_" data-uid="Emby.Server.Implementations.ApplicationHost.GetSystemInfo(CancellationToken)">GetSystemInfo(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the system status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SystemInfo&gt; GetSystemInfo(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="MediaBrowser.Model.System.SystemInfo.html">SystemInfo</a>&gt;</td>
+        <td><p>SystemInfo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetWakeOnLanInfo.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetWakeOnLanInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1451">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetWakeOnLanInfo_" data-uid="Emby.Server.Implementations.ApplicationHost.GetWakeOnLanInfo*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetWakeOnLanInfo" data-uid="Emby.Server.Implementations.ApplicationHost.GetWakeOnLanInfo">GetWakeOnLanInfo()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;WakeOnLanInfo&gt; GetWakeOnLanInfo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.System.WakeOnLanInfo.html">WakeOnLanInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetWanApiUrl_IPAddress_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetWanApiUrl(IPAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1576">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetWanApiUrl_" data-uid="Emby.Server.Implementations.ApplicationHost.GetWanApiUrl*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetWanApiUrl_IPAddress_" data-uid="Emby.Server.Implementations.ApplicationHost.GetWanApiUrl(IPAddress)">GetWanApiUrl(IPAddress)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetWanApiUrl(IPAddress ipAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPAddress</span></td>
+        <td><span class="parametername">ipAddress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetWanApiUrl_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetWanApiUrl(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1588">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetWanApiUrl_" data-uid="Emby.Server.Implementations.ApplicationHost.GetWanApiUrl*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetWanApiUrl_System_String_" data-uid="Emby.Server.Implementations.ApplicationHost.GetWanApiUrl(System.String)">GetWanApiUrl(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetWanApiUrl(string host)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">host</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_GetWanApiUrlFromExternal_CancellationToken_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.GetWanApiUrlFromExternal(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1509">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_GetWanApiUrlFromExternal_" data-uid="Emby.Server.Implementations.ApplicationHost.GetWanApiUrlFromExternal*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_GetWanApiUrlFromExternal_CancellationToken_" data-uid="Emby.Server.Implementations.ApplicationHost.GetWanApiUrlFromExternal(CancellationToken)">GetWanApiUrlFromExternal(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetWanApiUrlFromExternal(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_InitAsync_IServiceCollection_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.InitAsync(IServiceCollection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L572">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_InitAsync_" data-uid="Emby.Server.Implementations.ApplicationHost.InitAsync*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_InitAsync_IServiceCollection_" data-uid="Emby.Server.Implementations.ApplicationHost.InitAsync(IServiceCollection)">InitAsync(IServiceCollection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task InitAsync(IServiceCollection serviceCollection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="parametername">serviceCollection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_LaunchUrl_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.LaunchUrl(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1808">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_LaunchUrl_" data-uid="Emby.Server.Implementations.ApplicationHost.LaunchUrl*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_LaunchUrl_System_String_" data-uid="Emby.Server.Implementations.ApplicationHost.LaunchUrl(System.String)">LaunchUrl(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LaunchUrl(string url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_LogEnvironmentInfo_ILogger_MediaBrowser_Common_Configuration_IApplicationPaths_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.LogEnvironmentInfo(ILogger%2CMediaBrowser.Common.Configuration.IApplicationPaths)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L889">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_LogEnvironmentInfo_" data-uid="Emby.Server.Implementations.ApplicationHost.LogEnvironmentInfo*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_LogEnvironmentInfo_ILogger_MediaBrowser_Common_Configuration_IApplicationPaths_" data-uid="Emby.Server.Implementations.ApplicationHost.LogEnvironmentInfo(ILogger,MediaBrowser.Common.Configuration.IApplicationPaths)">LogEnvironmentInfo(ILogger, IApplicationPaths)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogEnvironmentInfo(ILogger logger, IApplicationPaths appPaths)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Configuration.IApplicationPaths.html">IApplicationPaths</a></td>
+        <td><span class="parametername">appPaths</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_NotifyPendingRestart.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.NotifyPendingRestart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1274">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_NotifyPendingRestart_" data-uid="Emby.Server.Implementations.ApplicationHost.NotifyPendingRestart*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_NotifyPendingRestart" data-uid="Emby.Server.Implementations.ApplicationHost.NotifyPendingRestart">NotifyPendingRestart()</h4>
+  <div class="markdown level1 summary"><p>Notifies that the kernel that a change has been made that requires a restart</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NotifyPendingRestart()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_OnConfigurationUpdated_System_Object_EventArgs_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.OnConfigurationUpdated(System.Object%2CEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1228">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_OnConfigurationUpdated_" data-uid="Emby.Server.Implementations.ApplicationHost.OnConfigurationUpdated*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_OnConfigurationUpdated_System_Object_EventArgs_" data-uid="Emby.Server.Implementations.ApplicationHost.OnConfigurationUpdated(System.Object,EventArgs)">OnConfigurationUpdated(Object, EventArgs)</h4>
+  <div class="markdown level1 summary"><p>Called when [configuration updated].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnConfigurationUpdated(object sender, EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The <see cref="!:EventArgs"></see> instance containing the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_RegisterResources_IServiceCollection_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.RegisterResources(IServiceCollection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L676">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_RegisterResources_" data-uid="Emby.Server.Implementations.ApplicationHost.RegisterResources*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_RegisterResources_IServiceCollection_" data-uid="Emby.Server.Implementations.ApplicationHost.RegisterResources(IServiceCollection)">RegisterResources(IServiceCollection)</h4>
+  <div class="markdown level1 summary"><p>Registers resources that classes will depend on</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task RegisterResources(IServiceCollection serviceCollection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IServiceCollection</span></td>
+        <td><span class="parametername">serviceCollection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_RemovePlugin_MediaBrowser_Common_Plugins_IPlugin_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.RemovePlugin(MediaBrowser.Common.Plugins.IPlugin)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1778">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_RemovePlugin_" data-uid="Emby.Server.Implementations.ApplicationHost.RemovePlugin*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_RemovePlugin_MediaBrowser_Common_Plugins_IPlugin_" data-uid="Emby.Server.Implementations.ApplicationHost.RemovePlugin(MediaBrowser.Common.Plugins.IPlugin)">RemovePlugin(IPlugin)</h4>
+  <div class="markdown level1 summary"><p>Removes the plugin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePlugin(IPlugin plugin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Plugins.IPlugin.html">IPlugin</a></td>
+        <td><span class="parametername">plugin</span></td>
+        <td><p>The plugin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_Resolve__1.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.Resolve%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L491">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_Resolve_" data-uid="Emby.Server.Implementations.ApplicationHost.Resolve*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_Resolve__1" data-uid="Emby.Server.Implementations.ApplicationHost.Resolve``1">Resolve&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Resolves this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Resolve&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>``0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_Restart.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.Restart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1291">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_Restart_" data-uid="Emby.Server.Implementations.ApplicationHost.Restart*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_Restart" data-uid="Emby.Server.Implementations.ApplicationHost.Restart">Restart()</h4>
+  <div class="markdown level1 summary"><p>Restarts this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Restart()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_RestartInternal.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.RestartInternal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1322">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_RestartInternal_" data-uid="Emby.Server.Implementations.ApplicationHost.RestartInternal*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_RestartInternal" data-uid="Emby.Server.Implementations.ApplicationHost.RestartInternal">RestartInternal()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void RestartInternal()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_ReverseVirtualPath_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.ReverseVirtualPath(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L392">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_ReverseVirtualPath_" data-uid="Emby.Server.Implementations.ApplicationHost.ReverseVirtualPath*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_ReverseVirtualPath_System_String_" data-uid="Emby.Server.Implementations.ApplicationHost.ReverseVirtualPath(System.String)">ReverseVirtualPath(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReverseVirtualPath(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_RunStartupTasksAsync.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.RunStartupTasksAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L529">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_RunStartupTasksAsync_" data-uid="Emby.Server.Implementations.ApplicationHost.RunStartupTasksAsync*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_RunStartupTasksAsync" data-uid="Emby.Server.Implementations.ApplicationHost.RunStartupTasksAsync">RunStartupTasksAsync()</h4>
+  <div class="markdown level1 summary"><p>Runs the startup tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RunStartupTasksAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p><see cref="!:Task"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_Shutdown.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.Shutdown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1731">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_Shutdown_" data-uid="Emby.Server.Implementations.ApplicationHost.Shutdown*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_Shutdown" data-uid="Emby.Server.Implementations.ApplicationHost.Shutdown">Shutdown()</h4>
+  <div class="markdown level1 summary"><p>Shuts down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Shutdown()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_ShutdownInternal.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.ShutdownInternal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1752">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ApplicationHost_ShutdownInternal_" data-uid="Emby.Server.Implementations.ApplicationHost.ShutdownInternal*"></a>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_ShutdownInternal" data-uid="Emby.Server.Implementations.ApplicationHost.ShutdownInternal">ShutdownInternal()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void ShutdownInternal()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_HasPendingRestartChanged.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.HasPendingRestartChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L161">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_HasPendingRestartChanged" data-uid="Emby.Server.Implementations.ApplicationHost.HasPendingRestartChanged">HasPendingRestartChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs when [has pending restart changed].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler HasPendingRestartChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost_HasUpdateAvailableChanged.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost.HasUpdateAvailableChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L1754">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_ApplicationHost_HasUpdateAvailableChanged" data-uid="Emby.Server.Implementations.ApplicationHost.HasUpdateAvailableChanged">HasUpdateAvailableChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler HasUpdateAvailableChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.IServerApplicationHost.html">IServerApplicationHost</a>
+  </div>
+  <div>
+      <a class="xref" href="MediaBrowser.Common.IApplicationHost.html">IApplicationHost</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ApplicationHost.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ApplicationHost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ApplicationHost.cs/#L122" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

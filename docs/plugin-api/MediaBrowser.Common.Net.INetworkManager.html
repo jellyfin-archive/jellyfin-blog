@@ -1,0 +1,679 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface INetworkManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface INetworkManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Common.Net.INetworkManager">
+  
+  
+  <h1 id="MediaBrowser_Common_Net_INetworkManager" data-uid="MediaBrowser.Common.Net.INetworkManager" class="text-break">Interface INetworkManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Common.Net.html">MediaBrowser.Common.Net</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Common.dll</h6>
+  <h5 id="MediaBrowser_Common_Net_INetworkManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface INetworkManager</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager_LocalSubnetsFn.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager.LocalSubnetsFn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L22">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Net_INetworkManager_LocalSubnetsFn_" data-uid="MediaBrowser.Common.Net.INetworkManager.LocalSubnetsFn*"></a>
+  <h4 id="MediaBrowser_Common_Net_INetworkManager_LocalSubnetsFn" data-uid="MediaBrowser.Common.Net.INetworkManager.LocalSubnetsFn">LocalSubnetsFn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Func&lt;string[]&gt; LocalSubnetsFn { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.String</span>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager_GetLocalIpAddresses_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager.GetLocalIpAddresses(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L57">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Net_INetworkManager_GetLocalIpAddresses_" data-uid="MediaBrowser.Common.Net.INetworkManager.GetLocalIpAddresses*"></a>
+  <h4 id="MediaBrowser_Common_Net_INetworkManager_GetLocalIpAddresses_System_Boolean_" data-uid="MediaBrowser.Common.Net.INetworkManager.GetLocalIpAddresses(System.Boolean)">GetLocalIpAddresses(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPAddress[] GetLocalIpAddresses(bool ignoreVirtualInterface)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreVirtualInterface</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPAddress</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager_GetLocalIpSubnetMask_IPAddress_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager.GetLocalIpSubnetMask(IPAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L63">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Net_INetworkManager_GetLocalIpSubnetMask_" data-uid="MediaBrowser.Common.Net.INetworkManager.GetLocalIpSubnetMask*"></a>
+  <h4 id="MediaBrowser_Common_Net_INetworkManager_GetLocalIpSubnetMask_IPAddress_" data-uid="MediaBrowser.Common.Net.INetworkManager.GetLocalIpSubnetMask(IPAddress)">GetLocalIpSubnetMask(IPAddress)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPAddress GetLocalIpSubnetMask(IPAddress address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPAddress</span></td>
+        <td><span class="parametername">address</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPAddress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager_GetMacAddresses.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager.GetMacAddresses%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L28">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Net_INetworkManager_GetMacAddresses_" data-uid="MediaBrowser.Common.Net.INetworkManager.GetMacAddresses*"></a>
+  <h4 id="MediaBrowser_Common_Net_INetworkManager_GetMacAddresses" data-uid="MediaBrowser.Common.Net.INetworkManager.GetMacAddresses">GetMacAddresses()</h4>
+  <div class="markdown level1 summary"><p>Returns MAC Address from first Network Card in Computer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;PhysicalAddress&gt; GetMacAddresses()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">PhysicalAddress</span>&gt;</td>
+        <td><p>[string] MAC Address</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager_GetNetworkDevices.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager.GetNetworkDevices%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L48">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Net_INetworkManager_GetNetworkDevices_" data-uid="MediaBrowser.Common.Net.INetworkManager.GetNetworkDevices*"></a>
+  <h4 id="MediaBrowser_Common_Net_INetworkManager_GetNetworkDevices" data-uid="MediaBrowser.Common.Net.INetworkManager.GetNetworkDevices">GetNetworkDevices()</h4>
+  <div class="markdown level1 summary"><p>Gets available devices within the domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;FileSystemEntryInfo&gt; GetNetworkDevices()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.IO.FileSystemEntryInfo.html">FileSystemEntryInfo</a>&gt;</td>
+        <td><p>PC&apos;s in the Domain</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager_GetNetworkShares_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager.GetNetworkShares(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L42">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Net_INetworkManager_GetNetworkShares_" data-uid="MediaBrowser.Common.Net.INetworkManager.GetNetworkShares*"></a>
+  <h4 id="MediaBrowser_Common_Net_INetworkManager_GetNetworkShares_System_String_" data-uid="MediaBrowser.Common.Net.INetworkManager.GetNetworkShares(System.String)">GetNetworkShares(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the network shares.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;NetworkShare&gt; GetNetworkShares(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Model.Net.NetworkShare.html">NetworkShare</a>&gt;</td>
+        <td><p>IEnumerable{NetworkShare}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager_GetRandomUnusedTcpPort.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager.GetRandomUnusedTcpPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L18">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Net_INetworkManager_GetRandomUnusedTcpPort_" data-uid="MediaBrowser.Common.Net.INetworkManager.GetRandomUnusedTcpPort*"></a>
+  <h4 id="MediaBrowser_Common_Net_INetworkManager_GetRandomUnusedTcpPort" data-uid="MediaBrowser.Common.Net.INetworkManager.GetRandomUnusedTcpPort">GetRandomUnusedTcpPort()</h4>
+  <div class="markdown level1 summary"><p>Gets a random port number that is currently available</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetRandomUnusedTcpPort()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>System.Int32.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager_GetRandomUnusedUdpPort.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager.GetRandomUnusedUdpPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L20">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Net_INetworkManager_GetRandomUnusedUdpPort_" data-uid="MediaBrowser.Common.Net.INetworkManager.GetRandomUnusedUdpPort*"></a>
+  <h4 id="MediaBrowser_Common_Net_INetworkManager_GetRandomUnusedUdpPort" data-uid="MediaBrowser.Common.Net.INetworkManager.GetRandomUnusedUdpPort">GetRandomUnusedUdpPort()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetRandomUnusedUdpPort()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager_IsAddressInSubnets_System_String_System_String___.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager.IsAddressInSubnets(System.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L59">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Net_INetworkManager_IsAddressInSubnets_" data-uid="MediaBrowser.Common.Net.INetworkManager.IsAddressInSubnets*"></a>
+  <h4 id="MediaBrowser_Common_Net_INetworkManager_IsAddressInSubnets_System_String_System_String___" data-uid="MediaBrowser.Common.Net.INetworkManager.IsAddressInSubnets(System.String,System.String[])">IsAddressInSubnets(String, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsAddressInSubnets(string addressString, string[] subnets)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">addressString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">subnets</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager_IsInLocalNetwork_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager.IsInLocalNetwork(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L55">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Net_INetworkManager_IsInLocalNetwork_" data-uid="MediaBrowser.Common.Net.INetworkManager.IsInLocalNetwork*"></a>
+  <h4 id="MediaBrowser_Common_Net_INetworkManager_IsInLocalNetwork_System_String_" data-uid="MediaBrowser.Common.Net.INetworkManager.IsInLocalNetwork(System.String)">IsInLocalNetwork(String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether [is in local network] [the specified endpoint].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsInLocalNetwork(string endpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td><p>The endpoint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [is in local network] [the specified endpoint]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager_IsInPrivateAddressSpace_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager.IsInPrivateAddressSpace(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L35">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Net_INetworkManager_IsInPrivateAddressSpace_" data-uid="MediaBrowser.Common.Net.INetworkManager.IsInPrivateAddressSpace*"></a>
+  <h4 id="MediaBrowser_Common_Net_INetworkManager_IsInPrivateAddressSpace_System_String_" data-uid="MediaBrowser.Common.Net.INetworkManager.IsInPrivateAddressSpace(System.String)">IsInPrivateAddressSpace(String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether [is in private address space] [the specified endpoint].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsInPrivateAddressSpace(string endpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td><p>The endpoint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [is in private address space] [the specified endpoint]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager_IsInSameSubnet_IPAddress_IPAddress_IPAddress_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager.IsInSameSubnet(IPAddress%2CIPAddress%2CIPAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L61">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Net_INetworkManager_IsInSameSubnet_" data-uid="MediaBrowser.Common.Net.INetworkManager.IsInSameSubnet*"></a>
+  <h4 id="MediaBrowser_Common_Net_INetworkManager_IsInSameSubnet_IPAddress_IPAddress_IPAddress_" data-uid="MediaBrowser.Common.Net.INetworkManager.IsInSameSubnet(IPAddress,IPAddress,IPAddress)">IsInSameSubnet(IPAddress, IPAddress, IPAddress)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsInSameSubnet(IPAddress address1, IPAddress address2, IPAddress subnetMask)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPAddress</span></td>
+        <td><span class="parametername">address1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IPAddress</span></td>
+        <td><span class="parametername">address2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IPAddress</span></td>
+        <td><span class="parametername">subnetMask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager_NetworkChanged.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager.NetworkChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L12">View Source</a>
+  </span>
+  <h4 id="MediaBrowser_Common_Net_INetworkManager_NetworkChanged" data-uid="MediaBrowser.Common.Net.INetworkManager.NetworkChanged">NetworkChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler NetworkChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Net_INetworkManager.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Net.INetworkManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Net/INetworkManager.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Hardware Acceleration | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Hardware Acceleration | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="admin-hardware-acceleration">
+<h1 id="hardware-acceleration">Hardware Acceleration</h1>
+
+<p>Jellyfin supports hardware acceleration of video encoding/decoding/transcoding using FFMpeg. It supports multiple acceleration types, including  AMD AMF, Intel Quick Sync, OpenMax OMX, nVidia NVENC, Intel/AMD VAAPI, and others.</p>
+<h2 id="enabling-hardware-acceleration">Enabling Hardware Acceleration</h2>
+<p>Hardware acceleration options can be found in the Admin Dashboard under the <strong>Transcoding</strong> section. Select a valid hardware acceleration option from the drop-down menu, indicate a device if applicable, and check <code>enable hardware encoding</code> to enable encoding as well as decoding, if your hardware supports this.</p>
+<p>The hardware acceleration is available immediately for media playback. No server restart is required.</p>
+<h2 id="setup">Setup</h2>
+<p>Each hardware acceleration type, as well as each Jellyfin installation type, requires different setup options before it can be used. It is always best to consult the FFMpeg documentation on the acceleration type you choose for the latest information.</p>
+<h3 id="configuring-vaapi-acceleration-on-debianubuntu-from-deb-packages">Configuring VAAPI acceleration on Debian/Ubuntu from <code>.deb</code> packages</h3>
+<p>Configuring VAAPI on Debian/Ubuntu requires some additional configuration to ensure permissions are correct.</p>
+<ol>
+<li><p>Configure VAAPI for your system by following the <a href="https://wiki.archlinux.org/index.php/Hardware_video_acceleration">relevant documentation</a>. Verify that a <code>render</code> device is now present in <code>/dev/dri</code>, and note the permissions and group available to write to it, in this case <code>render</code>:<br> <code>$ ls -l /dev/dri</code><br> <code>total 0</code><br> <code>drwxr-xr-x 2 root root        100 Apr 13 16:37 by-path</code><br> <code>crw-rw---- 1 root video  226,   0 Apr 13 16:37 card0</code><br> <code>crw-rw---- 1 root video  226,   1 Apr 13 16:37 card1</code><br> <code>crw-rw---- 1 root render 226, 128 Apr 13 16:37 renderD128</code>  </p>
+<p> <strong>NOTE:</strong> On some releases, the group may be <code>video</code> instead of <code>render</code>.</p>
+</li>
+<li><p>Add the Jellyfin service user to the above group to allow Jellyfin&#39;s FFMpeg process access to the device, and restart Jellyfin:<br> <code>sudo usermod -aG render jellyfin</code><br> <code>sudo systemctl restart jellyfin</code>  </p>
+</li>
+<li><p>Configure VAAPI acceleration in the &quot;Transcoding&quot; page of the Admin Dashboard. Enter the <code>/dev/dri/renderD128</code> device above as the <code>VA API Device</code> value.</p>
+</li>
+<li><p>Watch a movie, and verify that transcoding is occurring by watching the <code>ffmpeg-transcode-*.txt</code> logs under <code>/var/log/jellyfin</code> and using <code>radeontop</code> or similar tools.</p>
+</li>
+</ol>
+<h3 id="hardware-acceleration-in-a-lxclxd-container-tested-with-lxc-30-may-or-may-not-work-with-version-2">Hardware acceleration in a LXC/LXD container (tested with LXC 3.0, may or may not work with version 2)</h3>
+<p>Follow the steps above to add the jellyfin user to the <code>video</code> or <code>render</code> group, depending on your circumstances.</p>
+<ol>
+<li><p>Add your GPU to the container:
+ <code>$ lxc config device add &lt;container name&gt; gpu gpu gid=&lt;gid of your video or render group&gt;</code></p>
+</li>
+<li><p>Make sure you have the card within the container:
+ <code>$ lxc exec jellyfin -- ls -l /dev/dri</code>
+ <code>total 0</code>
+ <code>crw-rw---- 1 root video 226,   0 Jun  4 02:13 card0</code>
+ <code>crw-rw---- 1 root video 226,   0 Jun  4 02:13 controlD64</code>
+ <code>crw-rw---- 1 root video 226, 128 Jun  4 02:13 renderD128</code></p>
+</li>
+<li><p>Configure Jellyfin to use video acceleration, point it at the right device if the default option doesn&#39;t</p>
+</li>
+<li><p>Try and play a video that requires transcoding and run the following, you should get a hit:
+<code>$ ps aux | grep ffmpeg | grep accel</code></p>
+</li>
+<li><p>You can also try playing a video that requires transcoding, and if it plays you&#39;re good.</p>
+</li>
+</ol>
+<p>Useful resources:</p>
+<ul>
+<li><a href="https://github.com/lxc/lxd/blob/master/doc/containers.md#type-gpu">https://github.com/lxc/lxd/blob/master/doc/containers.md#type-gpu</a></li>
+<li><a href="https://stgraber.org/2017/03/21/cuda-in-lxd/">https://stgraber.org/2017/03/21/cuda-in-lxd/</a></li>
+</ul>
+<h3 id="hardware-acceleration-on-raspberry-pi-tested-on-rpi3">Hardware acceleration on Raspberry Pi (tested on RPi3)</h3>
+<ol>
+<li>Add the Jellyfin service user to the video group to allow Jellyfin&#39;s FFMpeg process access to the encoder, and restart Jellyfin:<br> <code>sudo usermod -a -G video jellyfin</code>
+ <code>sudo systemctl restart jellyfin</code>   </li>
+<li>Choose <code>OpenMAX OMX</code> as the Hardware acceleration on the Transcoding tab of the Server Dashboard</li>
+</ol>
+<p>Note: In testing transcoding was not working fast enough to run in real time because the video was being resized. The Pi 3 is likely not fast enough to resize as part of the transcoding.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/blob/master/general/administration/hardware-acceleration.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

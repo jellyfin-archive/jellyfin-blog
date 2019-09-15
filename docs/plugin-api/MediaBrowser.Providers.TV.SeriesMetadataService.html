@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SeriesMetadataService
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SeriesMetadataService
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MediaBrowser.Providers.TV.SeriesMetadataService">
+  
+  
+  <h1 id="MediaBrowser_Providers_TV_SeriesMetadataService" data-uid="MediaBrowser.Providers.TV.SeriesMetadataService" class="text-break">Class SeriesMetadataService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html">MetadataService</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.TV.Series.html">Series</a>, <a class="xref" href="MediaBrowser.Controller.Providers.SeriesInfo.html">SeriesInfo</a>&gt;</div>
+    <div class="level2"><span class="xref">SeriesMetadataService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Controller.Providers.IMetadataService.html">IMetadataService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_ServerConfigurationManager">MetadataService&lt;Series, SeriesInfo&gt;.ServerConfigurationManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_Logger">MetadataService&lt;Series, SeriesInfo&gt;.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_ProviderManager">MetadataService&lt;Series, SeriesInfo&gt;.ProviderManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_FileSystem">MetadataService&lt;Series, SeriesInfo&gt;.FileSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_UserDataManager">MetadataService&lt;Series, SeriesInfo&gt;.UserDataManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_LibraryManager">MetadataService&lt;Series, SeriesInfo&gt;.LibraryManager</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_RefreshMetadata_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_">MetadataService&lt;Series, SeriesInfo&gt;.RefreshMetadata(BaseItem, MetadataRefreshOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_SaveItem_MediaBrowser_Controller_Providers_MetadataResult__0__MediaBrowser_Model_Configuration_LibraryOptions_MediaBrowser_Controller_Library_ItemUpdateType_CancellationToken_">MetadataService&lt;Series, SeriesInfo&gt;.SaveItem(MetadataResult&lt;Series&gt;, LibraryOptions, ItemUpdateType, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_AfterMetadataRefresh__0_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_">MetadataService&lt;Series, SeriesInfo&gt;.AfterMetadataRefresh(Series, MetadataRefreshOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_BeforeSaveInternal__0_System_Boolean_MediaBrowser_Controller_Library_ItemUpdateType_">MetadataService&lt;Series, SeriesInfo&gt;.BeforeSaveInternal(Series, Boolean, ItemUpdateType)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_EnableUpdateMetadataFromChildren__0_System_Boolean_MediaBrowser_Controller_Library_ItemUpdateType_">MetadataService&lt;Series, SeriesInfo&gt;.EnableUpdateMetadataFromChildren(Series, Boolean, ItemUpdateType)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_GetChildrenForMetadataUpdates__0_">MetadataService&lt;Series, SeriesInfo&gt;.GetChildrenForMetadataUpdates(Series)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_UpdateMetadataFromChildren__0_IList_MediaBrowser_Controller_Entities_BaseItem__System_Boolean_MediaBrowser_Controller_Library_ItemUpdateType_">MetadataService&lt;Series, SeriesInfo&gt;.UpdateMetadataFromChildren(Series, IList&lt;BaseItem&gt;, Boolean, ItemUpdateType)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_EnableUpdatingPremiereDateFromChildren">MetadataService&lt;Series, SeriesInfo&gt;.EnableUpdatingPremiereDateFromChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_EnableUpdatingGenresFromChildren">MetadataService&lt;Series, SeriesInfo&gt;.EnableUpdatingGenresFromChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_EnableUpdatingStudiosFromChildren">MetadataService&lt;Series, SeriesInfo&gt;.EnableUpdatingStudiosFromChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_EnableUpdatingOfficialRatingFromChildren">MetadataService&lt;Series, SeriesInfo&gt;.EnableUpdatingOfficialRatingFromChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_GetProviders_MediaBrowser_Controller_Entities_BaseItem_MediaBrowser_Model_Configuration_LibraryOptions_MediaBrowser_Controller_Providers_MetadataRefreshOptions_System_Boolean_System_Boolean_">MetadataService&lt;Series, SeriesInfo&gt;.GetProviders(BaseItem, LibraryOptions, MetadataRefreshOptions, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_GetNonLocalImageProviders_MediaBrowser_Controller_Entities_BaseItem_IEnumerable_MediaBrowser_Controller_Providers_IImageProvider__MediaBrowser_Controller_Providers_ImageRefreshOptions_">MetadataService&lt;Series, SeriesInfo&gt;.GetNonLocalImageProviders(BaseItem, IEnumerable&lt;IImageProvider&gt;, ImageRefreshOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_CanRefresh_MediaBrowser_Controller_Entities_BaseItem_">MetadataService&lt;Series, SeriesInfo&gt;.CanRefresh(BaseItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_CanRefreshPrimary_Type_">MetadataService&lt;Series, SeriesInfo&gt;.CanRefreshPrimary(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_RefreshWithProviders_MediaBrowser_Controller_Providers_MetadataResult__0___1_MediaBrowser_Controller_Providers_MetadataRefreshOptions_List_MediaBrowser_Controller_Providers_IMetadataProvider__MediaBrowser_Providers_Manager_ItemImageProvider_CancellationToken_">MetadataService&lt;Series, SeriesInfo&gt;.RefreshWithProviders(MetadataResult&lt;Series&gt;, SeriesInfo, MetadataRefreshOptions, List&lt;IMetadataProvider&gt;, ItemImageProvider, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_IsFullLocalMetadata__0_">MetadataService&lt;Series, SeriesInfo&gt;.IsFullLocalMetadata(Series)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_CreateNew">MetadataService&lt;Series, SeriesInfo&gt;.CreateNew()</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_MergeData_MediaBrowser_Controller_Providers_MetadataResult__0__MediaBrowser_Controller_Providers_MetadataResult__0__MediaBrowser_Model_Entities_MetadataFields___System_Boolean_System_Boolean_">MetadataService&lt;Series, SeriesInfo&gt;.MergeData(MetadataResult&lt;Series&gt;, MetadataResult&lt;Series&gt;, MetadataFields[], Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="MediaBrowser.Providers.Manager.MetadataService-2.html#MediaBrowser_Providers_Manager_MetadataService_2_Order">MetadataService&lt;Series, SeriesInfo&gt;.Order</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MediaBrowser.Providers.TV.html">MediaBrowser.Providers.TV</a></h6>
+  <h6><strong>Assembly</strong>: MediaBrowser.Providers.dll</h6>
+  <h5 id="MediaBrowser_Providers_TV_SeriesMetadataService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SeriesMetadataService : MetadataService&lt;Series, SeriesInfo&gt;, IMetadataService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_TV_SeriesMetadataService__ctor_MediaBrowser_Controller_Configuration_IServerConfigurationManager_ILogger_MediaBrowser_Controller_Providers_IProviderManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Library_IUserDataManager_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Model_Globalization_ILocalizationManager_MediaBrowser_Providers_TV_TheTVDB_TvDbClientManager_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.TV.SeriesMetadataService.%23ctor(MediaBrowser.Controller.Configuration.IServerConfigurationManager%2CILogger%2CMediaBrowser.Controller.Providers.IProviderManager%2CMediaBrowser.Model.IO.IFileSystem%2CMediaBrowser.Controller.Library.IUserDataManager%2CMediaBrowser.Controller.Library.ILibraryManager%2CMediaBrowser.Model.Globalization.ILocalizationManager%2CMediaBrowser.Providers.TV.TheTVDB.TvDbClientManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/TV/SeriesMetadataService.cs/#L22">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_TV_SeriesMetadataService__ctor_" data-uid="MediaBrowser.Providers.TV.SeriesMetadataService.#ctor*"></a>
+  <h4 id="MediaBrowser_Providers_TV_SeriesMetadataService__ctor_MediaBrowser_Controller_Configuration_IServerConfigurationManager_ILogger_MediaBrowser_Controller_Providers_IProviderManager_MediaBrowser_Model_IO_IFileSystem_MediaBrowser_Controller_Library_IUserDataManager_MediaBrowser_Controller_Library_ILibraryManager_MediaBrowser_Model_Globalization_ILocalizationManager_MediaBrowser_Providers_TV_TheTVDB_TvDbClientManager_" data-uid="MediaBrowser.Providers.TV.SeriesMetadataService.#ctor(MediaBrowser.Controller.Configuration.IServerConfigurationManager,ILogger,MediaBrowser.Controller.Providers.IProviderManager,MediaBrowser.Model.IO.IFileSystem,MediaBrowser.Controller.Library.IUserDataManager,MediaBrowser.Controller.Library.ILibraryManager,MediaBrowser.Model.Globalization.ILocalizationManager,MediaBrowser.Providers.TV.TheTVDB.TvDbClientManager)">SeriesMetadataService(IServerConfigurationManager, ILogger, IProviderManager, IFileSystem, IUserDataManager, ILibraryManager, ILocalizationManager, TvDbClientManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SeriesMetadataService(IServerConfigurationManager serverConfigurationManager, ILogger logger, IProviderManager providerManager, IFileSystem fileSystem, IUserDataManager userDataManager, ILibraryManager libraryManager, ILocalizationManager localization, TvDbClientManager tvDbClientManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Configuration.IServerConfigurationManager.html">IServerConfigurationManager</a></td>
+        <td><span class="parametername">serverConfigurationManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.IProviderManager.html">IProviderManager</a></td>
+        <td><span class="parametername">providerManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.IUserDataManager.html">IUserDataManager</a></td>
+        <td><span class="parametername">userDataManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Library.ILibraryManager.html">ILibraryManager</a></td>
+        <td><span class="parametername">libraryManager</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Globalization.ILocalizationManager.html">ILocalizationManager</a></td>
+        <td><span class="parametername">localization</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Providers.TV.TheTVDB.TvDbClientManager.html">TvDbClientManager</a></td>
+        <td><span class="parametername">tvDbClientManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_TV_SeriesMetadataService_AfterMetadataRefresh_MediaBrowser_Controller_Entities_TV_Series_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.TV.SeriesMetadataService.AfterMetadataRefresh(MediaBrowser.Controller.Entities.TV.Series%2CMediaBrowser.Controller.Providers.MetadataRefreshOptions%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/TV/SeriesMetadataService.cs/#L38">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_TV_SeriesMetadataService_AfterMetadataRefresh_" data-uid="MediaBrowser.Providers.TV.SeriesMetadataService.AfterMetadataRefresh*"></a>
+  <h4 id="MediaBrowser_Providers_TV_SeriesMetadataService_AfterMetadataRefresh_MediaBrowser_Controller_Entities_TV_Series_MediaBrowser_Controller_Providers_MetadataRefreshOptions_CancellationToken_" data-uid="MediaBrowser.Providers.TV.SeriesMetadataService.AfterMetadataRefresh(MediaBrowser.Controller.Entities.TV.Series,MediaBrowser.Controller.Providers.MetadataRefreshOptions,CancellationToken)">AfterMetadataRefresh(Series, MetadataRefreshOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task AfterMetadataRefresh(Series item, MetadataRefreshOptions refreshOptions, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.TV.Series.html">Series</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataRefreshOptions.html">MetadataRefreshOptions</a></td>
+        <td><span class="parametername">refreshOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MediaBrowser.Providers.Manager.MetadataService&lt;MediaBrowser.Controller.Entities.TV.Series, MediaBrowser.Controller.Providers.SeriesInfo&gt;.AfterMetadataRefresh(MediaBrowser.Controller.Entities.TV.Series, MediaBrowser.Controller.Providers.MetadataRefreshOptions, CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_TV_SeriesMetadataService_IsFullLocalMetadata_MediaBrowser_Controller_Entities_TV_Series_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.TV.SeriesMetadataService.IsFullLocalMetadata(MediaBrowser.Controller.Entities.TV.Series)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/TV/SeriesMetadataService.cs/#L63">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_TV_SeriesMetadataService_IsFullLocalMetadata_" data-uid="MediaBrowser.Providers.TV.SeriesMetadataService.IsFullLocalMetadata*"></a>
+  <h4 id="MediaBrowser_Providers_TV_SeriesMetadataService_IsFullLocalMetadata_MediaBrowser_Controller_Entities_TV_Series_" data-uid="MediaBrowser.Providers.TV.SeriesMetadataService.IsFullLocalMetadata(MediaBrowser.Controller.Entities.TV.Series)">IsFullLocalMetadata(Series)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsFullLocalMetadata(Series item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Entities.TV.Series.html">Series</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MediaBrowser.Providers.Manager.MetadataService&lt;MediaBrowser.Controller.Entities.TV.Series, MediaBrowser.Controller.Providers.SeriesInfo&gt;.IsFullLocalMetadata(MediaBrowser.Controller.Entities.TV.Series)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_TV_SeriesMetadataService_MergeData_MediaBrowser_Controller_Providers_MetadataResult_MediaBrowser_Controller_Entities_TV_Series__MediaBrowser_Controller_Providers_MetadataResult_MediaBrowser_Controller_Entities_TV_Series__MediaBrowser_Model_Entities_MetadataFields___System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.TV.SeriesMetadataService.MergeData(MediaBrowser.Controller.Providers.MetadataResult%7BMediaBrowser.Controller.Entities.TV.Series%7D%2CMediaBrowser.Controller.Providers.MetadataResult%7BMediaBrowser.Controller.Entities.TV.Series%7D%2CMediaBrowser.Model.Entities.MetadataFields%5B%5D%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/TV/SeriesMetadataService.cs/#L76">View Source</a>
+  </span>
+  <a id="MediaBrowser_Providers_TV_SeriesMetadataService_MergeData_" data-uid="MediaBrowser.Providers.TV.SeriesMetadataService.MergeData*"></a>
+  <h4 id="MediaBrowser_Providers_TV_SeriesMetadataService_MergeData_MediaBrowser_Controller_Providers_MetadataResult_MediaBrowser_Controller_Entities_TV_Series__MediaBrowser_Controller_Providers_MetadataResult_MediaBrowser_Controller_Entities_TV_Series__MediaBrowser_Model_Entities_MetadataFields___System_Boolean_System_Boolean_" data-uid="MediaBrowser.Providers.TV.SeriesMetadataService.MergeData(MediaBrowser.Controller.Providers.MetadataResult{MediaBrowser.Controller.Entities.TV.Series},MediaBrowser.Controller.Providers.MetadataResult{MediaBrowser.Controller.Entities.TV.Series},MediaBrowser.Model.Entities.MetadataFields[],System.Boolean,System.Boolean)">MergeData(MetadataResult&lt;Series&gt;, MetadataResult&lt;Series&gt;, MetadataFields[], Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void MergeData(MetadataResult&lt;Series&gt; source, MetadataResult&lt;Series&gt; target, MetadataFields[] lockedFields, bool replaceData, bool mergeMetadataSettings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataResult-1.html">MetadataResult</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.TV.Series.html">Series</a>&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Controller.Providers.MetadataResult-1.html">MetadataResult</a>&lt;<a class="xref" href="MediaBrowser.Controller.Entities.TV.Series.html">Series</a>&gt;</td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Entities.MetadataFields.html">MetadataFields</a>[]</td>
+        <td><span class="parametername">lockedFields</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">replaceData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">mergeMetadataSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MediaBrowser.Providers.Manager.MetadataService&lt;MediaBrowser.Controller.Entities.TV.Series, MediaBrowser.Controller.Providers.SeriesInfo&gt;.MergeData(MediaBrowser.Controller.Providers.MetadataResult&lt;MediaBrowser.Controller.Entities.TV.Series&gt;, MediaBrowser.Controller.Providers.MetadataResult&lt;MediaBrowser.Controller.Entities.TV.Series&gt;, MediaBrowser.Model.Entities.MetadataFields[], System.Boolean, System.Boolean)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Controller.Providers.IMetadataService.html">IMetadataService</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Providers_TV_SeriesMetadataService.md&amp;value=---%0Auid%3A%20MediaBrowser.Providers.TV.SeriesMetadataService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Providers/TV/SeriesMetadataService.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

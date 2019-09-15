@@ -1,0 +1,758 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseConfigurationManager
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseConfigurationManager
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager">
+  
+  
+  <h1 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager" class="text-break">Class BaseConfigurationManager
+  </h1>
+  <div class="markdown level0 summary"><p>Class BaseConfigurationManager</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BaseConfigurationManager</span></div>
+      <div class="level2"><a class="xref" href="Emby.Server.Implementations.Configuration.ServerConfigurationManager.html">ServerConfigurationManager</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Common.Configuration.IConfigurationManager.html">IConfigurationManager</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.AppBase.html">Emby.Server.Implementations.AppBase</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseConfigurationManager : object, IConfigurationManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager__ctor_MediaBrowser_Common_Configuration_IApplicationPaths_ILoggerFactory_MediaBrowser_Model_Serialization_IXmlSerializer_MediaBrowser_Model_IO_IFileSystem_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.%23ctor(MediaBrowser.Common.Configuration.IApplicationPaths%2CILoggerFactory%2CMediaBrowser.Model.Serialization.IXmlSerializer%2CMediaBrowser.Model.IO.IFileSystem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L52">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager__ctor_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager__ctor_MediaBrowser_Common_Configuration_IApplicationPaths_ILoggerFactory_MediaBrowser_Model_Serialization_IXmlSerializer_MediaBrowser_Model_IO_IFileSystem_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.#ctor(MediaBrowser.Common.Configuration.IApplicationPaths,ILoggerFactory,MediaBrowser.Model.Serialization.IXmlSerializer,MediaBrowser.Model.IO.IFileSystem)">BaseConfigurationManager(IApplicationPaths, ILoggerFactory, IXmlSerializer, IFileSystem)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Emby.Server.Implementations.AppBase.BaseConfigurationManager.html">BaseConfigurationManager</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BaseConfigurationManager(IApplicationPaths applicationPaths, ILoggerFactory loggerFactory, IXmlSerializer xmlSerializer, IFileSystem fileSystem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Configuration.IApplicationPaths.html">IApplicationPaths</a></td>
+        <td><span class="parametername">applicationPaths</span></td>
+        <td><p>The application paths.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td><p>The logger factory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IXmlSerializer.html">IXmlSerializer</a></td>
+        <td><span class="parametername">xmlSerializer</span></td>
+        <td><p>The XML serializer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td><p>The file system</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_CommonApplicationPaths.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.CommonApplicationPaths%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L98">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_CommonApplicationPaths_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.CommonApplicationPaths*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_CommonApplicationPaths" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.CommonApplicationPaths">CommonApplicationPaths</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the application paths.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IApplicationPaths CommonApplicationPaths { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Configuration.IApplicationPaths.html">IApplicationPaths</a></td>
+        <td><p>The application paths.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_CommonConfiguration.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.CommonConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L104">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_CommonConfiguration_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.CommonConfiguration*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_CommonConfiguration" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.CommonConfiguration">CommonConfiguration</h4>
+  <div class="markdown level1 summary"><p>Gets the system configuration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseApplicationConfiguration CommonConfiguration { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Configuration.BaseApplicationConfiguration.html">BaseApplicationConfiguration</a></td>
+        <td><p>The configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_ConfigurationType.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.ConfigurationType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L81">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_ConfigurationType_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.ConfigurationType*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_ConfigurationType" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.ConfigurationType">ConfigurationType</h4>
+  <div class="markdown level1 summary"><p>Gets the type of the configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract Type ConfigurationType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><p>The type of the configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_Logger.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L87">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_Logger_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.Logger*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_Logger" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>Gets the logger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILogger Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><p>The logger.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_XmlSerializer.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.XmlSerializer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L92">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_XmlSerializer_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.XmlSerializer*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_XmlSerializer" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.XmlSerializer">XmlSerializer</h4>
+  <div class="markdown level1 summary"><p>Gets the XML serializer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IXmlSerializer XmlSerializer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IXmlSerializer.html">IXmlSerializer</a></td>
+        <td><p>The XML serializer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_AddParts_IEnumerable_MediaBrowser_Common_Configuration_IConfigurationFactory__.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.AddParts(IEnumerable%7BMediaBrowser.Common.Configuration.IConfigurationFactory%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L120">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_AddParts_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.AddParts*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_AddParts_IEnumerable_MediaBrowser_Common_Configuration_IConfigurationFactory__" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.AddParts(IEnumerable{MediaBrowser.Common.Configuration.IConfigurationFactory})">AddParts(IEnumerable&lt;IConfigurationFactory&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddParts(IEnumerable&lt;IConfigurationFactory&gt; factories)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MediaBrowser.Common.Configuration.IConfigurationFactory.html">IConfigurationFactory</a>&gt;</td>
+        <td><span class="parametername">factories</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_EnsureWriteAccess_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.EnsureWriteAccess(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L234">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_EnsureWriteAccess_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.EnsureWriteAccess*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_EnsureWriteAccess_System_String_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.EnsureWriteAccess(System.String)">EnsureWriteAccess(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EnsureWriteAccess(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_GetConfiguration_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.GetConfiguration(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L246">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_GetConfiguration_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.GetConfiguration*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_GetConfiguration_System_String_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.GetConfiguration(System.String)">GetConfiguration(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetConfiguration(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_GetConfigurationType_System_String_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.GetConfigurationType(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L338">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_GetConfigurationType_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.GetConfigurationType*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_GetConfigurationType_System_String_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.GetConfigurationType(System.String)">GetConfigurationType(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type GetConfigurationType(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_OnConfigurationUpdated.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.OnConfigurationUpdated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L150">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_OnConfigurationUpdated_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.OnConfigurationUpdated*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_OnConfigurationUpdated" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.OnConfigurationUpdated">OnConfigurationUpdated()</h4>
+  <div class="markdown level1 summary"><p>Called when [configuration updated].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnConfigurationUpdated()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_OnNamedConfigurationUpdated_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.OnNamedConfigurationUpdated(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L329">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_OnNamedConfigurationUpdated_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.OnNamedConfigurationUpdated*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_OnNamedConfigurationUpdated_System_String_System_Object_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.OnNamedConfigurationUpdated(System.String,System.Object)">OnNamedConfigurationUpdated(String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnNamedConfigurationUpdated(string key, object configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_ReplaceConfiguration_MediaBrowser_Model_Configuration_BaseApplicationConfiguration_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.ReplaceConfiguration(MediaBrowser.Model.Configuration.BaseApplicationConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L162">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_ReplaceConfiguration_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.ReplaceConfiguration*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_ReplaceConfiguration_MediaBrowser_Model_Configuration_BaseApplicationConfiguration_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.ReplaceConfiguration(MediaBrowser.Model.Configuration.BaseApplicationConfiguration)">ReplaceConfiguration(BaseApplicationConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Replaces the configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ReplaceConfiguration(BaseApplicationConfiguration newConfiguration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Configuration.BaseApplicationConfiguration.html">BaseApplicationConfiguration</a></td>
+        <td><span class="parametername">newConfiguration</span></td>
+        <td><p>The new configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_SaveConfiguration.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.SaveConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L132">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_SaveConfiguration_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.SaveConfiguration*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_SaveConfiguration" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.SaveConfiguration">SaveConfiguration()</h4>
+  <div class="markdown level1 summary"><p>Saves the configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveConfiguration()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_SaveConfiguration_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.SaveConfiguration(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L292">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_SaveConfiguration_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.SaveConfiguration*"></a>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_SaveConfiguration_System_String_System_Object_" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.SaveConfiguration(System.String,System.Object)">SaveConfiguration(String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveConfiguration(string key, object configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_ConfigurationUpdated.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.ConfigurationUpdated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L65">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_ConfigurationUpdated" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.ConfigurationUpdated">ConfigurationUpdated</h4>
+  <div class="markdown level1 summary"><p>Occurs when [configuration updated].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EventArgs&gt; ConfigurationUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<span class="xref">EventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_NamedConfigurationUpdated.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.NamedConfigurationUpdated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L75">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_NamedConfigurationUpdated" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.NamedConfigurationUpdated">NamedConfigurationUpdated</h4>
+  <div class="markdown level1 summary"><p>Occurs when [named configuration updated].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ConfigurationUpdateEventArgs&gt; NamedConfigurationUpdated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Common.Configuration.ConfigurationUpdateEventArgs.html">ConfigurationUpdateEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager_NamedConfigurationUpdating.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager.NamedConfigurationUpdating%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L70">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_AppBase_BaseConfigurationManager_NamedConfigurationUpdating" data-uid="Emby.Server.Implementations.AppBase.BaseConfigurationManager.NamedConfigurationUpdating">NamedConfigurationUpdating</h4>
+  <div class="markdown level1 summary"><p>Occurs when [configuration updating].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ConfigurationUpdateEventArgs&gt; NamedConfigurationUpdating</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Common.Configuration.ConfigurationUpdateEventArgs.html">ConfigurationUpdateEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Common.Configuration.IConfigurationManager.html">IConfigurationManager</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_AppBase_BaseConfigurationManager.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.AppBase.BaseConfigurationManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/AppBase/BaseConfigurationManager.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

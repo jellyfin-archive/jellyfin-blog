@@ -1,0 +1,688 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ScheduledTaskWorker
+   | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ScheduledTaskWorker
+   | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker">
+  
+  
+  <h1 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker" class="text-break">Class ScheduledTaskWorker
+  </h1>
+  <div class="markdown level0 summary"><p>Class ScheduledTaskWorker</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ScheduledTaskWorker</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MediaBrowser.Model.Tasks.IScheduledTaskWorker.html">IScheduledTaskWorker</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Emby.Server.Implementations.ScheduledTasks.html">Emby.Server.Implementations.ScheduledTasks</a></h6>
+  <h6><strong>Assembly</strong>: Emby.Server.Implementations.dll</h6>
+  <h5 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ScheduledTaskWorker : object, IScheduledTaskWorker, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker__ctor_MediaBrowser_Model_Tasks_IScheduledTask_MediaBrowser_Common_Configuration_IApplicationPaths_MediaBrowser_Model_Tasks_ITaskManager_MediaBrowser_Model_Serialization_IJsonSerializer_ILogger_MediaBrowser_Model_IO_IFileSystem_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.%23ctor(MediaBrowser.Model.Tasks.IScheduledTask%2CMediaBrowser.Common.Configuration.IApplicationPaths%2CMediaBrowser.Model.Tasks.ITaskManager%2CMediaBrowser.Model.Serialization.IJsonSerializer%2CILogger%2CMediaBrowser.Model.IO.IFileSystem)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L75">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker__ctor_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.#ctor*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker__ctor_MediaBrowser_Model_Tasks_IScheduledTask_MediaBrowser_Common_Configuration_IApplicationPaths_MediaBrowser_Model_Tasks_ITaskManager_MediaBrowser_Model_Serialization_IJsonSerializer_ILogger_MediaBrowser_Model_IO_IFileSystem_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.#ctor(MediaBrowser.Model.Tasks.IScheduledTask,MediaBrowser.Common.Configuration.IApplicationPaths,MediaBrowser.Model.Tasks.ITaskManager,MediaBrowser.Model.Serialization.IJsonSerializer,ILogger,MediaBrowser.Model.IO.IFileSystem)">ScheduledTaskWorker(IScheduledTask, IApplicationPaths, ITaskManager, IJsonSerializer, ILogger, IFileSystem)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.html">ScheduledTaskWorker</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScheduledTaskWorker(IScheduledTask scheduledTask, IApplicationPaths applicationPaths, ITaskManager taskManager, IJsonSerializer jsonSerializer, ILogger logger, IFileSystem fileSystem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Tasks.IScheduledTask.html">IScheduledTask</a></td>
+        <td><span class="parametername">scheduledTask</span></td>
+        <td><p>The scheduled task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Common.Configuration.IApplicationPaths.html">IApplicationPaths</a></td>
+        <td><span class="parametername">applicationPaths</span></td>
+        <td><p>The application paths.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Tasks.ITaskManager.html">ITaskManager</a></td>
+        <td><span class="parametername">taskManager</span></td>
+        <td><p>The task manager.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Serialization.IJsonSerializer.html">IJsonSerializer</a></td>
+        <td><span class="parametername">jsonSerializer</span></td>
+        <td><p>The json serializer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The logger.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.IO.IFileSystem.html">IFileSystem</a></td>
+        <td><span class="parametername">fileSystem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Category.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Category%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L178">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Category_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Category*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Category" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Category">Category</h4>
+  <div class="markdown level1 summary"><p>Gets the category.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Category { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The category.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_CurrentProgress.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.CurrentProgress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L215">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_CurrentProgress_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.CurrentProgress*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_CurrentProgress" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.CurrentProgress">CurrentProgress</h4>
+  <div class="markdown level1 summary"><p>Gets the current progress.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? CurrentProgress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><p>The current progress.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Description.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L172">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Description_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Description*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Description" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets the description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Id.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L284">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Id_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Id*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Id" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Gets the unique id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The unique id.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_LastExecutionResult.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.LastExecutionResult%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L121">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_LastExecutionResult_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.LastExecutionResult*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_LastExecutionResult" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.LastExecutionResult">LastExecutionResult</h4>
+  <div class="markdown level1 summary"><p>Gets the last execution result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TaskResult LastExecutionResult { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Tasks.TaskResult.html">TaskResult</a></td>
+        <td><p>The last execution result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Name.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L166">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Name_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Name*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Name" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_ScheduledTask.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.ScheduledTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L29">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_ScheduledTask_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.ScheduledTask*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_ScheduledTask" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.ScheduledTask">ScheduledTask</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the scheduled task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IScheduledTask ScheduledTask { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Tasks.IScheduledTask.html">IScheduledTask</a></td>
+        <td><p>The scheduled task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_State.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.State%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L196">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_State_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.State*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_State" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.State">State</h4>
+  <div class="markdown level1 summary"><p>Gets the state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TaskState State { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Tasks.TaskState.html">TaskState</a></td>
+        <td><p>The state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Triggers.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Triggers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L252">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Triggers_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Triggers*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Triggers" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Triggers">Triggers</h4>
+  <div class="markdown level1 summary"><p>Gets the triggers that define when the task will run</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TaskTriggerInfo[] Triggers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Tasks.TaskTriggerInfo.html">TaskTriggerInfo</a>[]</td>
+        <td><p>The triggers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Cancel.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Cancel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L457">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Cancel_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Cancel*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Cancel" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Cancel">Cancel()</h4>
+  <div class="markdown level1 summary"><p>Stops the task if it is currently executing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Cancel()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_CancelIfRunning.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.CancelIfRunning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L470">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_CancelIfRunning_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.CancelIfRunning*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_CancelIfRunning" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.CancelIfRunning">CancelIfRunning()</h4>
+  <div class="markdown level1 summary"><p>Cancels if running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelIfRunning()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Dispose.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L609">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Dispose_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Dispose*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Dispose" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L618">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Dispose_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Dispose*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Dispose_System_Boolean_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged and - optionally - managed resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool dispose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">dispose</span></td>
+        <td><p><code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Execute_MediaBrowser_Model_Tasks_TaskOptions_.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Execute(MediaBrowser.Model.Tasks.TaskOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L361">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Execute_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Execute*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_Execute_MediaBrowser_Model_Tasks_TaskOptions_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.Execute(MediaBrowser.Model.Tasks.TaskOptions)">Execute(TaskOptions)</h4>
+  <div class="markdown level1 summary"><p>Executes the task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Execute(TaskOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MediaBrowser.Model.Tasks.TaskOptions.html">TaskOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Task options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>Task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_ReloadTriggerEvents.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.ReloadTriggerEvents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L303">View Source</a>
+  </span>
+  <a id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_ReloadTriggerEvents_" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.ReloadTriggerEvents*"></a>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_ReloadTriggerEvents" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.ReloadTriggerEvents">ReloadTriggerEvents()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReloadTriggerEvents()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_TaskProgress.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.TaskProgress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L23">View Source</a>
+  </span>
+  <h4 id="Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker_TaskProgress" data-uid="Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker.TaskProgress">TaskProgress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GenericEventArgs&lt;double&gt;&gt; TaskProgress</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="MediaBrowser.Model.Events.GenericEventArgs-1.html">GenericEventArgs</a>&lt;<span class="xref">System.Double</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MediaBrowser.Model.Tasks.IScheduledTaskWorker.html">IScheduledTaskWorker</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=Emby_Server_Implementations_ScheduledTasks_ScheduledTaskWorker.md&amp;value=---%0Auid%3A%20Emby.Server.Implementations.ScheduledTasks.ScheduledTaskWorker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin/blob/master/Emby.Server.Implementations/ScheduledTasks/ScheduledTaskWorker.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
