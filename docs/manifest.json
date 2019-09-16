@@ -122,7 +122,7 @@
       "output": {
         ".html": {
           "relative_path": "general/administration/reverse-proxy.html",
-          "hash": "cYkqowr/MNA1gn89cjKyWg=="
+          "hash": "fRNNFboVR37SOL9OEp7O6w=="
         }
       },
       "is_incremental": false,
@@ -134,7 +134,7 @@
       "output": {
         ".html": {
           "relative_path": "general/clients/clients.html",
-          "hash": "X0s28ESkrGSwkNqYNYHe6w=="
+          "hash": "L1Wzw3NqK7JA1arP78fYhA=="
         }
       },
       "is_incremental": false,
@@ -7547,11 +7547,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "plugin-api/Jellyfin.Drawing.Skia.SkiaCodecException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "plugin-api/Jellyfin.Drawing.Skia.SkiaCodecException.html",
+          "hash": "DRSSYLht0CPAquoNTg/HIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "plugin-api/Jellyfin.Drawing.Skia.SkiaEncoder.yml",
       "output": {
         ".html": {
           "relative_path": "plugin-api/Jellyfin.Drawing.Skia.SkiaEncoder.html",
-          "hash": "IvXB5u9fWBziJw9M3diuGQ=="
+          "hash": "wAr4h0ndv5dPCwTSFxjMJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "plugin-api/Jellyfin.Drawing.Skia.SkiaException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "plugin-api/Jellyfin.Drawing.Skia.SkiaException.html",
+          "hash": "FAmyRbIqlysOmkEjPekfTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "plugin-api/Jellyfin.Drawing.Skia.SkiaHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "plugin-api/Jellyfin.Drawing.Skia.SkiaHelper.html",
+          "hash": "4Wbo1HM9Mp9XjWWp4azqTQ=="
         }
       },
       "is_incremental": false,
@@ -7587,7 +7623,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/Jellyfin.Drawing.Skia.html",
-          "hash": "S5hp1O9GOCp1pCFOjcNjVw=="
+          "hash": "XUmuMgpQRBPOMoPbdH+hsg=="
         }
       },
       "is_incremental": false,
@@ -24915,7 +24951,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/toc.html",
-          "hash": "h7fIumj8B3jYiZFwnxvsXw=="
+          "hash": "NnbVqIPVwjkryocoTKMskw=="
         }
       },
       "is_incremental": false,
@@ -24945,9 +24981,9 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
@@ -24958,17 +24994,17 @@
           "total_file_count": 36,
           "skipped_file_count": 0
         },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 2035,
-          "skipped_file_count": 0
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 2038,
           "skipped_file_count": 0
         }
       }
