@@ -3759,7 +3759,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/Emby.Server.Implementations.Cryptography.CryptographyProvider.html",
-          "hash": "Sn7EEfOP/xYSqfDal3Bsgg=="
+          "hash": "/Qr3gUAr6IR2nJm1swuDUw=="
         }
       },
       "is_incremental": false,
@@ -4515,7 +4515,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/Emby.Server.Implementations.Library.DefaultAuthenticationProvider.html",
-          "hash": "54oyeHj6c4VuJhvKBgdxzQ=="
+          "hash": "ewEIKC8Coex545Jibzj01w=="
         }
       },
       "is_incremental": false,
@@ -4539,7 +4539,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/Emby.Server.Implementations.Library.DeviceAccessEntryPoint.html",
-          "hash": "kP0Z1aCCuGJy/0ee93G2Mw=="
+          "hash": "3xCZ1YnQdo6tzMEkniAZ5A=="
         }
       },
       "is_incremental": false,
@@ -4959,7 +4959,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/Emby.Server.Implementations.Library.UserManager.html",
-          "hash": "yZbglN1Vjj5uWSTNnu0hcw=="
+          "hash": "luhThhUMuPJy3SSCwxHSOg=="
         }
       },
       "is_incremental": false,
@@ -7516,6 +7516,30 @@
         ".html": {
           "relative_path": "plugin-api/Emby.XmlTv.Entities.html",
           "hash": "c8p+vtcONWQL1SodER6ENg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "plugin-api/Jellyfin.Common.Tests.PasswordHashTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "plugin-api/Jellyfin.Common.Tests.PasswordHashTests.html",
+          "hash": "HyuBo3M5J0++byyehXoaaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "plugin-api/Jellyfin.Common.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "plugin-api/Jellyfin.Common.Tests.html",
+          "hash": "h8lTGRrYeuogYn/6YTsFkg=="
         }
       },
       "is_incremental": false,
@@ -11295,7 +11319,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.StartupConfiguration.html",
-          "hash": "Lk5PEbYYSWsRwgAUCiQ/QQ=="
+          "hash": "kUtd/EqG98daIIE8WoOoUw=="
         }
       },
       "is_incremental": false,
@@ -11307,7 +11331,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.StartupUser.html",
-          "hash": "dyfUa5JLFgHukRkhcKKSUg=="
+          "hash": "tMtry1tY30HFj6skOM+Dkw=="
         }
       },
       "is_incremental": false,
@@ -12587,6 +12611,54 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "plugin-api/MediaBrowser.Common.Cryptography.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "plugin-api/MediaBrowser.Common.Cryptography.Constants.html",
+          "hash": "z7hOqUMIKPiMRs9/B5n4zQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "plugin-api/MediaBrowser.Common.Cryptography.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "plugin-api/MediaBrowser.Common.Cryptography.Extensions.html",
+          "hash": "hbyDZuN05s4h2DgYXDCKPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "plugin-api/MediaBrowser.Common.Cryptography.PasswordHash.yml",
+      "output": {
+        ".html": {
+          "relative_path": "plugin-api/MediaBrowser.Common.Cryptography.PasswordHash.html",
+          "hash": "feEgaiyeUWyhiJ40fj5Yuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "plugin-api/MediaBrowser.Common.Cryptography.yml",
+      "output": {
+        ".html": {
+          "relative_path": "plugin-api/MediaBrowser.Common.Cryptography.html",
+          "hash": "paa7UoRm24W7IvJH3A/p5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "plugin-api/MediaBrowser.Common.Events.EventHelper.yml",
       "output": {
         ".html": {
@@ -12628,18 +12700,6 @@
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Common.Extensions.CollectionExtensions.html",
           "hash": "jVWvOlG+drJ6Tf/eqBWDIQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Common.Extensions.HexHelper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Common.Extensions.HexHelper.html",
-          "hash": "kpYNg4x/X2/8fcjPD35wzQ=="
         }
       },
       "is_incremental": false,
@@ -12699,7 +12759,19 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Common.Extensions.html",
-          "hash": "hWJHkESvhVybWWGcIwWAOg=="
+          "hash": "A5ZXobc1HnhGjN47eur2Ww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "plugin-api/MediaBrowser.Common.HexHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "plugin-api/MediaBrowser.Common.HexHelper.html",
+          "hash": "FZVeFDcVNHMRygCfgygPdA=="
         }
       },
       "is_incremental": false,
@@ -13023,7 +13095,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Common.html",
-          "hash": "H1msWaJ5GY8wAm53gDdlUg=="
+          "hash": "kZUuvy+QbaJ5r9KGvLgFQA=="
         }
       },
       "is_incremental": false,
@@ -18087,19 +18159,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Model.Cryptography.ICryptoProvider.html",
-          "hash": "DjK7iSFDImNEgYYrCHFQAQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Model.Cryptography.PasswordHash.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Model.Cryptography.PasswordHash.html",
-          "hash": "5/LCa9paQUoiLOyNbYwSpw=="
+          "hash": "BPwz6dXfJKy6+EvnFfwErA=="
         }
       },
       "is_incremental": false,
@@ -18111,7 +18171,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Model.Cryptography.html",
-          "hash": "1PNat4S8qYkJTtHXtLP+uQ=="
+          "hash": "VD08RIWDoLktaFHel9rqWA=="
         }
       },
       "is_incremental": false,
@@ -24275,162 +24335,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.StringUsageReporter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.StringUsageReporter.html",
-          "hash": "kqiZCBkaPMeqC9Vq8zYrIg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.TextIndexing.IndexBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.TextIndexing.IndexBuilder.html",
-          "hash": "34SvPISukSzV1GSpDibqGw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.TextIndexing.WordIndex.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.TextIndexing.WordIndex.html",
-          "hash": "5Fj4gRm+FSjryoVXrjGXIQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.TextIndexing.WordOccurrence.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.TextIndexing.WordOccurrence.html",
-          "hash": "XB4zi8kXtgPh1Jnv3wGCoQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.TextIndexing.WordOccurrences.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.TextIndexing.WordOccurrences.html",
-          "hash": "6+iCU5F21zKpqG0ICOylfw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.TextIndexing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.TextIndexing.html",
-          "hash": "W4NvtgmZoaCBmomgHfQdgg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Tests.ConsistencyTests.html",
-          "hash": "WyVHfyipTOHq0S7HvHOqPg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Tests.M3uParserTest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Tests.M3uParserTest.html",
-          "hash": "YHwLF9Cfc31wOaJOQcV3sg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Tests.MediaEncoding.Subtitles.AssParserTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Tests.MediaEncoding.Subtitles.AssParserTests.html",
-          "hash": "Et+Uc6jhiwbGKfqcc0cnbw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Tests.MediaEncoding.Subtitles.SrtParserTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Tests.MediaEncoding.Subtitles.SrtParserTests.html",
-          "hash": "y+gwad7hdSypSkcyDMsqbg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Tests.MediaEncoding.Subtitles.VttWriterTest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Tests.MediaEncoding.Subtitles.VttWriterTest.html",
-          "hash": "7sVtXAcWqBfQ818uWbZY9Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Tests.MediaEncoding.Subtitles.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Tests.MediaEncoding.Subtitles.html",
-          "hash": "+Jz8ZHYe1eANMv9CbWWWOA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "plugin-api/MediaBrowser.Tests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "plugin-api/MediaBrowser.Tests.html",
-          "hash": "CjsDl2bHwY/CXL4klGQZRw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "plugin-api/MediaBrowser.WebDashboard.Api.ConfigurationPageInfo.yml",
       "output": {
         ".html": {
@@ -24951,7 +24855,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/toc.html",
-          "hash": "NnbVqIPVwjkryocoTKMskw=="
+          "hash": "+SNAYm5Jrf33rtt8A0AHgg=="
         }
       },
       "is_incremental": false,
@@ -24991,7 +24895,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 2038,
+          "total_file_count": 2030,
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
