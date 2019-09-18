@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Building from Source | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Building from Source | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="admin-building">
+<h1 id="building-jellyfin-from-source">Building Jellyfin from Source</h1>
+
+<p>As an alternative to using <a class="xref" href="installing.html">binary packages</a>, you can build Jellyfin from source.</p>
+<p>Jellyfin supports several methods of building for different platforms and instructions for all supported platforms are below.</p>
+<p>All package builds begin with the first two steps:</p>
+<ol>
+<li><p>Clone the repository:<br> <code>git clone https://github.com/jellyfin/jellyfin.git</code><br> <code>cd jellyfin</code></p>
+</li>
+<li><p>Initialize the submodules:<br> <code>git submodule update --init</code></p>
+</li>
+</ol>
+<h2 id="docker">Docker</h2>
+<ol>
+<li><p>Build the Docker image:<br> <code>docker build -t $USERNAME/jellyfin .</code></p>
+</li>
+<li><p>Run the container:<br> <code>docker run -d -p 8096:8096 $USERNAME/jellyfin</code></p>
+</li>
+</ol>
+<h2 id="build-script-on-linuxmacos">Build script on Linux/MacOS</h2>
+<ol>
+<li><p>Use the included <code>build</code> script to perform builds:
+ <code>./build --help</code>
+ <code>./build --list-platforms</code>
+ <code>./build &lt;platform&gt; all</code></p>
+</li>
+<li><p>The resulting archives can be found at <code>../bin/&lt;platform&gt;</code></p>
+</li>
+</ol>
+<p><strong>NOTE:</strong> This will very likely be split out into a separate repository at some point in the future.</p>
+<h2 id="build-script-on-windows">Build script on Windows</h2>
+<ol>
+<li><p>Install the dotnet core SDK 2.2 from <a href="https://dotnet.microsoft.com/download/dotnet-core/2.2">Microsoft&#39;s Webpage</a> and <a href="https://gitforwindows.org/">install Git for Windows</a>. You must be on Powershell version 3 or higher.</p>
+</li>
+<li><p>From Powershell set the execution policy to unrestricted:<br><code>set-executionpolicy unrestricted</code></p>
+</li>
+<li><p>Run the Jellyfin build script:<br> <code>deployment\windows\build-jellyfin.ps1 -verbose</code></p>
+<ul>
+<li><p>The <code>-WindowsVersion</code> and <code>-Architecture</code> flags can optimize the build for your current environment; the default is generic Windows x64.</p>
+</li>
+<li><p>The <code>-InstallLocation</code> flag lets you select where the compiled binaries go; the default is <code>$Env:AppData\Jellyfin-Server\</code> .</p>
+</li>
+<li><p>The <code>-InstallFFMPEG</code> flag will automatically pull the stable <code>ffmpeg</code> binaries appropriate to your architecture (x86/x64 only for now) from <a href="https://ffmpeg.zeranoe.com/builds/">Zeranoe</a> and place them in your Jellyfin directory.</p>
+</li>
+<li><p>The <code>-InstallNSSM</code> flag will automatically pull the stable <code>nssm</code> binary appropriate to your architecture (x86/x64 only for now) from <a href="https://nssm.cc/">NSSM&#39;s Website</a> and place it in your Jellyfin directory. </p>
+</li>
+</ul>
+</li>
+<li><p>(Optional) Use <a href="https://nssm.cc/">NSSM</a> to configure Jellyfin to run as a service</p>
+</li>
+<li><p>Jellyfin is now available in the default directory (or the directory you chose). Assuming you kept the default directory:</p>
+<ul>
+<li><p>To start it from a Powershell window, run:<br>  <code>&amp;&quot;$env:APPDATA\Jellyfin-Server\jellyfin.exe&quot;</code></p>
+</li>
+<li><p>To start it from CMD, run:<br>  <code>%APPDATA%\Jellyfin-Server\jellyfin.exe</code></p>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>NOTE:</strong> This will very likely be split out into a separate repository at some point in the future.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/blob/master/general/administration/building.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
