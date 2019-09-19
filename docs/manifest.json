@@ -24483,7 +24483,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Configuration.ConfigurationExtension.html",
-          "hash": "oFnZJTDHd9jLxriG19A7sw=="
+          "hash": "gFAlBwmtVbIyh+GPeqv2tg=="
         }
       },
       "is_incremental": false,
@@ -24495,7 +24495,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Configuration.ConfigurationFactory.html",
-          "hash": "BK9Rc8mq8Pm+Xdc+awJ+tw=="
+          "hash": "TLkEamHxzYBpeh7gKok7Mw=="
         }
       },
       "is_incremental": false,
@@ -24531,7 +24531,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Parsers.BaseNfoParser-1.html",
-          "hash": "tiI4qKwmCPwxGGkgC5+WpA=="
+          "hash": "+9kpGC++PRGR1fY5h3d4Ew=="
         }
       },
       "is_incremental": false,
@@ -24543,7 +24543,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Parsers.EpisodeNfoParser.html",
-          "hash": "0SfG/RWoTTx2H9lScOFeGQ=="
+          "hash": "DH1FCueibPDysTsBbGtHRA=="
         }
       },
       "is_incremental": false,
@@ -24555,7 +24555,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Parsers.MovieNfoParser.html",
-          "hash": "oi6TsvDi8xLLRQvjBhVfvQ=="
+          "hash": "ASo52U6LwYOX+Qa6/5CwrA=="
         }
       },
       "is_incremental": false,
@@ -24567,7 +24567,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Parsers.SeasonNfoParser.html",
-          "hash": "lfJPYnpI+/GGfTSgg7z7gQ=="
+          "hash": "7qWDljO6HTdPxXZw33Gt8g=="
         }
       },
       "is_incremental": false,
@@ -24579,7 +24579,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Parsers.SeriesNfoParser.html",
-          "hash": "51KKHlmTd1jVxkj0WTP0vA=="
+          "hash": "GyC7Zlu2fAW7elwSFvHMkg=="
         }
       },
       "is_incremental": false,
@@ -24603,7 +24603,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Providers.AlbumNfoProvider.html",
-          "hash": "HzkxEWdFieoC286PSj9G4w=="
+          "hash": "Fd4AYJtdljcoXS7+Uk8iHQ=="
         }
       },
       "is_incremental": false,
@@ -24615,7 +24615,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Providers.ArtistNfoProvider.html",
-          "hash": "WJ6gvsFBl5n+2SbE8jN7KQ=="
+          "hash": "kQzMW5L57mJyckdstjHn6Q=="
         }
       },
       "is_incremental": false,
@@ -24627,7 +24627,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Providers.BaseNfoProvider-1.html",
-          "hash": "3JLrfEIxaulqSwmvhEmmwQ=="
+          "hash": "4YQ2nKVXP0msf9ZJa+UEbA=="
         }
       },
       "is_incremental": false,
@@ -24639,7 +24639,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Providers.BaseVideoNfoProvider-1.html",
-          "hash": "vpEo2CgzehZD9dK0qsbIaQ=="
+          "hash": "SsR8zVBnPAKcBbEAaNvxEA=="
         }
       },
       "is_incremental": false,
@@ -24651,7 +24651,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Providers.EpisodeNfoProvider.html",
-          "hash": "1iLWAKxVmkbytT/8IrN46A=="
+          "hash": "o2S3VV0IHjBLlJVOaJF3oQ=="
         }
       },
       "is_incremental": false,
@@ -24663,7 +24663,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Providers.MovieNfoProvider.html",
-          "hash": "S4/ExhByp6dRDqbxxQm75Q=="
+          "hash": "76pGVHwlhTj7MtyvP2Hb6w=="
         }
       },
       "is_incremental": false,
@@ -24675,7 +24675,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Providers.MusicVideoNfoProvider.html",
-          "hash": "lz4/WZzrh6elEPI3+B5YHQ=="
+          "hash": "AgTM1baiprX/fiosFLNcPw=="
         }
       },
       "is_incremental": false,
@@ -24687,7 +24687,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Providers.SeasonNfoProvider.html",
-          "hash": "5DLw/6B0pB5Hf+SDcNwxmA=="
+          "hash": "ZTKjiUi17B3XzD82TVaOPg=="
         }
       },
       "is_incremental": false,
@@ -24699,7 +24699,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Providers.SeriesNfoProvider.html",
-          "hash": "qjV4Ow2syToO7m4z7t2GlA=="
+          "hash": "P3Gt+44FnmoPAXoVmT+5Tw=="
         }
       },
       "is_incremental": false,
@@ -24711,7 +24711,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Providers.VideoNfoProvider.html",
-          "hash": "HN6pvttUvSdHmvjWlNyfvQ=="
+          "hash": "qPFIk/TDEWUbArvjMSopRg=="
         }
       },
       "is_incremental": false,
@@ -24735,7 +24735,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Savers.AlbumNfoSaver.html",
-          "hash": "XdjIGwhGIcFDOdyEi45Wdw=="
+          "hash": "Z2BFTL96Qk59vFtCrE4eQA=="
         }
       },
       "is_incremental": false,
@@ -24747,7 +24747,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Savers.ArtistNfoSaver.html",
-          "hash": "dKrc6XH6vzjuhcbUcmwMbA=="
+          "hash": "8w7rx9CNnxT98Y3T95YCjg=="
         }
       },
       "is_incremental": false,
@@ -24759,7 +24759,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Savers.BaseNfoSaver.html",
-          "hash": "6zwK5ijphsmGgJRGX7g3ZQ=="
+          "hash": "d1qLuI1dvUynW2jUZUhWDQ=="
         }
       },
       "is_incremental": false,
@@ -24771,7 +24771,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Savers.EpisodeNfoSaver.html",
-          "hash": "yJ7D6wtw944cD/lsuAV7Tg=="
+          "hash": "YjRJNP4DNS5/wJM4TzmHfA=="
         }
       },
       "is_incremental": false,
@@ -24783,7 +24783,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Savers.MovieNfoSaver.html",
-          "hash": "6TWlrXgSJvqE+OD8r9zVAw=="
+          "hash": "LdewtdekxbpbtEAn3C0Aww=="
         }
       },
       "is_incremental": false,
@@ -24795,7 +24795,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Savers.SeasonNfoSaver.html",
-          "hash": "d9Jmy04KPkto8obzOO/Lkg=="
+          "hash": "t7KMuEttVBSN3ezAvjEYCg=="
         }
       },
       "is_incremental": false,
@@ -24807,7 +24807,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.XbmcMetadata.Savers.SeriesNfoSaver.html",
-          "hash": "Ufs1X0n8p5H/afr6+fMVBA=="
+          "hash": "2U06hxeZ8GSq/+UC8bWiAA=="
         }
       },
       "is_incremental": false,
