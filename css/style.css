@@ -1008,7 +1008,7 @@ font-size: 2rem;
       max-width: none; } }
 
 .step__text {
-  max-width: 36ch;
+  max-width: 25ch;
   text-align: center;
   margin-left: auto;
   margin-right: auto; }
