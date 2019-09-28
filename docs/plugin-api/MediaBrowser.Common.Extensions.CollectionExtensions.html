@@ -103,7 +103,7 @@
     <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Extensions_CollectionExtensions_CopyTo__1_IReadOnlyCollection___0__IList___0__System_Int32_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Extensions.CollectionExtensions.CopyTo%60%601(IReadOnlyCollection%7B%60%600%7D%2CIList%7B%60%600%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Extensions/CollectionExtensions.cs/#L23">View Source</a>
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Extensions/CollectionExtensions.cs/#L38">View Source</a>
   </span>
   <a id="MediaBrowser_Common_Extensions_CollectionExtensions_CopyTo_" data-uid="MediaBrowser.Common.Extensions.CollectionExtensions.CopyTo*"></a>
   <h4 id="MediaBrowser_Common_Extensions_CollectionExtensions_CopyTo__1_IReadOnlyCollection___0__IList___0__System_Int32_" data-uid="MediaBrowser.Common.Extensions.CollectionExtensions.CopyTo``1(IReadOnlyCollection{``0},IList{``0},System.Int32)">CopyTo&lt;T&gt;(IReadOnlyCollection&lt;T&gt;, IList&lt;T&gt;, Int32)</h4>
@@ -127,6 +127,68 @@ starting at the specified destination array index. The index is specified as a 3
     <tbody>
       <tr>
         <td><span class="xref">IReadOnlyCollection</span>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The current collection that is the source of the elements.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IList</span>&lt;T&gt;</td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The list that is the destination of the elements copied from the current collection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>A 32-bit integer that represents the index in <code>destination</code> at which copying begins.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_Common_Extensions_CollectionExtensions_CopyTo__1_IReadOnlyList___0__IList___0__System_Int32_.md&amp;value=---%0Auid%3A%20MediaBrowser.Common.Extensions.CollectionExtensions.CopyTo%60%601(IReadOnlyList%7B%60%600%7D%2CIList%7B%60%600%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.Common/Extensions/CollectionExtensions.cs/#L22">View Source</a>
+  </span>
+  <a id="MediaBrowser_Common_Extensions_CollectionExtensions_CopyTo_" data-uid="MediaBrowser.Common.Extensions.CollectionExtensions.CopyTo*"></a>
+  <h4 id="MediaBrowser_Common_Extensions_CollectionExtensions_CopyTo__1_IReadOnlyList___0__IList___0__System_Int32_" data-uid="MediaBrowser.Common.Extensions.CollectionExtensions.CopyTo``1(IReadOnlyList{``0},IList{``0},System.Int32)">CopyTo&lt;T&gt;(IReadOnlyList&lt;T&gt;, IList&lt;T&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Copies all the elements of the current collection to the specified list
+starting at the specified destination array index. The index is specified as a 32-bit integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyTo&lt;T&gt;(this IReadOnlyList&lt;T&gt; source, IList&lt;T&gt; destination, int index = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;T&gt;</td>
         <td><span class="parametername">source</span></td>
         <td><p>The current collection that is the source of the elements.</p>
 </td>

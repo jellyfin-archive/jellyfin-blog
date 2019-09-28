@@ -87,12 +87,15 @@
 <li>M3U</li>
 </ul>
 <p>HDHomerun is a special case because they will usually get detected automatically by the server. Otherwise you can manually add tuners by navigating to <strong>Live TV</strong> in the settings and adding one there.</p>
+<p>Note:  Docker users using HDHomerun devices should set networking to host mode as Jellyfin needs to connect to a changing UDP port</p>
 <h3 id="guide">Guide</h3>
 <p>The guides available below are included with the server but additional guides could eventually be installed through the plugin catalog.</p>
 <ul>
 <li>Schedules Direct</li>
 <li>XML TV</li>
 </ul>
+<p>Guide data will need to be mapped to their corresponding channels after a guide data provider is configured.  This can be accessed by going to</p>
+<p>Admin Dashboard-&gt; Live TV -&gt; TV Guide Data Providers -&gt; Your Provider -&gt; ... -&gt; Map Channels</p>
 <h3 id="status">Status</h3>
 <p>You can view the status of each tuner connected to the server in the settings. There are also buttons to manually refresh the tuners if they experience problems.</p>
 <p>The guide data can be refreshed manually if you run into problems. This isn&#39;t normally required since the data is refreshed periodically.</p>
