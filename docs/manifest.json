@@ -3519,7 +3519,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/Emby.Server.Implementations.ApplicationHost.html",
-          "hash": "GTw5DgU7hgCB1lp7/B+pjg=="
+          "hash": "d/6Rmh/SQNGJkxGxYMdhPQ=="
         }
       },
       "is_incremental": false,
@@ -3783,7 +3783,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/Emby.Server.Implementations.Data.BaseSqliteRepository.html",
-          "hash": "CzyrLOSPWIRPvBu2SHOqJw=="
+          "hash": "PWPfVCHY/jJUeJmAdBkKiw=="
         }
       },
       "is_incremental": false,
@@ -7179,7 +7179,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/Emby.Server.Implementations.Updates.InstallationManager.html",
-          "hash": "eGoCSjkMCgBRoFfTfX4aRg=="
+          "hash": "rmkYm48b6+FX/eGW/VmvQw=="
         }
       },
       "is_incremental": false,
@@ -7655,11 +7655,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "plugin-api/Jellyfin.MediaEncoding.Tests.EncoderValidatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "plugin-api/Jellyfin.MediaEncoding.Tests.EncoderValidatorTests.html",
+          "hash": "rYamVtggCyM88rU3qmnNlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "plugin-api/Jellyfin.MediaEncoding.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "plugin-api/Jellyfin.MediaEncoding.Tests.html",
+          "hash": "173/fkPz8UjQTvvdp+aK3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "plugin-api/Jellyfin.Server.CoreAppHost.yml",
       "output": {
         ".html": {
           "relative_path": "plugin-api/Jellyfin.Server.CoreAppHost.html",
-          "hash": "1u9pSSH7XYaM/JMAqF0L5Q=="
+          "hash": "T48RfbB9eYT59Zogt1T2+Q=="
         }
       },
       "is_incremental": false,
@@ -11667,7 +11691,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.UpdateConfiguration.html",
-          "hash": "Z7qdRSodzsGUr0f6cQUKfw=="
+          "hash": "OlqVaibXcmyUnqfRQg70GQ=="
         }
       },
       "is_incremental": false,
@@ -15363,7 +15387,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Controller.MediaEncoding.EncodingHelper.html",
-          "hash": "7TkXoBa9Fyh7J0e3eHVSug=="
+          "hash": "UDHrgfbflwBDb2dP0ghk8w=="
         }
       },
       "is_incremental": false,
@@ -17415,7 +17439,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.MediaEncoding.Encoder.EncoderValidator.html",
-          "hash": "V6QSTvrxFkPR0T5uHXi+1A=="
+          "hash": "xz/XjLRGIXsiCAy/GSWEwQ=="
         }
       },
       "is_incremental": false,
@@ -17439,7 +17463,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.MediaEncoding.Encoder.MediaEncoder.html",
-          "hash": "/sS50Tw9SBXX0uOzac5Cnw=="
+          "hash": "79zr3G9Ushj2mHAYgQAl/g=="
         }
       },
       "is_incremental": false,
@@ -18063,7 +18087,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Model.Configuration.PathSubstitution.html",
-          "hash": "/LQNZK5W82imBDL2GI2idg=="
+          "hash": "R6z9sTdEc5+42YNC4IXW+w=="
         }
       },
       "is_incremental": false,
@@ -18075,7 +18099,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Model.Configuration.ServerConfiguration.html",
-          "hash": "RswOzG+WBSjiyVv9cPYqfg=="
+          "hash": "Tw5J+YgmjyDLZQWz0z2+Yg=="
         }
       },
       "is_incremental": false,
@@ -21639,7 +21663,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Model.System.PublicSystemInfo.html",
-          "hash": "JvZ9El8xOCALltb9PDKNXw=="
+          "hash": "HRJt509pNHO2awGx1SzdOg=="
         }
       },
       "is_incremental": false,
@@ -21651,7 +21675,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Model.System.SystemInfo.html",
-          "hash": "djlP+3pbs5jDDY/I45hHHA=="
+          "hash": "gi0mx7doqInrwLMQW+k7ZA=="
         }
       },
       "is_incremental": false,
@@ -24855,7 +24879,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/toc.html",
-          "hash": "+SNAYm5Jrf33rtt8A0AHgg=="
+          "hash": "jM11Pmpw2vo8DGBXrfQUuA=="
         }
       },
       "is_incremental": false,
@@ -24892,16 +24916,16 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 2030,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 36,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2032,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

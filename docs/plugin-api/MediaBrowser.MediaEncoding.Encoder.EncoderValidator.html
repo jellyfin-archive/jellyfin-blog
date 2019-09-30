@@ -100,18 +100,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_MediaEncoding_Encoder_EncoderValidator__ctor_ILogger_MediaBrowser_Model_Diagnostics_IProcessFactory_.md&amp;value=---%0Auid%3A%20MediaBrowser.MediaEncoding.Encoder.EncoderValidator.%23ctor(ILogger%2CMediaBrowser.Model.Diagnostics.IProcessFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_MediaEncoding_Encoder_EncoderValidator__ctor_ILogger_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.MediaEncoding.Encoder.EncoderValidator.%23ctor(ILogger%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.MediaEncoding/Encoder/EncoderValidator.cs/#L16">View Source</a>
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.MediaEncoding/Encoder/EncoderValidator.cs/#L75">View Source</a>
   </span>
   <a id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator__ctor_" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.#ctor*"></a>
-  <h4 id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator__ctor_ILogger_MediaBrowser_Model_Diagnostics_IProcessFactory_" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.#ctor(ILogger,MediaBrowser.Model.Diagnostics.IProcessFactory)">EncoderValidator(ILogger, IProcessFactory)</h4>
+  <h4 id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator__ctor_ILogger_System_String_" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.#ctor(ILogger,System.String)">EncoderValidator(ILogger, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EncoderValidator(ILogger logger, IProcessFactory processFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public EncoderValidator(ILogger logger, string encoderPath = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -129,8 +129,70 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="MediaBrowser.Model.Diagnostics.IProcessFactory.html">IProcessFactory</a></td>
-        <td><span class="parametername">processFactory</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">encoderPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_MediaEncoding_Encoder_EncoderValidator_MaxVersion.md&amp;value=---%0Auid%3A%20MediaBrowser.MediaEncoding.Encoder.EncoderValidator.MaxVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.MediaEncoding/Encoder/EncoderValidator.cs/#L83">View Source</a>
+  </span>
+  <a id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_MaxVersion_" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.MaxVersion*"></a>
+  <h4 id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_MaxVersion" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.MaxVersion">MaxVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Version MaxVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_MediaEncoding_Encoder_EncoderValidator_MinVersion.md&amp;value=---%0Auid%3A%20MediaBrowser.MediaEncoding.Encoder.EncoderValidator.MinVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.MediaEncoding/Encoder/EncoderValidator.cs/#L81">View Source</a>
+  </span>
+  <a id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_MinVersion_" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.MinVersion*"></a>
+  <h4 id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_MinVersion" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.MinVersion">MinVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Version MinVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Version</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -139,36 +201,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_MediaEncoding_Encoder_EncoderValidator_GetAvailableCoders_System_String_.md&amp;value=---%0Auid%3A%20MediaBrowser.MediaEncoding.Encoder.EncoderValidator.GetAvailableCoders(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_MediaEncoding_Encoder_EncoderValidator_GetDecoders.md&amp;value=---%0Auid%3A%20MediaBrowser.MediaEncoding.Encoder.EncoderValidator.GetDecoders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.MediaEncoding/Encoder/EncoderValidator.cs/#L22">View Source</a>
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.MediaEncoding/Encoder/EncoderValidator.cs/#L151">View Source</a>
   </span>
-  <a id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_GetAvailableCoders_" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.GetAvailableCoders*"></a>
-  <h4 id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_GetAvailableCoders_System_String_" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.GetAvailableCoders(System.String)">GetAvailableCoders(String)</h4>
+  <a id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_GetDecoders_" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.GetDecoders*"></a>
+  <h4 id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_GetDecoders" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.GetDecoders">GetDecoders()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public (IEnumerable&lt;string&gt; decoders, IEnumerable&lt;string&gt; encoders)GetAvailableCoders(string encoderPath)</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetDecoders()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">encoderPath</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -179,48 +224,56 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-2">ValueTuple</a>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;, <span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_MediaEncoding_Encoder_EncoderValidator_ValidateVersion_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20MediaBrowser.MediaEncoding.Encoder.EncoderValidator.ValidateVersion(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_MediaEncoding_Encoder_EncoderValidator_GetEncoders.md&amp;value=---%0Auid%3A%20MediaBrowser.MediaEncoding.Encoder.EncoderValidator.GetEncoders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.MediaEncoding/Encoder/EncoderValidator.cs/#L34">View Source</a>
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.MediaEncoding/Encoder/EncoderValidator.cs/#L153">View Source</a>
   </span>
-  <a id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_ValidateVersion_" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.ValidateVersion*"></a>
-  <h4 id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_ValidateVersion_System_String_System_Boolean_" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.ValidateVersion(System.String,System.Boolean)">ValidateVersion(String, Boolean)</h4>
+  <a id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_GetEncoders_" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.GetEncoders*"></a>
+  <h4 id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_GetEncoders" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.GetEncoders">GetEncoders()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ValidateVersion(string encoderAppPath, bool logOutput)</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetEncoders()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">encoderAppPath</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">logOutput</span></td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jellyfin/jellyfin-docs/new/master/apispec/new?filename=MediaBrowser_MediaEncoding_Encoder_EncoderValidator_ValidateVersion.md&amp;value=---%0Auid%3A%20MediaBrowser.MediaEncoding.Encoder.EncoderValidator.ValidateVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jellyfin/jellyfin/blob/master/MediaBrowser.MediaEncoding/Encoder/EncoderValidator.cs/#L85">View Source</a>
+  </span>
+  <a id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_ValidateVersion_" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.ValidateVersion*"></a>
+  <h4 id="MediaBrowser_MediaEncoding_Encoder_EncoderValidator_ValidateVersion" data-uid="MediaBrowser.MediaEncoding.Encoder.EncoderValidator.ValidateVersion">ValidateVersion()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateVersion()</code></pre>
+  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
