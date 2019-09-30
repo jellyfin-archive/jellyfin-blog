@@ -95,34 +95,38 @@
 <ol>
 <li><p>On GitHub, &quot;Fork&quot; the Jellyfin repository you wish to contribute to, to your own user account using the &quot;Fork&quot; button in the relevant repository.</p>
 </li>
-<li><p>Clone your fork to your local machine and enter the directory:<br> <code>git clone git@github.com:yourusername/projectname.git</code><br> <code>cd projectname/</code></p>
+<li><p>Clone your fork to your local machine and enter the directory:<br><code>git clone git@github.com:yourusername/projectname.git</code><br><code>cd projectname/</code></p>
 </li>
-<li><p>Add the &quot;upstream&quot; remote, which allows you to pull down changes from the main project easily:<br> <code>git remote add upstream git@github.com:jellyfin/projectname.git</code></p>
+<li><p>Add the &quot;upstream&quot; remote, which allows you to pull down changes from the main project easily:<br><code>git remote add upstream git@github.com:jellyfin/projectname.git</code></p>
 </li>
-<li><p>Initialize the Git submodules; most projects have at least one:<br> <code>git submodule update --init</code></p>
+<li><p>Initialize the Git submodules; most projects have at least one:<br><code>git submodule update --init</code></p>
 <p> <strong>NOTE:</strong> Avoid editing files inside of submodules; this may result in unintended side-effects including overwriting of your work. Always modify the submodule in its own cloned repository elsewhere.</p>
+</li>
+<li><p>To get the <code>Jellyfin.Server</code> project to run successfully, checkout both the main <a href="https://github.com/jellyfin/jellyfin">Jellyfin project</a>, as well as the <a href="https://github.com/jellyfin/jellyfin-web">Jellyfin Web</a> project.</p>
+</li>
+<li><p>Build the Jellyfin Web project with Yarn or NPM, and copy the location of the resulting <code>dist</code> folder. In your <code>Jellyfin.Server</code> project add an environment variable named <code>JELLYFIN_WEB_DIR</code> with the value set to the full path of your <code>dist</code> folder.</p>
 </li>
 </ol>
 <p>You will now be ready to begin building or modifying the project.</p>
 <h2 id="make-changes-to-the-repo">Make changes to the repo</h2>
 <p>Once you have your repository, you can get to work.</p>
 <ol>
-<li><p>Rebase your local branches against upstream <code>master</code> so you are working off the latest changes:<br> <code>git fetch --all</code><br> <code>git rebase upstream/master</code>  </p>
+<li><p>Rebase your local branches against upstream <code>master</code> so you are working off the latest changes:<br><code>git fetch --all</code><br><code>git rebase upstream/master</code></p>
 </li>
-<li><p>Create a local feature branch off of <code>master</code> to make your changes:<br> <code>git checkout -b my-feature master</code></p>
+<li><p>Create a local feature branch off of <code>master</code> to make your changes:<br><code>git checkout -b my-feature master</code></p>
 </li>
 <li><p>Make your changes and commits to this local feature branch.</p>
 </li>
 <li><p>Repeat step 1 on your local feature branch once you&#39;re done your work, to ensure you have no conflicts with other work done since you stated.</p>
 </li>
-<li><p>Push up your local feature branch to your GitHub fork:<br> <code>git push --set-upstream origin my-feature</code></p>
+<li><p>Push up your local feature branch to your GitHub fork:<br><code>git push --set-upstream origin my-feature</code></p>
 </li>
 <li><p>On GitHub, create a new PR against the upstream <code>master</code> branch following the advice below.</p>
 </li>
-<li><p>Once your PR is merged, ensure you keep your local branches up-to-date:<br> <code>git fetch --all</code><br> <code>git checkout master</code><br> <code>git rebase upstream/master</code><br> <code>git push -u origin master</code>  </p>
+<li><p>Once your PR is merged, ensure you keep your local branches up-to-date:<br><code>git fetch --all</code><br><code>git checkout master</code><br><code>git rebase upstream/master</code><br><code>git push -u origin master</code></p>
 </li>
 <li><p>Delete your local feature branch if you no longer need it:
- <code>git branch -d my-feature</code></p>
+<code>git branch -d my-feature</code></p>
 </li>
 </ol>
 <h2 id="contributorsmd">CONTRIBUTORS.md</h2>
@@ -137,13 +141,13 @@
 <p>To test someone else&#39;s pull request, you must import the changes to your local repository:</p>
 <ol>
 <li><p>Fetch the changes in a pull request and link them to a new local branch:
- <code>git fetch upstream pull/&lt;PR_ID&gt;/head:my-testing-branch</code>  </p>
+<code>git fetch upstream pull/&lt;PR_ID&gt;/head:my-testing-branch</code></p>
 <p> <strong>NOTE:</strong> <code>&lt;PR_ID&gt;</code> is pull request ID number on GitHub.</p>
 </li>
-<li><p>Checkout the new local branch:<br> <code>git checkout my-testing-branch</code></p>
+<li><p>Checkout the new local branch:<br><code>git checkout my-testing-branch</code></p>
 </li>
 <li><p>Perform any testing or build required to test, then return to master and delete the branch:
- <code>git checkout master</code><br> <code>git branch -D my-testing-branch</code></p>
+<code>git checkout master</code><br><code>git branch -D my-testing-branch</code></p>
 </li>
 </ol>
 <h2 id="pull-request-guidelines">Pull Request guidelines</h2>
