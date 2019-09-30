@@ -99,18 +99,19 @@
 						</script>
                         <div id="docker_stable" style="display:none;">
                             <pre><code>docker pull jellyfin/jellyfin:latest
-sudo mkdir -p /srv/jellyfin/{data,cache}
-docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin:/cache -v /media:/media --net=host jellyfin/jellyfin:latest</pre></code>
+mkdir -p /srv/jellyfin/{config,cache}
+docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /media:/media --net=host jellyfin/jellyfin:latest</pre></code>
                         </div>
                         <div id="docker_nightly" style="display:none;">
                             <pre><code>docker pull jellyfin/jellyfin:nightly
-sudo mkdir -p /srv/jellyfin/{data,cache}
-docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin:/cache -v /media:/media --net=host jellyfin/jellyfin:nightly</pre></code>
+mkdir -p /srv/jellyfin/{config,cache}
+docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /media:/media --net=host jellyfin/jellyfin:nightly</pre></code>
                         </div>
                      </div>
                      <div class="debian">
                         <h4>Debian/Ubuntu</h4>
                         <p>Install Jellyfin via our Apt repository or via manual archives (.deb).</p>
+                        <p><i>Note:</i> Jellyfin is not explicitly packaged for Linux Mint or other Debuntu derivatives. Use the closest equivalent Debian or Ubuntu version instead if the commands below throw errors.</p>
                         <p>
                         <div class="button button__accent" id="deb_repo_stable_button">Stable</div>
                         <div class="button button__accent" id="deb_repo_nightly_button">Nightly</div>
