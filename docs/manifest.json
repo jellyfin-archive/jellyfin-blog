@@ -262,11 +262,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "general/server/live-tv.md",
+      "source_relative_path": "general/server/live-tv/index.md",
       "output": {
         ".html": {
-          "relative_path": "general/server/live-tv.html",
-          "hash": "9RUM+gLVKiauPZAxUM5V9Q=="
+          "relative_path": "general/server/live-tv/index.html",
+          "hash": "1XPhxv4WNhlGCTeYpRKP+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "general/server/live-tv/setup-guide.md",
+      "output": {
+        ".html": {
+          "relative_path": "general/server/live-tv/setup-guide.html",
+          "hash": "nFGYBeDh1A53OllGv1cFDA=="
         }
       },
       "is_incremental": false,
@@ -434,7 +446,7 @@
       "output": {
         ".html": {
           "relative_path": "general/toc.html",
-          "hash": "1weF0UJLgYcLpvysi3aD+Q=="
+          "hash": "oktwVC3OZnuBV9t7VyLWig=="
         }
       },
       "is_incremental": false,
@@ -457,6 +469,94 @@
       "output": {
         "resource": {
           "relative_path": "images/header-icon.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/live-tv-setup-channels1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/live-tv-setup-channels1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/live-tv-setup-channels2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/live-tv-setup-channels2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/live-tv-setup-guide1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/live-tv-setup-guide1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/live-tv-setup-hdhr_opt1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/live-tv-setup-hdhr_opt1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/live-tv-setup-tuner1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/live-tv-setup-tuner1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/live-tv-setup-tuner2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/live-tv-setup-tuner2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/live-tv-setup-tuner3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/live-tv-setup-tuner3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/live-tv-setup-tuner4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/live-tv-setup-tuner4.png"
         }
       },
       "is_incremental": false,
@@ -24916,16 +25016,16 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 36,
-          "skipped_file_count": 0
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 2032,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 37,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Live TV Setup Guide | Documentation - Jellyfin Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Live TV Setup Guide | Documentation - Jellyfin Project ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../../images/favicon.png">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/header-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="server-live-tv-setup-guide">
+<h1 id="add-a-tv-tuner-to-jellyfin-automatic-discovery">Add a TV tuner to Jellyfin (Automatic Discovery)</h1>
+
+<p>Click on the Admin Panel Icon in the top right corner (1)
+Click &#39;Live TV&#39; (2) under the &#39;Live TV&#39; section
+Click the &#39;+&#39; button (3) next to &#39;Tuner Devices&#39;</p>
+<p><img src="../../../images/live-tv-setup-tuner1.png" alt=""></p>
+<p>Click &#39;Detect My Devices&#39; from the &#39;Live TV Tuner Setup&#39; page that opens
+JF will search and hopefully find your tuner automatically:</p>
+<p><img src="../../../images/live-tv-setup-tuner2.png" alt=""></p>
+<p>Click on the device you&#39;d like to set up then set any options then click &#39;Save&#39;</p>
+<p><img src="../../../images/live-tv-setup-tuner3.png" alt=""></p>
+<h1 id="add-a-tv-tuner-to-jellyfin-manual-setup">Add a TV tuner to Jellyfin (Manual setup)</h1>
+<p>You can set up your tuners manually if they were not automatically discovered.  Click the &#39;Tuner Type&#39; pull down.  Choose between &#39;HD Homerun&#39;, &#39;M3U Tuner&#39;, and &#39;Other&#39;</p>
+<p><img src="../../../images/live-tv-setup-tuner4.png" alt=""></p>
+<h2 id="hd-homerun-specific-options">HD Homerun specific options:</h2>
+<ul>
+<li><p>Tuner IP Address is the URL of your HD Homerun device.  Format will be <a href="http://YOUR.IP.ADDRESS">http://YOUR.IP.ADDRESS</a></p>
+</li>
+<li><p>Allow hardware transcoding will allow the tuner to transcode the video on the fly which can reduce server load.  Not all HD Homeruns support hardware transcoding.</p>
+</li>
+<li><p>Restrict to channels marked as favorite will only import channels that are designated as favorite channels on the tuner.  This helps if your tuner autoscans and adds new channels that you do not want and/or adds channels that you are able to receive due to atmospheric conditions but later are not accessible.</p>
+</li>
+</ul>
+<p>To set a favorite, go to <a href="http://my.hdhomerun.com">http://my.hdhomerun.com</a> , select your tuner and then click on the grey star next to the channel name to change the star to yellow.  The yellow star indicates a favorited channel.  In this example, only the channels with yellow stars will be imported into Jellyfin</p>
+<p><img src="../../../images/live-tv-setup-hdhr_opt1.png" alt=""></p>
+<h2 id="m3u-tuner-specific-options">M3U Tuner specific options:</h2>
+<p>This tuner allows you to add IPTV channel to Jellyfin by using the appropriate M3U8 playlist file.</p>
+<ul>
+<li><p>File or URL is the location of the M3U8 playlist.  The file can either be stored online at a web (HTTP) address or stored locally.</p>
+</li>
+<li><p>User agent is needed in special cases where you need to supply a custome HTTP header to access the remotely stored M3U8 playlist</p>
+</li>
+<li><p>Simultaneous stream limit will restrict the number of streams the server can have open at one time.  Setting this value to &#39;0&#39; will allow for unlimited streams</p>
+</li>
+<li><p>Auto-loop live streams is sometimes necessary for some IPTV channels.  Turn this on only if your streams are not playing correctly</p>
+</li>
+</ul>
+<h1 id="adding-guide-data">Adding guide data:</h1>
+<p>Guide data is necessary for scheduling tv recordings and for browsing what&#39;s currently playing and what will air later.  Follow these steps once you have a tuner device set up.  Click on the Admin Panel Icon in the top right corner, Click &#39;Live TV&#39; (2) under the &#39;Live TV&#39; section, Click the &#39;+&#39; button next to &#39;TV Guide Data Providers&#39; :</p>
+<p><img src="../../../images/live-tv-setup-guide1.png" alt=""></p>
+<p>Choose between &#39;Schedules Direct&#39; and &#39;Xml TV&#39;</p>
+<p><strong>Schedules Direct:</strong></p>
+<p>Schedules Direct is a pay service that provides U.S./Canadian guide data for use in OSS projects.  The price is $25 a year and has not increased since it began in 2007.  The guide data is highly reliable.  Create an account at <a href="http://www.schedulesdirect.org">http://www.schedulesdirect.org</a></p>
+<p><strong>Xml TV:</strong></p>
+<p>Xml TV option allows for downloading of guide data in the XMLTV format ( <a href="http://wiki.xmltv.org/index.php/XMLTVFormat">http://wiki.xmltv.org/index.php/XMLTVFormat</a> )</p>
+<h1 id="mapping-channels">Mapping channels:</h1>
+<p>Guide data from the &#39;TV Guide Data Providers&#39; will need to be mapped to the physical channel from the tuner.  Click the &#39;...&#39; next to the guide provider you set up and select &#39;Map Channels&#39;</p>
+<p><img src="../../../images/live-tv-setup-channels1.png" alt=""></p>
+<p>The list of physical channels will be displayed.  Click the pencil icon to the right of the channel and then select the corresponding channel from the guide provider to map the channel.  Do this for all channels.  Click the left arrow at the top left of the window to exit and save:</p>
+<p><img src="../../../images/live-tv-setup-channels2.png" alt=""></p>
+<p>The guide data will now automatically imported.  You can check that the data imported correctly by going to the &#39;Live TV Guide&#39;  page from the main Jellyfin web page on your server.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jellyfin/jellyfin-docs/blob/master/general/server/live-tv/setup-guide.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
