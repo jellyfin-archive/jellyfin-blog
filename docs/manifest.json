@@ -9679,7 +9679,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.AddListingProvider.html",
-          "hash": "Ulm8ZG+lkfLRinhN8hTs9g=="
+          "hash": "IXaCJyHQhqO8u7cm6nkJpA=="
         }
       },
       "is_incremental": false,
@@ -9691,7 +9691,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.AddTunerHost.html",
-          "hash": "z+8rxsXG8rS8VGy2Wk+rXg=="
+          "hash": "5tXpCC0SBw9RLT/Ct2W5hg=="
         }
       },
       "is_incremental": false,
@@ -9703,7 +9703,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.CancelSeriesTimer.html",
-          "hash": "ygbHzoBWiMmILdlksUqdXA=="
+          "hash": "GDxQhyQNv9HEIPCiPAG1Fw=="
         }
       },
       "is_incremental": false,
@@ -9715,7 +9715,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.CancelTimer.html",
-          "hash": "V16kz0rG4mKySPilm2cz0A=="
+          "hash": "OiRz7ALUC4ZwbknDK6CJYg=="
         }
       },
       "is_incremental": false,
@@ -9727,7 +9727,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.ChannelMappingOptions.html",
-          "hash": "g1Av+/Y/2c/vQeUBptuGIg=="
+          "hash": "BmeFtIM1kr3qNdAu4rjphg=="
         }
       },
       "is_incremental": false,
@@ -9739,7 +9739,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.CreateSeriesTimer.html",
-          "hash": "YvPMCo+d1OYvFGduEKkQYQ=="
+          "hash": "qgB/0ysQ0P56xD1YXC5utQ=="
         }
       },
       "is_incremental": false,
@@ -9751,7 +9751,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.CreateTimer.html",
-          "hash": "yJ2utpeArZNyBjro0taesg=="
+          "hash": "/kXKH1HBDE18X7SI9u9uxw=="
         }
       },
       "is_incremental": false,
@@ -9763,7 +9763,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.DeleteListingProvider.html",
-          "hash": "QvymOZ79jaxrEbgbXbU78g=="
+          "hash": "bO+PhN0hMoc9e29zq2QmNg=="
         }
       },
       "is_incremental": false,
@@ -9775,7 +9775,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.DeleteRecording.html",
-          "hash": "9XQtzyAYKc/1ZBWzKlmC2A=="
+          "hash": "HeY3quxOSojKypiCoqgK8Q=="
         }
       },
       "is_incremental": false,
@@ -9787,7 +9787,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.DeleteTunerHost.html",
-          "hash": "an8H/aRElMH1nYOvVy+IFw=="
+          "hash": "VTY5i5aw52FBdU3mghvzIg=="
         }
       },
       "is_incremental": false,
@@ -9799,7 +9799,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.DiscoverTuners.html",
-          "hash": "zP9aKGqCzejqoG5G7Q9vDw=="
+          "hash": "vF8CXhm36S835VvhoChRpg=="
         }
       },
       "is_incremental": false,
@@ -9811,7 +9811,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetChannel.html",
-          "hash": "lrjItrovtsKgNfaW0W+1Tw=="
+          "hash": "iuJ1/WZPpFiPfV6wUnGmvg=="
         }
       },
       "is_incremental": false,
@@ -9823,7 +9823,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetChannelMappingOptions.html",
-          "hash": "+d8oSAUCZ9YBXihKf7+lvg=="
+          "hash": "y3HpWNWJqeHRLIaiguThNA=="
         }
       },
       "is_incremental": false,
@@ -9835,7 +9835,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetChannels.html",
-          "hash": "vlBzRJ0Da1bQan7bS/+EaQ=="
+          "hash": "BfFedbUSjwVFGPI3x6Ihhw=="
         }
       },
       "is_incremental": false,
@@ -9847,7 +9847,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetDefaultListingProvider.html",
-          "hash": "qT6mSrSBG3W2cl4xxuHgqg=="
+          "hash": "mgSEzSihVw9NxYapue65rA=="
         }
       },
       "is_incremental": false,
@@ -9859,7 +9859,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetDefaultTimer.html",
-          "hash": "i0K4WwAJSA+seB1GsCneLg=="
+          "hash": "2qI0pGsP4jDdx0YNeuFpiw=="
         }
       },
       "is_incremental": false,
@@ -9871,7 +9871,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetGuideInfo.html",
-          "hash": "SivWSmZKKltTto7IOCS7uA=="
+          "hash": "4vT2+wTFQ47UFgJvQnBO7w=="
         }
       },
       "is_incremental": false,
@@ -9883,7 +9883,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetLineups.html",
-          "hash": "IrmB9KnF37YyIkpJsgKnEQ=="
+          "hash": "sHpDBIl0Yz2JyT7RsrmHLQ=="
         }
       },
       "is_incremental": false,
@@ -9895,7 +9895,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetLiveRecordingFile.html",
-          "hash": "4tSEOQI6cquSSScGMZY6mw=="
+          "hash": "IRsaZflwpzJH/R4dNj4BIw=="
         }
       },
       "is_incremental": false,
@@ -9907,7 +9907,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetLiveStreamFile.html",
-          "hash": "30L1EJ8ZPMMTOL5m28QV0w=="
+          "hash": "lsnK4eNvLpQc8pm8XeioYA=="
         }
       },
       "is_incremental": false,
@@ -9919,7 +9919,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetLiveTvInfo.html",
-          "hash": "E0u3onJue94XU2I3Vgzw2w=="
+          "hash": "MdAUOo7ti0cHgQHPRaEtpw=="
         }
       },
       "is_incremental": false,
@@ -9931,7 +9931,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetProgram.html",
-          "hash": "Defxn84EjfVuCjh/DDukmQ=="
+          "hash": "v2wlnM24vSv+8D55Mp6ODg=="
         }
       },
       "is_incremental": false,
@@ -9943,7 +9943,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetPrograms.html",
-          "hash": "rGwE6mPBdLcTp2flNM0kpw=="
+          "hash": "8eiKjXrwNGlG2Hxz0hIQPA=="
         }
       },
       "is_incremental": false,
@@ -9955,7 +9955,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetRecommendedPrograms.html",
-          "hash": "wPFn9Q3qNheT+E923bS1Fw=="
+          "hash": "NzAHrJPXvqLehjOxy21CgA=="
         }
       },
       "is_incremental": false,
@@ -9967,7 +9967,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetRecording.html",
-          "hash": "R1WVsNk6ikj4ZuyrAh5pBQ=="
+          "hash": "899wIKd0czs8y11ViXFn4Q=="
         }
       },
       "is_incremental": false,
@@ -9979,7 +9979,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetRecordingFolders.html",
-          "hash": "DEW/k3vaiNxqwi9EPCQLqg=="
+          "hash": "MrwHgiFOTz29BJjElpT/Ng=="
         }
       },
       "is_incremental": false,
@@ -9991,7 +9991,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetRecordingGroup.html",
-          "hash": "tJU05KxpFmrjIgSGigaF4g=="
+          "hash": "7uGG1zR4CmFv55Hghex6qQ=="
         }
       },
       "is_incremental": false,
@@ -10003,7 +10003,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetRecordingGroups.html",
-          "hash": "usmdAWPn3PaNs9alJUDQ/w=="
+          "hash": "LdhyG2fWQLQFOMOgw9NEwQ=="
         }
       },
       "is_incremental": false,
@@ -10015,7 +10015,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetRecordingSeries.html",
-          "hash": "DPE4DwYHocQWoqGr7AnYIA=="
+          "hash": "F1vBPIrAwp7dC4bdUjWNZQ=="
         }
       },
       "is_incremental": false,
@@ -10027,7 +10027,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetRecordings.html",
-          "hash": "9ZCcqvLwaiTGJ2NLNP2Q5Q=="
+          "hash": "mBhB7UbBISTYoyb63PFHYQ=="
         }
       },
       "is_incremental": false,
@@ -10039,7 +10039,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetSchedulesDirectCountries.html",
-          "hash": "paJg+zY0vZxM1sPgUvH7Hw=="
+          "hash": "yPs7D2Qa9TG01Z2Wh+D3Lg=="
         }
       },
       "is_incremental": false,
@@ -10051,7 +10051,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetSeriesTimer.html",
-          "hash": "/3NjaashPALrGr0D6r2XuQ=="
+          "hash": "Ex2tfeSnOueR1pPLp8eCJg=="
         }
       },
       "is_incremental": false,
@@ -10063,7 +10063,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetSeriesTimers.html",
-          "hash": "oLBqMMRSfFYrU98vAHuHtw=="
+          "hash": "4EoGkBbEYmkoX5hAg4StCA=="
         }
       },
       "is_incremental": false,
@@ -10075,7 +10075,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetTimer.html",
-          "hash": "t66UAzrowHqhliNPLqrMhg=="
+          "hash": "Hxf8iPXjFS3UvYuqs1iA4Q=="
         }
       },
       "is_incremental": false,
@@ -10087,7 +10087,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetTimers.html",
-          "hash": "2GL+6/cG/LYtWIwFV/3fyA=="
+          "hash": "nuSKac0biSSfFAl//O2RHw=="
         }
       },
       "is_incremental": false,
@@ -10099,7 +10099,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.GetTunerHostTypes.html",
-          "hash": "oEDi/MN6rZ6zgJNf0hM2OQ=="
+          "hash": "nqs2s7J0GadXYq3OlM+p2Q=="
         }
       },
       "is_incremental": false,
@@ -10111,7 +10111,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.LiveTvService.html",
-          "hash": "rLrQiybzHH0Co8kYdFVLsw=="
+          "hash": "eeyYdPBqW1fq+tEZTxiy3Q=="
         }
       },
       "is_incremental": false,
@@ -10135,7 +10135,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.ResetTuner.html",
-          "hash": "5kBv7eer6FQ+x96EhNHDkQ=="
+          "hash": "APCStAsVeVgYfOqdZODV7Q=="
         }
       },
       "is_incremental": false,
@@ -10147,7 +10147,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.SetChannelMapping.html",
-          "hash": "uHOHVsVspEj2Zk0x25pjcg=="
+          "hash": "cEU0YvBIM5nDfX8Bbnxdqg=="
         }
       },
       "is_incremental": false,
@@ -10159,7 +10159,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.UpdateSeriesTimer.html",
-          "hash": "+HxvpiW6QmvLHCTnAZ0I+g=="
+          "hash": "GbXE1Um5sbsa3dMpLplmwA=="
         }
       },
       "is_incremental": false,
@@ -10171,7 +10171,7 @@
       "output": {
         ".html": {
           "relative_path": "plugin-api/MediaBrowser.Api.LiveTv.UpdateTimer.html",
-          "hash": "iEQbYbGw+6flUOMBFy6QSg=="
+          "hash": "SFam8FBx2gmuSz/ahzBM0Q=="
         }
       },
       "is_incremental": false,
