@@ -1,0 +1,41 @@
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1"
+  />
+  <title>{{ .Title }} {{ if .Title }}-{{ end }} {{ .Site.Title }}</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:400"
+    rel="stylesheet"
+  />
+  <link rel="shortcut icon" href="/favicon.ico" />
+
+  {{ $e1 := resources.Get "sass/utils/_normalize.scss" }}
+  {{ $e2 := resources.Get "sass/base/_variables.scss" }}
+  {{ $e3 := resources.Get "sass/utils/_mixins.scss" }}
+  {{ $e4 := resources.Get "sass/base/_globals.scss" }}
+  {{ $e5 := resources.Get "sass/base/_containers.scss" }}
+  {{ $e6 := resources.Get "sass/utils/_helpers.scss" }}
+  <!-- Elements -->
+  {{ $e7 := resources.Get "sass/elements/_typography.scss" }}
+  {{ $e8 := resources.Get "sass/elements/_buttons.scss" }}
+  {{ $e10 := resources.Get "sass/elements/_forms.scss" }}
+  <!-- Components -->
+  {{ $e11 := resources.Get "sass/components/_landing.scss" }}
+  {{ $e12 := resources.Get "sass/components/_navbar.scss" }}
+  {{ $e13 := resources.Get "sass/components/_hero.scss" }}
+  {{ $e14 := resources.Get "sass/components/_steps.scss" }}
+  {{ $e15 := resources.Get "sass/components/_expanded.scss" }}
+  {{ $e16 := resources.Get "sass/components/_cta.scss" }}
+  {{ $e17 := resources.Get "sass/components/_footer.scss" }}
+  {{ $e18 := resources.Get "sass/components/_auth.scss" }}
+  {{ $e19 := resources.Get "sass/components/_page.scss" }}
+  {{ $e20 := resources.Get "sass/components/_app.scss" }}
+  {{ $e21 := resources.Get "sass/components/_verticalMenu.scss" }}
+  {{ $c := resources.Get "sass/custom.style.scss" }}
+
+  {{ $style := slice $e1 $e2 $e3 $e4 $e5 $e6 $e7 $e8 $e10 $e11 $e12 $e13 $e14 $e15 $e16 $e17 $e18 $e19 $e20 $e21 $c | resources.Concat "css/style.css" | resources.ToCSS | fingerprint | minify }}
+
+  <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
+</head>

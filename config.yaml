@@ -1,0 +1,39 @@
+baseURL: "https://jellyfin.org/"
+languageCode: en-us
+title: "Jellyfin: The Free Software Media System"
+permalinks:
+  post: "/post/:year/:month/:day/:slug/"
+  note: "/note/:year/:month/:day/:slug/"
+menus:
+  main:
+    - name: Downloads
+      Url: /downloads
+      weight: 1
+    - name: Forum
+      Url: https://forum.jellyfin.org/
+      weight: 2
+    - name: Translations
+      Url: https://translate.jellyfin.org/
+      weight: 3
+    - name: Feature Requests
+      Url: https://features.jellyfin.org/
+      weight: 4
+    - name: GitHub
+      Url: https://github.com/jellyfin
+      weight: 5
+    - name: Documentation
+      Url: /docs
+      weight: 6
+    - name: Social/Contact Us
+      Url: /contact
+      weight: 7
+params:
+  footer:
+    firstcolumn:
+      - Site content is licensed [CC-BY-ND-4.0](http://creativecommons.org/licenses/by-nd/4.0/)
+      - Website hosted on [GitHub](https://github.com/jellyfin/jellyfin.github.io)
+    secondcolumn:
+      -
+    thirdcolumn:
+      - Check us out on [Github](https://github.com/jellyfin)
+      - See our [documentation](/docs/)

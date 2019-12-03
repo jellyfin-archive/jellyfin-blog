@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+{{ if not .IsHome }}
+<h1>{{ .Title | markdownify }}</h1>
+{{ end }}
+
+{{ .Content }}
+
+{{ if not .IsHome }}
+<ul>
+	{{ range (where .Data.Pages "Section" "!=" "") }}
+
+	<li>
+		<span class="date">{{ .Date.Format "2006/01/02" }}</span> <a href="{{ .URL }}">{{ .Title | markdownify }}</a>
+	</li>
+
+	<!-- prettier-ignore -->
+
+	{{ end }}
+</ul>
+{{ end }}
+
+{{ end }}
