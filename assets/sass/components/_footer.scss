@@ -54,9 +54,9 @@
 	margin-bottom: 8pt;
 }
 
-.footer__link {
-	color: $primary;
-	border-bottom: 1px dotted $primary;
+.footer__link, .footer a {
+	color: #6C63FF;
+	border-bottom: 1px dotted #6C63FF;
 	padding-bottom: 1pt;
 	transition: 0.7s;
 
@@ -84,7 +84,7 @@
 		color: darken(#fff, 15%);
 	}
 
-	.footer__link {
+	.footer__link, a {
 		color: darken(#fff, 15%);
 		border-color: darken(#fff, 15%);
 

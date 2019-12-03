@@ -6,7 +6,18 @@
 			<div class="expanded__media"><img src="{{ .src }}" alt="{{ .alt }}" class="expanded__image" /></div>
 			<div class="expanded__content">
 				<h2 class="expanded__title">{{ .title | markdownify }}</h2>
-				<p class="expanded__text">{{ .text | markdownify }}</p>
+				<!-- stupid stupid Hugo hack, see https://discourse.gohugo.io/t/prevent-markdownify-to-strip-first-p-tags/7854/13?u=anthonylavado -->
+				{{- $markdown := .text | markdownify -}}
+				{{if .spectext}}
+					{{.spectext | safeHTML}}
+				{{else}}
+					{{ if not ( findRE "<[h|p][^>]*>" $markdown ) }}
+						<p class="expanded_text">{{ $markdown }}</p>
+					{{else}}
+						{{ $markdown }}
+					{{end}}
+				{{ end }}
+				
 			</div>
 		</div>
 	</div>

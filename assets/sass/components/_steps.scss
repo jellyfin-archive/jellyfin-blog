@@ -5,8 +5,9 @@
 
 .steps__inner {
 	@include desktop {
-		display: flex;
-		justify-content: space-around;
+		   -js-display: flex;
+		   display: flex;
+		   justify-content: space-around;
 	}
 }
 
@@ -47,8 +48,8 @@
 }
 
 .step__text {
-	max-width: 36ch;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 25ch;
+  	text-align: center;
+  	margin-left: auto;
+  	margin-right: auto;
 }

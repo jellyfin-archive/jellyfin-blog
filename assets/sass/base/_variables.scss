@@ -1,19 +1,19 @@
 // Colors
-$primary: #6c63ff;
-$secondary: #4641ff;
-$accent: #06d19c;
+$primary: #3E2247;
+$secondary: #003C50;
+$accent: #00698C;
 $primary-dark: darken($primary, 8%);
-$text: #666;
-$text-dark: #111;
-$background: #ffffff;
-$background-alt: #f7f7f7;
+$text: #999;
+$text-dark: #fff;
+$background:   #000b25; 
+$background-alt: #172138;
 $background-dark: #333c44;
 $line: #eee;
 $success: $accent;
 $error: tomato;
 
 // Typography
-$font: "Lato", sans-serif;
+$font: "Quicksand", sans-serif;
 $font-size: 15px;
 $line-height: 1.7;
 $light: 300;
@@ -40,8 +40,8 @@ $navbar-height: 60px; // Height for navigation globally
 $navbar-height-extended: 70px; // Extended height for navigation => Used on landing
 
 // Hero
-$hero-color: $background;
+$hero-color: #fff;
 $hero-shadow: 0 4px 11px rgba(124, 146, 169, 0.5);
-$hero-color-opacity: 0.8;
-$hero-mask-opacity: 0.26;
+$hero-color-opacity: 0.9;
+$hero-mask-opacity: 0.66;
 $hero-down-size: 1rem;

@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   background-image: url("../images/default_bg.jpg");
-  box-shadow: $hero-shadow;
+  //box-shadow: $hero-shadow;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -47,6 +47,7 @@
   background-repeat: no-repeat;
   opacity: $hero-mask-opacity;
   z-index: 2;
+
 }
 
 // Actual content
@@ -68,7 +69,7 @@
 
 /*--- CONTENT STYLING ---*/
 .hero__title {
-  color: inherit;
+  color: $text-dark;
   margin-bottom: 1.25em;
 }
 
@@ -107,7 +108,7 @@
 .hero__sub__down {
   width: $hero-down-size;
   height: $hero-down-size;
-  color: $text;
+  color: #666;
   transition: 0.7s;
   cursor: pointer;
 

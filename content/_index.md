@@ -6,9 +6,9 @@ hero:
     - title: Download Jellyfin
       url: /downloads/
       accent: yes
-    - title: Learn more
+    - title: Learn More
       url: /docs/general/#getting-started
-triple:
+about:
   title: What is Jellyfin?
   text: Jellyfin is a free program that lets you collect, control, and stream all your favourite media.
   box:
@@ -42,11 +42,9 @@ single:
     src: /images/undraw_Security_on_s9ym.svg
     alt: No centralized tracking. It's your data.
   - title: Free Software, and growing.
-    text: Jellyfin is Free Software, licensed with the GPL.
-
-
-      Want to help contribute?
-      There's lots of ways to do so, and you don't even have to code. See our [Contribution Guide](/docs/general/contributing/).
+    spectext: <p class="expanded_text">Jellyfin is Free Software, licensed with the GPL.</p>
+      <p class="expanded_text">Want to help contribute?<br>
+      There's lots of ways to do so, and you don't even have to code.<br> See our <a href="/docs/general/contributing/" class="footer__link">Contribution Guide</a>.</p>
     src: /images/undraw_version_control_9bpv.svg
     alt: Jellyfin is Free Software
 cta:

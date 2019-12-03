@@ -24,7 +24,7 @@ menus:
     - name: Documentation
       Url: /docs
       weight: 6
-    - name: Social/Contact Us
+    - name: Contact
       Url: /contact
       weight: 7
 params:
