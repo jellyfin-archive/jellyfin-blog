@@ -8,7 +8,7 @@
 			<div class="page__header__content">
 				<div class="page__header__content__inner" id="navConverter">
 					<h1 class="page__header__title">{{ .Title }}</h1>
-					<p class="page__header__text">{{ .Title }}</p>
+					<p class="page__header__text">{{ .Params.subtitle }}</p>
 				</div>
 			</div>
 		</div>
@@ -18,13 +18,17 @@
 <div class="page">
 	<div class="container">
 		<div class="page__inner">
-			<div class="page__menu">
+			<!-- <div class="page__menu">
 				<ul class="vMenu">
 					{{ .TableOfContents }}
 				</ul>
-			</div>
+			</div> -->
 			<div class="page__main">
-				<div class="text-container">{{ .Content }}</div>
+				{{if eq .Params.justify "center"}}
+				<div class="text-container text-container--center">{{ .Content }}</div>
+				{{else}}
+					<div class="text-container">{{ .Content }}</div>
+				{{end}}
 			</div>
 		</div>
 	</div>

@@ -10,7 +10,7 @@
 		margin-top: 2.2em;
 		position: absolute;
 		bottom: 20px;
-		text-align: center;
+		text-align: center;	
 		width: 100%;
 		left: 0;
 		font-size: 0.7em;
@@ -88,4 +88,8 @@
 	&--text {
 		color: $text;
 	}
+}
+
+.text-container img{
+	vertical-align: middle;
 }

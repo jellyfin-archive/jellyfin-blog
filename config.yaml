@@ -24,9 +24,12 @@ menus:
     - name: Documentation
       Url: /docs
       weight: 6
-    - name: Contact
-      Url: /contact
+    - name: Help Jellyfin
+      Url: /help-jellyfin
       weight: 7
+    - name: Social/Contact Us
+      Url: /contact
+      weight: 8
 params:
   footer:
     firstcolumn:
