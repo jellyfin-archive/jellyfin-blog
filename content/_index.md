@@ -47,6 +47,12 @@ single:
       There's lots of ways to do so, and you don't even have to code.<br> See our <a href="/docs/general/contributing/" class="footer__link">Contribution Guide</a>.</p>
     src: /images/undraw_version_control_9bpv.svg
     alt: Jellyfin is Free Software
+gallery:
+  - title: See Jellyfin in action.
+    subtext: Click a screenshot for a full 1080p view.
+    imgtitle: Home  
+    src: /images/screenshots/home
+    alt: Jellyfin is Free Software
 cta:
   title: Get started now
   text: Check out our Getting Started guide to download and get set up.

@@ -1,0 +1,32 @@
+<!-- Screenshot section -->
+{{ range .Params.gallery }}
+<div class="screenshots landing__section">
+	<div class="container">
+		<h2>{{ .title | markdownify }}</h2>
+		<!-- stupid stupid Hugo hack, see https://discourse.gohugo.io/t/prevent-markdownify-to-strip-first-p-tags/7854/13?u=anthonylavado -->
+		{{- $markdown := .subtext | markdownify -}}
+		{{if .spectext}}
+			{{.spectext | safeHTML}}
+		{{else}}
+			{{ if not ( findRE "<[h|p][^>]*>" $markdown ) }}
+				<p><i>{{ $markdown }}</i></p>
+			{{else}}
+				{{ $markdown }}
+			{{end}}
+		{{ end }}
+	</div>
+	<div class="container">
+		<div class="screenshots__inner">
+			<div class="screenshot">
+				<div class="screenshot__media">
+					<a href="{{ .src }}_full.png">
+						<img src="{{ .src }}_thumb.png" alt="{{ .alt }}" class="screenshot__image" />
+					</a>
+				</div>
+				<h4>{{ .imgtitle | markdownify }}</h4>
+
+			</div>
+		</div>
+	</div>
+</div>
+{{ end }}

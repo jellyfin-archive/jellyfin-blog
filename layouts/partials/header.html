@@ -30,9 +30,10 @@
   {{ $e19 := resources.Get "sass/components/_page.scss" }}
   {{ $e20 := resources.Get "sass/components/_app.scss" }}
   {{ $e21 := resources.Get "sass/components/_verticalMenu.scss" }}
+  {{ $e22 := resources.Get "sass/components/_gallery.scss" }}
   {{ $c := resources.Get "sass/custom.style.scss" }}
 
-  {{ $style := slice $e1 $e2 $e3 $e4 $e5 $e6 $e7 $e8 $e10 $e11 $e12 $e13 $e14 $e15 $e16 $e17 $e18 $e19 $e20 $e21 $c | resources.Concat "css/style.css" | resources.ToCSS | fingerprint | minify }}
+  {{ $style := slice $e1 $e2 $e3 $e4 $e5 $e6 $e7 $e8 $e10 $e11 $e12 $e13 $e14 $e15 $e16 $e17 $e18 $e19 $e20 $e21 $e22 $c | resources.Concat "css/style.css" | resources.ToCSS | fingerprint | minify }}
 
   <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
 </head>
