@@ -1,6 +1,7 @@
 baseURL: "https://jellyfin.org/"
 languageCode: en-us
 title: "Jellyfin: The Free Software Media System"
+
 permalinks:
   post: "/post/:year/:month/:day/:slug/"
   note: "/note/:year/:month/:day/:slug/"
@@ -31,6 +32,7 @@ menus:
       Url: /contact
       weight: 8
 params:
+  author: "The Jellyfin Team"
   footer:
     firstcolumn:
       - Site content is licensed [CC-BY-ND-4.0](http://creativecommons.org/licenses/by-nd/4.0/)

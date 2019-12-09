@@ -25,7 +25,7 @@ similarities in Go templates.
 
 This document is a brief primer on using Go templates. The [Go docs][gohtmltemplate]
 provide more details.
-
+<!--more-->
 ## Introduction to Go Templates
 
 Go templates provide an extremely simple template language. It adheres to the

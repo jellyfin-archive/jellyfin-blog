@@ -1,23 +1,76 @@
 {{ define "main" }}
 
 {{ if not .IsHome }}
-<h1>{{ .Title | markdownify }}</h1>
+<!-- Hero unit -->
+<div class="page__header">
+	<div class="hero__overlay hero__overlay--gradient"></div>
+	<div class="hero__mask"></div>
+	<div class="page__header__inner">
+		<div class="container">
+			<div class="page__header__content">
+				<div class="page__header__content__inner" id="navConverter">
+					<h1 class="page__header__title">{{ .Title }}</h1>
+					<p class="page__header__text">{{ .Params.subtitle }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 {{ end }}
 
-{{ .Content }}
+<!-- Page content -->
+<div class="page">
+	<div class="container">
+		<div class="page__inner">
+			<div class="page__main">
+				{{if .Content}}
+					<div class="text-container">{{ .Content }}</div>
+				{{else}}
 
-{{ if not .IsHome }}
-<ul>
-	{{ range (where .Data.Pages "Section" "!=" "") }}
+				{{ if not .IsHome }}
+				<div class="text-container text-container--center">
+				<ul class="post-list">
+					{{ range (where .Data.Pages "Section" "!=" "") }}
 
-	<li>
-		<span class="date">{{ .Date.Format "2006/01/02" }}</span> <a href="{{ .URL }}">{{ .Title | markdownify }}</a>
-	</li>
+					<li class="post-block">
+						
+						<h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+						<span> <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+						 	{{ .Date.Format "2 Jan 2006" }}
+						 </time> by 
+						   {{$author:= .Site.Params.author}}
+						   {{if .Params.author }}
+						   {{$author:= .Params.author}}
+						   {{if isset .Site.Data.authors $author}}
+						   {{$author := index .Site.Data.authors .Params.author }}
+						   {{end}}
+						   {{end}}
+						 {{ if isset $author "name" }}
+						 {{$author.name}}
+						 {{else if .Site.Params.author}}
+						 {{.Site.Params.author}}
+						 {{end}}</span>
+						{{ .Summary | safeHTML }}
+						 <footer class="read-more">
+						<a href="{{ .RelPermalink }}">Read more&raquo;</a>
+							   
 
-	<!-- prettier-ignore -->
 
-	{{ end }}
-</ul>
-{{ end }}
 
+						 </footer>
+
+				
+					</li>
+
+
+					{{ end }}
+				</ul>
+				</div>
+				{{end}}
+				{{ end }}
+			</div>
+		</div>
+	</div>
+</div>
+</div>
 {{ end }}
