@@ -48,11 +48,24 @@ single:
     src: /images/undraw_version_control_9bpv.svg
     alt: Jellyfin is Free Software
 gallery:
-  - title: See Jellyfin in action.
-    subtext: Click a screenshot for a full 1080p view.
-    imgtitle: Home  
+  title: See Jellyfin in action.
+  subtitle: Click a screenshot for a full 1080p view.
+  screenshots:
+  - imgtitle: Home  
     src: /images/screenshots/home
-    alt: Jellyfin is Free Software
+    alt: Home screen view
+  - imgtitle: Library  
+    src: /images/screenshots/library
+    alt: Library screen view
+  - imgtitle: Movie Details
+    src: /images/screenshots/movie
+    alt: Movie item detail view
+  - imgtitle: Playback
+    src: /images/screenshots/playback
+    alt: Video playback screen
+  - imgtitle: Live TV EPG
+    src: /images/screenshots/epg
+    alt: Live TV electronic program guide
 cta:
   title: Get started now
   text: Check out our Getting Started guide to download and get set up.
