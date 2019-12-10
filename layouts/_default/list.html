@@ -24,7 +24,11 @@
 		<div class="page__inner">
 			<div class="page__main">
 				{{if .Content}}
-					<div class="text-container">{{ .Content }}</div>
+					{{if eq .Params.justify "center"}}
+						<div class="text-container text-container--center"> {{ .Content }}</div>
+					{{else}}
+						<div class="text-container">{{ .Content }}</div>
+					{{end}}
 				{{else}}
 
 				{{ if not .IsHome }}

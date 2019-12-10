@@ -72,13 +72,15 @@
 }
 
 
-.post-date {
+.post-date, .article-date {
 	display: inline-block;
 	margin-left: 8px;
 	padding-left: 12px;
-	border-left: #d5dbde 1px solid;
 	text-transform: uppercase;
 	white-space: nowrap;
+}
+.post-date {
+	border-left: #d5dbde 1px solid;
 }
 
 .read-more{
@@ -92,4 +94,5 @@ text-align: right;
 
 ul.post-list {
 	list-style-type: none;
+	color: #cccccc;
 }
