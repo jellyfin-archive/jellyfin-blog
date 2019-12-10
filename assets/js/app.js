@@ -127,10 +127,12 @@ document.addEventListener("DOMContentLoaded", function() {
 		if (document.body.contains(document.getElementById("navConverter"))) {
 			var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 			// if the current body position is less than 20 pixels away from our converter, convert
-			if (lastScrollTop > getOffset(document.getElementById("navConverter")).top - 60) {
-				removeClass(document.querySelector(".navbar"), "navbar--extended");
+			if (lastScrollTop > (getOffset(document.getElementById('navConverter')).top - 60)) {
+				removeClass(document.querySelector('.navbar'), 'navbar--extended');
+				removeClass(document.querySelector('.navbar'), 'navfix');
 			} else {
-				addNewClass(document.querySelector(".navbar"), "navbar--extended");
+				addNewClass(document.querySelector('.navbar'), 'navbar--extended');
+				addNewClass(document.querySelector('.navbar'), 'navfix');
 			}
 		}
 

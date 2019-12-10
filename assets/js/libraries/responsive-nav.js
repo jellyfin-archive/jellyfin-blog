@@ -304,6 +304,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			 */
 			open: function() {
 				if (!navOpen) {
+					if (document.querySelector('.navfix')) {
+						removeClass(document.querySelector('.navbar'), 'navbar--extended');
+					};
 					removeClass(nav, "closed");
 					addClass(nav, "opened");
 					addClass(htmlEl, opts.navActiveClass);
@@ -320,6 +323,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			 */
 			close: function() {
 				if (navOpen) {
+					if (document.querySelector('.navfix')) {
+						addClass(document.querySelector('.navbar'), 'navbar--extended');
+					};
 					addClass(nav, "closed");
 					removeClass(nav, "opened");
 					removeClass(htmlEl, opts.navActiveClass);
