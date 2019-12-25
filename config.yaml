@@ -2,6 +2,11 @@ baseURL: "https://jellyfin.org/"
 languageCode: en-us
 title: "Jellyfin: The Free Software Media System"
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 permalinks:
   post: "/post/:year/:month/:day/:slug/"
   note: "/note/:year/:month/:day/:slug/"
@@ -14,7 +19,7 @@ menus:
       Url: /downloads
       weight: 2
     - name: How To Contribute
-      Url: /help-jellyfin
+      Url: /contribute
       weight: 3
     - name: Get Help
       Url: /docs
