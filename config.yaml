@@ -2,35 +2,31 @@ baseURL: "https://jellyfin.org/"
 languageCode: en-us
 title: "Jellyfin: The Free Software Media System"
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 permalinks:
   post: "/post/:year/:month/:day/:slug/"
   note: "/note/:year/:month/:day/:slug/"
 menus:
   main:
+    - name: Blog
+      Url: /posts
+      weight: 1
     - name: Downloads
       Url: /downloads
-      weight: 1
-    - name: Forum
-      Url: https://forum.jellyfin.org/
       weight: 2
-    - name: Translations
-      Url: https://translate.jellyfin.org/
+    - name: How To Contribute
+      Url: /contribute
       weight: 3
-    - name: Feature Requests
-      Url: https://features.jellyfin.org/
-      weight: 4
-    - name: GitHub
-      Url: https://github.com/jellyfin
-      weight: 5
-    - name: Documentation
+    - name: Get Help
       Url: /docs
-      weight: 6
-    - name: Help Jellyfin
-      Url: /help-jellyfin
-      weight: 7
-    - name: Social/Contact Us
+      weight: 4
+    - name: Contact Us/Links
       Url: /contact
-      weight: 8
+      weight: 5
 params:
   author: "The Jellyfin Team"
   footer:
