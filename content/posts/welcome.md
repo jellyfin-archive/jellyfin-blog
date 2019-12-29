@@ -1,5 +1,5 @@
 +++
-title = "Welcome to the Updated Jellyfin.Org"
+title = "Welcome to the updated Jellyfin.Org"
 subtitle = "Static pages built with Hugo, and more communication."
 author = "Anthony Lavado"
 githubusername = "anthonylavado"
