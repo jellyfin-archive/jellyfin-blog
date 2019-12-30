@@ -54,7 +54,7 @@
 	margin-bottom: 8pt;
 }
 
-.footer__link, .footer a, .text-container a{
+.footer__link, .footer a, .text-container a:not(.button) {
 	color: #6C63FF;
 	border-bottom: 1px dotted #6C63FF;
 	padding-bottom: 1pt;
