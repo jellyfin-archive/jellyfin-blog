@@ -11,6 +11,16 @@ For social updates, we're on a few popular sites:
 - [/r/jellyfin](https://www.reddit.com/r/jellyfin) on Reddit
 - [@Jellyfin](https://www.twitter.com/jellyfin) on Twitter
 
+---
+## Resources
+
+- [Jellyfin Forum](https://forum.jellyfin.org)
+- [Jellyfin Documentation](https://jellyfin.org/docs)
+- [Jellyfin Translations](https://translate.jellyfin.org)
+- [Jellyfin Feature Requests](https://features.jellyfin.org)
+- [Jellyfin Project on GitHub](https://github.com/jellyfin)
+
+---
 ## Chat
 To chat, we primarily use [Riot](https://www.riot.im) to access the [Matrix](https://www.matrix.org) network.
 - [#jellyfin:matrix.org](https://matrix.to/#/#jellyfin:matrix.org): General chat related to the project

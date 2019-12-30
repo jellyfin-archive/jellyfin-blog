@@ -3,6 +3,9 @@ title = "How to Contribute"
 subtitle = "Jellyfin is a community project, run by volunteers. We're always looking for additional help from anyone who is able."
 date = "2019-12-08"
 justify = "center"
+aliases = [
+   "help-jellyfin/"
+]
 +++
 
 <p>If you're interesting in helping the Jellyfin project, there are a few different ways to contribute depending on your skills and availability. Of course, simply using Jellyfin, finding issues, and reporting them, are a major help to our project, even if none of these apply to you!</p>
