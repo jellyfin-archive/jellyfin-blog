@@ -12,11 +12,11 @@
 
 					{{ if .accent }}
 
-					<a href="{{ .title | safeURL }}" class="button button__accent">{{ .title | markdownify }}</a>
+					<a href="{{ .url | safeURL }}" class="button button__accent">{{ .title | markdownify }}</a>
 
 					{{ else }}
 
-					<a href="{{ .title | safeURL }}" class="button hero__button">{{ .title | markdownify }}</a>
+					<a href="{{ .url | safeURL }}" class="button hero__button">{{ .title | markdownify }}</a>
 
 					{{ end }}
 
