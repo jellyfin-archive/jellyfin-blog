@@ -1,8 +1,10 @@
 ---
 hero:
   title: The Free Software Media System
-  text: Jellyfin is the Free Software Media System that puts you in control of managing and streaming your media. There are no strings attached, no premium licenses or features, and no hidden agendas.
+  text: Jellyfin puts you in control of managing and streaming your media. There are no strings attached, no premium licenses or features, and no hidden agendas.
   button:
+    - title: Try it Now
+      url: https://demo.jellyfin.org/stable
     - title: Download Jellyfin
       url: /downloads/
       accent: yes
@@ -53,22 +55,22 @@ gallery:
   screenshots:
   - imgtitle: Home  
     src: /images/screenshots/home
-    alt: Home screen view
+    alt: Home
   - imgtitle: Library  
     src: /images/screenshots/library
-    alt: Library screen view
+    alt: Library
   - imgtitle: Movie Details
     src: /images/screenshots/movie
-    alt: Movie item detail view
+    alt: Movie Details
   - imgtitle: Playback
     src: /images/screenshots/playback
-    alt: Video playback screen
+    alt: Playback
   - imgtitle: Live TV EPG
     src: /images/screenshots/epg
-    alt: Live TV electronic program guide
+    alt: Live TV EPG
 cta:
-  title: Get started now
-  text: Check out our Getting Started guide to download and get set up.
+  title: Get Started Now
+  text: Check out our Getting Started guide to download and set up your server today.
   button:
     title: Download Jellyfin
     url: /docs/general/#getting-started
