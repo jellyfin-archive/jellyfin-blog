@@ -1,12 +1,11 @@
 +++
-title = "Welcome to the updated Jellyfin.Org"
+title = "Welcome to the New Website!"
 subtitle = "Static pages built with Hugo, and more communication."
 author = "Anthony Lavado"
 githubusername = "anthonylavado"
 date = "2019-12-25"
 justify = "center"
 +++
-
 
 Welcome to our brand new website.
 <!--more-->

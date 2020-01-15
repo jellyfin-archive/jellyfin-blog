@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ if not .IsHome }}
-<!-- Hero unit -->
+<!-- hero unit -->
 <div class="page__header">
 	<div class="hero__overlay hero__overlay--gradient"></div>
 	<div class="hero__mask"></div>
@@ -17,8 +17,6 @@
 	</div>
 </div>
 {{ end }}
-
-<!-- Page content -->
 <div class="page">
 	<div class="container">
 		<div class="page__inner">
@@ -26,7 +24,6 @@
 				{{if .Content}}
 					{{if eq .Params.justify "center"}}
 						<div class="text-container text-container--center"> {{ .Content }}</div>
-
 					{{else}}
 						<div class="text-container">{{ .Content }}</div>
 					{{end}}
@@ -53,23 +50,15 @@
 						  {{end}}
 						  {{end}}
 						 </span>
-						{{ .Summary | safeHTML }}
-						 <footer class="read-more">
-						<a href="{{ .RelPermalink }}">Read more&raquo;</a>
-							   
-
-
-
-						 </footer>
-
-				
+						{{ .Params.Subtitle | safeHTML }}
+					 	<footer class="read-more">
+							<a href="{{ .RelPermalink }}">Read more&raquo;</a>
+				 		</footer>
 					</li>
-
-
 					{{ end }}
 				</ul>
 				</div>
-				{{end}}
+				{{ end }}
 				{{ end }}
 			</div>
 		</div>
