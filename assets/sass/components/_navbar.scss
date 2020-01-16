@@ -27,14 +27,14 @@
 	color: #fff;
 	text-decoration: none;
 }
-  .navbar__logo img {
+
+.navbar__logo img {
   	size: 1em;
   	height: 50px;
   	max-width: 80%;
   	display: flex;
   	float: left;
-
-  }
+}
 
 .navbar__menu {
 	display: none;
@@ -155,9 +155,11 @@
 	.js .nav__mobile {
 		position: relative;
 	}
+
 	.js .nav__mobile.closed {
 		max-height: none;
 	}
+
 	.nav-toggle {
 		display: none;
 	}

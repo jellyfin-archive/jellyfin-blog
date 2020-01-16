@@ -4,19 +4,14 @@
 		<p>{{ .Params.about.text | markdownify }}</p>
 	</div>
 	<div class="container">
-<!-- 		<div class="steps__inner">
-			{{ range $i, $box :=  .Params.about.box }}
-
-			{{ if eq (mod $i 4) 0 }}
-		</div> -->
 		<div class="steps__inner">
-			<!-- {{ end }} -->
-				<div class="step">
-					<div class="step__media"><img src="{{ $box.src }}" alt="{{ $box.alt }}" class="step__image" /></div>
-					<h4>{{ $box.title | markdownify }}</h4>
-					<p class="step__text">{{ $box.text | markdownify }}</p>
-				 </div>
-			<!-- {{ end }} -->
+			{{ range $i, $box :=  .Params.about.box }}
+			<div class="step">
+				<div class="step__media"><img src="{{ $box.src }}" alt="{{ $box.alt }}" class="step__image"></div>
+				<h4>{{ $box.title | markdownify }}</h4>
+				<p class="step__text">{{ $box.text | markdownify }}</p>
+			</div>
+			{{ end }}
 		</div>
 	</div>
 </div>

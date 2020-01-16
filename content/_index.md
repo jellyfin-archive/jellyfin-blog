@@ -6,7 +6,7 @@ hero:
     - title: Try it Now
       url: https://demo.jellyfin.org/stable
     - title: Download Jellyfin
-      url: /downloads/
+      url: /downloads
       accent: yes
     - title: Learn More
       url: /docs/general/#getting-started
@@ -33,10 +33,10 @@ about:
 single:
   - title: Your media, for wherever you are.
     text:
-      Jellyfin works on major web browsers, right now. Chromecast is supported when using Google Chrome (desktop) or Android.
+      Jellyfin works on all major web browsers. Chromecast is supported when using Google Chrome or the official Android client.
 
 
-      There is currently a beta for Android, Android TV and Fire TV apps. Other apps for other platforms are in development and are on their way.
+      There are clients for Android, Android TV, Fire TV and many other platforms. New clients are currently in development.
     src: /images/undraw_Devices_e67q.svg
     alt: Your media, for wherever you are
   - title: No centralized tracking. It's your data.
@@ -50,8 +50,8 @@ single:
     src: /images/undraw_version_control_9bpv.svg
     alt: Jellyfin is Free Software
 gallery:
-  title: See Jellyfin in action.
-  subtitle: Click a screenshot for a full 1080p view.
+  title: Jellyfin in Action
+  subtitle: Click a screenshot for a high resolution version.
   screenshots:
   - imgtitle: Home  
     src: /images/screenshots/home

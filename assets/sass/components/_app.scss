@@ -43,7 +43,6 @@
 }
 
 .app__inner{
-
 	@include desktop{
 		display: flex;
 	}
@@ -60,7 +59,6 @@
 	}
 }
 
-
 .app__main{
 	flex-grow: 1;
 }
@@ -70,5 +68,5 @@
 }
 
 .app__image{
-	max-width:100%;
+	max-width: 100%;
 }

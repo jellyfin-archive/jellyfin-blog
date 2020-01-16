@@ -1,9 +1,9 @@
 resources
 .idea/
-# Hugo default output directory
+
+# Hugo
 /public
 
-## OS Files
 # Windows
 Thumbs.db
 ehthumbs.db

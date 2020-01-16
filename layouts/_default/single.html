@@ -18,13 +18,7 @@
 <div class="page">
 	<div class="container">
 		<div class="page__inner">
-			<!-- <div class="page__menu">
-				<ul class="vMenu">
-					{{ .TableOfContents }}
-				</ul>
-			</div> -->
 			<div class="page__main">
-
 				{{if eq .Params.justify "center"}}
 				<div class="text-container text-container--center">
 					<span> <time class="article-date"
@@ -44,8 +38,7 @@
 					{{ .Content }}
 				</div>
 				{{else}}
-				<div class="text-container">
-					{{ .Content }}</div>
+				<div class="text-container">{{ .Content }}</div>
 				{{end}}
 			</div>
 		</div>
