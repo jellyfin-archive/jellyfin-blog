@@ -50,10 +50,10 @@
 						  {{end}}
 						  {{end}}
 						 </span>
-						{{ .Params.Subtitle | safeHTML }}
-					 	<footer class="read-more">
-							<a href="{{ .RelPermalink }}">Read more&raquo;</a>
-				 		</footer>
+						 {{ .Summary | safeHTML }}
+					 	 <footer class="read-more">
+							 <a href="{{ .RelPermalink }}">Read more&raquo;</a>
+				 		 </footer>
 					</li>
 					{{ end }}
 				</ul>

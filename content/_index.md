@@ -6,7 +6,7 @@ hero:
     - title: Try it Now
       url: https://demo.jellyfin.org/stable
     - title: Download Jellyfin
-      url: /downloads/
+      url: /downloads
       accent: yes
     - title: Learn More
       url: /docs/general/#getting-started
@@ -33,7 +33,7 @@ about:
 single:
   - title: Your media, for wherever you are.
     text:
-      Jellyfin works on major web browsers, right now. Chromecast is supported when using Google Chrome or Android.
+      Jellyfin works on all major web browsers. Chromecast is supported when using Google Chrome or the official Android client.
 
 
       There are clients for Android, Android TV, Fire TV and many other platforms. New clients are currently in development.

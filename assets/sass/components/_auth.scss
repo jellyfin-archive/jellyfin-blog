@@ -3,7 +3,7 @@
 }
 
 .auth__inner{
-    // Triple so that the bottom is largely padded too...
+	// Triple so that the bottom is largely padded too...
 	min-height: calc( 100vh - #{$navbar-height + 96pt});
 	display: flex;
 	align-items: center;
