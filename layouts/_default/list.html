@@ -21,13 +21,13 @@
 	<div class="container">
 		<div class="page__inner">
 			<div class="page__main">
-				{{if .Content}}
-					{{if eq .Params.justify "center"}}
-						<div class="text-container text-container--center"> {{ .Content }}</div>
-					{{else}}
+				{{ if .Content }}
+					{{ if eq .Params.justify "center" }}
+						<div class="text-container text-container--center">{{ .Content }}</div>
+					{{ else }}
 						<div class="text-container">{{ .Content }}</div>
-					{{end}}
-				{{else}}
+					{{ end }}
+				{{ else }}
 
 				{{ if not .IsHome }}
 				<div class="text-container text-container--center">
@@ -40,15 +40,15 @@
 						<span> <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
 						 	{{ .Date.Format "2 Jan 2006" }}
 						 </time> by 
-						  {{if .Params.githubusername}}
-						  <a href="https://github.com/{{.Params.githubusername}}">{{.Params.author}}</a>
-						  {{else}}
-						  {{if .Params.author}}
-						  {{.Params.author}}
-						  {{else}}
-						  {{.Site.Params.author}}
-						  {{end}}
-						  {{end}}
+						  {{ if .Params.githubusername }}
+						  <a href="https://github.com/{{ .Params.githubusername }}">{{ .Params.author }}</a>
+						  {{ else }}
+						  {{ if .Params.author }}
+						  {{ .Params.author }}
+						  {{ else }}
+						  {{ .Site.Params.author }}
+						  {{ end }}
+						  {{ end }}
 						 </span>
 						 {{ .Summary | safeHTML }}
 					 	 <footer class="read-more">

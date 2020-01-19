@@ -15,7 +15,7 @@ For social updates, we're on a few popular sites:
 ## Resources
 
 - [Forum](https://forum.jellyfin.org)
-- [Documentation](https://jellyfin.org/docs)
+- [Documentation](https://docs.jellyfin.org)
 - [Translations](https://translate.jellyfin.org)
 - [Feature Requests](https://features.jellyfin.org)
 - [GitHub](https://github.com/jellyfin)

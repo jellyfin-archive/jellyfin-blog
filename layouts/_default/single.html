@@ -19,27 +19,27 @@
 	<div class="container">
 		<div class="page__inner">
 			<div class="page__main">
-				{{if eq .Params.justify "center"}}
+				{{ if eq .Params.justify "center" }}
 				<div class="text-container text-container--center">
 					<span> <time class="article-date"
 							datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
 							{{ .Date.Format "2 Jan 2006" }}
 						</time> by
-					  {{if .Params.githubusername}}
-					   <a href="https://github.com/{{.Params.githubusername}}">{{.Params.author}}</a> &nbsp; <img src="https://github.com/{{.Params.githubusername}}.png?size=40"/>
-					  {{else}}
-					  {{if .Params.author}}
-					  {{.Params.author}}
-					  {{else}}
-					  {{.Site.Params.author}}
-					  {{end}}
-					  {{end}}
+					  {{ if .Params.githubusername }}
+					   <a href="https://github.com/{{ .Params.githubusername }}">{{ .Params.author }}</a> &nbsp; <img src="https://github.com/{{ .Params.githubusername }}.png?size=40"/>
+					  {{ else }}
+					  {{ if .Params.author }}
+					  {{ .Params.author }}
+					  {{ else }}
+					  {{ .Site.Params.author }}
+					  {{ end }}
+					  {{ end }}
 						</span>
 					{{ .Content }}
 				</div>
-				{{else}}
+				{{ else }}
 				<div class="text-container">{{ .Content }}</div>
-				{{end}}
+				{{ end }}
 			</div>
 		</div>
 	</div>
