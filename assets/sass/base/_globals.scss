@@ -1,4 +1,4 @@
-html{
+html {
 	box-sizing: border-box;
 	background-color: $background;
 }
@@ -7,31 +7,31 @@ html{
 	box-sizing: inherit;
 }
 
-.invisible{
+.invisible {
 	opacity: 0;
 	transition: 0.7s;
 }
 
-.fakefield{
+.fakefield {
 	display: none;
 }
 
-.left-align{
+.left-align {
 	text-align: left;
 }
 
-.center, center-align{
+.center, center-align {
 	text-align: center;
 }
 
-.right-align{
+.right-align {
 	text-align: right;
 }
 
-.stress{
+.stress {
 	color: $text-dark;
 }
 
-img, svg{
+img, svg {
 	max-width: 100%;
 }
