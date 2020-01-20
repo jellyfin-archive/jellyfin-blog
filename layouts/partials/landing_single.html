@@ -6,7 +6,7 @@
 			<div class="expanded__content">
 				<h2 class="expanded__title">{{ .title | markdownify }}</h2>
 				<!-- stupid stupid Hugo hack, see https://discourse.gohugo.io/t/prevent-markdownify-to-strip-first-p-tags/7854/13?u=anthonylavado -->
-				{{ - $markdown := .text | markdownify - }}
+				{{- $markdown := .text | markdownify -}}
 				{{ if .spectext }}
 					{{ .spectext | safeHTML }}
 				{{ else }}
