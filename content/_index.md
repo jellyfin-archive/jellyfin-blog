@@ -9,7 +9,7 @@ hero:
       url: /downloads
       accent: yes
     - title: Learn More
-      url: /docs/general/#getting-started
+      url: https://docs.jellyfin.org
 about:
   title: What is Jellyfin?
   text: Jellyfin is a free program that lets you collect, control, and stream all your favourite media.
