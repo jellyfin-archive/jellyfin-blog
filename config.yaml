@@ -20,7 +20,7 @@ menus:
       Url: /contribute
       weight: 3
     - name: Documentation
-      Url: /docs
+      Url: https://docs.jellyfin.org
       weight: 4
     - name: Contact
       Url: /contact
