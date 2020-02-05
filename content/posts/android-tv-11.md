@@ -33,7 +33,7 @@ All crash reports are retained for 30 days and can only be reviewed by a small g
 More information can be found in the [issue](https://github.com/jellyfin/jellyfin-androidtv/issues/193) about this change.
 
 ## Release Notes
-Full release notes available on [Github](https://github.com/jellyfin/jellyfin-androidtv/releases/tag/v0.11.0).
+Full release notes available on [GitHub](https://github.com/jellyfin/jellyfin-androidtv/releases/tag/v0.11.0).
 
 ## Download Now
 <a class="NoLinkLook" href='https://play.google.com/store/apps/details?id=org.jellyfin.androidtv&utm_source=blog&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="153" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
