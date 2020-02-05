@@ -14,12 +14,13 @@ Thank you for using Jellyfin! This is a major update for the Android TV client.
 > ⚠️
   We have added crash reporting. Read the notes below for more information.
 
+
 ## Highlights
  - Upgraded ExoPlayer to version 2
    This means video playback should be a lot smoother now!
  - New home screen
    The newly made home screen now looks more or less the same as the webclient. It will display the sections you have chosen under your "Home" preferences.  
-   _Note: changing sections is only available in the web version for now_
+   *Note: changing sections is only available in the web version for now*
  - Integration with "Next Up" section on Android TV devices
 
 ## Crash Reporting
@@ -36,6 +37,7 @@ More information can be found in the [issue](https://github.com/jellyfin/jellyfi
 Full release notes available on [GitHub](https://github.com/jellyfin/jellyfin-androidtv/releases/tag/v0.11.0).
 
 ## Download Now
+
 <a class="NoLinkLook" href='https://play.google.com/store/apps/details?id=org.jellyfin.androidtv&utm_source=blog&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="153" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
 Amazon App Store link soon.
