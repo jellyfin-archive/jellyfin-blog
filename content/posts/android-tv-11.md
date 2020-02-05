@@ -37,8 +37,8 @@ Full release notes available on [GitHub](https://github.com/jellyfin/jellyfin-an
 
 ## Download Now
 
-<a class="NoLinkLook" href='https://play.google.com/store/apps/details?id=org.jellyfin.androidtv&utm_source=blog&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="153" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+<a class="NoLinkLook" href='https://play.google.com/store/apps/details?id=org.jellyfin.androidtv&utm_source=blog&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="153" alt='Get it on Google Play' src='/images/google_play_en_badge_web_generic.png'/></a>
 
-<a class="NoLinkLook" href='http://www.amazon.com/gp/product/B07TX7Z725/ref=jellyfin_for_fire_tv'><img width="153" alt='Available at Amazon App Store' src='/images/amazon-appstore-badge-english-black.png'/></a>
+<a class="NoLinkLook" href='https://www.amazon.com/gp/product/B07TX7Z725/ref=jellyfin_for_fire_tv'><img width="153" alt='Available at Amazon App Store' src='/images/amazon-appstore-badge-english-black.png'/></a>
 
 Direct downloads available from [our repository](https://repo.jellyfin.org/releases/client/androidtv/).
