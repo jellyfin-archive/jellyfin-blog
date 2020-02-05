@@ -37,3 +37,7 @@ Full release notes available on [Github](https://github.com/jellyfin/jellyfin-an
 
 ## Download Now
 <a class="NoLinkLook" href='https://play.google.com/store/apps/details?id=org.jellyfin.androidtv&utm_source=blog&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="153" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+
+Amazon App Store link soon.
+
+Direct downloads available from [our repo](https://repo.jellyfin.org/releases/client/androidtv/).
