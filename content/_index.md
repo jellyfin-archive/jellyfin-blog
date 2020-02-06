@@ -16,19 +16,19 @@ about:
   box:
     - title: Movies
       text: Holds your entire movie collection, and displays a beautiful collection of posters.
-      src: /images/undraw_movie_night_93wl.svg
+      src: /images/undraw-movie-night.svg
       alt: Movies
     - title: TV Shows
       text: Collect your TV Shows, and have them automatically organized by season.
-      src: /images/undraw_horror_movie_3988.svg
+      src: /images/undraw-horror-movie.svg
       alt: TV Shows
     - title: Music
       text: Enjoy your own music collection. Make playlists, and listen on the go.
-      src: /images/undraw_music_r1se.svg
+      src: /images/undraw-music.svg
       alt: Music
     - title: Live TV & DVR
       text: Watch Live TV and set automatic recordings to expand your media library.
-      src: /images/youtube_tutorial_2gn3.svg
+      src: /images/undraw-youtube-tutorial.svg
       alt: Live TV & DVR
 single:
   - title: Your media, for wherever you are.
@@ -37,17 +37,17 @@ single:
 
 
       There are clients for Android, Android TV, Fire TV and many other platforms. New clients are currently in development.
-    src: /images/undraw_Devices_e67q.svg
+    src: /images/undraw-devices.svg
     alt: Your media, for wherever you are
   - title: No centralized tracking. It's your data.
     text: Jellyfin has no built-in tracking, and no central servers collecting your data. We believe in keeping our software open and transparent for everyone to see it, use it, and build on it.
-    src: /images/undraw_Security_on_s9ym.svg
+    src: /images/undraw-security.svg
     alt: No centralized tracking. It's your data.
   - title: Free Software, and growing.
     spectext: <p class="expanded_text">Jellyfin is Free Software, licensed with the GPL.</p>
       <p class="expanded_text">Want to help contribute?<br>
       There's lots of ways to do so, and you don't even have to code.<br> See our <a href="/docs/general/contributing/" class="footer__link">Contribution Guide</a>.</p>
-    src: /images/undraw_version_control_9bpv.svg
+    src: /images/undraw-version-control.svg
     alt: Jellyfin is Free Software
 gallery:
   title: Jellyfin in Action
