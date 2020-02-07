@@ -15,6 +15,7 @@ Thank you for using Jellyfin! This is a major update for the Android TV client.
   We have added crash reporting. Read the notes below for more information.
 
 ## Highlights
+
  - Upgraded ExoPlayer to version 2
    This means video playback should be a lot smoother now!
  - New home screen
@@ -33,12 +34,13 @@ All crash reports are retained for 30 days and can only be reviewed by a small g
 More information can be found in the [issue](https://github.com/jellyfin/jellyfin-androidtv/issues/193) about this change.
 
 ## Release Notes
+
 Full release notes available on [GitHub](https://github.com/jellyfin/jellyfin-androidtv/releases/tag/v0.11.0).
 
 ## Download Now
 
-<a class="NoLinkLook" href='https://play.google.com/store/apps/details?id=org.jellyfin.androidtv&utm_source=blog&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="153" alt='Get it on Google Play' src='/images/google_play_en_badge_web_generic.png'/></a>
+<a class="NoLinkLook" href='https://play.google.com/store/apps/details?id=org.jellyfin.androidtv&utm_source=blog&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img width="153" alt='Get it on Google Play' src='/images/store-icons/google-play.png'/></a>
 
-<a class="NoLinkLook" href='https://www.amazon.com/gp/product/B07TX7Z725/ref=jellyfin_for_fire_tv'><img width="153" alt='Available at Amazon App Store' src='/images/amazon-appstore-badge-english-black.png'/></a>
+<a class="NoLinkLook" href='https://www.amazon.com/gp/product/B07TX7Z725/ref=jellyfin_for_fire_tv'><img width="153" alt='Available at Amazon App Store' src='/images/store-icons/amazon.png'/></a>
 
-Direct downloads available from [our repository](https://repo.jellyfin.org/releases/client/androidtv/).
+Direct downloads are always available from [our repository](https://repo.jellyfin.org/releases/client/androidtv/).
