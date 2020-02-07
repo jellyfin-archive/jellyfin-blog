@@ -1,7 +1,7 @@
 +++
 title = "Client Spotlight: MPV Shim"
 subtitle = "Watch all your favorite content without transcoding!"
-author = “Ian Walton”
+author = "Ian Walton"
 githubusername = "iwalton3"
 date = "2020-02-07"
 justify = "center"
