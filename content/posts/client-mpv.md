@@ -46,7 +46,7 @@ Most of the options can be accessed using the menu during playback.
 Press `C` on your computer or use the arrow-based navigation controls in the mobile client when supported.
 
 
-<img src="/images/mpg-shim/menu.png" name="Configuration Menu" />
+<img src="/images/mpv-shim/menu.png" name="Configuration Menu" />
 
 
 You can adjust playback settings and preferences in the menu with ease.
