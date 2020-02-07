@@ -73,5 +73,5 @@ cta:
   text: Check out our Getting Started guide to download and set up your server today.
   button:
     title: Download Jellyfin
-    url: /docs/general/#getting-started
+    url: /downloads
 ---
