@@ -1,5 +1,5 @@
 +++
-title = "Client Spotlight: MPV"
+title = "Client Spotlight: MPV Shim"
 subtitle = "Watch all your favorite content without transcoding!"
 author = “Ian Walton”
 githubusername = "iwalton3"
@@ -35,7 +35,7 @@ The client will run in a tray icon, which allows you to access the configuration
 
 Casting media is easy.
 
-Open the menu in the Jellyfin web or mobile clients and select Jellyfin MPV Shim.
+Open the Play On menu in the Jellyfin web or mobile clients and select Jellyfin MPV Shim.
 
 Then play media normally.
 
