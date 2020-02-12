@@ -13,7 +13,10 @@
 
 					<a href="{{ .url | safeURL }}" class="button button__accent">{{ .title | markdownify }}</a>
 
-					{{ else }}
+					{{ else if .scroll}}
+					<a href="{{ .url | safeURL }}" class="button hero__button scroll">{{ .title | markdownify }}</a>
+					
+					{{else}}
 
 					<a href="{{ .url | safeURL }}" class="button hero__button">{{ .title | markdownify }}</a>
 
