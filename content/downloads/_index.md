@@ -1,15 +1,15 @@
 +++
 title = "Downloads"
-subtitle = "You can download the latest releases of the Jellyfin Server below!"
+subtitle = "You can download the latest releases of Jellyfin Server below!"
 date = "2019-12-08"
 justify = "center"
 +++
 
 <div class="text-container">
-    <h3 class="page__main__title">Server Downloads</h3>
-    <p><i>Stable or nightly?</i><br />Generally, if you're a new user or value stability, use Stable. It won't change
-        very often.<br />If you want to help test the latest improvements and features, and can handle some occasional
-        breakage, use Nightly. <b>Always</b> back up your existing Jellyfin data before testing nightly releases.</p>
+    <h3 class="page__main__title">Stable or Nightly?</h3>
+    <p>Generally, if you're a new user or value stability use the stable version. It won't change
+        very often. If you want to help test the latest improvements and features and can handle some occasional
+        breakage, use the nightly version. Always back up your existing configuration before testing nightly releases.</p>
     <div class="docker">
         <h4>Docker</h4>
         <p>Run Jellyfin in Docker. Example commands store data in "/srv/jellyfin" and assume your media is stored under
@@ -55,7 +55,7 @@ docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /
         </div>
     </div>
     <div class="debian">
-        <h4>Debian/Ubuntu</h4>
+        <h4>Debian and Ubuntu</h4>
         <p>Install Jellyfin via our Apt repository or via manual archives (.deb).</p>
         <p><i>Note:</i> Jellyfin is not explicitly packaged for Linux Mint or other Debuntu derivatives. Use the closest
             equivalent Debian or Ubuntu version instead if the commands below throw errors.</p>
@@ -146,7 +146,7 @@ makepkg -si</code></pre>
         </div>
     </div>
     <div class="fedora">
-        <h4>Fedora/CentOS</h4>
+        <h4>Fedora and CentOS</h4>
         <p>RPM archives for both Fedora and CentOS are provided.</p>
         <p>
             <a href="https://repo.jellyfin.org/releases/server/fedora" class="button button__accent">Stable Fedora</a>

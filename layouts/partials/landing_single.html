@@ -5,7 +5,7 @@
 			<div class="expanded__media"><img src="{{ .src }}" alt="{{ .alt }}" class="expanded__image" /></div>
 			<div class="expanded__content">
 				<h2 class="expanded__title">{{ .title | markdownify }}</h2>
-				<!-- stupid stupid Hugo hack, see https://discourse.gohugo.io/t/prevent-markdownify-to-strip-first-p-tags/7854/13?u=anthonylavado -->
+				<!-- https://discourse.gohugo.io/t/prevent-markdownify-to-strip-first-p-tags/7854/13 -->
 				{{- $markdown := .text | markdownify -}}
 				{{ if .spectext }}
 					{{ .spectext | safeHTML }}

@@ -27,12 +27,12 @@ To chat, we primarily use [Riot](https://www.riot.im) to access the [Matrix](htt
 - [#jellyfin:matrix.org](https://matrix.to/#/#jellyfin:matrix.org): General chat related to the project
 - [#jellyfin-announce:matrix.org](https://matrix.to/#/#jellyfin-announce:matrix.org): Announcements for releases
 - [#jellyfin-troubleshooting:matrix.org](https://matrix.to/#/#jellyfin-troubleshooting:matrix.org"): User troubleshooting
-* [#jellyfin-dev:matrix.org](https://matrix.to/#/#jellyfin-dev:matrix.org): Main room for development communication
-* [#jellyfin-app-dev:matrix.org](https://matrix.to/#/#jellyfin-app-dev:matrix.org): Client and Web development
-* [#jellyfin-offtopic:matrix.org](https://matrix.to/#/#jellyfin-offtopic:matrix.org): Chat about anything
+- [#jellyfin-dev:matrix.org](https://matrix.to/#/#jellyfin-dev:matrix.org): Main room for development communication
+- [#jellyfin-app-dev:matrix.org](https://matrix.to/#/#jellyfin-app-dev:matrix.org): Client and Web development
+- [#jellyfin-offtopic:matrix.org](https://matrix.to/#/#jellyfin-offtopic:matrix.org): Chat about anything
 
-## IRC Channels
+## IRC
 
-Some channels are bridged from Matrix to freenode.net channels.
-* [#jellyfin](ircs://chat.freenode.net:6697/#jellyfin) - [Webchat](https://webchat.freenode.net/#jellyfin)
-* [#jellyfin-dev](ircs://chat.freenode.net:6697/#jellyfin-dev) - [Webchat](https://webchat.freenode.net/#jellyfin-dev)
+Some channels are bridged from Matrix to [Freenode](https://freenode.net) for convenience.
+- [#jellyfin](ircs://chat.freenode.net:6697/#jellyfin) - [Webchat](https://webchat.freenode.net/#jellyfin)
+- [#jellyfin-dev](ircs://chat.freenode.net:6697/#jellyfin-dev) - [Webchat](https://webchat.freenode.net/#jellyfin-dev)

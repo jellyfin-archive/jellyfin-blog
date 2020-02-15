@@ -1,7 +1,7 @@
 <div class="screenshots landing__section">
 	<div class="container">
 		<h2>{{ .Params.gallery.title | markdownify }}</h2>
-		<!-- stupid stupid Hugo hack, see https://discourse.gohugo.io/t/prevent-markdownify-to-strip-first-p-tags/7854/13?u=anthonylavado -->
+		<!-- https://discourse.gohugo.io/t/prevent-markdownify-to-strip-first-p-tags/7854/13 -->
 		{{- $markdown := .Params.gallery.subtitle | markdownify -}}
 		{{ if .Params.gallery.spectext }}
 			{{ .spectext | safeHTML }}
