@@ -177,6 +177,7 @@ select {
 	border-radius: 50%;
 	border: 1px solid $text;
 }
+
 [type="radio"]:not(:checked) + label:after {
 	transition: 0.28s ease;
 	border-radius: 50%;
@@ -190,6 +191,7 @@ select {
 	border-radius: 50%;
 	border: 1px solid transparent;
 }
+
 [type="radio"]:checked + label:after {
 	border-radius: 50%;
 	border: 1px solid $primary;
@@ -205,13 +207,16 @@ select {
 	border-color: $line;
 	cursor: default;
 }
+
 [type="radio"]:disabled + label {
 	color: $line;
 	cursor: default;
 }
+
 [type="radio"]:disabled:not(:checked) + label:before {
 	border-color: $line;
 }
+
 [type="radio"]:disabled:checked + label:after {
 	background-color: $line;
 	border-color: $text;

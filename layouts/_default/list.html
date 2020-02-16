@@ -37,23 +37,23 @@
 					<li class="post-block">
 						
 						<h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-						<span> <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-						 	{{ .Date.Format "2 Jan 2006" }}
-						 </time> by 
-						  {{ if .Params.githubusername }}
-						  <a href="https://github.com/{{ .Params.githubusername }}">{{ .Params.author }}</a>
-						  {{ else }}
-						  {{ if .Params.author }}
-						  {{ .Params.author }}
-						  {{ else }}
-						  {{ .Site.Params.author }}
-						  {{ end }}
-						  {{ end }}
-						 </span>
-						 {{ .Summary | safeHTML }}
-					 	 <footer class="read-more">
-							 <a href="{{ .RelPermalink }}">Read more&raquo;</a>
-				 		 </footer>
+						<span><time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+							{{ .Date.Format "2 Jan 2006" }}
+							</time> by 
+							{{ if .Params.githubusername }}
+							<a href="https://github.com/{{ .Params.githubusername }}">{{ .Params.author }}</a>
+							{{ else }}
+							{{ if .Params.author }}
+							{{ .Params.author }}
+							{{ else }}
+							{{ .Site.Params.author }}
+							{{ end }}
+							{{ end }}
+						</span>
+						{{ .Summary | safeHTML }}
+						<footer class="read-more">
+							<a href="{{ .RelPermalink }}">Read More &raquo;</a>
+						</footer>
 					</li>
 					{{ end }}
 				</ul>
@@ -63,6 +63,5 @@
 			</div>
 		</div>
 	</div>
-</div>
 </div>
 {{ end }}
