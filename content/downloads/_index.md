@@ -95,6 +95,7 @@ wget -O - https://repo.jellyfin.org/jellyfin_team.gpg.key | sudo apt-key add -
 echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/$( awk -F'=' '/^ID=/{ print $NF }' /etc/os-release ) $( awk -F'=' '/^VERSION_CODENAME=/{ print $NF }' /etc/os-release ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list
 sudo apt update
 sudo apt install jellyfin</code></pre>
+        <p>Once installed, Jellyfin will be running as a service. Manage it with <pre><code>sudo systemctl {action} jellyfin.service</code></pre> or <pre><code>sudo service jellyfin {action}</code></pre></p>
         </div>
         <div id="deb_repo_nightly" style="display:none;">
             <pre><code>sudo apt install apt-transport-https
@@ -102,6 +103,7 @@ wget -O - https://repo.jellyfin.org/jellyfin_team.gpg.key | sudo apt-key add -
 echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/$( awk -F'=' '/^ID=/{ print $NF }' /etc/os-release ) $( awk -F'=' '/^VERSION_CODENAME=/{ print $NF }' /etc/os-release ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list
 sudo apt update
 sudo apt install jellyfin-nightly</code></pre>
+        <p>Once installed, Jellyfin will be running as a service. Manage it with <pre><code>sudo systemctl {action} jellyfin.service</code></pre> or <pre><code>sudo service jellyfin {action}</code></pre></p>
         </div>
     </div>
     <div class="arch">
