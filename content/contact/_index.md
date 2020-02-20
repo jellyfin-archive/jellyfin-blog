@@ -28,7 +28,8 @@ To chat, we primarily use [Riot](https://www.riot.im) to access the [Matrix](htt
 - [#jellyfin-announce:matrix.org](https://matrix.to/#/#jellyfin-announce:matrix.org): Announcements for releases
 - [#jellyfin-troubleshooting:matrix.org](https://matrix.to/#/#jellyfin-troubleshooting:matrix.org"): User troubleshooting
 - [#jellyfin-dev:matrix.org](https://matrix.to/#/#jellyfin-dev:matrix.org): Main room for development communication
-- [#jellyfin-app-dev:matrix.org](https://matrix.to/#/#jellyfin-app-dev:matrix.org): Client and Web development
+- [#jellyfin-dev-client:matrix.org](https://matrix.to/#/#jellyfin-dev-client:matrix.org): Client and Web development
+- [#jellyfin-dev-android:matrix.org](https://matrix.to/#/#jellyfin-dev-android:matrix.org): Android, Android TV and Fire TV development
 - [#jellyfin-offtopic:matrix.org](https://matrix.to/#/#jellyfin-offtopic:matrix.org): Chat about anything
 
 ## IRC
