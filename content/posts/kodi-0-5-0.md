@@ -21,7 +21,7 @@ Announcing Kodi 19 support, Python 3, and more!
 
 ## Overview
 
-Kodi 19 (code named 'Matrix') is right around the corner and we're ready for it's arrival.  Matrix is currently in a pre-release state and alpha releases are available in Team Kodi's [nightly download repo](https://mirrors.kodi.tv/nightlies/).  This is a big release in that Matrix introduces Python 3 support into the Kodi addon ecosystem.
+Kodi 19 (code named 'Matrix') is right around the corner and we're ready for its arrival.  Matrix is currently in a pre-release state and alpha releases are available in Team Kodi's [nightly download repo](https://mirrors.kodi.tv/nightlies/).  This is a big release in that Matrix introduces Python 3 support into the Kodi addon ecosystem.
 
 Other exciting news is that we have some significant speed increases within the addon, particularly surrounding the initial library sync.  In some cases we're seeing sync times well below half of their previous values.  This is largely due to new contributor [druscoe](https://github.com/druscoe), so there's some well deserved shout outs there.
 
