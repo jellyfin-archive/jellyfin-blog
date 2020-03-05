@@ -11,7 +11,7 @@ Announcing Kodi 19 support, Python 3, and more!
 
 <!--more-->
 
-> Please make sure you are either upgraing from version 0.4.1, or restart Kodi after upgrading to 0.5.0.  There are some incompatibilities with new libraries that can't be resolved at runtime and require either the previous version or a restart to initialize properly.
+> Please make sure you are either upgrading from version 0.4.1, or restart Kodi after upgrading to 0.5.0.  There are some incompatibilities with new libraries that can't be resolved at runtime and require either the previous version or a restart to initialize properly.
 
 ## Highlights
 
