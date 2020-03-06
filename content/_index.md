@@ -3,7 +3,7 @@ hero:
   title: The Free Software Media System
   text: Jellyfin puts you in control of managing and streaming your media. There are no strings attached, no premium licenses or features, and no hidden agendas.
   button:
-    - title: Try it Now
+    - title: See it in Action
       url: https://demo.jellyfin.org/stable
     - title: Download Jellyfin
       url: /downloads
