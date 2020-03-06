@@ -40,6 +40,8 @@ Notice also that the header of the UI has been reworked a little bit in a *sligh
 Shoutout to all the Web team for their unvaluable contributions in mking this happen, specially to [Julien](https://github.com/mrtimscampi) and 
 [grafixeyehero](https://github.com/grafixeyehero).
 
+You can check the redesign in our [demo server](https://demo.jellyfin.org/stable)
+
 ## Faster than the sound and cleaner than a surgery room
 
 As you already know, we're still a really young community that want to provide the best self-hosted media server out there. As with every release,
