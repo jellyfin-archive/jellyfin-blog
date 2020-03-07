@@ -1,7 +1,7 @@
 ---
 title: "Jellyfin Release - v10.5.0"
 subtitle: "Our biggest release yet"
-author: "MrTimscampi"
+author: "Julien Machiels"
 githubusername: "MrTimscampi"
 date: 2020-03-07T08:11:42+01:00
 justify: "center"
