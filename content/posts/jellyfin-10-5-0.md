@@ -51,73 +51,11 @@ Finally, several performance and responsiveness issues have been addressed. A ro
 
 This cycle, our server team ported the code over to .NET Core 3.1. This move makes new features available to our developers, including support for ARM64 for Linux, compatibility with TLS v1.3 and better garbage collection on Docker, allowing for better memory usage when running in a container.
 
-A lot of code cleanup and refactoring was done, fixing a number issues and bringing some speed improvements. Among these, the following table, while a little technical, shows the impressive speed improvement between the previous implementation of our hex decoder and the one shipped in Jellyfin 10.5.0.
+**Support for AMD AMF hardware encoding** is now available on Windows and Linux. We also improved DVD support when added as folders. The metadata provider for TheMovieDB now handles season images, and various fixes to media scanning, base URLs and DLNA were implemented. **Full hardware acceleration** for Raspberry Pi is also now supported for older models. For Raspeberry Pi 4, hardware-accelerated encoding for H264 is now supported on Raspbian, both using the LinuxServer.io Docker and the repository package.
 
-<table style="width:100%">
-<thead>
-    <th>Method</th>
-    <th>Mean</th>
-    <th>Error</th>
-    <th>StdDev</th>
-    <th>Gen 0</th>
-    <th>Allocated</th>
-</thead>
-<tbody>
-<tr>
-    <td><b>Jellyfin 10.5.0</b></td>
-    <td style="text-align:right">10.81 μs</td>
-    <td style="text-align:right">0.079 μs</td>
-    <td style="text-align:right">0.074 μs</td>
-    <td style="text-align:right">0.1068</td>
-    <td style="text-align:right">336 B</td>
-</tr>
-<tr>
-    <td><b>Jellyfin 10.4.3</b></td>
-    <td style="text-align:right">23.57 μs</td>
-    <td style="text-align:right">0.055 μs</td>
-    <td style="text-align:right">0.051 μs</td>
-    <td style="text-align:right">11.2305</td>
-    <td style="text-align:right">35272 B</td>
-</tr>
-</tbody>
-</table>
+As part of a project to move the core metadata providers to plugins, MusicBrainz is now a default plugin and allows you to configure the URL of the instance you want to pull data from. This allows you to host an instance of MusicBrainz and sidestep the global rate limiting enforced by the main service.
 
-Another example of the speed improvements to the server this cycle is the following comparison between our previous alphanumeric comparator and the one shipped in Jellyfin 10.5.0, showing a reduction of the execution time of more than 50%!
-
-<table style="width:100%">
-<thead>
-    <th>Method</th>
-    <th>Mean</th>
-    <th>Error</th>
-    <th>StdDev</th>
-    <th>Gen 0</th>
-    <th>Allocated</th>
-</thead>
-<tbody>
-<tr>
-    <td><b>Jellyfin 10.5.0</b></td>
-    <td style="text-align:right">10.81 μs</td>
-    <td style="text-align:right">0.079 μs</td>
-    <td style="text-align:right">0.074 μs</td>
-    <td style="text-align:right">0.1068</td>
-    <td style="text-align:right">336 B</td>
-</tr>
-<tr>
-    <td><b>Jellyfin 10.4.3</b></td>
-    <td style="text-align:right">23.57 μs</td>
-    <td style="text-align:right">0.055 μs</td>
-    <td style="text-align:right">0.051 μs</td>
-    <td style="text-align:right">11.2305</td>
-    <td style="text-align:right">35272 B</td>
-</tr>
-</tbody>
-</table>
-
-**Support for AMD AMF hardware encoding** is now available on Windows and Linux, as well as support for DVDs as folders, a provider for season images for TheMovieDB and various fixes to media scanning, base URLs and DLNA. **Raspberry Pi hardware acceleration** for older models is also now supported. For Raspeberry Pi 4, hardware-accelerated encoding for H264 is now supported on Raspbian, both using the LinuxServer.io Docker and the repository package.
-
-As part of a project to move the core metadata providers to plugins, MusicBrainz is now a default plugin and allows you to configure the URL of the instance you want to pull data from, thereby allowing you to host an instance of MusicBrainz and sidestep the global rate limiting enforced by the main service.
-
-Aside from all these improvements, more tests have been added on the server-side to help developers track down issues with new and existing code. This ensures a faster development time and prevents some breakages, which will be caught early through automated testing.
+In addition to all these improvements, more tests have been added on the server-side to help developers track down issues with new and existing code. This ensures a faster development time and prevents breakage, which will be caught early through automated testing.
 
 ## Documentation
 
@@ -131,9 +69,9 @@ We now provide an extensive [Codec Support](https://jellyfin.org/docs/general/cl
 
 A lot is happening in the world of Jellyfin recently. Since the release of Jellyfin 10.4.0, we have seen a lot of new contributors joining the team and the speed of development has tremendously accelerated.
 
-With that influx of contributors, we have a few large scale projects for both the server and the web client that should, in due time, bring a ton of improvements to Jellyfin. More information is already available on [GitHub](https://github.com/jellyfin/) if you want to take part in the discussion or implementation.
+With the influx of contributors, we have a few large scale projects for both the server and the web client that should bring a ton of improvements to Jellyfin. More information is already available on [GitHub](https://github.com/jellyfin/) if you want to take part in the discussion or implementation.
 
-We'd like to thank all the contributors who worked on this release for their hard work and dedication to making the best FOSS media server possible.
+We'd like to thank all the contributors to this release for their hard work and dedication to making the best FOSS media server possible.
 
 * [Abbe98](https://github.com/Abbe98/)
 * [anthonylavado](https://github.com/anthonylavado/)
@@ -167,4 +105,4 @@ We'd like to thank all the contributors who worked on this release for their har
 * [Wunax](https://github.com/Wunax/)
 * [YouKnowBlom](https://github.com/YouKnowBlom/)
 
-If you'd like to take part in the development of Jellyfin, most of the contributors are available on [GitHub](https://github.com/jellyfin/) or on via [any of the ways on our contact page](/contact/).
+If you'd like to take part in the development of Jellyfin, most of the contributors are available on [GitHub](https://github.com/jellyfin/) or via [any of the ways on our contact page](/contact/).
