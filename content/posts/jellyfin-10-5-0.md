@@ -135,9 +135,9 @@ With that influx of contributors, we have a few large scale projects for both th
 
 We'd like to thank all the contributors who worked on this release for their hard work and dedication to making the best FOSS media server possible.
 
-* [Abbe98]
-* [anthonylavado]
-* [Artiume]
+* [Abbe98]()
+* [anthonylavado]()
+* [Artiume]()
 * [Bond-009]()
 * [bugfixin]()
 * [cvium]()
