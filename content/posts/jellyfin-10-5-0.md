@@ -113,7 +113,7 @@ Another example of the speed improvements to the server this cycle is the follow
 </tbody>
 </table>
 
-**Support for AMD AMF hardware encoding** is now available on Windows and Linux, as well as support for DVDs as folders, a provider for season images for TheMovieDB and various fixes to media scanning and the way base URLs and DLNA are handled. **Raspberry Pi hardware acceleration** for older models is also now supported. Sorry Raspberry Pi 4 owners, this one needs a bit more work to be supported properly.
+**Support for AMD AMF hardware encoding** is now available on Windows and Linux, as well as support for DVDs as folders, a provider for season images for TheMovieDB and various fixes to media scanning, base URLs and DLNA. **Raspberry Pi hardware acceleration** for older models is also now supported. For Raspeberry Pi 4, hardware-accelerated encoding for H264 is now supported on Raspbian, both using the LinuxServer.io Docker and the repository package.
 
 As part of a project to move the core metadata providers to plugins, MusicBrainz is now a default plugin and allows you to configure the URL of the instance you want to pull data from, thereby allowing you to host an instance of MusicBrainz and sidestep the global rate limiting enforced by the main service.
 
