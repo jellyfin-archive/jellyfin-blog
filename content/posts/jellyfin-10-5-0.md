@@ -51,7 +51,7 @@ Finally, several performance and responsiveness issues have been addressed. A ro
 
 This cycle, our server team ported the code over to .NET Core 3.1. This move makes new features available to our developers, including support for ARM64 for Linux, compatibility with TLS v1.3 and better garbage collection on Docker, allowing for better memory usage when running in a container.
 
-A lot of code cleanup and refactoring was done, fixing a few issues and bringing some speed improvements. Among these, the following table, while a little technical, shows the impressive speed improvement between the previous implementation of our hex decoder and the one shipped in Jellyfin 10.5.0.
+A lot of code cleanup and refactoring was done, fixing a number issues and bringing some speed improvements. Among these, the following table, while a little technical, shows the impressive speed improvement between the previous implementation of our hex decoder and the one shipped in Jellyfin 10.5.0.
 
 <table style="width:100%">
 <thead>
@@ -113,9 +113,9 @@ Another example of the speed improvements to the server this cycle is the follow
 </tbody>
 </table>
 
-**Support AMD AMF hardware encoding** is now available on Windows and Linux, as well as support for DVDs as folders, a provider for season images for TheMovieDB and various fixes to media scanning and the way base URLs and DLNA are handled. **Raspberry Pi hardware acceleration** for older models is also now supported. Sorry Raspberry Pi 4 owners, this one needs a bit more work to be supported properly.
+**Support for AMD AMF hardware encoding** is now available on Windows and Linux, as well as support for DVDs as folders, a provider for season images for TheMovieDB and various fixes to media scanning and the way base URLs and DLNA are handled. **Raspberry Pi hardware acceleration** for older models is also now supported. Sorry Raspberry Pi 4 owners, this one needs a bit more work to be supported properly.
 
-As part of a project to move the core Metadate providers to plugins, MusicBrainz now allows you to configure the URL of the instance you want to pull data from, thereby allowing you to host an instance of MusicBrainz and sidestep the global rate limiting enforced by the main service.
+As part of a project to move the core metadata providers to plugins, MusicBrainz is now a default plugin and allows you to configure the URL of the instance you want to pull data from, thereby allowing you to host an instance of MusicBrainz and sidestep the global rate limiting enforced by the main service.
 
 Aside from all these improvements, more tests have been added on the server-side to help developers track down issues with new and existing code. This ensures a faster development time and prevents some breakages, which will be caught early through automated testing.
 
@@ -131,40 +131,40 @@ We now provide an extensive [Codec Support](https://jellyfin.org/docs/general/cl
 
 A lot is happening in the world of Jellyfin recently. Since the release of Jellyfin 10.4.0, we have seen a lot of new contributors joining the team and the speed of development has tremendously accelerated.
 
-With that influx of contributors, we have a few large scale projects for both the server and the web client that should, in due time, bring a ton of improvements to Jellyfin. More information is already available on [GitHub]() if you want to take part in the discussion or implementation.
+With that influx of contributors, we have a few large scale projects for both the server and the web client that should, in due time, bring a ton of improvements to Jellyfin. More information is already available on [GitHub](https://github.com/jellyfin/) if you want to take part in the discussion or implementation.
 
 We'd like to thank all the contributors who worked on this release for their hard work and dedication to making the best FOSS media server possible.
 
-* [Abbe98]()
-* [anthonylavado]()
-* [Artiume]()
-* [Bond-009]()
-* [bugfixin]()
-* [cvium]()
-* [dhartung]()
-* [dinki]()
-* [dkanada]()
-* [dmitrylyzo]()
-* [DrPandemic]()
-* [EraYaN]()
-* [ferferga]()
-* [grafixeyehero]()
-* [joshuaboniface]()
-* [JustAMan]()
-* [LogicalPhallacy]()
-* [mark-monteiro]()
-* [MrTimscampi]()
-* [Narfinger]()
-* [Nickbert7]()
-* [nvllsvm]()
-* [nyanmisaka]()
-* [oddstr13]()
-* [ploughpuff]()
-* [redSpoutnik]()
-* [sparky8251]()
-* [thornbill]()
-* [vitorsemeano]()
-* [Wunax]()
-* [YouKnowBlom]()
+* [Abbe98](https://github.com/Abbe98/)
+* [anthonylavado](https://github.com/anthonylavado/)
+* [Artiume](https://github.com/Artiume/)
+* [Bond-009](https://github.com/Bond-009/)
+* [bugfixin](https://github.com/bugfixin/)
+* [cvium](https://github.com/cvium/)
+* [dhartung](https://github.com/dhartung/)
+* [dinki](https://github.com/dinki/)
+* [dkanada](https://github.com/dkanada/)
+* [dmitrylyzo](https://github.com/dmitrylyzo/)
+* [DrPandemic](https://github.com/DrPandemic/)
+* [EraYaN](https://github.com/EraYaN/)
+* [ferferga](https://github.com/ferferga/)
+* [grafixeyehero](https://github.com/grafixeyehero/)
+* [joshuaboniface](https://github.com/joshuaboniface/)
+* [JustAMan](https://github.com/JustAMan/)
+* [LogicalPhallacy](https://github.com/LogicalPhallacy/)
+* [mark-monteiro](https://github.com/mark-monteiro/)
+* [MrTimscampi](https://github.com/MrTimscampi/)
+* [Narfinger](https://github.com/Narfinger/)
+* [Nickbert7](https://github.com/Nickbert7/)
+* [nvllsvm](https://github.com/nvllsvm/)
+* [nyanmisaka](https://github.com/nyanmisaka/)
+* [oddstr13](https://github.com/oddstr13/)
+* [ploughpuff](https://github.com/ploughpuff/)
+* [redSpoutnik](https://github.com/redSpoutnik/)
+* [sparky8251](https://github.com/sparky8251/)
+* [thornbill](https://github.com/thornbill/)
+* [vitorsemeano](https://github.com/vitorsemeano/)
+* [Wunax](https://github.com/Wunax/)
+* [YouKnowBlom](https://github.com/YouKnowBlom/)
 
-If you'd like to take part in the development of Jellyfin, most of the contributors are available o [GitHub]() or on via [any of the ways on our contact page]().
+If you'd like to take part in the development of Jellyfin, most of the contributors are available on [GitHub](https://github.com/jellyfin/) or on via [any of the ways on our contact page](/contact/).
