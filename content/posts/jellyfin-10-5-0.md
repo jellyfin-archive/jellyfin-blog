@@ -11,7 +11,7 @@ A myriad of improvements, bugfixes and a look towards the future.
 
 <!--more-->
 
-With **over 200 contributions** and **over 500 issues closed**, this is our biggest release yet. And while it is a few months behind the scheduled Christmas deadline, our anniversary release packs a lot of new features.
+With **over 200 contributions** and **over 500 issues closed**, this is our biggest release yet. While it is a few months behind the scheduled Christmas deadline, our anniversary release packs a lot of new features.
 
 <a href="/downloads/" class="button button__accent">Download Jellyfin 10.5.0</a> <a href="https://github.com/jellyfin/jellyfin/releases/tag/v10.5.0" class="button hero__button">Read the full release notes</a>
 
