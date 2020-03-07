@@ -55,7 +55,7 @@ This cycle, our server team ported the code over to .NET Core 3.1. This move mak
 
 As part of a project to move the core metadata providers to plugins, MusicBrainz is now a default plugin and allows you to configure the URL of the instance you want to pull data from. This allows you to host an instance of MusicBrainz and sidestep the global rate limiting enforced by the main service.
 
-In addition to all these improvements, more tests have been added on the server-side to help developers track down issues with new and existing code. This ensures a faster development time and prevents breakage, which will be caught early through automated testing.
+In addition to all these improvements, more tests have been added on the server-side to help developers track down issues with new and existing code. This ensures a faster development time and helps prevents regressions, which will now be caught earlier through automated testing.
 
 ## Documentation
 
