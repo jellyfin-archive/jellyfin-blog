@@ -7,11 +7,11 @@ date: 2020-03-07T08:11:42+01:00
 justify: "center"
 ---
 
-A myriad of improvements, bugfixes and a look towards the future.
+A myriad of improvements, bugfixes, and a look towards the future.
 
 <!--more-->
 
-With **over 200 contributions** and **over 500 issues closed**, this is our biggest release yet. While it is a few months behind the scheduled Christmas deadline, our anniversary release packs a lot of new features.
+With **over 200 contributions** and **over 500 issues closed**, this is our biggest release yet. We're releasing a bit before the expected Christmas deadline, but our anniversary release packs a lot of new features.
 
 <a href="/downloads/" class="button button__accent">Download Jellyfin 10.5.0</a> <a href="https://github.com/jellyfin/jellyfin/releases/tag/v10.5.0" class="button hero__button">Read the full release notes</a>
 
@@ -45,13 +45,13 @@ However, most of the new developments in the web client are not immediately visi
 
 A few long-standing issues for WebOS have been fixed as well, bringing us a bit closer to the release of the WebOS app. Among these, icons are now properly working and the client has been reported to work on both WebOS 3 and WebOS 4. We also have plans for the next release that should improve compatibility with earlier WebOS versions and streamline the support of clients using older browser versions as a base. Navigation in the TV layout has also been substantially improved, paving the way for navigation using a remote.
 
-Finally, several performance and responsiveness issues have been addressed. A rogue gamepad input loop is now properly handled, which prevents unnecessary repaintings by the browser and should improve performance. A previously-disabled fade-in effect for images has also been enabled, making loading into a new page look smoother. It is now also possible to upload artwork in WEBP format.
+Finally, several performance and responsiveness issues have been addressed. A rogue gamepad input loop is now properly handled, which prevents unnecessary repaintings by the browser and should improve performance. A previously disabled fade-in effect for images has also been enabled, making loading into a new page look smoother. It is now also possible to upload artwork in WEBP format.
 
 ## Server
 
 This cycle, our server team ported the code over to .NET Core 3.1. This move makes new features available to our developers, including support for ARM64 for Linux, compatibility with TLS v1.3 and better garbage collection on Docker, allowing for better memory usage when running in a container.
 
-**Support for AMD AMF hardware encoding** is now available on Windows and Linux. We also improved DVD support when added as folders. The metadata provider for TheMovieDB now handles season images, and various fixes to media scanning, base URLs and DLNA were implemented. **Full hardware acceleration** for Raspberry Pi is also now supported for older models. For Raspeberry Pi 4, hardware-accelerated encoding for H264 is now supported on Raspbian, both using the LinuxServer.io Docker and the repository package.
+**Support for AMD AMF hardware encoding** is now available on Windows and Linux. We also improved DVD support when added as folders. The metadata provider for TheMovieDB now handles season images. Furthermore, various issues with media scanning, base URLs and DLNA were fixed. **Full hardware acceleration** for Raspberry Pi is also now supported for older models. For Raspeberry Pi 4, hardware-accelerated encoding for H264 is now supported on Raspbian, both using the LinuxServer.io Docker and the repository package.
 
 As part of a project to move the core metadata providers to plugins, MusicBrainz is now a default plugin and allows you to configure the URL of the instance you want to pull data from. This allows you to host an instance of MusicBrainz and sidestep the global rate limiting enforced by the main service.
 
