@@ -19,7 +19,7 @@ and **over 500 issues** were fixed**Over 200 contributions from the community we
 We also want to apologise for the late release: We wanted to make 10.5 possible this Christmas, but we always found that something wasn't complete or finished yet.
 We hope you will forgive us after trying it (*and maybe send us some cakes*)!
 
-Although we tried hard, we are even unsure if we got covered everything that's new. We sure hope we have!. Anyway, you're advised to take some popcorn before continuing. Grab some popcorn and get ready to dive in!
+Although we tried hard, there's so much packed into this release that we are still unsure if this blog post actually manages to cover all the awesome new features. We sure hope it does! Either way, there's a lot of content to cover so grab some popcorn and get ready to dive in!
 
 # Key Features
 
@@ -38,23 +38,22 @@ If you're like us, you probably want to have your content showcased as beautiful
 *With 10.5, we wanted to reimagine Jellyfin's Web interface*
 
 Posters are now as relevant as the description of the element and backgrounds introduce you to your content. In fact, I thought that I was in the jungle when
-I took that screenshot of the *Jungle's Book* wallpaper. Do you also feel it?
+I took that screenshot of the *The Jungle Book* wallpaper. Do you also feel it?
 
 Also notice that the header of the UI has been reworked to have a *slightly* lighter header
 
-Shoutout to all the Web team for their invaluable contributions in mking this happen, specially to *[MrTimscampi](https://github.com/mrtimscampi)* and 
+Shoutout to everyone at the Web team for their invaluable contributions in making this happen, especially to *[MrTimscampi](https://github.com/mrtimscampi)* and 
 *[grafixeyehero](https://github.com/grafixeyehero)*.
 
 You can try out the redesign on our [demo server](https://demo.jellyfin.org/stable)
 
 ## Faster than the speed of sound and cleaner than a surgery room
 
-As you might know, we are still a relatively young community and our goal is to provide the best self-hosted media server out there. Like usual, we did what we can to clean up the code and a lot of this work will pass unnoticed to many of you, but they're not less important. I'll get to that in a moment.
-
+As you might know, we are still a relatively young community and our goal is to provide the best self-hosted media server out there. Like usual, we did what we can to clean up the code and a lot of this work will pass unnoticed to many of you, but they're not any less important. I'll get to that in a moment.
 
 Let's start with the web client, since it's the most obvious to you. A lot of work has been done to simplify the code and ease the transition
-to more modern frameworks, which will be really useful in the future for making more awesome things with the interface of the clients. While
-all the benefits of this are not visible for you in the daily use just yet, it's a necessary step towards a better application. In fact, it already paid off in application speed. See this video:
+to more modern frameworks, which will be really useful in the future for making more awesome things for our clients interface. While
+all the benefits of this will not be visible to you in your daily use just yet, it's a necessary step towards a better application. In fact, it already paid off in application speed. See this video:
 
 <video autoplay muted loop preload="none" id="preview">
     <source src="/images/10.5-release/speed.mp4" type="video/mp4">
@@ -62,14 +61,12 @@ all the benefits of this are not visible for you in the daily use just yet, it's
 
 Not only it is faster, we have new animations too! Images will fade in every time you change pages. If you don't like the new animations they can be modified in settings
 
-We finally fixed the long standing issue many of you had with images (which I introduced, didn't mean to cause it!). Although the issue is no longer around us, we still aren't happy with the end result and hope to further improve it going forward.
-The long-standing issue that many of you had ( of this post 🙄) caused by the images has been fixed in this version
-(although we want to keep improving in that matter, as we're still not completely happy with the current implementation) 
+We finally fixed the longstanding issue many of you had with images loading slowly (which, by they way, I introduced, didn't mean to cause it!). Although the issue is no longer around, we still aren't happy with the end result and hope to further improve it going forward.
 
 That's pretty much all for the web interface this release. The rest of the work has primarily been translations and bug fixes. Have fun finding out which ones we solved! Oh, and before I move on to the server, we added better keyboard support for TVs and improved compatibility with old browsers.
 
 Okay, server time then! This time we focused heavily on migrating to .NET Core 3.1 which is the framework the server is built on.
-Although this might be not interesting at all, let's see some benchmarks from the hex decoder (used in server's tasks):
+Although this might be not interesting to everyone, let's see some benchmarks from the hex decoder (used in server's tasks):
 
 ```
 |                         Method |     Mean |    Error |   StdDev |   Gen 0 | Gen 1 | Gen 2 | Allocated |
