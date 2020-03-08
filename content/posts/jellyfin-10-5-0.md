@@ -37,7 +37,7 @@ Jellyfin 10.5.0 ships with the Latin, Greek, Chinese, Japanese, Korean, Arabic, 
 
 The most noticeable visual change is the **new details page layout**. It puts the artwork of your library front and center while looking more modern and polished.
 
-We have also completely **overhauled SSA/ASS subtitle support**. Through the use of asm.js and Web Assembly, we now provide improved rendering for these formats, fixing some long-standing issues for anime lovers.
+We have also completely **overhauled SSA/ASS subtitle support**. Through the use of asm.js and Web Assembly, we now provide improved rendering for these formats, fixing some long-standing issues for anime lovers. Note that this feature is still experimental. If you notice lag in the rendering of complex effects, you can enable burn-in by selecting *All complex formats* in *User Settings > Subtitles > Burn subtitles*.
 
 However, most of the new developments in the web client are not immediately visible. We spent a lot of time preparing and cleaning the code for future improvements.
 
