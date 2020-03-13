@@ -106,6 +106,14 @@
 	grid-auto-rows: 100%;
 	grid-auto-flow: dense;
 
+	@media only screen and (max-device-width: 560px) {
+		grid-template-columns: repeat(2, 50%);
+	}
+
+	@media only screen and (max-device-width: 450px) {
+		grid-template-columns: repeat(1, 100%);
+	}
+
 	.card {
 		display: block;
 		background: $background-alt;
