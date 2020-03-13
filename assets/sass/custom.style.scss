@@ -94,3 +94,53 @@
 .text-container img {
 	vertical-align: middle;
 }
+
+.clients-grid {
+	margin-top: 1.5em;
+}
+
+.card-grid {
+	display: grid;
+	grid-gap: calc(var(--spacing) * 3.75);
+	grid-template-columns: repeat(3, 33.3%);
+	grid-auto-rows: 100%;
+	grid-auto-flow: dense;
+
+	.card {
+		display: block;
+		background: $background-alt;
+		margin: 0.25em;
+		padding: 1em 0;
+		transition: all 250ms;
+		font-size: 0.9em;
+		text-align: center;
+		
+		.banner {
+			margin-top: 1.5em;
+			width: 100%;
+			background-color: lighten($background-alt, 5%);
+			font-size: 1.25em;
+			font-weight: 700;
+		}
+
+		img {
+			width: 75%;
+			display: block;
+			margin: 1em auto;
+			fill: $text;
+		}
+
+		.button__card {
+			box-sizing: border-box;
+			margin: 0.25em 1em 0.5em;
+
+			&__disabled {
+				margin: 0.25em 1em 0.5em;
+				cursor: auto;
+				background-color: $background-dark;
+				border-color: $background-dark;
+				color: #fff;
+			}
+		}
+	}	
+}

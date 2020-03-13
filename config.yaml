@@ -13,18 +13,21 @@ menus:
     - name: Blog
       Url: /posts
       weight: 1
+    - name: Clients
+      Url: /clients
+      weight: 2
     - name: Downloads
       Url: /downloads
-      weight: 2
+      weight: 3
     - name: Contribute
       Url: /contribute
-      weight: 3
+      weight: 4
     - name: Documentation
       Url: https://docs.jellyfin.org
-      weight: 4
+      weight: 5
     - name: Contact
       Url: /contact
-      weight: 5
+      weight: 6
 params:
   author: "The Jellyfin Team"
   footer:
