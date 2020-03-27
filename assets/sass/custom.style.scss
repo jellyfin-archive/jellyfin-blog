@@ -103,7 +103,6 @@
 	display: grid;
 	grid-gap: calc(var(--spacing) * 3.75);
 	grid-template-columns: repeat(3, 33.3%);
-	grid-auto-rows: 100%;
 	grid-auto-flow: dense;
 
 	@media only screen and (max-device-width: 560px) {
