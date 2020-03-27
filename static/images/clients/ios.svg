@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg4582"
+   version="1.1"
+   viewBox="0 0 24 24"
+   role="img">
+  <metadata
+     id="metadata4588">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Google Chrome icon</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4586" />
+  <title
+     id="title4578">Google Chrome icon</title>
+  <g
+     id="Group_2"
+     data-name="Group 2"
+     transform="matrix(0.13981848,0,0,0.13981848,-141.80033,-98.38669)">
+    <rect
+       style="fill:none"
+       y="0"
+       x="0"
+       id="Rectangle_1"
+       data-name="Rectangle 1"
+       width="174"
+       height="43"
+       transform="translate(1013,768)" />
+    <g
+       style="stroke:none;stroke-opacity:1;fill:#eeeeeeff;fill-opacity:1"
+       transform="matrix(1.377209,0,0,1.377209,1014.0085,728.93392)"
+       id="g4848">
+      <path
+         style="stroke:none;stroke-opacity:1;fill:#eeeeeeff;fill-opacity:1"
+         d="m 4.621,6.965 c 0,1.368 -0.833,2.38 -2.262,2.38 -1.19,0 -2.083,-1.012 -2.083,-2.38 0,-1.31 0.952,-2.381 2.202,-2.381 1.31,0 2.143,1.071 2.143,2.381 z M 1.327,78.5 V 23.78 H 3.57 V 78.5 Z"
+         id="path4832" />
+      <path
+         style="stroke:none;stroke-opacity:1;fill:#eeeeeeff;fill-opacity:1"
+         d="M 78.174,39.512 C 78.174,67.1 62.859,79.64 46.095,79.64 28.97,79.64 15.102,66.075 15.102,40.653 15.102,14.548 29.453,0.525 47.301,0.525 64.787,0.524 78.174,14.318 78.174,39.512 Z m -60.799,0.57 C 17.375,61 27.513,77.25 46.201,77.25 65.019,77.25 75.812,60.5 75.812,39.844 75.812,20.689 67.164,3.208 47.43,3.208 27.696,3.208 17.375,19.667 17.375,40.082 Z"
+         id="path4834" />
+      <path
+         style="stroke:none;stroke-opacity:1;fill:#eeeeeeff;fill-opacity:1"
+         d="m 86.406,72.571 c 3.763,2.508 10.258,4.93 15.844,4.93 10.602,0 20.031,-7.417 20.031,-18.334 0,-10.131 -6.281,-15.417 -16.945,-19.958 -9.544,-4.064 -18.125,-8.475 -18.125,-19.305 0,-11.285 8.891,-19.266 20.975,-19.266 6.498,0 11.4,1.824 13.68,3.42 l -0.907,1.968 c -1.938,-1.367 -7.175,-3.109 -12.874,-3.109 -12.771,0 -18.334,9.65 -18.334,16.754 0,9.812 7.606,13.093 17.41,17.767 11.4,5.586 17.441,10.51 17.441,21.227 0,11.514 -8.207,20.861 -22.799,20.861 -6.043,0 -12.996,-2.052 -16.416,-4.674 z"
+         id="path4836" />
+    </g>
+  </g>
+</svg>

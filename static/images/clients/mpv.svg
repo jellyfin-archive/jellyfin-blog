@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg846"
+   version="1.1"
+   viewBox="0 0 24 24"
+   role="img">
+  <metadata
+     id="metadata852">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs850">
+    <linearGradient
+       id="linearGradient3763"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ff2608;stop-opacity:1;"
+         offset="0"
+         id="stop3765" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient3763"
+       id="linearGradient3767"
+       x1="0.35564494"
+       y1="6.2033892"
+       x2="50.796897"
+       y2="6.2033892"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     transform="translate(-2.266835,-9.4911831)"
+     id="g1123">
+    <g
+       transform="matrix(0.20628703,0,0,0.20628703,1.0904949,8.2627837)"
+       id="g1210">
+      <path
+         style="fill:#eeeeeeff;fill-opacity:1;stroke:#eeeeeeff;stroke-width:1.26026785;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path5203"
+         d="M 27.755523,21.23267 4.0528453,34.757161 4.1916317,7.4677947 Z"
+         transform="matrix(1.8833423,0,0,1.8856986,38.95318,24.886566)" />
+      <ellipse
+         ry="60.81356"
+         rx="68.983055"
+         cy="1.6949135"
+         cx="72.983055"
+         style="fill:#eeeeeeffe;fill-opacity:0;fill-rule:nonzero;stroke:#eeeeeeff;stroke-width:8.36833954;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:7;stroke-dasharray:none;stroke-opacity:1"
+         id="path3769"
+         transform="matrix(0.78539433,0,0,0.89090163,6.553338,62.61618)" />
+    </g>
+  </g>
+</svg>
