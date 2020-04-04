@@ -5,7 +5,8 @@ date = "2020-03-13"
 justify = "center"
 +++
 
-<h3>Supported Browsers</h3>
+<h2>Official Clients</h2>
+<h3>Supported browsers</h3>
 
 <div class="clients-grid card-grid">
     <div class="card">
@@ -119,8 +120,8 @@ justify = "center"
     </div>
 </div>
 
-<h3>Third Party and Unofficial Clients</h3>
-
+<h2>Third Party and Unofficial Clients</h2>
+<h3>Desktop</h3>
 <div class="clients-grid card-grid">
     <div class="card">
         <img src="/images/clients/mpv.svg"/>
