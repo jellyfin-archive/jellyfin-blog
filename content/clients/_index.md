@@ -69,6 +69,10 @@ justify = "center"
         <a href="https://www.amazon.com/gp/aw/d/B07TX7Z725" class="button button__accent button__card">Go to Amazon</a>
     </div>
     <div class="card">
+        <img src="/images/clients/google-cast.svg"/>
+        <p class="banner">Official</p>
+    </div>
+    <div class="card">
         <img src="/images/clients/kodi.svg"/>
         <p class="banner">Official</p>
         <a href="https://github.com/jellyfin/jellyfin-kodi" class="button button__accent button__card">Go to GitHub</a>
