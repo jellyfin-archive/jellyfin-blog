@@ -171,7 +171,7 @@ makepkg -si</code></pre>
     </div>
     <div class="macos">
         <h4>MacOS</h4>
-        <p>Both installers (.dmg) and manual ZIP archives (.zip) are provided.</p>
+        <p>Both installers (.dmg) and manual ZIP archives (.tar.gz) are provided.</p>
         <p>
             <a href="https://repo.jellyfin.org/releases/server/macos/stable" class="button button__accent">Stable</a>
             <a href="https://repo.jellyfin.org/releases/server/macos/nightly" class="button button__accent">Nightly</a>
