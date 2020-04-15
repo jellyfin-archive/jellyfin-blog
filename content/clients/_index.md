@@ -108,6 +108,10 @@ justify = "center"
         <p class="banner">Chromecast and Google Cast devices</p>
     </div>
     <div class="card">
+        <img src="/images/clients/airplay.svg"/>
+        <p class="banner">AirPlay</p>
+    </div>
+    <div class="card">
         <img src="/images/clients/kodi.svg"/>
         <div class="bannerbox">
             <p class="banner">Kodi</p>
