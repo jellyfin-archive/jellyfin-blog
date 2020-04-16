@@ -6,7 +6,7 @@ justify = "center"
 +++
 
 <h2>Official Clients</h2>
-<h3>Supported browsers</h3>
+<h3>Supported Browsers</h3>
 
 <div class="clients-grid card-grid">
     <div class="card">
