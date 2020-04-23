@@ -1,0 +1,20 @@
++++
+title = "Jellyfin: Now on Xbox"
+subtitle = "Bet you didn't see this one coming!"
+author = "Anthony Lavado"
+githubusername = "anthonylavado"
+date = "2020-04-22"
+justify = "center"
++++
+
+Jellyfin is proud to announce our brand new Xbox client beta, <a href="https://www.microsoft.com/store/apps/9P2DRTG62QF8">available now</a>.
+<!--more-->
+
+Thanks some very [helpful contributors](https://github.com/jellyfin/jellyfin-uwp/graphs/contributors), we've got a client available now for Xbox on the Microsoft Store:
+<a class="NoLinkLook" href='//www.microsoft.com/store/apps/9P2DRTG62QF8?cid=storebadge&ocid=badge'><img src='/images/store-icons/microsoft.png' alt='English badge' style='width: 284px; height: 104px;'/></a>
+
+To get started, use the icon above, or search the store for "Jellyfin". We also plan on expanding this client to Windows in the near future.
+
+Do you have suggestions or ideas on how to improve the experience, [let us know](../../contact), or visit the project on [GitHub](https://github.com/jellyfin/jellyfin-uwp).
+
+Happy streaming!
