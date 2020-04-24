@@ -12,7 +12,7 @@ Jellyfin is proud to announce our brand new Xbox One client beta, <a href="https
 
 Thanks to some very [helpful contributors](https://github.com/jellyfin/jellyfin-uwp/graphs/contributors), we've got a client available now for Xbox One:
 
-<a class="NoLinkLook" href='//www.microsoft.com/store/apps/9P2DRTG62QF8?cid=storebadge&ocid=badge'><img src='/images/store-icons/microsoft.png' alt='English badge' style='width: 142px; height: 52px;'/></a>
+<a class="NoLinkLook" href="//www.microsoft.com/store/apps/9P2DRTG62QF8?cid=storebadge&ocid=badge"><img src="/images/store-icons/microsoft.svg" alt="View Jellyfin in the Microsoft Store" style="width: 142px; height: 52px;"/></a>
 
 To get started, use the icon above, or search the store for "Jellyfin". We also plan on expanding this client to Windows in the near future.
 
