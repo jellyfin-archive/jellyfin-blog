@@ -149,7 +149,7 @@ justify = "center"
             <p class="banner">Xbox One</p>
             <p class="subbanner">Official</p>
         </div>
-        <p class="button button__accent button__card__disabled">Coming soon</a>
+        <a href="https://www.microsoft.com/store/apps/9P2DRTG62QF8" class="button button__accent button__card">Go to Microsoft Store</a>
     </div>
 </div>
 
