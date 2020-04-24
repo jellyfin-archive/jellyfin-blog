@@ -1,5 +1,5 @@
 +++
-title = "Jellyfin: Now on Xbox"
+title = "Jellyfin: Now on Xbox One"
 subtitle = "Bet you didn't see this one coming!"
 author = "Anthony Lavado"
 githubusername = "anthonylavado"
@@ -7,10 +7,10 @@ date = "2020-04-22"
 justify = "center"
 +++
 
-Jellyfin is proud to announce our brand new Xbox client beta, <a href="https://www.microsoft.com/store/apps/9P2DRTG62QF8">available now</a>.
+Jellyfin is proud to announce our brand new Xbox One client beta, <a href="https://www.microsoft.com/store/apps/9P2DRTG62QF8">available now</a>.
 <!--more-->
 
-Thanks some very [helpful contributors](https://github.com/jellyfin/jellyfin-uwp/graphs/contributors), we've got a client available now for Xbox:
+Thanks to some very [helpful contributors](https://github.com/jellyfin/jellyfin-uwp/graphs/contributors), we've got a client available now for Xbox One:
 
 <a class="NoLinkLook" href='//www.microsoft.com/store/apps/9P2DRTG62QF8?cid=storebadge&ocid=badge'><img src='/images/store-icons/microsoft.png' alt='English badge' style='width: 142px; height: 52px;'/></a>
 
