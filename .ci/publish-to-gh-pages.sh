@@ -9,7 +9,7 @@ cp public/* jellyfin.github.io
 
 # move to git directory
 cd jellyfin.github.io
-git add docs
+git add .
 
 # commit new changes
 git -c "user.name=jellyfin-bot" -c "user.email=team@jellyfin.org" commit -m 'Azure Update Blog ${BUILD_BUILDID}'
