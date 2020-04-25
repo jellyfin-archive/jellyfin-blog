@@ -77,6 +77,9 @@ jobs:
     inputs:
       secureFile: 'bot'
 
-  - script: 'bash .ci/publish-to-gh-pages.sh'
+  - task: Bash@3
     displayName: 'Update Website'
-    workingDirectory: '$(Build.SourcesDirectory)'
+    inputs:
+      targetType: 'filePath'
+      filePath: '.ci/publish-to-gh-pages.sh'
+      workingDirectory: '$(Build.SourcesDirectory)'
