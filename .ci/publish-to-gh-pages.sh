@@ -5,7 +5,7 @@ git clone https://github.com/jellyfin/jellyfin.github.io
 
 # update docs
 unzip *.zip
-cp public/* jellyfin.github.io
+cp -rf public/* jellyfin.github.io
 
 # move to git directory
 cd jellyfin.github.io
