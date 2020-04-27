@@ -17,32 +17,23 @@ jobs:
   displayName: 'Build'
 
   pool:
-    vmImage: ubuntu-latest
+    vmImage: windows-latest
 
   steps:
-  - task: DownloadGitHubRelease@0
-    displayName: 'Download Hugo'
+  - task: HugoTask@1
+    displayName: 'Build Website'
     inputs:
-      connection: Jellyfin Release Download
-      userRepository: gohugo/hugo
-      itemPattern: '*nux-64bit.tar.gz'
-      downloadPath: '$(System.ArtifactsDirectory)'
-
-  - task: ExtractFiles@1
-    displayName: 'Extract Hugo'
-    inputs:
-      archiveFilePatterns: '*.tar.gz'
-
-  - script: 'hugo $(Build.SourcesDirectory)'
-    displayName: 'Generate Assets'
-    workingDirectory: '$(System.ArtifactsDirectory)'
+      source: '$(Build.SourcesDirectory)'
+      destination: '$(Build.SourcesDirectory)/public'
+      hugoVersion: '0.60.1'
+      extendedVersion: true
 
   - task: ArchiveFiles@2
     displayName: 'Archive Website'
     inputs:
       rootFolderOrFile: '$(Build.SourcesDirectory)/public'
       includeRootFolder: true
-      archiveFile: 'jellyfin-blog-$(Build.BuildId)'
+      archiveFile: '$(Build.ArtifactStagingDirectory)/jellyfin-blog-$(Build.BuildId)'
 
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Docs'
@@ -55,7 +46,7 @@ jobs:
   displayName: 'Publish'
 
   dependsOn: Build
-  condition: and(contains(variables['Build.SourceBranch'], 'master'), notIn(variables['Build.Reason'], 'PullRequest')
+  condition: and(contains(variables['Build.SourceBranch'], 'master'), notIn(variables['Build.Reason'], 'PullRequest'))
 
   pool:
     vmImage: ubuntu-latest
@@ -83,3 +74,4 @@ jobs:
       targetType: 'filePath'
       filePath: '.ci/publish-to-gh-pages.sh'
       workingDirectory: '$(Build.SourcesDirectory)'
+      failOnStderr: true
