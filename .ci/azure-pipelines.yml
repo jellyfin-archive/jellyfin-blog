@@ -1,0 +1,85 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - '*'
+  tags:
+    include:
+    - '*'
+
+pr:
+  branches:
+    include:
+    - '*'
+
+jobs:
+- job: Build
+  displayName: 'Build'
+
+  pool:
+    vmImage: ubuntu-latest
+
+  steps:
+  - task: DownloadGitHubRelease@0
+    displayName: 'Download Hugo'
+    inputs:
+      connection: Jellyfin Release Download
+      userRepository: gohugo/hugo
+      itemPattern: '*nux-64bit.tar.gz'
+      downloadPath: '$(System.ArtifactsDirectory)'
+
+  - task: ExtractFiles@1
+    displayName: 'Extract Hugo'
+    inputs:
+      archiveFilePatterns: '*.tar.gz'
+
+  - script: 'hugo $(Build.SourcesDirectory)'
+    displayName: 'Generate Assets'
+    workingDirectory: '$(System.ArtifactsDirectory)'
+
+  - task: ArchiveFiles@2
+    displayName: 'Archive Website'
+    inputs:
+      rootFolderOrFile: '$(Build.SourcesDirectory)/public'
+      includeRootFolder: true
+      archiveFile: 'jellyfin-blog-$(Build.BuildId)'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Docs'
+    inputs:
+      pathToPublish: '$(Build.ArtifactStagingDirectory)'
+      artifactName: 'jellyfin-blog-$(Build.BuildId)'
+      publishLocation: 'Container'
+
+- job: Publish
+  displayName: 'Publish'
+
+  dependsOn: Build
+  condition: and(contains(variables['Build.SourceBranch'], 'master'), notIn(variables['Build.Reason'], 'PullRequest')
+
+  pool:
+    vmImage: ubuntu-latest
+
+  steps:
+  - checkout: none
+
+  - task: DownloadPipelineArtifact@2
+    displayName: 'Download Artifact'
+    inputs:
+      source: 'current'
+      artifact: 'jellyfin-blog-$(Build.BuildId)'
+      path: '$(Build.SourcesDirectory)'
+      runVersion: 'latest'
+
+  - task: DownloadSecureFile@1
+    displayName: 'Download GitHub Key'
+    name: 'Bot'
+    inputs:
+      secureFile: 'bot'
+
+  - task: Bash@3
+    displayName: 'Update Website'
+    inputs:
+      targetType: 'filePath'
+      filePath: '.ci/publish-to-gh-pages.sh'
+      workingDirectory: '$(Build.SourcesDirectory)'
