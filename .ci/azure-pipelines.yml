@@ -76,4 +76,6 @@ jobs:
       targetType: 'filePath'
       filePath: '.ci/publish-to-gh-pages.sh'
       workingDirectory: '$(Build.SourcesDirectory)'
-      failOnStderr: true
+      failOnStderr: false
+    env:
+      BUILD: '$(Build.BuildId)'
