@@ -1,5 +1,7 @@
-baseURL: "https://jellyfin.org/"
+baseURL: "https://jellyfin.org"
 languageCode: en-us
+disableKinds:
+  - '404'
 title: "Jellyfin: The Free Software Media System"
 markup:
   goldmark:
