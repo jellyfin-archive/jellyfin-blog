@@ -1,17 +1,17 @@
 <div class="steps landing__section">
-	<div class="container">
-		<h2>{{ .Params.about.title | markdownify }}</h2>
-		<p>{{ .Params.about.text | markdownify }}</p>
-	</div>
-	<div class="container">
-		<div class="steps__inner">
-			{{ range $i, $box :=  .Params.about.box }}
-			<div class="step">
-				<div class="step__media"><img src="{{ $box.src }}" alt="{{ $box.alt }}" class="step__image"></div>
-				<h4>{{ $box.title | markdownify }}</h4>
-				<p class="step__text">{{ $box.text | markdownify }}</p>
-			</div>
-			{{ end }}
-		</div>
-	</div>
+    <div class="container">
+        <h2>{{ .Params.about.title | markdownify }}</h2>
+        <p>{{ .Params.about.text | markdownify }}</p>
+    </div>
+    <div class="container">
+        <div class="steps__inner">
+            {{ range $i, $box :=  .Params.about.box }}
+            <div class="step">
+                <div class="step__media"><img src="{{ $box.src }}" alt="{{ $box.alt }}" class="step__image"></div>
+                <h4>{{ $box.title | markdownify }}</h4>
+                <p class="step__text">{{ $box.text | markdownify }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
 </div>
