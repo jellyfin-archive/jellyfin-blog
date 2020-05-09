@@ -70,6 +70,21 @@
 
 .footer__row {
 	margin-bottom: 8pt;
+
+	&--language {
+		@extend .footer__row;
+		display: flex;
+		flex-direction: column;
+	}
+	&__select {
+		cursor: pointer;
+		padding: 5pt 0;
+		background-color: #333c44;
+		margin: 0;
+		border: none;
+		border-radius: 0;
+		border-bottom: 1px dotted;
+	}
 }
 
 /*--- Modifiers---*/

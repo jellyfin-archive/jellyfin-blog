@@ -168,4 +168,33 @@ document.addEventListener("DOMContentLoaded", function() {
 		addNewClass(document.querySelector(".navbar__menu"), "navbar__menu--noMob");
 		addNewClass(document.querySelector(".navbar__menu-mob"), "navbar__menu-mob--noMob");
 	}
+
+	document.querySelector('#languageSelect').addEventListener('change', (event) => {
+		var value = event.srcElement.value;
+		var url = window.location.href.split('/');
+		if(value !== window.currentLanguage) {
+			var newUrl = url[0] + '//' + url[2] + '/' + value;
+			localStorage.setItem('lang', value);
+			window.location.href = newUrl;
+		} else {
+			localStorage.removeItem('lang');
+		}
+	})
 });
+
+
+(function redirectToSpecificPage() {
+	var url = window.location.href.split('/');
+	var base = url[0] + '//' + url[2] + '/$1',
+	  replaceLng = function(toReplace) {
+		return base.replace('$1', toReplace);
+	  },
+	  lngPages = {
+		'en-us': replaceLng(''),
+		'pt-br': replaceLng('pt-br')
+	  };
+	  console.warn(localStorage.getItem('lang') === null);
+	  if(currentLanguage !== window.navigator.language.toLowerCase() && localStorage.getItem('lang') === null){
+		window.location.href = lngPages[window.navigator.language.toLowerCase()];
+	  }
+  })();

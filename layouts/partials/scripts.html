@@ -9,6 +9,9 @@
 <script src="/js/juxtapose.min.js"></script>
 <!-- prettier-ignore -->
 <div class="scripts">
+	<script type="text/javascript">
+		window.currentLanguage = {{ .Lang }}
+	</script>
 	{{ $js1 := resources.Get "js/app.js" }}
 	{{ $js2 := resources.Get "js/libraries/flexibility.js" }}
 	{{ $js3 := resources.Get "js/libraries/responsive-nav.js" }}

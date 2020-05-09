@@ -1,0 +1,23 @@
+[blog]
+other = "Blog"
+
+[clients]
+other = "Clients"
+
+[downloads]
+other = "Downloads"
+
+[contribute]
+other = "Contribute"
+
+[documentation]
+other = "Documentation"
+
+[contact]
+other = "Contact"
+
+[hero_title]
+other = "The Free Software Media System"
+
+[language]
+other = "Language"

@@ -1,0 +1,20 @@
+[blog]
+other = "Blog"
+
+[clients]
+other = "Clientes"
+
+[downloads]
+other = "Downloads"
+
+[contribute]
+other = "Contribuir"
+
+[documentation]
+other = "Documentação"
+
+[contact]
+other = "Contato"
+
+[language]
+other = "Idioma"

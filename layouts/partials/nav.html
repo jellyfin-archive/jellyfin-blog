@@ -3,14 +3,14 @@
   <nav class="nav__mobile"></nav>
   <div class="container">
     <div class="navbar__inner">
-      <a href="/" class="navbar__logo">
+      <a href="{{.Site.BaseURL | relLangURL}}" class="navbar__logo">
         <img src="/images/banner-dark.svg" alt="Jellyfin Banner"/>
       </a>
       <nav class="navbar__menu">
         <!-- prettier-ignore -->
         <ul>
           {{ range .Site.Menus.main }}
-          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+          <li><a href='{{ .URL | relLangURL }}'>{{ i18n .Name }}</a></li>
           {{ end }}
         </ul>
       </nav>

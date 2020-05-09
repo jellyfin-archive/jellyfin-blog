@@ -17,6 +17,23 @@
                     {{ range.Site.Params.footer.thirdcolumn }}
                     <div class="footer__row">{{ . | markdownify }}</div>
                     {{ end }}
+
+                    <div class="footer__row--language">
+                        {{ $currentLang := .Lang }} 
+                        {{ i18n "language"}}: 
+                        <select id="languageSelect" class="footer__row__select">
+                            {{ range .Site.Home.AllTranslations }}
+                            <option value="{{.Language.Lang}}" {{if eq .Language.Lang $currentLang}} selected {{end}}>
+                                {{ .Language.LanguageName }}
+                            </option>
+                            {{ end }}
+                        </select>
+                        <!-- <ul>
+                            {{ range .Site.Home.AllTranslations }}
+                            <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+                            {{ end }}
+                        </ul> -->
+                    </div>
                 </div>
             </div>
         </div>

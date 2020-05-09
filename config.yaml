@@ -1,8 +1,42 @@
 baseURL: "https://jellyfin.org"
-languageCode: en-us
+# languageCode: en-us
+DefaultContentLanguage: en-us
+enableMissingTranslationPlaceholders: true
+languages:
+  pt-Br:
+    title: "Jellyfin: O sistema de mídia de software livre"
+    languageName: Português (Brasil)
+    weight: 2
+    contentDir: "content/pt-br"
+    params:
+      footer:
+        firstcolumn:
+          - O conteúdo do site é licenciado [CC-BY-ND-4.0](http://creativecommons.org/licenses/by-nd/4.0/)
+          - Site hospedado em [GitHub](https://github.com/jellyfin/jellyfin-blog)
+        secondcolumn:
+          -
+        thirdcolumn:
+          - Confira-nos em [GitHub](https://github.com/jellyfin)
+          - Veja nossa [Documentação](/docs/)
+  en-us:
+    title: "Jellyfin: The Free Software Media System"
+    languageName: English
+    weight: 1
+    contentDir: "content/en-us"
+    params:
+      author: "The Jellyfin Team"
+      footer:
+        firstcolumn:
+          - Site content is licensed [CC-BY-ND-4.0](http://creativecommons.org/licenses/by-nd/4.0/)
+          - Website hosted on [GitHub](https://github.com/jellyfin/jellyfin-blog)
+        secondcolumn:
+          -
+        thirdcolumn:
+          - Check us out on [GitHub](https://github.com/jellyfin)
+          - See our [Documentation](/docs/)
+    
 disableKinds:
   - '404'
-title: "Jellyfin: The Free Software Media System"
 markup:
   goldmark:
     renderer:
@@ -12,32 +46,21 @@ permalinks:
   note: "/note/:year/:month/:day/:slug/"
 menus:
   main:
-    - name: Blog
+    - name: blog
       Url: /posts
       weight: 1
-    - name: Clients
+    - name: clients
       Url: /clients
       weight: 2
-    - name: Downloads
+    - name: downloads
       Url: /downloads
       weight: 3
-    - name: Contribute
+    - name: contribute
       Url: /contribute
       weight: 4
-    - name: Documentation
+    - name: documentation
       Url: https://docs.jellyfin.org
       weight: 5
-    - name: Contact
+    - name: contact
       Url: /contact
       weight: 6
-params:
-  author: "The Jellyfin Team"
-  footer:
-    firstcolumn:
-      - Site content is licensed [CC-BY-ND-4.0](http://creativecommons.org/licenses/by-nd/4.0/)
-      - Website hosted on [GitHub](https://github.com/jellyfin/jellyfin-blog)
-    secondcolumn:
-      -
-    thirdcolumn:
-      - Check us out on [GitHub](https://github.com/jellyfin)
-      - See our [Documentation](/docs/)
