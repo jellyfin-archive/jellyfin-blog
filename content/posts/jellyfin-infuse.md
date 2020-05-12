@@ -1,9 +1,9 @@
 ---
 title: "Client Spotlight: Infuse for tvOS and iOS"
-subtitle: "Our biggest release yet"
+subtitle: "Enjoy your library on Apple TV, iPhone, and iPad"
 author: "Anthony Lavado"
 githubusername: "anthonylavado"
-date: 2020-05-12T04:09:11-04:00
+date: 2020-05-12T10:00:00-04:00
 justify: "center"
 ---
 
