@@ -85,6 +85,14 @@ justify = "center"
         </div>
         <a href="https://apps.apple.com/us/app/jellyfin-mobile/id1480192618" class="button button__accent button__card">Go to App Store</a>
     </div>
+    <div class="card">
+        <img src="/images/clients/infuse.png"/>
+        <div class="bannerbox">
+            <p class="banner">Infuse</p>
+            <p class="subbanner">3rd Party: iOS + iPadOS</p>
+        </div>
+        <a href="https://apps.apple.com/app/id1136220934?mt=8" class="button button__accent button__card">Go to App Store</a>
+    </div>
 </div>
 
 <h3>TV</h3>
@@ -115,6 +123,14 @@ justify = "center"
         <a href="https://github.com/jellyfin/jellyfin-kodi" class="button button__accent button__card">Go to GitHub</a>
     </div>
     <div class="card">
+        <img src="/images/clients/infuse.png"/>
+        <div class="bannerbox">
+            <p class="banner">Infuse</p>
+            <p class="subbanner">3rd Party: Apple TV</p>
+        </div>
+        <a href="https://apps.apple.com/app/id1136220934?mt=8" class="button button__accent button__card">Go to App Store</a>
+    </div>
+    <div class="card">
         <img src="/images/clients/roku.svg"/>
         <div class="bannerbox">
             <p class="banner">Roku</p>
@@ -138,6 +154,7 @@ justify = "center"
         </div>
         <p class="button button__accent button__card__disabled">Coming soon</a>
     </div>
+
 </div>
 
 <h3>Consoles</h3>
