@@ -84,7 +84,7 @@ justify = "center"
         <a href="https://apps.apple.com/us/app/jellyfin-mobile/id1480192618" class="button button__accent button__card">Go to App Store</a>
     </div>
     <div class="card">
-        <img src="/images/clients/infuse.png"/>
+        <img src="/images/clients/infuse.svg"/>
         <div class="bannerbox">
             <p class="banner">Infuse</p>
             <p class="subbanner">3rd Party: iOS + iPadOS</p>
