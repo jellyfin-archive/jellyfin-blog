@@ -6,7 +6,6 @@ justify = "center"
 +++
 
 <h2>Official Clients</h2>
-<h3>Supported Browsers</h3>
 
 <div class="clients-grid card-grid">
     <div class="card">
@@ -85,7 +84,7 @@ justify = "center"
         <a href="https://apps.apple.com/us/app/jellyfin-mobile/id1480192618" class="button button__accent button__card">Go to App Store</a>
     </div>
     <div class="card">
-        <img src="/images/clients/infuse.png"/>
+        <img src="/images/clients/infuse.svg"/>
         <div class="bannerbox">
             <p class="banner">Infuse</p>
             <p class="subbanner">3rd Party: iOS + iPadOS</p>
@@ -102,22 +101,28 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">Android TV</p>
         </div>
-        <a href="https://play.google.com/store/apps/details?id=org.jellyfin.androidtv" class="button button__accent button__card">Go to Play Store</a>
+        <a href="https://play.google.com/store/apps/details?id=org.jellyfin.androidtv" class="button button__accent button__card">Get it in Play Store</a>
     </div>
     <div class="card">
         <img src="/images/clients/firetv.svg"/>
         <div class="bannerbox">
             <p class="banner">Fire TV</p>
         </div>
-        <a href="https://www.amazon.com/gp/aw/d/B07TX7Z725" class="button button__accent button__card">Go to Amazon</a>
+        <a href="https://www.amazon.com/gp/aw/d/B07TX7Z725" class="button button__accent button__card">Get it in Amazon Store</a>
     </div>
     <div class="card">
         <img src="/images/clients/google-cast.svg"/>
-        <p class="banner">Chromecast and Google Cast devices</p>
+        <div class="bannerbox">
+            <p class="banner">Google Cast</p>
+        </div>
+        <p>For Chromecasts, Google Nest and other third-party devices that support the protocol</p>
     </div>
     <div class="card">
         <img src="/images/clients/airplay.svg"/>
-        <p class="banner">AirPlay</p>
+        <div class="bannerbox">
+            <p class="banner">AirPlay</p>
+        </div>
+        <p>For Apple devices and other third-party devices that support the protocol</p>
     </div>
     <div class="card">
         <img src="/images/clients/kodi.svg"/>
@@ -127,7 +132,7 @@ justify = "center"
         <a href="https://github.com/jellyfin/jellyfin-kodi" class="button button__accent button__card">Go to GitHub</a>
     </div>
     <div class="card">
-        <img src="/images/clients/infuse.png"/>
+        <img src="/images/clients/infuse.svg"/>
         <div class="bannerbox">
             <p class="banner">Infuse</p>
             <p class="subbanner">3rd Party: Apple TV</p>

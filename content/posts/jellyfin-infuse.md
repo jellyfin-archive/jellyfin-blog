@@ -35,7 +35,7 @@ When you get Infuse Pro:
 
 ---
 
-<a class="NoLinkLook" href='https://apps.apple.com/app/id1136220934?mt=8'><img height="77" src="/images/clients/infuse-6-icon.png"/></a> <a style="padding-left: 20px;" class="NoLinkLook" href='https://apps.apple.com/app/id1136220934?mt=8'><img width="153" alt='Download on the App Store' src='/images/store-icons/app-store.svg'/></a><br/>Infuse is a free download on the [App Store](https://apps.apple.com/app/id1136220934?mt=8). <br/> Infuse Pro can be purchased separately, or through in-app subscription.
+<a class="NoLinkLook" href='https://apps.apple.com/app/id1136220934?mt=8'><img height="77" src="/images/posts/infuse/infuse-6-icon.png"/></a> <a style="padding-left: 20px;" class="NoLinkLook" href='https://apps.apple.com/app/id1136220934?mt=8'><img width="153" alt='Download on the App Store' src='/images/store-icons/app-store.svg'/></a><br/>Infuse is a free download on the [App Store](https://apps.apple.com/app/id1136220934?mt=8). <br/> Infuse Pro can be purchased separately, or through in-app subscription.
 
 ---
 
