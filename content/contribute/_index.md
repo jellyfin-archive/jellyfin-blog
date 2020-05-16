@@ -201,19 +201,19 @@ aliases = [
 								<div class="buttons" style="text-align:center">
 								<div class="button button__accent" id="f_bugfix_button">Fix some bugs</div>
 								<div class="button button__accent" id="f_feature_button">Implement a new feature</div>
-								<div class="button button__accent" id="f_react_button">Help build the new React frontend</div>
+								<div class="button button__accent" id="f_vue_button">Help modernize the current frontend</div>
 								</div>
 								</p>
 								<script type="text/javascript">
 									document.getElementById("f_bugfix_button").onclick = function() {
 										if (document.getElementById("f_bugfix").style.display == 'block') {
 											document.getElementById("f_feature").style.display = "none";
-											document.getElementById("f_react").style.display = "none";
+											document.getElementById("f_vue").style.display = "none";
 										}
 										if (document.getElementById("f_bugfix").style.display == 'none') {
 											document.getElementById("f_bugfix").style.display = "block";
 											document.getElementById("f_feature").style.display = "none";
-											document.getElementById("f_react").style.display = "none";
+											document.getElementById("f_vue").style.display = "none";
 											document.getElementById("f_bugfix").scrollIntoView(true);
 										} else {
 											document.getElementById("f_bugfix").style.display = "none";
@@ -222,29 +222,29 @@ aliases = [
 									document.getElementById("f_feature_button").onclick = function() {
 										if (document.getElementById("f_feature").style.display == 'block') {
 											document.getElementById("f_bugfix").style.display = "none";
-											document.getElementById("f_react").style.display = "none";
+											document.getElementById("f_vue").style.display = "none";
 										}
 										if (document.getElementById("f_feature").style.display == 'none') {
 											document.getElementById("f_feature").style.display = "block";
 											document.getElementById("f_bugfix").style.display = "none";
-											document.getElementById("f_react").style.display = "none";
+											document.getElementById("f_vue").style.display = "none";
 											document.getElementById("f_feature").scrollIntoView(true);
 										} else {
 											document.getElementById("f_feature").style.display = "none";
 										}
 									}
 									document.getElementById("f_react_button").onclick = function() {
-										if (document.getElementById("f_react").style.display == 'block') {
+										if (document.getElementById("f_vue").style.display == 'block') {
 											document.getElementById("f_feature").style.display = "none";
 											document.getElementById("f_bugfix").style.display = "none";
 										}
-										if (document.getElementById("f_react").style.display == 'none') {
-											document.getElementById("f_react").style.display = "block";
+										if (document.getElementById("f_vue").style.display == 'none') {
+											document.getElementById("f_vue").style.display = "block";
 											document.getElementById("f_feature").style.display = "none";
 											document.getElementById("f_bugfix").style.display = "none";
-											document.getElementById("f_react").scrollIntoView(true);
+											document.getElementById("f_vue").scrollIntoView(true);
 										} else {
-											document.getElementById("f_react").style.display = "none";
+											document.getElementById("f_vue").style.display = "none";
 										}
 									}
 								</script>
@@ -259,8 +259,8 @@ aliases = [
 									<p>Once you've found a feature you'd like to implement, head over to the <a href="https://github.com/jellyfin/jellyfin" style="color:#fff">GitHub page</a> for the server and begin hacking. Development documentation can be found on the <a href="../docs/" style="color:#fff">Documentation page</a>.</p>
 									<p>You should always develop features on a dedicated Git branch within your own Fork of Jellyfin's WebUI (the fork+branch model). Once your feature is ready, submit a Pull Request on GitHub from your feature branch to the Master branch of the project. It will be reviewed and, if it passes review, accepted into Jellyfin.</p>
 								</div>
-								<div id="f_react" style="display:none;">
-									<p>Jellyfin's planned next-generation Web UI and base for new apps, is based on React-Native. Head over to the <a href="https://github.com/jellyfin/jellyfin-react-client" style="color:#fff">project page</a> on GitHub for more information.</p>
+								<div id="f_vue" style="display:none;">
+									<p>Jellyfin's Web UI is being rewritten. We're currently converting it to ES6 and then migrating to Vue. Head over to the <a href="https://github.com/jellyfin/jellyfin-web/" style="color:#fff">project page</a> on GitHub for more information.</p>
 								</div>
 							</div>
 							<div id="other" style="display:none;">
