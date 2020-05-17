@@ -233,7 +233,7 @@ aliases = [
 											document.getElementById("f_feature").style.display = "none";
 										}
 									}
-									document.getElementById("f_react_button").onclick = function() {
+									document.getElementById("f_vue_button").onclick = function() {
 										if (document.getElementById("f_vue").style.display == 'block') {
 											document.getElementById("f_feature").style.display = "none";
 											document.getElementById("f_bugfix").style.display = "none";
