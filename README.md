@@ -8,4 +8,4 @@ The header photo is from [freestocks.org](https://unsplash.com/photos/11SgH7U6Tm
 
 Jellyfin website content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.
 
-The deployed version of this site can be seen at https://github.com/jellyfin.github.io and at https://jellyfin.org.
+The sources will be pushed to the [jellyfin.github.io](https://github.com/jellyfin/jellyfin.github.io) repository and deployed to [jellyfin.org](https://jellyfin.org).
