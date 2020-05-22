@@ -30,6 +30,10 @@ menus:
     - name: Contact
       Url: /contact
       weight: 6
+outputs:
+  posts:
+    - HTML
+    - RSS
 params:
   author: "The Jellyfin Team"
   footer:

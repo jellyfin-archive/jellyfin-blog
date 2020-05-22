@@ -5,7 +5,11 @@
     content="width=device-width, initial-scale=1, maximum-scale=1"
   />
   <title>{{ .Title }} {{ if .Title }}-{{ end }} {{ .Site.Title }}</title>
-  
+
+  {{- range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{- end -}}
+
   <link rel="shortcut icon" href="/favicon.ico" />
 
   {{ $e1 := resources.Get "sass/utils/_normalize.scss" }}
