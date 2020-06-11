@@ -159,6 +159,13 @@ makepkg -si</code></pre>
                 Versions</a>
         </p>
     </div>
+    <div class="cloudron">
+        <h4>Cloudron</h4>
+        <p>Install Jellyfin directly from the Cloudron app library.</p>
+        <p>
+            <a href="https://cloudron.io/button/org.jellyfin.cloudronapp.html" class="button button__accent">Stable</a>
+        </p>
+    </div>
     <div class="linux">
         <h4>Generic Linux</h4>
         <p>Linux self-contained binary TAR archives (.tar.gz) are provided.</p>
