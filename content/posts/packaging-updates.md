@@ -11,7 +11,7 @@ Packaging and building binaries for releases and testing has long been an issue 
 
 Luckily, today they are all completed. In this post, I'll detail the changes as well as what the entail for our users.
 
-For a brief TL;DR: for most users of our stable releases, not much will change, and you will upgrade to 10.6.0 as you always have. For anyone using night lies for testing, advanced setups, or who are just curious - read on!
+For a brief TL;DR: for most users of our stable releases, not much will change, and you will upgrade to 10.6.0 as you always have. For anyone using nightlies for testing, advanced setups, or who are just curious - read on!
 
 <!--more-->
 
