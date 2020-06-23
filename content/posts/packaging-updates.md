@@ -43,7 +43,7 @@ For Fedora and CentOS, the setup is similar to Debian/Ubuntu, with the only diff
 
 For Windows installers and MacOS `.app` packages, the process remains a little more complicated and a WIP, but those will continue to work on release.
 
-For the remaining platforms, including the archive packages for Windows, MacOS, Linux, and .NET portable, the process takes the two separate `.tar.gz`/`.zip` archives from the build process, and combines them into a single `jellyfin` archive of the same type, which puts the two component parts in their respective places. Thus, like all the others mentioned above, the change should be invisible to users by downloading the "combined" version of the archives.
+For the remaining platforms, including the archive packages for Windows, MacOS, Linux, and .NET portable, the process takes the two separate `.tar.gz` / `.zip` archives from the build process, and combines them into a single `jellyfin` archive of the same type, which puts the two component parts in their respective places. Thus, like all the others mentioned above, the change should be invisible to users by downloading the "combined" version of the archives.
 
 ### Unstable builds
 
@@ -51,7 +51,7 @@ One of the cool things that this new setup enables is "unstable" builds. For qui
 
 The new split builds, Azure builds, and metapackages/metaimages instead let us do something far superior: build "unstable" releases for *every merged PR*. We don't have to worry about resource usage (Azure provides this), disk space, or other aspects of the build process. We can know immediately if something breaks. And most importantly, it lets anyone test our master branch in a very clear way, knowing *exactly* what version of the repository you are using and what the last merged PR was if something goes wrong.
 
-Unstable builds are versioned based on the Azure build ID, which is in the format "<date>.<id>", for example "20200620.12" for the 12th build on June 20th 2020. Thus this version string will tell you exactly which Azure build generated the binary, and thus which PR in which repository triggered it. For those binaries with changelogs (`.deb` and `.rpm` packages only for now), the changelog data includes the PR ID explicitly as well.
+Unstable builds are versioned based on the Azure build ID, which is in the format "[date].[id]", for example "20200620.12" for the 12th build on June 20th 2020. Thus this version string will tell you exactly which Azure build generated the binary, and thus which PR in which repository triggered it. For those binaries with changelogs (`.deb` and `.rpm` packages only for now), the changelog data includes the PR ID explicitly as well.
 
 ### Using Unstable builds
 
