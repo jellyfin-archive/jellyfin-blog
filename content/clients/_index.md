@@ -13,21 +13,21 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">Android TV</p>
         </div>
-        <a href="https://play.google.com/store/apps/details?id=org.jellyfin.androidtv" class="button button__accent button__card">Get it in Play Store</a>
+        <a href="https://play.google.com/store/apps/details?id=org.jellyfin.androidtv" class="button button__accent button__card">Get it on Play Store</a>
     </div>
     <div class="card">
         <img src="/images/clients/firetv.svg"/>
         <div class="bannerbox">
             <p class="banner">Fire TV</p>
         </div>
-        <a href="https://www.amazon.com/gp/aw/d/B07TX7Z725" class="button button__accent button__card">Get it in Amazon Store</a>
+        <a href="https://www.amazon.com/gp/aw/d/B07TX7Z725" class="button button__accent button__card">Get it on Amazon Store</a>
     </div>
     <div class="card">
         <img src="/images/clients/roku.svg"/>
         <div class="bannerbox">
             <p class="banner">Roku</p>
         </div>
-        <a href="https://channelstore.roku.com/details/592369/jellyfin" class="button button__accent button__card">Go to Roku Store</a>
+        <a href="https://channelstore.roku.com/details/592369/jellyfin" class="button button__accent button__card">Get it on Roku Store</a>
     </div>
     <div class="card">
         <img src="/images/clients/kodi.svg"/>
@@ -41,7 +41,7 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">Xbox One</p>
         </div>
-        <a href="https://www.microsoft.com/store/apps/9P2DRTG62QF8" class="button button__accent button__card">Go to Microsoft Store</a>
+        <a href="https://www.microsoft.com/store/apps/9P2DRTG62QF8" class="button button__accent button__card">Get it on Microsoft Store</a>
     </div>
     <div class="card">
         <img src="/images/clients/playstation_4.svg"/>
@@ -56,7 +56,7 @@ justify = "center"
             <p class="banner">Infuse</p>
             <p class="subbanner">3rd Party: Apple TV</p>
         </div>
-        <a href="https://apps.apple.com/app/id1136220934?mt=8" class="button button__accent button__card">Go to App Store</a>
+        <a href="https://apps.apple.com/app/id1136220934?mt=8" class="button button__accent button__card">Get it on App Store</a>
     </div>
     <div class="card">
         <img src="/images/clients/webos.svg"/>
@@ -96,14 +96,14 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">Android</p>
         </div>
-        <a href="https://play.google.com/store/apps/details?id=org.jellyfin.mobile" class="button button__accent button__card">Go to Play Store</a>
+        <a href="https://play.google.com/store/apps/details?id=org.jellyfin.mobile" class="button button__accent button__card">Get it on Play Store</a>
     </div>
     <div class="card">
         <img src="/images/clients/ios.svg"/>
         <div class="bannerbox">
             <p class="banner">iOS + iPadOS</p>
         </div>
-        <a href="https://apps.apple.com/us/app/jellyfin-mobile/id1480192618" class="button button__accent button__card">Go to App Store</a>
+        <a href="https://apps.apple.com/us/app/jellyfin-mobile/id1480192618" class="button button__accent button__card">Get it on App Store</a>
     </div>
     <div class="card">
         <img src="/images/clients/infuse.svg"/>
@@ -111,7 +111,7 @@ justify = "center"
             <p class="banner">Infuse</p>
             <p class="subbanner">3rd Party: iOS + iPadOS</p>
         </div>
-        <a href="https://apps.apple.com/app/id1136220934?mt=8" class="button button__accent button__card">Go to App Store</a>
+        <a href="https://apps.apple.com/app/id1136220934?mt=8" class="button button__accent button__card">Get it on App Store</a>
     </div>
 </div>
 
