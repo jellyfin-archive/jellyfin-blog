@@ -144,7 +144,7 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">Roku</p>
         </div>
-        <p class="button button__accent button__card__disabled">Coming soon</a>
+        <a href="https://channelstore.roku.com/details/592369/jellyfin" class="button button__accent button__card">Go to Roku Store</a>
     </div>
     <div class="card">
         <img src="/images/clients/webos.svg"/>
