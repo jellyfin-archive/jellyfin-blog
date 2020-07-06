@@ -1,19 +1,16 @@
 +++
 title = "How to Contribute"
-subtitle = "Jellyfin is a community project, run by volunteers. We're always looking for additional help from anyone who is able."
+subtitle = "Jellyfin is a community project run by volunteers. We're always looking for additional help."
 date = "2019-12-08"
 justify = "center"
-aliases = [
-   "help-jellyfin/"
-]
 +++
 
 <p>If you're interesting in helping the Jellyfin project, there are a few different ways to contribute depending on your skills and availability. Of course, simply using Jellyfin, finding issues, and reporting them, are a major help to our project, even if none of these apply to you!</p>
 						<p>
 						<div class="buttons" style="text-align:center">
-						<div class="button button__accent" id="developer_button">I'm a developer</div>
-						<div class="button button__accent" id="translator_button">I know non-English languages</div>
-						<div class="button button__accent" id="supporter_button">I'm neither</div>
+						<div class="button button__accent" id="developer_button">Code</div>
+						<div class="button button__accent" id="translator_button">Translations</div>
+						<div class="button button__accent" id="supporter_button">Other</div>
 						</div>
 						</p>
 						<script type="text/javascript">
@@ -61,11 +58,11 @@ aliases = [
 							}
 						</script>
 						<div id="developer" style="display:none;">
-							<p>There's a couple ways to get involved with Jellyfin, depending on your skillset.
+							<p>There are a couple ways to get involved with Jellyfin depending on your skillset.
 							<div class="buttons" style="text-align:center">
-							<div class="button button__accent" id="backend_button">I'm a C# developer</div>
-							<div class="button button__accent" id="frontend_button">I'm a JS developer</div>
-							<div class="button button__accent" id="other_button">I'm another developer</div>
+							<div class="button button__accent" id="backend_button">C#</div>
+							<div class="button button__accent" id="frontend_button">JavaScript</div>
+							<div class="button button__accent" id="other_button">Other</div>
 							</div>
 							</p>
 							<script type="text/javascript">
@@ -115,8 +112,8 @@ aliases = [
 							<div id="backend" style="display:none;">
 								<p>The main core of Jellyfin as well as its plugins are written in C#. You have a couple options to get started.
 								<div class="buttons" style="text-align:center">
-								<div class="button button__accent" id="b_bugfix_button">Fix some bugs</div>
-								<div class="button button__accent" id="b_feature_button">Implement a new feature</div>
+								<div class="button button__accent" id="b_bugfix_button">Fix Bugs</div>
+								<div class="button button__accent" id="b_feature_button">Implement a Feature</div>
 								</div>
 								</p>
 								<script type="text/javascript">

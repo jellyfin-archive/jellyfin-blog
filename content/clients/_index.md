@@ -44,7 +44,7 @@ justify = "center"
         <a href="https://www.microsoft.com/store/apps/9P2DRTG62QF8" class="button button__accent button__card">Go to Microsoft Store</a>
     </div>
     <div class="card">
-        <img src="/images/clients/playstation_4.svg"/>
+        <img src="/images/clients/playstation-4.svg"/>
         <div class="bannerbox">
             <p class="banner">PlayStation 4</p>
         </div>
@@ -73,14 +73,14 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">LG webOS</p>
         </div>
-        <p class="button button__accent button__card__disabled">Coming soon</a>
+        <p class="button button__accent button__card__disabled">Coming Soon</a>
     </div>
     <div class="card">
         <img src="/images/clients/samsungtv.svg"/>
         <div class="bannerbox">
             <p class="banner">Samsung Tizen</p>
         </div>
-        <p class="button button__accent button__card__disabled">Coming soon</a>
+        <p class="button button__accent button__card__disabled">Coming Soon</a>
     </div>
     <div class="card">
         <img src="/images/clients/google-cast.svg"/>
@@ -116,6 +116,14 @@ justify = "center"
         <a href="https://apps.apple.com/us/app/jellyfin-mobile/id1480192618" class="button button__accent button__card">Go to App Store</a>
     </div>
     <div class="card">
+        <img src="/images/clients/gelli.svg"/>
+        <div class="bannerbox">
+            <p class="banner">Gelli</p>
+            <p class="subbanner">3rd Party: Android</p>
+        </div>
+        <a href="https://github.com/dkanada/gelli" class="button button__accent button__card">Go to GitHub</a>
+    </div>
+    <div class="card">
         <img src="/images/clients/infuse.svg"/>
         <div class="bannerbox">
             <p class="banner">Infuse</p>
@@ -143,7 +151,7 @@ justify = "center"
             <p class="banner">Windows 10</p>
             <p class="subbanner">Universal Windows Platform</p>
         </div>
-        <p class="button button__accent button__card__disabled">Coming soon</a>
+        <p class="button button__accent button__card__disabled">Coming Soon</a>
     </div>
     <div class="card">
         <img src="/images/clients/electron.svg"/>
