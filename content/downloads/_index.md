@@ -57,8 +57,6 @@ docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /
     <div class="debian">
         <h4>Debian and Ubuntu</h4>
         <p>Install Jellyfin via our Apt repository or via manual archives (.deb).</p>
-        <p><i>Note:</i> Jellyfin is not explicitly packaged for Linux Mint or other Debuntu derivatives. Use the closest
-            equivalent Debian or Ubuntu version instead if the commands below throw errors.</p>
         <p>
             <div class="button button__accent" id="deb_repo_stable_button">Stable</div>
             <div class="button button__accent" id="deb_repo_nightly_button">Nightly</div>
@@ -95,6 +93,7 @@ wget -O - https://repo.jellyfin.org/jellyfin_team.gpg.key | sudo apt-key add -
 echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/$( awk -F'=' '/^ID=/{ print $NF }' /etc/os-release ) $( awk -F'=' '/^VERSION_CODENAME=/{ print $NF }' /etc/os-release ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list
 sudo apt update
 sudo apt install jellyfin</code></pre>
+        <p><i>Note:</i> The third command should give you output similar to <code>deb [arch=(architecture)] https://repo.jellyfin.org/(distribution) (release) main"</code>. We support <code>amd64</code>, <code>armhf</code>, and <code>arm64</code> for architectures, <code>debian</code> and <code>ubuntu</code> for distributions, and <code>stretch</code>, <code>buster</code>, and <code>bullsye</code> for Debian releases and <code>xenial</code>, <code>bionic</code>, and <code>focal</code> for Ubuntu releases. If you see something different in your output, you might need to manually modify it. Use the closest equivalent Debian or Ubuntu version instead.</p>
         <p>Once installed, Jellyfin will be running as a service. Manage it with <pre><code>sudo systemctl {action} jellyfin.service</code></pre> or <pre><code>sudo service jellyfin {action}</code></pre></p>
         </div>
         <div id="deb_repo_nightly" style="display:none;">
