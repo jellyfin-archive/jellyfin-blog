@@ -87,7 +87,7 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">Google Cast</p>
         </div>
-        <p>For Chromecasts, Google Nest and other third-party devices that support the protocol</p>
+        <p>For Chromecasts, Google Nest, and other third-party devices that support the protocol</p>
     </div>
     <div class="card">
         <img src="/images/clients/airplay.svg"/>
@@ -121,6 +121,7 @@ justify = "center"
             <p class="banner">Gelli</p>
             <p class="subbanner">3rd Party: Android</p>
         </div>
+        <a href="https://f-droid.org/packages/com.dkanada.gramophone" class="button button__accent button__card">Go to F-Droid</a>
         <a href="https://github.com/dkanada/gelli" class="button button__accent button__card">Go to GitHub</a>
     </div>
     <div class="card">

@@ -1,6 +1,6 @@
 +++
 title = "Contact"
-subtitle = "We've got a variety of ways for you to get in touch with us."
+subtitle = "We've got a variety of ways for you to get in touch."
 date = "2019-12-08"
 justify = "center"
 +++
@@ -18,11 +18,11 @@ For social updates, we're on a few popular sites.
 - [Documentation](https://docs.jellyfin.org)
 - [Translations](https://translate.jellyfin.org)
 - [Feature Requests](https://features.jellyfin.org)
-- [GitHub](https://github.com/jellyfin)
+- [Source](https://github.com/jellyfin)
 
 ## Chat
 
-To chat, we primarily use [Riot](https://www.riot.im) to access the [Matrix](https://www.matrix.org) network.
+We primarily use [Riot](https://www.riot.im) to access the [Matrix](https://www.matrix.org) network.
 
 - [#jellyfin:matrix.org](https://matrix.to/#/#jellyfin:matrix.org): General chat related to the project
 - [#jellyfin-announce:matrix.org](https://matrix.to/#/#jellyfin-announce:matrix.org): Announcements for releases
@@ -34,7 +34,12 @@ To chat, we primarily use [Riot](https://www.riot.im) to access the [Matrix](htt
 
 ## IRC
 
-Some channels are bridged from Matrix to [Freenode](https://freenode.net) for convenience.
+All channels are bridged from Matrix to [Freenode](https://freenode.net) for convenience.
 
-- [#jellyfin](ircs://chat.freenode.net:6697/#jellyfin) - [Webchat](https://webchat.freenode.net/#jellyfin)
-- [#jellyfin-dev](ircs://chat.freenode.net:6697/#jellyfin-dev) - [Webchat](https://webchat.freenode.net/#jellyfin-dev)
+- [#jellyfin](ircs://chat.freenode.net:6697/#jellyfin) - [webchat](https://webchat.freenode.net/#jellyfin)
+- [#jellyfin-announce](ircs://chat.freenode.net:6697/#jellyfin-announce) - [webchat](https://webchat.freenode.net/#jellyfin-announce)
+- [#jellyfin-troubleshooting](ircs://chat.freenode.net:6697/#jellyfin-troubleshooting) - [webchat](https://webchat.freenode.net/#jellyfin-troubleshooting)
+- [#jellyfin-dev](ircs://chat.freenode.net:6697/#jellyfin-dev) - [webchat](https://webchat.freenode.net/#jellyfin-dev)
+- [#jellyfin-dev-client](ircs://chat.freenode.net:6697/#jellyfin-dev-client) - [webchat](https://webchat.freenode.net/#jellyfin-dev-client)
+- [#jellyfin-dev-android](ircs://chat.freenode.net:6697/#jellyfin-dev-android) - [webchat](https://webchat.freenode.net/#jellyfin-dev-android)
+- [#jellyfin-offtopic](ircs://chat.freenode.net:6697/#jellyfin-offtopic) - [webchat](https://webchat.freenode.net/#jellyfin-offtopic)
