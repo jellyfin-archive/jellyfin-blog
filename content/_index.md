@@ -34,7 +34,7 @@ about:
 single:
   - title: Your media, wherever you are.
     text:
-      Jellyfin lets you watch your media from a web browser on your computer, apps on your Android, iOS (including AirPlay), Android TV, or Fire TV device, or via your Chromecast or existing Kodi installation. And clients for Roku and other platforms are on the way.
+      Jellyfin lets you watch your media from a web browser on your computer, apps on your Roku, Android, iOS (including AirPlay), Android TV, or Fire TV device, or via your Chromecast or existing Kodi installation. See all <a href="clients/" class="footer__link">our clients</a>.
     src: /images/undraw-devices.svg
     alt: Your media, wherever you are
   - title: It's your data.
@@ -51,7 +51,7 @@ single:
     text:
       Jellyfin is Free Software, licensed under the GNU GPL. You can use it, study it, modify it, build it, and distribute it for free, as long as your changes are licensed the same way.
       <br/><br/>
-      The project is community-built, relying entirely on contributions from volunteers to improve. Want to help out? There's lots of ways to do so, and you don't even have to code! See our <a href="/docs/general/contributing/" class="footer__link">Contribution Guide</a> for more details.
+      The project is community-built, relying entirely on contributions from volunteers to improve. Want to help out? There's lots of ways to do so, and you don't even have to code! See our <a href="contribute/" class="footer__link">Contribution Guide</a> for more details.
     src: /images/undraw-version-control.svg
     alt: Software freedom is important.
 gallery:
