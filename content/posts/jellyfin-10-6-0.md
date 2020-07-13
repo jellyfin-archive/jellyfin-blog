@@ -37,7 +37,7 @@ While there is still a ways to go, EF Core should bring faster database queries,
 
 Part of the improved memory usage is due to our current ORM caching everything in memory to make up for its slowness. For large databases, this could result in hundreds of megabytes of memory lost to caching. With EF Core, however, we leave the heavy lifting to the database engine, leading to better response times and less memory usage overall.
 
-Your databases will be automatically migrated when you first launch Jellyfin 10.6. While the migration process has been well tested over the past few months, **please backup your existing date files**.
+Your databases will be automatically migrated when you first launch Jellyfin 10.6. While the migration process has been well tested over the past few months, **please backup your existing data files**.
 
 # A more modern web client
 
@@ -55,9 +55,9 @@ Our resident C# performance wizard, [Bond-009](https://github.com/Bond-009) cont
 
 [mark-monteiro](https://github.com/mark-monteiro) worked on multiple fixes for 10.6, including reworking the network settings accessible through the administration dashboard ([jf#2774](https://github.com/jellyfin/jellyfin/pull/2774), [jf-web#1140](https://github.com/jellyfin/jellyfin-web/pull/1140)).
 
-Team member [nyanmisaka](https://github.com/nyanmisaka), with some help from [artiume](https://github.com/artiume/), brings a number of improvements to transcoding ([jf#2809](https://github.com/jellyfin/jellyfin/pull/2809), [jf-web#1046](https://github.com/jellyfin/jellyfin-web/pull/1046), [jf#2821](https://github.com/jellyfin/jellyfin/pull/2821), [jf#2715](https://github.com/jellyfin/jellyfin/pull/2715)), with format toggles, options for toggling transcoding for HEVC an 10-bit VP9 videos off for older GPUs, providing support for the VP8/VP9 QSD and NVDEC decoders in FFmpeg 4.3, better support for UTF-16 subtitles and a host of other improvements.
+Team member [nyanmisaka](https://github.com/nyanmisaka), with some help from [artiume](https://github.com/artiume/), brings a number of improvements to transcoding ([jf#2809](https://github.com/jellyfin/jellyfin/pull/2809), [jf-web#1046](https://github.com/jellyfin/jellyfin-web/pull/1046), [jf#2821](https://github.com/jellyfin/jellyfin/pull/2821), [jf#2715](https://github.com/jellyfin/jellyfin/pull/2715)), with format toggles, options for toggling transcoding for HEVC and 10-bit VP9 videos off for older GPUs, providing support for the VP8/VP9 QSD and NVDEC decoders in FFmpeg 4.3, better support for UTF-16 subtitles and a host of other improvements.
 
-Other improvements to the server include fixes for collection metadate ([jf#3117](https://github.com/jellyfin/jellyfin/pull/3117)), improvements to the metadata providers ([jf#3071](https://github.com/jellyfin/jellyfin/pull/3071), [jf#3056](https://github.com/jellyfin/jellyfin/pull/3056), [jf#3289](https://github.com/jellyfin/jellyfin/pull/3289)), and more core providers moved to plugins ([jf#3208](https://github.com/jellyfin/jellyfin/pull/3208)).
+Further changes to the server include fixes for collection metadata ([jf#3117](https://github.com/jellyfin/jellyfin/pull/3117)), improvements to the metadata providers ([jf#3071](https://github.com/jellyfin/jellyfin/pull/3071), [jf#3056](https://github.com/jellyfin/jellyfin/pull/3056), [jf#3289](https://github.com/jellyfin/jellyfin/pull/3289)), and more core providers moved to plugins ([jf#3208](https://github.com/jellyfin/jellyfin/pull/3208)).
 
 # More web client improvements
 
@@ -83,11 +83,12 @@ Other improvements to the web client include a rewritten image viewer ([jf-web#9
 
 # Patreons and Github Sponsors
 
-With the increased amount of activity on the project, we would like to give a signal boost to some ways to support the people working daily on Jellyfin. We want to stress that, while some of our contributors individually accept financial donations, Jellyfin and its features will **never** be hidden behind a paywall. Supporting the developers won't give give you any exclusive access to features, feature requests or support.
+With the increased amount of activity on the project, we would like to give a signal boost to some ways to support the people working daily on Jellyfin. We want to stress that, while some of our contributors individually accept financial donations, Jellyfin and its features will **never** be hidden behind a paywall. Supporting the developers won't give
+ you any exclusive access to features, feature requests or support.
 
 [anthonylavado](https://github.com/anthonylavado), our wonderful PR and developer relation person, has a Github Sponsors profile.
 
-[barronpm](https://github.com/barronpm), whose main work is done on the server portion of Jellyfin and who has been spearheading the migration to EF Core has recently opened [a Patreon page](https://www.patreon.com/barronpm).
+[barronpm](https://github.com/barronpm), whose main work is on the server portion of Jellyfin and who has been spearheading the migration to EF Core has recently opened [a Patreon page](https://www.patreon.com/barronpm).
 
 [ferferga](https://github.com/ferferga), web client contributor, localization aficionado and all-around awesome person accepts donations through Github Sponsors.
 
