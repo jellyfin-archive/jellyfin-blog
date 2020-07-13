@@ -3,7 +3,7 @@ title: "Jellyfin Release - v10.6.0"
 subtitle: "Party together while social distancing"
 author: "Julien Machiels"
 githubusername: "MrTimscampi"
-date: "2019-12-25"
+date: 2020-07-13T11:42:00+01:00
 justify: "center"
 ---
 
@@ -11,7 +11,7 @@ After months of work, here comes a behemoth of a release, with over 30 major imp
 
 <!--more-->
 
-With more than 500 pull requests merged between the server and the web client, Jellyfin 10.6.0 brings an incredibly number of new features, improvements and bug fixes. It's a huge release and we have a lot to cover, so let's get to it!
+At **more than 500 pull requests** merged between the server and the web client, Jellyfin 10.6.0 brings an incredibly number of new features, improvements and bug fixes. It's a huge release and we have a lot to cover, so let's get to it!
 
 # SyncPlay
 
