@@ -13,7 +13,7 @@ After months of work, here comes a behemoth of a release, with over 30 major imp
 
 <a href="/downloads/" class="button button__accent">Download Jellyfin 10.6.0</a> <a href="https://github.com/jellyfin/jellyfin/releases/tag/v10.6.0" class="button hero__button">Read the full release notes</a>
 
-At **more than 500 pull requests** merged between the server and the web client, Jellyfin 10.6.0 brings an incredibly number of new features, improvements and bug fixes. It's a huge release and we have a lot to cover, so let's get to it!
+At **more than 500 pull requests** merged between the server and the web client, Jellyfin 10.6.0 brings an incredible number of new features, improvements and bug fixes. It's a huge release and we have a lot to cover, so let's get to it!
 
 # SyncPlay
 
