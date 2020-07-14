@@ -72,7 +72,7 @@ As we used the new 10.5 details screen over the last few months, we noticed some
     <img data-label="10.6.0" src="/images/posts/jellyfin-10-6-0/details-10-6.png" name="" />
 </div>
 
-Team member [ferferga](https://github.com/ferferga) and contributor [samuel9554](https://github.com/samuel9554) have been working on redesigning our music experience. For 10.6, they overhauled our mobile music playeer interface and made significant changes to the mini player and the remote player UI ([jf-web#1056](https://github.com/jellyfin/jellyfin-web/pull/1056), [jf-web#1430](https://github.com/jellyfin/jellyfin-web/pull/1430)).
+Team member [ferferga](https://github.com/ferferga) and contributor [samuel9554](https://github.com/samuel9554) have been working on redesigning our music experience. For 10.6, they overhauled our mobile music player interface and made significant changes to the mini player and the remote player UI ([jf-web#1056](https://github.com/jellyfin/jellyfin-web/pull/1056), [jf-web#1430](https://github.com/jellyfin/jellyfin-web/pull/1430)).
 
 <div class="juxtapose">
     <img data-label="10.5.5" src="/images/posts/jellyfin-10-6-0/player-10-5.png" name="" />
