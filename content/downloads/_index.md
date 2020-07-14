@@ -6,17 +6,17 @@ justify = "center"
 +++
 
 <div class="text-container">
-    <h3 class="page__main__title">Stable or Nightly?</h3>
+    <h3 class="page__main__title">Stable or Unstable?</h3>
     <p>Generally, if you're a new user or value stability use the stable version. It won't change
         very often. If you want to help test the latest improvements and features and can handle some occasional
-        breakage, use the nightly version. Always back up your existing configuration before testing nightly releases.</p>
+        breakage, use the unstable version. Always back up your existing configuration before testing unstable releases.</p>
     <div class="docker">
         <h4>Docker</h4>
         <p>Run Jellyfin in Docker. Example commands store data in "/srv/jellyfin" and assume your media is stored under
             "/media".</p>
         <p>
             <div class="button button__accent" id="docker_stable_button">Stable</div>
-            <div class="button button__accent" id="docker_nightly_button">Nightly</div>
+            <div class="button button__accent" id="docker_nightly_button">Unstable</div>
             <a href="https://hub.docker.com/r/jellyfin/jellyfin/" class="button button__accent">Docker Hub</a>
         </p>
         <script type="text/javascript">
@@ -48,9 +48,9 @@ docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /
             </code>
         </div>
         <div id="docker_nightly" style="display:none;">
-            <pre><code>docker pull jellyfin/jellyfin:nightly
+            <pre><code>docker pull jellyfin/jellyfin:unstable
 mkdir -p /srv/jellyfin/{config,cache}
-docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /media:/media --net=host jellyfin/jellyfin:nightly</pre>
+docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /media:/media --net=host jellyfin/jellyfin:unstable</pre>
             </code>
         </div>
     </div>
@@ -59,7 +59,7 @@ docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /
         <p>Install Jellyfin via our Apt repository or via manual archives (.deb).</p>
         <p>
             <div class="button button__accent" id="deb_repo_stable_button">Stable</div>
-            <div class="button button__accent" id="deb_repo_nightly_button">Nightly</div>
+            <div class="button button__accent" id="deb_repo_nightly_button">Unstable</div>
             <a href="https://repo.jellyfin.org/releases/server/debian/versions" class="button button__accent">All Debian
                 Versions</a>
             <a href="https://repo.jellyfin.org/releases/server/ubuntu/versions" class="button button__accent">All Ubuntu
@@ -99,9 +99,9 @@ sudo apt install jellyfin</code></pre>
         <div id="deb_repo_nightly" style="display:none;">
             <pre><code>sudo apt install apt-transport-https
 wget -O - https://repo.jellyfin.org/jellyfin_team.gpg.key | sudo apt-key add -
-echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/$( awk -F'=' '/^ID=/{ print $NF }' /etc/os-release ) $( awk -F'=' '/^VERSION_CODENAME=/{ print $NF }' /etc/os-release ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list
+echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/$( awk -F'=' '/^ID=/{ print $NF }' /etc/os-release ) $( awk -F'=' '/^VERSION_CODENAME=/{ print $NF }' /etc/os-release ) unstable" | sudo tee /etc/apt/sources.list.d/jellyfin.list
 sudo apt update
-sudo apt install jellyfin-nightly</code></pre>
+sudo apt install jellyfin</code></pre>
         <p>Once installed, Jellyfin will be running as a service. Manage it with <pre><code>sudo systemctl {action} jellyfin.service</code></pre> or <pre><code>sudo service jellyfin {action}</code></pre></p>
         </div>
     </div>
@@ -163,7 +163,7 @@ makepkg -si</code></pre>
         <p>Linux self-contained binary TAR archives (.tar.gz) are provided.</p>
         <p>
             <a href="https://repo.jellyfin.org/releases/server/linux/stable" class="button button__accent">Stable</a>
-            <a href="https://repo.jellyfin.org/releases/server/linux/nightly" class="button button__accent">Nightly</a>
+            <a href="https://repo.jellyfin.org/releases/server/linux/unstable" class="button button__accent">Unstable</a>
             <a href="https://repo.jellyfin.org/releases/server/linux/versions" class="button button__accent">All
                 Versions</a>
         </p>
@@ -173,7 +173,7 @@ makepkg -si</code></pre>
         <p>Both installers (.dmg) and manual ZIP archives (.tar.gz) are provided.</p>
         <p>
             <a href="https://repo.jellyfin.org/releases/server/macos/stable" class="button button__accent">Stable</a>
-            <a href="https://repo.jellyfin.org/releases/server/macos/nightly" class="button button__accent">Nightly</a>
+            <a href="https://repo.jellyfin.org/releases/server/macos/unstable" class="button button__accent">Unstable</a>
             <a href="https://repo.jellyfin.org/releases/server/macos/versions" class="button button__accent">All
                 Versions</a>
         </p>
@@ -186,8 +186,8 @@ makepkg -si</code></pre>
             <p>
                 <a href="https://repo.jellyfin.org/releases/server/windows/stable"
                     class="button button__accent">Stable</a>
-                <a href="https://repo.jellyfin.org/releases/server/windows/nightly"
-                    class="button button__accent">Nightly</a>
+                <a href="https://repo.jellyfin.org/releases/server/windows/unstable"
+                    class="button button__accent">Unstable</a>
                 <a href="https://repo.jellyfin.org/releases/server/windows/versions" class="button button__accent">All
                     Versions</a>
             </p>
@@ -197,8 +197,8 @@ makepkg -si</code></pre>
         <p>The portable version can be run on any system with a .NET Core runtime.</p>
         <p>
             <a href="https://repo.jellyfin.org/releases/server/portable/stable" class="button button__accent">Stable</a>
-            <a href="https://repo.jellyfin.org/releases/server/portable/nightly"
-                class="button button__accent">Nightly</a>
+            <a href="https://repo.jellyfin.org/releases/server/portable/unstable"
+                class="button button__accent">Unstable</a>
             <a href="https://repo.jellyfin.org/releases/server/portable/versions" class="button button__accent">All
                 Versions</a>
         </p>
