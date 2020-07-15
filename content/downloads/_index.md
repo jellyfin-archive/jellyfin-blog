@@ -107,10 +107,10 @@ sudo apt install jellyfin</code></pre>
     </div>
     <div class="arch">
         <h4>Arch Linux</h4>
-        <p>Install Jellyfin via the Arch User Repository (AUR).</p>
+        <p>Install Jellyfin via the Arch User Repository.</p>
         <p>
             <div class="button button__accent" id="arch_aur_stable_button">Stable</div>
-            <div class="button button__accent" id="arch_aur_nightly_button">Nightly</div>
+            <div class="button button__accent" id="arch_aur_nightly_button">Unstable</div>
             <a href="https://aur.archlinux.org/packages/?K=jellyfin" class="button button__accent">AUR</a>
         </p>
         <script type="text/javascript">
