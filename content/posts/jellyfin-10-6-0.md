@@ -99,11 +99,13 @@ We want to stress that, while some of our contributors individually accept finan
 
 [ferferga](https://github.com/ferferga), web client contributor, localization aficionado and all-around awesome person accepts donations through [Github Sponsors](https://github.com/sponsors/ferferga).
 
+[nielsvanvelzen](https://github.com/nielsvanvelzen), who has been working hard on the Android TV client, can be supported on [Github Sponsors](https://github.com/sponsors/nielsvanvelzen).
+
 [MrTimscampi](https://github.com/MrTimscampi), whose main work has been cleaning up and modernizing the web client, also recently opened [a Patreon page](https://www.patreon.com/mrtimscampi).
 
-[oddstr13](https://github.com/oddstr13), one of the developers of Jellyfin for Kodi is also accepts donations on [Github Sponsors](https://github.com/sponsors/oddstr13).
+[oddstr13](https://github.com/oddstr13), one of the developers of Jellyfin for Kodi also accepts donations on [Github Sponsors](https://github.com/sponsors/oddstr13).
 
-[thornbill](https://github.com/thornbill) and [nielsvanvelzen](https://github.com/nielsvanvelzen), keepers of the Android clients, can also be supported on Github Sponsors. [Here](https://github.com/sponsors/thornbill) for [thornbill](https://github.com/thornbill) and [here](https://github.com/sponsors/nielsvanvelzen) for [nielsvanvelzen](https://github.com/nielsvanvelzen)
+[thornbill](https://github.com/thornbill) who handles the iOS and Android clients, and also contributes to the Android TV client, can be supported on [Github Sponsors](https://github.com/sponsors/thornbill)
 
 # Contributors
 
