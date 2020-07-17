@@ -7,7 +7,7 @@ date: 2020-07-13T11:42:00+01:00
 justify: "center"
 ---
 
-After months of work, here comes a behemoth of a release, with over 30 major improvements.
+After months of work, here comes another behemoth of a release, this time with over 30 major improvements and tons of fixes.
 
 <!--more-->
 
