@@ -26,7 +26,8 @@
 							{{ .Date.Format "2 Jan 2006" }}
 						</time> by
 						{{ if .Params.githubusername }}
-						<a href="https://github.com/{{ .Params.githubusername }}">{{ .Params.author }}</a> &nbsp; <img src="https://github.com/{{ .Params.githubusername }}.png?size=40"/>
+						<a href="https://github.com/{{ .Params.githubusername }}">{{ .Params.author }}</a>
+						<img class="github" src="https://github.com/{{ .Params.githubusername }}.png?size=40"/>
 						{{ else }}
 						{{ if .Params.author }}
 						{{ .Params.author }}
