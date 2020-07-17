@@ -45,8 +45,8 @@ Please note that the GUID must be unique (both in the manifest and the plugin it
 ]
 ```
 
-The official repository manifest can be found <a href="https://repo.jellyfin.org/releases/plugin/manifest-stable.json">here</a> if you'd like more examples.
-You can also find the deprecated manifest at <a href="https://repo.jellyfin.org/releases/plugin/manifest.json">this link</a> for the old format.
+The official repository manifest for <a href="https://repo.jellyfin.org/releases/plugin/manifest-stable.json">stable plugins</a> can be used for more examples.
+You can also find the <a href="https://repo.jellyfin.org/releases/plugin/manifest.json">deprecated manifest</a> on the same domain for the old format.
 However, all new plugin updates (on the official repository) will go to the new manifest, so older verions of Jellyfin won't receive plugin updates.
 Plugins do have <a href="https://jellyfin.org/docs/plugin-api/MediaBrowser.Model.Updates.html">official documentation</a> on our DocFX instance.
 Please be aware that our documentation is still a work in progress, since a lot of the C# code still has very little information for tools like this.
