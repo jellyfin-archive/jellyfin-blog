@@ -3,7 +3,7 @@ title: "Jellyfin Release - v10.6.0"
 subtitle: "Party together while social distancing"
 author: "Julien Machiels"
 githubusername: "MrTimscampi"
-date: 2020-07-13T11:42:00+01:00
+date: 2020-07-19T11:42:00+01:00
 justify: "center"
 ---
 
