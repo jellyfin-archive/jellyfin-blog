@@ -334,3 +334,8 @@ justify = "center"
 							</div>
 						</div>
 				</div>
+
+## All the people that brought you Jellyfin
+<object data="https://opencollective.com/jellyfin/contributors.svg?width=1000&button=false" type="image/svg+xml" width="1000"></object>
+<br>
+
