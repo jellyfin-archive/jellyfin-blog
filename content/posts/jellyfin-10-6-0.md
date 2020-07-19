@@ -95,7 +95,7 @@ We want to stress that, while some of our contributors individually accept finan
 
 [barronpm](https://github.com/barronpm), whose main work is on the server portion of Jellyfin and who has been spearheading the migration to EF Core has recently opened [a Patreon page](https://www.patreon.com/barronpm).
 
-[dkanada](https://github.com/dkanada/), whose work spread from server to web client, accepts donations through [Github Sponsors](https://github.com/sponsors/dkanada)
+[dkanada](https://github.com/dkanada/), whose work spreads from server to web client, accepts donations through [Github Sponsors](https://github.com/sponsors/dkanada)
 
 [ferferga](https://github.com/ferferga), web client contributor, localization aficionado and all-around awesome person accepts donations through [Github Sponsors](https://github.com/sponsors/ferferga).
 
