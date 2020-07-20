@@ -41,7 +41,8 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">Xbox One</p>
         </div>
-        <a href="https://www.microsoft.com/store/apps/9P2DRTG62QF8" class="button button__accent button__card">Go to Microsoft Store</a>
+        <p>Coming soon</p>
+        <!--<a href="https://www.microsoft.com/store/apps/9P2DRTG62QF8" class="button button__accent button__card">Go to Microsoft Store</a>-->
     </div>
     <div class="card">
         <img src="/images/clients/playstation-4.svg"/>
