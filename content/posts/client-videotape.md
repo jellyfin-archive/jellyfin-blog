@@ -21,7 +21,7 @@ Just to name a few features:
 
 Download it from the Microsoft store:
 
-<a class="NoLinkLook" href="//www.microsoft.com/store/apps/9NLVH2LL4P1Z?cid=storebadge&ocid=badge"><img src="/images/store-icons/microsoft.svg" alt="View Jellyfin in the Microsoft Store" style="width: 142px; height: 52px;"/></a>   
+<a class="NoLinkLook" href="//www.microsoft.com/store/apps/9NLVH2LL4P1Z?cid=storebadge&ocid=badge"><img src="/images/store-icons/microsoft.svg" alt="View VideoTape in the Microsoft Store" style="width: 142px; height: 52px;"/></a>   
 
 Here's what the Jellyfin looks like on Windows, with Videotape 3:
 <img src="/images/posts/videotape/detailview.png" name="Detail View on Windows 10" />
