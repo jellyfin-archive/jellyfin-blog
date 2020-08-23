@@ -10,7 +10,7 @@ justify = "center"
 
 Videotape is a free lightweight video player for both Windows 10 & Xbox. Their new 3.0 version now supports Jellyfin!
 <!--more-->
-This new version brings support for Jellyfin. It is a native UWP application with a strong focus on design and usability.
+Videotape is a native UWP application with a strong focus on design and usability.
 
 Just to name a few features:
 - Direct play almost all files, both from Jellyfin and other local files
