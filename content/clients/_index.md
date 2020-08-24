@@ -41,7 +41,7 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">Xbox One</p>
         </div>
-        <p>Coming soon</p>
+        <p class="button button__accent button__card__disabled">Coming Soon</a>
         <!--<a href="https://www.microsoft.com/store/apps/9P2DRTG62QF8" class="button button__accent button__card">Go to Microsoft Store</a>-->
     </div>
     <div class="card">
@@ -49,7 +49,7 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">PlayStation 4</p>
         </div>
-        <p>Available through the web browser.</p>
+        <p>Available through the included browser on any PlayStation.</p>
     </div>
     <div class="card">
         <img src="/images/clients/infuse.svg"/>
@@ -88,14 +88,14 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">Google Cast</p>
         </div>
-        <p>For Chromecasts, Google Nest, and other third-party devices that support the protocol</p>
+        <p>Chromecasts and many other devices support this protocol.</p>
     </div>
     <div class="card">
         <img src="/images/clients/airplay.svg"/>
         <div class="bannerbox">
             <p class="banner">AirPlay</p>
         </div>
-        <p>For Apple devices and other third-party devices that support the protocol</p>
+        <p>Used by iPhones and other supported devices for media.</p>
     </div>
 </div>
 
