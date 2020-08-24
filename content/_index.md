@@ -6,7 +6,7 @@ hero:
     - title: See it in Action
       url: https://demo.jellyfin.org/stable
     - title: Download Now
-      url: /downloads
+      url: /download
       accent: yes
     - title: Learn More
       url: #
