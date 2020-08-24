@@ -2,19 +2,21 @@
 <div class="expanded landing__section">
 	<div class="container">
 		<div class="expanded__inner">
-			<div class="expanded__media"><img src="{{ .src }}" alt="{{ .alt }}" class="expanded__image" /></div>
+			<div class="expanded__media">
+				<img src="{{ .src }}" alt="{{ .alt }}" class="expanded__image" />
+			</div>
 			<div class="expanded__content">
 				<h2 class="expanded__title">{{ .title | markdownify }}</h2>
 				<!-- https://discourse.gohugo.io/t/prevent-markdownify-to-strip-first-p-tags/7854/13 -->
 				{{- $markdown := .text | markdownify -}}
 				{{ if .spectext }}
-					{{ .spectext | safeHTML }}
+				{{ .spectext | safeHTML }}
 				{{ else }}
-					{{ if not ( findRE "<[h|p][^>]*>" $markdown ) }}
-						<p class="expanded_text">{{ $markdown }}</p>
-					{{ else }}
-						{{ $markdown }}
-					{{ end }}
+				{{ if not ( findRE "<[h|p][^>]*>" $markdown ) }}
+				<p class="expanded_text">{{ $markdown }}</p>
+				{{ else }}
+				{{ $markdown }}
+				{{ end }}
 				{{ end }}
 			</div>
 		</div>
