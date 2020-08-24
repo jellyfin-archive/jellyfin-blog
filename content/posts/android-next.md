@@ -9,7 +9,7 @@ justify: 'center'
 
 This will be a net benefit for users and developers alike!
 Everyone will enjoy the native video player spearheaded by [Stampede10343](https://github.com/Stampede10343) and [vitorsemeano](https://github.com/vitorsemeano) over the course of several months.
-[Maxr1998](https://github.com/Maxr1998) valiantly ported the Cordova portions to native Java (and Kotlin) which means Android developers will feel right at home with the new codebase!
+[Maxr1998](https://github.com/Maxr1998) valiantly ported the Cordova portions to Kotlin (and a bit of Java) which means Android developers will feel right at home with the new codebase!
 
 <!--more-->
 
@@ -24,7 +24,7 @@ Anyone who happened to be using the alpha builds will need to reinstall since we
 
 ### ExoPlayer
 
-The key feature for this release was ExoPlayer, so we've reserved a whole section for news regarding the player and its functionality.
+The key feature for this release is ExoPlayer, so we've reserved a whole section for news regarding the player and its functionality.
 It's currently disabled by default since there may be small issues, but it works quite well in our experience.
 The main feature missing at the moment is a bitrate limit, but it should get added eventually.
 
