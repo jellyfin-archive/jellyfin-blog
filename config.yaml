@@ -18,8 +18,8 @@ menus:
     - name: Clients
       Url: /clients
       weight: 2
-    - name: Download
-      Url: /download
+    - name: Downloads
+      Url: /downloads
       weight: 3
     - name: Contribute
       Url: /contribute

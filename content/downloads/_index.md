@@ -1,5 +1,5 @@
 +++
-title = "Download"
+title = "Downloads"
 subtitle = "You can download the latest releases of Jellyfin Server below!"
 date = "2019-12-08"
 justify = "center"
