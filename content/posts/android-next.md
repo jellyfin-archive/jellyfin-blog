@@ -29,15 +29,16 @@ The key feature for this release is ExoPlayer, so we've reserved a whole section
 It's currently disabled by default since there may be small issues, but it works quite well in our experience.
 The main features missing at the moment are bitrate limiting and SyncPlay, but they should get added eventually.
 
-There will be a new section in the user settings for native clients from which you can enable ExoPlayer, among other options.
+There is a new section in the user settings for native clients from which you can enable ExoPlayer, among other options.
 A toggle for the notification dismissal was also added for customization.
-Of course, ExoPlayer support means better support for codecs during video playback as well!
+Of course, using ExoPlayer means support for more codecs during video playback as well!
 H265 should be working without transcodes, and several other problematic codecs are now much less troublesome with the new update.
+Note that the included device profile still needs some tweaking to actually mark every codec that the phone supports as supported to the server.
 
 ### Future
 
 The goal is to use a mobile-first interface for ExoPlayer so we can focus more on desktop for the normal web player.
-Double tap to seek has already been implemented and is one example change that wouldn't fit well on the HTML5 video player.
+Bigger, easier clickable buttons and double tap to seek are some of the changes setting the new interface apart from the HTML5 video player.
 As usual, since this is a volunteer project we don't actually have set milestones, so if you want something done, the quickest method is to add it yourself!
 Head over to Matrix or Freenode and get in touch with the Android developers if you'd like to talk about adding a new feature.
-GitHub is also an excellent place to discuss long term changes for the new client now that native Java and Kotlin are available.
+GitHub is also an excellent place to discuss long term changes for the new client now that a more modern build process is in place.
