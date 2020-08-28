@@ -1,15 +1,15 @@
-baseURL: "https://jellyfin.org"
+baseURL: 'https://jellyfin.org'
 languageCode: en-us
 disableKinds:
   - '404'
-title: "Jellyfin: The Free Software Media System"
+title: 'Jellyfin: The Free Software Media System'
 markup:
   goldmark:
     renderer:
       unsafe: true
 permalinks:
-  post: "/post/:year/:month/:day/:slug/"
-  note: "/note/:year/:month/:day/:slug/"
+  post: '/post/:year/:month/:day/:slug/'
+  note: '/note/:year/:month/:day/:slug/'
 menus:
   main:
     - name: Blog
@@ -35,7 +35,7 @@ outputs:
     - HTML
     - RSS
 params:
-  author: "The Jellyfin Team"
+  author: 'The Jellyfin Team'
   footer:
     firstcolumn:
       - Site content is licensed [CC-BY-ND-4.0](http://creativecommons.org/licenses/by-nd/4.0/)

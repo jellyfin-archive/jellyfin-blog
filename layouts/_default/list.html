@@ -23,9 +23,9 @@
 			<div class="page__main">
 				{{ if .Content }}
 					{{ if eq .Params.justify "center" }}
-						<div class="text-container text-container--center">{{ .Content }}</div>
+					<div class="text-container text-container--center">{{ .Content }}</div>
 					{{ else }}
-						<div class="text-container">{{ .Content }}</div>
+					<div class="text-container">{{ .Content }}</div>
 					{{ end }}
 				{{ else }}
 
@@ -33,9 +33,7 @@
 				<div class="text-container text-container--center">
 				<ul class="post-list">
 					{{ range (where .Data.Pages "Section" "!=" "") }}
-
 					<li class="post-block">
-						
 						<h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
 						<span><time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
 							{{ .Date.Format "2 Jan 2006" }}

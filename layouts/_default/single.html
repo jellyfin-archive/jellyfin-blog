@@ -21,7 +21,7 @@
 			<div class="page__main">
 				{{ if eq .Params.justify "center" }}
 				<div class="text-container text-container--center">
-					<span>
+					<div>
 						<time class="article-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
 							{{ .Date.Format "2 Jan 2006" }}
 						</time> by
@@ -35,7 +35,7 @@
 						{{ .Site.Params.author }}
 						{{ end }}
 						{{ end }}
-					</span>
+					</div>
 					{{ .Content }}
 				</div>
 				{{ else }}

@@ -41,7 +41,7 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">Xbox One</p>
         </div>
-        <p>Coming soon</p>
+        <p class="button button__accent button__card__disabled">Coming Soon</a>
         <!--<a href="https://www.microsoft.com/store/apps/9P2DRTG62QF8" class="button button__accent button__card">Go to Microsoft Store</a>-->
     </div>
     <div class="card">
@@ -49,7 +49,7 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">PlayStation 4</p>
         </div>
-        <p>Available through the web browser.</p>
+        <p>Available on Your<br>PlayStation Browser</p>
     </div>
     <div class="card">
         <img src="/images/clients/infuse.svg"/>
@@ -88,14 +88,14 @@ justify = "center"
         <div class="bannerbox">
             <p class="banner">Google Cast</p>
         </div>
-        <p>For Chromecasts, Google Nest, and other third-party devices that support the protocol</p>
+        <p>Chromecast • Nest<br>Android TV • Others</p>
     </div>
     <div class="card">
         <img src="/images/clients/airplay.svg"/>
         <div class="bannerbox">
             <p class="banner">AirPlay</p>
         </div>
-        <p>For Apple devices and other third-party devices that support the protocol</p>
+        <p>iPhones • Macs • iPads<br>Apple TV • Others</p>
     </div>
 </div>
 
@@ -148,20 +148,19 @@ justify = "center"
 
 <div class="clients-grid card-grid">
     <div class="card">
-        <img src="/images/clients/windows.svg"/>
+        <img src="/images/clients/kodi.svg"/>
         <div class="bannerbox">
-            <p class="banner">Windows 10</p>
-            <p class="subbanner">Universal Windows Platform</p>
+            <p class="banner">Kodi</p>
         </div>
-        <p class="button button__accent button__card__disabled">Coming Soon</a>
+        <a href="https://github.com/jellyfin/jellyfin-kodi" class="button button__accent button__card">Go to GitHub</a>
     </div>
     <div class="card">
         <img src="/images/clients/electron.svg"/>
         <div class="bannerbox">
-            <p class="banner">Jellyfin Theater</p>
+            <p class="banner">Jellyfin Desktop</p>
             <p class="subbanner">Windows, Mac & Linux</p>
         </div>
-        <a href="https://github.com/jellyfin/jellyfin-theater-electron" class="button button__accent button__card">Go to GitHub</a>
+        <a href="https://github.com/jellyfin/jellyfin-desktop" class="button button__accent button__card">Go to GitHub</a>
     </div>
     <div class="card">
         <img src="/images/clients/mpv.svg"/>

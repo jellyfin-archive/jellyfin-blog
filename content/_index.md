@@ -51,12 +51,12 @@ single:
     text:
       Jellyfin is Free Software, licensed under the GNU GPL. You can use it, study it, modify it, build it, and distribute it for free, as long as your changes are licensed the same way.
       <br/><br/>
-      The project is community-built, relying entirely on contributions from volunteers to improve. Want to help out? There's lots of ways to do so, and you don't even have to code! See our <a href="contribute/" class="footer__link">Contribution Guide</a> for more details.
+      The project is community-built, relying entirely on contributions from volunteers. Want to help out? There's lots of ways to do so, and you don't even have to code! See our <a href="contribute/" class="footer__link">contribution guide</a> for more details.
     src: /images/undraw-version-control.svg
     alt: Software freedom is important.
 gallery:
-  title: See Jellyfin in action.
-  subtitle: Click a screenshot for a full 1080p view, or check out our <a href="https://demo.jellyfin.org/stable" class="footer__link">Demo Server</a> for a fully interactive trial.
+  title: See it in Action
+  subtitle: Click a screenshot for a high resolution image or check out our <a href="https://demo.jellyfin.org/stable" class="footer__link">demo</a> for the full experience.
   screenshots:
   - imgtitle: Home  
     src: /images/screenshots/home
