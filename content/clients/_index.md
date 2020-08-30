@@ -1,9 +1,9 @@
-+++
-title = "Clients"
-subtitle = "Take your media everywhere you go!"
-date = "2020-03-13"
-justify = "center"
-+++
+---
+title: 'Clients'
+subtitle: 'Take your media everywhere you go!'
+date: 2020-03-13T00:00:00-00:00
+justify: 'center'
+---
 
 <h2>TV</h2>
 

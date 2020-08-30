@@ -28,27 +28,28 @@
 					<div class="text-container">{{ .Content }}</div>
 					{{ end }}
 				{{ else }}
-
 				{{ if not .IsHome }}
 				<div class="text-container text-container--center">
 				<ul class="post-list">
 					{{ range (where .Data.Pages "Section" "!=" "") }}
 					<li class="post-block">
 						<h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-						<span><time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-							{{ .Date.Format "2 Jan 2006" }}
-							</time> by 
+						<div>
+							<time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+								<span>{{ .Date.Format "2 Jan 2006" }}</span>
+							</time>
+							<span> by </span>
 							{{ if .Params.githubusername }}
 							<a href="https://github.com/{{ .Params.githubusername }}">{{ .Params.author }}</a>
 							{{ else }}
 							{{ if .Params.author }}
-							{{ .Params.author }}
+							<span>{{ .Params.author }}</span>
 							{{ else }}
-							{{ .Site.Params.author }}
+							<span>{{ .Site.Params.author }}</span>
 							{{ end }}
 							{{ end }}
-						</span>
-						{{ .Summary | safeHTML }}
+						</div>
+						<div>{{ .Summary | safeHTML }}</div>
 						<footer class="read-more">
 							<a href="{{ .RelPermalink }}">Read More &raquo;</a>
 						</footer>

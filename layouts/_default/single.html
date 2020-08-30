@@ -23,20 +23,21 @@
 				<div class="text-container text-container--center">
 					<div>
 						<time class="article-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-							{{ .Date.Format "2 Jan 2006" }}
-						</time> by
+							<span>{{ .Date.Format "2 Jan 2006" }}</span>
+						</time>
+						<span> by </span>
 						{{ if .Params.githubusername }}
 						<a href="https://github.com/{{ .Params.githubusername }}">{{ .Params.author }}</a>
 						<img class="github" src="https://github.com/{{ .Params.githubusername }}.png?size=40"/>
 						{{ else }}
 						{{ if .Params.author }}
-						{{ .Params.author }}
+						<span>{{ .Params.author }}</span>
 						{{ else }}
-						{{ .Site.Params.author }}
+						<span>{{ .Site.Params.author }}</span>
 						{{ end }}
 						{{ end }}
 					</div>
-					{{ .Content }}
+					<div>{{ .Content }}</div>
 				</div>
 				{{ else }}
 				<div class="text-container">{{ .Content }}</div>
