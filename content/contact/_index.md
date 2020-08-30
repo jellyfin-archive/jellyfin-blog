@@ -1,9 +1,9 @@
-+++
-title = "Contact"
-subtitle = "We've got a variety of ways for you to get in touch."
-date = "2019-12-08"
-justify = "center"
-+++
+---
+title: 'Contact'
+subtitle: 'We''ve got a variety of ways for you to get in touch.'
+date: 2019-12-08T00:00:00-00:00
+justify: 'center'
+---
 
 ## Social Media
 

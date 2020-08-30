@@ -4,13 +4,13 @@
 		<!-- https://discourse.gohugo.io/t/prevent-markdownify-to-strip-first-p-tags/7854/13 -->
 		{{- $markdown := .Params.gallery.subtitle | markdownify -}}
 		{{ if .Params.gallery.spectext }}
-			{{ .spectext | safeHTML }}
+		{{ .spectext | safeHTML }}
 		{{ else }}
-			{{ if not ( findRE "<[h|p][^>]*>" $markdown ) }}
-				<p><i>{{ $markdown }}</i></p>
-			{{ else }}
-				{{ $markdown }}
-			{{ end }}
+		{{ if not ( findRE "<[h|p][^>]*>" $markdown ) }}
+		<p><i>{{ $markdown }}</i></p>
+		{{ else }}
+		{{ $markdown }}
+		{{ end }}
 		{{ end }}
 	</div>
 	<div class="container">

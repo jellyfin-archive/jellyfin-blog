@@ -1,9 +1,9 @@
-+++
-title = "How to Contribute"
-subtitle = "Jellyfin is a community project run by volunteers. We're always looking for additional help."
-date = "2019-12-08"
-justify = "center"
-+++
+---
+title: 'How to Contribute'
+subtitle: 'Jellyfin is a community project run by volunteers. We''re always looking for additional help.'
+date: 2019-12-08T00:00:00-00:00
+justify: 'center'
+---
 
 <p>If you're interesting in helping the Jellyfin project, there are a few different ways to contribute depending on your skills and availability. Of course, simply using Jellyfin, finding issues, and reporting them, are a major help to our project, even if none of these apply to you!</p>
 						<p>

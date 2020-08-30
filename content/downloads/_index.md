@@ -1,9 +1,9 @@
-+++
-title = "Downloads"
-subtitle = "You can download the latest releases of Jellyfin Server below!"
-date = "2019-12-08"
-justify = "center"
-+++
+---
+title: 'Downloads'
+subtitle: 'You can download the latest releases of Jellyfin Server below!'
+date: 2019-12-08T00:00:00-00:00
+justify: 'center'
+---
 
 <div class="text-container">
     <h3 class="page__main__title">Stable or Unstable?</h3>
