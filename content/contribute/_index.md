@@ -6,6 +6,7 @@ justify: 'center'
 ---
 
 <p>If you're interesting in helping the Jellyfin project, there are a few different ways to contribute depending on your skills and availability. Of course, simply using Jellyfin, finding issues, and reporting them, are a major help to our project, even if none of these apply to you!</p>
+<p>Before contributing, please read over our <a href="https://jellyfin.org/docs/general/community-standards.html">Community Standards</a> and <a href="https://jellyfin.org/docs/general/contributing/index.html">Contributing Guide</a>.</p>
 						<p>
 						<div class="buttons" style="text-align:center">
 						<div class="button button__accent" id="developer_button">Code</div>
