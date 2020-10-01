@@ -41,7 +41,7 @@ params:
       - Site content is licensed [CC-BY-ND-4.0](http://creativecommons.org/licenses/by-nd/4.0/)
       - Website hosted on [GitHub](https://github.com/jellyfin/jellyfin-blog)
     secondcolumn:
-      -
-    thirdcolumn:
       - Check us out on [GitHub](https://github.com/jellyfin)
       - See our [Documentation](/docs/)
+    thirdcolumn:
+      - Subscribe to our [RSS Feed](https://jellyfin.org/index.xml)

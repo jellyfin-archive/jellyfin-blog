@@ -11,6 +11,10 @@
 				<div class="page__header__content__inner" id="navConverter">
 					<h1 class="page__header__title">{{ .Title }}</h1>
 					<p class="page__header__text">{{ .Params.subtitle }}</p>
+					{{ if where .Data.Pages "Section" "!=" ""}}
+					<p class="page__header__text">Subscribe to our <a class="subtitle_link" href="https://jellyfin.org/index.xml"><img
+								src="/images/rss.svg" />RSS feed</a> for automatic updates.</p>
+					{{ end }}
 				</div>
 			</div>
 		</div>
