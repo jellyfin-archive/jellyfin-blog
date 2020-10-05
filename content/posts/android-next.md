@@ -3,9 +3,8 @@ title: 'Android Developers Rejoice'
 subtitle: 'We have a brand new web wrapper for Android sans Cordova!'
 author: 'dkanada'
 githubusername: 'dkanada'
-date: 2020-08-28T00:00:00-00:00
+date: 2020-10-05T00:00:00-00:00
 justify: 'center'
-draft: true
 ---
 
 This will be a net benefit for users and developers alike!
