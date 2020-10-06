@@ -16,7 +16,7 @@ Everyone will enjoy the native video player spearheaded by [Stampede10343](https
 
 ### Migration
 
-The new release will be a drop-in replacement for the deprecated Cordova client, meaning you can just update from GitHub or F-Droid as you would have previously.
+The new release will be a drop-in replacement for the deprecated Cordova client, meaning you can just update from GitHub, Google Play, or Amazon App Store as you would have previously.
 One minor issue is that you'll have to add your server and credentials again since we couldn't pull the information from Cordova.
 Local user settings such as the theme will also be reset after the update.
 Azure has also been updated so the releases will be automatically built, and Weblate now points to the new codebase.
