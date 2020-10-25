@@ -22,21 +22,26 @@ Starting with this update we now support playing music in cars. This change was 
 	<source src="/images/posts/android-2-1-0/android-auto.webm" type="video/webm" />
 </video>
 
-___Note:__ since we do not have offline-support at this moment all music playback needs an active network connection to work. Be aware this may impact your mobile internet bundle._
+_**Note:** since we do not have offline-support at the moment all music playback needs an active network connection to work. Be aware this may cause additional charges in your mobile plan._
 
 ## Connectivity issues
 
-Some users reported issues when connecting to their server. We've made some improvements to hopefully fix these problems. When your server uses an outdated version a warning is shown. If the webui fails to load we now show a proper error allowing you to change the server address. Users with self-signed certificates should be able to use the app again now. And lastly, when your device name uses special characters they are now removed to fix the "endless loading" issue.
+Some users reported issues when connecting to their server. We've made some improvements to fix those problems:
+
+  - When your server uses an outdated version a warning is shown.
+  - If the webui fails to load we now show a proper error allowing you to change the server address.
+  - Users with self-signed certificates should be able to use the app again.
+  - And lastly, when your device name includes special characters they are now removed to fix the "endless loading" issue.
 
 ## Playback improvements
 
-The native video player (ExoPlayer) now supports zooming using gestures so you can remove the black bars from the video. We made some changes to which video and audio codecs are supported to prevent unnecessary transcoding. We also made some big changes to the structure of the app to fix an issue where Picture-in-Picture windows were unable to open the app when going back.
+The native video player (ExoPlayer) now supports zooming using gestures so you can remove the black bars from the video. We made some changes to which audio codecs are supported to prevent unnecessary transcoding. We also made some big changes to the structure of the app to fix an issue where you weren't able to return to the app after leaving Picture-in-Picture mode.
 
 There is a new option in the settings to select which external player to use. The listed players should also report playback status back to Jellyfin to track what you watch and allow the app to resume playback. Issues with subtitles (especially external subtitles) should now be less common.
 
 ## F-Droid
 
-We have added the required metadata for F-Droid to our repository. We are currently working with the F-Droid team to get the app in their repository. We will make an announcement when this is ready.
+We have added the required metadata for F-Droid to our repository. We are currently working with the F-Droid team to get the app in their repository - we will post an additional announcement when this is ready.
 
 ## Contributors
 
