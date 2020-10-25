@@ -43,6 +43,22 @@ There is a new option in the settings to select which external player to use. Th
 
 We have added the required metadata for F-Droid to our repository. We are currently working with the F-Droid team to get the app in their repository - we will post an additional announcement when this is ready.
 
+## Release Notes
+
+Full release notes available on [GitHub](https://github.com/jellyfin/jellyfin-android/releases/tag/v2.1.0).
+
+## Download Now
+
+<a class="NoLinkLook" href="https://play.google.com/store/apps/details?id=org.jellyfin.mobile">
+  <img width="153" alt="Jellyfin on Google Play" src="/images/store-icons/google-play.png" />
+</a>
+
+<a class="NoLinkLook" href="https://www.amazon.com/gp/product/B081RFTTQ9">
+  <img width="153" alt="Jellyfin on Amazon App Store" src="/images/store-icons/amazon.png" />
+</a>
+
+Direct downloads are always available from [our repository](https://repo.jellyfin.org/releases/client/android/).
+
 ## Contributors
 
 We are grateful to all contributors this release:
