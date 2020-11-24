@@ -52,5 +52,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 1DE21A7B
 
 GitHub Issue for reference: https://github.com/jellyfin/jellyfin/issues/4528
 
+Reddit thread for reference: https://www.reddit.com/r/jellyfin/comments/jz6u9o/debian_ubuntu_repo_users_our_key_is_expiring/
+
 Thanks,
 Joshua
