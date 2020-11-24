@@ -40,7 +40,9 @@ sub   rsa3072 2018-12-16 [E]
 
 If you find this didn't work, try removing the key first with this command, then re-add it again:
 
-    sudo apt-key remove 1DE21A7B
+```
+sudo apt-key remove 1DE21A7B
+```
 
 We've also published the key to the Ubuntu keyserver as a backup, just in case, or if you prefer this method. Our docs will retain the direct-file method however. You can use this command to obtain the key directly from the Ubuntu keyserver:
 
