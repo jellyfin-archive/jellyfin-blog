@@ -140,7 +140,7 @@ justify: 'center'
             <p class="subbanner">3rd Party: Android + iOS</p>
         </div>
         <a href="https://play.google.com/store/apps/details?id=tv.mrmc.mrmc" class="button button__accent button__card">Go to Google Play</a>
-        <a href="https://apps.apple.com/app/mrmc/id1059536415" class="button button__accent button__card">Go to App Store</a>
+        <a href="https://apps.apple.com/app/mrmc-touch/id1062986407" class="button button__accent button__card">Go to App Store</a>
     </div>
     <div class="card">
         <img src="/images/clients/sailfin.svg"/>
