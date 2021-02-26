@@ -108,6 +108,7 @@ justify: 'center'
             <p class="banner">Android</p>
         </div>
         <a href="https://play.google.com/store/apps/details?id=org.jellyfin.mobile" class="button button__accent button__card">Go to Play Store</a>
+        <a href="https://f-droid.org/packages/org.jellyfin.mobile/" class="button button__accent button__card">Go to F-Droid</a>
     </div>
     <div class="card">
         <img src="/images/clients/ios.svg"/>
