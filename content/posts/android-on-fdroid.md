@@ -3,17 +3,17 @@ title: 'Android app now on F-Droid'
 subtitle: 'Available to download right now!'
 author: 'Niels van Velzen'
 githubusername: 'nielsvanvelzen'
-date: 2021-02-26T00:00:00-00:00
+date: 2021-02-27T00:00:00-00:00
 justify: 'center'
 ---
 
-We're happy to announce the direct availability of the mobile Android app to the F-Droid store. The F-Droid does not contain any proprietary libraries and is 100% reproducible.
+We're happy to announce the direct availability of the mobile Android app to the F-Droid store. The F-Droid version does not contain any proprietary libraries and is 100% reproducible.
 
 <!--more-->
 
 ## Missing features
 
-Unfortunately the library required to support casting is proprietary, meaning Google does not publish the source code. Because of this we had to remove it for the F-Droid version. Fortunately the remote control feature still works.
+Unfortunately, the library required to support casting is proprietary, meaning Google does not publish the source code. Because of this, we had to remove it for the F-Droid version. Fortunately, the remote control feature still works.
 
 Additionally, the Android Auto integration does not work because Google does not allow apps to integrate with it when the app is not installed using the Google Play store.
 
