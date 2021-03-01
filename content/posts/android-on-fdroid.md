@@ -3,7 +3,7 @@ title: 'Android app now on F-Droid'
 subtitle: 'Available to download right now!'
 author: 'Niels van Velzen'
 githubusername: 'nielsvanvelzen'
-date: 2021-02-27T00:00:00-00:00
+date: 2021-03-01T00:00:00-00:00
 justify: 'center'
 ---
 
