@@ -7,15 +7,15 @@ date: 2021-03-01T00:00:00-00:00
 justify: 'center'
 ---
 
-We're happy to announce the direct availability of the mobile Android app to the F-Droid store. The F-Droid version does not contain any proprietary libraries and is 100% reproducible.
+We're happy to announce the immediate availability of the Android mobile app on the F-Droid store. The F-Droid version does not contain any proprietary libraries and builds are fully reproducible.
 
 <!--more-->
 
 ## Missing features
 
-Unfortunately, the library required to support casting is proprietary, meaning Google does not publish the source code. Because of this, we had to remove it for the F-Droid version. Fortunately, the remote control feature still works.
+Unfortunately, the library required for casting support is proprietary, meaning that it's not available under a free license and Google doesn't publish the source code. Because of that, we had to remove it in the F-Droid version. Fortunately, the remote control feature still works.
 
-Additionally, the Android Auto integration does not work because Google does not allow apps to integrate with it when the app is not installed using the Google Play store.
+Additionally, the Android Auto integration does not work because Google does not allow apps to integrate with it when the app was not installed from the Google Play store.
 
 ## Download Now
 
