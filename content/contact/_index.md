@@ -14,7 +14,6 @@ For social updates, we're on a few popular sites.
 
 ## Resources
 
-- [Forum](https://forum.jellyfin.org)
 - [Documentation](https://docs.jellyfin.org)
 - [Translations](https://translate.jellyfin.org)
 - [Feature Requests](https://features.jellyfin.org)
@@ -44,3 +43,9 @@ All channels are bridged from Matrix to [Freenode](https://freenode.net) for con
 - [#jellyfin-dev-client](ircs://chat.freenode.net:6697/#jellyfin-dev-client) - [webchat](https://webchat.freenode.net/#jellyfin-dev-client)
 - [#jellyfin-dev-android](ircs://chat.freenode.net:6697/#jellyfin-dev-android) - [webchat](https://webchat.freenode.net/#jellyfin-dev-android)
 - [#jellyfin-offtopic](ircs://chat.freenode.net:6697/#jellyfin-offtopic) - [webchat](https://webchat.freenode.net/#jellyfin-offtopic)
+
+## Discord (Beta)
+
+For convenience, we have a Discord server that is bridged to the chats above. Note that **Matrix** is still the preferred chat platform, and Discord messages may be missed due to bridge instability.
+
+[Join our Discord](https://discord.gg/zHBxVSXdBV).
