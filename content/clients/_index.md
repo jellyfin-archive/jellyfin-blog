@@ -163,23 +163,13 @@ justify: 'center'
         </div>
         <a href="https://github.com/jellyfin/jellyfin-kodi" class="button button__accent button__card">Go to GitHub</a>
     </div>
-    <!--
-    <div class="card">
-        <img src="/images/clients/electron.svg"/>
-        <div class="bannerbox">
-            <p class="banner">Jellyfin Desktop</p>
-            <p class="subbanner">Windows, Mac & Linux</p>
-        </div>
-        <a href="https://github.com/jellyfin/jellyfin-desktop" class="button button__accent button__card">Go to GitHub</a>
-    </div>
-    -->
     <div class="card">
         <img src="/images/clients/mpv.svg"/>
         <div class="bannerbox">
-            <p class="banner">Jellyfin MPV Shim</p>
-            <p class="subbanner">3rd Party</p>
+            <p class="banner">Jellyfin Desktop</p>
+            <p class="subbanner">Desktop & MPV Shim</p>
         </div>
-        <a href="https://github.com/iwalton3/jellyfin-mpv-shim" class="button button__accent button__card">Go to GitHub</a>
+        <a href="https://github.com/jellyfin/jellyfin-desktop" class="button button__accent button__card">Go to GitHub</a>
     </div>
 </div>
 
