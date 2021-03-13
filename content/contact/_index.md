@@ -46,6 +46,6 @@ All channels are bridged from Matrix to [Freenode](https://freenode.net) for con
 
 ## Discord (Beta)
 
-For convenience, we have a Discord server that is bridged to the chats above. Note that **Matrix** is still the preferred chat platforms, and some Discord messages may be missed.
+For convenience, we have a Discord server that is bridged to the chats above. Note that **Matrix** is still the preferred chat platform, and Discord messages may be missed due to bridge instability.
 
 [Join our Discord](https://discord.gg/zHBxVSXdBV).
