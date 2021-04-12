@@ -63,7 +63,7 @@ Since our origin server is in Toronto, we wanted to ensure we had wide geographi
 * `tor1.mirror.jellyfin.org`: Toronto, Ontario, Canada for North/South America East
 * `sfo1.mirror.jellyfin.org`: San Francisco, California, USA for North/South America West
 * `fra1.mirror.jellyfin.org`: Frankfurt, Germany (not France as commonly assumed!) for Europe and Africa
-* `sgp1.mirror.jellyfin.org`: Singapore, Malaysia for Asia and Pacific
+* `sgp1.mirror.jellyfin.org`: Singapore for Asia and Pacific
 
 One worry when first setting up these 4 VPSes was that they would not be enough. But so far, through another major release and several minor releases, we've had the complaints about download speed completely stop, so they must be working. In future, as Digital Ocean expands, we'd also be able to add other locations as well, for instance Bangalore, India, Africa, and perhaps additional Europe and South America instances.
 
