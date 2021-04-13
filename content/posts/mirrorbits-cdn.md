@@ -275,7 +275,7 @@ All together, these NGiNX configs provide the foundation for Mirrorbits to work,
 
 ## Mirrorbits: The Workhorse
 
-Installing Mirrorbits is quite straightforward: I simply downloaded the latest binary release (`0.5.1`) from the Mirrorbits repository, installed the `mirrorbits` binary to `/usr/local/bin`, the sample configuration to `/etc/mirrorbits.conf`, and the templates to `/usr/local/share/mirrorbits`. Unfortunately, Mirrorbits development seems to have stalled since 2018, including documentation. [I opened an issue](https://github.com/etix/mirrorbits/issues/105) during my troubleshooting that is still unanswered, which is unfortunate, and I hope this blog post to be able to resolve that issue.
+Installing Mirrorbits is quite straightforward: I simply downloaded the latest binary release (`0.5.1`) from the Mirrorbits repository, installed the `mirrorbits` binary to `/usr/local/bin`, the sample configuration to `/etc/mirrorbits.conf`, and the templates to `/usr/local/share/mirrorbits`. Unfortunately, Mirrorbits development seems to have stalled since 2018, including documentation. [I opened an issue](https://github.com/etix/mirrorbits/issues/105) during my troubleshooting that is still unanswered, which is unfortunate, and I hope this blog post will be able to resolve that issue.
 
 The basic configuration of Mirrorbits is quite simple. Most of the configuration options are explained well in the sample configuration file, and it was simply a matter of tuning them to our needs. Here is our configuration stripped of comments/explanations:
 
