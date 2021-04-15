@@ -164,7 +164,7 @@ justify: 'center'
         <a href="https://github.com/jellyfin/jellyfin-kodi" class="button button__accent button__card">Go to GitHub</a>
     </div>
     <div class="card">
-        <img src="/images/clients/mpv.svg"/>
+        <img src="/images/clients/jellyfin-white.svg"/>
         <div class="bannerbox">
             <p class="banner">Jellyfin Media Player</p>
         </div>
