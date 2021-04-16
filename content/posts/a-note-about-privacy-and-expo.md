@@ -7,7 +7,7 @@ date: '2021-04-16'
 justify: 'center'
 ---
 
-When it comes to the Jellyfin, we guarantee that there is no involuntary tracking, from the server to the mobile apps. This still remains true, even with today's update to the Apple App Store.
+When it comes to Jellyfin, we guarantee that there is no involuntary tracking, from the server to the mobile apps. This still remains true, even with today's update to the Apple App Store.
 
 <!--more-->
 
