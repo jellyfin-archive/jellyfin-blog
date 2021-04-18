@@ -3,7 +3,7 @@ title = "Introducing Jellyfin Media Player"
 subtitle = "A new user friendly MPV-based desktop client"
 author = "Ian Walton"
 githubusername = "iwalton3"
-date = "2020-04-18"
+date = "2021-04-18"
 justify = "center"
 +++
 
