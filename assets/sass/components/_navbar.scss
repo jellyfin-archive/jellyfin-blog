@@ -70,11 +70,13 @@
 				display: block;
 				content: "";
 				border-bottom: solid 1px #fff;
+				transform-origin: right;
 				transform: scaleX(0);
 				transition: transform 250ms ease-in-out;
 			}
 
 			&:hover:after {
+				transform-origin: left;
 				transform: scaleX(1);
 			}
 		}
