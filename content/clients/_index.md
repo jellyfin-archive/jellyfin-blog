@@ -173,9 +173,9 @@ justify: 'center'
     <div class="card">
         <img src="/images/clients/mpv.svg"/>
         <div class="bannerbox">
-            <p class="banner">Jellyfin Desktop</p>
+            <p class="banner">Jellyfin MPV Shim</p>
         </div>
-        <a href="https://github.com/jellyfin/jellyfin-desktop" class="button button__accent button__card">Go to GitHub</a>
+        <a href="https://github.com/jellyfin/jellyfin-mpv-shim" class="button button__accent button__card">Go to GitHub</a>
     </div>
 </div>
 
