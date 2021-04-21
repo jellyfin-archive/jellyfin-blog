@@ -11,6 +11,7 @@ For social updates, we're on a few popular sites.
 
 - [/r/jellyfin](https://www.reddit.com/r/jellyfin) on Reddit
 - [@Jellyfin](https://www.twitter.com/jellyfin) on Twitter
+- [@JellyfinOfficial](https://t.me/jellyfinofficial) on Telegram, paired with [@JellyfinChat](https://t.me/jellyfinchat)
 
 ## Resources
 
