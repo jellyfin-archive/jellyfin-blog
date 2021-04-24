@@ -34,6 +34,14 @@
 
 .screenshot__media {
 	margin: 16pt 0;
+	opacity: 0;
+	transform: translateY(20%);
+	transition: transform .35s, opacity .35s;
+
+	&.active__fade{
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 @media (min-width: 992px) {
@@ -64,4 +72,13 @@
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	opacity: 0;
+	transform: translateY(20%);
+	transition: opacity .35s, transform .35s;
+	transition-delay: .3s;
+
+	&.active_fade_txt{
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

@@ -10,7 +10,7 @@
 		margin-top: 2.2em;
 		position: absolute;
 		bottom: 20px;
-		text-align: center;	
+		text-align: center;
 		width: 100%;
 		left: 0;
 		font-size: 0.7em;
@@ -125,6 +125,7 @@
 		transition: all 250ms;
 		font-size: 0.9em;
 		text-align: center;
+		border-radius: 10px;
 
 		.bannerbox {
 			margin-top: 1.5em;
@@ -166,7 +167,7 @@
 				color: #fff;
 			}
 		}
-	}	
+	}
 }
 
 video.justify {

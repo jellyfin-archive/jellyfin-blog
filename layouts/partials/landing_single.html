@@ -13,7 +13,7 @@
 				{{ .spectext | safeHTML }}
 				{{ else }}
 				{{ if not ( findRE "<[h|p][^>]*>" $markdown ) }}
-				<p class="expanded_text">{{ $markdown }}</p>
+				<p class="expanded_text delayed">{{ $markdown }}</p>
 				{{ else }}
 				{{ $markdown }}
 				{{ end }}

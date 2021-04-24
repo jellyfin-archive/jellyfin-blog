@@ -7,13 +7,12 @@ button,
 	border: 1px solid $primary;
 	color: $primary;
 	font-weight: $normal;
-	transition: 0.7s;
+	transition:.2s;
 	white-space: nowrap;
 	cursor: pointer;
 	background-color: transparent;
 	border-radius: $radius;
 	margin-bottom: 1.3em;
-	transition: 0.7s;
 	text-align: center;
 	text-decoration: none;
 
@@ -22,10 +21,13 @@ button,
 		outline: 0;
 	}
 
+
 	@include desktop {
 		&:hover {
 			border-color: $primary-dark;
 			color: $primary-dark;
+			transform: scale(1.065) translateY(-3px);
+			box-shadow: 0px 7px 15px rgba(5,5,5,0.5);
 		}
 	}
 }
@@ -54,6 +56,12 @@ button,
 			background-color: darken($accent, 4%);
 			border-color: darken($accent, 4%);
 			color: #fff;
+		}
+	}
+
+	@include phone {
+		svg{
+			display: none !important;
 		}
 	}
 }

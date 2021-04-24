@@ -1,5 +1,5 @@
 .footer {
-	background-color: $background;
+	background-color: $background-alt;
 	padding: 36pt 0;
 }
 
@@ -74,7 +74,7 @@
 
 /*--- Modifiers---*/
 .footer--dark {
-	background-color: $background-dark;
+	background-color: $background-alt;
 
 	.footer__textLogo {
 		color: #fff;

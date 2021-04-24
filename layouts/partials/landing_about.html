@@ -7,9 +7,9 @@
         <div class="steps__inner">
             {{ range $i, $box :=  .Params.about.box }}
             <div class="step">
-                <div class="step__media"><img src="{{ $box.src }}" alt="{{ $box.alt }}" class="step__image"></div>
-                <h4>{{ $box.title | markdownify }}</h4>
-                <p class="step__text">{{ $box.text | markdownify }}</p>
+                <div class="step__media fade_in_top_image"><img src="{{ $box.src }}" alt="{{ $box.alt }}" class="step__image"></div>
+                <h4 class="fade_in_top_text">{{ $box.title | markdownify }}</h4>
+                <p class="step_text fade_in_top_text">{{ $box.text | markdownify }}</p>
             </div>
             {{ end }}
         </div>

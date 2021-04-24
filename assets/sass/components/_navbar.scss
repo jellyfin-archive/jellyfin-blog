@@ -3,7 +3,7 @@
 	z-index: 100;
 	width: 100%;
 	background-color: $background;
-	transition: 0.7s;
+	transition: 0.5s;
 
 	&--nofixed {
 		position: relative;
@@ -113,7 +113,7 @@
 	width: 100%;
 	display: block;
 	list-style: none;
-	background-color: $background-dark;
+	background-color: $background-alt;
 	color: #fff;
 }
 

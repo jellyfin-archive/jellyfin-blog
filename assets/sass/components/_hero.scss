@@ -1,11 +1,12 @@
 .hero {
   position: relative;
   width: 100%;
-  background-image: url("../images/background.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   color: $hero-color;
+  background: url("../images/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
 
   &__inner {
     position: relative;
@@ -40,7 +41,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080"><defs><linearGradient id="06714b97-aec8-4b7e-bf3d-1e20f95f612e" y1="809.5" x2="958" y2="809.5" gradientTransform="matrix(1, 0, 0, -1, 0, 1082)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="0.05"/></linearGradient></defs><title>hero</title><rect id="0567095b-2cf7-4407-b8ab-ec2abe52d830" data-name="&lt;Path&gt;" y="545" width="1920" height="535" fill="#fff" opacity="0.05" style="isolation:isolate"/><polygon id="82ca9a61-a0a1-49cc-9805-a3533c693bad" data-name="&lt;Path&gt;" points="958 545 0 545 0 0 770.96 0 958 545" fill="url(#06714b97-aec8-4b7e-bf3d-1e20f95f612e)"/></svg>');
+  background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9IjA2NzE0Yjk3LWFlYzgtNGI3ZS1iZjNkLTFlMjBmOTVmNjEyZSIgeTE9IjgwOS41IiB4Mj0iOTU4IiB5Mj0iODA5LjUiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgLTEsIDAsIDEwODIpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjA1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHRpdGxlPmhlcm88L3RpdGxlPjxyZWN0IGlkPSIwNTY3MDk1Yi0yY2Y3LTQ0MDctYjhhYi1lYzJhYmU1MmQ4MzAiIGRhdGEtbmFtZT0iJmx0O1BhdGg+IiB5PSI1NDUiIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjUzNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjA1IiBzdHlsZT0iaXNvbGF0aW9uOmlzb2xhdGUiLz48cG9seWdvbiBpZD0iODJjYTlhNjEtYTBhMS00OWNjLTk4MDUtYTM1MzNjNjkzYmFkIiBkYXRhLW5hbWU9IiZsdDtQYXRoPiIgcG9pbnRzPSI5NTggNTQ1IDAgNTQ1IDAgMCA3NzAuOTYgMCA5NTggNTQ1IiBmaWxsPSJ1cmwoIzA2NzE0Yjk3LWFlYzgtNGI3ZS1iZjNkLTFlMjBmOTVmNjEyZSkiLz48L3N2Zz4=);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -86,6 +87,11 @@
 .hero__button {
   color: $hero-color;
   border-color: $hero-color;
+  transition: all .2s;
+
+  &:hover{
+    background: rgba(255,255,255,0.1);
+  }
 
   @include desktop {
     &:hover {
@@ -132,4 +138,24 @@
 
 .hero--full + .hero__sub {
   display: none;
+}
+
+/*DOWNLOAD BUTTON*/
+@include desktop{
+  .hero .button__accent{
+    position: relative;
+    width: fit-content;
+  }
+  .hero .button__accent .bi.bi-cloud-download {
+    fill: #fff;
+    vertical-align: middle;
+    margin-right: -15px;
+    margin-left: auto;
+    opacity: 0;
+    transition: all .2s;
+  }
+  .hero .button__accent:hover .bi.bi-cloud-download {
+    margin-right: 5px;
+    opacity: 1;
+  }
 }

@@ -30,3 +30,25 @@
 		text-align: center;
 	}
 }
+
+/*DOWNLOAD BUTTON*/
+@include desktop{
+	.cta .button__accent{
+		position: relative;
+		width: fit-content;
+	}
+
+	.cta .button__accent .bi.bi-cloud-download {
+		fill: #fff;
+		vertical-align: middle;
+		margin-right: -15px;
+		margin-left: auto;
+		opacity: 0;
+		transition: all .2s;
+	}
+
+	.cta .button__accent:hover .bi.bi-cloud-download {
+		margin-right: 5px;
+		opacity: 1;
+	}
+}

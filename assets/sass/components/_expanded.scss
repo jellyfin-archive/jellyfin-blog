@@ -16,7 +16,7 @@
 .expanded__media {
 	order: 1;
 	text-align: center;
-	
+
 	@include desktop {
 		width: 50%;
 		flex-shrink: 0;
@@ -26,7 +26,7 @@
 
 .expanded__content {
 	order: 2;
-	
+
 	@include desktop {
 		padding: 0 16pt;
 		width: 50%;
@@ -41,6 +41,128 @@
 
 		@include desktop {
 			order: 1;
+		}
+	}
+}
+
+.expanded:nth-child(odd){
+	.expanded__content{
+		text-align: right;
+	}
+	.expanded__title{
+		opacity: 0;
+		transform: translateX(5%);
+		transition: opacity .35s ease-in-out, transform .35s ease-in-out;
+
+		&.active_fade_txt{
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		@include phone {
+			transform: translateX(0) translateY(10%);
+
+			&.active_fade_txt{
+				transform: translateX(0) translateY(0);
+			}
+		}
+	}
+	.expanded_text.delayed{
+		opacity: 0;
+		transform: translateX(10%);
+		transition: opacity .25s ease-in-out, transform .25s ease-in-out;
+		transition-delay: .2s;
+
+		&.active_fade_txt{
+			opacity: 1;
+			transform: translateX(0);
+		}
+		@include phone {
+			transform: translateX(0) translateY(10%);
+
+			&.active_fade_txt{
+				transform: translateX(0) translateY(0);
+			}
+		}
+	}
+	.expanded__media {
+		opacity: 0;
+		transform: translateX(-5%);
+		transition: opacity .35s ease-in-out, transform .35s ease-in-out;
+
+		&.active__fade{
+			opacity: 1;
+			transform: translateX(0);
+		}
+		@include phone {
+			transform: translateX(0) translateY(25%);
+
+			&.active__fade{
+				transform: translateX(0) translateY(0);
+			}
+		}
+	}
+}
+
+.expanded {
+	@include phone {
+		.expanded__content{
+			text-align: center !important;
+		}
+	}
+	.expanded__title{
+		opacity: 0;
+		transform: translateX(-5%);
+		transition: opacity .35s ease-in-out, transform .35s ease-in-out;
+
+		&.active_fade_txt{
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		@include phone {
+			transform: translateX(0) translateY(10%);
+
+			&.active_fade_txt{
+				transform: translateX(0) translateY(0);
+			}
+		}
+	}
+	.expanded_text.delayed{
+		opacity: 0;
+		transform: translateX(-10%);
+		transition: opacity .25s ease-in-out, transform .25s ease-in-out;
+		transition-delay: .2s;
+
+		&.active_fade_txt{
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		@include phone {
+			transform: translateX(0) translateY(10%);
+
+			&.active_fade_txt{
+				transform: translateX(0) translateY(0);
+			}
+		}
+	}
+	.expanded__media {
+		opacity: 0;
+		transform: translateX(5%);
+		transition: opacity .35s ease-in-out, transform .35s ease-in-out;
+
+		&.active__fade{
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		@include phone {
+			transform: translateX(0) translateY(10%);
+
+			&.active__fade{
+				transform: translateX(0) translateY(0);
+			}
 		}
 	}
 }

@@ -12,6 +12,8 @@
 	{{ $js1 := resources.Get "js/app.js" }}
 	{{ $js2 := resources.Get "js/libraries/flexibility.js" }}
 	{{ $js3 := resources.Get "js/libraries/responsive-nav.js" }}
-	{{ $js := slice $js1 $js2 $js3  | resources.Concat "js/scripts.js" | minify | fingerprint }}
+	{{ $js4 := resources.Get "js/libraries/contentFadeIn.js" }}
+	{{ $js5 := resources.Get "js/libraries/parallax.js" }}
+	{{ $js := slice $js1 $js2 $js3 $js4 $js5 | resources.Concat "js/scripts.js" | minify | fingerprint }}
 	<script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
 </div>

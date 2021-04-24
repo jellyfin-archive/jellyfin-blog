@@ -1,13 +1,14 @@
 .steps {
 	text-align: center;
 	padding: 16pt 0;
+	overflow: hidden;
 }
 
 .steps__inner {
 	@include desktop {
-		   -js-display: flex;
-		   display: flex;
-		   justify-content: space-around;
+		-js-display: flex;
+		display: flex;
+		justify-content: space-around;
 	}
 }
 
@@ -49,7 +50,30 @@
 
 .step__text {
 	max-width: 25ch;
-  	text-align: center;
-  	margin-left: auto;
-  	margin-right: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fade_in_top_image {
+  opacity: 0;
+  transition: opacity .35s ease-in, transform .35s ease-in;
+  transform: translateY(10%);
+
+  &.active__fade {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+.fade_in_top_text {
+	opacity: 0;
+	transform: translateY(60%);
+	transition: opacity .25s, transform .25s;
+	transition-delay: .3s;
+
+	&.active_fade_txt{
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
