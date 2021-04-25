@@ -52,7 +52,7 @@
 	.expanded__title{
 		opacity: 0;
 		transform: translateX(5%);
-		transition: opacity .35s ease-in-out, transform .35s ease-in-out;
+		transition: opacity .15s ease-in-out, transform .15s ease-in-out;
 
 		&.active_fade_txt{
 			opacity: 1;
@@ -70,8 +70,8 @@
 	.expanded_text.delayed{
 		opacity: 0;
 		transform: translateX(10%);
-		transition: opacity .25s ease-in-out, transform .25s ease-in-out;
-		transition-delay: .2s;
+		transition: opacity .15s ease-in-out, transform .15s ease-in-out;
+		transition-delay: .05s;
 
 		&.active_fade_txt{
 			opacity: 1;
@@ -88,7 +88,7 @@
 	.expanded__media {
 		opacity: 0;
 		transform: translateX(-5%);
-		transition: opacity .35s ease-in-out, transform .35s ease-in-out;
+		transition: opacity .15s ease-in-out, transform .15s ease-in-out;
 
 		&.active__fade{
 			opacity: 1;
@@ -113,7 +113,7 @@
 	.expanded__title{
 		opacity: 0;
 		transform: translateX(-5%);
-		transition: opacity .35s ease-in-out, transform .35s ease-in-out;
+		transition: opacity .15s ease-in-out, transform .15s ease-in-out;
 
 		&.active_fade_txt{
 			opacity: 1;
@@ -131,8 +131,8 @@
 	.expanded_text.delayed{
 		opacity: 0;
 		transform: translateX(-10%);
-		transition: opacity .25s ease-in-out, transform .25s ease-in-out;
-		transition-delay: .2s;
+		transition: opacity .15s ease-in-out, transform .15s ease-in-out;
+		transition-delay: .05s;
 
 		&.active_fade_txt{
 			opacity: 1;
@@ -150,7 +150,7 @@
 	.expanded__media {
 		opacity: 0;
 		transform: translateX(5%);
-		transition: opacity .35s ease-in-out, transform .35s ease-in-out;
+		transition: opacity .15s ease-in-out, transform .15s ease-in-out;
 
 		&.active__fade{
 			opacity: 1;

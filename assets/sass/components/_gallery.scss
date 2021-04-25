@@ -36,7 +36,7 @@
 	margin: 16pt 0;
 	opacity: 0;
 	transform: translateY(20%);
-	transition: transform .35s, opacity .35s;
+	transition: transform .15s, opacity .15s;
 
 	&.active__fade{
 		opacity: 1;
@@ -74,8 +74,8 @@
 	margin-right: auto;
 	opacity: 0;
 	transform: translateY(20%);
-	transition: opacity .35s, transform .35s;
-	transition-delay: .3s;
+	transition: opacity .15s, transform .15s;
+	transition-delay: .05s;
 
 	&.active_fade_txt{
 		opacity: 1;

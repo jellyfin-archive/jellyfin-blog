@@ -9,6 +9,7 @@
 		-js-display: flex;
 		display: flex;
 		justify-content: space-around;
+		grid-gap: 20px;
 	}
 }
 
@@ -57,7 +58,7 @@
 
 .fade_in_top_image {
   opacity: 0;
-  transition: opacity .35s ease-in, transform .35s ease-in;
+  transition: opacity .15s ease-in, transform .15s ease-in;
   transform: translateY(10%);
 
   &.active__fade {
@@ -69,8 +70,8 @@
 .fade_in_top_text {
 	opacity: 0;
 	transform: translateY(60%);
-	transition: opacity .25s, transform .25s;
-	transition-delay: .3s;
+	transition: opacity .15s, transform .15s;
+	transition-delay: .05s;
 
 	&.active_fade_txt{
 		opacity: 1;

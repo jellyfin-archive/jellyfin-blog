@@ -9,13 +9,13 @@ const screenshotTxt = document.querySelectorAll(".screenshot__text");
 var Options = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.85
+  threshold: 0.15
 };
 
 var TextOptions= {
   root: null,
   rootMargin: '0px',
-  threshold: 0.85
+  threshold: 0.1
 };
 
 if($(window).width()<400){

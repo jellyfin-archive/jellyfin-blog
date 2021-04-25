@@ -40,7 +40,7 @@
 .subtitle_link {
 	border-bottom: 1px dotted #fafafa;
 	padding-bottom: 1pt;
-	transition: 0.7s;
+	transition: 0.3s;
 
 	@include desktop {
 		&:hover {
@@ -126,6 +126,11 @@ blockquote {
 
 	a{
 		border: none !important;
+
+		&::after{
+			display: none;
+		}
+
 	}
 
 	&::after{
@@ -136,40 +141,13 @@ blockquote {
 		left: 0;
 		bottom: -10%;
 		background: #6c63ff;
-		transition: width .7s ease-in-out, background .7s;
+		transition: width .3s ease-in-out, background .3s;
 	}
 
 	&:hover{
 		&::after{
 			background: #fff;
 			width: 100%;
-		}
-	}
-}
-
-time + span + a{
-	width: fit-content;
-	position: relative;
-	border: none !important;
-
-	&::after{
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 1px;
-		left: 0;
-		bottom: 0%;
-		background: #6c63ff;
-		transition: transform .7s ease-in-out, background .7s, opacity .7s;
-		transform: scaleX(0);
-		transform-origin: right;
-	}
-
-	&:hover{
-		&::after{
-			transform-origin: left;
-			transform: scaleX(1);
-			background: #fff;
 		}
 	}
 }
@@ -190,6 +168,33 @@ time + span + a{
 	}
 }
 
+
+a:not(.button, .navbar__logo){
+	width: fit-content;
+	position: relative;
+	border: none !important;
+
+	&::after{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		left: 0;
+		bottom: -5%;
+		background: #fff;
+		transition: transform .3s ease-in-out, background .3s, opacity .3s;
+		transform: scaleX(0);
+		transform-origin: right;
+	}
+
+	&:hover{
+		&::after{
+			transform-origin: left;
+			transform: scaleX(1);
+			background: #fff;
+		}
+	}
+}
 //Highlight
 *{
 	&::selection{
