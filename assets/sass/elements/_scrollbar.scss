@@ -1,0 +1,13 @@
+body{
+  overflow-y:overlay;
+}
+
+*{
+  &::-webkit-scrollbar{
+    width:5px;
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: $background-dark;
+  }
+}

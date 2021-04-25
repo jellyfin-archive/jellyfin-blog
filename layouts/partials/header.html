@@ -1,13 +1,13 @@
 <head>
   <meta charset="utf-8" />
   <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1"
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1"
   />
   <title>{{ .Title }} {{ if .Title }}-{{ end }} {{ .Site.Title }}</title>
 
   {{- range .AlternativeOutputFormats -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{- end -}}
 
   <link rel="shortcut icon" href="/favicon.ico" />
@@ -21,7 +21,9 @@
   <!-- Elements -->
   {{ $e7 := resources.Get "sass/elements/_typography.scss" }}
   {{ $e8 := resources.Get "sass/elements/_buttons.scss" }}
+  {{ $e9 := resources.Get "sass/elements/_scrollbar.scss" }}
   {{ $e10 := resources.Get "sass/elements/_forms.scss" }}
+
   <!-- Components -->
   {{ $e11 := resources.Get "sass/components/_landing.scss" }}
   {{ $e12 := resources.Get "sass/components/_navbar.scss" }}
@@ -37,7 +39,7 @@
   {{ $e22 := resources.Get "sass/components/_gallery.scss" }}
   {{ $c := resources.Get "sass/custom.style.scss" }}
 
-  {{ $style := slice $e1 $e2 $e3 $e4 $e5 $e6 $e7 $e8 $e10 $e11 $e12 $e13 $e14 $e15 $e16 $e17 $e18 $e19 $e20 $e21 $e22 $c | resources.Concat "css/style.css" | resources.ToCSS | fingerprint | minify }}
+  {{ $style := slice $e1 $e2 $e3 $e4 $e5 $e6 $e7 $e8 $e9 $e10 $e11 $e12 $e13 $e14 $e15 $e16 $e17 $e18 $e19 $e20 $e21 $e22 $c | resources.Concat "css/style.css" | resources.ToCSS | fingerprint | minify }}
 
   <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
   <link rel="stylesheet" href="/css/juxtapose.css">
