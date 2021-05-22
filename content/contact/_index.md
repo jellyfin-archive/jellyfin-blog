@@ -35,17 +35,17 @@ We primarily use [Element](https://element.io/get-started) to access the [Matrix
 
 ## IRC
 
-All channels are bridged from Matrix to [Freenode](https://freenode.net) for convenience.
+All channels are bridged from Matrix to [Libera.chat](https://libera.chat) for convenience.
 
-- [#jellyfin](ircs://chat.freenode.net:6697/#jellyfin) - [webchat](https://webchat.freenode.net/#jellyfin)
-- [#jellyfin-announce](ircs://chat.freenode.net:6697/#jellyfin-announce) - [webchat](https://webchat.freenode.net/#jellyfin-announce)
-- [#jellyfin-troubleshooting](ircs://chat.freenode.net:6697/#jellyfin-troubleshooting) - [webchat](https://webchat.freenode.net/#jellyfin-troubleshooting)
-- [#jellyfin-dev](ircs://chat.freenode.net:6697/#jellyfin-dev) - [webchat](https://webchat.freenode.net/#jellyfin-dev)
-- [#jellyfin-dev-client](ircs://chat.freenode.net:6697/#jellyfin-dev-client) - [webchat](https://webchat.freenode.net/#jellyfin-dev-client)
-- [#jellyfin-dev-android](ircs://chat.freenode.net:6697/#jellyfin-dev-android) - [webchat](https://webchat.freenode.net/#jellyfin-dev-android)
-- [#jellyfin-offtopic](ircs://chat.freenode.net:6697/#jellyfin-offtopic) - [webchat](https://webchat.freenode.net/#jellyfin-offtopic)
+- [#jellyfin](ircs://irc.libera.chat:6697/#jellyfin)
+- [#jellyfin-announce](ircs://irc.libera.chat:6697/#jellyfin-announce)
+- [#jellyfin-troubleshooting](ircs://irc.libera.chat:6697/#jellyfin-troubleshooting)
+- [#jellyfin-dev](ircs://irc.libera.chat:6697/#jellyfin-dev)
+- [#jellyfin-dev-client](ircs://irc.libera.chat:6697/#jellyfin-dev-client)
+- [#jellyfin-dev-android](ircs://irc.libera.chat:6697/#jellyfin-dev-android)
+- [#jellyfin-offtopic](ircs://irc.libera.chat:6697/#jellyfin-offtopic)
 
-## Discord (Beta)
+## Discord (Beta)**
 
 For convenience, we have a Discord server that is bridged to the chats above. Note that **Matrix** is still the preferred chat platform, and Discord messages may be missed due to bridge instability.
 
