@@ -152,11 +152,13 @@ justify: 'center'
         <a href="https://openrepos.net/content/ahappyhuman/sailfin" class="button button__accent button__card">Go to OpenRepos</a>
     </div>
     <div class="card">
-        <img src="/images/clients/finamp.svg"/>
+        <img src="/images/clients/finamp.svg", style="fill:white"/>
         <div class="bannerbox">
             <p class="banner">Finamp</p>
             <p class="subbanner">3rd Party: Android</p>
         </div>
+        <a href="https://play.google.com/store/apps/details?id=com.unicornsonlsd.finamp" class="button button__accent button__card">Go to Play Store</a>
+        <a href="https://apps.apple.com/us/app/finamp/id1574922594" class="button button__accent button__card">Go to App Store</a>
         <a href="https://github.com/UnicornsOnLSD/finamp" class="button button__accent button__card">Go to GitHub</a>
     </div>
 </div>
