@@ -3,7 +3,7 @@ title: 'Regarding the Android betas'
 subtitle: 'A small FAQ about our beta programs'
 author: 'Niels van Velzen'
 githubusername: 'nielsvanvelzen'
-date: 2021-07-16T00:00:00-00:00
+date: 2021-07-24T00:00:00-00:00
 justify: 'center'
 ---
 <!-- markdownlint-disable MD033 -->
@@ -14,7 +14,7 @@ With the release of the first Android TV 0.12 release beta, this is a good time 
 
 ## What is the difference between release and beta?
 
-A beta version is an early build of an upcoming release. This means that most of the new features are available but there might still be some issues. In the case of the Jellyfin android apps, we might release a beta version because we expect issues or want to test something with a larger audience. Generally the beta cycle should only last a short period.
+A beta version is an early build of an upcoming release. This means that most of the new features are available but there might still be some issues. In the case of the Jellyfin Android apps, we might release a beta version because we expect issues or want to test something with a larger audience. Generally the beta cycle should only last a short period.
 
 ## Should I use a beta version?
 
@@ -30,6 +30,10 @@ If you encounter a problem, we would appreciate a detailed issue with app-logs a
 ## Where do I get the beta?
 
 The beta releases are only available on the Google Play store or in our own repository. Users of F-Droid or the Amazon Appstore can sideload the apk files available in our repository or wait for the release.
+
+### What about the Amazon Appstore?
+
+The Amazon Appstore has no options for beta apps. Therefore, we unfortunately cannot provide beta versions of the app to users who do not have a Play Store on their device.
 
 ### Android TV
 
