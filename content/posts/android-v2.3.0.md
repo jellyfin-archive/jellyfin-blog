@@ -47,6 +47,10 @@ There were also a lot of bug fixes which will improve the experience with the ap
 
 Direct downloads are always available from [our repository](https://repo.jellyfin.org/releases/client/android/).
 
+## Full Release Notes
+
+The full (technical) release notes are available on [GitHub](https://github.com/jellyfin/jellyfin-android/releases/tag/v2.3.0).
+
 ## Contributors
 
 As always, lots of great people contributed in this release:
@@ -71,8 +75,4 @@ As always, lots of great people contributed in this release:
 If you have some experience with Android development and are interested in contributing yourself, feel free to dive into the source code [on GitHub](https://github.com/jellyfin/jellyfin-android) and open pull requests!
 
 Alternatively, you can help translating the app into your language on our [Weblate](https://translate.jellyfin.org/projects/jellyfin-android/jellyfin-android/).
-
-## Full Release Notes
-
-The full (technical) release notes are available on [GitHub](https://github.com/jellyfin/jellyfin-android/releases/tag/v2.3.0).
 
