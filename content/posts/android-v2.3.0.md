@@ -1,9 +1,9 @@
 ---
 title: 'Jellyfin Android v2.3.0 - Improved Integrated Player'
 subtitle: 'Enjoy a more polished Jellyfin experience on your phone'
-author: 'Max Rumpf / Maxr1998'
+author: 'Max Rumpf'
 githubusername: 'Maxr1998'
-date: 2021-07-06T00:00:00-00:00
+date: 2021-08-01T00:00:00-00:00
 justify: 'center'
 ---
 
@@ -59,7 +59,7 @@ As always, lots of great people contributed in this release:
 
 - [@nielsvanvelzen](https://github.com/nielsvanvelzen) - [Sponsor](https://github.com/sponsors/nielsvanvelzen)
 - [@Maxr1998](https://github.com/Maxr1998) - [Sponsor](https://github.com/sponsors/Maxr1998)
-- [@h1dden-da3m0n](https://github.com/h1dden-da3m0n) - *Special shoutout for helping with the migration to GitHub Actions!*
+- [@h1dden-da3m0n](https://github.com/h1dden-da3m0n) - *Special shout-out for helping with the migration to GitHub Actions!*
 - [@ferferga](https://github.com/ferferga) - [Sponsor](https://github.com/sponsors/ferferga)
 
 ### Others
