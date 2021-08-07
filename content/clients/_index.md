@@ -152,7 +152,7 @@ justify: 'center'
         <a href="https://openrepos.net/content/ahappyhuman/sailfin" class="button button__accent button__card">Go to OpenRepos</a>
     </div>
     <div class="card">
-        <img src="/images/clients/finamp.svg", style="fill:white"/>
+        <img src="/images/clients/finamp.svg"/>
         <div class="bannerbox">
             <p class="banner">Finamp</p>
             <p class="subbanner">3rd Party: Android</p>
