@@ -155,7 +155,7 @@ justify: 'center'
         <img src="/images/clients/finamp.svg"/>
         <div class="bannerbox">
             <p class="banner">Finamp</p>
-            <p class="subbanner">3rd Party: Android</p>
+            <p class="subbanner">3rd Party: Android + iOS</p>
         </div>
         <a href="https://play.google.com/store/apps/details?id=com.unicornsonlsd.finamp" class="button button__accent button__card">Go to Play Store</a>
         <a href="https://apps.apple.com/us/app/finamp/id1574922594" class="button button__accent button__card">Go to App Store</a>
