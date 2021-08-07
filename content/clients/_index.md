@@ -159,7 +159,7 @@ justify: 'center'
         </div>
         <a href="https://play.google.com/store/apps/details?id=com.unicornsonlsd.finamp" class="button button__accent button__card">Go to Play Store</a>
         <a href="https://apps.apple.com/us/app/finamp/id1574922594" class="button button__accent button__card">Go to App Store</a>
-        <a href="https://github.com/UnicornsOnLSD/finamp" class="button button__accent button__card">Go to GitHub</a>
+        <a href="https://f-droid.org/packages/com.unicornsonlsd.finamp" class="button button__accent button__card">Go to F-Droid</a>
     </div>
 </div>
 
