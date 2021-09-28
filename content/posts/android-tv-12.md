@@ -58,7 +58,7 @@ The user interfacer when browsing inside libraries got some slight changes too. 
 
 ### Themes
 
-You might have noticed some of the screenshots use a purple color instead of our usual blue. These colors are from one of our new themes: Muted Purple. Together with Dark (Default) and Classic Emerald the app now supports basic theming. We're planning to expand this feature in the future with more themes and more variety between them. _Maybe we should add a light theme?_
+The web client supported theming since forever but the Android TV app did not. That changes today with the introduction of three themes: Muted Purple together with Dark (Default) and Classic Emerald are now available in the app to supports basic theming. We're planning to expand this feature in the future with more themes and more variety between them. _Maybe we should add a light theme?_
 
 ### New video player design
 
@@ -95,8 +95,8 @@ Like all releases, we couldn't do it without our contributors and your donations
 
 **Jellyfin Team**
 
-- [@nielsvanvelzen](https://github.com/nielsvanvelzen) - [GitHub sponsors](https://github.com/sponsors/nielsvanvelzen)
-- [@thornbill](https://github.com/thornbill) - [GitHub sponsors](https://github.com/sponsors/thornbill)
+- [@nielsvanvelzen](https://github.com/nielsvanvelzen) - Donate via [GitHub sponsors](https://github.com/sponsors/nielsvanvelzen)
+- [@thornbill](https://github.com/thornbill) - Donate via [GitHub sponsors](https://github.com/sponsors/thornbill)
 - [@MrChip53](https://github.com/MrChip53)
 - [@AndreasGB](https://github.com/AndreasGB)
 
