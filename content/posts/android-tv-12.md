@@ -20,7 +20,7 @@ Over 400 [^project] pull requests containing 2400+ commits, 750+ changed files w
 
 ## New authentication flow
 
-We got a lot of complaints about our authentication flow. It wasn't obvious how to enable the auto log in option and managing multiple servers or users was not an easy task. We also didn't like this part of the app, and decided to completely revamp it! The rewritten sign in screen looks more modern and is much easier to use. There is a new help section that links to our documentation to help new users getting started with Jellyfin. The auto-discovery feature of the app now shows all servers instead of the first one, you can select them to connect or manually enter your server address. You can then proceed to add a user and start using the app. Users are automatically saved now with auto log in enabled by default.
+We got a lot of complaints about our authentication flow. It wasn't obvious how to enable the auto-login option and managing multiple servers or users was not an easy task. We also didn't like this part of the app, and decided to completely revamp it! The rewritten sign-in screen looks more modern and is much easier to use. There is a new help section that links to our documentation to help new users get started with Jellyfin. The auto-discovery feature of the app now shows all servers instead of the first one, you can select one of those or manually enter your server address to connect. You can then proceed to add a user and start using the app. Users are automatically saved now with auto-login enabled by default.
 
 <div class="juxtapose">
     <img data-label="0.11" src="/images/posts/androidtv-0-12-0/11-user-select.png" />
@@ -37,14 +37,14 @@ Beneath this new toolbar is your media, like it always was, but the cards got a 
     <img data-label="0.12" src="/images/posts/androidtv-0-12-0/12-home.png" />
 </div>
 
-The settings screen got a refresh too. It allows you to more easily change settings. Some new settings got added to customize the app to your own tastes.
+The settings screen got a refresh too. It allows you to more easily change settings. Some new settings got added to customize the app to your own taste.
 
 <div class="juxtapose">
     <img data-label="0.11" src="/images/posts/androidtv-0-12-0/11-settings.png" />
     <img data-label="0.12" src="/images/posts/androidtv-0-12-0/12-settings.png" />
 </div>
 
-The user interfacer when browsing inside libraries got some slight changes too. We're hoping to completely revamp this part of the app at some point, but that doesn't stop us from making it slightly better right now.
+The user interface when browsing inside libraries got some slight changes too. We're hoping to completely revamp this part of the app at some point, but that didn't stop us from making it slightly better now.
 
 <div class="juxtapose">
     <img data-label="0.11" src="/images/posts/androidtv-0-12-0/11-browse.png" />
@@ -69,7 +69,7 @@ The video player was completely redesigned to remove a lot of clutter and make i
     <img data-label="0.12" src="/images/posts/androidtv-0-12-0/12-player.png" />
 </div>
 
-The new video player design is just the beginning. A project to rewrite the playback code behind it is already in the works. This rewrite should help with the crashes and unnecessary transcoding that happens sometimes. It will also give us the opportunity to add new features like SyncPlay. But this doesn't mean the current code isn't being worked on anymore! We did fix some issues with the current video player code. Notably are changes for Fire TV to direct play more often and a lot of crashes got fixed.
+The new video player design is just the beginning. A project to rewrite the playback code behind it is already in the works. This rewrite should help with the crashes and unnecessary transcoding that happens sometimes. It will also give us the opportunity to add new features like SyncPlay. But this doesn't mean the current code isn't being worked on anymore! We did fix some issues with the current video player code. Notable are changes for Fire TV to direct play more often and a lot of crashes got fixed.
 
 ## Fixed that bug
 
@@ -87,7 +87,7 @@ It took some time to get this release out. We didn't feel like the state of the 
 Fortunately we've worked hard to make sure we did feel confident and here we are! Starting from this release we're changing some things
 to make sure the next release won't take this long. Our brand new SDK that is already used in our Android app and third party apps is one of the tools helping us with faster releases. By having a more type-safe base we can prevent tons of crashes, allowing us to focus on actual features and bugs.
 
-We're already working on some new stuff like the earlier mentioned rewrite of the playback code. We're using feature flags for this so we can work on this code while still being able to publish new versions. Other changes that we're looking into are more improvements to the user interface, better Live TV, better music support and more bugfixing!
+We're already working on some new stuff like the earlier mentioned rewrite of the playback code. We're using feature flags for this so we can work on this code while still being able to publish new versions. Other changes that we're looking into are more improvements to the user interface, better Live TV, better music support and more bugfixes!
 
 ## Contributors
 
