@@ -3,7 +3,7 @@ title: Android TV v0.12
 subtitle: Our biggest app update to date.
 author: Niels van Velzen
 githubusername: nielsvanvelzen
-date: 2021-09-29
+date: 2021-09-30
 justify: center
 ---
 
