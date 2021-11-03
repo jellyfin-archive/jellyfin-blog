@@ -17,8 +17,6 @@ Additionally, The integrated player now follows the rewind/fast forward preferen
 
 Apart from that, connection reliability was again improved, handling timeouts properly now and showing a progress indicator while the app connects (thus it won't be stuck on black screen anymore).
 
-For the F-Droid release, a bug in our communication library preventing users from connecting to the server at all was fixed.
-
 ## Download Now
 
 <a class="NoLinkLook" href="https://play.google.com/store/apps/details?id=org.jellyfin.mobile">
