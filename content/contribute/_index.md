@@ -263,7 +263,7 @@ justify: 'center'
 							</div>
 							<div id="other" style="display:none;">
 								<p>Jellyfin has several other sub-projects that use various languages. If any of these suit you, head over to the relevant project page and begin hacking.</p>
-								<p><b>Java/Kotlin:</b> The <a href="https://github.com/jellyfin/jellyfin-androidtv" style="color:#fff">Android TV</a> and <a href="https://github.com/jellyfin/jellyfin-android" style="color:#fff">Android</a> apps are written in Java and Kotlin; Android also includes the main WebUI.</p>
+								<p><b>Kotlin/Java:</b> The <a href="https://github.com/jellyfin/jellyfin-androidtv" style="color:#fff">Android TV</a> and <a href="https://github.com/jellyfin/jellyfin-android" style="color:#fff">Android</a> apps are written in Kotlin and Java for some legacy code.</p>
 								<p><b>Python:</b> The <a href="https://github.com/jellyfin/jellyfin-kodi" style="color:#fff">Kodi</a> client is written in Python.</p>
 								<p><b>BrightScript:</b> The <a href="https://github.com/jellyfin/jellyfin-roku" style="color:#fff">Roku</a> client is written in BrightScript.</p>
 								<p>Feel free to browse around the <a href="https://github.com/jellyfin" style="color:#fff">project page</a> for the full list of official sub-projects.</p>
