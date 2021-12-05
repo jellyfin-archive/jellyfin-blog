@@ -187,6 +187,13 @@ justify: 'center'
         </div>
         <a href="https://github.com/jellyfin/jellyfin-mpv-shim" class="button button__accent button__card">Go to GitHub</a>
     </div>
+    <div class="card">
+        <img src="/images/clients/sonixd.svg"/>
+        <div class="bannerbox">
+            <p class="banner">Sonixd</p>
+        </div>
+        <a href="https://github.com/jeffvli/sonixd" class="button button__accent button__card">Go to GitHub</a>
+    </div>
 </div>
 
 <h2>Others</h2>
