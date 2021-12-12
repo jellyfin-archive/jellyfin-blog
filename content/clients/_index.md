@@ -191,6 +191,7 @@ justify: 'center'
         <img src="/images/clients/sonixd.svg"/>
         <div class="bannerbox">
             <p class="banner">Sonixd</p>
+            <p class="subbanner">3rd Party</p>
         </div>
         <a href="https://github.com/jeffvli/sonixd" class="button button__accent button__card">Go to GitHub</a>
     </div>
