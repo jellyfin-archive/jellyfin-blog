@@ -77,3 +77,4 @@ jobs:
           user_name: 'jellyfin-bot'
           user_email: 'team@jellyfin.org'
           full_commit_message: 'feat(blog): deploy ${{ github.repository }}@${{ github.sha }}'
+          cname: jellyfin.org
