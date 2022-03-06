@@ -1,0 +1,78 @@
+on:
+  workflow_call:
+    inputs:
+      publish:
+        required: false
+        default: false
+        type: boolean
+    secrets:
+      token:
+        required: false
+
+jobs:
+  build:
+    name: Build Blog
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2.4.0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2.5.0
+        with:
+          hugo-version: '0.60.1'
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2.3.1
+        with:
+          path: public
+
+  publish:
+    name: Publish Blog
+    if: ${{ inputs.publish }}
+    runs-on: ubuntu-latest
+    needs:
+      - build
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2.1.0
+
+      - name: Compress Artifacts
+        run: zip -r -D release.zip ./artifact/*
+
+      - name: Publish Artifacts As GitHub Release
+        uses: marvinpinto/action-automatic-releases@v1.2.0
+        with:
+          repo_token: '${{ secrets.token }}'
+          automatic_release_tag: latest
+          prerelease: false
+          files: |
+            release.zip
+
+      - name: Remove Blog release.zip
+        run: rm release.zip
+
+      - uses: robinraju/release-downloader@v1.3
+        with: 
+          repository: "jellyfin/jellyfin-docs"
+          latest: true
+          fileName: "release.zip"
+      
+      - name: Include Docs
+        run: |-
+          unzip -d docs release.zip
+          mv docs/artifact artifact/docs
+
+      - name: Upload Artifacts To Github Pages
+        uses: peaceiris/actions-gh-pages@v3.8.0
+        with:
+          personal_token: '${{ secrets.token }}'
+          external_repository: jellyfin/jellyfin.github.io
+          publish_branch: master
+          publish_dir: ./artifact/
+          user_name: 'jellyfin-bot'
+          user_email: 'team@jellyfin.org'
+          full_commit_message: 'feat(blog): deploy ${{ github.repository }}@${{ github.sha }}'
