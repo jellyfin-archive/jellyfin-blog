@@ -6,10 +6,10 @@
   />
   <title>{{ .Title }} {{ if .Title }}-{{ end }} {{ .Site.Title }}</title>
 
-  <link href="{{ .Site.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-  <link href="{{ .Site.BaseURL }}index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ "/index.xml" | absURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ "/index.xml" | absURL }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
 
-  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="shortcut icon" href="{{ "/favicon.ico" | absURL }}" />
 
   {{ $e1 := resources.Get "sass/utils/_normalize.scss" }}
   {{ $e2 := resources.Get "sass/base/_variables.scss" }}
@@ -38,6 +38,6 @@
 
   {{ $style := slice $e1 $e2 $e3 $e4 $e5 $e6 $e7 $e8 $e10 $e11 $e12 $e13 $e14 $e15 $e16 $e17 $e18 $e19 $e20 $e21 $e22 $c | resources.Concat "css/style.css" | resources.ToCSS | fingerprint | minify }}
 
-  <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
-  <link rel="stylesheet" href="/css/juxtapose.css">
+  <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink | absURL }}" />
+  <link rel="stylesheet" href="{{ "/css/juxtapose.css" | absURL }}">
 </head>
