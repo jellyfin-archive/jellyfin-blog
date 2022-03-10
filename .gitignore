@@ -2,6 +2,7 @@ resources
 .idea/
 
 # Hugo
+.hugo_build.lock
 /public
 
 # Windows
