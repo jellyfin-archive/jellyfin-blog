@@ -6,9 +6,8 @@
   />
   <title>{{ .Title }} {{ if .Title }}-{{ end }} {{ .Site.Title }}</title>
 
-  {{- range .AlternativeOutputFormats -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-  {{- end -}}
+  <link href="{{ .Site.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ .Site.BaseURL }}index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
 
   <link rel="shortcut icon" href="/favicon.ico" />
 
