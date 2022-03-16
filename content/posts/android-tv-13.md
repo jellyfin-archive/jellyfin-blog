@@ -3,7 +3,7 @@ title: Android TV v0.13
 subtitle: That was quick
 author: Niels van Velzen
 githubusername: nielsvanvelzen
-date: 2022-03-14
+date: 2022-03-19
 justify: center
 ---
 
@@ -13,7 +13,7 @@ We're back with another release for Android TV and Fire TV users containing a lo
 
 <!--more-->
 
-As promised in the previous release post, updates are getting quicker. No more waiting for 2 years anymore. Today's update brings some new features and greatly improves playback of videos. Let's get started with the player changes.
+As promised in the previous release post, the time between updates is getting shorter. We aim for future updates to happen significantly more frequently than the two years between 0.11 and 0.12. Today's update brings some new features and greatly improves playback of videos. Let's get started with the player changes.
 
 ## Playback changes
 
@@ -33,13 +33,13 @@ A much requested feature was the ability to add a version selector. We've now ad
 
 ### Speed control
 
-It's now possible to change the speed of playback. You can slow down or speed up a video. The set speed is membered so the next video plays at the same speed, until you restart the app or manually change it back. Speed control is not available for Live TV.
+It's now possible to change the speed of playback. You can slow down or speed up a video. The set speed is remembered so the next video plays at the same speed, until you restart the app or manually change it back. Speed control is not available for Live TV.
 
 ![Screenshot of the new speed controls](/images/posts/androidtv-0-13-0/speedcontrol.png)
 
 ### Subtitle preferences
 
-Not everyone enjoyed the default <span style="background:#000;color:#fff;padding:4px;">subtitle styling</span> in the previous version, so now there are a few options to change it. It's now possible to change the size of the subtitles and to toggle between a black background or text outline.
+Not everyone enjoyed the default <span style="background:#000;color:#fff;padding:4px;">subtitle styling</span> in the previous version, so now there are a few options to change it. It's now possible to change the size of the subtitles and to toggle between a black background or text outline. These preferences work for all text based subtitles. Image based subtitles like SubStation Alpha and VobSub still use their own styling.
 
 ## Search & Screen saver
 
