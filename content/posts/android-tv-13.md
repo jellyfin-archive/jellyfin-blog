@@ -17,7 +17,7 @@ As promised in the previous release post, the time between updates is getting sh
 
 ## Playback changes
 
-Most changes in this release are related to playing video files, the so called playback code. A lot of changes were made, both bugfixes and new features! The full list is, as always, available in the changelog. The most notable changes are listed below.
+Most changes in this release are related to playing video files, the so called playback code. A lot of changes were made, both bugfixes and new features! The full list is, as always, available in the [changelog](https://github.com/jellyfin/jellyfin-androidtv/releases/tag/v0.13.0). The most notable changes are listed below.
 
 ## Transcoding updates
 
@@ -45,7 +45,7 @@ Not everyone enjoyed the default <span style="background:#000;color:#fff;padding
 
 You can now use the search function on Android TV to search in your Jellyfin libraries. This feature is supported for Android TV devices that do not use Google TV (like the new Chromecast). To get started, just search for a movie and press the "Available on Jellyfin" button.
 
-Additionally, we've added a screen saver that highlights your media. To enable it go to your system settings, open the screen saver category, and select the Jellyfin screensaver. On some devices this function may be called "Daydream". The screensaver shows random series and movies with their backdrop.
+Additionally, we've added a screen saver that highlights your media. To enable it go to your system settings, open the screen saver category, and select the Jellyfin screen saver. On some devices this function may be called "Daydream". The screen saver shows random series and movies with their backdrop.
 
 ## Updated preferences
 
