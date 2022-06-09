@@ -1,13 +1,10 @@
-# iOS Update
 ---
-
 title: 'Updating our iOS App'
 subtitle: 'Framework updates and minimum system requirements'
 author: 'Anthony Lavado'
 githubusername: 'anthonylavado'
 date: '2022-06-08'
 justify: 'center'
-
 ---
 
 With [Jellyfin Mobile](https://apps.apple.com/us/app/jellyfin-mobile/id1480192618?mt=8), our main iOS App, we have updated some frameworks that adjust our minimum iOS version.
