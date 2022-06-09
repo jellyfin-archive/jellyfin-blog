@@ -28,9 +28,8 @@ If you can't seem to get anything to work, feel free to get in touch and visit u
 
 ---
 
-Thank you for using Jellyfin and supporting us this far. Our iOS app is largely worked on by only one contributor, [@thornbill](https://github.com/thornbill), who gives generously of his spare time to develop the app and make improvements to it and our web interface. He, along with a few of our [contributors](https://github.com/orgs/jellyfin/people) have donation pages setup either through GitHub Sponsors, or other sites like LiberaPay, Patreon and more. If you'd like to support any of them, please see their profiles for more information.
+Thank you for using Jellyfin and supporting us this far.
+
+Our iOS app is largely worked on by only one contributor, [@thornbill](https://github.com/thornbill), who gives generously of his spare time to develop the app and make improvements to it and our web interface. He, along with a few of our [contributors](https://github.com/orgs/jellyfin/people) have donation pages setup either through GitHub Sponsors, or other sites like LiberaPay, Patreon and more. If you'd like to support any of them, please see their profiles for more information.
 
 If you'd like to support Jellyfin as a whole (infrastructure and equipment costs only), you can visit our public ledger on [OpenCollective](https://opencollective.com/jellyfin). We're pretty well covered for now, so consider donating to contributors first.
-
-Best,
-Anthony
