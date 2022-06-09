@@ -17,7 +17,7 @@ As time goes on, we keep Expo up to date in order to take advantage of security 
 
 As a result, starting with version 1.5.0 of our Apple app, **iOS/iPadOS 12 or newer is required.**
 
-If your device is still on an older version of iOS, and you currently have the app downloaded, your experience will stay mostly the same for now. The installed version isn't being removed from the store, so you can still re-install it if needed - but your device won't receive any updates for it. As time goes on, updating your Jellyfin server may encounter unexpected behaviour when used with the older iOS app.
+If your device is still on an older version of iOS, and you currently have the app downloaded, your experience will stay mostly the same for now. The installed version isn't being removed from the store, so you can still re-install it if needed - but your device won't receive any updates for it. As time goes on, and you update your Jellyfin server, you may encounter unexpected behaviour with the older iOS app.
 
 If you haven't downloaded it before, or are running into issues, you can try a few different options:
 
