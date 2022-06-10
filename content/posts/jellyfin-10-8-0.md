@@ -19,19 +19,19 @@ The major highlighted changes are:
 
  *  numerous improvements to Hardware Acceleration (HWA), including:
 
- **  Dolby Vision Profile 5 and 7 tone-mapping
+     * Dolby Vision Profile 5 and 7 tone-mapping
 
- **  CUDA-based tone-mapping for NVIDIA
+     * CUDA-based tone-mapping for NVIDIA
 
- **  extended OpenCL tone-mapping for Intel
+     * extended OpenCL tone-mapping for Intel
 
- ** hardware based subtitle burn in
+     * hardware based subtitle burn in
 
- ** Intel tone-mapping support for Windows
+     * Intel tone-mapping support for Windows
 
- ** full OpenCL filtering for AMF on Windows
+     * full OpenCL filtering for AMF on Windows
 
- ** deprecation of OMX for raspberry pi, use V4L2 instead
+     * deprecation of OMX for raspberry pi, use V4L2 instead
 
  * proper network interface binding and handling of proxied requests
 
@@ -54,163 +54,163 @@ A point-form list of the changes compiled by the team is:
 
  *  General:
 
- ** automatically migrate and cleanup config files
+     * automatically migrate and cleanup config files
 
- ** reduce memory footprint by various optimizations (e.g. reducing memory traffic)
+     * reduce memory footprint by various optimizations (e.g. reducing memory traffic)
 
- ** rewrite QuickConnect
+     * rewrite QuickConnect
 
- ** splashscreen in branding API (although not in use by any client yet)
+     * splashscreen in branding API (although not in use by any client yet)
 
- ** various HDHomerun fixes and improvments
+     * various HDHomerun fixes and improvments
 
- ** properly read filesize from symlinks
+     * properly read filesize from symlinks
 
- ** create output directory on file extraction
+     * create output directory on file extraction
 
- ** return path to pinfile on password reset
+     * return path to pinfile on password reset
 
- ** fix ombi auth through Jellyfin
+     * fix ombi auth through Jellyfin
 
- ** include genre in related media generation
+     * include genre in related media generation
 
- ** Implement more provider links for series, seasons, episodes and movies
+     * Implement more provider links for series, seasons, episodes and movies
 
- ** properly handle gif
+     * properly handle gif
 
- ** passwords are now hashed with 120000 iterations of PBKDF2-SHA512 instead of 1000 iterations of PBKDF2-SHA1, old passwords are migrated automatically on login
+     * passwords are now hashed with 120000 iterations of PBKDF2-SHA512 instead of 1000 iterations of PBKDF2-SHA1, old passwords are migrated automatically on login
 
- ** add config option to disable automatic server discovery
+     * add config option to disable automatic server discovery
 
- ** Networking:
+     * Networking:
 
- ** fix explicit IP/interface binding
+     * fix explicit IP/interface binding
 
- ** disable UPnP by default (only applies to new setups)
+     * disable UPnP by default (only applies to new setups)
 
- ** proper handling of published server URLs
+     * proper handling of published server URLs
 
  * HWA:
 
- ** implement CUDA-based tone-mapping for NVIDIA
+     * implement CUDA-based tone-mapping for NVIDIA
 
- ** extend Intel OpenCL tone-mapping (speed-wise on-par with VPP tone-mapping and therefore preferable)
+     * extend Intel OpenCL tone-mapping (speed-wise on-par with VPP tone-mapping and therefore preferable)
 
- ** implement full OpenCL HW filtering for AMD on Windows
+     * implement full OpenCL HW filtering for AMD on Windows
 
- ** implement hardware-based subtitle burn-in (significantly faster)
+     * implement hardware-based subtitle burn-in (significantly faster)
 
- ** implement proper tone-mapping support on Windows
+     * implement proper tone-mapping support on Windows
 
- ** add CUDA & OpenCL tone-mapping support for Dolby Vision profile 5 and 8
+     * add CUDA & OpenCL tone-mapping support for Dolby Vision profile 5 and 8
 
- ** various other fixes for NVIDIA and Intel hardware acceleration
+     * various other fixes for NVIDIA and Intel hardware acceleration
 
- ** add support for AV1 hardware decoding on supported platforms
+     * add support for AV1 hardware decoding on supported platforms
 
- ** deprecate Raspberry Pi OMX/MMAL hardware acceleration in favour of V4L2
+     * deprecate Raspberry Pi OMX/MMAL hardware acceleration in favour of V4L2
 
  * Streaming/Transcoding:
 
- ** optimize and extend DLNA support
+     * optimize and extend DLNA support
 
- ** fixes for DLNA PlayTo and DLNA folders
+     * fixes for DLNA PlayTo and DLNA folders
 
- ** fixes for DLNA seeking
+     * fixes for DLNA seeking
 
- ** extraction of attached fonts for subtitle transcoding/burn-in
+     * extraction of attached fonts for subtitle transcoding/burn-in
 
- ** small fixes to SyncPlay
+     * small fixes to SyncPlay
 
- ** add transcoding information to playback data
+     * add transcoding information to playback data
 
- ** fix opus sampling rates on transcode
+     * fix opus sampling rates on transcode
 
- ** properly stream m3u over HTTP
+     * properly stream m3u over HTTP
 
- ** add keyframe extraction for better seeking (WARNING: this is a really long running task)
+     * add keyframe extraction for better seeking (WARNING: this is a really long running task)
 
- ** overhaul streaming logic to only transcode incompatible streams
+     * overhaul streaming logic to only transcode incompatible streams
 
- ** various fmp4 fixes
+     * various fmp4 fixes
 
  * NFO:
 
- ** add parsing of additional ids
+     * add parsing of additional ids
 
- ** proper importing of watched state
+     * proper importing of watched state
 
- ** proper parsing of ratings
+     * proper parsing of ratings
 
- ** proper handling of thumb tags
+     * proper handling of thumb tags
 
- ** add support for fanart tag
+     * add support for fanart tag
 
- ** proper casting of NFO ids to internal ids
+     * proper casting of NFO ids to internal ids
 
  * Scanner/metadata providers:
 
- ** add ID parsing from folder names
+     * add ID parsing from folder names
 
- ** extend ID parsing from filenames
+     * extend ID parsing from filenames
 
- ** refactor extras parsing (way faster)
+     * refactor extras parsing (way faster)
 
- ** refactor and harden parsing of plain folders (all movies in one folder)
+     * refactor and harden parsing of plain folders (all movies in one folder)
 
- ** refactor and extend external subtitle and external audio parsing (now supports containers too)
+     * refactor and extend external subtitle and external audio parsing (now supports containers too)
 
- ** properly handle unprobed strm playback with external streams
+     * properly handle unprobed strm playback with external streams
 
- ** add support for TMDB absolute and TV order
+     * add support for TMDB absolute and TV order
 
- ** properly pass language to TMDB search queries
+     * properly pass language to TMDB search queries
 
- ** fetch TMDB parental rating for tvshows
+     * fetch TMDB parental rating for tvshows
 
- ** enable fetching additional series states from TMDb
+     * enable fetching additional series states from TMDb
 
- ** properly detect DolbyVision
+     * properly detect DolbyVision
 
- ** enhance detection and handling of DVD/BD folders/ISOs
+     * enhance detection and handling of DVD/BD folders/ISOs
 
- ** episode parser improvements
+     * episode parser improvements
 
- ** add ability to disable adult content in TMDb
+     * add ability to disable adult content in TMDb
 
- ** add ability to configure image scale in TMDb
+     * add ability to configure image scale in TMDb
 
- ** update artist split whitelist
+     * update artist split whitelist
 
- ** make tag import and maxCastMembers configurable for TMDb
+     * make tag import and maxCastMembers configurable for TMDb
 
- ** improve metadata merging
+     * improve metadata merging
 
- ** add ability to fetch logos with TMDb
+     * add ability to fetch logos with TMDb
 
- ** add option to configure season name importing for TMDb
+     * add option to configure season name importing for TMDb
 
  * Technical:
 
- ** upgrade to latest .NET 6 (fixes some of the quirks with network storage)
+     * upgrade to latest .NET 6 (fixes some of the quirks with network storage)
 
- ** bump all dependencies
+     * bump all dependencies
 
- ** upgrade analyzers and properly handle warnings
+     * upgrade analyzers and properly handle warnings
 
- ** proper generation and publishing of OpenAPI spec
+     * proper generation and publishing of OpenAPI spec
 
- ** add and extend tests for various subsystems
+     * add and extend tests for various subsystems
 
- ** upgrade Docker images to Debian 11 Bullseye
+     * upgrade Docker images to Debian 11 Bullseye
 
- ** include latest Intel Compute Runtime in Docker images
+     * include latest Intel Compute Runtime in Docker images
 
- ** add health check to Docker images
+     * add health check to Docker images
 
- ** remove unused docker volume for /media from Docker images
+     * remove unused docker volume for /media from Docker images
 
- ** make flushing to disk async if possible
+     * make flushing to disk async if possible
 
 ## Web
 Web has been moved completely to NPM (instead of Yarn), and several pages have been ported to React. Further many dozens of improvements and fixes have been made.
