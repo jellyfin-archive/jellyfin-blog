@@ -37,6 +37,8 @@ The major highlighted changes are:
 
  * various fixes for DLNA, Sync-Play and m3u HTTP streams
 
+ * DLNA disabled by default
+
  * extended NFO metadata import
 
  * external audio and subtitle support including container (mks, mka)
@@ -82,13 +84,15 @@ A point-form list of the changes compiled by the team is:
 
      * add config option to disable automatic server discovery
 
-     * Networking:
+ * Networking:
 
      * fix explicit IP/interface binding
 
      * disable UPnP by default (only applies to new setups)
 
      * proper handling of published server URLs
+
+     * disable DLNA server by default to avoid security risks
 
  * HWA:
 
