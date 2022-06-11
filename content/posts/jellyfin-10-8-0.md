@@ -11,7 +11,7 @@ After a rather long development cycle the Jellyfin team is proud to announce sta
 
 <!--more-->
 
-<a href="/downloads/" class="button button__accent">Download Jellyfin 10.6.0</a> <a href="https://github.com/jellyfin/jellyfin/releases/tag/v10.6.0" class="button hero__button">Read the full release notes</a>
+<a href="/downloads/" class="button button__accent">Download Jellyfin 10.8.0</a> <a href="https://github.com/jellyfin/jellyfin/releases/tag/v10.8.0" class="button hero__button">Read the full release notes</a>
 
 All of the changes, accumulated over nearly the last two years, are too many to easily list, so we'll break them down in the sections below and hope all of you find something enjoyable.
 
