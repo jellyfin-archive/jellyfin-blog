@@ -32,7 +32,7 @@ For newer TVs (2021+):
 
 We hope to bring this to more versions of webOS soon. There is one small bug to fix for webOS 5.x, and then we can resubmit with that update. Since the main QA testing work has been performed by LG, this process should be much faster. As time goes on, more enhancements and fixes will follow. It's hard to determine exactly how far back we'll successfully be able to support. We'll try our best to get as far back as webOS 3.x, but I am less optimistic about webOS 2.x and 1.x. If we get to 3.x, that brings us as far back as TVs from 2016 (running [Chromium 38](https://developer.chrome.com/docs/native-client/sdk/release-notes/#chrome-pepper-38-15-august-2014) from 2014!). You can see what versions of the browser are included in older webOS versions in [LG's Documentation](https://webostv.developer.lge.com/discover/specifications/web-engine/).
 
-If you want to follow along on our journey, you can have a look at the Issues listing on our [webOS Repository](https://github.com/jellyfin/jellyfin-webos/issues).I just have one request - don't comment unnecessarily. If you want to stay updated with a particular issue, there is a handy "Subscribe" button on the side that will email you updates.
+If you want to follow along on our journey, you can have a look at the Issues listing on our [webOS Repository](https://github.com/jellyfin/jellyfin-webos/issues). I just have one request - don't comment unnecessarily. If you want to stay updated with a particular issue, there is a handy "Subscribe" button on the side that will email you updates.
 
 It's important to note that the app itself is a wrapper around our server's web interface, so when you keep your Jellyfin server up to date, you automatically get a lot of the fixes right away. While the TV app will directly get occasional fixes, we don't anticipate having to update it very often. If you want to follow along with fixes to the web interface, just have a look at our [jellyfin-web repository](https://github.com/jellyfin/jellyfin-web).
 
@@ -40,4 +40,5 @@ Thank you for your patience with us so far. After this, there's still more work 
 
 Thanks,
 Anthony
-Your friendly neighbourhood Core Team member, App Publisher, Community/Social/Dev Relations manager, and macOS/Windows Tray maintainer!
+
+_Your friendly neighbourhood Core Team member, App Publisher, Community/Social/Dev Relations manager, and macOS/Windows Tray maintainer!_
