@@ -75,7 +75,7 @@ justify: 'center'
             <p class="banner">LG webOS</p>
         </div>
         <p class="button button__accent button__card">webOS 6+: <a src="https://us.lgappstv.com/main/tvapp/detail?appId=1030579"Download Now</a></p>
-        <p class="button button__accent button__card__disabled">Older Versions: <a src="http://jellyfin.org/posts/webos-july2022/">Learn More</a></p>
+        <p class="button button__accent button__card__disabled">Older Versions: <a src="https://jellyfin.org/posts/webos-july2022/">Learn More</a></p>
     </div>
     <div class="card">
         <img src="/images/clients/samsungtv.svg"/>
