@@ -98,6 +98,14 @@ justify: 'center'
         </div>
         <p>iPhones • Macs • iPads<br>Apple TV • Others</p>
     </div>
+    <div class="card">
+        <img src="/images/clients/zidoo.svg">
+        <div class="bannerbox">
+            <p class="banner">Zidoo</p>
+            <p class="subbanner">3rd Party: AndroidTV</p>
+        </div>
+        <a href="https://github.com/Andy2244/jellyfin-androidtv-zidoo" class="button button__accent button__card">Go to GitHub</a>
+    </div>
 </div>
 
 <h2>Mobile</h2>
