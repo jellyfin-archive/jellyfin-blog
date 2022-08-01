@@ -13,7 +13,7 @@ Introducing Quick Connect, external trailers, improved crash reporting and more.
 
 <!--more-->
 
-I'm excited to announce the newest version of Jellyfin for Android TV. A lot of changes made it into the app this development cycle. Including some exciting new features. We fixed a bunch of issues reported by our community and welcomed some new [contributors](#contributors) that helped out this update. In this post I'll talk about our most significant changes. A complete list of all changes is available in the [changelog](#changelog).
+I'm excited to announce the newest version of Jellyfin for Android TV. A lot of changes made it into the app this development cycle. Including some exciting new features. We fixed a bunch of issues reported by our community and welcomed some new [contributors](#contributors) that helped out on this update. In this post I'll talk about our most significant changes. A complete list of all changes is available in the [changelog](#changelog).
 
 Enjoy this update and I'll see you with the next one!
 
@@ -21,13 +21,13 @@ Enjoy this update and I'll see you with the next one!
 
 ## Minimum server version changed to 10.8
 
-Server requirements changed a bit. With this release only version 10.8 or newer is supported. By dropping support for the 10.7 range of releases we were able to add new features mentioned in this post like QuickConnect and the new crash reporting. As always we advice to use the latest version of Jellyfin to get the latest bugfixes, features and security updates.
+Server requirements changed a bit. With this release, only version 10.8 or newer is supported. By dropping support for the 10.7 range of releases we were able to add new features mentioned in this post like QuickConnect and the new crash reporting. As always we advise you to use the latest version of Jellyfin to get the latest bugfixes, features and security updates.
 
 Go to the [download](https://jellyfin.org/downloads/) page or read the [installing](https://jellyfin.org/docs/general/administration/installing.html) documentation to start updating.
 
 ## Improved login
 
-It's now a lot easier to get started with Jellyfin on your television using Quick Connect. You no longer need to enter a password and instead you'll be prompted to open Jellyfin on another device, like your phone or computer to enter a 6 digit code. This way of authentication is an alternative for passwords while keeping your server secure.
+It's now a lot easier to get started with Jellyfin on your television using Quick Connect. You no longer need to enter a password and instead you'll be prompted to open Jellyfin on another device, like your phone or computer to enter a 6 digit code. This way of authentication is an alternative to passwords while keeping your server secure.
 
 Another big change in the login part of the app, are the redesigned screens when adding a server or user. These screens are now easier to read and use by using bigger text and a better alignment for the on-screen keyboard. Google TV users will now see the keyboard on the right side of the television. This makes it possible to see connections errors without closing the keyboard.
 
@@ -37,7 +37,7 @@ Another big change in the login part of the app, are the redesigned screens when
 
 The newly added support for external trailers allows the playback of trailers from YouTube, Vimeo and other video services. Previously only local trailers could be played. This feature is only available when a browser or video service app is installed to open the trailer.
 
-Unfortunately this feature has some limitations. Some popular apps, like YouTube, don't make it easy to go back to the Jellyfin app. And in some television platforms you might see an error telling you there is no app to open the trailer. If this happens you should check if the YouTube/Vimeo/other app is installed. For a optimal experience we recommend using local trailers that play inside the Jellyfin app.
+Unfortunately this feature has some limitations. Some popular apps, like YouTube, don't make it easy to go back to the Jellyfin app. And in some television platforms you might see an error telling you there is no app to open the trailer. If this happens you should check if the YouTube/Vimeo/other app is installed. For an optimal experience we recommend using local trailers that play inside the Jellyfin app.
 
 ## Changes to the Live TV guide
 
