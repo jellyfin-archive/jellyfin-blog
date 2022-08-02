@@ -31,8 +31,8 @@ We primarily use [Element](https://element.io/get-started) to access the [Matrix
 - [#jellyfin-dev-client:matrix.org](https://matrix.to/#/#jellyfin-dev-client:matrix.org): Client and Web development
 - [#jellyfin-dev-android:matrix.org](https://matrix.to/#/#jellyfin-dev-android:matrix.org): Android, Android TV and Fire TV development
 - [#jellyfin-dev-ios:matrix.org](https://matrix.to/#/#jellyfin-dev-ios:matrix.org): iOS/iPadOS/tvOS Development.
-- [#jellyfin-vue:matrix.org](https://matrix.to/#/#jellyfin-dev-ios:matrix.org):  Jellyfin Vue, an alternative web client
-- [#jellyfin-dev-roku:matrix.org](https://matrix.to/#/#jellyfin-dev-ios:matrix.org):  Roku Channel Development chat.
+- [#jellyfin-vue:matrix.org](https://matrix.to/#/#jellyfin-vue:matrix.org):  Jellyfin Vue, an alternative web client
+- [#jellyfin-dev-roku:matrix.org](https://matrix.to/#/#jellyfin-dev-roku:matrix.org):  Roku Channel Development chat.
 - [#jellyfin-dev-python:matrix.org](https://matrix.to/#/#jellyfin-dev-python:matrix.org):  Python based client discussion.
 - [#jellyfin-offtopic:matrix.org](https://matrix.to/#/#jellyfin-offtopic:matrix.org): Chat about anything
 - [#jellyfin-translate:matrix.org](https://matrix.to/#/#jellyfin-translate:matrix.org): Help translate Jellyfin
