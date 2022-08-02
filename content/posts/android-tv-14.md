@@ -13,7 +13,7 @@ Introducing Quick Connect, external trailers, improved crash reporting and more.
 
 <!--more-->
 
-I'm excited to announce the newest version of Jellyfin for Android TV. A lot of changes made it into the app this development cycle. Including some exciting new features. We fixed a bunch of issues reported by our community and welcomed some new [contributors](#contributors) that helped out on this update. In this post I'll talk about our most significant changes. A complete list of all changes is available in the [changelog](#changelog).
+I'm excited to announce the newest version of Jellyfin for Android TV. A lot of changes made it into the app this development cycle, including some exciting new features. We fixed a bunch of issues reported by our community and welcomed some new [contributors](#contributors) that helped out on this update. In this post I'll talk about our most significant changes. A complete list of all changes is available in the [changelog](#changelog).
 
 Enjoy this update and I'll see you with the next one!
 
@@ -21,15 +21,15 @@ Enjoy this update and I'll see you with the next one!
 
 ## Minimum server version changed to 10.8
 
-Server requirements changed a bit. With this release, only version 10.8 or newer is supported. By dropping support for the 10.7 range of releases we were able to add new features mentioned in this post like QuickConnect and the new crash reporting. As always we advise you to use the latest version of Jellyfin to get the latest bugfixes, features and security updates.
+Server requirements changed a bit. With this release, only version 10.8 or newer is supported. By dropping support for 10.7 we were able to add new features like Quick Connect and a new crash reporting implementation. As always we advise you to use the latest version of Jellyfin to get the latest bugfixes, features and security updates.
 
 Go to the [download](https://jellyfin.org/downloads/) page or read the [installing](https://jellyfin.org/docs/general/administration/installing.html) documentation to start updating.
 
 ## Improved login
 
-It's now a lot easier to get started with Jellyfin on your television using Quick Connect. You no longer need to enter a password and instead you'll be prompted to open Jellyfin on another device, like your phone or computer to enter a 6 digit code. This way of authentication is an alternative to passwords while keeping your server secure.
+It's now a lot easier to get started with Jellyfin on your television using Quick Connect. With it, you no longer need to enter a password and instead will be prompted to open Jellyfin on another device, like your phone or computer, to enter a 6 digit code. This way of authentication is an alternative to passwords while keeping your server secure.
 
-Another big change in the login part of the app, are the redesigned screens when adding a server or user. These screens are now easier to read and use by using bigger text and a better alignment for the on-screen keyboard. Google TV users will now see the keyboard on the right side of the television. This makes it possible to see connections errors without closing the keyboard.
+Another big change in the login section of the app are the redesigned screens for adding a server or user. These screens are now easier to read and use with bigger text and a better alignment for the on-screen keyboard. Google TV users will now see the keyboard on the right side of the television screen. This makes it possible to see connections errors without closing the keyboard.
 
 ![Screenshot of the new login design](/images/posts/android-tv-14/login-1.png)
 
@@ -53,13 +53,13 @@ The Live TV guide got some long awaited fixes and design tweaks. These include, 
 
 ## Improved browsing grid
 
-To make it easier to see a lot of items or just a few we have added two new image sizes in the grid view: smallest and extra large. Together with this change the sizing is now based on the actual size of your device, fixing some bugs on 4k displays. This might change the size you're used to a bit. We also fixed some issues with the vertical direction and now consider it a stable feature!
+To make it easier to see a lot of items or just a few we have added two new image sizes in the grid view: smallest and extra large. Together with this change the sizing is now based on the actual size of your device, fixing some bugs on 4K displays. This might change the size you're used to a bit. We also fixed some issues with the vertical layout and now consider it a stable feature!
 
 ## New crash reporting
 
 Back in 2020 with version 0.11 we added a crash reporting utility. This function helped us fix a lot of issues with the app. The crash reporting relied on a third-party service to collect the reports. We kept tight control of who could access this data, but never liked this approach as it did use a third-party service we have no control over. In this update the crash reporting code was rewritten and now sends all reports to your own Jellyfin server. The crash reports use a new format that makes it more readable for both the user and developers and includes details to identify and fix bugs even faster.
 
-Crash reporting is now turned on by default. When the app crashes it will send a report to the latest server you used. On fresh installations the report is queued until a server is connected to.
+Crash reporting is now turned on by default. When the app crashes it will send a report to the last server you used. On fresh installations the report is queued until connecting to a server.
 
 ## Markdown support for item & server descriptions
 
@@ -73,7 +73,7 @@ Visit our [networking](https://jellyfin.org/docs/general/networking/index.html) 
 
 ## Contributors
 
-Jellyfin apps are developed by great contributors, we couldn't do it without them. Everyone is a volunteer that doesn't get paid by organizations with self-interest, consider donating if you appreciate their work. A big shout-out to all contributors that made this release possible:
+Jellyfin apps are developed by our great contributors and we couldn't do it without them. Everyone is a volunteer that doesn't get paid by any organizations, so consider donating if you appreciate their work. A big shout-out to all contributors that made this release possible:
 
 **Jellyfin Team**
 
