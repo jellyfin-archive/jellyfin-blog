@@ -148,6 +148,26 @@ cd jellyfin-git
 makepkg -si</code></pre>
         </div>
     </div>
+    <div class="gentoo">
+        <h4>Gentoo Linux</h4>
+        <p>Install Jellyfin via the Gentoo Repository.</p>
+        <p>
+            <div class="button button__accent" id="gentoo_stable_button">Stable</div>
+        </p>
+        <script type="text/javascript">
+            document.getElementById("gentoo_stable_button").onclick = function () {
+                if (document.getElementById("gentoo_stable").style.display == 'none') {
+                    document.getElementById("gentoo_stable").style.display = "block";
+                } else {
+                    document.getElementById("gentoo_stable").style.display = "none";
+                }
+            }
+        </script>
+        <div id="gentoo_stable" style="display:none;">
+            <pre><code>emerge www-apps/jellyfin</code></pre>
+        <p>Once installed, Jellyfin will be running as a service. Manage it with <pre><code>sudo systemctl {action} jellyfin.service</code></pre> or <pre><code>sudo rc-service jellyfin {action}</code></pre></p>
+        </div>
+    </div>
     <div class="fedora">
         <h4>Fedora and CentOS</h4>
         <p>RPM archives for both Fedora and CentOS are provided.</p>
