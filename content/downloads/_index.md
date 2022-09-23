@@ -55,7 +55,7 @@ docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /
         </div>
     </div>
     <div class="debian">
-        <h4>Debian and Ubuntu</h4>
+        <h4>Debian and Ubuntu (including derivatives such as Pop! OS)</h4>
         <p>Install Jellyfin via our Apt repository or via manual archives (.deb).</p>
         <p>
             <div class="button button__accent" id="deb_repo_stable_button">Stable</div>
