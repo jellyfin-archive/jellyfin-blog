@@ -36,21 +36,21 @@ justify: 'center'
         </div>
         <a href="https://github.com/jellyfin/jellyfin-kodi" class="button button__accent button__card">Go to GitHub</a>
     </div>
-    <div class="card">
+    <!-- <div class="card">
         <img src="/images/clients/xbox.svg"/>
         <div class="bannerbox">
             <p class="banner">Xbox One</p>
         </div>
         <p class="button button__accent button__card__disabled">Coming Soon</a>
-        <!--<a href="https://www.microsoft.com/store/apps/9P2DRTG62QF8" class="button button__accent button__card">Go to Microsoft Store</a>-->
-    </div>
-    <div class="card">
+        <a href="https://www.microsoft.com/store/apps/9P2DRTG62QF8" class="button button__accent button__card">Go to Microsoft Store</a>
+    </div> -->
+    <!-- <div class="card">
         <img src="/images/clients/playstation-4.svg"/>
         <div class="bannerbox">
             <p class="banner">PlayStation 4</p>
         </div>
         <p>Available on Your<br>PlayStation Browser</p>
-    </div>
+    </div> -->
     <div class="card">
         <img src="/images/clients/infuse.svg"/>
         <div class="bannerbox">
@@ -59,7 +59,7 @@ justify: 'center'
         </div>
         <a href="https://apps.apple.com/app/id1136220934?mt=8" class="button button__accent button__card">Go to App Store</a>
     </div>
-    <div class="card">
+    <!-- <div class="card">
         <img src="/images/clients/mrmc.svg"/>
         <div class="bannerbox">
             <p class="banner">MrMC</p>
@@ -68,7 +68,7 @@ justify: 'center'
         <a href="https://play.google.com/store/apps/details?id=tv.mrmc.mrmc" class="button button__accent button__card">Go to Google Play</a>
         <a href="https://itunes.apple.com/us/app/mrmc/id1059536415?mt=8" class="button button__accent button__card">Go to App Store</a>
         <a href="https://www.amazon.com/gp/product/B01ENT3I1Q/ref=mas_pm_mrmc" class="button button__accent button__card">Go to Amazon Store</a>
-    </div>
+    </div> -->
     <div class="card">
         <img src="/images/clients/webos.svg"/>
         <div class="bannerbox">
@@ -77,13 +77,13 @@ justify: 'center'
         <a class="button button__accent button__card" href="https://us.lgappstv.com/main/tvapp/detail?appId=1030579">webOS 6+</a>
         <a class="button button__accent button__card" href="https://jellyfin.org/posts/webos-july2022/">Older Versions - Learn More</a>
     </div>
-    <div class="card">
+    <!-- <div class="card">
         <img src="/images/clients/samsungtv.svg"/>
         <div class="bannerbox">
             <p class="banner">Samsung Tizen</p>
         </div>
         <p class="button button__accent button__card__disabled">Coming Soon</a>
-    </div>
+    </div> -->
     <div class="card">
         <img src="/images/clients/google-cast.svg"/>
         <div class="bannerbox">
@@ -97,14 +97,6 @@ justify: 'center'
             <p class="banner">AirPlay</p>
         </div>
         <p>iPhones • Macs • iPads<br>Apple TV • Others</p>
-    </div>
-    <div class="card">
-        <img src="/images/clients/zidoo.svg">
-        <div class="bannerbox">
-            <p class="banner">Zidoo</p>
-            <p class="subbanner">3rd Party: AndroidTV</p>
-        </div>
-        <a href="https://github.com/Andy2244/jellyfin-androidtv-zidoo" class="button button__accent button__card">Go to GitHub</a>
     </div>
 </div>
 
@@ -143,7 +135,7 @@ justify: 'center'
         </div>
         <a href="https://apps.apple.com/app/id1136220934?mt=8" class="button button__accent button__card">Go to App Store</a>
     </div>
-    <div class="card">
+    <!-- <div class="card">
         <img src="/images/clients/mrmc.svg"/>
         <div class="bannerbox">
             <p class="banner">MrMC</p>
@@ -151,7 +143,7 @@ justify: 'center'
         </div>
         <a href="https://play.google.com/store/apps/details?id=tv.mrmc.mrmc" class="button button__accent button__card">Go to Google Play</a>
         <a href="https://apps.apple.com/app/mrmc-touch/id1062986407" class="button button__accent button__card">Go to App Store</a>
-    </div>
+    </div> -->
     <div class="card">
         <img src="/images/clients/sailfin.svg"/>
         <div class="bannerbox">
