@@ -1,5 +1,7 @@
 # jellyfin-blog
 
+**This repository has been deprecated. Please use [the jellyfin.org repository instead](https://github.com/jellyfin/jellyfin.org).**
+
 The official website, built with Hugo as a static page generator.
 
 Uses a custom Hugo port of the theme ["Evie"](https://github.com/anges244/evie), copyright (c) 2018 [Aggelos Gesoulis](https://twitter.com/anges244) - [Katerina Limpitsouni](https://twitter.com/ninalimpi), available under the MIT license.
